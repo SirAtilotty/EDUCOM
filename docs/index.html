@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EDUCOM</title>
+<meta name="description" content="A school app for class groups, homework, exam prep and progress notes. Runs in the browser, installs on phones, hosts on a Raspberry Pi.">
+<meta name="theme-color" content="#f2f1ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="EDUCOM">
+<meta property="og:description" content="A school app for class groups, homework, exam prep and progress notes.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%2370449c'/%3E%3Cpath fill='%23c3abe1' d='M232 104h176a48 48 0 0 1 48 48v100a48 48 0 0 1-48 48h-6l6 52-58-52H232a48 48 0 0 1-48-48V152a48 48 0 0 1 48-48z'/%3E%3Cpath fill='%23fff' d='M104 196h184a52 52 0 0 1 52 52v104a52 52 0 0 1-52 52H170l-72 58 10-58h-4a52 52 0 0 1-52-52V248a52 52 0 0 1 52-52z'/%3E%3Cpath fill='%2370449c' d='M142 300v36c0 14 24 25 54 25s54-11 54-25v-36z'/%3E%3Cpath fill='%2370449c' stroke='%23fff' stroke-width='9' stroke-linejoin='round' d='M196 246l90 38-90 38-90-38z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Geist+Mono:wght@400;500;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    var root = document.documentElement;
+    try { var t = localStorage.getItem("educom-theme"); if (t === "light" || t === "dark") root.setAttribute("data-theme", t); } catch (e) {}
+    // Dil: ?lang=tr bağlantısı > kayıtlı seçim > İngilizce.
+    var lang = "en";
+    try { lang = localStorage.getItem("educom-lang") === "tr" ? "tr" : "en"; } catch (e) {}
+    var q = new URLSearchParams(location.search).get("lang");
+    if (q === "tr" || q === "en") lang = q;
+    root.lang = lang;
+    root.classList.add("js");
+  })();
+</script>
+<style>
+  :root {
+    --bg: #f2f1ee; --bg-sunken: #e8e7e2; --ink: #1d1d1b; --ink-strong: #0b0b0c;
+    --muted: #5c5b57; --faint: #8e8c86; --line: #d8d6cf; --line-strong: #b5b2aa;
+    --accent: #70449c; --invert-bg: #0b0b0c; --invert-fg: #f2f1ee;
+    --display: "Archivo", system-ui, sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "Geist Mono", ui-monospace, "JetBrains Mono", monospace;
+    --serif: "Instrument Serif", Georgia, serif;
+    --nav: 56px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b0b0c; --bg-sunken: #131315; --ink: #e6e5e1; --ink-strong: #ffffff;
+      --muted: #a3a29d; --faint: #6c6b67; --line: #232326; --line-strong: #3b3b40;
+      --accent: #b99ae6; --invert-bg: #f2f1ee; --invert-fg: #0b0b0c;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b0b0c; --bg-sunken: #131315; --ink: #e6e5e1; --ink-strong: #ffffff;
+    --muted: #a3a29d; --faint: #6c6b67; --line: #232326; --line-strong: #3b3b40;
+    --accent: #b99ae6; --invert-bg: #f2f1ee; --invert-fg: #0b0b0c;
+    color-scheme: dark;
+  }
+
+  /* language: every text has an .en and a .tr version; only one is shown */
+  :root:not([lang="tr"]) .tr, :root[lang="tr"] .en { display: none !important; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav) + 44px); }
+  body { background: var(--bg); color: var(--ink); font: 16px/1.6 var(--body); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  img, svg { display: block; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  ::selection { background: var(--invert-bg); color: var(--invert-fg); }
+
+  .hud { font-family: var(--mono); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: .12em; line-height: 1.4; }
+  .faint { color: var(--faint); }
+  .muted { color: var(--muted); }
+  .accent { color: var(--accent); }
+  .serif { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -.01em; }
+
+  /* ---------- buttons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    height: 48px; padding: 0 24px; font-family: var(--mono); font-weight: 700; font-size: 11px;
+    text-transform: uppercase; letter-spacing: .12em; white-space: nowrap; cursor: pointer;
+    border: 1px solid transparent; transition: opacity .15s, background .15s, color .15s, border-color .15s;
+  }
+  .btn svg { width: 16px; height: 16px; flex: none; }
+  .btn-solid { background: var(--invert-bg); color: var(--invert-fg); }
+  .btn-solid:hover { opacity: .82; }
+  .btn-line { background: var(--bg); color: var(--ink); border-color: var(--line-strong); }
+  .btn-line:hover { background: var(--invert-bg); color: var(--invert-fg); border-color: transparent; }
+  .btn-sm { height: 36px; padding: 0 16px; }
+
+  /* ---------- nav ---------- */
+  .nav { position: sticky; top: 0; z-index: 50; height: var(--nav); border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .nav-in { display: flex; justify-content: space-between; align-items: stretch; height: 100%; }
+  .nav-l, .nav-r { display: flex; align-items: stretch; }
+  .brand { display: flex; align-items: center; gap: 10px; padding: 0 20px; border-right: 1px solid var(--line); }
+  .brand svg { width: 26px; height: 26px; }
+  .brand b { font-family: var(--display); font-stretch: 125%; font-weight: 750; font-size: 14px; letter-spacing: .02em; }
+  .nav-links { display: flex; align-items: stretch; list-style: none; }
+  .nav-links li { display: flex; }
+  .nav-links a { display: flex; align-items: center; padding: 0 10px; color: var(--muted); }
+  .nav-links a > span { padding: 3px 7px; }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-links a:hover > span, .nav-links a.on > span { background: var(--invert-bg); color: var(--invert-fg); }
+  .icon-btn { min-width: 52px; display: flex; align-items: center; justify-content: center; gap: 6px; border: 0; border-left: 1px solid var(--line); background: none; color: var(--muted); cursor: pointer; padding: 0 14px; }
+  .icon-btn:hover { background: var(--invert-bg); color: var(--invert-fg); }
+  .icon-btn svg { width: 16px; height: 16px; }
+  .lang b { color: var(--ink); font-weight: 700; }
+  .icon-btn:hover b { color: inherit; }
+  .lang i { font-style: normal; opacity: .45; }
+  .nav .btn { height: 100%; border-left: 1px solid var(--line); padding: 0 22px; }
+  .sun { display: none; }
+  :root[data-theme="dark"] .sun { display: block; }
+  :root[data-theme="dark"] .moon { display: none; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .sun { display: block; }
+    :root:not([data-theme="light"]) .moon { display: none; }
+  }
+
+  /* ---------- hero ---------- */
+  .hero { position: relative; min-height: calc(100svh - var(--nav)); display: flex; overflow: hidden; }
+  #dots { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .hero-in { position: relative; z-index: 2; margin: auto; width: 100%; max-width: 760px; padding: 96px 16px; display: flex; flex-direction: column; align-items: center; text-align: center; pointer-events: none; }
+  .hero-in a, .hero-in button { pointer-events: auto; }
+  .scrim { position: absolute; inset: -80px -120px; background: radial-gradient(closest-side, color-mix(in srgb, var(--bg) 82%, transparent), transparent); z-index: -1; }
+  .logo { width: 72px; height: 72px; margin-bottom: 22px; filter: drop-shadow(0 10px 24px color-mix(in srgb, #70449c 35%, transparent)); }
+  .prompt { color: var(--muted); margin-bottom: 22px; text-transform: none; letter-spacing: .02em; font-size: 13px; }
+  .prompt b { color: var(--accent); font-weight: 500; }
+  .wm-box { width: 100%; container-type: inline-size; }
+  .wm { font-family: var(--display); font-stretch: 125%; font-weight: 750; font-size: 17cqw; line-height: .9; color: var(--ink-strong); white-space: nowrap; letter-spacing: -.01em;
+        text-shadow: 0 0 .6vw color-mix(in srgb, var(--bg) 90%, transparent), 0 .3vw 3vw color-mix(in srgb, var(--bg) 70%, transparent); }
+  .wm span { display: inline-block; }
+  .wm span.c { color: var(--accent); }
+  .js .wm span { animation: rise .9s cubic-bezier(.2,.8,.2,1) both; animation-delay: calc(var(--i) * 70ms + 120ms); }
+  @keyframes rise { from { opacity: 0; transform: translateY(35%) scaleY(1.2); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
+  .hero h1 { margin-top: 30px; font-family: var(--display); font-weight: 500; font-size: clamp(1.75rem, 4.4vw, 2.4rem); line-height: 1.05; letter-spacing: -.03em; color: var(--ink-strong); }
+  .hero .lede { margin-top: 16px; max-width: 520px; font-size: 1.1rem; color: var(--muted); }
+  .hero .ctas { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .typed { margin-top: 18px; min-height: 1.4em; color: var(--muted); text-transform: none; letter-spacing: .04em; font-size: 12px; }
+  .typed .cur { display: inline-block; width: .6em; height: 1.05em; background: var(--accent); vertical-align: -.18em; margin-left: 3px; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .meta { margin-top: 26px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; color: var(--faint); }
+
+  /* ---------- frame + sections ---------- */
+  .frame { position: relative; max-width: 1280px; margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+  .sec { position: relative; border-top: 1px solid var(--line); }
+  .tick { position: absolute; top: -5px; width: 9px; height: 9px; background: var(--bg); border: 1px solid var(--line-strong); z-index: 31; }
+  .tick.l { left: -5px; } .tick.r { right: -5px; }
+  .eyebrow { position: sticky; top: var(--nav); z-index: 30; display: flex; justify-content: space-between; gap: 16px; padding: 12px 40px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--bg) 70%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .eyebrow .slash { margin: 0 8px; color: var(--faint); }
+  .intro { padding: 80px 40px; }
+  .intro h2, .big { font-family: var(--display); font-weight: 500; font-size: clamp(2.3rem, 6vw, 3.8rem); line-height: 1.02; letter-spacing: -.035em; color: var(--ink-strong); max-width: 820px; }
+  .intro p { margin-top: 20px; max-width: 580px; font-size: 1.1rem; color: var(--muted); }
+
+  /* ---------- feature cards ---------- */
+  .lineup { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
+  .card { --app-ink: color-mix(in srgb, var(--app) 62%, var(--ink-strong)); position: relative; display: flex; flex-direction: column; background: var(--bg); }
+  .card .bar { position: absolute; inset: 0 0 auto; height: 2px; background: var(--app); transform: scaleX(0); transform-origin: left; transition: transform .3s; z-index: 2; }
+  .card:hover .bar { transform: scaleX(1); }
+  .card-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 24px; border-bottom: 1px solid var(--line); }
+  .num { background: var(--app); color: #000; font-weight: 700; padding: 4px 8px; }
+  .preview { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--bg-sunken);
+             background-image: radial-gradient(var(--line-strong) 1px, transparent 1px); background-size: 16px 16px; }
+  .preview > * { transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+  .card:hover .preview > * { transform: scale(1.03); }
+  .card-body { flex: 1; display: flex; flex-direction: column; padding: 24px 32px 32px; }
+  .card h3 { font-family: var(--display); font-weight: 500; font-size: 1.9rem; line-height: 1; letter-spacing: -.03em; color: var(--ink-strong); }
+  .card h3 em { font-style: normal; color: var(--app-ink); }
+  .card p { margin-top: 12px; color: var(--muted); }
+  .tags { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: var(--mono); font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; padding: 1px 6px; border: 1px solid var(--line); background: var(--bg-sunken); color: var(--muted); }
+  .tag.hl { color: var(--app-ink); }
+
+  /* preview: chat */
+  .chat { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 7px; padding: 14px 18px; font-size: 12.5px; line-height: 1.35; }
+  .chat-top { display: flex; align-items: center; gap: 8px; color: var(--muted); padding-bottom: 8px; border-bottom: 1px solid var(--line-strong); margin-bottom: 4px; font-size: 10px; }
+  .chat-top i { width: 7px; height: 7px; border-radius: 50%; background: var(--app); box-shadow: 0 0 0 3px color-mix(in srgb, var(--app) 30%, transparent); }
+  .msg { max-width: 76%; padding: 6px 11px; border: 1px solid var(--line-strong); background: var(--bg); }
+  .msg small { display: block; font-family: var(--mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: var(--app-ink); margin-bottom: 2px; }
+  .msg.out { align-self: flex-end; background: var(--invert-bg); color: var(--invert-fg); border-color: transparent; }
+  .ro { margin-top: auto; padding: 6px 10px; text-align: center; border: 1px dashed var(--line-strong); color: var(--muted); font-size: 10px; }
+  .voice { display: flex; align-items: center; gap: 2px; }
+  .voice b { font-family: var(--mono); font-size: 10px; margin-right: 6px; }
+  .voice span { width: 2px; background: var(--app); border-radius: 1px; }
+  .voice em { font-style: normal; font-family: var(--mono); font-size: 10px; margin-left: 6px; color: var(--muted); }
+
+  /* preview: homework list */
+  .list { position: absolute; inset: 14px 18px; display: flex; flex-direction: column; gap: 7px; font-size: 12px; }
+  .row { display: flex; align-items: center; gap: 10px; padding: 8px 10px; background: var(--bg); border: 1px solid var(--line-strong); }
+  .row .sub { font-family: var(--mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; padding: 1px 5px; background: var(--bg-sunken); border: 1px solid var(--line); color: var(--muted); flex: none; }
+  .row .t { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--ink); }
+  .row .due { font-family: var(--mono); font-size: 10px; flex: none; color: var(--muted); }
+  .row .due.hot { background: var(--app); color: #000; padding: 1px 6px; font-weight: 700; }
+
+  /* preview: quiz */
+  .quiz { position: absolute; inset: 14px 18px; display: flex; flex-direction: column; gap: 6px; font-size: 12px; }
+  .quiz-top { display: flex; justify-content: space-between; color: var(--muted); font-size: 10px; }
+  .prog { height: 3px; background: var(--line); }
+  .prog i { display: block; height: 100%; width: 35%; background: var(--app); }
+  .q { margin: 4px 0 2px; font-family: var(--display); font-weight: 500; font-size: 15px; color: var(--ink-strong); }
+  .opt { display: flex; gap: 8px; align-items: center; padding: 4px 9px; background: var(--bg); border: 1px solid var(--line-strong); }
+  .opt b { font-family: var(--mono); font-size: 10px; color: var(--faint); }
+  .opt.ok { border-color: var(--app); box-shadow: inset 3px 0 0 var(--app); }
+  .opt.ok::after { content: "✓"; margin-left: auto; color: var(--app-ink); font-weight: 700; }
+
+  /* preview: progress note */
+  .note { position: absolute; inset: 14px 18px; padding: 12px 14px; background: var(--bg); border: 1px solid var(--line-strong); display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; line-height: 1.4; }
+  .note-top { display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: var(--muted); }
+  .levels { display: flex; gap: 4px; }
+  .levels > span { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: .06em; padding: 2px 6px; border: 1px solid var(--line); color: var(--faint); }
+  .levels > span.on { background: var(--app); color: #000; border-color: transparent; font-weight: 700; }
+  .note p { margin: 0; color: var(--ink); }
+  .note .who { margin-top: auto; font-family: var(--mono); font-size: 10px; color: var(--muted); }
+
+  /* preview: look */
+  .look { position: absolute; inset: 14px 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .look .box { background: var(--bg); border: 1px solid var(--line-strong); padding: 8px 10px; display: flex; flex-direction: column; gap: 8px; }
+  .look .lbl { font-family: var(--mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+  .sw { display: flex; gap: 6px; flex-wrap: wrap; }
+  .sw i { width: 18px; height: 18px; border-radius: 50%; }
+  .sw i.on { box-shadow: 0 0 0 2px var(--bg), 0 0 0 3.5px var(--ink); }
+  .walls { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; flex: 1; }
+  .walls i { border: 1px solid var(--line); background: var(--bg-sunken); }
+  .walls i:nth-child(1) { background-image: radial-gradient(var(--faint) 1px, transparent 1px); background-size: 6px 6px; }
+  .walls i:nth-child(2) { background-image: linear-gradient(var(--line-strong) 1px, transparent 1px), linear-gradient(90deg, var(--line-strong) 1px, transparent 1px); background-size: 8px 8px; }
+  .walls i:nth-child(3) { background-image: linear-gradient(var(--line-strong) 1px, transparent 1px); background-size: 100% 7px; }
+  .modes { display: flex; border: 1px solid var(--line-strong); }
+  .modes > span { flex: 1; text-align: center; font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: .08em; padding: 4px 0; color: var(--muted); }
+  .modes > span.on { background: var(--invert-bg); color: var(--invert-fg); }
+  .sizes { display: flex; align-items: baseline; gap: 10px; color: var(--ink); font-family: var(--display); }
+
+  /* ---------- number + role cells ---------- */
+  .cells { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
+  .cell { background: var(--bg); padding: 28px 32px; }
+  .cell.wide { grid-column: span 2; }
+  .cell-top { display: flex; justify-content: space-between; align-items: center; }
+  .glyph { min-width: 44px; height: 40px; padding: 0 8px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); color: var(--accent); font-family: var(--mono); font-size: 12px; font-weight: 500; }
+  .cell h3 { margin-top: 22px; font-family: var(--display); font-weight: 500; font-size: 1.45rem; letter-spacing: -.02em; color: var(--ink-strong); }
+  .cell p { margin-top: 4px; color: var(--muted); }
+  .stat { font-family: var(--display); font-stretch: 112%; font-weight: 650; font-size: clamp(2.6rem, 6vw, 3.6rem); line-height: 1; letter-spacing: -.03em; color: var(--ink-strong); margin-top: 18px; }
+  .stat small { font-size: .45em; color: var(--accent); margin-left: 4px; }
+
+  .grades { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
+  .grade { background: var(--bg); padding: 24px 32px 28px; }
+  .grade .g { font-family: var(--display); font-stretch: 125%; font-weight: 750; font-size: 2.6rem; line-height: 1; color: var(--ink-strong); }
+  .grade .g sup { font-size: .4em; color: var(--accent); vertical-align: top; margin-left: 2px; }
+  .grade .meter { margin-top: 18px; height: 6px; background: var(--bg-sunken); border: 1px solid var(--line); }
+  .grade .meter i { display: block; height: 100%; background: var(--accent); }
+  .grade p { margin-top: 12px; color: var(--muted); font-size: .95rem; }
+  .grade .hud { margin-top: 14px; display: block; }
+
+  .roles { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
+  .role { background: var(--bg); padding: 32px 40px 40px; }
+  .role-top { display: flex; align-items: center; gap: 12px; }
+  .role-top .code { font-family: var(--mono); font-size: 12px; padding: 6px 10px; border: 1px solid var(--line-strong); background: var(--bg-sunken); letter-spacing: .1em; }
+  .role-top .code b { color: var(--accent); }
+  .role h3 { margin-top: 20px; font-family: var(--display); font-weight: 500; font-size: 2rem; letter-spacing: -.03em; color: var(--ink-strong); }
+  .role ul { margin-top: 18px; list-style: none; display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--line); }
+  .role li { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); color: var(--ink); }
+  .role li::before { content: "→"; font-family: var(--mono); color: var(--accent); }
+  .role li.no { color: var(--muted); }
+  .role li.no::before { content: "×"; color: var(--faint); }
+
+  .term { padding: 16px 18px; background: var(--invert-bg); color: var(--invert-fg); font-family: var(--mono); font-size: 12px; line-height: 1.7; border: 1px solid var(--line-strong); overflow-x: auto; white-space: pre; }
+  .term .d { opacity: .5; }
+  .term .ok { color: #b99ae6; font-weight: 700; }
+  :root[data-theme="dark"] .term .ok { color: #70449c; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .term .ok { color: #70449c; } }
+  .term .cur { display: inline-block; width: .55em; height: 1em; background: var(--invert-fg); vertical-align: -.15em; animation: blink 1s steps(1) infinite; }
+  .cell.term-cell { padding: 24px; }
+
+  /* ---------- band + start ---------- */
+  .band { background: var(--bg-sunken); padding: 104px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .band .big { margin-top: 24px; text-wrap: balance; }
+  .band p { margin-top: 20px; max-width: 540px; font-size: 1.1rem; color: var(--muted); }
+  .start { padding: 120px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .start .big { margin-top: 24px; font-size: clamp(2.8rem, 8vw, 4.8rem); line-height: .98; letter-spacing: -.04em; }
+  .start p { margin-top: 24px; max-width: 520px; font-size: 1.1rem; color: var(--muted); }
+  .start .ctas { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+  /* ---------- footer ---------- */
+  footer { border-top: 1px solid var(--line); }
+  .foot { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1px; background: var(--line); }
+  .foot > div, .foot > nav { background: var(--bg); padding: 32px; }
+  .foot .me { padding: 40px; }
+  .foot .me svg { width: 40px; height: 40px; }
+  .foot .me p { margin-top: 16px; max-width: 340px; color: var(--muted); }
+  .foot ul { list-style: none; margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .foot ul a { color: var(--muted); }
+  .foot ul a:hover { color: var(--ink); }
+  .foot-bar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 16px 40px; border-top: 1px solid var(--line); color: var(--faint); }
+
+  /* ---------- reveal ---------- */
+  .js [data-reveal] { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1); }
+  .js [data-reveal].in { opacity: 1; transform: none; }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 1000px) {
+    .lineup { grid-template-columns: repeat(2, 1fr); }
+    .cells, .grades { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 760px) {
+    .nav-links, .nav .btn-label { display: none; }
+    .nav .btn { padding: 0 18px; }
+    .icon-btn { min-width: 48px; padding: 0 12px; }
+    .eyebrow, .intro, .band { padding-left: 16px; padding-right: 16px; }
+    .eyebrow .hide-sm { display: none; }
+    .intro { padding-top: 56px; padding-bottom: 56px; }
+    .lineup { grid-template-columns: 1fr; }
+    .card-head { padding: 12px 16px; }
+    .card-body { padding: 22px 16px 28px; }
+    .cells { grid-template-columns: 1fr 1fr; }
+    .cell { padding: 22px 16px; }
+    .cell.wide { grid-column: span 2; }
+    .grade { padding: 22px 16px; }
+    .roles { grid-template-columns: 1fr; }
+    .role { padding: 28px 16px 32px; }
+    .band { padding-top: 72px; padding-bottom: 72px; }
+    .start { padding: 80px 16px; }
+    .foot { grid-template-columns: 1fr 1fr; }
+    .foot .me { grid-column: span 2; padding: 28px 16px; }
+    .foot > div, .foot > nav { padding: 24px 16px; }
+    .foot-bar { padding: 16px; }
+    .brand { padding: 0 16px; }
+    .hero-in { padding: 72px 16px; }
+    .btn { height: 46px; }
+  }
+  @media (max-width: 360px) {
+    .brand b { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .js [data-reveal] { opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#70449c"/><path fill="#c3abe1" d="M232 104h176a48 48 0 0 1 48 48v100a48 48 0 0 1-48 48h-6l6 52-58-52H232a48 48 0 0 1-48-48V152a48 48 0 0 1 48-48z"/><path fill="#fff" d="M104 196h184a52 52 0 0 1 52 52v104a52 52 0 0 1-52 52H170l-72 58 10-58h-4a52 52 0 0 1-52-52V248a52 52 0 0 1 52-52z"/><path fill="#70449c" d="M142 300v36c0 14 24 25 54 25s54-11 54-25v-36z"/><path fill="#70449c" stroke="#fff" stroke-width="9" stroke-linejoin="round" d="M196 246l90 38-90 38-90-38z"/><path fill="none" stroke="#70449c" stroke-width="8" stroke-linecap="round" d="M268 296v36"/><rect x="260" y="328" width="16" height="26" rx="5" fill="#70449c"/></symbol>
+  <symbol id="gh" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+</svg>
+
+<nav class="nav" aria-label="Main">
+  <div class="nav-in">
+    <div class="nav-l">
+      <a class="brand" href="#top" aria-label="EDUCOM">
+        <svg aria-hidden="true"><use href="#logo"/></svg>
+        <b>EDUCOM</b>
+      </a>
+      <ul class="nav-links hud">
+        <li><a class="on" href="#top"><span><span class="en">Home</span><span class="tr">Ana sayfa</span></span></a></li>
+        <li><a href="#features"><span><span class="en">Features</span><span class="tr">Özellikler</span></span></a></li>
+        <li><a href="#questions"><span><span class="en">Exam prep</span><span class="tr">Yazılıya hazırlık</span></span></a></li>
+        <li><a href="#roles"><span><span class="en">Roles</span><span class="tr">Roller</span></span></a></li>
+        <li><a href="#how"><span><span class="en">How it works</span><span class="tr">Nasıl çalışır</span></span></a></li>
+      </ul>
+    </div>
+    <div class="nav-r">
+      <button class="icon-btn hud lang" id="lang" type="button" aria-label="Türkçe / English">
+        <span class="en"><b>EN</b> <i>/ TR</i></span><span class="tr"><i>EN /</i> <b>TR</b></span>
+      </button>
+      <button class="icon-btn" id="theme" type="button" aria-label="Toggle dark theme">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <a class="btn btn-solid" href="https://github.com/SirAtilotty/EDUCOM" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#gh"/></svg>
+        <span class="btn-label">GitHub</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <canvas id="dots" aria-hidden="true"></canvas>
+    <div class="hero-in">
+      <div class="scrim" aria-hidden="true"></div>
+      <svg class="logo" aria-hidden="true"><use href="#logo"/></svg>
+      <p class="hud prompt"><b>educom@pi</b>:~$ node server.js</p>
+      <div class="wm-box">
+        <div class="wm" role="img" aria-label="EDUCOM">
+          <span style="--i:0" aria-hidden="true">E</span><span style="--i:1" aria-hidden="true">D</span><span style="--i:2" aria-hidden="true">U</span><span class="c" style="--i:3" aria-hidden="true">C</span><span class="c" style="--i:4" aria-hidden="true">O</span><span class="c" style="--i:5" aria-hidden="true">M</span>
+        </div>
+      </div>
+      <h1 data-reveal><span class="en">The whole school, in one app.</span><span class="tr">Bütün okul, tek bir uygulamada.</span></h1>
+      <p class="lede" data-reveal>
+        <span class="en">Class groups, homework, exam prep and progress notes for a high school. It runs in the browser, installs on phones like a normal app, and lives on a Raspberry Pi.</span>
+        <span class="tr">Bir lise için sınıf grupları, ödev takibi, yazılıya hazırlık ve gelişim notları. Tarayıcıda çalışır, telefona normal bir uygulama gibi kurulur ve bir Raspberry Pi üzerinde yaşar.</span>
+      </p>
+      <div class="ctas" data-reveal>
+        <a class="btn btn-solid" href="#features">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+          <span class="en">See features</span><span class="tr">Özellikleri gör</span>
+        </a>
+        <a class="btn btn-line" href="https://github.com/SirAtilotty/EDUCOM" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#gh"/></svg>
+          GitHub
+        </a>
+      </div>
+      <p class="hud typed" aria-live="polite"><span id="typed"></span><span class="cur"></span></p>
+      <div class="meta hud" data-reveal>
+        <span>TÜBİTAK 4006</span>
+        <span><span class="en">Grades 9–12</span><span class="tr">9–12. sınıf</span></span>
+        <span><span class="en">2445 questions</span><span class="tr">2445 soru</span></span>
+        <span><span class="en">Zero dependencies</span><span class="tr">Sıfır bağımlılık</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 FEATURES -->
+  <section class="sec" id="features">
+    <div class="frame">
+      <span class="tick l" aria-hidden="true"></span><span class="tick r" aria-hidden="true"></span>
+      <div class="eyebrow">
+        <p class="hud muted"><span class="faint">01</span><span class="slash" aria-hidden="true">/</span><span class="en">Features</span><span class="tr">Özellikler</span></p>
+        <p class="hud faint hide-sm"><span class="en">Six parts · One app</span><span class="tr">Altı bölüm · Tek uygulama</span></p>
+      </div>
+      <div class="intro">
+        <h2 data-reveal><span class="en">Built for how a school <span class="accent">actually talks</span>.</span><span class="tr">Bir okulun <span class="accent">gerçekten konuştuğu</span> gibi.</span></h2>
+        <p data-reveal><span class="en">Teachers announce, students read and ask. Homework, exam prep and feedback live right next to the chats instead of in five different apps.</span><span class="tr">Öğretmen duyurur, öğrenci okur ve sorar. Ödev, yazılıya hazırlık ve geri bildirim beş ayrı uygulamada değil, sohbetlerin hemen yanında durur.</span></p>
+      </div>
+
+      <div class="lineup">
+        <!-- class groups -->
+        <article class="card" data-reveal style="--app:#a77bff">
+          <span class="bar" aria-hidden="true"></span>
+          <div class="card-head"><span class="hud num">01</span><p class="hud faint"><span class="en">Class groups</span><span class="tr">Sınıf grupları</span></p></div>
+          <div class="preview" aria-hidden="true">
+            <div class="chat">
+              <div class="chat-top hud"><i></i>9-A · <span class="en">Class group</span><span class="tr">Sınıf grubu</span></div>
+              <div class="msg"><small><span class="en">Teacher</span><span class="tr">Öğretmen</span></small><span class="en">Physics exam on Friday: units 1 and 2.</span><span class="tr">Cuma fizik yazılısı: 1. ve 2. üniteler.</span></div>
+              <div class="msg"><small><span class="en">Teacher</span><span class="tr">Öğretmen</span></small><span class="en">Don't forget your lab coats tomorrow.</span><span class="tr">Yarın önlüklerinizi unutmayın.</span></div>
+              <div class="ro hud"><span class="en">Only teachers can post</span><span class="tr">Yalnızca öğretmenler yazabilir</span></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3><span class="en">Class <em>groups</em></span><span class="tr">Sınıf <em>grupları</em></span></h3>
+            <p><span class="en">Every class gets its own group automatically. Only that class's teachers can post, so announcements never get buried under a hundred replies.</span><span class="tr">Her sınıfın kendiliğinden bir grubu olur. Yalnızca o sınıfın öğretmenleri yazabilir; duyurular yüzlerce mesajın altında kaybolmaz.</span></p>
+            <div class="tags"><span class="tag hl"><span class="en">Read-only for students</span><span class="tr">Öğrenciye salt okunur</span></span><span class="tag"><span class="en">Automatic</span><span class="tr">Otomatik</span></span></div>
+          </div>
+        </article>
+
+        <!-- homework -->
+        <article class="card" data-reveal style="--app:#ff8a3d">
+          <span class="bar" aria-hidden="true"></span>
+          <div class="card-head"><span class="hud num">02</span><p class="hud faint"><span class="en">Homework</span><span class="tr">Ödev takibi</span></p></div>
+          <div class="preview" aria-hidden="true">
+            <div class="list">
+              <div class="row"><span class="sub"><span class="en">Math</span><span class="tr">Mat</span></span><span class="t"><span class="en">Logarithms worksheet</span><span class="tr">Logaritma çalışma kâğıdı</span></span><span class="due hot"><span class="en">1 day</span><span class="tr">1 gün</span></span></div>
+              <div class="row"><span class="sub"><span class="en">Chem</span><span class="tr">Kim</span></span><span class="t"><span class="en">Lab report: reaction rates</span><span class="tr">Deney raporu: tepkime hızı</span></span><span class="due"><span class="en">3 days</span><span class="tr">3 gün</span></span></div>
+              <div class="row"><span class="sub"><span class="en">Lit</span><span class="tr">Edb</span></span><span class="t"><span class="en">Read chapter 4 of the novel</span><span class="tr">Romanın 4. bölümünü oku</span></span><span class="due"><span class="en">5 days</span><span class="tr">5 gün</span></span></div>
+              <div class="row"><span class="sub"><span class="en">Eng</span><span class="tr">İng</span></span><span class="t"><span class="en">Write about your future job</span><span class="tr">Gelecekteki mesleğini yaz</span></span><span class="due"><span class="en">1 week</span><span class="tr">1 hafta</span></span></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3><span class="en">Home<em>work</em></span><span class="tr">Ödev <em>takibi</em></span></h3>
+            <p><span class="en">Teachers post homework with a due date. Students see everything for their class in one list, with the days left counting down.</span><span class="tr">Öğretmen ödevi teslim tarihiyle girer. Öğrenci sınıfının bütün ödevlerini tek listede, kalan gün sayısıyla görür.</span></p>
+            <div class="tags"><span class="tag hl"><span class="en">Due dates</span><span class="tr">Teslim tarihi</span></span><span class="tag"><span class="en">Announced in the group</span><span class="tr">Grupta duyuru</span></span></div>
+          </div>
+        </article>
+
+        <!-- exam prep -->
+        <article class="card" data-reveal style="--app:#4fd06a">
+          <span class="bar" aria-hidden="true"></span>
+          <div class="card-head"><span class="hud num">03</span><p class="hud faint"><span class="en">Exam prep</span><span class="tr">Yazılıya hazırlık</span></p></div>
+          <div class="preview" aria-hidden="true">
+            <div class="quiz">
+              <div class="quiz-top hud"><span><span class="en">Math 11 · Unit 4</span><span class="tr">Matematik 11 · 4. ünite</span></span><span>7 / 20</span></div>
+              <div class="prog"><i></i></div>
+              <div class="q">log₂ 8 = ?</div>
+              <div class="opt"><b>A</b>2</div>
+              <div class="opt ok"><b>B</b>3</div>
+              <div class="opt"><b>C</b>4</div>
+              <div class="opt"><b>D</b>8</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3><span class="en">Exam <em>prep</em></span><span class="tr">Yazılıya <em>hazırlık</em></span></h3>
+            <p><span class="en">Pick a subject, pick a unit, solve. Every answer comes with an explanation. Units follow the 2026–2027 MEB yearly plans for each grade.</span><span class="tr">Dersi seç, üniteyi seç, çöz. Her cevabın ardından açıklama gelir. Üniteler her sınıf için MEB'in 2026–2027 yıllık planlarını izler.</span></p>
+            <div class="tags"><span class="tag hl"><span class="en">2445 questions</span><span class="tr">2445 soru</span></span><span class="tag"><span class="en">Unit by unit</span><span class="tr">Ünite ünite</span></span></div>
+          </div>
+        </article>
+
+        <!-- progress notes -->
+        <article class="card" data-reveal style="--app:#ff6fa8">
+          <span class="bar" aria-hidden="true"></span>
+          <div class="card-head"><span class="hud num">04</span><p class="hud faint"><span class="en">Progress notes</span><span class="tr">Gelişim notu</span></p></div>
+          <div class="preview" aria-hidden="true">
+            <div class="note">
+              <div class="note-top hud"><span><span class="en">Physics</span><span class="tr">Fizik</span></span><span><span class="en">Private</span><span class="tr">Özel</span></span></div>
+              <div class="levels"><span class="on"><span class="en">Very good</span><span class="tr">Çok iyi</span></span><span><span class="en">Good</span><span class="tr">İyi</span></span><span><span class="en">Fair</span><span class="tr">Orta</span></span></div>
+              <p><span class="en">Your participation in class has been great. Keep asking questions like that.</span><span class="tr">Derse katılımın çok iyi. Böyle soru sormaya devam et.</span></p>
+              <span class="who">→ <span class="en">only this student sees it</span><span class="tr">yalnızca bu öğrenci görür</span></span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3><span class="en">Progress <em>notes</em></span><span class="tr">Gelişim <em>notu</em></span></h3>
+            <p><span class="en">A teacher can send a student a short note on how they're doing, with an overall level. Only that student sees it, and it arrives as a notification.</span><span class="tr">Öğretmen bir öğrenciye gidişatı hakkında kısa bir not ve genel durum gönderir. Notu yalnızca o öğrenci görür; bildirim olarak gelir.</span></p>
+            <div class="tags"><span class="tag hl"><span class="en">One-to-one</span><span class="tr">Birebir</span></span><span class="tag"><span class="en">Four levels</span><span class="tr">Dört seviye</span></span></div>
+          </div>
+        </article>
+
+        <!-- chat -->
+        <article class="card" data-reveal style="--app:#2fc8e8">
+          <span class="bar" aria-hidden="true"></span>
+          <div class="card-head"><span class="hud num">05</span><p class="hud faint"><span class="en">Ask a teacher</span><span class="tr">Öğretmene sor</span></p></div>
+          <div class="preview" aria-hidden="true">
+            <div class="chat">
+              <div class="chat-top hud"><i></i><span class="en">Chemistry teacher</span><span class="tr">Kimya öğretmeni</span></div>
+              <div class="msg out"><span class="en">Is question 12 about Le Chatelier?</span><span class="tr">12. soru Le Chatelier ile mi ilgili?</span></div>
+              <div class="msg voice"><b>▶</b><span style="height:6px"></span><span style="height:12px"></span><span style="height:8px"></span><span style="height:15px"></span><span style="height:10px"></span><span style="height:5px"></span><span style="height:13px"></span><span style="height:9px"></span><span style="height:14px"></span><span style="height:6px"></span><span style="height:11px"></span><span style="height:7px"></span><em>0:12</em></div>
+              <div class="msg out"><span class="en">Got it, thank you!</span><span class="tr">Anladım, teşekkürler!</span></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3><span class="en">Ask a <em>teacher</em></span><span class="tr">Öğretmene <em>sor</em></span></h3>
+            <p><span class="en">Students can message teachers directly with text, photos and voice messages. They can't message each other, so the app stays about school.</span><span class="tr">Öğrenciler öğretmenlere yazı, fotoğraf ve sesli mesajla doğrudan yazabilir. Birbirlerine yazamazlar; uygulama okul işi için kalır.</span></p>
+            <div class="tags"><span class="tag hl"><span class="en">Students → teachers</span><span class="tr">Öğrenci → öğretmen</span></span><span class="tag"><span class="en">Voice</span><span class="tr">Ses</span></span><span class="tag"><span class="en">Photos</span><span class="tr">Fotoğraf</span></span></div>
+          </div>
+        </article>
+
+        <!-- look -->
+        <article class="card" data-reveal style="--app:#f2c14e">
+          <span class="bar" aria-hidden="true"></span>
+          <div class="card-head"><span class="hud num">06</span><p class="hud faint"><span class="en">Make it yours</span><span class="tr">Kişiselleştir</span></p></div>
+          <div class="preview" aria-hidden="true">
+            <div class="look">
+              <div class="box"><span class="lbl"><span class="en">Colour</span><span class="tr">Renk</span></span>
+                <div class="sw"><i class="on" style="background:#70449c"></i><i style="background:#3a6d94"></i><i style="background:#3f7f55"></i><i style="background:#b4573f"></i><i style="background:#b8436f"></i><i style="background:#8a6d1f"></i></div>
+                <div class="modes"><span><span class="en">Light</span><span class="tr">Açık</span></span><span class="on"><span class="en">Dark</span><span class="tr">Koyu</span></span><span><span class="en">Auto</span><span class="tr">Oto</span></span></div>
+              </div>
+              <div class="box"><span class="lbl"><span class="en">Background</span><span class="tr">Arka plan</span></span><div class="walls"><i></i><i></i><i></i></div></div>
+              <div class="box" style="grid-column: span 2"><span class="lbl"><span class="en">Text size</span><span class="tr">Yazı boyutu</span></span><div class="sizes"><span style="font-size:12px">Aa</span><span style="font-size:16px">Aa</span><span style="font-size:21px">Aa</span></div></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3><span class="en">Make it <em>yours</em></span><span class="tr">Kişisel<em>leştir</em></span></h3>
+            <p><span class="en">Light, dark or system theme, six colours, chat backgrounds (including the school emblem or your own photo) and text size. Turkish and English interface.</span><span class="tr">Açık, koyu ya da sistem teması, altı renk, sohbet arka planları (okul amblemi ya da kendi fotoğrafın dahil) ve yazı boyutu. Türkçe ve İngilizce arayüz.</span></p>
+            <div class="tags"><span class="tag hl"><span class="en">Themes</span><span class="tr">Tema</span></span><span class="tag">TR / EN</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 QUESTIONS -->
+  <section class="sec" id="questions">
+    <div class="frame">
+      <span class="tick l" aria-hidden="true"></span><span class="tick r" aria-hidden="true"></span>
+      <div class="eyebrow">
+        <p class="hud muted"><span class="faint">02</span><span class="slash" aria-hidden="true">/</span><span class="en">Exam prep</span><span class="tr">Yazılıya hazırlık</span></p>
+        <p class="hud faint hide-sm"><span class="en">Grades 9–12 · 32 subjects</span><span class="tr">9–12. sınıf · 32 ders</span></p>
+      </div>
+      <div class="intro">
+        <h2 data-reveal><span class="en"><span class="accent">2445</span> questions, sorted by unit.</span><span class="tr">Ünite ünite <span class="accent">2445</span> soru.</span></h2>
+        <p data-reveal><span class="en">Every grade has eight subjects, and every subject is split into the units of the official 2026–2027 yearly plans. Multiple choice with explanations, plus open-ended questions with a model answer. Teachers can add their own to any unit.</span><span class="tr">Her sınıfta sekiz ders var ve her ders resmî 2026–2027 yıllık planlarındaki ünitelere ayrılmış durumda. Açıklamalı çoktan seçmeli sorular ve örnek cevaplı açık uçlu sorular. Öğretmenler istedikleri üniteye kendi sorularını ekleyebilir.</span></p>
+      </div>
+      <div class="grades">
+        <div class="grade" data-reveal>
+          <div class="g">9<sup><span class="en">th</span><span class="tr">.</span></sup></div>
+          <div class="meter"><i style="width:100%"></i></div>
+          <p class="hud muted">763 <span class="en">questions</span><span class="tr">soru</span></p>
+          <p><span class="en">38 units, at least 20 questions in each.</span><span class="tr">38 ünite, her birinde en az 20 soru.</span></p>
+        </div>
+        <div class="grade" data-reveal>
+          <div class="g">10<sup><span class="en">th</span><span class="tr">.</span></sup></div>
+          <div class="meter"><i style="width:73%"></i></div>
+          <p class="hud muted">560 <span class="en">questions</span><span class="tr">soru</span></p>
+          <p><span class="en">70 per subject, spread across the units.</span><span class="tr">Her derste 70 soru, ünitelere dağıtılmış.</span></p>
+        </div>
+        <div class="grade" data-reveal>
+          <div class="g">11<sup><span class="en">th</span><span class="tr">.</span></sup></div>
+          <div class="meter"><i style="width:74%"></i></div>
+          <p class="hud muted">562 <span class="en">questions</span><span class="tr">soru</span></p>
+          <p><span class="en">70 per subject, spread across the units.</span><span class="tr">Her derste 70 soru, ünitelere dağıtılmış.</span></p>
+        </div>
+        <div class="grade" data-reveal>
+          <div class="g">12<sup><span class="en">th</span><span class="tr">.</span></sup></div>
+          <div class="meter"><i style="width:73%"></i></div>
+          <p class="hud muted">560 <span class="en">questions</span><span class="tr">soru</span></p>
+          <p><span class="en">70 per subject, including Revolution History.</span><span class="tr">Her derste 70 soru, İnkılap Tarihi dahil.</span></p>
+        </div>
+      </div>
+      <div class="cells">
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">∑</span><span class="hud faint">01</span></div><h3><span class="en">Mathematics</span><span class="tr">Matematik</span></h3><p><span class="en">From sets to integrals</span><span class="tr">Kümelerden integrale</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">F=ma</span><span class="hud faint">02</span></div><h3><span class="en">Physics</span><span class="tr">Fizik</span></h3><p><span class="en">Motion, waves, modern physics</span><span class="tr">Hareket, dalgalar, modern fizik</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">H₂O</span><span class="hud faint">03</span></div><h3><span class="en">Chemistry</span><span class="tr">Kimya</span></h3><p><span class="en">Atoms to organic compounds</span><span class="tr">Atomdan organik bileşiklere</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">DNA</span><span class="hud faint">04</span></div><h3><span class="en">Biology</span><span class="tr">Biyoloji</span></h3><p><span class="en">Cells, systems, ecology</span><span class="tr">Hücre, sistemler, ekoloji</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">Aa</span><span class="hud faint">05</span></div><h3><span class="en">Turkish Literature</span><span class="tr">Türk Dili ve Edebiyatı</span></h3><p><span class="en">Genres, periods, authors</span><span class="tr">Türler, dönemler, yazarlar</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">1923</span><span class="hud faint">06</span></div><h3><span class="en">History</span><span class="tr">Tarih</span></h3><p><span class="en">Revolution History in grade 12</span><span class="tr">12. sınıfta İnkılap Tarihi</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">N↑</span><span class="hud faint">07</span></div><h3><span class="en">Geography</span><span class="tr">Coğrafya</span></h3><p><span class="en">Natural and human systems</span><span class="tr">Doğal ve beşerî sistemler</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">EN</span><span class="hud faint">08</span></div><h3><span class="en">English</span><span class="tr">İngilizce</span></h3><p><span class="en">Grammar and vocabulary by theme</span><span class="tr">Temaya göre dil bilgisi ve kelime</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 ROLES -->
+  <section class="sec" id="roles">
+    <div class="frame">
+      <span class="tick l" aria-hidden="true"></span><span class="tick r" aria-hidden="true"></span>
+      <div class="eyebrow">
+        <p class="hud muted"><span class="faint">03</span><span class="slash" aria-hidden="true">/</span><span class="en">Roles</span><span class="tr">Roller</span></p>
+        <p class="hud faint hide-sm"><span class="en">Invite only · One code per person</span><span class="tr">Davetle · Kişi başı tek kod</span></p>
+      </div>
+      <div class="intro">
+        <h2 data-reveal><span class="en">The code <span class="accent">decides</span> who you are.</span><span class="tr">Kim olduğunu <span class="accent">kod belirler</span>.</span></h2>
+        <p data-reveal><span class="en">Nobody can just sign up. The school hands out single-use invite codes. A teacher's code starts with the letter O, and every code drops its owner straight into the right class.</span><span class="tr">Kimse kendi kendine kayıt olamaz. Okul tek kullanımlık davet kodları dağıtır. Öğretmen kodları O harfiyle başlar ve her kod sahibini doğrudan kendi sınıfına yerleştirir.</span></p>
+      </div>
+      <div class="roles">
+        <div class="role" data-reveal>
+          <div class="role-top"><span class="code"><b>O</b>K7M2-PQ4XR</span><span class="hud faint"><span class="en">Teacher code</span><span class="tr">Öğretmen kodu</span></span></div>
+          <h3><span class="en">Teacher</span><span class="tr">Öğretmen</span></h3>
+          <ul>
+            <li><span class="en">Posts announcements in their class groups</span><span class="tr">Kendi sınıf gruplarına duyuru yazar</span></li>
+            <li><span class="en">Gives homework with a due date</span><span class="tr">Teslim tarihli ödev verir</span></li>
+            <li><span class="en">Writes private progress notes to students</span><span class="tr">Öğrencilere özel gelişim notu yazar</span></li>
+            <li><span class="en">Adds questions to any unit</span><span class="tr">İstediği üniteye soru ekler</span></li>
+            <li><span class="en">Can message anyone in the school</span><span class="tr">Okuldaki herkese yazabilir</span></li>
+          </ul>
+        </div>
+        <div class="role" data-reveal>
+          <div class="role-top"><span class="code">HN3T8-WYB6D</span><span class="hud faint"><span class="en">Student code</span><span class="tr">Öğrenci kodu</span></span></div>
+          <h3><span class="en">Student</span><span class="tr">Öğrenci</span></h3>
+          <ul>
+            <li><span class="en">Reads their class group</span><span class="tr">Sınıf grubunu okur</span></li>
+            <li><span class="en">Sees homework and days left</span><span class="tr">Ödevleri ve kalan günleri görür</span></li>
+            <li><span class="en">Solves questions at their own grade level</span><span class="tr">Kendi sınıf seviyesinde soru çözer</span></li>
+            <li><span class="en">Messages teachers directly</span><span class="tr">Öğretmenlere doğrudan yazar</span></li>
+            <li class="no"><span class="en">Can't message other students</span><span class="tr">Diğer öğrencilere yazamaz</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 HOW -->
+  <section class="sec" id="how">
+    <div class="frame">
+      <span class="tick l" aria-hidden="true"></span><span class="tick r" aria-hidden="true"></span>
+      <div class="eyebrow">
+        <p class="hud muted"><span class="faint">04</span><span class="slash" aria-hidden="true">/</span><span class="en">How it works</span><span class="tr">Nasıl çalışır</span></p>
+        <p class="hud faint hide-sm"><span class="en">Server · Phone · Pi</span><span class="tr">Sunucu · Telefon · Pi</span></p>
+      </div>
+      <div class="intro">
+        <h2 data-reveal><span class="en">Small enough to run <span class="accent">on a Pi</span>.</span><span class="tr">Bir <span class="accent">Pi üzerinde</span> çalışacak kadar küçük.</span></h2>
+        <p data-reveal><span class="en">No frameworks, no packages to install. A single Node.js server with a built-in database, built on the ATICOM messaging infrastructure.</span><span class="tr">Ne framework var ne de kurulacak paket. Yerleşik veritabanıyla tek bir Node.js sunucusu; ATICOM mesajlaşma altyapısı üzerine kurulu.</span></p>
+      </div>
+      <div class="cells">
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">node</span><span class="hud faint">01</span></div><h3>Node.js 22</h3><p><span class="en">Zero dependencies</span><span class="tr">Sıfır bağımlılık</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">.db</span><span class="hud faint">02</span></div><h3>SQLite</h3><p><span class="en">Built into Node</span><span class="tr">Node'un içinde</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">pwa</span><span class="hud faint">03</span></div><h3><span class="en">Installable</span><span class="tr">Kurulabilir</span></h3><p><span class="en">Works like a phone app</span><span class="tr">Telefon uygulaması gibi</span></p></div>
+        <div class="cell" data-reveal><div class="cell-top"><span class="glyph">push</span><span class="hud faint">04</span></div><h3>Web Push</h3><p><span class="en">Notifications on the phone</span><span class="tr">Telefona bildirim</span></p></div>
+        <div class="cell wide term-cell" data-reveal>
+          <div class="term"><span class="d">$</span> node server.js invite teacher 9-A 10-B
+<span class="ok">✓</span> Teacher code: OK7M2-PQ4XR
+<span class="d">$</span> node server.js invite student 9-A 30
+<span class="ok">✓</span> 30 student codes for 9-A
+<span class="d">$</span> <span class="cur"></span></div>
+        </div>
+        <div class="cell wide" data-reveal><div class="cell-top"><span class="glyph">~/pi</span><span class="hud faint"><span class="en">Server</span><span class="tr">Sunucu</span></span></div><h3>Raspberry Pi 5</h3><p><span class="en">The whole school runs on a computer the size of a credit card, reachable over HTTPS through Tailscale.</span><span class="tr">Bütün okul, kredi kartı boyutunda bir bilgisayarda çalışır; Tailscale ile HTTPS üzerinden erişilir.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAND -->
+  <section class="sec">
+    <div class="frame">
+      <span class="tick l" aria-hidden="true"></span><span class="tick r" aria-hidden="true"></span>
+      <div class="eyebrow">
+        <p class="hud muted"><span class="faint">05</span><span class="slash" aria-hidden="true">/</span><span class="en">Why</span><span class="tr">Neden</span></p>
+        <p class="hud faint hide-sm">TÜBİTAK 4006</p>
+      </div>
+      <div class="band">
+        <p class="hud accent" data-reveal><span class="en">Made by a student</span><span class="tr">Bir öğrenci yaptı</span></p>
+        <h2 class="big" data-reveal><span class="en">Built for <span class="serif">our</span> school.</span><span class="tr"><span class="serif">Kendi</span> okulumuz için.</span></h2>
+        <p data-reveal><span class="en">School messages were scattered across group chats that anyone could flood. EDUCOM puts teachers, homework and studying in one quiet place, and keeps it on hardware the school can own.</span><span class="tr">Okul mesajları herkesin doldurabildiği grup sohbetlerine dağılmıştı. EDUCOM öğretmenleri, ödevleri ve ders çalışmayı tek ve sakin bir yerde toplar; okulun sahip olabileceği bir donanımda tutar.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- START -->
+  <section class="sec">
+    <div class="frame">
+      <span class="tick l" aria-hidden="true"></span><span class="tick r" aria-hidden="true"></span>
+      <div class="start">
+        <p class="hud faint"><span class="en">Open source · Türkiye</span><span class="tr">Açık kaynak · Türkiye</span></p>
+        <h2 class="big" data-reveal><span class="en">Have a <span class="accent">look</span>.</span><span class="tr">Bir <span class="accent">göz at</span>.</span></h2>
+        <p><span class="en">The code, the question bank and the setup guide are all on GitHub.</span><span class="tr">Kod, soru bankası ve kurulum rehberi GitHub'da.</span></p>
+        <div class="ctas">
+          <a class="btn btn-solid" href="https://github.com/SirAtilotty/EDUCOM" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#gh"/></svg>
+            github.com/SirAtilotty/EDUCOM
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="frame">
+    <div class="foot">
+      <div class="me">
+        <svg aria-hidden="true"><use href="#logo"/></svg>
+        <p><span class="en">EDUCOM. A school app for class groups, homework, exam prep and progress notes. A TÜBİTAK 4006 project.</span><span class="tr">EDUCOM. Sınıf grupları, ödev takibi, yazılıya hazırlık ve gelişim notları için bir okul uygulaması. TÜBİTAK 4006 projesi.</span></p>
+      </div>
+      <nav aria-label="Sections">
+        <p class="hud faint"><span class="en">On this page</span><span class="tr">Bu sayfada</span></p>
+        <ul>
+          <li><a href="#features"><span class="en">Features</span><span class="tr">Özellikler</span></a></li>
+          <li><a href="#questions"><span class="en">Exam prep</span><span class="tr">Yazılıya hazırlık</span></a></li>
+          <li><a href="#roles"><span class="en">Roles</span><span class="tr">Roller</span></a></li>
+          <li><a href="#how"><span class="en">How it works</span><span class="tr">Nasıl çalışır</span></a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Elsewhere">
+        <p class="hud faint"><span class="en">Elsewhere</span><span class="tr">Bağlantılar</span></p>
+        <ul>
+          <li><a href="https://github.com/SirAtilotty/EDUCOM" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://github.com/SirAtilotty" target="_blank" rel="noopener">SirAtilotty</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot-bar hud">
+      <span>© <span id="yr"></span> Atilla İlhan</span>
+      <span><span class="en">Plain HTML · No frameworks</span><span class="tr">Düz HTML · Framework yok</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  /* language toggle */
+  var TITLES = { en: "EDUCOM · The whole school, in one app", tr: "EDUCOM · Bütün okul, tek bir uygulamada" };
+  var LINES = {
+    en: ["class groups", "homework with due dates", "2445 questions · grades 9-12", "runs on a raspberry pi"],
+    tr: ["sınıf grupları", "teslim tarihli ödevler", "2445 soru · 9-12. sınıf", "raspberry pi üzerinde çalışır"]
+  };
+  function applyLang() { document.title = TITLES[root.lang] || TITLES.en; }
+  applyLang();
+  document.getElementById("lang").addEventListener("click", function () {
+    root.lang = root.lang === "tr" ? "en" : "tr";
+    try { localStorage.setItem("educom-lang", root.lang); } catch (e) {}
+    // Paylaşılan bağlantıdaki ?lang= seçimi düğmeyle değişince adres de güncellensin.
+    var u = new URL(location.href);
+    if (u.searchParams.has("lang")) { u.searchParams.set("lang", root.lang); history.replaceState(null, "", u); }
+    applyLang();
+    restartTyped();
+  });
+
+  /* theme toggle */
+  function isDark() {
+    var t = root.getAttribute("data-theme");
+    return t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  document.getElementById("theme").addEventListener("click", function () {
+    var next = isDark() ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("educom-theme", next); } catch (e) {}
+    drawDots();
+  });
+
+  /* typed line */
+  var typed = document.getElementById("typed"), run = 0;
+  function restartTyped() {
+    var lines = LINES[root.lang] || LINES.en, me = ++run;
+    typed.textContent = "";
+    if (still) { typed.textContent = lines[0]; return; }
+    (async function () {
+      var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+      await wait(900);
+      for (var i = 0; me === run; i = (i + 1) % lines.length) {
+        for (var ch of lines[i]) { if (me !== run) return; typed.textContent += ch; await wait(55); }
+        await wait(1600);
+        while (typed.textContent) { if (me !== run) return; typed.textContent = typed.textContent.slice(0, -1); await wait(26); }
+        await wait(300);
+      }
+    })();
+  }
+  restartTyped();
+
+  /* reveal on scroll */
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll("[data-reveal]").forEach(function (el, i) {
+    el.style.transitionDelay = (i % 4) * 70 + "ms";
+    io.observe(el);
+  });
+
+  /* nav active link */
+  var links = document.querySelectorAll(".nav-links a");
+  var ids = ["features", "questions", "roles", "how"];
+  addEventListener("scroll", function () {
+    var cur = "top";
+    ids.forEach(function (id) { var s = document.getElementById(id); if (s && s.getBoundingClientRect().top < 160) cur = id; });
+    links.forEach(function (a) { a.classList.toggle("on", a.getAttribute("href") === "#" + cur); });
+  }, { passive: true });
+
+  /* hero dot field */
+  var cv = document.getElementById("dots"), ctx = cv.getContext("2d");
+  var W = 0, H = 0, mouse = { x: -9999, y: -9999 }, raf = 0;
+  function cssVar(n) { return getComputedStyle(root).getPropertyValue(n).trim(); }
+  function size() {
+    var dpr = Math.min(devicePixelRatio || 1, 2), b = cv.getBoundingClientRect();
+    W = b.width; H = b.height; cv.width = W * dpr; cv.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function drawDots() {
+    ctx.clearRect(0, 0, W, H);
+    var gap = 26, base = cssVar("--line-strong"), acc = cssVar("--accent");
+    for (var y = gap / 2; y < H; y += gap) for (var x = gap / 2; x < W; x += gap) {
+      var d = Math.hypot(mouse.x - x, mouse.y - y), k = Math.max(0, 1 - d / 170);
+      ctx.fillStyle = k > .05 ? acc : base;
+      ctx.globalAlpha = k > .05 ? .25 + k * .75 : 1;
+      ctx.beginPath(); ctx.arc(x, y, 1 + k * 2.2, 0, Math.PI * 2); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+  }
+  function queue() { if (!raf) raf = requestAnimationFrame(function () { raf = 0; drawDots(); }); }
+  var hero = document.querySelector(".hero");
+  if (!still && matchMedia("(pointer: fine)").matches) {
+    hero.addEventListener("pointermove", function (e) { var b = cv.getBoundingClientRect(); mouse.x = e.clientX - b.left; mouse.y = e.clientY - b.top; queue(); });
+    hero.addEventListener("pointerleave", function () { mouse.x = mouse.y = -9999; queue(); });
+  }
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", drawDots);
+  addEventListener("resize", function () { size(); drawDots(); });
+  size(); drawDots();
+})();
+</script>
+</body>
+</html>
