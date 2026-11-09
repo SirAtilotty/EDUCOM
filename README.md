@@ -38,7 +38,7 @@ Sunucuda `BASE_URL=https://adresin` ayarla ki kodların yanındaki linkler doğr
 
 ## Veriler
 
-Her şey `data/` klasöründedir: veritabanı, fotoğraflar, sesli mesajlar ve bildirim anahtarı. Bu klasör git'e girmez; kimseyle paylaşma. Hazır soru bankası `questions/` klasöründedir: her sınıf ve ders için bir dosya (`9-matematik.json` gibi), içinde ünite adı, konuları ve sorular. Üniteler ve konular MEB'in tymm.meb.gov.tr adresinde yayımladığı 2026-2027 taslak çerçeve yıllık planlarından (Anadolu Lisesi) alınmıştır. Sorular bu plandaki öğrenme çıktılarına göre yazılmış özgün sorulardır; ÖDGM, MEBİ ya da ders kitabı sorularının kopyası değildir. Okulda kullanmadan önce ders öğretmenlerinin gözden geçirmesi iyi olur.
+Her şey `data/` klasöründedir: veritabanı, fotoğraflar, sesli mesajlar ve bildirim anahtarı. Bu klasör git'e girmez; kimseyle paylaşma. Hazır soru bankası `questions/` klasöründedir: her sınıf ve ders için bir dosya (`9-matematik.json` gibi), içinde ünite adı, konuları ve sorular. Üniteler ve konular MEB'in tymm.meb.gov.tr adresinde yayımladığı 2026-2027 taslak çerçeve yıllık planlarından alınmıştır. 
 
 ## Raspberry Pi'de ATICOM'un yanında çalıştırma
 
@@ -46,7 +46,7 @@ EDUCOM 3001 portunu ve farklı bir çerez adını kullanır, bu yüzden aynı Pi
 
 1. Projeyi Pi'ye kopyala (aşağıdaki "Güncelleme" komutuyla).
 
-2. Tailscale ile ikinci bir HTTPS adresi aç (ATICOM 443'te kalır, EDUCOM 8443'e gelir):
+2. Tailscale ile bir HTTPS adresi aç (EDUCOM 8443'e gelir):
 
    ```sh
    sudo tailscale funnel --bg --https=8443 3001
