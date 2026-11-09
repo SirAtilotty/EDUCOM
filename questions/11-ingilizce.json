@@ -1,0 +1,137 @@
+{
+  "grade": 11,
+  "subject": "İngilizce",
+  "source": "MEB 2026-2027 çerçeve yıllık planı",
+  "units": [
+    {
+      "name": "Future Jobs",
+      "topics": "",
+      "questions": [
+        {"q":"My sister is good ___ solving problems, so she wants to be an engineer.","choices":["on","at","in","for","with"],"answer":1,"explain":"\"be good at\" kalıbı bir konuda iyi olmayı anlatır."},
+        {"q":"I'm interested ___ working with animals, so I'd like to be a vet.","choices":["to","at","on","in","of"],"answer":3,"explain":"\"be interested in + V-ing\" bir şeye ilgi duymayı anlatır."},
+        {"q":"A person who designs buildings is called an ___.","choices":["athlete","accountant","astronaut","attendant","architect"],"answer":4,"explain":"Mimar binaları tasarlar; accountant muhasebeci, astronaut astronottur."},
+        {"q":"A ___ works in a hospital and helps doctors take care of patients.","choices":["pilot","nurse","lawyer","chef","mechanic"],"answer":1,"explain":"Hemşire (nurse) hastanede hastalarla ilgilenir."},
+        {"q":"She ___ speak three languages fluently, so she can become a translator.","choices":["mustn't","can't","can","shouldn't","needn't"],"answer":2,"explain":"Yetenek anlatmak için \"can\" kullanılır."},
+        {"q":"In the future, robots ___ do many dangerous jobs instead of people.","choices":["are able to yesterday","were able to","could yesterday","will be able to","was able"],"answer":3,"explain":"Gelecekteki yetenek \"will be able to\" ile ifade edilir."},
+        {"q":"Choose the best answer: \"Why do you want to be a software developer?\"","choices":["No, I don't like it.","Yes, I am a developer.","At nine o'clock.","In a big office yesterday.","Because I'm keen on coding and creating apps."],"answer":4,"explain":"\"Why\" sorusuna \"Because\" ile neden belirten bir cevap verilir; \"be keen on\" bir şeye hevesli olmak demektir."}
+      ]
+    },
+    {
+      "name": "Hobbies and Skills",
+      "topics": "",
+      "questions": [
+        {"q":"I ___ the guitar for three years. I started when I was fourteen.","choices":["play","have played","am playing","played tomorrow","will play"],"answer":1,"explain":"Geçmişte başlayıp hâlâ süren eylemler için Present Perfect (have + V3) ve \"for\" kullanılır."},
+        {"q":"She has been interested in photography ___ 2022.","choices":["ago","for","since","during","at"],"answer":2,"explain":"Başlangıç zamanı \"since\" ile, süre \"for\" ile belirtilir."},
+        {"q":"Have you ever ___ a horse?","choices":["riding","rode","ride","ridden","rides"],"answer":3,"explain":"\"Have you ever\" sorusunda fiilin üçüncü hâli (V3) kullanılır: ride-rode-ridden."},
+        {"q":"My brother enjoys ___ model airplanes in his free time.","choices":["makes","to make","make","made","making"],"answer":4,"explain":"\"enjoy\" fiilinden sonra fiil -ing alır."},
+        {"q":"Which hobby needs patience and a needle?","choices":["Skydiving","Knitting","Running","Surfing","Boxing"],"answer":1,"explain":"Örgü örmek (knitting) sabır ve şiş/iğne gerektirir."},
+        {"q":"A: \"How long have you been learning chess?\" B: \"___\"","choices":["Yes, I have.","Yesterday at five.","For about two years.","Twice a week tomorrow.","In the park."],"answer":2,"explain":"\"How long\" süre sorar; \"for + süre\" ile cevap verilir."},
+        {"q":"I have never ___ bungee jumping. It looks scary!","choices":["tries","try","trying","tried","to try"],"answer":3,"explain":"\"have never + V3\" hiç yapmadığımız şeyleri anlatır."}
+      ]
+    },
+    {
+      "name": "Hard Times",
+      "topics": "",
+      "questions": [
+        {"q":"When I was a child, I ___ play in the street with my friends every evening.","choices":["uses to","use to","am used to","using to","used to"],"answer":4,"explain":"Geçmişteki alışkanlıklar \"used to + V1\" ile anlatılır."},
+        {"q":"People didn't ___ have electricity in most villages a hundred years ago.","choices":["used to","use to","using","uses to","to use"],"answer":1,"explain":"Olumsuz ve soru cümlelerinde \"didn't use to\" yazılır."},
+        {"q":"I ___ my homework when the lights went out.","choices":["do","am doing","was doing","have done","will do"],"answer":2,"explain":"Geçmişte devam eden bir eylem başka bir eylemle kesildiğinde Past Continuous (was/were + V-ing) kullanılır."},
+        {"q":"During the war, many families ___ to leave their homes.","choices":["having","have","has","had","will have"],"answer":3,"explain":"Geçmişteki zorunluluk \"had to\" ile anlatılır."},
+        {"q":"A period in which there is not enough food for many people is called a ___.","choices":["harvest","festival","fortune","holiday","famine"],"answer":4,"explain":"Famine kıtlık demektir; harvest hasat anlamına gelir."},
+        {"q":"While they ___ across the bridge, the earthquake started.","choices":["walked","were walking","walk","are walking","have walked"],"answer":1,"explain":"\"While\" genellikle devam eden eylemle (Past Continuous) kullanılır."},
+        {"q":"Write about how life was different for your grandparents. Use \"used to\" and \"didn't use to\" in at least three sentences.","explain":"Örnek cevap: My grandparents used to live in a small village. They didn't use to have a television, so they used to listen to the radio in the evenings. My grandfather used to walk to school for an hour every day. They didn't use to buy bread; my grandmother used to bake it at home."}
+      ]
+    },
+    {
+      "name": "What a Life",
+      "topics": "",
+      "questions": [
+        {"q":"By the time we arrived at the cinema, the film ___.","choices":["already starts","has already started","had already started","is starting","will start"],"answer":2,"explain":"Geçmişteki bir olaydan daha önce olmuş eylemler Past Perfect (had + V3) ile anlatılır."},
+        {"q":"She ___ never seen the sea before she moved to Ordu.","choices":["was","has","have","had","did"],"answer":3,"explain":"Taşınmadan önceki durumu anlatmak için \"had never seen\" kullanılır."},
+        {"q":"After he ___ university, he started working as a journalist.","choices":["is finishing","finishes","has finished","will finish","had finished"],"answer":4,"explain":"İki geçmiş eylemden önce olanı Past Perfect ile, sonra olanı Past Simple ile yazılır."},
+        {"q":"Which word best completes the biography? \"Marie Curie was the first woman ___ won a Nobel Prize.\"","choices":["which","who","where","when","whose"],"answer":1,"explain":"İnsanlardan söz eden sıfat cümlelerinde \"who\" kullanılır."},
+        {"q":"A book that someone writes about their own life is called an ___.","choices":["atlas","encyclopedia","autobiography","dictionary","anthology"],"answer":2,"explain":"Autobiography otobiyografi demektir; başkasının hayatını anlatan kitap biography'dir."},
+        {"q":"Choose the correct order: \"Aziz Sancar / in 2015 / the Nobel Prize in Chemistry / won\"","choices":["The Nobel Prize in Chemistry won Aziz Sancar in 2015.","In 2015 won Aziz Sancar the Nobel Prize in Chemistry.","Won Aziz Sancar in 2015 the Nobel Prize in Chemistry.","Aziz Sancar won the Nobel Prize in Chemistry in 2015.","Aziz Sancar in 2015 the Nobel Prize won in Chemistry."],"answer":3,"explain":"İngilizcede temel sıra: özne + fiil + nesne + zaman."},
+        {"q":"When I got to the station, I realised I ___ my ticket at home.","choices":["will leave","have left","leave","am leaving","had left"],"answer":4,"explain":"Bileti evde bırakma eylemi istasyona varmadan önce olmuştur; Past Perfect kullanılır."}
+      ]
+    },
+    {
+      "name": "Back to the Past",
+      "topics": "",
+      "questions": [
+        {"q":"Hagia Sophia ___ in the 6th century.","choices":["built","was built","is building","has built","builds"],"answer":1,"explain":"Eylemi kimin yaptığı değil, eylemin kendisi önemliyse edilgen yapı (was/were + V3) kullanılır."},
+        {"q":"The ancient city of Troy ___ by archaeologists in the 19th century.","choices":["discovers","discovered","was discovered","is discovering","has discovering"],"answer":2,"explain":"Şehir keşfetmez, keşfedilir; bu yüzden edilgen yapı gerekir."},
+        {"q":"Göbeklitepe is believed to be about 12,000 years ___.","choices":["since","ago","before","old","past"],"answer":3,"explain":"Bir şeyin yaşını belirtmek için \"years old\" kullanılır."},
+        {"q":"A place where old and valuable objects are kept and shown to the public is a ___.","choices":["bakery","stadium","factory","pharmacy","museum"],"answer":4,"explain":"Museum müze demektir."},
+        {"q":"Choose the correct passive form: \"They opened the museum in 1935.\"","choices":["The museum opened them in 1935.","The museum was opened in 1935.","The museum is opened in 1935 by they.","They were opened the museum in 1935.","The museum has open in 1935."],"answer":1,"explain":"Nesne başa gelir, fiil \"was + V3\" olur."},
+        {"q":"Many old coins ___ during the excavation last summer.","choices":["found","was found","were found","are finding","have find"],"answer":2,"explain":"Özne çoğul olduğu için \"were + V3\" kullanılır."},
+        {"q":"Write three sentences about a historical place in Turkey using the passive voice.","explain":"Örnek cevap: The Süleymaniye Mosque was designed by Mimar Sinan. It was built in the 16th century. Today it is visited by thousands of tourists every year."}
+      ]
+    },
+    {
+      "name": "Open Your Heart",
+      "topics": "",
+      "questions": [
+        {"q":"A: \"I feel stressed before exams.\" B: \"You ___ get enough sleep and take short breaks.\"","choices":["can't","shouldn't","mustn't","should","wouldn't"],"answer":3,"explain":"Tavsiye vermek için \"should\" kullanılır."},
+        {"q":"If I were you, I ___ talk to my teacher about the problem.","choices":["have","will","am","did","would"],"answer":4,"explain":"\"If I were you, I would...\" kalıbı tavsiye vermek için kullanılır."},
+        {"q":"Which word describes someone who feels sad because they are alone?","choices":["excited","lonely","proud","relieved","cheerful"],"answer":1,"explain":"Lonely yalnız ve bu yüzden üzgün hisseden kişiyi anlatır."},
+        {"q":"A: \"My best friend is angry with me.\" B: \"Why don't you ___ to her?\"","choices":["apologised","apologising","apologise","to apologise","apologises"],"answer":2,"explain":"\"Why don't you + V1?\" öneri kalıbıdır."},
+        {"q":"Choose the most polite request.","choices":["Give help.","Help me now.","You help me.","Could you help me with this, please?","I want help, quickly."],"answer":3,"explain":"\"Could you ..., please?\" kibar rica kalıbıdır."},
+        {"q":"You had better ___ your parents where you are going.","choices":["tells","to tell","telling","told","tell"],"answer":4,"explain":"\"had better\" kalıbından sonra fiil yalın hâlde (V1) gelir."},
+        {"q":"Your friend feels nervous about a school presentation. Write a short message giving at least three pieces of advice.","explain":"Örnek cevap: Don't worry, you'll be great! You should practise in front of a mirror or your family. If I were you, I would prepare small note cards. You'd better get a good night's sleep before the presentation. Take a deep breath and speak slowly."}
+      ]
+    },
+    {
+      "name": "Facts About Turkey",
+      "topics": "",
+      "questions": [
+        {"q":"The first Bosphorus Bridge ___ in 1973.","choices":["built","is building","was built","has build","builds"],"answer":2,"explain":"Köprü kendisi inşa etmez, inşa edilir; geçmişte olduğu için edilgen geçmiş zaman (was + V3) kullanılır."},
+        {"q":"Cappadocia ___ for its fairy chimneys and hot-air balloons.","choices":["knows","is known","is knowing","knew","has know"],"answer":1,"explain":"\"be known for\" bir şeyle tanınmak demektir."},
+        {"q":"Turkish coffee ___ to UNESCO's Intangible Cultural Heritage list in 2013.","choices":["adds","added","was added","is adding","has add"],"answer":2,"explain":"Kahve listeye eklenir; edilgen yapı (was + V3) kullanılır."},
+        {"q":"Hazelnuts ___ mainly in the Black Sea region, especially in Ordu and Giresun.","choices":["growing","grow them","is grown","are grown","are growing them"],"answer":3,"explain":"Fındık yetiştirilir; çoğul özne için \"are + V3\" kullanılır."},
+        {"q":"Ankara ___ the capital city of Turkey in 1923.","choices":["become","becomes","has become","becoming","became"],"answer":4,"explain":"Geçmişte belirli bir yılda olan olay Past Simple ile anlatılır."},
+        {"q":"Which is the largest lake in Turkey?","choices":["Lake Tuz","Lake Van","Lake Eğirdir","Lake İznik","Lake Beyşehir"],"answer":1,"explain":"Van Gölü Türkiye'nin en büyük gölüdür."},
+        {"q":"Write a short paragraph introducing your city to a foreign visitor. Use at least two passive sentences.","explain":"Örnek cevap: Ordu is a beautiful city on the Black Sea coast. It is known for its hazelnuts, which are grown all around the region. Boztepe can be reached by cable car and the whole city is seen from the top. Visitors are also offered delicious local food like pancar çorbası and hamsi."}
+      ]
+    },
+    {
+      "name": "Sports",
+      "topics": "",
+      "questions": [
+        {"q":"In football, players ___ touch the ball with their hands, except the goalkeeper.","choices":["have to","must","mustn't","should","can"],"answer":2,"explain":"Yasak anlatmak için \"mustn't\" kullanılır."},
+        {"q":"In basketball, you ___ bounce the ball while you are moving.","choices":["needn't","don't have to","mustn't","have to","couldn't"],"answer":3,"explain":"Kural gereği zorunluluk \"have to\" ile anlatılır."},
+        {"q":"Which sport is played with a racket and a shuttlecock?","choices":["Swimming","Volleyball","Handball","Golf","Badminton"],"answer":4,"explain":"Badmintonda raket ve tüylü top (shuttlecock) kullanılır."},
+        {"q":"Wrestling is a traditional sport in Turkey, and oil wrestling ___ in Edirne every year.","choices":["holds","is held","held them","is holding","has hold"],"answer":1,"explain":"Kırkpınar Yağlı Güreşleri her yıl Edirne'de düzenlenir; edilgen yapı kullanılır."},
+        {"q":"You ___ wear a helmet when you ride a bike. It is not a rule, but it is a good idea.","choices":["don't have to","mustn't","should","can't","needn't to"],"answer":2,"explain":"Kural değil tavsiye olduğu için \"should\" uygundur."},
+        {"q":"In tennis, you ___ wear special shoes, but it is better if you do.","choices":["must","mustn't","have to","don't have to","can't"],"answer":3,"explain":"\"don't have to\" zorunlu olmadığını, \"mustn't\" ise yasak olduğunu anlatır."},
+        {"q":"Choose the correct sentence.","choices":["Swimming is good for your whole body.","Swim is good for your whole body.","Swimming are good for your whole body.","To swimming is good for your body.","Swims is good for your whole body."],"answer":0,"explain":"Fiil özne olarak kullanılınca -ing alır (gerund) ve tekil sayılır."}
+      ]
+    },
+    {
+      "name": "My Friends",
+      "topics": "",
+      "questions": [
+        {"q":"A friend ___ always tells the truth is very valuable.","choices":["who","which","where","when","what"],"answer":0,"explain":"İnsanları niteleyen sıfat cümlelerinde \"who\" kullanılır."},
+        {"q":"This is the café ___ we first met.","choices":["where","who","which","when","whose"],"answer":0,"explain":"Yer bildiren sıfat cümlelerinde \"where\" kullanılır."},
+        {"q":"Elif is the girl ___ brother plays in the school band.","choices":["whose","who","which","where","whom"],"answer":0,"explain":"Sahiplik anlatan sıfat cümlelerinde \"whose\" kullanılır."},
+        {"q":"Someone who is always ready to help others is ___.","choices":["helpful","selfish","lazy","rude","jealous"],"answer":0,"explain":"Helpful yardımsever demektir."},
+        {"q":"Someone who keeps their promises is ___.","choices":["reliable","bossy","mean","moody","careless"],"answer":0,"explain":"Reliable güvenilir demektir."},
+        {"q":"Can and Ali get on well ___ each other.","choices":["with","to","at","for","of"],"answer":0,"explain":"\"get on well with\" biriyle iyi anlaşmak demektir."},
+        {"q":"Describe your best friend in a short paragraph. Use at least two relative clauses (who, which, where, whose).","explain":"Örnek cevap: My best friend is Zeynep, who has been in my class since primary school. She is a reliable and funny person who always makes me laugh. We often go to the library, where we study together. She has a cat whose name is Pamuk."}
+      ]
+    },
+    {
+      "name": "Values and Norms",
+      "topics": "",
+      "questions": [
+        {"q":"You ___ wear a seatbelt in a car. It's the law.","choices":["must","mustn't","needn't","might","could"],"answer":0,"explain":"Kural ve zorunluluk bildirirken \"must\" kullanılır."},
+        {"q":"Write three rules for your school using must and mustn't.","explain":"Örnek cevap: Students must arrive at school on time. We mustn't use our phones during lessons. We must respect our teachers and classmates."},
+        {"q":"It is important ___ respect other people's opinions.","choices":["to","for","at","with","by"],"answer":0,"explain":"\"It is important to + V1\" kalıbı önemli olan davranışı anlatır."},
+        {"q":"In Turkish culture, people usually take ___ their shoes before entering a home.","choices":["off","on","up","out","over"],"answer":0,"explain":"\"take off\" çıkarmak demektir."},
+        {"q":"Which behaviour shows respect for elders in Turkey?","choices":["Kissing their hands during holidays","Interrupting them while they speak","Ignoring them","Sitting while they stand on a bus","Shouting at them"],"answer":0,"explain":"Bayramlarda büyüklerin elini öpmek Türk kültüründe saygı göstergesidir."},
+        {"q":"You ___ talk loudly in a library.","choices":["mustn't","must","have to","should","can always"],"answer":0,"explain":"Kütüphanede yüksek sesle konuşmak yasaktır; \"mustn't\" kullanılır."},
+        {"q":"Honesty, kindness and responsibility are examples of ___.","choices":["values","vegetables","vehicles","villages","volumes"],"answer":0,"explain":"Values değerler demektir."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "grade": 12,
+  "subject": "Matematik",
+  "source": "MEB 2026-2027 çerçeve yıllık planı",
+  "units": [
+    {
+      "name": "Üstel ve Logaritmik Fonksiyonlar",
+      "topics": "",
+      "questions": [
+        {"q":"log₂ 32 ifadesinin değeri kaçtır?","choices":["4","5","6","8","16"],"answer":1,"explain":"2⁵ = 32 olduğundan log₂ 32 = 5."},
+        {"q":"log₃ 81 kaçtır?","choices":["3","4","9","27","81"],"answer":1,"explain":"3⁴ = 81 olduğundan log₃ 81 = 4."},
+        {"q":"ln e³ ifadesinin değeri kaçtır?","choices":["1","e","3e","3","e³"],"answer":3,"explain":"ln x = logₑ x olduğundan ln e³ = 3."},
+        {"q":"log 4 + log 25 işleminin sonucu kaçtır?","choices":["1","2","log 29","10","100"],"answer":1,"explain":"log 4 + log 25 = log 100 = 2."},
+        {"q":"log₂ 5 = a ise log₂ 40 ifadesinin a türünden eşiti hangisidir?","choices":["a³","3a","a + 8","8a","a + 3"],"answer":4,"explain":"log₂ 40 = log₂ (8 · 5) = log₂ 8 + log₂ 5 = 3 + a."},
+        {"q":"2ˣ⁻¹ = 32 denkleminin çözümü kaçtır?","choices":["4","5","6","16","31"],"answer":2,"explain":"32 = 2⁵ olduğundan x − 1 = 5, x = 6."},
+        {"q":"log₂(x + 1) = 3 denkleminin çözümü kaçtır?","choices":["5","6","7","8","9"],"answer":2,"explain":"x + 1 = 2³ = 8 olduğundan x = 7."},
+        {"q":"f(x) = log₃(x − 1) fonksiyonunun tersi hangisidir?","choices":["f⁻¹(x) = 3x + 1","f⁻¹(x) = 3ˣ − 1","f⁻¹(x) = x³ + 1","f⁻¹(x) = log₃ x + 1","f⁻¹(x) = 3ˣ + 1"],"answer":4,"explain":"y = log₃(x − 1) ise x − 1 = 3ʸ ve x = 3ʸ + 1. Değişkenler yer değiştirince f⁻¹(x) = 3ˣ + 1."},
+        {"q":"Yıllık %10 bileşik faizle yatırılan 1000 TL, 2 yıl sonra kaç TL olur?","choices":["1100","1200","1210","1250","1331"],"answer":2,"explain":"1000 · (1,1)² = 1000 · 1,21 = 1210 TL."},
+        {"q":"Bir depremin büyüklüğü Richter ölçeğinde 1 birim arttığında yer hareketinin genliği kaç katına çıkar?","choices":["2","5","10","100","1000"],"answer":2,"explain":"Richter ölçeği 10 tabanında logaritmiktir; 1 birim artış genliğin 10 katına çıkması demektir."}
+      ]
+    },
+    {
+      "name": "Diziler",
+      "topics": "",
+      "questions": [
+        {"q":"İlk terimi 3, ortak farkı 4 olan aritmetik dizinin 10. terimi kaçtır?","choices":["36","40","43","39","37"],"answer":3,"explain":"aₙ = a₁ + (n − 1) · d formülüyle a₁₀ = 3 + 9 · 4 = 39."},
+        {"q":"aₙ = 2n + 3 dizisinin 5. terimi kaçtır?","choices":["10","11","15","13","8"],"answer":3,"explain":"a₅ = 2 · 5 + 3 = 13."},
+        {"q":"Aritmetik bir dizide a₃ = 10 ve a₇ = 22 ise ortak fark kaçtır?","choices":["2","3","4","6","12"],"answer":1,"explain":"a₇ − a₃ = 4d = 12 olduğundan d = 3."},
+        {"q":"1 + 2 + 3 + ... + 20 toplamı kaçtır?","choices":["200","210","220","400","420"],"answer":1,"explain":"İlk n doğal sayının toplamı n(n + 1) / 2 = 20 · 21 / 2 = 210."},
+        {"q":"İlk terimi 2, ortak çarpanı 3 olan geometrik dizinin 4. terimi kaçtır?","choices":["18","24","54","81","162"],"answer":2,"explain":"a₄ = a₁ · r³ = 2 · 27 = 54."},
+        {"q":"3, 6, 12, 24, ... dizisi için hangisi doğrudur?","choices":["Ortak çarpanı 3 olan geometrik dizidir.","Ortak farkı 3 olan aritmetik dizidir.","Sabit dizidir.","Azalan dizidir.","Ortak çarpanı 2 olan geometrik dizidir."],"answer":4,"explain":"Her terim bir öncekinin 2 katıdır."},
+        {"q":"Aritmetik bir dizinin ilk 10 teriminin toplamı, ilk terim 1 ve son terim 19 ise kaçtır?","choices":["90","95","100","190","200"],"answer":2,"explain":"Sₙ = n(a₁ + aₙ) / 2 = 10 · 20 / 2 = 100."},
+        {"q":"1, 1, 2, 3, 5, 8, ... dizisinin bir sonraki terimi kaçtır?","choices":["11","12","13","15","16"],"answer":2,"explain":"Fibonacci dizisinde her terim kendinden önceki iki terimin toplamıdır: 5 + 8 = 13."},
+        {"q":"Bir tiyatro salonunda ilk sırada 12 koltuk vardır ve her sıra bir öncekinden 2 koltuk fazladır. 15. sırada kaç koltuk vardır?","choices":["38","40","42","30","26"],"answer":1,"explain":"a₁₅ = 12 + 14 · 2 = 40."},
+        {"q":"Bir top bırakıldığı yüksekliğin yarısı kadar sıçramaktadır. 16 m yükseklikten bırakılan top 3. sıçramasında kaç m yükselir?","choices":["1","2","4","8","3"],"answer":1,"explain":"Sıçrama yükseklikleri 8, 4, 2 m olur; ortak çarpanı 1/2 olan geometrik dizidir."}
+      ]
+    },
+    {
+      "name": "Trigonometri",
+      "topics": "",
+      "questions": [
+        {"q":"sin(a + b) açılımı hangisidir?","choices":["sin a · sin b + cos a · cos b","sin a + sin b","cos a · cos b − sin a · sin b","sin a · cos b + cos a · sin b","sin a · cos b − cos a · sin b"],"answer":3,"explain":"Toplam formülü: sin(a + b) = sin a cos b + cos a sin b."},
+        {"q":"cos 2x ifadesine eşit olan hangisidir?","choices":["1 + sin²x","2 sin x cos x","cos²x + sin²x","2 cos x","cos²x − sin²x"],"answer":4,"explain":"İki kat açı formülü: cos 2x = cos²x − sin²x = 2cos²x − 1 = 1 − 2sin²x."},
+        {"q":"sin 2x ifadesine eşit olan hangisidir?","choices":["sin x + cos x","sin²x − cos²x","2 sin x","2 sin x cos x","1 − cos²x"],"answer":3,"explain":"sin 2x = sin(x + x) = 2 sin x cos x."},
+        {"q":"sin²x + cos²x ifadesinin değeri kaçtır?","choices":["0","1","2","sin 2x","tan x"],"answer":1,"explain":"Birim çemberde x² + y² = 1 olduğundan her x için sin²x + cos²x = 1."},
+        {"q":"sin 75° ifadesi aşağıdakilerden hangisiyle hesaplanabilir?","choices":["sin 90° − sin 15°","sin 45° + sin 30°","sin 75 · cos 0","2 sin 37,5°","sin(45° + 30°)"],"answer":4,"explain":"Toplam formülüyle sin 75° = sin 45° cos 30° + cos 45° sin 30° = (√6 + √2) / 4."},
+        {"q":"tan 45° + cos 60° kaçtır?","choices":["1","3/2","2","1/2","√2"],"answer":1,"explain":"tan 45° = 1, cos 60° = 1/2; toplam 3/2."},
+        {"q":"Bir dik üçgende 30°'lik açının karşısındaki kenar 5 cm ise hipotenüs kaç cm'dir?","choices":["5","5√3","10","10√3","2,5"],"answer":2,"explain":"sin 30° = karşı / hipotenüs = 1/2 olduğundan hipotenüs 10 cm."},
+        {"q":"Kenarları 7 ve 8 birim, aralarındaki açı 60° olan üçgenin üçüncü kenarı kaç birimdir? (Kosinüs teoremi)","choices":["15","√113","13","√57","√56"],"answer":3,"explain":"a² = 7² + 8² − 2 · 7 · 8 · cos 60° = 49 + 64 − 56 = 57."},
+        {"q":"0 ≤ x < 2π aralığında sin x = −1 denkleminin çözümü nedir?","choices":["0","π/2","π","3π/2","2π"],"answer":3,"explain":"Birim çemberde y koordinatı −1 olan nokta (0, −1)'dir; bu nokta 3π/2'ye karşılık gelir."},
+        {"q":"cos 2x = 1 − 2sin²x özdeşliğini kullanarak sin x = 1/3 için cos 2x değerini bulunuz.","explain":"cos 2x = 1 − 2 · (1/3)² = 1 − 2/9 = 7/9."}
+      ]
+    },
+    {
+      "name": "Dönüşümler",
+      "topics": "",
+      "questions": [
+        {"q":"A(2, 3) noktası x ekseni yönünde 4 birim ötelenirse yeni nokta hangisidir?","choices":["(8, 12)","(2, 7)","(−2, 3)","(6, 7)","(6, 3)"],"answer":4,"explain":"x ekseni yönünde öteleme yalnızca apsisi değiştirir: (2 + 4, 3)."},
+        {"q":"A(3, −5) noktasının x eksenine göre yansıması hangisidir?","choices":["(5, 3)","(−3, −5)","(−3, 5)","(3, 5)","(−5, 3)"],"answer":3,"explain":"x eksenine göre yansımada ordinatın işareti değişir: (x, y) → (x, −y)."},
+        {"q":"A(4, 1) noktasının y eksenine göre yansıması hangisidir?","choices":["(−1, 4)","(4, −1)","(−4, −1)","(1, 4)","(−4, 1)"],"answer":4,"explain":"y eksenine göre yansımada apsisin işareti değişir: (x, y) → (−x, y)."},
+        {"q":"A(2, 5) noktasının orijine göre yansıması hangisidir?","choices":["(5, 2)","(2, −5)","(−2, 5)","(−2, −5)","(−5, −2)"],"answer":3,"explain":"Orijine göre yansımada iki koordinatın da işareti değişir."},
+        {"q":"A(3, 1) noktasının y = x doğrusuna göre yansıması hangisidir?","choices":["(3, 3)","(−3, 1)","(3, −1)","(−1, −3)","(1, 3)"],"answer":4,"explain":"y = x doğrusuna göre yansımada koordinatlar yer değiştirir."},
+        {"q":"A(1, 0) noktası orijin etrafında pozitif yönde 90° döndürülürse hangi noktaya gelir?","choices":["(1, 1)","(0, −1)","(−1, 0)","(0, 1)","(1, 0)"],"answer":3,"explain":"Pozitif yönde 90° dönme (x, y) → (−y, x) kuralıyla yapılır."},
+        {"q":"A(2, 3) noktası orijin etrafında 180° döndürülürse hangi noktaya gelir?","choices":["(−2, 3)","(3, 2)","(−3, 2)","(2, −3)","(−2, −3)"],"answer":4,"explain":"180° dönme orijine göre yansımayla aynı sonucu verir."},
+        {"q":"f(x) = x² fonksiyonunun grafiği 3 birim yukarı ötelenirse yeni fonksiyon hangisidir?","choices":["x² − 3","(x + 3)²","(x − 3)²","3x²","x² + 3"],"answer":4,"explain":"Grafiği yukarı ötelemek fonksiyonun değerine sabit eklemek demektir."},
+        {"q":"f(x) = x² fonksiyonunun grafiği 2 birim sağa ötelenirse yeni fonksiyon hangisidir?","choices":["(x − 2)²","(x + 2)²","x² + 2","x² − 2","2x²"],"answer":0,"explain":"Sağa öteleme x yerine (x − 2) yazılarak yapılır."},
+        {"q":"Öteleme, yansıma ve dönme dönüşümlerinin şeklin boyutlarını ve açılarını değiştirip değiştirmediğini açıklayınız.","explain":"Bu üç dönüşüm de şeklin kenar uzunluklarını ve açılarını korur; yalnızca konumunu ya da yönünü değiştirir. Bu nedenle bunlara izometri (eş dönüşüm) denir ve dönüşümden sonra elde edilen şekil ilk şekle eştir."}
+      ]
+    },
+    {
+      "name": "Türev",
+      "topics": "",
+      "questions": [
+        {"q":"f(x) = x³ + 2x olduğuna göre f'(1) kaçtır?","choices":["3","4","6","5","2"],"answer":3,"explain":"f'(x) = 3x² + 2 olur. f'(1) = 3 + 2 = 5."},
+        {"q":"f(x) = 5x² fonksiyonunun türevi hangisidir?","choices":["25x","5x","10x²","5","10x"],"answer":4,"explain":"(xⁿ)' = n · xⁿ⁻¹ olduğundan f'(x) = 5 · 2x = 10x."},
+        {"q":"Sabit bir fonksiyonun (f(x) = 7) türevi kaçtır?","choices":["0","1","7","7x","x"],"answer":0,"explain":"Sabit fonksiyonun değeri değişmediği için türevi sıfırdır."},
+        {"q":"f(x) = x² − 4x fonksiyonunun x = 3 noktasındaki türevi kaçtır?","choices":["−1","0","1","2","5"],"answer":3,"explain":"f'(x) = 2x − 4 olduğundan f'(3) = 2."},
+        {"q":"f(x) = x² eğrisine x = 1 noktasında çizilen teğetin eğimi kaçtır?","choices":["0","1","2","3","4"],"answer":2,"explain":"Teğetin eğimi türevin o noktadaki değeridir: f'(x) = 2x, f'(1) = 2."},
+        {"q":"f'(x) > 0 olan bir aralıkta f fonksiyonu için hangisi doğrudur?","choices":["Artandır.","Azalandır.","Sabittir.","Tanımsızdır.","Her zaman negatiftir."],"answer":0,"explain":"Türevin pozitif olması fonksiyonun o aralıkta arttığını gösterir."},
+        {"q":"f(x) = x² − 6x + 5 fonksiyonunun en küçük değeri hangi x değerinde alınır?","choices":["−3","0","3","5","6"],"answer":2,"explain":"f'(x) = 2x − 6 = 0 ise x = 3; türev burada negatiften pozitife geçtiği için yerel minimum vardır."},
+        {"q":"Konumu s(t) = t² + 2t (metre) olan bir cismin t = 3 saniyedeki anlık hızı kaç m/s'dir?","choices":["6","8","9","15","5"],"answer":1,"explain":"Hız konumun türevidir: v(t) = 2t + 2, v(3) = 8 m/s."},
+        {"q":"f(x) = (2x + 1)³ fonksiyonunun türevi hangisidir?","choices":["6(2x + 1)²","3(2x + 1)²","(2x + 1)²","6x²","2(2x + 1)³"],"answer":0,"explain":"Zincir kuralına göre 3(2x + 1)² · 2 = 6(2x + 1)²."},
+        {"q":"Çevresi 40 m olan dikdörtgen biçimindeki bir bahçenin alanının en büyük olması için kenar uzunlukları ne olmalıdır? Türev kullanarak gösteriniz.","explain":"Kenarlar x ve 20 − x olsun. Alan A(x) = x(20 − x) = 20x − x². A'(x) = 20 − 2x = 0 ise x = 10. Diğer kenar da 10 m olur; en büyük alan 100 m²'dir ve bahçe kare biçimindedir."}
+      ]
+    },
+    {
+      "name": "İntegral",
+      "topics": "",
+      "questions": [
+        {"q":"∫ 2x dx belirsiz integralinin sonucu hangisidir?","choices":["x² + C","2x² + C","x + C","2 + C","x²/2 + C"],"answer":0,"explain":"(x²)' = 2x olduğundan ∫ 2x dx = x² + C."},
+        {"q":"∫ 3x² dx belirsiz integralinin sonucu hangisidir?","choices":["x³ + c","6x + c","3x³ + c","x² + c","x³/3 + c"],"answer":0,"explain":"∫ xⁿ dx = xⁿ⁺¹ / (n + 1) + c olduğundan 3 · x³/3 = x³."},
+        {"q":"∫ 5 dx belirsiz integralinin sonucu hangisidir?","choices":["5x + c","5 + c","x + c","0","5x² + c"],"answer":0,"explain":"Sabitin integrali sabit ile x'in çarpımıdır."},
+        {"q":"∫₀² 2x dx belirli integralinin değeri kaçtır?","choices":["2","4","6","8","1"],"answer":1,"explain":"∫ 2x dx = x²; 2² − 0² = 4."},
+        {"q":"∫₁³ 1 dx belirli integralinin değeri kaçtır?","choices":["1","2","3","4","0"],"answer":1,"explain":"x'in 3'teki değeri ile 1'deki değerinin farkı: 3 − 1 = 2."},
+        {"q":"Belirli integral, pozitif bir fonksiyon için geometrik olarak neyi verir?","choices":["Eğri ile x ekseni arasında kalan alanı","Eğrinin eğimini","Fonksiyonun tepe noktasını","Eğrinin uzunluğunu","Fonksiyonun tersini"],"answer":0,"explain":"f(x) ≥ 0 ise ∫ₐᵇ f(x) dx, x = a ile x = b arasında eğrinin altındaki alanı verir."},
+        {"q":"y = x² eğrisi, x ekseni, x = 0 ve x = 3 doğruları arasında kalan alan kaç birimkaredir?","choices":["3","6","27","9","18"],"answer":3,"explain":"∫₀³ x² dx = x³/3 → 27/3 − 0 = 9."},
+        {"q":"Türevi f'(x) = 2x + 1 ve f(0) = 3 olan fonksiyon hangisidir?","choices":["x + 3","x² + x","2x² + x + 3","x² + 3","x² + x + 3"],"answer":4,"explain":"f(x) = x² + x + c; f(0) = c = 3."},
+        {"q":"Hızı v(t) = 4t (m/s) olan bir cismin 0 ile 3. saniyeler arasında aldığı yol kaç metredir?","choices":["12","18","24","36","9"],"answer":1,"explain":"Alınan yol hızın integralidir: ∫₀³ 4t dt = 2t² → 18 m."},
+        {"q":"İntegral ile türev arasındaki ilişkiyi bir örnekle açıklayınız.","explain":"İntegral alma türev almanın ters işlemidir. Örneğin f(x) = x³ fonksiyonunun türevi 3x²'dir; 3x²'nin belirsiz integrali ise x³ + c'dir. Sabit sayının türevi sıfır olduğundan integral sonucuna c sabiti eklenir. Belirli integralde ise bu ilişki, ∫ₐᵇ f'(x) dx = f(b) − f(a) biçiminde kullanılır."}
+      ]
+    },
+    {
+      "name": "Analitik Geometri",
+      "topics": "",
+      "questions": [
+        {"q":"Merkezi M(2, −1) ve yarıçapı 3 birim olan çemberin denklemini yazınız.","explain":"Merkezi (a, b), yarıçapı r olan çemberin denklemi (x − a)² + (y − b)² = r²'dir. Buna göre (x − 2)² + (y + 1)² = 9."},
+        {"q":"x² + y² = 25 çemberinin yarıçapı kaç birimdir?","choices":["5","25","10","√5","12,5"],"answer":0,"explain":"Merkezi orijinde olan çemberin denklemi x² + y² = r²'dir: r = 5."},
+        {"q":"(x − 3)² + (y + 2)² = 16 çemberinin merkezi hangisidir?","choices":["(3, −2)","(−3, 2)","(3, 2)","(−3, −2)","(16, 0)"],"answer":0,"explain":"(x − a)² + (y − b)² = r² çemberinin merkezi (a, b)'dir."},
+        {"q":"A(1, 2) ve B(4, 6) noktaları arasındaki uzaklık kaç birimdir?","choices":["3","4","5","7","25"],"answer":2,"explain":"√((4 − 1)² + (6 − 2)²) = √(9 + 16) = 5."},
+        {"q":"A(2, 4) ve B(6, 8) noktalarını birleştiren doğru parçasının orta noktası hangisidir?","choices":["(4, 6)","(8, 12)","(2, 2)","(3, 4)","(4, 4)"],"answer":0,"explain":"Orta nokta ((2 + 6)/2, (4 + 8)/2) = (4, 6)."},
+        {"q":"(1, 1) ve (3, 5) noktalarından geçen doğrunun eğimi kaçtır?","choices":["1/2","1","2","3","4"],"answer":2,"explain":"Eğim = (5 − 1) / (3 − 1) = 2."},
+        {"q":"y = 2x + 1 doğrusuna paralel olan doğru hangisidir?","choices":["y = 2x − 5","y = −2x + 1","y = x/2 + 1","y = −x/2","y = 3x + 1"],"answer":0,"explain":"Paralel doğruların eğimleri eşittir."},
+        {"q":"P(5, 0) noktası x² + y² = 16 çemberine göre nerededir?","choices":["Çemberin dışında","Çemberin üzerinde","Çemberin içinde","Merkezde","Belirlenemez"],"answer":0,"explain":"Merkeze uzaklık 5, yarıçap 4'tür; 5 > 4 olduğundan nokta dışarıdadır."},
+        {"q":"x² + y² − 6x + 8y = 0 çemberinin yarıçapı kaç birimdir?","choices":["3","4","5","6","10"],"answer":2,"explain":"Kareye tamamlanırsa (x − 3)² + (y + 4)² = 25; r = 5."},
+        {"q":"A(−1, 2) ve B(3, 2) noktaları bir çemberin çapının uç noktalarıdır. Çemberin denklemini bulunuz.","explain":"Merkez çapın orta noktasıdır: M(1, 2). Yarıçap çapın yarısıdır: AB = 4 olduğundan r = 2. Denklem (x − 1)² + (y − 2)² = 4."}
+      ]
+    }
+  ]
+}

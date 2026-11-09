@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#70449c">
+  <title>EDUCOM</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <!-- Görünüm ayarı sayfa çizilmeden uygulanır; yoksa koyu temalı telefonda önce beyaz ekran yanıp söner. -->
+  <script src="/look.js"></script>
+  <script src="/i18n.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <!-- Simgeler: her yerde <use href="#i-..."> ile kullanılır, renk yazı renginden gelir. -->
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5 3.5 10.6l6.8 2.6 2.6 6.8z"/><path d="m10.3 13.2 10.2-9.7"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-reply" viewBox="0 0 24 24"><path d="M9 7 4 12l5 5"/><path d="M4 12h9a7 7 0 0 1 7 7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4 4L19 7"/></symbol>
+    <symbol id="i-checks" viewBox="0 0 24 24"><path d="m2 12.5 4 4L16 7M11 16l.5.5L22 7"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M3 20a6 6 0 0 1 12 0M15.5 4.6a3.5 3.5 0 0 1 0 6.8M17.5 14.3A6 6 0 0 1 21 20"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-8l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5.5c2.5-1 5.5-1 9 1 3.5-2 6.5-2 9-1V19c-2.5-1-5.5-1-9 1-3.5-2-6.5-2-9-1z"/><path d="M12 6.5V20"/></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4.5L15.5 5a2.1 2.1 0 0 1 3 3L8 18.5z"/><path d="M13.5 7l3 3"/></symbol>
+    <symbol id="i-growth" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="m7.5 15 4-4 3 3 5-6"/><path d="M15.5 8h4v4"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-1 2-2 0-1.5-1.3-1.7-1.3-3 0-1 .8-1.8 1.8-1.8H17a4 4 0 0 0 4-4C21 6.5 17 3 12 3z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7.3" r="1"/><circle cx="15" cy="7.3" r="1"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  </svg>
+
+  <main id="auth" class="auth" hidden>
+    <div class="brand">
+      <img src="/icon.svg" alt="" width="76" height="76">
+      <h1>EDUCOM <small class="beta">(beta)</small></h1>
+      <p class="hint" data-i18n="tagline"></p>
+    </div>
+    <form id="login-form" class="auth-form">
+      <label><span data-i18n="username"></span> <input name="username" autocomplete="username" autocapitalize="none" required></label>
+      <label><span data-i18n="password"></span> <input name="password" type="password" autocomplete="current-password" required></label>
+      <p class="error" role="alert"></p>
+      <button class="primary" data-i18n="login"></button>
+      <button type="button" class="link" id="show-register" data-i18n="haveInvite"></button>
+    </form>
+    <form id="register-form" class="auth-form" hidden>
+      <h2 data-i18n="createAccount"></h2>
+      <label><span data-i18n="inviteCode"></span> <input name="invite" autocomplete="off" autocapitalize="characters" spellcheck="false" required></label>
+      <p class="hint" data-i18n="codeHint"></p>
+      <label><span data-i18n="yourName"></span> <input name="name" autocomplete="name" maxlength="50" required></label>
+      <label><span data-i18n="username"></span> <input name="username" autocomplete="username" autocapitalize="none" pattern="[a-zA-Z0-9_.]{3,30}" data-i18n-title="usernameHint" required></label>
+      <label><span data-i18n="passwordNew"></span> <input name="password" type="password" autocomplete="new-password" minlength="8" maxlength="200" required></label>
+      <p class="error" role="alert"></p>
+      <button class="primary" data-i18n="createAccount"></button>
+      <button type="button" class="link" id="show-login" data-i18n="haveAccount"></button>
+    </form>
+    <button type="button" class="link lang-toggle" data-i18n="switchLang"></button>
+  </main>
+
+  <div id="app" class="app" hidden>
+    <aside class="sidebar">
+      <header class="bar brand-bar">
+        <h1>EDUCOM <small class="beta">(beta)</small></h1>
+        <button id="open-new" class="icon-button" data-i18n-title="newChat" data-i18n-aria="newChat"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+        <button id="open-look" class="icon-button" data-i18n-title="appearance" data-i18n-aria="appearance"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg></button>
+        <button id="open-profile" class="avatar-button" data-i18n-title="profile" data-i18n-aria="profile"></button>
+      </header>
+      <div id="push-banner" class="banner" hidden>
+        <span data-i18n="pushQuestion"></span>
+        <button id="enable-push" class="primary" data-i18n="pushEnable"></button>
+        <p id="push-error" class="error" role="alert"></p>
+      </div>
+
+      <section id="view-chats" class="view">
+        <ul id="convos" class="convos"></ul>
+        <p id="no-convos" class="empty" data-i18n="noChats" hidden></p>
+      </section>
+
+      <section id="view-homework" class="view" hidden>
+        <div class="view-inner">
+          <div class="view-head">
+            <h2 data-i18n="tabHomework"></h2>
+            <button id="new-homework" class="primary teacher-only"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg> <span data-i18n="giveHomework"></span></button>
+          </div>
+          <p id="homework-error" class="error" role="alert"></p>
+          <ul id="homework-list" class="cards"></ul>
+          <p id="no-homework" class="empty" data-i18n="noHomework" hidden></p>
+          <details id="homework-past" class="past" hidden>
+            <summary data-i18n="pastHomework"></summary>
+            <ul id="homework-past-list" class="cards"></ul>
+          </details>
+        </div>
+      </section>
+
+      <section id="view-quiz" class="view" hidden>
+        <div class="view-inner">
+          <p id="quiz-error" class="error" role="alert"></p>
+          <div id="quiz-home">
+            <div class="view-head">
+              <h2 id="quiz-title"></h2>
+              <select id="quiz-grade" class="teacher-only" data-i18n-aria="grade"></select>
+              <button id="new-question" class="primary teacher-only"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg> <span data-i18n="addQuestion"></span></button>
+            </div>
+            <p class="hint" data-i18n="quizHelp"></p>
+            <ul id="quiz-subjects" class="subjects"></ul>
+            <p id="no-questions" class="empty" data-i18n="noQuestions" hidden></p>
+          </div>
+          <div id="quiz-units" hidden>
+            <div class="view-head">
+              <button type="button" id="units-back" class="icon-button" data-i18n-title="backToSubjects" data-i18n-aria="backToSubjects"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg></button>
+              <h2 id="units-subject"></h2>
+              <button id="new-question-unit" class="primary teacher-only"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg> <span data-i18n="addQuestion"></span></button>
+            </div>
+            <p id="units-source" class="hint"></p>
+            <ol id="units-list" class="units"></ol>
+          </div>
+          <div id="quiz-run" hidden>
+            <div class="view-head">
+              <button type="button" id="quiz-back" class="icon-button" data-i18n-title="backToUnits" data-i18n-aria="backToUnits"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg></button>
+              <h2 id="quiz-subject"></h2>
+              <span id="quiz-progress" class="hint"></span>
+            </div>
+            <div class="progress" aria-hidden="true"><span id="quiz-bar"></span></div>
+            <div id="quiz-card" class="card quiz-card"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-notes" class="view" hidden>
+        <div class="view-inner">
+          <div class="view-head">
+            <h2 data-i18n="progressNotes"></h2>
+            <button id="new-note" class="primary teacher-only"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg> <span data-i18n="writeNote"></span></button>
+          </div>
+          <p id="notes-help" class="hint"></p>
+          <p id="notes-error" class="error" role="alert"></p>
+          <ul id="notes-list" class="cards"></ul>
+          <p id="no-notes" class="empty" data-i18n="noNotes" hidden></p>
+        </div>
+      </section>
+
+      <nav class="tabs" data-i18n-aria="sections">
+        <button type="button" data-tab="chats"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="tabChats"></span><span id="chats-badge" class="badge" hidden></span></button>
+        <button type="button" data-tab="homework"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><span data-i18n="tabHomework"></span></button>
+        <button type="button" data-tab="quiz"><svg class="icon" aria-hidden="true"><use href="#i-pencil"/></svg><span data-i18n="tabQuiz"></span></button>
+        <button type="button" data-tab="notes"><svg class="icon" aria-hidden="true"><use href="#i-growth"/></svg><span data-i18n="tabNotes"></span></button>
+      </nav>
+    </aside>
+
+    <section id="chat" class="chat">
+      <div id="no-chat" class="empty no-chat">
+        <img src="/icon.svg" alt="" width="64" height="64">
+        <p data-i18n="pickChat"></p>
+      </div>
+      <div id="chat-open" class="chat-open" hidden>
+        <header class="bar">
+          <button id="back" class="icon-button back" data-i18n-aria="backToChats"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg></button>
+          <span id="chat-avatar"></span>
+          <div class="chat-title">
+            <h2 id="chat-name"></h2>
+            <p id="chat-sub"></p>
+          </div>
+          <button id="open-group" class="icon-button" data-i18n-title="groupInfo" data-i18n-aria="groupInfo" hidden><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg></button>
+        </header>
+        <div id="messages" class="messages" role="log" aria-live="polite" data-i18n-aria="messages" tabindex="0"></div>
+        <p id="send-error" class="error send-error" role="alert"></p>
+        <p id="read-only" class="read-only" hidden></p>
+        <div id="reply-bar" class="reply-bar" hidden>
+          <div class="reply-text">
+            <strong id="reply-name"></strong>
+            <span id="reply-snippet"></span>
+          </div>
+          <button type="button" id="reply-cancel" class="icon-button" data-i18n-title="cancelReply" data-i18n-aria="cancelReply"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+        </div>
+        <form id="send-form" class="send">
+          <label id="attach" class="icon-button attach" data-i18n-title="sendPhoto">
+            <svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg><span class="sr" data-i18n="sendPhoto"></span>
+            <input id="photo" type="file" accept="image/*" class="sr">
+          </label>
+          <textarea id="text" rows="1" maxlength="4000" data-i18n-placeholder="typeMessage" data-i18n-aria="typeMessage"></textarea>
+          <div id="rec-strip" class="rec-strip" hidden>
+            <button type="button" id="rec-cancel" class="icon-button" data-i18n-title="cancelVoice" data-i18n-aria="cancelVoice"><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg></button>
+            <span class="rec-dot" aria-hidden="true"></span>
+            <span id="rec-time" role="timer">0:00</span>
+          </div>
+          <button type="button" id="record" class="round" data-i18n-title="recordVoice" data-i18n-aria="recordVoice" hidden><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg></button>
+          <button id="send" class="round" data-i18n-title="send" data-i18n-aria="send"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg></button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <datalist id="subjects"></datalist>
+
+  <dialog id="new-dialog">
+    <form id="new-form" method="dialog" class="dialog-body">
+      <h2 data-i18n="newChat"></h2>
+      <p class="hint" data-i18n="newChatHelp"></p>
+      <ul id="people" class="people"></ul>
+      <p id="no-people" class="empty" data-i18n="noPeople" hidden></p>
+      <label id="title-field" hidden><span data-i18n="groupName"></span> <input name="title" maxlength="50"></label>
+      <p class="error" role="alert"></p>
+      <div class="actions">
+        <button type="button" class="cancel" data-i18n="cancel"></button>
+        <button class="primary" value="ok" data-i18n="start"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="group-dialog">
+    <form id="group-form" method="dialog" class="dialog-body">
+      <h2 data-i18n="groupInfo"></h2>
+      <p id="class-group-hint" class="hint" data-i18n="classGroupInfo" hidden></p>
+      <label id="group-title-field"><span data-i18n="groupName"></span> <input name="title" maxlength="50" required></label>
+      <h3 data-i18n="members"></h3>
+      <ul id="group-members" class="people"></ul>
+      <div id="group-add-section">
+        <h3 data-i18n="addPeople"></h3>
+        <ul id="group-add" class="people"></ul>
+        <p id="no-add" class="hint" data-i18n="noOneToAdd" hidden></p>
+      </div>
+      <p class="error" role="alert"></p>
+      <div class="actions">
+        <button type="button" id="leave-group" class="danger" data-i18n="leaveGroup"></button>
+        <button type="button" class="cancel" data-i18n="cancel"></button>
+        <button id="group-save" class="primary" value="ok" data-i18n="save"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="homework-dialog">
+    <form id="homework-form" method="dialog" class="dialog-body">
+      <h2 data-i18n="giveHomework"></h2>
+      <label><span data-i18n="class"></span> <select name="classId" required></select></label>
+      <label><span data-i18n="subject"></span> <input name="subject" list="subjects" maxlength="50" autocomplete="off" required></label>
+      <label><span data-i18n="hwTitle"></span> <input name="title" maxlength="120" required></label>
+      <label><span data-i18n="hwDetails"></span> <textarea name="body" rows="4" maxlength="2000"></textarea></label>
+      <label><span data-i18n="dueDate"></span> <input name="due" type="date" required></label>
+      <label class="check"><input type="checkbox" name="announce" checked> <span data-i18n="announce"></span></label>
+      <p class="error" role="alert"></p>
+      <div class="actions">
+        <button type="button" class="cancel" data-i18n="cancel"></button>
+        <button class="primary" value="ok" data-i18n="send"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="note-dialog">
+    <form id="note-form" method="dialog" class="dialog-body">
+      <h2 data-i18n="writeNote"></h2>
+      <p class="hint" data-i18n="noteHelp"></p>
+      <label><span data-i18n="class"></span> <select name="classId" required></select></label>
+      <label><span data-i18n="student"></span> <select name="studentId" required></select></label>
+      <p id="no-students" class="hint" data-i18n="noStudents" hidden></p>
+      <label><span data-i18n="subject"></span> <input name="subject" list="subjects" maxlength="50" autocomplete="off" required></label>
+      <fieldset class="levels">
+        <legend data-i18n="level"></legend>
+        <label class="level lvl4"><input type="radio" name="level" value="4" required> <span data-i18n="level4"></span></label>
+        <label class="level lvl3"><input type="radio" name="level" value="3"> <span data-i18n="level3"></span></label>
+        <label class="level lvl2"><input type="radio" name="level" value="2"> <span data-i18n="level2"></span></label>
+        <label class="level lvl1"><input type="radio" name="level" value="1"> <span data-i18n="level1"></span></label>
+      </fieldset>
+      <label><span data-i18n="noteText"></span> <textarea name="body" rows="5" maxlength="2000" required></textarea></label>
+      <p class="error" role="alert"></p>
+      <div class="actions">
+        <button type="button" class="cancel" data-i18n="cancel"></button>
+        <button class="primary" value="ok" data-i18n="send"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="question-dialog">
+    <form id="question-form" method="dialog" class="dialog-body">
+      <h2 data-i18n="addQuestion"></h2>
+      <p id="question-grade" class="hint"></p>
+      <label><span data-i18n="subject"></span> <input name="subject" list="quiz-subject-list" maxlength="50" autocomplete="off" required></label>
+      <label><span data-i18n="unit"></span> <input name="unit" list="quiz-unit-list" maxlength="120" autocomplete="off" required></label>
+      <datalist id="quiz-subject-list"></datalist>
+      <datalist id="quiz-unit-list"></datalist>
+      <label><span data-i18n="question"></span> <textarea name="q" rows="3" maxlength="2000" required></textarea></label>
+      <fieldset class="choice-inputs">
+        <legend data-i18n="choices"></legend>
+        <p class="hint" data-i18n="choicesHelp"></p>
+        <label><span class="letter">A</span> <input name="choice" maxlength="300"></label>
+        <label><span class="letter">B</span> <input name="choice" maxlength="300"></label>
+        <label><span class="letter">C</span> <input name="choice" maxlength="300"></label>
+        <label><span class="letter">D</span> <input name="choice" maxlength="300"></label>
+        <label><span class="letter">E</span> <input name="choice" maxlength="300"></label>
+      </fieldset>
+      <label id="answer-field"><span data-i18n="correctChoice"></span> <select name="answer"></select></label>
+      <label><span data-i18n="explanation"></span> <textarea name="explain" rows="3" maxlength="2000"></textarea></label>
+      <p class="error" role="alert"></p>
+      <div class="actions">
+        <button type="button" class="cancel" data-i18n="cancel"></button>
+        <button class="primary" value="ok" data-i18n="save"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="look-dialog">
+    <form id="look-form" method="dialog" class="dialog-body">
+      <h2 data-i18n="appearance"></h2>
+      <fieldset>
+        <legend data-i18n="theme"></legend>
+        <div class="segmented">
+          <label><input type="radio" name="theme" value="auto"> <span data-i18n="themeAuto"></span></label>
+          <label><input type="radio" name="theme" value="light"> <span data-i18n="themeLight"></span></label>
+          <label><input type="radio" name="theme" value="dark"> <span data-i18n="themeDark"></span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="accent"></legend>
+        <div class="swatches">
+          <label class="swatch" data-hue="purple"><input type="radio" name="accent" value="purple"><span class="sr" data-i18n="accentPurple"></span></label>
+          <label class="swatch" data-hue="blue"><input type="radio" name="accent" value="blue"><span class="sr" data-i18n="accentBlue"></span></label>
+          <label class="swatch" data-hue="teal"><input type="radio" name="accent" value="teal"><span class="sr" data-i18n="accentTeal"></span></label>
+          <label class="swatch" data-hue="green"><input type="radio" name="accent" value="green"><span class="sr" data-i18n="accentGreen"></span></label>
+          <label class="swatch" data-hue="orange"><input type="radio" name="accent" value="orange"><span class="sr" data-i18n="accentOrange"></span></label>
+          <label class="swatch" data-hue="pink"><input type="radio" name="accent" value="pink"><span class="sr" data-i18n="accentPink"></span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="wallpaper"></legend>
+        <div class="walls">
+          <label class="wall-tile wall-none"><input type="radio" name="wall" value="none"><span data-i18n="wallNone"></span></label>
+          <label class="wall-tile wall-school"><input type="radio" name="wall" value="school"><span data-i18n="wallSchool"></span></label>
+          <label class="wall-tile wall-grid"><input type="radio" name="wall" value="grid"><span data-i18n="wallGrid"></span></label>
+          <label class="wall-tile wall-lined"><input type="radio" name="wall" value="lined"><span data-i18n="wallLined"></span></label>
+          <label class="wall-tile wall-dots"><input type="radio" name="wall" value="dots"><span data-i18n="wallDots"></span></label>
+          <label id="wall-photo-tile" class="wall-tile wall-photo"><input type="radio" name="wall" value="photo"><span data-i18n="wallPhoto"></span></label>
+        </div>
+        <label class="button file-button"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg> <span data-i18n="pickWallPhoto"></span><input id="wall-file" type="file" accept="image/*" class="sr"></label>
+        <p id="look-error" class="error" role="alert"></p>
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="textSize"></legend>
+        <div class="segmented">
+          <label><input type="radio" name="size" value="sm"> <span data-i18n="sizeSm"></span></label>
+          <label><input type="radio" name="size" value="md"> <span data-i18n="sizeMd"></span></label>
+          <label><input type="radio" name="size" value="lg"> <span data-i18n="sizeLg"></span></label>
+        </div>
+      </fieldset>
+      <div class="actions">
+        <button class="primary" value="ok" data-i18n="done"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="profile-dialog">
+    <form id="profile-form" method="dialog" class="dialog-body">
+      <h2 data-i18n="profile"></h2>
+      <p id="profile-username" class="hint"></p>
+      <p id="profile-role" class="role-line"></p>
+      <label><span data-i18n="yourName"></span> <input name="name" maxlength="50" required></label>
+      <div class="inline-buttons">
+        <button type="button" class="lang-toggle" data-i18n="switchLang"></button>
+        <button type="button" id="profile-look" data-i18n="appearance"></button>
+      </div>
+      <h3 data-i18n="changePassword"></h3>
+      <label><span data-i18n="currentPassword"></span> <input name="currentPassword" type="password" autocomplete="current-password"></label>
+      <label><span data-i18n="newPassword"></span> <input name="newPassword" type="password" autocomplete="new-password" minlength="8" maxlength="200"></label>
+      <p class="error" role="alert"></p>
+      <div class="actions">
+        <button type="button" id="logout" data-i18n="logout"></button>
+        <button type="button" class="cancel" data-i18n="cancel"></button>
+        <button class="primary" value="ok" data-i18n="save"></button>
+      </div>
+      <details class="danger-zone">
+        <summary data-i18n="deleteAccount"></summary>
+        <p class="hint" data-i18n="deleteAccountHelp"></p>
+        <label><span data-i18n="password"></span> <input id="delete-password" type="password" autocomplete="current-password"></label>
+        <p id="delete-error" class="error" role="alert"></p>
+        <button type="button" id="delete-account" class="danger" data-i18n="deleteAccountForever"></button>
+      </details>
+    </form>
+  </dialog>
+
+  <dialog id="photo-dialog" class="photo-dialog">
+    <img id="photo-big" alt="">
+  </dialog>
+</body>
+</html>

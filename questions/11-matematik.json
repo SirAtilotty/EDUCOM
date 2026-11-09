@@ -1,0 +1,107 @@
+{
+  "grade": 11,
+  "subject": "Matematik",
+  "source": "MEB 2026-2027 çerçeve yıllık planı · Türkiye Yüzyılı Maarif Modeli",
+  "units": [
+    {
+      "name": "İstatistiksel Araştırma Süreci",
+      "topics": "İki Nicel Değişkenli Veriler; Başkaları Tarafından Oluşturulan İki Nicel Değişkenli Verileri İnceleme",
+      "questions": [
+        {"q":"İki nicel değişken arasındaki ilişkiyi görmek için en uygun grafik hangisidir?","choices":["Kutu grafiği","Daire grafiği","Sütun grafiği","Resim grafiği","Serpme (saçılım) grafiği"],"answer":4,"explain":"Serpme grafiğinde her veri çifti bir noktayla gösterilir; noktaların dağılımı ilişkinin yönünü ve gücünü gösterir."},
+        {"q":"Öğrencilerin boy uzunluğu arttıkça ayakkabı numaralarının da genellikle arttığı görülüyor. Bu iki değişken arasında nasıl bir ilişki vardır?","choices":["Belirlenemez","Negatif ilişki","İlişki yok","Ters orantı","Pozitif ilişki"],"answer":4,"explain":"Bir değişken artarken diğeri de artıyorsa ilişki pozitiftir."},
+        {"q":"İkinci el otomobillerde aracın yaşı arttıkça fiyatının genellikle düştüğü görülüyor. Bu ilişki nasıldır?","choices":["Nedensellik yok, ilişki de yok","Pozitif ilişki","İlişki yok","Mükemmel pozitif ilişki","Negatif ilişki"],"answer":4,"explain":"Bir değişken artarken diğeri azalıyorsa ilişki negatiftir."},
+        {"q":"Öğrencilerin ayakkabı numaraları ile matematik notları arasında nasıl bir ilişki beklenir?","choices":["Ayakkabı numarası notu belirler.","Güçlü pozitif ilişki","Güçlü negatif ilişki","Mükemmel pozitif ilişki","Belirgin bir ilişki beklenmez."],"answer":4,"explain":"Bu iki değişken arasında mantıklı bir bağ yoktur; serpme grafiğinde noktalar rastgele dağılır."},
+        {"q":"Doğrusal korelasyon katsayısı (r) hangi aralıkta değer alır?","choices":["−100 ile 100 arasında","0 ile 1 arasında","0 ile 100 arasında","−1 ile 1 arasında","Her değeri alabilir"],"answer":3,"explain":"r = 1 mükemmel pozitif, r = −1 mükemmel negatif ilişkiyi; r = 0 doğrusal ilişki olmadığını gösterir."},
+        {"q":"İki değişken arasındaki korelasyon katsayısı r = 0,95 bulunmuştur. Bu ne anlama gelir?","choices":["Bir değişken diğerine kesinlikle neden olur.","Güçlü negatif ilişki vardır.","Hiç ilişki yoktur.","Zayıf negatif ilişki vardır.","Güçlü pozitif doğrusal ilişki vardır."],"answer":4,"explain":"r 1'e yakın olduğundan noktalar artan bir doğru çevresinde sıkı biçimde toplanmıştır."},
+        {"q":"Korelasyon katsayısı r = −0,85 olan iki değişken için hangisi doğrudur?","choices":["Zayıf pozitif ilişki vardır.","Güçlü pozitif ilişki vardır.","İlişki yoktur.","Güçlü negatif doğrusal ilişki vardır.","Değişkenler aynıdır."],"answer":3,"explain":"r −1'e yakın olduğu için biri artarken diğeri belirgin şekilde azalır."},
+        {"q":"Yazın dondurma satışları ile boğulma vakaları arasında pozitif bir ilişki görülmüştür. En doğru yorum hangisidir?","choices":["Dondurma satışı yasaklanmalıdır.","Dondurma yemek boğulmaya neden olur.","Boğulma vakaları dondurma satışını artırır.","İki değişken arasında hiç ilişki yoktur.","İki değişken de havanın sıcaklığından etkilenir; biri diğerinin nedeni değildir."],"answer":4,"explain":"Korelasyon nedensellik değildir; ilişkiyi açıklayan üçüncü bir değişken (sıcaklık) vardır."},
+        {"q":"Bir sınıfta günlük çalışma süresi (x saat) ile sınav puanı (y) için y = 5x + 40 doğrusal modeli bulunmuştur. Günde 6 saat çalışan bir öğrencinin puanı için tahmin kaçtır?","choices":["46","60","70","75","80"],"answer":2,"explain":"y = 5 · 6 + 40 = 70."},
+        {"q":"y = 5x + 40 modelinde (x: çalışma saati, y: puan) eğimin 5 olması neyi anlatır?","choices":["Öğrencilerin 5 saat çalıştığını","Hiç çalışmayanın 5 puan aldığını","En yüksek puanın 5 olduğunu","Her ek çalışma saatinde puanın ortalama 5 arttığını","Puanların 5'e bölündüğünü"],"answer":3,"explain":"Eğim, x bir birim arttığında y'deki ortalama değişimi gösterir. 40 ise hiç çalışmayan için tahmin edilen puandır."},
+        {"q":"Serpme grafiğindeki diğer noktalardan çok uzakta kalan bir veri (uç değer) korelasyon katsayısını nasıl etkileyebilir?","choices":["Değişkenleri kategorik yapar.","Hiç etkilemez.","Her zaman 1 yapar.","Her zaman 0 yapar.","İlişkiyi olduğundan farklı (zayıf ya da güçlü) gösterebilir."],"answer":4,"explain":"Uç değerler doğrusal ilişkinin gücünü ve hatta yönünü yanıltıcı biçimde değiştirebilir; bu yüzden ayrıca incelenmelidir."},
+        {"q":"\"Günlük ekran süresi\" ile \"uyku süresi\" arasındaki ilişkiyi araştıran bir çalışmada ekran süresinin uykuyu etkileyip etkilemediği inceleniyorsa ekran süresi hangi değişkendir?","choices":["Sabit değişken","Bağımlı değişken","Kategorik değişken","Bağımsız (açıklayıcı) değişken","Uç değer"],"answer":3,"explain":"Etkisi incelenen değişken bağımsızdır; serpme grafiğinde genellikle yatay eksende gösterilir."},
+        {"q":"Bir haber sitesi, 15 kişilik bir grupta r = 0,4 bulunmasına dayanarak \"Kahve içmek zekâyı artırıyor\" başlığını kullanıyor. Bu yorumdaki sorunlar nelerdir?","choices":["Grafik daire grafiği olmalıdır.","Hiçbir sorun yoktur.","r değeri 1'den büyüktür.","Kahve nicel bir değişken değildir.","Örneklem küçük, ilişki zayıf-orta düzeyde ve korelasyon nedensellik sanılmış."],"answer":4,"explain":"Küçük örneklemle ve orta düzeydeki bir korelasyonla neden-sonuç ilişkisi kurulamaz."},
+        {"q":"Merak ettiğiniz iki nicel değişken seçerek küçük bir araştırma planlayınız. Veriyi nasıl toplar, nasıl gösterir ve nasıl yorumlarsınız?","explain":"Örnek cevap: \"Haftalık kitap okuma süresi\" ile \"Türkçe sınav puanı\" seçilir. Sınıftaki 30 öğrenciden anketle veri toplanır. Veriler serpme grafiğinde gösterilir ve korelasyon katsayısı hesaplanır. İlişki çıkarsa bile nedensellik iddia edilmez; örneklemin küçüklüğü ve başka etkenler (ör. ders çalışma süresi) belirtilir."}
+      ]
+    },
+    {
+      "name": "Geometrik Şekiller",
+      "topics": "Dörtgenlerin Özellikleri; Özel Dörtgenler Arasındaki İlişkiler; Çokgenlerin Sınıflandırılması; Dışbükey Çokgenlerin Özellikleri; Çokgenlerle İlgili Problemler",
+      "questions": [
+        {"q":"Bir dörtgenin iç açılarının ölçüleri toplamı kaç derecedir?","choices":["180","270","360","540","720"],"answer":2,"explain":"Bir köşegen dörtgeni iki üçgene ayırır: 2 · 180 = 360°."},
+        {"q":"Bir altıgenin iç açılarının ölçüleri toplamı kaç derecedir?","choices":["540","720","900","1080","360"],"answer":1,"explain":"n kenarlı çokgenin iç açıları toplamı (n − 2) · 180°'dir: 4 · 180 = 720°."},
+        {"q":"Düzgün beşgenin bir iç açısı kaç derecedir?","choices":["72","90","108","120","135"],"answer":2,"explain":"İç açılar toplamı 540°'dir; düzgün beşgende 5 eşit açı vardır: 540 / 5 = 108°."},
+        {"q":"Bir dış açısı 40° olan düzgün çokgen kaç kenarlıdır?","choices":["6","8","9","10","12"],"answer":2,"explain":"Düzgün çokgende dış açılar toplamı 360°'dir: 360 / 40 = 9 kenar."},
+        {"q":"Bir altıgenin kaç köşegeni vardır?","choices":["6","9","12","15","18"],"answer":1,"explain":"Köşegen sayısı n(n − 3) / 2 = 6 · 3 / 2 = 9."},
+        {"q":"Bir paralelkenarın açılarından biri 70° ise bu açıya komşu olan açı kaç derecedir?","choices":["20","70","90","110","290"],"answer":3,"explain":"Paralelkenarda ardışık (komşu) açıların toplamı 180°'dir: 180 − 70 = 110°."},
+        {"q":"Aşağıdakilerden hangisi eşkenar dörtgenin her zaman sağlanan bir özelliğidir?","choices":["Yalnızca bir çift kenarı paraleldir.","Bütün açıları 90°'dir.","Köşegenleri eşit uzunluktadır.","Köşegenleri birbirini dik keser.","Kenarları farklı uzunluktadır."],"answer":3,"explain":"Eşkenar dörtgende dört kenar eşittir ve köşegenler birbirini dik açıyla ortalar."},
+        {"q":"Aşağıdakilerden hangisi dikdörtgenin her zaman sağlanan bir özelliğidir?","choices":["Açılarından biri geniş açıdır.","Köşegenleri her zaman dik kesişir.","Dört kenarı da her zaman eşittir.","Hiç paralel kenarı yoktur.","Köşegenleri eşit uzunluktadır."],"answer":4,"explain":"Dikdörtgenin köşegenleri eşittir ve birbirini ortalar; ancak kare değilse dik kesişmez."},
+        {"q":"Paralel kenarları (tabanları) 6 cm ve 10 cm, yüksekliği 4 cm olan yamuğun alanı kaç cm²'dir?","choices":["24","32","40","60","64"],"answer":1,"explain":"Yamuğun alanı (a + c) / 2 · h = (6 + 10) / 2 · 4 = 32 cm²."},
+        {"q":"Köşegen uzunlukları 8 cm ve 6 cm olan eşkenar dörtgenin alanı kaç cm²'dir?","choices":["14","24","28","48","96"],"answer":1,"explain":"Eşkenar dörtgenin alanı köşegenler çarpımının yarısıdır: 8 · 6 / 2 = 24 cm²."},
+        {"q":"Deltoid için hangisi doğrudur?","choices":["Köşegenlerinden biri diğerini dik olarak ortalar.","Bütün kenarları eşittir.","Karşılıklı kenarları paraleldir.","Köşegenleri her zaman eşittir.","Bütün açıları 90°'dir."],"answer":0,"explain":"Deltoidde ikişer komşu kenar eşittir; köşegenler dik kesişir ve biri diğerini ortalar."},
+        {"q":"Taban uzunluğu 9 cm ve bu tabana ait yüksekliği 5 cm olan paralelkenarın alanı kaç cm²'dir?","choices":["14","22,5","90","45","28"],"answer":3,"explain":"Paralelkenarın alanı taban · yükseklik = 9 · 5 = 45 cm²."},
+        {"q":"Her iç açısı 180°'den küçük olan, yani hiçbir köşesi içe doğru girmeyen çokgenlere ne ad verilir?","choices":["Çember","İçbükey (konkav) çokgen","Düzgün olmayan üçgen","Yamuk","Dışbükey (konveks) çokgen"],"answer":4,"explain":"Dışbükey çokgende herhangi iki iç noktayı birleştiren doğru parçası tamamen çokgenin içinde kalır."},
+        {"q":"\"Her kare bir dikdörtgendir ama her dikdörtgen bir kare değildir.\" ifadesini özel dörtgenlerin özelliklerine dayanarak açıklayınız.","explain":"Dikdörtgen, bütün açıları 90° olan paralelkenardır. Kare de bütün açıları 90° olduğu için bu tanımı sağlar; ek olarak dört kenarı eşittir. Ancak kenarları farklı uzunlukta olan (ör. 3 cm ve 5 cm) bir dikdörtgenin kenarları eşit olmadığı için kare değildir."}
+      ]
+    },
+    {
+      "name": "Nicelikler ve Değişimler (1)",
+      "topics": "Trigonometrik Fonksiyonlar ve Nitel Özellikleri; Trigonometrik Fonksiyonlarla İfade Edilebilen Denklemler İçeren Problemler",
+      "questions": [
+        {"q":"sin²30° + cos²30° ifadesinin değeri kaçtır?","choices":["0","1/2","√3/2","1","2"],"answer":3,"explain":"Her açı için sin²x + cos²x = 1'dir. Kontrol: (1/2)² + (√3/2)² = 1/4 + 3/4 = 1."},
+        {"q":"60° kaç radyandır?","choices":["π/6","π/4","π/3","π/2","2π/3"],"answer":2,"explain":"180° = π radyan olduğundan 60° = π/3 radyandır."},
+        {"q":"π/6 radyan kaç derecedir?","choices":["15","30","45","60","90"],"answer":1,"explain":"π radyan 180° olduğundan π/6 = 180 / 6 = 30°."},
+        {"q":"sin 90° kaçtır?","choices":["−1","0","1/2","√2/2","1"],"answer":4,"explain":"Birim çemberde 90°'ye karşılık gelen nokta (0, 1)'dir; sinüs y koordinatı olduğundan sin 90° = 1."},
+        {"q":"cos 180° kaçtır?","choices":["√3/2","0","1/2","1","−1"],"answer":4,"explain":"180°'ye karşılık gelen nokta (−1, 0)'dır; kosinüs x koordinatı olduğundan cos 180° = −1."},
+        {"q":"sin 150° kaçtır?","choices":["−1/2","−√3/2","1/2","√3/2","1"],"answer":2,"explain":"150° ikinci bölgededir ve 180° − 30° olarak yazılır; sinüs ikinci bölgede pozitiftir: sin 150° = sin 30° = 1/2."},
+        {"q":"Birim çember üzerinde θ açısına karşılık gelen noktanın apsisi (x koordinatı) hangi değeri verir?","choices":["cos θ","sin θ","tan θ","cot θ","θ"],"answer":0,"explain":"Birim çemberdeki nokta (cos θ, sin θ)'dır."},
+        {"q":"f(x) = sin x fonksiyonunun esas periyodu nedir?","choices":["π/2","π","2π","4π","1"],"answer":2,"explain":"Sinüs fonksiyonu her 2π radyanda (360°) aynı değerleri tekrar alır."},
+        {"q":"f(x) = sin x fonksiyonunun görüntü kümesi hangisidir?","choices":["[−1, 1]","[0, 1]","ℝ","[−2, 2]","(0, ∞)"],"answer":0,"explain":"Birim çemberdeki noktanın y koordinatı −1 ile 1 arasında değişir."},
+        {"q":"f(x) = 3 sin x fonksiyonunun alabileceği en büyük değer kaçtır?","choices":["1","2","3","4","6"],"answer":2,"explain":"sin x en çok 1 olduğundan 3 sin x en çok 3 olur; grafik dikey olarak 3 kat uzamıştır."},
+        {"q":"f(x) = sin 2x fonksiyonunun esas periyodu nedir?","choices":["π/2","4π","2π","π","2"],"answer":3,"explain":"sin(ax) fonksiyonunun periyodu 2π / |a|'dır: 2π / 2 = π."},
+        {"q":"0° < x < 90° olmak üzere tan x = 1 ise x kaç derecedir?","choices":["30","45","60","75","90"],"answer":1,"explain":"tan 45° = sin 45° / cos 45° = 1'dir."},
+        {"q":"0 ≤ x < 2π aralığında cos x = 1/2 denkleminin kaç çözümü vardır?","choices":["0","1","2","3","4"],"answer":2,"explain":"Kosinüs birinci ve dördüncü bölgelerde pozitiftir: x = π/3 ve x = 5π/3."},
+        {"q":"0 ≤ x < 2π aralığında 2 sin x − 1 = 0 denkleminin çözüm kümesini bulunuz.","explain":"sin x = 1/2 olur. Sinüs birinci ve ikinci bölgelerde pozitiftir: x = π/6 ve x = π − π/6 = 5π/6. Çözüm kümesi {π/6, 5π/6}."}
+      ]
+    },
+    {
+      "name": "Nicelikler ve Değişimler (2)",
+      "topics": "Üstel Fonksiyonlar ve Nitel Özellikleri; Üstel Fonksiyonların Ters Fonksiyonları; Logaritmik Fonksiyonlar ve Nitel Özellikleri; Üstel ve Logaritmik Fonksiyonlarla İfade Edilebilen Denklem ve Eşitsizlikler İçeren Problemler",
+      "questions": [
+        {"q":"f(x) = 2ˣ fonksiyonu için f(3) kaçtır?","choices":["5","6","8","9","16"],"answer":2,"explain":"f(3) = 2³ = 8."},
+        {"q":"Aşağıdaki fonksiyonlardan hangisi gerçek sayılarda azalandır?","choices":["f(x) = (1/2)ˣ","f(x) = 2ˣ","f(x) = 3ˣ","f(x) = 10ˣ","f(x) = eˣ"],"answer":0,"explain":"Tabanı 0 ile 1 arasında olan üstel fonksiyonlar azalandır; tabanı 1'den büyük olanlar artandır."},
+        {"q":"f(x) = aˣ (a > 0, a ≠ 1) biçimindeki her üstel fonksiyonun grafiği hangi noktadan geçer?","choices":["(0, 1)","(1, 0)","(0, 0)","(1, 1)","(−1, 0)"],"answer":0,"explain":"a⁰ = 1 olduğundan her üstel fonksiyonun grafiği y eksenini (0, 1) noktasında keser."},
+        {"q":"log₂ 8 kaçtır?","choices":["2","3","4","6","16"],"answer":1,"explain":"2³ = 8 olduğundan log₂ 8 = 3."},
+        {"q":"log 1000 kaçtır? (log, 10 tabanında logaritmadır.)","choices":["2","3","4","10","100"],"answer":1,"explain":"10³ = 1000 olduğundan log 1000 = 3."},
+        {"q":"log₅ 1 kaçtır?","choices":["0","1","5","−1","Tanımsız"],"answer":0,"explain":"Her uygun taban için a⁰ = 1 olduğundan logₐ 1 = 0."},
+        {"q":"log₃ x = 2 ise x kaçtır?","choices":["5","6","8","9","27"],"answer":3,"explain":"Logaritmanın tanımına göre x = 3² = 9."},
+        {"q":"f(x) = 2ˣ fonksiyonunun ters fonksiyonu hangisidir?","choices":["f⁻¹(x) = log₂ x","f⁻¹(x) = x / 2","f⁻¹(x) = x²","f⁻¹(x) = 2⁻ˣ","f⁻¹(x) = √x"],"answer":0,"explain":"Üstel fonksiyon ile aynı tabandaki logaritma fonksiyonu birbirinin tersidir."},
+        {"q":"log 2 + log 5 işleminin sonucu kaçtır? (10 tabanında)","choices":["log 7","1","7","10","0"],"answer":1,"explain":"log a + log b = log(a · b) olduğundan log 10 = 1."},
+        {"q":"log₂ 32 − log₂ 4 işleminin sonucu kaçtır?","choices":["2","3","4","5","28"],"answer":1,"explain":"logₐ x − logₐ y = logₐ(x / y): log₂ 8 = 3."},
+        {"q":"2ˣ = 16 denkleminin çözümü kaçtır?","choices":["2","3","4","8","16"],"answer":2,"explain":"16 = 2⁴ olduğundan x = 4."},
+        {"q":"Bir bakteri kültüründeki bakteri sayısı her 3 saatte bir iki katına çıkıyor. Başlangıçta 100 bakteri varsa 12 saat sonra kaç bakteri olur?","choices":["400","800","1200","1600","3200"],"answer":3,"explain":"12 saatte 4 kez ikiye katlanır: 100 · 2⁴ = 1600. Model: N(t) = 100 · 2^(t/3)."},
+        {"q":"f(x) = log(x − 2) fonksiyonunun en geniş tanım kümesi hangisidir?","choices":["(2, ∞)","[2, ∞)","(−∞, 2)","ℝ","(0, ∞)"],"answer":0,"explain":"Logaritmanın içi pozitif olmalıdır: x − 2 > 0 ise x > 2."},
+        {"q":"3ˣ⁺¹ = 81 denklemini çözünüz. Ardından log₃ 81 değerini bulup sonucu yorumlayınız.","explain":"81 = 3⁴ olduğundan x + 1 = 4 ve x = 3. Ayrıca log₃ 81 = 4'tür; yani üslü denklemdeki x + 1 ifadesi, 81'in 3 tabanındaki logaritmasına eşittir. Üstel ve logaritma fonksiyonları birbirinin tersidir."}
+      ]
+    },
+    {
+      "name": "Nicelikler ve Değişimler (3)",
+      "topics": "Fonksiyonların Bileşkesi; Fonksiyonlarda Dört İşlem",
+      "questions": [
+        {"q":"f(x) = 2x + 1 ve g(x) = x² olduğuna göre (f ∘ g)(2) kaçtır?","choices":["5","9","16","25","10"],"answer":1,"explain":"Önce g uygulanır: g(2) = 4. Sonra f: f(4) = 9."},
+        {"q":"f(x) = 2x + 1 ve g(x) = x² olduğuna göre (g ∘ f)(2) kaçtır?","choices":["5","9","16","25","10"],"answer":3,"explain":"Önce f uygulanır: f(2) = 5. Sonra g: g(5) = 25. (f ∘ g)(2) = 9 ile karşılaştırınca bileşke işleminin değişmeli olmadığı görülür."},
+        {"q":"Fonksiyonlarda bileşke işlemi için hangisi genellikle doğrudur?","choices":["f ∘ g ile g ∘ f her zaman eşit değildir.","f ∘ g = g ∘ f her zaman sağlanır.","Bileşke işlemi tanımsızdır.","f ∘ g her zaman f + g'ye eşittir.","Bileşke yalnızca doğrusal fonksiyonlarda yapılır."],"answer":0,"explain":"Bileşke işleminde sıra önemlidir; genel olarak değişme özelliği yoktur."},
+        {"q":"f(x) = x + 3 ve g(x) = 2x olduğuna göre (f + g)(1) kaçtır?","choices":["3","4","5","6","9"],"answer":3,"explain":"(f + g)(x) = 3x + 3 olduğundan (f + g)(1) = 6. Ya da f(1) + g(1) = 4 + 2 = 6."},
+        {"q":"f(x) = x + 1 ve g(x) = x − 1 olduğuna göre (f · g)(2) kaçtır?","choices":["1","2","3","4","5"],"answer":2,"explain":"f(2) · g(2) = 3 · 1 = 3."},
+        {"q":"f(x) = x ve g(x) = x − 4 olduğuna göre (f / g)(x) fonksiyonu hangi x değeri için tanımsızdır?","choices":["0","2","Her zaman tanımlıdır","−4","4"],"answer":4,"explain":"Bölme işleminde payda sıfır olamaz: g(x) = 0 ise x = 4."},
+        {"q":"f(x) = 3x − 2 ve g(x) = x + 5 olduğuna göre (f ∘ g)(x) hangisidir?","choices":["3x + 13","3x + 3","3x + 5","x + 3","3x² + 13"],"answer":0,"explain":"f(g(x)) = 3(x + 5) − 2 = 3x + 15 − 2 = 3x + 13."},
+        {"q":"f(x) = 2x olduğuna göre (f ∘ f)(1) kaçtır?","choices":["1","2","4","8","3"],"answer":2,"explain":"f(1) = 2, f(2) = 4."},
+        {"q":"Bir fonksiyon ile ters fonksiyonunun bileşkesi (f ∘ f⁻¹)(x) neye eşittir?","choices":["x","0","1","f(x)","f⁻¹(x)"],"answer":0,"explain":"Bir fonksiyon ile tersinin bileşkesi birim fonksiyondur; her x'i yine x'e götürür."},
+        {"q":"Bir mağaza önce %20 indirim yapıyor (f(x) = 0,8x), ardından 50 TL'lik kupon düşülüyor (g(x) = x − 50). Etiket fiyatı 500 TL olan ürün için (g ∘ f)(500) kaç TL'dir?","choices":["350","360","400","450","410"],"answer":0,"explain":"Önce indirim: f(500) = 400. Sonra kupon: g(400) = 350 TL."},
+        {"q":"Aynı ürün için kupon önce, indirim sonra uygulanırsa ((f ∘ g)(500)) ödenecek tutar, indirim önce uygulandığındakinden (350 TL) kaç TL fazla olur?","choices":["0","10","20","40","50"],"answer":1,"explain":"g(500) = 450, f(450) = 360 TL. 360 − 350 = 10 TL fark çıkar; işlem sırası sonucu değiştirir."},
+        {"q":"x ≥ 0 için f(x) = x² ve g(x) = √x olduğuna göre (f ∘ g)(x) hangisidir?","choices":["x","x²","√x","x⁴","1"],"answer":0,"explain":"f(g(x)) = (√x)² = x. Bu aralıkta f ve g birbirinin tersidir."},
+        {"q":"f(x) = x² ve g(x) = 2x olduğuna göre (f − g)(3) kaçtır?","choices":["0","3","6","9","15"],"answer":1,"explain":"f(3) − g(3) = 9 − 6 = 3."},
+        {"q":"f(x) = x + 2 ve g(x) = 3x için (f ∘ g)(x) ve (g ∘ f)(x) fonksiyonlarını bulunuz. Eşit olup olmadıklarını gösteriniz.","explain":"(f ∘ g)(x) = f(3x) = 3x + 2. (g ∘ f)(x) = g(x + 2) = 3x + 6. Örneğin x = 0 için 2 ≠ 6 olduğundan bu iki bileşke eşit değildir."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "grade": 12,
+  "subject": "İngilizce",
+  "source": "MEB 2026-2027 çerçeve yıllık planı",
+  "units": [
+    {
+      "name": "Music",
+      "topics": "",
+      "questions": [
+        {"q":"A person who writes music is called a ___.","choices":["conductor","composer","drummer","listener","singer"],"answer":1,"explain":"Composer besteci, conductor orkestra şefidir."},
+        {"q":"I can't stand ___ to loud music when I'm studying.","choices":["listened","listen","listening","to listening","listens"],"answer":2,"explain":"\"can't stand\" kalıbından sonra fiil -ing alır."},
+        {"q":"Which instrument is a traditional Turkish string instrument?","choices":["flute","trumpet","drum kit","bağlama","saxophone"],"answer":3,"explain":"Bağlama (saz) telli bir Türk halk çalgısıdır."},
+        {"q":"Mozart ___ his first symphony when he was only eight years old.","choices":["will compose","composes","has composed","is composing","composed"],"answer":4,"explain":"Geçmişte tamamlanmış bir olay Past Simple ile anlatılır."},
+        {"q":"A: \"What kind of music are you into?\" B: \"___\"","choices":["Yes, I am.","I'm really into jazz and classical music.","At the concert hall.","Last Saturday.","Because it's raining."],"answer":1,"explain":"\"be into\" bir şeyden çok hoşlanmak demektir; soru müzik türünü sorar."},
+        {"q":"The concert was ___ boring that many people left early.","choices":["too","such","so","enough","very much"],"answer":2,"explain":"\"so + sıfat + that\" sonuç bildirir; \"such\" ise isimle kullanılır (such a boring concert)."},
+        {"q":"Write a short paragraph about your favourite singer or band. Explain why you like their music.","explain":"Örnek cevap: My favourite band is Duman. I started listening to them when I was thirteen. I love their songs because the lyrics are meaningful and the guitar sounds are powerful. Listening to their music makes me feel energetic, so I often listen to them while I'm walking to school."}
+      ]
+    },
+    {
+      "name": "Friendship",
+      "topics": "",
+      "questions": [
+        {"q":"A true friend is someone you can ___ on when you have a problem.","choices":["give","look","take","count","turn off"],"answer":3,"explain":"\"count on someone\" birine güvenmek, ona dayanmak demektir."},
+        {"q":"Ali and I ___ friends since primary school.","choices":["be","are","were being","will be","have been"],"answer":4,"explain":"Geçmişte başlayıp hâlâ süren durumlar için Present Perfect kullanılır."},
+        {"q":"We had an argument, but we ___ up the next day.","choices":["did","made","took","got","put"],"answer":1,"explain":"\"make up\" kavgadan sonra barışmak demektir."},
+        {"q":"Which quality is NOT expected from a good friend?","choices":["honesty","loyalty","jealousy","kindness","trust"],"answer":2,"explain":"Jealousy kıskançlık demektir; diğerleri sadakat, dürüstlük, nezaket ve güvendir."},
+        {"q":"She is the friend ___ I always share my secrets with.","choices":["whose","which","where","who","when"],"answer":3,"explain":"İnsanlardan söz eden sıfat cümlelerinde \"who\" kullanılır."},
+        {"q":"I'll never let you ___.","choices":["off","up","in","on","down"],"answer":4,"explain":"\"let someone down\" birini hayal kırıklığına uğratmak demektir."},
+        {"q":"Do you think online friendships can be as strong as face-to-face friendships? Write your opinion with at least two reasons.","explain":"Örnek cevap: I think online friendships can be strong, but not as strong as face-to-face ones. First, online friends can support us and share our interests even if they live far away. However, when we meet friends in person, we can understand their feelings better through their body language. Also, real friends can help us in difficult situations, like when we are ill."}
+      ]
+    },
+    {
+      "name": "Human Rights",
+      "topics": "",
+      "questions": [
+        {"q":"The Universal Declaration of Human Rights ___ by the United Nations in 1948.","choices":["adopted","was adopted","has adopted","adopts","is adopting"],"answer":1,"explain":"Bildirge BM tarafından kabul edilmiştir; edilgen yapı kullanılır."},
+        {"q":"Every child ___ have the right to education.","choices":["mustn't","shouldn't","should","can't","couldn't"],"answer":2,"explain":"Olması gerekeni anlatmak için \"should\" kullanılır."},
+        {"q":"Treating people unfairly because of their race, religion or gender is called ___.","choices":["justice","equality","freedom","discrimination","tolerance"],"answer":3,"explain":"Discrimination ayrımcılık demektir."},
+        {"q":"Which of the following is a basic human right?","choices":["being famous","owning a sports car","having a big house","travelling first class","freedom of speech"],"answer":4,"explain":"İfade özgürlüğü temel insan haklarından biridir."},
+        {"q":"Children ___ not be forced to work in factories.","choices":["needn't","must","don't have to","would","might"],"answer":1,"explain":"\"must not\" kesin yasak anlatır; çocuk işçiliği yasaktır."},
+        {"q":"People of all ages and backgrounds ___ equal before the law.","choices":["be","is","are","being","was being"],"answer":2,"explain":"Çoğul özne \"people\" ile \"are\" kullanılır."},
+        {"q":"Choose one human right and explain why it is important for a society.","explain":"Örnek cevap: The right to education is very important. When people are educated, they can find better jobs and make informed decisions. Education helps people understand their other rights too. A society with educated citizens is usually more peaceful and develops faster."}
+      ]
+    },
+    {
+      "name": "Coming Soon",
+      "topics": "",
+      "questions": [
+        {"q":"Look at those dark clouds! It ___ rain.","choices":["has","will be","was","is going to","is raining yesterday"],"answer":3,"explain":"Mevcut bir kanıta dayanan tahminler \"be going to\" ile yapılır."},
+        {"q":"A: \"I'm thirsty.\" B: \"Wait, I ___ get you a glass of water.\"","choices":["did","am going to have","was","have","will"],"answer":4,"explain":"Konuşma anında verilen kararlar \"will\" ile anlatılır."},
+        {"q":"This time tomorrow, I ___ on a plane to London.","choices":["fly","will be flying","flew","have flown","am flown"],"answer":1,"explain":"Gelecekte belirli bir anda devam edecek eylemler Future Continuous (will be + V-ing) ile anlatılır."},
+        {"q":"The new film ___ in cinemas next Friday. The date is on the poster.","choices":["has opened","opened","opens","was opening","had opened"],"answer":2,"explain":"Programlı ve tarifeli gelecek olaylar Simple Present ile anlatılabilir."},
+        {"q":"A film that tells a story about the future with advanced technology is usually a ___ film.","choices":["historical","romantic comedy","documentary","science fiction","musical"],"answer":3,"explain":"Science fiction bilim kurgu demektir."},
+        {"q":"By 2030, scientists ___ new ways to produce clean energy.","choices":["find","found","have found","are finding","will have found"],"answer":4,"explain":"Gelecekte belli bir zamana kadar tamamlanmış olacak eylemler Future Perfect ile anlatılır."},
+        {"q":"Write about your plans for the next five years. Use \"be going to\" and \"will\".","explain":"Örnek cevap: Next year I'm going to take the university entrance exam. I'm going to study computer engineering because I love coding. I think I will live in a big city during university. After graduating, I will probably work for a technology company, and maybe one day I will start my own business."}
+      ]
+    },
+    {
+      "name": "Psychology",
+      "topics": "",
+      "questions": [
+        {"q":"She said, \"I am tired.\" → She said that she ___ tired.","choices":["is","was","will be","has been","be"],"answer":1,"explain":"Dolaylı anlatımda zaman bir derece geriye kayar: am → was."},
+        {"q":"He said, \"I will help you.\" → He said that he ___ help me.","choices":["can","will","would","shall","is going"],"answer":2,"explain":"Dolaylı anlatımda \"will\" → \"would\" olur."},
+        {"q":"The teacher asked us ___ we had finished the project.","choices":["who","that","what","if","which"],"answer":3,"explain":"Evet/hayır sorularının dolaylı anlatımında \"if\" ya da \"whether\" kullanılır."},
+        {"q":"A feeling of worry or nervousness about something that might happen is called ___.","choices":["pride","happiness","relief","confidence","anxiety"],"answer":4,"explain":"Anxiety kaygı demektir."},
+        {"q":"She told me ___ late again.","choices":["don't be","not to be","not be","to not being","doesn't be"],"answer":1,"explain":"Olumsuz emirlerin dolaylı anlatımı \"told someone not to + V1\" ile yapılır."},
+        {"q":"Which activity can help reduce stress?","choices":["skipping meals","sleeping only three hours","doing regular exercise","drinking a lot of energy drinks","working all night"],"answer":2,"explain":"Düzenli egzersiz stres hormonlarını azaltır ve ruh hâlini iyileştirir."},
+        {"q":"Your friend told you, \"I'm worried about the exam. I haven't studied enough.\" Report your friend's words to another person and give one piece of advice.","explain":"Örnek cevap: My friend told me that she was worried about the exam and that she hadn't studied enough. I advised her to make a study plan and to take short breaks so that she wouldn't feel so stressed."}
+      ]
+    },
+    {
+      "name": "Favors",
+      "topics": "",
+      "questions": [
+        {"q":"Would you mind ___ the window? It's cold in here.","choices":["closed","close","to close","closing","closes"],"answer":3,"explain":"\"Would you mind\" kalıbından sonra fiil -ing alır."},
+        {"q":"Choose the most polite way to ask for help.","choices":["Give me your homework.","Help me with my homework.","You must help me.","Do my homework.","I was wondering if you could help me with my homework."],"answer":4,"explain":"\"I was wondering if you could...\" çok kibar bir rica kalıbıdır."},
+        {"q":"A: \"Could you lend me your pen?\" B: \"___\"","choices":["No, I'm not.","Sure, here you are.","Yes, I could yesterday.","I lend.","It's mine pen."],"answer":1,"explain":"Bir ricaya olumlu cevap \"Sure, here you are\" ile verilebilir."},
+        {"q":"A: \"Shall I carry your bag?\" B: \"___\"","choices":["No, I shall.","Yes, you shall.","That's very kind of you, thanks.","I don't carry.","It's heavy for me yesterday."],"answer":2,"explain":"\"Shall I...?\" yardım teklif eder; teşekkür ederek kabul edilir."},
+        {"q":"A: \"Can you help me move the table?\" B: \"I'm afraid I ___. I've hurt my back.\"","choices":["haven't","don't","won't be","can't","am not"],"answer":3,"explain":"\"I'm afraid I can't\" bir ricayı kibarca reddetmek için kullanılır."},
+        {"q":"I owe you a ___ for helping me yesterday.","choices":["favoured","favourite","favourable","favouring","favour"],"answer":4,"explain":"\"owe someone a favour\" birine iyilik borçlu olmak demektir."},
+        {"q":"Write a short dialogue in which you politely ask a neighbour for a favour and they accept.","explain":"Örnek cevap: — Excuse me, Mrs. Ayşe. I'm going on holiday next week. Would you mind watering my plants while I'm away? — Of course not, I'd be happy to help. — Thank you so much, that's very kind of you. I'll leave the key with you."}
+      ]
+    },
+    {
+      "name": "New Stories",
+      "topics": "",
+      "questions": [
+        {"q":"Journalists must check whether a story is true before they ___ it.","choices":["published","publish","publishing","to publish","publishes"],"answer":1,"explain":"\"before\" bağlacından sonra Simple Present kullanılır."},
+        {"q":"False information that is shared on purpose to mislead people is called ___.","choices":["breaking news","headline","fake news","weather report","advertisement-free news"],"answer":2,"explain":"Fake news sahte haber demektir; kaynak kontrol edilmeden paylaşılmamalıdır."},
+        {"q":"The title of a newspaper article printed in large letters is the ___.","choices":["footnote","caption","column","headline","index"],"answer":3,"explain":"Headline manşet ya da başlık demektir."},
+        {"q":"While the reporter ___ the news, the lights suddenly went out.","choices":["will read","read","has read","reads","was reading"],"answer":4,"explain":"Geçmişte devam eden bir eylem başka bir eylemle kesildiğinde Past Continuous kullanılır."},
+        {"q":"The thief ___ by the police after a long chase.","choices":["caught","was caught","has catch","catches","is catching"],"answer":1,"explain":"Hırsız yakalanmıştır; edilgen yapı (was + V3) kullanılır."},
+        {"q":"What should you do before sharing news on social media?","choices":["Add some false details.","Share it immediately.","Check if the source is reliable.","Change the date.","Never read it."],"answer":2,"explain":"Güvenilir kaynaktan doğrulamak yanlış bilginin yayılmasını önler."},
+        {"q":"Write a short news report about an event at your school. Answer the questions who, what, when, where and why.","explain":"Örnek cevap: SCIENCE FAIR AT ORDU ANADOLU LİSESİ. Students of Ordu Anadolu Lisesi organised a science fair in the school garden last Friday. More than 30 projects were presented by students from all grades. The aim of the fair was to encourage young people to be interested in science. The winning project was a solar-powered water pump designed by two 12th-grade students."}
+      ]
+    },
+    {
+      "name": "Alternative Energy",
+      "topics": "",
+      "questions": [
+        {"q":"Which of the following is a renewable energy source?","choices":["natural gas","coal","oil","solar energy","diesel"],"answer":3,"explain":"Güneş enerjisi yenilenebilir; kömür, petrol ve doğal gaz fosil yakıtlardır."},
+        {"q":"If we use more renewable energy, air pollution ___.","choices":["decreasing","decreased","has decreased","would decreased","will decrease"],"answer":4,"explain":"Birinci tip koşul cümlesi: If + Simple Present, will + V1."},
+        {"q":"Wind turbines ___ to produce electricity.","choices":["use","are used","are using","used them","have use"],"answer":1,"explain":"Rüzgâr türbinleri kullanılır; edilgen yapı (are + V3) gerekir."},
+        {"q":"Energy that comes from the heat inside the Earth is called ___ energy.","choices":["nuclear","solar","geothermal","tidal","fossil"],"answer":2,"explain":"Jeotermal enerji Türkiye'de özellikle Denizli ve Aydın'da kullanılır."},
+        {"q":"We should turn off the lights when we leave a room ___ save energy.","choices":["because","for","so","to","with"],"answer":3,"explain":"Amaç bildirmek için \"to + V1\" kullanılır."},
+        {"q":"One disadvantage of solar energy is that ___.","choices":["it is a fossil fuel","it causes acid rain","it will run out soon","it produces a lot of smoke","it depends on the weather and daylight"],"answer":4,"explain":"Güneş enerjisi gece ve bulutlu havalarda daha az üretim yapar."},
+        {"q":"Why is it important to use alternative energy sources? Write at least three reasons.","explain":"Örnek cevap: First, fossil fuels will run out one day, but renewable sources like the sun and wind will not. Second, alternative energy sources produce much less pollution and help fight climate change. Third, countries like Turkey can reduce their dependence on imported oil and gas if they use more solar, wind and geothermal energy."}
+      ]
+    },
+    {
+      "name": "Technology",
+      "topics": "",
+      "questions": [
+        {"q":"If I had more money, I ___ a new laptop.","choices":["would buy","will buy","buy","bought","have bought"],"answer":0,"explain":"İkinci tip koşul cümlesi: If + Past Simple, would + V1 (şimdiki zamanda gerçek olmayan durum)."},
+        {"q":"Smartphones ___ by millions of people every day.","choices":["are used","use","are using","used","have using"],"answer":0,"explain":"Akıllı telefonlar kullanılır; edilgen yapı kullanılır."},
+        {"q":"A computer program that can learn and make decisions like a human is called ___.","choices":["artificial intelligence","a printer","a keyboard","a charger","a cable"],"answer":0,"explain":"Artificial intelligence yapay zekâ demektir."},
+        {"q":"You should never share your ___ with anyone online.","choices":["password","favourite colour","favourite song","hobby","favourite film"],"answer":0,"explain":"Şifreler kişisel güvenlik için gizli tutulmalıdır."},
+        {"q":"If you ___ the screen, the app opens.","choices":["touch","touched","will touch","would touch","had touched"],"answer":0,"explain":"Sıfırıncı tip koşul cümlesi: genel gerçekler için If + Simple Present, Simple Present."},
+        {"q":"Spending too much time in front of screens can ___ your eyes.","choices":["damage","improve","repair","protect","clean"],"answer":0,"explain":"Uzun süre ekran kullanımı göz yorgunluğuna yol açabilir."},
+        {"q":"Write about one advantage and one disadvantage of technology in education.","explain":"Örnek cevap: One advantage of technology in education is that students can reach a lot of information quickly and learn with videos and interactive apps, like EDUCOM. One disadvantage is that students may get distracted by social media and games, and spending too much time in front of screens can be harmful to their health."}
+      ]
+    },
+    {
+      "name": "Manners",
+      "topics": "",
+      "questions": [
+        {"q":"In many cultures, it is rude ___ with your mouth full.","choices":["to speak","speak","speaking to","spoke","speaks"],"answer":0,"explain":"\"It is rude/polite + to + V1\" kalıbı görgü kurallarını anlatır."},
+        {"q":"You ___ say \"thank you\" when someone helps you.","choices":["should","shouldn't","mustn't","needn't","couldn't"],"answer":0,"explain":"Tavsiye ve doğru davranışı anlatmak için \"should\" kullanılır."},
+        {"q":"In Japan, people usually ___ instead of shaking hands when they meet.","choices":["bow","kiss","hug","wave goodbye","shout"],"answer":0,"explain":"Japon kültüründe selamlaşırken eğilmek (bow) yaygındır."},
+        {"q":"Which behaviour shows good table manners?","choices":["waiting for everyone to be served before starting to eat","using your phone during dinner","reaching across the table","talking loudly with food in your mouth","leaving the table without saying anything"],"answer":0,"explain":"Herkese servis yapılmasını beklemek nezaket göstergesidir."},
+        {"q":"When you are a guest in a Turkish home, it is polite ___ off your shoes.","choices":["to take","taking","take","took","takes"],"answer":0,"explain":"Türk kültüründe evlere girerken ayakkabı çıkarmak yaygın bir nezaket kuralıdır."},
+        {"q":"You ___ talk on your phone loudly on public transport. It disturbs other people.","choices":["shouldn't","should","must","have to","ought"],"answer":0,"explain":"Başkalarını rahatsız eden davranışlar için \"shouldn't\" kullanılır."},
+        {"q":"Compare one rule of good manners in Turkey with a rule in another culture you know.","explain":"Örnek cevap: In Turkey, young people usually kiss the hands of their elders during religious holidays to show respect. In Japan, people show respect by bowing; the deeper the bow, the more respect they show. Both customs show that respecting elders and others is important, but the way people express it is different in each culture."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "grade": 12,
+  "subject": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "source": "MEB 2026-2027 çerçeve yıllık planı",
+  "units": [
+    {
+      "name": "20. Yüzyıl Başlarında Osmanlı Devleti ve Dünya",
+      "topics": "",
+      "questions": [
+        {"q":"I. Dünya Savaşı'nı başlatan olay hangisidir?","choices":["Paris Barış Konferansı","Rusya'da Bolşevik İhtilali","ABD'nin savaşa girmesi","Mondros Ateşkesi","Avusturya-Macaristan veliahdının Saraybosna'da öldürülmesi"],"answer":4,"explain":"28 Haziran 1914'teki suikast bahane olmuş; savaşın asıl nedenleri sömürge rekabeti, milliyetçilik ve bloklaşmadır."},
+        {"q":"I. Dünya Savaşı öncesinde İngiltere, Fransa ve Rusya'nın oluşturduğu blok hangisidir?","choices":["Üçlü İttifak","Üçlü İtilaf","Mihver Devletleri","Balkan Antantı","Varşova Paktı"],"answer":1,"explain":"Üçlü İttifak ise Almanya, Avusturya-Macaristan ve İtalya'dan oluşuyordu; İtalya savaşta taraf değiştirmiştir."},
+        {"q":"I. Dünya Savaşı'nda 1917'de savaştan çekilen devlet hangisidir?","choices":["Fransa","İngiltere","Rusya","Almanya","ABD"],"answer":2,"explain":"Bolşevik İhtilali'nden sonra Rusya, 1918'de Brest-Litovsk Antlaşması'nı imzalayarak savaştan çekilmiştir."},
+        {"q":"ABD Başkanı Wilson'ın yayımladığı ilkelerin en dikkat çeken maddesi hangisidir?","choices":["Gizli antlaşmaların zorunlu olması","Sömürgeciliğin artırılması","Savaş tazminatlarının iki katına çıkarılması","Milletlerin kendi geleceklerini belirleme hakkı","Boğazların kapatılması"],"answer":3,"explain":"Wilson İlkeleri yenilen devletlere umut vermiş, ancak barış antlaşmalarında uygulanmamıştır."},
+        {"q":"I. Dünya Savaşı'ndan sonra uluslararası barışı korumak amacıyla kurulan örgüt hangisidir?","choices":["Varşova Paktı","Birleşmiş Milletler","NATO","Avrupa Birliği","Milletler Cemiyeti (Cemiyet-i Akvam)"],"answer":4,"explain":"Milletler Cemiyeti II. Dünya Savaşı'nı önleyemediği için yerini 1945'te Birleşmiş Milletler'e bırakmıştır."},
+        {"q":"Paris Barış Konferansı'nda ortaya atılan ve gelişmemiş ülkelerin büyük devletlerin yönetimine bırakılmasını öngören sistem hangisidir?","choices":["Kapitülasyonlar","Manda ve himaye sistemi","Tımar sistemi","Meşrutiyet","Federalizm"],"answer":1,"explain":"Manda, sömürgeciliğin farklı bir adla sürdürülmesi anlamına geliyordu."},
+        {"q":"Almanya ile imzalanan ve II. Dünya Savaşı'nın nedenleri arasında gösterilen ağır şartlı antlaşma hangisidir?","choices":["Lozan Antlaşması","Sevr Antlaşması","Versay Antlaşması","Nöyyi Antlaşması","Trianon Antlaşması"],"answer":2,"explain":"Almanya'ya ağır savaş tazminatı ve askerî kısıtlamalar getirilmiş, bu durum intikam duygusunu beslemiştir."},
+        {"q":"Osmanlı Devleti ile imzalanan ancak hiçbir zaman yürürlüğe girmeyen antlaşma hangisidir?","choices":["Mudanya Ateşkesi","Lozan Antlaşması","Mondros Ateşkesi","Sevr Antlaşması","Ankara Antlaşması"],"answer":3,"explain":"10 Ağustos 1920'de imzalanan Sevr, Millî Mücadele'nin zaferiyle geçersiz hâle gelmiştir."},
+        {"q":"Mondros Ateşkes Antlaşması'nın 7. maddesinin Osmanlı için tehlikesini açıklayınız.","explain":"7. maddeye göre İtilaf Devletleri güvenliklerini tehdit eden bir durum ortaya çıkarsa herhangi bir stratejik noktayı işgal edebilecekti. \"Güvenliği tehdit eden durum\" tanımı belirsiz olduğu için İtilaf Devletleri bu maddeyi bahane ederek Anadolu'nun istedikleri yerini işgal edebilir hâle gelmiştir. Nitekim Musul, İskenderun, Antalya ve İzmir gibi pek çok yer bu madde gerekçe gösterilerek işgal edilmiştir."}
+      ]
+    },
+    {
+      "name": "Millî Mücadele",
+      "topics": "",
+      "questions": [
+        {"q":"Mustafa Kemal Paşa Samsun'a hangi tarihte çıkmıştır?","choices":["4 Eylül 1919","23 Nisan 1920","29 Ekim 1923","30 Ağustos 1922","19 Mayıs 1919"],"answer":4,"explain":"Mustafa Kemal 19 Mayıs 1919'da Samsun'a çıkarak Millî Mücadele'yi başlatmıştır. Bu tarih Atatürk'ü Anma, Gençlik ve Spor Bayramı olarak kutlanır."},
+        {"q":"\"Milletin istiklalini yine milletin azim ve kararı kurtaracaktır.\" ifadesi hangi belgede yer alır?","choices":["Havza Genelgesi","Amasya Genelgesi","Misak-ı Millî","Mudanya Ateşkes Antlaşması","Lozan Antlaşması"],"answer":1,"explain":"Amasya Genelgesi (22 Haziran 1919), Millî Mücadele'nin amacını, gerekçesini ve yöntemini belirten ilk belgedir; millî egemenliğe ilk kez burada vurgu yapılır."},
+        {"q":"Türkiye Büyük Millet Meclisi hangi tarihte açılmıştır?","choices":["19 Mayıs 1919","29 Ekim 1923","23 Nisan 1920","3 Mart 1924","24 Temmuz 1923"],"answer":2,"explain":"TBMM 23 Nisan 1920'de Ankara'da açılmıştır. Bu tarih Ulusal Egemenlik ve Çocuk Bayramı olarak kutlanır."},
+        {"q":"Manda ve himayenin ilk kez reddedildiği kongre hangisidir?","choices":["Sivas Kongresi","Erzurum Kongresi","Balıkesir Kongresi","Alaşehir Kongresi","Amasya Görüşmeleri"],"answer":1,"explain":"Erzurum Kongresi (23 Temmuz-7 Ağustos 1919) bölgesel olarak toplanmış ama ulusal kararlar almıştır."},
+        {"q":"Bütün millî cemiyetlerin \"Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti\" adı altında birleştirildiği kongre hangisidir?","choices":["Balıkesir Kongresi","Erzurum Kongresi","Sivas Kongresi","Nazilli Kongresi","Pozantı Kongresi"],"answer":2,"explain":"Sivas Kongresi'nde Heyet-i Temsiliye'nin bütün yurdu temsil ettiği kabul edilmiştir."},
+        {"q":"Son Osmanlı Mebusan Meclisi'nin 28 Ocak 1920'de kabul ettiği ve Türk milletinin bağımsızlık şartlarını belirleyen belge hangisidir?","choices":["Teşkilat-ı Esasiye","Amasya Genelgesi","Sevr Antlaşması","Misak-ı Millî","Mudanya Ateşkesi"],"answer":3,"explain":"Misak-ı Millî kararları İtilaf Devletleri'nin İstanbul'u resmen işgal etmesine yol açmıştır (16 Mart 1920)."},
+        {"q":"Sakarya Meydan Muharebesi öncesinde ordunun ihtiyaçlarını halktan karşılamak için çıkarılan emirler hangileridir?","choices":["Teşkilat-ı Esasiye","Takrir-i Sükûn Kanunu","Hıyanet-i Vataniye Kanunu","Islahat Fermanı","Tekalif-i Milliye Emirleri"],"answer":4,"explain":"Halk, elindeki giyecek, yiyecek ve taşıma araçlarının bir bölümünü orduya vermiştir."},
+        {"q":"Sakarya Meydan Muharebesi'nden sonra TBMM'nin Mustafa Kemal Paşa'ya verdiği unvan ve rütbe hangisidir?","choices":["Başkomutanlık","Gazi unvanı ve mareşallik rütbesi","Paşa unvanı","Atatürk soyadı","Cumhurbaşkanlığı"],"answer":1,"explain":"Sakarya'dan sonra Türk ordusu savunmadan saldırıya geçmiştir."},
+        {"q":"Kurtuluş Savaşı'nın askerî safhasını sona erdiren ateşkes antlaşması hangisidir?","choices":["Lozan Antlaşması","Mondros Ateşkesi","Mudanya Ateşkes Antlaşması (1922)","Sevr Antlaşması","Gümrü Antlaşması"],"answer":2,"explain":"Mudanya ile Doğu Trakya savaş yapılmadan kurtarılmıştır."}
+      ]
+    },
+    {
+      "name": "Atatürkçülük ve Türk İnkılabı",
+      "topics": "",
+      "questions": [
+        {"q":"Halifeliğin kaldırıldığı ve Tevhid-i Tedrisat Kanunu'nun kabul edildiği tarih hangisidir?","choices":["1 Kasım 1922","29 Ekim 1923","17 Şubat 1926","3 Mart 1924","1 Kasım 1928"],"answer":3,"explain":"3 Mart 1924'te halifelik kaldırılmış, Tevhid-i Tedrisat (öğretim birliği) Kanunu ile bütün okullar Millî Eğitim Bakanlığına bağlanmıştır."},
+        {"q":"Atatürk ilkelerinden üçünü yazarak birini kısaca açıklayınız.","explain":"Atatürk ilkeleri: Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik ve İnkılapçılık. Örnek açıklama: Cumhuriyetçilik, millet egemenliğine dayanan ve yöneticilerin seçimle belirlendiği yönetim biçimini benimser."},
+        {"q":"Saltanatın kaldırıldığı tarih hangisidir?","choices":["23 Nisan 1920","29 Ekim 1923","3 Mart 1924","1 Kasım 1922","17 Şubat 1926"],"answer":3,"explain":"Saltanatın kaldırılmasıyla Osmanlı Devleti resmen sona ermiştir."},
+        {"q":"Türk Medeni Kanunu hangi yıl kabul edilmiştir?","choices":["1937","1923","1928","1934","1926"],"answer":4,"explain":"Medeni Kanun ile kadın-erkek eşitliği hukuken sağlanmış, resmî nikâh zorunlu hâle gelmiştir."},
+        {"q":"Türk kadınlarına milletvekili seçme ve seçilme hakkı hangi yıl tanınmıştır?","choices":["1926","1934","1930","1923","1946"],"answer":1,"explain":"Kadınlar 1930'da belediye, 1933'te muhtarlık, 1934'te milletvekilliği seçimlerinde haklarını kazanmıştır."},
+        {"q":"Atatürk ilkelerinden hangisi din ve devlet işlerinin birbirinden ayrılmasını ifade eder?","choices":["Halkçılık","Devletçilik","Laiklik","Milliyetçilik","Cumhuriyetçilik"],"answer":2,"explain":"Laiklik ilkesi düşünce ve inanç özgürlüğünün de güvencesidir."},
+        {"q":"Özel sektörün yetersiz kaldığı alanlarda devletin ekonomiye yatırım yapmasını öngören ilke hangisidir?","choices":["Halkçılık","Laiklik","İnkılapçılık","Devletçilik","Milliyetçilik"],"answer":3,"explain":"1929 Ekonomik Bunalımı'ndan sonra devletçilik uygulanmış, 1934'te Birinci Beş Yıllık Sanayi Planı başlatılmıştır."},
+        {"q":"Herkesin aile adı almasını zorunlu kılan kanun hangi yıl kabul edilmiştir?","choices":["1932","1925","1928","1926","1934"],"answer":4,"explain":"Soyadı Kanunu ile Mustafa Kemal'e TBMM tarafından \"Atatürk\" soyadı verilmiştir."},
+        {"q":"Atatürk ilkelerinin anayasaya girdiği yıl hangisidir?","choices":["1923","1937","1924","1928","1938"],"answer":1,"explain":"Altı ilke 1937'de 1924 Anayasası'na eklenmiştir."}
+      ]
+    },
+    {
+      "name": "İki Savaş Arasındaki Dönemde Türkiye ve Dünya",
+      "topics": "",
+      "questions": [
+        {"q":"1929'da New York Borsası'nın çökmesiyle başlayan ve bütün dünyayı etkileyen olay hangisidir?","choices":["Soğuk Savaş","Sanayi Devrimi","Dünya Ekonomik Bunalımı","Petrol Krizi","Marshall Planı"],"answer":2,"explain":"Bunalım işsizliği artırmış ve bazı ülkelerde totaliter rejimlerin güçlenmesine yol açmıştır."},
+        {"q":"İki savaş arası dönemde İtalya'da faşist rejimi kuran lider kimdir?","choices":["Franco","Hitler","Stalin","Mussolini","Churchill"],"answer":3,"explain":"Mussolini 1922'de iktidara gelmiş, yayılmacı bir politika izlemiştir."},
+        {"q":"Türkiye, Yunanistan, Yugoslavya ve Romanya arasında 1934'te imzalanan ittifak hangisidir?","choices":["Varşova Paktı","Sadabat Paktı","NATO","Bağdat Paktı","Balkan Antantı"],"answer":4,"explain":"Balkan Antantı, İtalya'nın yayılmacılığına karşı Balkanlarda barışı korumayı amaçlamıştır."},
+        {"q":"Türkiye, İran, Irak ve Afganistan arasında 1937'de imzalanan pakt hangisidir?","choices":["Balkan Antantı","Sadabat Paktı","Bağdat Paktı","Montrö Sözleşmesi","CENTO"],"answer":1,"explain":"Sadabat Paktı ile Türkiye doğu sınırlarının güvenliğini sağlamaya çalışmıştır."},
+        {"q":"1936'da imzalanan ve Boğazlar üzerindeki Türk egemenliğini tam olarak sağlayan antlaşma hangisidir?","choices":["Mudanya Ateşkesi","Lozan Antlaşması","Montrö Boğazlar Sözleşmesi","Sevr Antlaşması","Paris Antlaşması"],"answer":2,"explain":"Lozan'da kurulan uluslararası Boğazlar Komisyonu kaldırılmış, yetkileri Türkiye'ye verilmiştir."},
+        {"q":"Hatay'ın Türkiye'ye katılması hangi yıl gerçekleşmiştir?","choices":["1945","1923","1936","1939","1926"],"answer":3,"explain":"Hatay 1938'de bağımsız bir devlet olmuş, 1939'da TBMM kararıyla Türkiye'ye katılmıştır."},
+        {"q":"Türkiye'nin Milletler Cemiyeti'ne üye olduğu yıl hangisidir?","choices":["1928","1920","1945","1952","1932"],"answer":4,"explain":"Türkiye davet üzerine üye olmuştur; bu, barışçı dış politikasının bir göstergesidir."},
+        {"q":"Lozan'da çözülemeyen ve 1926 Ankara Antlaşması ile İngiltere'nin mandası altındaki Irak'a bırakılan bölge hangisidir?","choices":["Hatay","Musul","Kars","Batum","Kıbrıs"],"answer":1,"explain":"Türkiye, Musul petrollerinden 25 yıl süreyle %10 pay almayı kabul etmiştir."},
+        {"q":"Atatürk döneminde Türk dış politikasının temel ilkesini \"Yurtta sulh, cihanda sulh\" sözü üzerinden açıklayınız.","explain":"Atatürk döneminde Türkiye, savaşlardan yorgun düşmüş ülkenin kalkınabilmesi için barışçı bir dış politika izlemiştir. Sorunlar uluslararası hukuk ve antlaşmalarla çözülmüştür: Boğazlar sorunu Montrö'yle, Hatay sorunu diplomasiyle çözülmüştür. Balkan Antantı ve Sadabat Paktı ile bölgesel barış güçlendirilmiş, Milletler Cemiyeti'ne üye olunmuştur. Bu politika gerçekçi, bağımsız ve millî çıkarları koruyan bir anlayışa dayanır."}
+      ]
+    },
+    {
+      "name": "II. Dünya Savaşı Sürecinde Türkiye ve Dünya",
+      "topics": "",
+      "questions": [
+        {"q":"II. Dünya Savaşı'nı başlatan olay hangisidir?","choices":["Saraybosna suikastı","Japonya'nın Pearl Harbor'a saldırısı","Almanya'nın 1 Eylül 1939'da Polonya'ya saldırması","Berlin Duvarı'nın yapılması","Kore Savaşı"],"answer":2,"explain":"İngiltere ve Fransa bunun üzerine Almanya'ya savaş ilan etmiştir."},
+        {"q":"II. Dünya Savaşı'nda Mihver Devletleri hangileridir?","choices":["Türkiye, İran, Irak","İngiltere, Fransa, ABD","SSCB, Çin, İngiltere","Almanya, İtalya, Japonya","Fransa, İspanya, Portekiz"],"answer":3,"explain":"Karşılarında İngiltere, Fransa, SSCB ve ABD'nin bulunduğu Müttefikler yer almıştır."},
+        {"q":"ABD'nin II. Dünya Savaşı'na girmesine neden olan olay hangisidir?","choices":["Stalingrad Savaşı","Almanya'nın Polonya'yı işgali","İtalya'nın Habeşistan'ı işgali","Normandiya Çıkarması","Japonya'nın Pearl Harbor'a saldırması (1941)"],"answer":4,"explain":"7 Aralık 1941'deki baskın üzerine ABD Japonya'ya savaş ilan etmiştir."},
+        {"q":"II. Dünya Savaşı'nda Müttefiklerin Fransa kıyılarına yaptığı ve Batı Cephesi'ni açan büyük çıkarma hangisidir?","choices":["Çanakkale Çıkarması","Normandiya Çıkarması (1944)","Pearl Harbor Baskını","Stalingrad Savunması","Dunkirk Tahliyesi"],"answer":1,"explain":"6 Haziran 1944'te gerçekleştirilen çıkarma Almanya'nın yenilgisini hızlandırmıştır."},
+        {"q":"II. Dünya Savaşı'nı Asya'da sona erdiren olay hangisidir?","choices":["Normandiya Çıkarması","Almanya'nın teslim olması","ABD'nin Hiroşima ve Nagazaki'ye atom bombası atması","Kore Savaşı","Berlin'in bölünmesi"],"answer":2,"explain":"Ağustos 1945'teki bombalamalardan sonra Japonya teslim olmuştur."},
+        {"q":"II. Dünya Savaşı sırasında Türkiye'nin izlediği temel politika hangisidir?","choices":["Komşularına saldırmak","Mihver Devletleri'nin yanında savaşmak","Savaşın başında Müttefikler'le cephede savaşmak","Savaşa girmeme (denge ve tarafsızlık) politikası","Boğazları tüm savaş gemilerine açmak"],"answer":3,"explain":"İsmet İnönü döneminde Türkiye savaşın dışında kalmayı başarmıştır."},
+        {"q":"II. Dünya Savaşı yıllarında Türkiye'de görülen ekonomik zorluklardan biri hangisidir?","choices":["İşsizliğin sona ermesi","Ekonomik refahın artması","İthalatın kolaylaşması","Askerî harcamaların azalması","Temel ihtiyaçların karneyle dağıtılması"],"answer":4,"explain":"Seferberlik nedeniyle üretim düşmüş; ekmek karnesi ve Millî Korunma Kanunu gibi uygulamalar getirilmiştir."},
+        {"q":"Türkiye'nin Şubat 1945'te Almanya ve Japonya'ya savaş ilan etmesinin temel nedeni nedir?","choices":["Almanya'yı işgal etmek","Kurulacak Birleşmiş Milletler'e kurucu üye olabilmek","Japonya'dan toprak almak","Savaşa asker göndermek","Boğazları kapatmak"],"answer":1,"explain":"BM'ye kurucu üye olabilmek için Mihver Devletleri'ne savaş ilan etmek gerekiyordu; Türkiye fiilen savaşmamıştır."},
+        {"q":"II. Dünya Savaşı'ndan sonra 1945'te kurulan uluslararası örgüt hangisidir?","choices":["NATO","Milletler Cemiyeti","Birleşmiş Milletler","Avrupa Birliği","Varşova Paktı"],"answer":2,"explain":"BM'nin kuruluş antlaşması 1945'te San Francisco'da imzalanmıştır; Türkiye kurucu üyedir."}
+      ]
+    },
+    {
+      "name": "II. Dünya Savaşı Sonrasında Türkiye ve Dünya",
+      "topics": "",
+      "questions": [
+        {"q":"II. Dünya Savaşı'ndan sonra ABD ile SSCB arasında doğrudan savaşa dönüşmeyen gerginlik dönemine ne ad verilir?","choices":["Büyük Buhran","Yumuşama Dönemi","Lale Devri","Soğuk Savaş","Sanayi Devrimi"],"answer":3,"explain":"Soğuk Savaş'ta iki blok silahlanma, uzay ve ideoloji alanlarında rekabet etmiştir."},
+        {"q":"ABD'nin Türkiye ve Yunanistan'a askerî ve ekonomik yardımı öngören 1947 tarihli kararı hangisidir?","choices":["Monroe Doktrini","Marshall Planı","Eisenhower Doktrini","Wilson İlkeleri","Truman Doktrini"],"answer":4,"explain":"Truman Doktrini, SSCB'nin yayılmasına karşı bu ülkeleri desteklemeyi amaçlamıştır."},
+        {"q":"Avrupa ülkelerinin savaş sonrası ekonomik kalkınmasına yardım için ABD'nin uyguladığı plan hangisidir?","choices":["Truman Doktrini","Marshall Planı","Balfour Deklarasyonu","Beş Yıllık Sanayi Planı","Schuman Planı"],"answer":1,"explain":"Türkiye de Marshall Planı yardımlarından yararlanmış; tarımda makineleşme hızlanmıştır."},
+        {"q":"Türkiye NATO'ya hangi yıl üye olmuştur?","choices":["1945","1949","1952","1955","1960"],"answer":2,"explain":"Türkiye, Kore Savaşı'na asker göndermesinin de etkisiyle 1952'de NATO'ya katılmıştır."},
+        {"q":"SSCB ve Doğu Bloku ülkelerinin NATO'ya karşı 1955'te kurduğu askerî örgüt hangisidir?","choices":["SEATO","Balkan Antantı","CENTO","Varşova Paktı","Sadabat Paktı"],"answer":3,"explain":"Varşova Paktı SSCB'nin dağılmasıyla 1991'de sona ermiştir."},
+        {"q":"Türkiye'de çok partili hayata geçiş sürecinde 1946'da kurulan ve 1950 seçimlerinde iktidara gelen parti hangisidir?","choices":["Millî Kalkınma Partisi","Cumhuriyet Halk Partisi","Terakkiperver Cumhuriyet Fırkası","Serbest Cumhuriyet Fırkası","Demokrat Parti"],"answer":4,"explain":"14 Mayıs 1950 seçimleriyle iktidar ilk kez seçimle el değiştirmiştir."},
+        {"q":"1950-1953 yılları arasında Türkiye'nin BM kararı doğrultusunda asker gönderdiği savaş hangisidir?","choices":["Vietnam Savaşı","Kore Savaşı","Körfez Savaşı","Afganistan Savaşı","Bosna Savaşı"],"answer":1,"explain":"Türk tugayı özellikle Kunuri muharebesindeki fedakârlığıyla tanınmıştır."},
+        {"q":"Soğuk Savaş'ın simgesi hâline gelen ve 1961'de inşa edilen yapı hangisidir?","choices":["Eyfel Kulesi","Çin Seddi","Berlin Duvarı","Hadrian Duvarı","Maginot Hattı"],"answer":2,"explain":"Duvar Doğu Berlin'den Batı'ya kaçışları önlemek için yapılmış, 1989'da yıkılmıştır."},
+        {"q":"Türkiye'nin Soğuk Savaş döneminde Batı Bloku'nda yer almasının nedenlerini açıklayınız.","explain":"II. Dünya Savaşı'ndan sonra SSCB, Türkiye'den Boğazlarda üs ve Kars-Ardahan bölgesini istemiştir. Bu tehdit karşısında Türkiye güvenliğini sağlamak için ABD ve Batılı ülkelere yaklaşmıştır. Truman Doktrini ve Marshall Planı ile askerî ve ekonomik yardım almış, Kore Savaşı'na asker göndererek Batı ile dayanışmasını göstermiş ve 1952'de NATO'ya üye olmuştur."}
+      ]
+    },
+    {
+      "name": "Toplumsal Devrim Çağında Dünya ve Türkiye",
+      "topics": "",
+      "questions": [
+        {"q":"1960'larda ve 1970'lerde ABD ile SSCB arasındaki gerginliğin azaldığı döneme ne ad verilir?","choices":["Büyük Buhran","Soğuk Savaş'ın başlangıcı","Lale Devri","Yumuşama (Detant) Dönemi","Fetret Devri"],"answer":3,"explain":"Küba Füze Krizi'nden (1962) sonra iki süper güç arasında doğrudan iletişim hattı kurulmuştur."},
+        {"q":"1969'da insanoğlunun Ay'a ilk kez ayak basması hangi alandaki rekabetin sonucudur?","choices":["ABD ile SSCB arasındaki uzay yarışı","Sömürge rekabeti","Futbol rekabeti","Deniz ticareti","Avrupa'daki toprak anlaşmazlıkları"],"answer":0,"explain":"SSCB 1957'de ilk yapay uydu Sputnik'i fırlatmış, ABD 1969'da Apollo 11 ile Ay'a insan indirmiştir."},
+        {"q":"1973'te petrol üreticisi Arap ülkelerinin uyguladığı ambargoyla dünyada yaşanan kriz hangisidir?","choices":["Petrol Krizi","Dünya Ekonomik Bunalımı","Küba Füze Krizi","Süveyş Krizi","Berlin Krizi"],"answer":0,"explain":"Petrol fiyatlarının hızla artması Türkiye dahil birçok ülkenin ekonomisini sarsmıştır."},
+        {"q":"Kıbrıs Türklerinin can güvenliğini sağlamak için Türkiye'nin 20 Temmuz 1974'te başlattığı harekât hangisidir?","choices":["Kıbrıs Barış Harekâtı","Sakarya Meydan Muharebesi","Kore Harekâtı","Büyük Taarruz","Çanakkale Harekâtı"],"answer":0,"explain":"Türkiye, 1960 Garanti Antlaşması'ndan doğan hakkını kullanmıştır."},
+        {"q":"Kuzey Kıbrıs Türk Cumhuriyeti hangi yıl ilan edilmiştir?","choices":["1983","1974","1960","1975","1991"],"answer":0,"explain":"1975'te Kıbrıs Türk Federe Devleti kurulmuş, 1983'te KKTC ilan edilmiştir."},
+        {"q":"Türkiye'nin Avrupa Ekonomik Topluluğu ile 1963'te imzaladığı ortaklık anlaşması hangisidir?","choices":["Ankara Anlaşması","Lozan Antlaşması","Roma Antlaşması","Maastricht Antlaşması","Helsinki Nihai Senedi"],"answer":0,"explain":"Türkiye 1959'da ortaklık başvurusu yapmış, Ankara Anlaşması 1963'te imzalanmıştır."},
+        {"q":"1960'larda dünyanın birçok ülkesinde görülen ve savaş karşıtlığı, özgürlük ve eşitlik taleplerini dile getiren toplumsal hareketlerin öncü grubu hangisidir?","choices":["Üniversite öğrencileri ve gençler","Yalnızca askerler","Yalnızca hükümdarlar","Sömürge valileri","Feodal beyler"],"answer":0,"explain":"1968 öğrenci olayları Avrupa ve ABD'de geniş yankı uyandırmıştır."},
+        {"q":"1960-1980 döneminde dünyada ve Türkiye'de yaşanan toplumsal ve teknolojik değişimlere üç örnek veriniz.","explain":"Örnek cevap: Televizyon yaygınlaşmıştır; Türkiye'de TRT televizyon yayınlarına 1968'de başlamıştır. Uzay yarışı sonucunda 1969'da insan Ay'a ayak basmıştır. 1968 öğrenci hareketleriyle gençler toplumsal ve siyasal taleplerini dile getirmiştir. Ayrıca köyden kente göç hızlanmış, Türkiye'den Almanya'ya işçi göçü başlamıştır (1961)."}
+      ]
+    },
+    {
+      "name": "21. Yüzyılın Eşiğinde Türkiye ve Dünya",
+      "topics": "",
+      "questions": [
+        {"q":"Soğuk Savaş'ın sona erdiğini simgeleyen olay hangisidir?","choices":["Berlin Duvarı'nın 1989'da yıkılması","Kore Savaşı'nın başlaması","NATO'nun kurulması","Marshall Planı","Küba Füze Krizi"],"answer":0,"explain":"Duvarın yıkılmasının ardından Almanya 1990'da yeniden birleşmiştir."},
+        {"q":"Sovyetler Birliği (SSCB) hangi yıl dağılmıştır?","choices":["1991","1989","1985","1995","2001"],"answer":0,"explain":"SSCB'nin dağılmasıyla Azerbaycan, Kazakistan, Kırgızistan, Özbekistan ve Türkmenistan bağımsız olmuştur."},
+        {"q":"SSCB'nin dağılmasından sonra bağımsızlığını ilan eden Türk cumhuriyetlerini ilk tanıyan ülke hangisidir?","choices":["Türkiye","ABD","Rusya","Çin","Almanya"],"answer":0,"explain":"Türkiye bu ülkelerle eğitim, kültür ve ekonomi alanlarında iş birliğini geliştirmiştir."},
+        {"q":"Türkiye'nin öncülüğünde 1992'de kurulan bölgesel ekonomik iş birliği örgütü hangisidir?","choices":["Karadeniz Ekonomik İşbirliği Örgütü","OPEC","Avrupa Birliği","ASEAN","NAFTA"],"answer":0,"explain":"Örgüt Karadeniz çevresindeki ülkeler arasında ticaret ve iş birliğini artırmayı amaçlar."},
+        {"q":"1992-1995 yılları arasında Yugoslavya'nın dağılması sürecinde yaşanan ve Srebrenitsa katliamıyla hafızalara kazınan savaş hangisidir?","choices":["Bosna Savaşı","Körfez Savaşı","Kore Savaşı","Vietnam Savaşı","Kırım Savaşı"],"answer":0,"explain":"Savaş 1995'te Dayton Antlaşması ile sona ermiştir."},
+        {"q":"Türkiye ile Avrupa Birliği arasındaki Gümrük Birliği hangi yıl yürürlüğe girmiştir?","choices":["1996","1963","1987","1999","2005"],"answer":0,"explain":"Türkiye 1999 Helsinki Zirvesi'nde AB'ye aday ülke olarak kabul edilmiştir."},
+        {"q":"11 Eylül 2001 saldırılarının dünya siyasetine etkilerinden biri hangisidir?","choices":["Terörle mücadelenin uluslararası gündemin merkezine yerleşmesi","Soğuk Savaş'ın yeniden başlaması","Birleşmiş Milletler'in kapanması","Berlin Duvarı'nın yeniden yapılması","Dünya ticaretinin sona ermesi"],"answer":0,"explain":"Saldırılardan sonra ABD Afganistan'a, 2003'te de Irak'a müdahale etmiştir."},
+        {"q":"Küreselleşmenin olumlu ve olumsuz etkilerini birer örnekle açıklayınız.","explain":"Olumlu etki: İnternet ve iletişim teknolojileri sayesinde bilgiye erişim kolaylaşmış, ülkeler arasında ticaret ve kültürel etkileşim artmıştır. Olumsuz etki: Yerel kültürlerin ve küçük üreticilerin büyük şirketler karşısında zayıflaması, gelir eşitsizliğinin derinleşmesi ve ekonomik krizlerin bir ülkeden bütün dünyaya hızla yayılmasıdır."}
+      ]
+    }
+  ]
+}

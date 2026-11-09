@@ -1,0 +1,119 @@
+{
+  "grade": 10,
+  "subject": "Matematik",
+  "source": "MEB 2026-2027 çerçeve yıllık planı · Türkiye Yüzyılı Maarif Modeli",
+  "units": [
+    {
+      "name": "Geometrik Şekiller",
+      "topics": "Dik Üçgende Trigonometrik Oranlar ve Trigonometrik Özdeşlikler; Üçgende Yardımcı Elemanlar; Üçgenin Alanı; Sinüs ve Kosinüs Teoremleri",
+      "questions": [
+        {"q":"Bir dik üçgende α açısının karşısındaki dik kenar 3 cm, hipotenüs 5 cm'dir. sin α kaçtır?","choices":["3/4","5/3","4/5","4/3","3/5"],"answer":4,"explain":"sin α = karşı dik kenar / hipotenüs = 3/5."},
+        {"q":"Dik kenarları 3 cm ve 4 cm olan bir dik üçgende, 3 cm'lik kenarın karşısındaki α açısı için tan α kaçtır?","choices":["3/5","4/5","3/4","4/3","5/4"],"answer":2,"explain":"tan α = karşı dik kenar / komşu dik kenar = 3/4."},
+        {"q":"sin 30° kaçtır?","choices":["0","1","√2/2","√3/2","1/2"],"answer":4,"explain":"30-60-90 üçgeninde 30°'nin karşısındaki kenar hipotenüsün yarısıdır; sin 30° = 1/2."},
+        {"q":"cos 60° + sin 30° işleminin sonucu kaçtır?","choices":["1/2","2","√3/2","√3","1"],"answer":4,"explain":"cos 60° = 1/2 ve sin 30° = 1/2'dir; toplam 1 olur."},
+        {"q":"x dar açı ve sin x = 4/5 olduğuna göre cos x kaçtır?","choices":["1/5","5/4","3/4","4/3","3/5"],"answer":4,"explain":"sin²x + cos²x = 1 özdeşliğinden cos²x = 1 − 16/25 = 9/25; dar açı olduğu için cos x = 3/5."},
+        {"q":"Hipotenüsü 10 cm olan bir dik üçgende hipotenüse ait kenarortayın uzunluğu kaç cm'dir?","choices":["4","5","6","8","10"],"answer":1,"explain":"Dik üçgende hipotenüse ait kenarortay hipotenüsün yarısına eşittir: 10 / 2 = 5 cm."},
+        {"q":"İki kenarı 6 cm ve 8 cm, bu kenarlar arasındaki açısı 30° olan üçgenin alanı kaç cm²'dir?","choices":["12","14","24","48","12√3"],"answer":0,"explain":"Alan = ½ · a · b · sin C = ½ · 6 · 8 · ½ = 12 cm²."},
+        {"q":"ABC üçgeninde |AB| = 8 cm, |AC| = 5 cm ve m(A) = 60°'dir. |BC| kaç cm'dir?","choices":["6","13","√89","9","7"],"answer":4,"explain":"Kosinüs teoremi: a² = 8² + 5² − 2 · 8 · 5 · cos 60° = 64 + 25 − 40 = 49 ise a = 7 cm."},
+        {"q":"ABC üçgeninde a = 10 cm, sin A = 1/2 ve sin B = 3/5'tir. b kenarı kaç cm'dir?","choices":["6","8","10","12","15"],"answer":3,"explain":"Sinüs teoremi: a / sin A = b / sin B ise 10 / (1/2) = b / (3/5); 20 = 5b/3 ve b = 12 cm."},
+        {"q":"Bir öğrenci okulun bayrak direğinin tepesini 6 m uzaktan 60°'lik açıyla görüyor. Göz yüksekliğini ihmal ederek direğin boyunu bulunuz. (tan 60° = √3)","explain":"tan 60° = yükseklik / yatay uzaklık olduğundan yükseklik = 6 · √3 = 6√3 m ≈ 10,4 m."}
+      ]
+    },
+    {
+      "name": "İstatistiksel Araştırma Süreci",
+      "topics": "İki Kategorik Değişkenli Veriler; Başkaları Tarafından Oluşturulan İki Kategorik Değişkenli Verileri İnceleme",
+      "questions": [
+        {"q":"Bir okulda 100 öğrenciyle yapılan ankette kızların 30'u spor yapıyor, 20'si yapmıyor; erkeklerin 35'i spor yapıyor, 15'i yapmıyor. Spor yapan öğrencilerin tüm öğrencilere oranı yüzde kaçtır?","choices":["%30","%35","%50","%65","%70"],"answer":3,"explain":"Spor yapanlar 30 + 35 = 65 öğrencidir: 65 / 100 = %65."},
+        {"q":"Aynı ankette kızlardan spor yapanların oranı yüzde kaçtır? (Kız: 30 spor yapan, 20 yapmayan)","choices":["%30","%40","%50","%60","%65"],"answer":3,"explain":"Toplam 50 kızdan 30'u spor yapıyor: 30 / 50 = %60."},
+        {"q":"Aynı ankette spor yapan öğrenciler arasında erkeklerin oranı kaçtır? (Spor yapan: 30 kız, 35 erkek)","choices":["6/13","7/20","35/100","1/2","7/13"],"answer":4,"explain":"Spor yapan 65 öğrenciden 35'i erkek: 35/65 = 7/13."},
+        {"q":"Aynı ankette erkek öğrencilerden spor yapmayanların oranı yüzde kaçtır? (Erkek: 35 spor yapan, 15 yapmayan)","choices":["%15","%20","%30","%35","%70"],"answer":2,"explain":"50 erkekten 15'i spor yapmıyor: 15 / 50 = %30."},
+        {"q":"\"Cinsiyet\" ve \"spor yapma durumu\" değişkenleri için hangisi doğrudur?","choices":["İkisi de kategorik (nitel) değişkendir.","İkisi de nicel değişkendir.","Cinsiyet nicel, spor yapma durumu kategoriktir.","Cinsiyet kategorik, spor yapma durumu sürekli nicel değişkendir.","İkisi de sürekli değişkendir."],"answer":0,"explain":"İkisi de sayıyla ölçülmez, gruplara (kategorilere) ayrılır; bu yüzden kategorik değişkendir."},
+        {"q":"İki kategorik değişkenin birlikte görülme sayılarını satır ve sütunlarda gösteren tabloya ne ad verilir?","choices":["İki yönlü (çapraz) tablo","Sıklık poligonu","Kutu grafiği","Histogram","Serpme grafiği"],"answer":0,"explain":"İki yönlü tabloda bir değişkenin kategorileri satırlarda, diğerininkiler sütunlarda yer alır."},
+        {"q":"İki kategorik değişkene ait verileri karşılaştırmak için en uygun grafik hangisidir?","choices":["Gruplandırılmış (yan yana) sütun grafiği","Histogram","Kutu grafiği","Serpme grafiği","Dal-yaprak gösterimi"],"answer":0,"explain":"Yan yana sütunlar, her grup için kategorilerin karşılaştırılmasını kolaylaştırır."},
+        {"q":"Ankette erkeklerin %70'inin, kızların %60'ının spor yaptığı bulunmuştur. Bu veriye dayanan en uygun yorum hangisidir?","choices":["Bu örneklemde erkeklerin spor yapma oranı kızlardan biraz yüksektir.","Erkek olmak kişiyi spor yapmaya zorlar.","Türkiye'deki bütün erkekler spor yapar.","Kızlar spor yapmayı sevmez.","İki değişken arasında kesin bir neden-sonuç ilişkisi vardır."],"answer":0,"explain":"Veri yalnızca bu örneklem için bir fark gösterir; nedensellik ya da bütün topluma genelleme için yeterli değildir."},
+        {"q":"Bir haber, \"Kahvaltı yapan öğrencilerin notları daha yüksek, o hâlde kahvaltı notları yükseltir\" diyor. Bu yorumdaki temel sorun nedir?","choices":["İki değişken arasındaki birlikteliğin neden-sonuç ilişkisi sanılması","Yüzdelerin yanlış hesaplanması","Notların kategorik olması","Kahvaltının ölçülememesi","Tablonun iki yönlü olması"],"answer":0,"explain":"Birlikte görülmek, birinin diğerine neden olduğunu kanıtlamaz; örneğin düzenli uyku gibi başka etkenler de rol oynayabilir."},
+        {"q":"Sınıfınızda \"Akıllı telefonu olan / olmayan\" ve \"Günde 1 saatten fazla kitap okuyan / okumayan\" değişkenleriyle küçük bir araştırma tasarlayınız. Verileri nasıl gösterir, neyi karşılaştırırsınız?","explain":"Örnek cevap: Veriler 2×2'lik iki yönlü tabloya yazılır. Telefonu olanlar içinde kitap okuyanların oranı ile telefonu olmayanlar içinde okuyanların oranı hesaplanır ve gruplandırılmış sütun grafiğiyle karşılaştırılır. Fark çıksa bile bunun bir neden-sonuç ilişkisi olmadığı, örneklemin küçük olduğu belirtilir."}
+      ]
+    },
+    {
+      "name": "Sayılar",
+      "topics": "Bir Doğal Sayının Asal Çarpanları, Bölenleri; En Büyük Ortak Bölen, En Küçük Ortak Kat; Bölünebilme",
+      "questions": [
+        {"q":"72 sayısının asal çarpanlarına ayrılmış biçimi hangisidir?","choices":["2² · 3³","8 · 9","2⁴ · 3","2 · 3 · 12","2³ · 3²"],"answer":4,"explain":"72 = 8 · 9 = 2³ · 3²."},
+        {"q":"72 sayısının kaç tane pozitif tam sayı böleni vardır?","choices":["6","8","9","12","18"],"answer":3,"explain":"72 = 2³ · 3² olduğundan pozitif bölen sayısı (3 + 1)(2 + 1) = 12'dir."},
+        {"q":"24 ile 36 sayılarının en büyük ortak böleni (EBOB) kaçtır?","choices":["4","6","8","12","72"],"answer":3,"explain":"24 = 2³ · 3, 36 = 2² · 3². Ortak asal çarpanların en küçük kuvvetleri: 2² · 3 = 12."},
+        {"q":"12 ile 18 sayılarının en küçük ortak katı (EKOK) kaçtır?","choices":["6","18","24","36","216"],"answer":3,"explain":"12 = 2² · 3, 18 = 2 · 3². Tüm asal çarpanların en büyük kuvvetleri: 2² · 3² = 36."},
+        {"q":"İki otobüsten biri 12 dakikada, diğeri 18 dakikada bir duraktan kalkıyor. İkisi saat 08.00'de birlikte kalktıktan sonra ilk kez saat kaçta yine birlikte kalkarlar?","choices":["08.30","08.36","08.42","09.00","09.12"],"answer":1,"explain":"Birlikte kalkış aralığı EKOK(12, 18) = 36 dakikadır: 08.36."},
+        {"q":"48 m ve 60 m uzunluğundaki iki kumaş, hiç artmayacak şekilde eşit uzunlukta parçalara ayrılacaktır. Parçaların en uzun olabilmesi için her biri kaç metre olmalıdır?","choices":["4","6","10","12","24"],"answer":3,"explain":"Parça uzunluğu iki sayıyı da tam bölmeli ve en büyük olmalıdır: EBOB(48, 60) = 12 m."},
+        {"q":"Üç basamaklı 4A6 sayısı 9 ile tam bölünebildiğine göre A rakamı kaçtır?","choices":["1","3","5","8","9"],"answer":3,"explain":"9 ile bölünebilmek için rakamlar toplamı 9'un katı olmalıdır: 4 + A + 6 = 10 + A. A = 8 için toplam 18 olur."},
+        {"q":"Aşağıdaki sayılardan hangisi 4 ile tam bölünür?","choices":["2014","3026","5132","7110","9218"],"answer":2,"explain":"Son iki basamağı 4'ün katı olan sayılar 4 ile bölünür. 5132'nin son iki basamağı 32'dir ve 32 = 4 · 8."},
+        {"q":"Aşağıdakilerden hangisi asal sayıdır?","choices":["51","57","87","91","97"],"answer":4,"explain":"51 = 3 · 17, 57 = 3 · 19, 87 = 3 · 29, 91 = 7 · 13'tür. 97'nin 1 ve kendisinden başka böleni yoktur."},
+        {"q":"12 ve 18 sayıları için EBOB ve EKOK'u bulunuz. EBOB · EKOK çarpımının 12 · 18 çarpımına eşit olduğunu gösteriniz.","explain":"EBOB(12, 18) = 6 ve EKOK(12, 18) = 36'dır. 6 · 36 = 216 ve 12 · 18 = 216 olduğundan eşitlik sağlanır. İki pozitif tam sayı için her zaman EBOB · EKOK = a · b'dir."}
+      ]
+    },
+    {
+      "name": "Nicelikler ve Değişimler",
+      "topics": "Gerçek Sayılarda Fonksiyon Olma Şartları; Karesel Fonksiyon ve Nitel Özellikleri; Karekök Fonksiyonu ve Nitel Özellikleri; Rasyonel Fonksiyon ve Nitel Özellikleri; Doğrusal, Karesel, Karekök ve Rasyonel Fonksiyonların Ters Fonksiyonları; Gerçek Sayılarda Tanımlı Fonksiyonlarla İfade Edilebilen Denkl",
+      "questions": [
+        {"q":"f(x) = 3x − 2 olduğuna göre f(4) kaçtır?","choices":["8","10","12","14","6"],"answer":1,"explain":"f(4) = 3 · 4 − 2 = 12 − 2 = 10."},
+        {"q":"x² − 5x + 6 = 0 denkleminin kökleri toplamı kaçtır?","choices":["−5","−6","1","6","5"],"answer":4,"explain":"Denklem (x − 2)(x − 3) = 0 biçiminde yazılır; kökler 2 ve 3'tür, toplamları 5'tir. Kısa yol: kökler toplamı −b/a = 5."},
+        {"q":"Bir grafiğin bir fonksiyon grafiği olup olmadığını anlamak için hangi kontrol yapılır?","choices":["Grafik doğrusal olmalı","Her yatay doğru grafiği en az iki noktada kesmeli","Grafik orijinden geçmeli","Grafik her zaman artan olmalı","Her düşey doğru grafiği en fazla bir noktada kesmeli"],"answer":4,"explain":"Fonksiyonda her x değerine yalnızca bir y değeri karşılık gelir; düşey doğru testi bunu kontrol eder."},
+        {"q":"f(x) = x² − 4x + 3 fonksiyonunun grafiğinin tepe noktası hangisidir?","choices":["(2, −1)","(−2, 15)","(4, 3)","(1, 0)","(2, 1)"],"answer":0,"explain":"r = −b / 2a = 4 / 2 = 2; k = f(2) = 4 − 8 + 3 = −1. Tepe noktası (2, −1)."},
+        {"q":"f(x) = −x² + 6x fonksiyonunun alabileceği en büyük değer kaçtır?","choices":["3","6","9","12","Sınırsız büyüktür"],"answer":2,"explain":"Başkatsayı negatif olduğundan kollar aşağıdadır ve tepe noktası en büyük değeri verir: x = 3 için f(3) = −9 + 18 = 9."},
+        {"q":"f(x) = √(x − 2) fonksiyonunun en geniş tanım kümesi hangisidir?","choices":["[2, ∞)","(2, ∞)","(−∞, 2]","ℝ","ℝ \\ {2}"],"answer":0,"explain":"Karekök içi negatif olamaz: x − 2 ≥ 0 ise x ≥ 2."},
+        {"q":"f(x) = 1 / (x − 3) fonksiyonunun en geniş tanım kümesi hangisidir?","choices":["ℝ \\ {3}","ℝ \\ {−3}","[3, ∞)","(3, ∞)","ℝ"],"answer":0,"explain":"Payda sıfır olamaz; x = 3 tanım kümesinden çıkarılır."},
+        {"q":"f(x) = 2x + 4 fonksiyonunun ters fonksiyonu hangisidir?","choices":["f⁻¹(x) = (x − 4) / 2","f⁻¹(x) = 2x − 4","f⁻¹(x) = x / 2 + 4","f⁻¹(x) = 1 / (2x + 4)","f⁻¹(x) = (x + 4) / 2"],"answer":0,"explain":"y = 2x + 4 eşitliğinde x yalnız bırakılır: x = (y − 4) / 2. x ile y yer değiştirince f⁻¹(x) = (x − 4) / 2."},
+        {"q":"f(x) = 3x + 1 olduğuna göre f⁻¹(10) kaçtır?","choices":["1/31","31","13","3","9"],"answer":3,"explain":"f⁻¹(10) = a ise f(a) = 10'dur: 3a + 1 = 10 ve a = 3."},
+        {"q":"f(x) = x² − 6x + 5 parabolünün x eksenini kestiği noktaları ve tepe noktasını bulunuz.","explain":"x² − 6x + 5 = 0 ise (x − 1)(x − 5) = 0; x eksenini (1, 0) ve (5, 0) noktalarında keser. Tepe noktasının apsisi r = 6/2 = 3, ordinatı f(3) = 9 − 18 + 5 = −4: tepe (3, −4)."}
+      ]
+    },
+    {
+      "name": "Sayma, Algoritma ve Bilişim",
+      "topics": "Sayma Stratejileri; Cebirsel ve Fonksiyonel İşlemlerin Algoritmik Yapısı",
+      "questions": [
+        {"q":"5 kişi bir sıraya kaç farklı şekilde dizilebilir?","choices":["25","60","100","120","125"],"answer":3,"explain":"n farklı kişinin bir sıraya dizilişi n! kadardır: 5! = 5 · 4 · 3 · 2 · 1 = 120."},
+        {"q":"3 farklı gömleği ve 4 farklı pantolonu olan biri bir gömlek ve bir pantolonu kaç farklı şekilde seçebilir?","choices":["7","12","24","34","43"],"answer":1,"explain":"Çarpma ilkesi: 3 · 4 = 12 farklı seçim yapılabilir."},
+        {"q":"Bir öğrenci 5 farklı roman ya da 3 farklı hikâye kitabından yalnızca birini okuyacaktır. Kaç farklı seçim yapabilir?","choices":["2","8","15","35","53"],"answer":1,"explain":"Seçeneklerden yalnızca biri seçildiği için toplama ilkesi kullanılır: 5 + 3 = 8."},
+        {"q":"1, 2, 3, 4, 5 rakamları kullanılarak rakamları farklı üç basamaklı kaç sayı yazılabilir?","choices":["15","60","75","120","125"],"answer":1,"explain":"Yüzler basamağı için 5, onlar için 4, birler için 3 seçenek kalır: 5 · 4 · 3 = 60."},
+        {"q":"1, 2, 3, 4, 5 rakamları kullanılarak (rakamlar tekrar edebilir) üç basamaklı kaç sayı yazılabilir?","choices":["15","60","75","120","125"],"answer":4,"explain":"Her basamak için 5 seçenek vardır: 5 · 5 · 5 = 125."},
+        {"q":"6 kişilik bir kulüpten bir başkan ve bir başkan yardımcısı kaç farklı şekilde seçilebilir?","choices":["11","12","15","30","36"],"answer":3,"explain":"Görevler farklı olduğu için sıra önemlidir: 6 · 5 = 30."},
+        {"q":"5 kişilik bir gruptan 2 kişilik bir çalışma ekibi (görev farkı yok) kaç farklı şekilde seçilebilir?","choices":["5","10","20","25","32"],"answer":1,"explain":"Sıra önemli değildir: 5 · 4 / 2 = 10. Bu, 5'in 2'li kombinasyonudur."},
+        {"q":"5! / 3! işleminin sonucu kaçtır?","choices":["2","10","20","40","60"],"answer":2,"explain":"5! / 3! = (5 · 4 · 3!) / 3! = 20."},
+        {"q":"Bir algoritma bir sayı alıyor; sayı çiftse ikiye bölüyor, tekse 3 katının 1 fazlasını alıyor ve sayı 1 olana kadar bunu tekrarlıyor. 6 sayısıyla başlanırsa 1'e ulaşmak için kaç işlem yapılır?","choices":["6","7","8","9","10"],"answer":2,"explain":"6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1. Toplam 8 işlem yapılır."},
+        {"q":"Bir şifre, Türk alfabesinden 2 harf (29 harf) ve ardından 3 rakamdan oluşuyor; harf ve rakamlar tekrar edebilir. Kaç farklı şifre oluşturulabilir?","explain":"Çarpma ilkesine göre 29 · 29 · 10 · 10 · 10 = 841 · 1000 = 841 000 farklı şifre oluşturulabilir."}
+      ]
+    },
+    {
+      "name": "Analitik İnceleme",
+      "topics": "Dik Koordinat Sisteminde Noktanın Analitik İncelenmesi; Dik Koordinat Sisteminde Doğrunun Analitik İncelenmesi",
+      "questions": [
+        {"q":"A(−1, 2) ve B(5, 10) noktaları arasındaki uzaklık kaç birimdir?","choices":["6","8","10","12","14"],"answer":2,"explain":"|AB| = √((5 + 1)² + (10 − 2)²) = √(36 + 64) = √100 = 10."},
+        {"q":"A(2, 4) ve B(6, −2) noktalarını birleştiren doğru parçasının orta noktası hangisidir?","choices":["(4, 1)","(4, 3)","(8, 2)","(2, −3)","(3, 1)"],"answer":0,"explain":"Orta nokta = ((2 + 6)/2, (4 − 2)/2) = (4, 1)."},
+        {"q":"(1, 1) ve (3, 7) noktalarından geçen doğrunun eğimi kaçtır?","choices":["1/3","2","3","4","6"],"answer":2,"explain":"Eğim = (7 − 1) / (3 − 1) = 6 / 2 = 3."},
+        {"q":"Eğimi 2 olan ve y eksenini (0, 3) noktasında kesen doğrunun denklemi hangisidir?","choices":["y = 3x + 2","y = 2x − 3","y = −2x + 3","y = 2x + 3","y = x + 3"],"answer":3,"explain":"y = mx + n biçiminde m = 2, n = 3: y = 2x + 3."},
+        {"q":"y = −3x + 6 doğrusunun x eksenini kestiği nokta hangisidir?","choices":["(0, 6)","(2, 0)","(−2, 0)","(6, 0)","(3, 0)"],"answer":1,"explain":"x eksenini kestiği noktada y = 0'dır: 0 = −3x + 6 ise x = 2."},
+        {"q":"y = 2x + 1 doğrusuna paralel olan doğru hangisidir?","choices":["y = 2x − 5","y = −2x + 1","y = x/2 + 1","y = −x/2","y = 3x + 1"],"answer":0,"explain":"Paralel doğruların eğimleri eşittir. Yalnızca y = 2x − 5'in eğimi 2'dir."},
+        {"q":"Eğimi 2 olan bir doğruya dik olan doğrunun eğimi kaçtır?","choices":["−2","−1/2","1/2","2","0"],"answer":1,"explain":"Dik doğruların eğimleri çarpımı −1'dir: 2 · m = −1 ise m = −1/2."},
+        {"q":"(1, 2) noktasından geçen ve eğimi 3 olan doğrunun denklemi hangisidir?","choices":["y = 3x + 2","y = 3x − 1","y = 3x + 1","y = x + 2","y = 3x − 2"],"answer":1,"explain":"y − 2 = 3(x − 1) ise y = 3x − 3 + 2 = 3x − 1."},
+        {"q":"Aşağıdaki noktalardan hangisi y = 2x − 1 doğrusu üzerindedir?","choices":["(1, 2)","(2, 5)","(4, 6)","(0, 1)","(3, 5)"],"answer":4,"explain":"x = 3 için y = 2 · 3 − 1 = 5 olduğundan (3, 5) doğru üzerindedir."},
+        {"q":"3x + 4y = 12 doğrusunun koordinat eksenleriyle oluşturduğu üçgenin alanını bulunuz.","explain":"x = 0 için y = 3, y = 0 için x = 4 bulunur. Doğru eksenleri (0, 3) ve (4, 0) noktalarında keser. Oluşan dik üçgenin alanı 3 · 4 / 2 = 6 birimkaredir."}
+      ]
+    },
+    {
+      "name": "Veriden Olasılığa",
+      "topics": "Koşullu Olasılık; Bayes Teoremi",
+      "questions": [
+        {"q":"Bir zar atıldığında üst yüze asal sayı gelme olasılığı kaçtır?","choices":["1/6","1/3","1/2","2/3","5/6"],"answer":2,"explain":"Zardaki asal sayılar 2, 3 ve 5'tir. 6 durumdan 3'ü uygun olduğu için olasılık 3/6 = 1/2'dir."},
+        {"q":"Hilesiz bir zar atılıyor ve çift sayı geldiği biliniyor. Gelen sayının 4 olma olasılığı kaçtır?","choices":["1/6","1/4","1/3","1/2","2/3"],"answer":2,"explain":"Koşul nedeniyle örnek uzay {2, 4, 6}'ya daralır; bunlardan biri 4 olduğu için olasılık 1/3."},
+        {"q":"Bir sınıfta 30 kızdan 12'si, 20 erkekten 8'i gözlüklüdür. Rastgele seçilen öğrencinin gözlüklü olduğu biliniyorsa kız olma olasılığı kaçtır?","choices":["2/5","1/2","3/5","12/50","2/3"],"answer":2,"explain":"Gözlüklü 20 öğrencinin 12'si kızdır: 12/20 = 3/5."},
+        {"q":"Bir torbada 3 kırmızı ve 2 mavi top vardır. Geri koymadan art arda iki top çekiliyor. İkisinin de kırmızı olma olasılığı kaçtır?","choices":["3/10","9/25","2/5","3/5","1/2"],"answer":0,"explain":"İlk top kırmızı: 3/5. Kalan 4 topun 2'si kırmızı: 2/4. Çarpım: 3/5 · 1/2 = 3/10."},
+        {"q":"P(A) = 0,5 ve P(A ∩ B) = 0,2 olduğuna göre P(B | A) kaçtır?","choices":["0,1","0,25","0,4","0,7","2,5"],"answer":2,"explain":"Koşullu olasılık: P(B | A) = P(A ∩ B) / P(A) = 0,2 / 0,5 = 0,4."},
+        {"q":"İki hilesiz zar atılıyor ve üst yüzlerin toplamının 8 olduğu biliniyor. Birinci zarın 3 olma olasılığı kaçtır?","choices":["1/6","1/5","1/4","1/3","5/36"],"answer":1,"explain":"Toplamı 8 olan durumlar (2,6), (3,5), (4,4), (5,3), (6,2): 5 tane. Birinci zarın 3 olduğu durum 1 tane: 1/5."},
+        {"q":"Bir fabrikada üretimin %60'ı A makinesinde, %40'ı B makinesinde yapılıyor. A'nın ürünlerinin %5'i, B'nin ürünlerinin %10'u kusurludur. Rastgele seçilen bir ürünün kusurlu olma olasılığı kaçtır?","choices":["0,03","0,04","0,07","0,075","0,15"],"answer":2,"explain":"Toplam olasılık: 0,6 · 0,05 + 0,4 · 0,10 = 0,03 + 0,04 = 0,07."},
+        {"q":"Aynı fabrikada rastgele seçilen ürünün kusurlu olduğu biliniyor. Bu ürünün B makinesinde üretilmiş olma olasılığı kaçtır? (Kusurlu olma olasılığı 0,07; B'den gelip kusurlu olma olasılığı 0,04)","choices":["3/7","4/7","2/5","0,04","0,1"],"answer":1,"explain":"Bayes teoremi: P(B | kusurlu) = 0,04 / 0,07 = 4/7. Üretimin yalnızca %40'ı B'den gelse de kusurlu ürünlerin çoğu B'dendir."},
+        {"q":"İki madeni para atılıyor. Paralardan en az birinin tura geldiği biliniyorsa ikisinin de tura gelmiş olma olasılığı kaçtır?","choices":["1/4","1/3","1/2","2/3","3/4"],"answer":1,"explain":"Koşulu sağlayan durumlar TT, TY, YT: 3 tane. Bunlardan yalnızca TT istenen durumdur: 1/3."},
+        {"q":"Koşullu olasılığı günlük hayattan bir örnekle açıklayınız. Koşul bilgisinin olasılığı nasıl değiştirdiğini gösteriniz.","explain":"Örnek cevap: Rastgele seçilen bir günün yağmurlu olma olasılığı düşük olabilir. Ama o sabah gökyüzünün kara bulutlarla kaplı olduğu biliniyorsa yağmur olasılığı artar. Koşullu olasılık, ek bir bilgi verildiğinde örnek uzayın daralmasıyla hesaplanır: P(B | A) = P(A ∩ B) / P(A)."}
+      ]
+    }
+  ]
+}

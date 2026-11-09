@@ -1,0 +1,125 @@
+{
+  "grade": 10,
+  "subject": "İngilizce",
+  "source": "MEB 2026-2027 çerçeve yıllık planı · Türkiye Yüzyılı Maarif Modeli",
+  "units": [
+    {
+      "name": "School Life & Education",
+      "topics": "Different types of schools in the world; regular and extracurricular activities in different types of schools; school anxiety and stress; national days and celebrations",
+      "questions": [
+        {"q":"Students live and sleep at school during the term. This school is a ___.","choices":["day school","boarding school","driving school","nursery","summer camp"],"answer":1,"explain":"Boarding school (yatılı okul) öğrencilerin okulda kalıp yattığı okuldur."},
+        {"q":"A school that teaches practical skills for a specific job, like cooking or electricity, is a ___ school.","choices":["boarding","primary","vocational","language","private"],"answer":2,"explain":"Vocational school, meslek okuludur (meslek lisesi)."},
+        {"q":"Chess club, drama club and the school football team are ___ activities.","choices":["daily","compulsory","national","extracurricular","virtual"],"answer":3,"explain":"Extracurricular activities, ders dışı (müfredat dışı) etkinliklerdir."},
+        {"q":"In our school, we ___ wear a uniform. It's a school rule.","choices":["don't have to","have to","can't","mustn't","needn't to"],"answer":1,"explain":"Bir kural gereği zorunluluk anlatırken \"have to\" kullanılır."},
+        {"q":"On Saturdays, students ___ go to school. It's a holiday.","choices":["must","have to","don't have to","has to","are have to"],"answer":2,"explain":"\"Don't have to\" bir şeyin gerekli olmadığını, zorunluluk bulunmadığını anlatır."},
+        {"q":"Elif feels very nervous and worried before exams. She has exam ___.","choices":["timetable","holiday","uniform","anxiety","break"],"answer":3,"explain":"Anxiety, kaygı ya da endişe demektir; exam anxiety sınav kaygısıdır."},
+        {"q":"Which is a good piece of advice for a student with exam stress?","choices":["Study all night without sleeping.","Make a study plan and get enough sleep.","Never take a break.","Drink a lot of cola before the exam.","Don't study at all."],"answer":1,"explain":"Plan yapmak, yeterli uyku ve kısa molalar sınav stresini azaltır."},
+        {"q":"\"Children's Day\" is celebrated in Türkiye on ___.","choices":["19 May","29 October","23 April","30 August","1 January"],"answer":2,"explain":"23 Nisan Ulusal Egemenlik ve Çocuk Bayramı'dır; dünyada çocuklara armağan edilen ilk bayramdır."},
+        {"q":"Write 3 sentences about the extracurricular activities in your school. Which one do you like and why?","explain":"Örnek cevap: Our school has a robotics club, a choir and a basketball team. I'm in the robotics club because I love building things. We meet every Wednesday after school and we are preparing a project for a science fair."}
+      ]
+    },
+    {
+      "name": "Classroom Life & Learning",
+      "topics": "Learning activities in the classroom; personal learning styles; learning with technology in the classroom",
+      "questions": [
+        {"q":"Mert learns best when he sees pictures, charts and diagrams. He is a ___ learner.","choices":["lazy","auditory","kinaesthetic","visual","slow"],"answer":3,"explain":"Görsel öğrenen (visual learner) resim, şema ve grafiklerle daha iyi öğrenir."},
+        {"q":"Zeynep learns best by listening to explanations and discussing topics. She is an ___ learner.","choices":["visual","auditory","kinaesthetic","online","absent"],"answer":1,"explain":"İşitsel öğrenen (auditory learner) dinleyerek ve konuşarak öğrenir."},
+        {"q":"Can learns best by doing experiments and moving around. He is a ___ learner.","choices":["auditory","visual","kinaesthetic","silent","digital"],"answer":2,"explain":"Kinestetik öğrenen yaparak, dokunarak ve hareket ederek öğrenir."},
+        {"q":"I enjoy ___ in groups with my classmates.","choices":["worked","work","to working","working","works"],"answer":3,"explain":"\"Enjoy\" fiilinden sonra fiil -ing almış hâliyle (gerund) kullanılır."},
+        {"q":"I prefer reading books ___ watching videos.","choices":["with","than","from","for","to"],"answer":4,"explain":"\"Prefer A to B\" kalıbında karşılaştırma \"to\" ile yapılır."},
+        {"q":"Our teacher uses a ___ to show presentations on the wall.","choices":["pencil case","projector","ruler","rubber","stapler"],"answer":1,"explain":"Projector (projeksiyon cihazı) görüntüyü duvara ya da perdeye yansıtır."},
+        {"q":"Which is an example of learning with technology?","choices":["Reading an old newspaper","Writing with chalk only","Solving quiz questions on an educational app","Sleeping in class","Sharpening a pencil"],"answer":2,"explain":"Eğitim uygulamaları, çevrim içi testler ve dijital sunumlar teknolojiyle öğrenmeye örnektir."},
+        {"q":"\"Could you repeat that, please?\" A student says this when he ___.","choices":["is very hungry","wants to leave the class","finished the exam","didn't hear or understand something","wants to open the window"],"answer":3,"explain":"Bu cümle bir şeyi duymadığımızda ya da anlamadığımızda kibarca tekrar istemek için kullanılır."},
+        {"q":"What kind of learner are you? Write 3 sentences and give examples of how you study.","explain":"Örnek cevap: I think I'm a visual learner. I draw mind maps and use different colours in my notes. I also watch short videos with diagrams before exams."}
+      ]
+    },
+    {
+      "name": "Personal Life and Well-being",
+      "topics": "Body parts, human illnesses and diseases; human nature and human well-being today and in the future; fashion and personal fashion preferences",
+      "questions": [
+        {"q":"\"I have a high temperature and I feel very hot.\" The person has a ___.","choices":["sore eye","toothache","broken arm","backache","fever"],"answer":4,"explain":"Fever, ateştir."},
+        {"q":"\"My head hurts a lot.\" The person has a ___.","choices":["stomachache","headache","earache","sore throat","toothache"],"answer":1,"explain":"Headache baş ağrısıdır; -ache ekli kelimeler ağrı bildirir."},
+        {"q":"\"I've got a terrible toothache.\" \"You ___ see a dentist.\"","choices":["mustn't","shouldn't","should","can't","won't"],"answer":2,"explain":"Tavsiye vermek için \"should\" kullanılır."},
+        {"q":"\"I have a sore throat.\" \"You ___ drink cold drinks.\"","choices":["have to","should","must","shouldn't","would"],"answer":3,"explain":"Yapılmaması önerilen şey için \"shouldn't\" kullanılır."},
+        {"q":"Which one is NOT a part of the body?","choices":["elbow","knee","ankle","shoulder","pillow"],"answer":4,"explain":"Pillow yastıktır; elbow dirsek, knee diz, ankle ayak bileği, shoulder omuzdur."},
+        {"q":"Which habit is good for our well-being?","choices":["Staying indoors all day","Eating junk food every day","Looking at screens until midnight","Never drinking water","Getting enough sleep and exercising regularly"],"answer":4,"explain":"Yeterli uyku, düzenli egzersiz ve dengeli beslenme sağlıklı yaşamın temelidir."},
+        {"q":"\"I prefer casual clothes like jeans and T-shirts.\" What does \"casual\" mean?","choices":["very formal and expensive","comfortable and informal","old-fashioned","colourful","uncomfortable"],"answer":1,"explain":"Casual, günlük ve rahat (resmî olmayan) giyim tarzıdır."},
+        {"q":"These trainers are ___ than those boots. (comfortable)","choices":["most comfortable","comfortabler","more comfortable","the more comfortable","comfortable"],"answer":2,"explain":"Uzun sıfatlarda karşılaştırma \"more ... than\" ile yapılır."},
+        {"q":"Your friend feels stressed and can't sleep well. Write 3 pieces of advice using \"should\" and \"shouldn't\".","explain":"Örnek cevap: You should go to bed at the same time every night. You shouldn't use your phone before sleeping. You should do some exercise and talk to someone you trust about your problems."}
+      ]
+    },
+    {
+      "name": "Family Life & Home",
+      "topics": "Family members and their daily routines today and in the past; hobbies and interests of family members (sports & films); different types of houses and families from the world",
+      "questions": [
+        {"q":"I ___ to the cinema with my friends last weekend.","choices":["go","goes","going","gone","went"],"answer":4,"explain":"\"Last weekend\" geçmiş zamanı gösterir. \"Go\" düzensiz fiildir ve geçmiş zaman biçimi \"went\"tir."},
+        {"q":"My grandfather ___ play football every day when he was young, but now he walks in the park.","choices":["use","uses to","is used","used to","using"],"answer":3,"explain":"Geçmişte düzenli yapılıp artık yapılmayan alışkanlıklar \"used to + fiil\" ile anlatılır."},
+        {"q":"\"Did people use to watch TV in the 1950s in Türkiye?\" \"No, they ___. They listened to the radio.\"","choices":["used","don't","weren't","haven't","didn't"],"answer":4,"explain":"\"Did ... use to\" sorusuna kısa olumsuz cevap \"No, they didn't.\" olur."},
+        {"q":"While my mother ___ dinner, my father was reading the newspaper.","choices":["cooked","was cooking","cooks","is cooking","has cooked"],"answer":1,"explain":"Geçmişte aynı anda süren iki eylem için \"while\" ile geçmiş zamanın sürekli hâli (past continuous) kullanılır."},
+        {"q":"My sister is really into films. She ___ cinema every weekend.","choices":["going to","go to the","goes to the","is go","went to the yesterday"],"answer":2,"explain":"Düzenli alışkanlık geniş zamanla anlatılır; üçüncü tekil şahısta fiil -es alır."},
+        {"q":"A family with parents, children, grandparents and uncles all living together is an ___ family.","choices":["small","nuclear","single","extended","only"],"answer":3,"explain":"Extended family geniş ailedir. Yalnızca anne, baba ve çocuklardan oluşan aile nuclear family (çekirdek aile) olarak adlandırılır."},
+        {"q":"In Japan, many traditional houses have floors covered with ___ mats.","choices":["garage","igloo","yurt","terrace","tatami"],"answer":4,"explain":"Tatami, geleneksel Japon evlerinde yere serilen hasır minderlerdir."},
+        {"q":"Which hobby is a sport?","choices":["knitting","swimming","painting","reading","collecting stamps"],"answer":1,"explain":"Yüzme bir spordur; diğerleri sanat ve el işi hobileridir."},
+        {"q":"Write 3 sentences about how your grandparents' daily life was different in the past. Use \"used to\".","explain":"Örnek cevap: My grandparents used to live in a village. They used to get up very early and work in the hazelnut gardens. They didn't use to have a TV, so they used to visit their neighbours in the evenings."}
+      ]
+    },
+    {
+      "name": "Life in the Neighbourhood, City & Social Life",
+      "topics": "Activities to do in attractions (cafes, cinemas; gyms, sports clubs); getting help from services (pharmacies, hospitals, etc.); pros and cons of different types of transportation in the neighbourhood and city",
+      "questions": [
+        {"q":"You need medicine for your headache. Where do you go?","choices":["stationery shop","bakery","pharmacy","gym","cinema"],"answer":2,"explain":"İlaç eczaneden (pharmacy) alınır."},
+        {"q":"I go to the ___ three times a week to work out and stay fit.","choices":["bank","library","post office","gym","museum"],"answer":3,"explain":"Spor yapmak için spor salonuna (gym) gidilir."},
+        {"q":"Travelling by metro is ___ than travelling by bus in busy cities. (fast)","choices":["fast","more fast","fastest","the fastest","faster"],"answer":4,"explain":"Kısa sıfatların karşılaştırma biçimi -er ile yapılır."},
+        {"q":"Which is an advantage of cycling in the city?","choices":["It's very expensive.","It's cheap, healthy and doesn't pollute the air.","It causes a lot of air pollution.","It needs a lot of petrol.","It's the slowest way in every situation."],"answer":1,"explain":"Bisiklet ucuz, sağlıklı ve çevre dostu bir ulaşım aracıdır."},
+        {"q":"Which is a disadvantage of travelling by car in big cities?","choices":["It's good for the environment.","It's always free.","Traffic jams and parking problems","There are never any accidents.","It's the healthiest option."],"answer":2,"explain":"Büyük şehirlerde araba trafik sıkışıklığına, park sorununa ve hava kirliliğine yol açar."},
+        {"q":"\"Excuse me, how can I get to the hospital?\" \"___\"","choices":["Yes, I'd love to.","It's open from 9 to 5.","I'm a doctor.","Go straight on and turn left at the traffic lights.","It costs 20 liras."],"answer":3,"explain":"Yol tarifi sorulduğunda yön bildiren ifadeler kullanılır."},
+        {"q":"The café is ___ the bank and the bookshop.","choices":["at","next","opposite to","behind of","between"],"answer":4,"explain":"İki yer arasındaki konum \"between ... and ...\" ile anlatılır."},
+        {"q":"Public transport is ___ way to reduce traffic in a city.","choices":["the better","the best","best","more good","goodest"],"answer":1,"explain":"\"Good\" sıfatının üstünlük derecesi düzensizdir: good, better, the best."},
+        {"q":"Compare two types of transport in your city. Write 3 sentences about their advantages and disadvantages.","explain":"Örnek cevap: In Ordu, the bus is cheaper than a taxi, but it's slower. A taxi is more comfortable and faster, but it's more expensive. I think walking along the coast is the healthiest way to travel short distances."}
+      ]
+    },
+    {
+      "name": "Life in the World & Culture",
+      "topics": "Continents, countries, and nationalities; shopping for food and personal food preferences; food and food culture from different parts of the world",
+      "questions": [
+        {"q":"Egypt, Nigeria and Kenya are in ___.","choices":["South America","Europe","Africa","Oceania","Asia"],"answer":2,"explain":"Mısır, Nijerya ve Kenya Afrika kıtasındadır."},
+        {"q":"Brazil and Argentina are in ___.","choices":["Europe","North America","Africa","South America","Asia"],"answer":3,"explain":"Brezilya ve Arjantin Güney Amerika'dadır."},
+        {"q":"People from Brazil speak ___.","choices":["French","Spanish","Brazilian","English","Portuguese"],"answer":4,"explain":"Brezilya'nın resmî dili Portekizcedir."},
+        {"q":"How ___ sugar do you put in your tea?","choices":["many","much","a few","few","a"],"answer":1,"explain":"Sayılamayan isimlerle (sugar) \"how much\" kullanılır."},
+        {"q":"We need ___ tomatoes for the salad. Can you buy some?","choices":["much","a little","a few","any","a"],"answer":2,"explain":"Sayılabilen çoğul isimlerle az miktar için \"a few\" kullanılır; sayılamayanlarla \"a little\" kullanılır."},
+        {"q":"Can I have a ___ of bread, please?","choices":["bar","bottle","can","loaf","carton"],"answer":3,"explain":"A loaf of bread bir somun ekmektir. A bottle of water (şişe), a bar of chocolate (kalıp), a carton of milk (kutu) olarak kullanılır."},
+        {"q":"I'm a vegetarian, so I don't eat ___.","choices":["bread","vegetables","fruit","rice","meat"],"answer":4,"explain":"Vejetaryenler et yemez."},
+        {"q":"Paella is a traditional rice dish from ___.","choices":["Japan","Spain","India","Russia","Canada"],"answer":1,"explain":"Paella İspanya'nın geleneksel pirinç yemeğidir."},
+        {"q":"Write 3-4 sentences about the food culture of a country you'd like to visit.","explain":"Örnek cevap: I'd like to visit Italy because I love Italian food. People in Italy eat a lot of pasta and pizza. They usually have a big lunch with their families on Sundays. They also make delicious ice cream called gelato."}
+      ]
+    },
+    {
+      "name": "Life in Nature & Global Problems",
+      "topics": "Natural resources; global problems related to natural resources; protecting natural resources",
+      "questions": [
+        {"q":"If it rains tomorrow, we ___ at home.","choices":["stay","staying","stayed","would stay","will stay"],"answer":4,"explain":"Birinci tip koşul cümlesi: If + simple present, will + fiil. Gerçekleşmesi olası bir durumu anlatır."},
+        {"q":"Water, forests, minerals and fresh air are ___.","choices":["natural resources","man-made products","global problems","traffic jams","fossil records"],"answer":0,"explain":"Doğadan elde edilen su, orman, maden ve hava doğal kaynaklardır (natural resources)."},
+        {"q":"Cutting down too many trees is called ___.","choices":["deforestation","recycling","conservation","irrigation","reforestation"],"answer":0,"explain":"Deforestation ormansızlaşma demektir; reforestation ise yeniden ağaçlandırmadır."},
+        {"q":"If we waste water, we ___ face water shortages in the future.","choices":["will","would","did","are","have"],"answer":0,"explain":"Birinci tip koşul cümlesinde (If + present simple) temel cümlede \"will\" kullanılır."},
+        {"q":"If people ___ plastic, the oceans will be cleaner.","choices":["recycle","recycled","will recycle","recycling","recycles"],"answer":0,"explain":"Birinci tip koşul cümlesinde \"if\" bölümünde geniş zaman kullanılır."},
+        {"q":"Which energy source is renewable?","choices":["solar energy","coal","oil","natural gas","diesel"],"answer":0,"explain":"Güneş enerjisi yenilenebilir bir kaynaktır; kömür, petrol ve doğal gaz fosil yakıtlardır."},
+        {"q":"We should turn off the tap while we're brushing our teeth ___ save water.","choices":["to","for","so","because","but"],"answer":0,"explain":"Amaç bildirirken \"to + fiil\" kullanılır: to save water (su tasarrufu yapmak için)."},
+        {"q":"Which is a global problem?","choices":["Climate change","A broken pencil","A late bus","A noisy neighbour","A rainy weekend"],"answer":0,"explain":"İklim değişikliği tüm dünyayı etkileyen küresel bir sorundur."},
+        {"q":"Write 3 things you can do at home or at school to protect natural resources.","explain":"Örnek cevap: I can turn off the lights when I leave a room. I can separate paper and plastic for recycling at school. I can take shorter showers to save water and use a reusable water bottle."}
+      ]
+    },
+    {
+      "name": "Life in the Universe & the Future",
+      "topics": "Planets and space; life in the universe; space explorations",
+      "questions": [
+        {"q":"Which planet is closest to the Sun?","choices":["Mercury","Venus","Earth","Mars","Jupiter"],"answer":0,"explain":"Güneş'e en yakın gezegen Merkür'dür."},
+        {"q":"Jupiter is ___ planet in our Solar System.","choices":["the biggest","bigger","the big","biggest of","more big"],"answer":0,"explain":"Jüpiter Güneş Sistemi'nin en büyük gezegenidir; üstünlük derecesi \"the biggest\" ile yapılır."},
+        {"q":"Mars is often called the ___ Planet because of its colour.","choices":["Red","Blue","Green","Yellow","White"],"answer":0,"explain":"Mars yüzeyindeki demir oksit nedeniyle kırmızı görünür."},
+        {"q":"Neil Armstrong was the first person ___ on the Moon.","choices":["to walk","walking","walked","walks","to walked"],"answer":0,"explain":"\"The first person to + fiil\" kalıbı ilk yapan kişiyi anlatır: the first person to walk on the Moon."},
+        {"q":"Have you ever ___ a shooting star?","choices":["seen","saw","see","seeing","sees"],"answer":0,"explain":"\"Have you ever\" sorusu present perfect'tir; fiilin üçüncü hâli (seen) kullanılır."},
+        {"q":"Türkiye's first astronaut travelled to the ___ in 2024.","choices":["International Space Station","Moon","Mars","Sun","Jupiter"],"answer":0,"explain":"Türkiye'nin ilk astronotu Alper Gezeravcı 2024'te Uluslararası Uzay İstasyonu'na gitmiştir."},
+        {"q":"Write 3 predictions about space exploration in the future. Use \"will\".","explain":"Örnek cevap: In the future, people will build cities on Mars. Tourists will travel to the Moon for holidays. Scientists will find water on other planets and maybe discover life in the universe."}
+      ]
+    }
+  ]
+}
