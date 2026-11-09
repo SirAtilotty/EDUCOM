@@ -1,60 +1,62 @@
 # EDUCOM
 
-ATICOM tabanlı, okul içi iletişim ve öğrenme uygulaması (TÜBİTAK 4006 prototipi). Tarayıcıda çalışır, telefona uygulama gibi kurulur. Sunucu yalnızca Node.js (22.13 veya üstü) ister, başka bağımlılığı yoktur.
+**English** · [Türkçe](README.tr.md)
 
-## Özellikler
+A school communication and learning app (TÜBİTAK 4006 prototype), built on the ATICOM messaging infrastructure. It runs in the browser and can be installed on a phone like an app. The server only needs Node.js (22.13 or later) and has no other dependencies.
 
-- **Sınıf grupları:** Her sınıfın bir grubu vardır. Gruba yalnızca o sınıfın öğretmenleri yazar, öğrenciler okur.
-- **Ödev takibi:** Öğretmen kendi sınıfına ödev ve teslim tarihi girer. Sınıftaki öğrenciler ödevleri kalan gün sayısıyla görür. İstenirse ödev sınıf grubunda da duyurulur.
-- **Yazılıya hazırlık:** Öğrenci kendi sınıf seviyesinde önce dersi, sonra üniteyi seçer ve o ünitenin sorularını çözer; her cevaptan sonra açıklamayı görür. Üniteler MEB'in 2026-2027 çerçeve yıllık planlarındaki sırayla gelir (9-11. sınıf Türkiye Yüzyılı Maarif Modeli, 12. sınıf mevcut program). 9. sınıfta 38 ünitenin her birinde en az 20 soru (toplam 763), 10, 11 ve 12. sınıflarda her derste en az 70 soru (10. sınıfta 560, 11. sınıfta 562, 12. sınıfta 560) vardır. Toplam 2445 soru. Öğretmenler istedikleri üniteye çoktan seçmeli ya da açık uçlu soru ekleyebilir.
-- **Gelişim notu:** Öğretmen, kendi sınıfındaki bir öğrenciye gidişatı hakkında not ve genel durum (çok iyi, iyi, orta, geliştirilmeli) gönderir. Notu yalnızca o öğrenci görür.
-- **Sohbet:** Özel ve grup sohbetleri, fotoğraf, sesli mesaj, yanıtlama, okundu bilgisi, "yazıyor…" göstergesi, telefon bildirimi. Öğrenciler birbirine yazamaz, yalnızca öğretmenlere yazabilir. Öğretmenin kurduğu grupta birden fazla öğrenci varsa öğrenciler sadece okur.
-- **Görünüm:** Açık, koyu ya da sistem teması; altı renk; sohbet arka planı (okul amblemi, kareli, çizgili, noktalı ya da kendi fotoğrafın); yazı boyutu. Bu ayarlar her telefonda ayrı saklanır.
-- Türkçe ve İngilizce arayüz.
+## Features
 
-## Roller ve kayıt kodları
+- **Class groups:** Every class has a group. Only that class's teachers can post in it; students read.
+- **Homework tracking:** Teachers post homework with a due date to their own classes. Students in the class see it with the number of days left. Homework can also be announced in the class group.
+- **Exam prep:** Students pick a subject at their own grade level, then a unit, and solve that unit's questions; an explanation is shown after each answer. Units follow the order of the Ministry of National Education's (MEB) 2026-2027 yearly plans (grades 9-11: Türkiye Yüzyılı Maarif Modeli, grade 12: current curriculum). Grade 9 has at least 20 questions in each of its 38 units (763 in total); grades 10, 11 and 12 have at least 70 questions per subject (560, 562 and 560). 2445 questions in total. Teachers can add multiple-choice or open-ended questions to any unit.
+- **Progress notes:** A teacher sends a student in their class a note about how they are doing, with an overall level (very good, good, fair, needs work). Only that student sees it.
+- **Chat:** Private and group chats, photos, voice messages, replies, read receipts, typing indicator, phone notifications. Students can't message each other; they can only write to teachers. In a group created by a teacher that has more than one student, students can only read.
+- **Appearance:** Light, dark or system theme; six colours; chat backgrounds (school emblem, grid, lined, dotted or your own photo); text size. These settings are stored separately on each phone.
+- Turkish and English interface.
 
-Okula kayıt kodlarını yönetici (sunucuyu çalıştıran kişi) üretir. **Öğretmen kodları O harfiyle başlar.** Bu kodla kayıt olan kişi öğretmen sayılır, diğerleri öğrencidir. Kod, kişiyi doğrudan sınıfına ve sınıf grubuna ekler. Sınıf, ilk kodu üretildiğinde kendiliğinden açılır.
+## Roles and invite codes
+
+The admin (whoever runs the server) generates the school's invite codes. **Teacher codes start with the letter O.** Anyone who signs up with such a code is a teacher; everyone else is a student. The code puts the person straight into their class and class group. A class is created automatically when its first code is generated.
 
 ```sh
-node server.js invite student 9-A 30        # 9-A için 30 öğrenci kodu
-node server.js invite teacher 9-A 10-B      # 9-A ve 10-B'ye giren bir öğretmenin kodu
-node server.js classes                      # sınıflar ve kişi sayıları
-node server.js reset <kullanıcı>            # geçici şifre verir, açık oturumları kapatır
-node server.js remove <kullanıcı>           # üyeyi çıkarır, eski mesajları kalır
-node server.js backup <klasör>              # veritabanı ve dosyaların yedeği
+node server.js invite student 9-A 30        # 30 student codes for 9-A
+node server.js invite teacher 9-A 10-B      # one code for a teacher of 9-A and 10-B
+node server.js classes                      # classes and member counts
+node server.js reset <username>             # gives a temporary password, signs out open sessions
+node server.js remove <username>            # removes the member, keeps their old messages
+node server.js backup <folder>              # backs up the database and files
 ```
 
-Kodlar tek kullanımlıktır, 7 gün geçerlidir ve `ABCDE-FGHJK` biçiminde yazdırılır. Öğrenci kodu elle yazabilir ya da yanındaki linke dokunabilir. Kodda karışabilecek harfler (O/0, I/1, L) kullanılmaz.
+Codes are single-use, valid for 7 days and printed as `ABCDE-FGHJK`. Students can type the code or tap the link next to it. Characters that are easy to confuse (O/0, I/1, L) are not used in codes.
 
-## Çalıştırma
+## Running
 
 ```sh
 npm start        # http://localhost:3001
 npm test
 ```
 
-Sunucuda `BASE_URL=https://adresin` ayarla ki kodların yanındaki linkler doğru adresi göstersin. Diğer ayarlar: `PORT` (3001), `HOST` (127.0.0.1), `DATA_DIR`.
+On the server, set `BASE_URL=https://your-address` so the links next to the codes point to the right address. Other settings: `PORT` (3001), `HOST` (127.0.0.1), `DATA_DIR`.
 
-## Veriler
+## Data
 
-Her şey `data/` klasöründedir: veritabanı, fotoğraflar, sesli mesajlar ve bildirim anahtarı. Bu klasör git'e girmez; kimseyle paylaşma. Hazır soru bankası `questions/` klasöründedir: her sınıf ve ders için bir dosya (`9-matematik.json` gibi), içinde ünite adı, konuları ve sorular. Üniteler ve konular MEB'in tymm.meb.gov.tr adresinde yayımladığı 2026-2027 taslak çerçeve yıllık planlarından (Anadolu Lisesi) alınmıştır. Sorular bu plandaki öğrenme çıktılarına göre yazılmış özgün sorulardır; ÖDGM, MEBİ ya da ders kitabı sorularının kopyası değildir. Okulda kullanmadan önce ders öğretmenlerinin gözden geçirmesi iyi olur.
+Everything lives in the `data/` folder: the database, photos, voice messages and the notification key. This folder is not tracked by git; don't share it with anyone. The question bank is in the `questions/` folder: one file per grade and subject (such as `9-matematik.json`) containing unit names, topics and questions. Units and topics are taken from MEB's 2026-2027 draft yearly plans (Anadolu Lisesi) published at tymm.meb.gov.tr. The questions are in Turkish, except for English classes.
 
-## Raspberry Pi'de ATICOM'un yanında çalıştırma
+## Running on a Raspberry Pi
 
-EDUCOM 3001 portunu ve farklı bir çerez adını kullanır, bu yüzden aynı Pi'de ATICOM ile karışmaz. Aşağıdaki adımlarda kullanıcı `pi`, klasör `/home/pi/EDUCOM`; seninkiler farklıysa değiştir.
+EDUCOM uses port 3001, so it can run next to other services on the same Pi. The steps below assume the user `pi` and the folder `/home/pi/EDUCOM`; change them if yours are different.
 
-1. Projeyi Pi'ye kopyala (aşağıdaki "Güncelleme" komutuyla).
+1. Copy the project to the Pi (with the command under "Updating" below).
 
-2. Tailscale ile ikinci bir HTTPS adresi aç (ATICOM 443'te kalır, EDUCOM 8443'e gelir):
+2. Open an HTTPS address with Tailscale on port 8443:
 
    ```sh
    sudo tailscale funnel --bg --https=8443 3001
    ```
 
-   Adres `https://<pi>.<tailnet>.ts.net:8443` olur.
+   The address becomes `https://<pi>.<tailnet>.ts.net:8443`.
 
-3. `/etc/systemd/system/educom.service` dosyasını oluştur:
+3. Create the file `/etc/systemd/system/educom.service`:
 
    ```ini
    [Unit]
@@ -66,7 +68,7 @@ EDUCOM 3001 portunu ve farklı bir çerez adını kullanır, bu yüzden aynı Pi
    User=pi
    WorkingDirectory=/home/pi/EDUCOM
    Environment=PORT=3001
-   Environment=BASE_URL=https://SENIN-PI.ts.net:8443
+   Environment=BASE_URL=https://YOUR-PI.ts.net:8443
    ExecStart=/usr/bin/node server.js
    Restart=always
    NoNewPrivileges=true
@@ -80,18 +82,18 @@ EDUCOM 3001 portunu ve farklı bir çerez adını kullanır, bu yüzden aynı Pi
    sudo systemctl enable --now educom
    ```
 
-4. Kodları üret:
+4. Generate codes:
 
    ```sh
-   cd /home/pi/EDUCOM && BASE_URL=https://SENIN-PI.ts.net:8443 node server.js invite teacher 9-A
+   cd /home/pi/EDUCOM && BASE_URL=https://YOUR-PI.ts.net:8443 node server.js invite teacher 9-A
    ```
 
-## Güncelleme
+## Updating
 
-Önce bilgisayarında `npm test` çalıştır. Sonra kodu Pi'ye gönder ve servisi yeniden başlat. `data/` gönderilmez, yani mesajlar ve hesaplar yerinde kalır.
+First run `npm test` on your computer. Then send the code to the Pi and restart the service. `data/` is not sent, so messages and accounts stay in place.
 
 ```sh
-tar --exclude=data --exclude=.git -czf - -C ~/Desktop EDUCOM | ssh pi@PI-ADRESI 'tar -xzf -' && ssh -t pi@PI-ADRESI 'sudo systemctl restart educom'
+tar --exclude=data --exclude=.git -czf - -C ~/Desktop EDUCOM | ssh pi@PI-ADDRESS 'tar -xzf -' && ssh -t pi@PI-ADDRESS 'sudo systemctl restart educom'
 ```
 
-Telefonlar yeni sürümü uygulama kapatılıp açılınca alır.
+Phones get the new version when the app is closed and reopened.
