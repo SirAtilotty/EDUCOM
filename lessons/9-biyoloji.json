@@ -1,0 +1,188 @@
+{
+ "Yaşam": [
+  {
+   "title": "Biyolojinin Önemi ve Bilimin Doğası",
+   "text": "Biyoloji, canlıları ve canlıların çevreleriyle ilişkilerini inceleyen bilimdir. Tıp, tarım, gıda, çevre koruma ve biyoteknoloji gibi alanlar biyolojiye dayanır.\n\nBiyolojinin gelişimindeki dönüm noktaları:\nMikroskobun icadı ve Robert Hooke'un mantar dokusunda hücreyi görmesi (1665).\nHücre teorisi: Bütün canlılar hücrelerden oluşur, hücre canlının temel birimidir, her hücre önceki bir hücreden oluşur.\nPasteur'ün kendiliğinden oluşum görüşünü çürütmesi ve aşı çalışmaları.\nMendel'in kalıtım yasaları.\nDNA'nın yapısının çözülmesi (1953) ve İnsan Genom Projesi.\n\nBilimin doğası: Bilimsel bilgi gözlem ve deneye dayanır, sınanabilir ve yeni kanıtlarla değişebilir. Kesin ve değişmez değildir. Bilim insanlarının yaratıcılığı ve hayal gücü bilimsel bilginin üretiminde önemlidir.",
+   "q": "Bilimsel bilgi ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "choices": [
+    "Gözleme dayanmaz.",
+    "Sınanması gerekmez.",
+    "Bir kez kanıtlanan bilgi asla değişmez.",
+    "Yeni kanıtlarla değişebilir ve gelişebilir.",
+    "Yalnızca deney yapan kişinin görüşüdür."
+   ],
+   "answer": 3,
+   "explain": "Bilimsel bilgi sınanabilir ve yeni kanıtlar ortaya çıktıkça değişebilir; bu, bilimin doğasının temel özelliğidir."
+  },
+  {
+   "title": "Bilimsel Araştırma Süreci ve Bilim Etiği",
+   "text": "Bilimsel araştırma genellikle şu adımları izler:\n1. Gözlem ve problemin belirlenmesi.\n2. Hipotez kurma: Probleme sınanabilir bir geçici açıklama.\n3. Tahmin ve deney tasarlama.\n4. Verilerin toplanması ve analiz edilmesi.\n5. Sonuç çıkarma: Hipotez desteklenir ya da reddedilir.\n6. Sonuçların paylaşılması.\n\nDeney tasarımında değişkenler:\nBağımsız değişken: Araştırmacının değiştirdiği değişken.\nBağımlı değişken: Ölçülen sonuç.\nKontrollü (sabit) değişkenler: Aynı tutulan koşullar.\nKontrol grubu: Bağımsız değişkenin uygulanmadığı, karşılaştırma için kullanılan grup.\n\nBilim etiği: Verileri değiştirmemek ve uydurmamak, başkalarının çalışmalarına atıf yapmak (intihal yapmamak), deney hayvanlarına ve gönüllülere saygılı davranmak, insan katılımcılardan izin almak.",
+   "q": "Gübrenin bitki boyuna etkisini araştıran bir öğrencinin deneyinde bağımsız değişken hangisidir?",
+   "choices": [
+    "Bitkinin boyu",
+    "Gübre miktarı",
+    "Saksı büyüklüğü",
+    "Verilen su miktarı",
+    "Işık süresi"
+   ],
+   "answer": 1,
+   "explain": "Araştırmacının bilerek değiştirdiği değişken gübre miktarıdır. Bitki boyu ölçülen bağımlı değişkendir."
+  },
+  {
+   "title": "Canlıların Ortak Özellikleri",
+   "text": "Bütün canlılar şu ortak özellikleri taşır:\n\nHücresel yapı: Tek hücreli ya da çok hücrelidir.\nOrganizasyon: Hücre → doku → organ → sistem → organizma.\nBeslenme: Kendi besinini üreten (ototrof) ya da hazır alan (heterotrof).\nSolunum ve enerji üretimi: Besinlerden ATP üretir.\nMetabolizma: Yapım (anabolizma) ve yıkım (katabolizma) tepkimelerinin tamamı.\nBoşaltım: Metabolizma artıklarını uzaklaştırma.\nBüyüme ve gelişme.\nUyarılara tepki: Işığa yönelen bitki, sıcağa elini çeken insan.\nHomeostazi: İç ortamı (vücut sıcaklığı, su dengesi) sabit tutma.\nÜreme: Eşeyli ya da eşeysiz yolla yeni bireyler oluşturma.\nAdaptasyon ve evrimleşme.\n\nVirüsler canlı ile cansız arasında kabul edilir: Hücresel yapıları ve metabolizmaları yoktur; yalnızca canlı bir hücrenin içinde çoğalabilirler.",
+   "q": "Çok sıcak bir günde insanın terleyerek vücut sıcaklığını sabit tutması hangi canlılık özelliğine örnektir?",
+   "choices": [
+    "Büyüme",
+    "Organizasyon",
+    "Beslenme",
+    "Üreme",
+    "Homeostazi"
+   ],
+   "answer": 4,
+   "explain": "İç ortamın (vücut sıcaklığının) dış koşullar değişse de sabit tutulması homeostazidir."
+  },
+  {
+   "title": "İnorganik Moleküller: Su ve Mineraller",
+   "text": "Canlıların yapısındaki maddeler inorganik ve organik olarak ikiye ayrılır. İnorganik maddeler (su, mineraller, asitler, bazlar) canlılar tarafından üretilemez, dışarıdan hazır alınır; sindirilmeden emilirler.\n\nSu: Canlı vücudunun büyük bölümünü (insanda yaklaşık %65-70) oluşturur.\nİyi bir çözücüdür; maddelerin taşınmasını sağlar.\nÖz ısısı yüksektir; vücut sıcaklığını dengeler.\nKimyasal tepkimelere katılır.\n\nMineraller: Vücutta yapı ve düzenleyici olarak görev yapar.\nKalsiyum (Ca): Kemik ve diş yapısı, kanın pıhtılaşması, kas kasılması.\nDemir (Fe): Kanda oksijen taşıyan hemoglobinin yapısında bulunur. Eksikliğinde kansızlık görülür.\nİyot (I): Tiroit hormonunun yapısındadır. Eksikliğinde guatr görülür; bu yüzden sofra tuzu iyotlanır.\nSodyum ve potasyum: Sinir iletimi ve su dengesi.",
+   "q": "Sofra tuzlarına iyot eklenmesinin amacı hangi rahatsızlığı önlemektir?",
+   "choices": [
+    "Şeker hastalığı",
+    "Kansızlık",
+    "Guatr",
+    "Raşitizm",
+    "Diş çürüğü"
+   ],
+   "answer": 2,
+   "explain": "İyot tiroit hormonunun yapısına katılır; eksikliğinde tiroit bezi büyür ve guatr oluşur."
+  },
+  {
+   "title": "Karbonhidratlar ve Lipitler",
+   "text": "Karbonhidratlar C, H ve O'dan oluşur; hücrenin öncelikli enerji kaynağıdır.\nMonosakkaritler (tek şekerler): Glikoz, fruktoz, galaktoz. Sindirilmeden emilir.\nDisakkaritler: İki monosakkaritin birleşmesiyle oluşur. Sakkaroz (çay şekeri), laktoz (süt şekeri), maltoz.\nPolisakkaritler: Çok sayıda glikozdan oluşur. Nişasta (bitkilerde depo), glikojen (hayvanlarda karaciğer ve kasta depo), selüloz (bitki hücre çeperi; insanda sindirilemez ama bağırsak hareketlerine yardım eder).\n\nLipitler (yağlar): Suda çözünmez. Birim kütle başına en fazla enerjiyi verir; uzun süreli depo maddesidir.\nDoymuş yağlar: Oda sıcaklığında katı (tereyağı, iç yağı). Fazlası damar sağlığını olumsuz etkiler.\nDoymamış yağlar: Oda sıcaklığında sıvı (zeytinyağı, balık yağı).\nFosfolipitler hücre zarının, steroitler bazı hormonların (ve kolesterolün) yapısını oluşturur.\nYağlar ayrıca ısı yalıtımı ve organları darbelere karşı koruma sağlar.",
+   "q": "Hayvanlarda karaciğer ve kas hücrelerinde depolanan polisakkarit hangisidir?",
+   "choices": [
+    "Glikojen",
+    "Sakkaroz",
+    "Laktoz",
+    "Nişasta",
+    "Selüloz"
+   ],
+   "answer": 0,
+   "explain": "Hayvanlar fazla glikozu glikojen olarak karaciğer ve kaslarda depolar. Nişasta bitkilerin depo polisakkaritidir."
+  },
+  {
+   "title": "Proteinler ve Enzimler",
+   "text": "Proteinler amino asitlerin peptit bağlarıyla birleşmesiyle oluşur. Canlılarda 20 çeşit amino asit vardır; bunların bir kısmı vücutta üretilemez ve besinlerle alınmalıdır (temel amino asitler).\n\nProteinlerin görevleri: Yapı (kas, saç, tırnak), taşıma (hemoglobin), savunma (antikorlar), hormon (insülin), hareket ve enzim olarak tepkimeleri hızlandırma.\nProteinin işlevini amino asit dizisi ve üç boyutlu şekli belirler.\n\nEnzimler: Canlılardaki kimyasal tepkimeleri hızlandıran biyolojik katalizörlerdir. Çoğu proteindir.\nÖzgüldür: Her enzim belirli bir maddeye (substrat) etki eder; anahtar-kilit modeli.\nTepkimeden değişmeden çıkar, tekrar kullanılabilir.\nSıcaklık, pH ve substrat derişiminden etkilenir. Yüksek ateşte enzimlerin yapısı bozulabilir (denatürasyon).\n\nÖrneğin tükürükteki amilaz nişastayı, midedeki pepsin proteinleri sindirir.",
+   "q": "Enzimlerle ilgili aşağıdakilerden hangisi yanlıştır?",
+   "choices": [
+    "Çoğunun yapısı proteindir.",
+    "Tepkimeleri hızlandırır.",
+    "Özgüldür, belirli substrata etki eder.",
+    "Tepkime sonunda tükenir ve bir daha kullanılamaz.",
+    "Sıcaklık ve pH'tan etkilenir."
+   ],
+   "answer": 3,
+   "explain": "Enzimler tepkimeden değişmeden çıkar ve tekrar tekrar kullanılabilir."
+  },
+  {
+   "title": "Nükleik Asitler ve Vitaminler",
+   "text": "Nükleik asitler, nükleotit adı verilen birimlerden oluşur. Bir nükleotit: fosfat + beş karbonlu şeker + organik baz.\n\nDNA: Kalıtım materyalidir; canlının bütün özelliklerinin şifresini taşır. Çift zincirli, sarmal yapıdadır. Şekeri deoksiribozdur. Bazları A, T, G, C. A ile T, G ile C eşleşir.\nRNA: Protein sentezinde görev alır. Tek zincirlidir, şekeri ribozdur. T yerine U (urasil) bulunur.\n\nVitaminler: Az miktarda gerekli, enzimlerin çalışmasına yardım eden düzenleyici maddelerdir. Enerji vermezler.\nYağda çözünenler (A, D, E, K): Vücutta depolanabilir.\nSuda çözünenler (B grubu, C): Fazlası idrarla atılır, düzenli alınmalıdır.\n\nEksiklik örnekleri: A vitamini → gece körlüğü, D vitamini → raşitizm (kemik yumuşaması), C vitamini → skorbüt (diş eti kanaması), K vitamini → kanın pıhtılaşmaması.",
+   "q": "DNA'da bulunup RNA'da bulunmayan organik baz hangisidir?",
+   "choices": [
+    "Sitozin",
+    "Timin",
+    "Urasil",
+    "Adenin",
+    "Guanin"
+   ],
+   "answer": 1,
+   "explain": "Timin yalnızca DNA'da bulunur; RNA'da timin yerine urasil vardır."
+  }
+ ],
+ "Organizasyon": [
+  {
+   "title": "Prokaryot ve Ökaryot Hücre",
+   "text": "Hücre canlının en küçük yapı ve görev birimidir. Bütün hücrelerde hücre zarı, sitoplazma, ribozom ve kalıtım materyali (DNA) bulunur.\n\nProkaryot hücre:\nÇekirdeği yoktur; DNA sitoplazmada serbest hâlde bulunur.\nZarlı organelleri yoktur; organel olarak yalnızca ribozom bulunur.\nHücre duvarı vardır.\nBakteriler ve arkeler prokaryottur.\n\nÖkaryot hücre:\nZarla çevrili gerçek bir çekirdeği vardır.\nMitokondri, endoplazmik retikulum, Golgi gibi zarlı organeller bulunur.\nBitki, hayvan, mantar ve protistler ökaryottur.\n\nBitki ve hayvan hücresi farkları:\nBitki hücresinde hücre çeperi (selüloz), kloroplast ve büyük merkezî koful bulunur.\nHayvan hücresinde sentrozom bulunur; kofullar küçüktür; hücre çeperi yoktur.",
+   "q": "Bir hücrede ribozom ve hücre duvarı bulunduğu hâlde çekirdek zarı ve mitokondri yoksa bu hücre hangi canlıya aittir?",
+   "choices": [
+    "Mantar",
+    "Amip",
+    "Bitki",
+    "Hayvan",
+    "Bakteri"
+   ],
+   "answer": 4,
+   "explain": "Çekirdek zarı ve zarlı organeller olmaması prokaryot hücrenin özelliğidir; bakteriler prokaryottur."
+  },
+  {
+   "title": "Hücre Zarı, Sitoplazma ve Organeller",
+   "text": "Hücre zarı: Fosfolipit ve proteinlerden oluşur (akıcı mozaik zar modeli). Seçici geçirgendir; hangi maddelerin hücreye girip çıkacağını denetler.\n\nSitoplazma: Zar ile çekirdek arasını dolduran, organellerin bulunduğu sıvı ortam.\n\nÖnemli organeller:\nÇekirdek: DNA'yı taşır, hücrenin yönetim merkezidir.\nRibozom: Protein sentezi (zarsız).\nMitokondri: Oksijenli solunum, ATP üretimi. Hücrenin enerji santrali.\nKloroplast: Fotosentez (bitki ve bazı protistler).\nEndoplazmik retikulum: Madde taşınması; granüllü ER protein, düz ER lipit sentezine yardım eder.\nGolgi cisimciği: Maddeleri paketleyip salgılar.\nLizozom: Hücre içi sindirim (hayvan hücresi).\nKoful: Depolama; bitkilerde su dengesi.\nSentrozom: Hayvan hücresinde bölünme sırasında iğ ipliklerini oluşturur.\n\nKendi DNA'sı ve ribozomu olan organeller: mitokondri ve kloroplast.",
+   "q": "Hücrede ATP'nin büyük kısmının üretildiği organel hangisidir?",
+   "choices": [
+    "Golgi cisimciği",
+    "Lizozom",
+    "Mitokondri",
+    "Koful",
+    "Ribozom"
+   ],
+   "answer": 2,
+   "explain": "Mitokondri oksijenli solunumun gerçekleştiği organeldir ve hücredeki ATP'nin büyük kısmını üretir."
+  },
+  {
+   "title": "Pasif Taşıma: Difüzyon ve Ozmoz",
+   "text": "Pasif taşımada maddeler çok yoğun oldukları yerden az yoğun oldukları yere doğru hareket eder. Hücre enerji (ATP) harcamaz.\n\nBasit difüzyon: Küçük ve yağda çözünen maddeler (O₂, CO₂) doğrudan zardan geçer. Odaya sıkılan parfümün yayılması da difüzyondur.\n\nKolaylaştırılmış difüzyon: Glikoz gibi büyük moleküller, zardaki taşıyıcı proteinler yardımıyla çok yoğundan az yoğuna geçer. Enerji harcanmaz.\n\nOzmoz: Suyun seçici geçirgen zardan, suyun çok olduğu (seyreltik) ortamdan az olduğu (derişik) ortama geçmesidir.\nHipotonik ortam (hücreden seyreltik): Hücre su alır, şişer. Hayvan hücresi patlayabilir; bitki hücresi çeperi sayesinde patlamaz (turgor).\nHipertonik ortam (hücreden derişik): Hücre su kaybeder, büzülür (bitkide plazmoliz).\nİzotonik ortam: Net su geçişi olmaz.\n\nTurşu kurmak ve meyveyi şekerle saklamak ozmoz sayesinde mikroorganizmaların su kaybetmesine dayanır.",
+   "q": "Tuzlu suya konan marul yapraklarının pörsümesinin nedeni nedir?",
+   "choices": [
+    "Hücrelerin ozmozla su kaybetmesi",
+    "Hücrelerin su alıp patlaması",
+    "Aktif taşıma ile tuz alması",
+    "Fotosentezin artması",
+    "Hücrelerin tuz kaybetmesi"
+   ],
+   "answer": 0,
+   "explain": "Tuzlu su hücreye göre hipertoniktir. Su hücrelerden dışarı çıkar ve yapraklar pörsür (plazmoliz)."
+  },
+  {
+   "title": "Aktif Taşıma, Endositoz ve Ekzositoz",
+   "text": "Aktif taşıma: Maddeler az yoğun oldukları yerden çok yoğun oldukları yere taşınır. Bunun için zardaki taşıyıcı proteinler ve ATP gerekir. Yalnızca canlı hücrelerde görülür.\nÖrnekler: Sinir hücrelerindeki sodyum-potasyum pompası, bağırsakta besinlerin emilimi, kök hücrelerinin topraktan mineral alması.\n\nBüyük moleküller ve parçacıklar zardan geçemez. Bunlar zarın şekil değiştirmesiyle, kesecikler aracılığıyla taşınır; bu süreçler de enerji gerektirir.\n\nEndositoz (hücre içine alma):\nFagositoz: Katı parçacıkların alınması. Akyuvarların mikropları yutması, amibin beslenmesi.\nPinositoz: Sıvı damlacıklarının alınması.\n\nEkzositoz (hücre dışına atma): Hormon, enzim ve artıkların kesecikler içinde zarla kaynaşarak dışarı verilmesi. Golgi'de paketlenen salgılar bu yolla dışarı atılır.",
+   "q": "Akyuvarların vücuda giren bakterileri hücre içine alarak yok etmesi hangi taşıma şeklidir?",
+   "choices": [
+    "Kolaylaştırılmış difüzyon",
+    "Basit difüzyon",
+    "Ozmoz",
+    "Fagositoz",
+    "Ekzositoz"
+   ],
+   "answer": 3,
+   "explain": "Katı parçacıkların zarın sarmasıyla hücre içine alınması fagositozdur, bir endositoz türüdür."
+  },
+  {
+   "title": "Sınıflandırmada Temel Yaklaşımlar",
+   "text": "Canlıların sınıflandırılması, çok sayıdaki canlıyı benzerliklerine göre gruplayarak incelemeyi kolaylaştırır.\n\nYapay sınıflandırma: Dış görünüş ve yaşam ortamı gibi yüzeysel özelliklere dayanır (uçanlar, yüzenler). Yarasa ile kuşu aynı gruba koyar; bilimsel değildir.\nDoğal (filogenetik) sınıflandırma: Evrimsel akrabalık, hücre yapısı, embriyo gelişimi, DNA benzerliği gibi temel özelliklere dayanır.\n\nCarl Linne (Linnaeus) canlıları basamaklara ayırdı ve ikili adlandırmayı (binomial) yaygınlaştırdı.\n\nSınıflandırma basamakları (büyükten küçüğe):\nAlem → şube → sınıf → takım → familya → cins → tür\n\nTür: Ortak atadan gelen, birbiriyle çiftleşip verimli döller oluşturabilen bireyler.\nAşağı basamaklara inildikçe birey sayısı azalır, ortak özellikler artar.\n\nİkili adlandırma: Birinci kelime cins (büyük harfle), ikinci kelime tür adıdır; italik yazılır. İnsan: Homo sapiens.",
+   "q": "Sınıflandırma basamaklarında türden aleme doğru gidildikçe ne olur?",
+   "choices": [
+    "Birey sayısı azalır.",
+    "Ortak özellik sayısı azalır, birey ve tür çeşitliliği artar.",
+    "Akrabalık derecesi artar.",
+    "Canlılar daha çok benzer.",
+    "Ortak özellik sayısı artar."
+   ],
+   "answer": 1,
+   "explain": "Büyük basamaklara (aleme) doğru gidildikçe gruba daha çok çeşit canlı girer; ortak özellikler ve akrabalık azalır."
+  },
+  {
+   "title": "Modern Sınıflandırma ve Canlı Alemleri",
+   "text": "Modern sınıflandırmada canlılar önce üç büyük gruba (domain, üst alem) ayrılır: Bakteriler, Arkeler ve Ökaryotlar.\n\nAlemler:\nBakteriler: Prokaryot, tek hücreli. Bazıları hastalık yapar, çoğu yararlıdır (yoğurt yapımı, azot döngüsü, ayrıştırıcılık).\nArkeler: Prokaryot; çok tuzlu, çok sıcak ya da oksijensiz aşırı ortamlarda yaşayabilir.\nProtistler: Ökaryot, çoğu tek hücreli. Amip, öglena, paramesyum, algler.\nMantarlar: Ökaryot, heterotrof; hücre çeperinde kitin bulunur. Maya, küf, şapkalı mantar. Ayrıştırıcıdır.\nBitkiler: Ökaryot, çok hücreli, fotosentez yapar; çeperleri selülozdur.\nHayvanlar: Ökaryot, çok hücreli, heterotrof; hücre çeperi yoktur. Omurgasızlar ve omurgalılar.\n\nVirüsler hücresel yapıda olmadıkları için hiçbir aleme dahil edilmez.",
+   "q": "Hücre çeperi kitinden oluşan, heterotrof beslenen ve ayrıştırıcı olarak görev yapan canlılar hangi alemdedir?",
+   "choices": [
+    "Bakteriler",
+    "Protistler",
+    "Bitkiler",
+    "Hayvanlar",
+    "Mantarlar"
+   ],
+   "answer": 4,
+   "explain": "Mantarların hücre çeperi kitindir; heterotrof beslenirler ve ölü organik maddeleri ayrıştırırlar."
+  }
+ ]
+}

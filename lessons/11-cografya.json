@@ -1,0 +1,282 @@
+{
+ "Coğrafyanın Doğası": [
+  {
+   "title": "Mekânsal Sorunlar Karşısında Coğrafya Bilimi",
+   "text": "Mekânsal sorunlar, belirli bir yerde ortaya çıkan ve o yerin doğal ya da beşerî özellikleriyle ilişkili olan sorunlardır: çarpık kentleşme, trafik, su kıtlığı, hava kirliliği, erozyon, afet riski, tarım arazilerinin yapılaşmaya açılması.\n\nCoğrafya bu sorunlara bütüncül bir bakışla yaklaşır. Bir sorunu incelerken şu soruları sorar:\nSorun nerede ve neden orada ortaya çıkıyor?\nHangi doğal ve beşerî etkenler sorunu etkiliyor?\nSorun zamanla nasıl değişiyor ve başka yerleri nasıl etkiliyor?\nÇözüm için hangi mekânsal düzenlemeler yapılabilir?\n\nCoğrafi sorgulama süreci: Soru sorma → veri toplama (gözlem, harita, uydu görüntüsü, istatistik) → verileri düzenleme ve analiz etme (CBS) → sonuç çıkarma ve çözüm önerme.\n\nÖrnek: Bir şehirde sık yaşanan sel sorunu; dere yataklarının yapılaşmaya açılması, zemin geçirimsizliği (asfalt, beton) ve yetersiz altyapıyla birlikte incelenir ve çözüm olarak dere yataklarının korunması, yeşil alanların artırılması önerilir.",
+   "q": "Bir şehirdeki sel sorununu inceleyen coğrafyacının aşağıdaki sorulardan hangisini sorması coğrafi bakışa en uygundur?",
+   "choices": [
+    "Sel neden şehrin bu bölümünde yoğunlaşıyor ve hangi doğal ve beşerî etkenler buna yol açıyor?",
+    "Yağmurun rengi nedir?",
+    "Sel hangi gün televizyonda haber oldu?",
+    "Belediye başkanı kimdir?",
+    "Selde kaç kişi telefon kullandı?"
+   ],
+   "answer": 0,
+   "explain": "Coğrafi bakış, sorunun nerede ve neden ortaya çıktığını doğal ve beşerî etkenlerle birlikte sorgular."
+  }
+ ],
+ "Mekânsal Bilgi Teknolojileri": [
+  {
+   "title": "Web Tabanlı CBS Uygulamaları",
+   "text": "Web tabanlı CBS, coğrafi verilerin internet üzerinden paylaşıldığı, sorgulandığı ve haritalandığı uygulamalardır. Kullanıcının bilgisayarına özel bir program kurmasına gerek yoktur; tarayıcı ya da mobil uygulama yeterlidir.\n\nÖrnekler:\nÇevrim içi haritalar ve navigasyon uygulamaları: Adres bulma, en kısa yol, anlık trafik yoğunluğu.\nE-Devlet ve belediyelerin kent bilgi sistemleri: İmar durumu, parsel sorgulama.\nAFAD ve Kandilli'nin deprem haritaları: Son depremlerin yerini ve büyüklüğünü anlık gösterir.\nMeteoroloji uygulamaları: Yağış ve sıcaklık haritaları.\nOrman yangını izleme ve hava kalitesi haritaları.\nToplu taşıma uygulamaları: Otobüsün nerede olduğunu gösterir.\n\nYararları: Bilgiye hızlı ve ücretsiz erişim, anlık güncelleme, karar vermeyi kolaylaştırma, vatandaş katılımı (kullanıcıların sorun bildirmesi).\n\nDikkat edilmesi gerekenler: Kişisel konum verilerinin gizliliği ve verilerin doğruluğunun kontrol edilmesi.",
+   "q": "Bir öğrencinin cep telefonundaki uygulamayla otobüsün durağa kaç dakika sonra geleceğini haritada görmesi hangi teknolojiye örnektir?",
+   "choices": [
+    "Fiziki harita",
+    "Termometre",
+    "Barometre",
+    "Web tabanlı CBS",
+    "Sismograf"
+   ],
+   "answer": 3,
+   "explain": "Konum verilerinin internet üzerinden anlık olarak haritada gösterilmesi web tabanlı CBS uygulamasıdır."
+  }
+ ],
+ "Doğal Sistemler ve Süreçler": [
+  {
+   "title": "Su Kaynakları",
+   "text": "Dünya'daki suyun yaklaşık %97,5'i okyanus ve denizlerdeki tuzlu sudur. Tatlı suyun büyük bölümü kutuplardaki buzullarda ve yer altında bulunur; doğrudan kullanılabilen tatlı su (göller, akarsular) çok azdır.\n\nSu kaynakları:\nAkarsular: Sürekli ya da mevsimlik akış gösterir. Rejim, akarsuyun akım miktarının yıl içindeki değişimidir; yağış ve kar erimesine bağlıdır. Düzenli rejimli akarsular (Amazon, Kongo) her mevsim bol yağış alan yerlerde görülür.\nGöller: Oluşumlarına göre tektonik (Hazar, Tuz Gölü), volkanik (Nemrut krater gölü), karstik (Salda), set gölleri (Van Gölü - volkanik set, Tortum heyelan set gölü) ve baraj gölleri.\nYer altı suları: Yağış sularının geçirimli kayaçlara sızmasıyla oluşur; kaynaklar, artezyen ve kuyularla yararlanılır.\nBuzullar: Dünya tatlı su rezervinin büyük bölümünü depolar.\n\nSu kaynaklarının dağılışı eşit değildir; iklim, yükselti ve jeolojik yapıya bağlıdır.",
+   "q": "Dünya'daki tatlı su rezervinin en büyük kısmı nerede bulunur?",
+   "choices": [
+    "Göllerde",
+    "Buzullarda",
+    "Atmosferde",
+    "Bataklıklarda",
+    "Akarsularda"
+   ],
+   "answer": 1,
+   "explain": "Tatlı suyun büyük bölümü kutuplardaki ve dağlardaki buzullarda depolanmıştır."
+  },
+  {
+   "title": "Türkiye'deki Su Kaynaklarının Etkileri",
+   "text": "Türkiye'nin akarsuları:\nYükselti ve eğim fazla olduğu için akarsuların akış hızı yüksek, hidroelektrik potansiyeli büyüktür.\nYağış rejimine bağlı olarak akarsuların çoğunun rejimi düzensizdir; ilkbaharda kabarır, yazın çekilir. Karadeniz akarsuları daha düzenlidir.\nKızılırmak Türkiye'nin en uzun akarsuyudur. Fırat ve Dicle en fazla su taşıyan akarsulardır.\nAkarsular genellikle ulaşıma elverişli değildir.\n\nGöller: Van Gölü en büyük gölümüzdür (sodalı). Tuz Gölü tuz üretimi için önemlidir. Baraj gölleri (Atatürk, Keban) elektrik üretimi ve sulamada kullanılır.\n\nYer altı suları ve kaynaklar: Karstik bölgelerde zengindir; jeotermal kaynaklar Ege'de (Denizli, Aydın, Manisa) yoğundur.\n\nEtkileri:\nTarım: Sulama ile verim artar (GAP ve Konya Ovası Projesi).\nEnerji: Hidroelektrik ve jeotermal enerji.\nYerleşme ve turizm: Termal turizm, göl ve akarsu kıyısı yerleşmeleri.\nSorunlar: Kuraklık, aşırı yer altı suyu kullanımı, obruk oluşumu ve kirlilik.",
+   "q": "Türkiye'de akarsuların hidroelektrik potansiyelinin yüksek olmasının temel nedeni hangisidir?",
+   "choices": [
+    "Akarsuların ulaşıma elverişli olması",
+    "Bütün akarsuların düzenli rejimli olması",
+    "Akarsuların denize dökülmemesi",
+    "Akarsuların çok uzun olması",
+    "Yükselti ve eğimin fazla olması"
+   ],
+   "answer": 4,
+   "explain": "Engebeli ve yüksek arazi nedeniyle akarsuların eğimi ve akış hızı fazladır; bu da hidroelektrik potansiyelini artırır."
+  }
+ ],
+ "Beşerî Sistemler ve Süreçler": [
+  {
+   "title": "Yerleşmelerin Mekânsal Organizasyonu",
+   "text": "Yerleşmeler büyüklüklerine ve fonksiyonlarına göre bir hiyerarşi (kademelenme) içinde düzenlenir: mezra → köy → kasaba → şehir → metropol → megapol.\n\nYerleşme dokusu:\nToplu yerleşme: Evler bir arada bulunur; düz arazide ve su kaynaklarının kıt olduğu yerlerde görülür (İç Anadolu).\nDağınık yerleşme: Evler birbirinden uzaktır; engebeli ve su kaynakları bol yerlerde görülür (Doğu Karadeniz).\n\nŞehirlerin iç yapısı: Şehir merkezi (ticaret ve yönetim), sanayi alanları, konut alanları, yeşil alanlar ve ulaşım ağları belirli bir düzen içinde yerleşir. Plansız büyüme, gecekondulaşma ve trafik sorunlarına yol açar.\n\nŞehirleşme: Kırsal nüfusun şehirlere göç etmesiyle şehirde yaşayan nüfus oranının artmasıdır. Türkiye'de nüfusun büyük çoğunluğu şehirlerde yaşar. Plansız şehirleşme tarım alanlarının yapılaşmasına, altyapı yetersizliğine ve çevre sorunlarına neden olur.\n\nMetropol: Nüfusu çok büyük, çevresindeki yerleşmeleri ekonomik ve kültürel olarak etkileyen büyük şehir (İstanbul, Ankara, İzmir).",
+   "q": "Doğu Karadeniz'de dağınık yerleşme dokusunun görülmesinin nedenleri hangi seçenekte birlikte verilmiştir?",
+   "choices": [
+    "Kıyıların düz olması ve tarımın az olması",
+    "Düz arazi ve su kıtlığı",
+    "Engebeli arazi ve su kaynaklarının bol olması",
+    "Sanayinin gelişmiş olması ve düz arazi",
+    "Kuraklık ve bozkır"
+   ],
+   "answer": 2,
+   "explain": "Engebeli arazide düz alan azdır; her yerde su bulunduğu için evler suya bağımlı kalmadan dağınık kurulabilir."
+  },
+  {
+   "title": "Yerleşmelerin Etki Alanları",
+   "text": "Bir yerleşmenin etki alanı (hinterlandı), o yerleşmenin hizmet verdiği, mal ve insan alışverişi yaptığı çevredir.\n\nEtki alanının büyüklüğünü belirleyen etkenler:\nNüfus ve ekonomik büyüklük.\nSunulan hizmetlerin çeşitliliği (üniversite, büyük hastaneler, havalimanı, alışveriş merkezleri).\nUlaşım olanakları.\nİdari önemi.\nÇevresindeki diğer şehirlerin büyüklüğü.\n\nBüyük şehirlerin etki alanları geniştir: İstanbul tüm Türkiye'yi ve komşu ülkeleri etkiler. Küçük bir ilçe yalnızca çevresindeki köylere hizmet verir.\n\nMerkezî yer teorisi (Christaller): Hizmetler yerleşmeler arasında kademeli dağılır. Gündelik ihtiyaçlar (fırın, bakkal) her yerde bulunur; özel hizmetler (uzman hekim, opera) yalnızca büyük merkezlerde bulunur ve geniş bir alana hizmet verir.\n\nLimanların hinterlandı: Bir limanın ithalat ve ihracat yaptığı geri bölgedir. Mersin Limanı'nın hinterlandı Çukurova, Güneydoğu Anadolu ve Orta Doğu ülkelerine kadar uzanır.",
+   "q": "Bir şehrin etki alanının genişlemesine aşağıdakilerden hangisi katkı sağlamaz?",
+   "choices": [
+    "Nüfusun ve iş olanaklarının azalması",
+    "Sanayi ve ticaretin gelişmesi",
+    "Büyük bir havalimanının açılması",
+    "Üniversite ve uzman hastanelerin bulunması",
+    "Ulaşım ağlarının gelişmesi"
+   ],
+   "answer": 0,
+   "explain": "Nüfusun ve iş olanaklarının azalması şehrin çekiciliğini ve sunduğu hizmetleri azaltır; etki alanı daralır."
+  }
+ ],
+ "Ekonomik Faaliyetler ve Etkileri": [
+  {
+   "title": "Tarımsal Faaliyetler ve Gıda Güvencesi",
+   "text": "Tarım, insanların beslenme ihtiyacını karşılayan ve sanayiye hammadde sağlayan temel ekonomik faaliyettir.\n\nTarımı etkileyen etkenler: İklim (sıcaklık, yağış, don olayları), yer şekilleri, toprak, su; sermaye, teknoloji, makineleşme, pazar, devlet destekleri.\n\nTarım türleri:\nGeleneksel (ilkel) tarım: Küçük arazilerde, az teknolojiyle, aile ihtiyacı için.\nModern (ticari) tarım: Büyük arazilerde, makine, gübre ve sulama kullanılarak pazar için üretim.\nPlantasyon tarımı: Tropikal bölgelerde tek ürün (kahve, kakao, muz) üretimi.\n\nGıda güvencesi: Herkesin her zaman yeterli, güvenli ve besleyici gıdaya fiziksel ve ekonomik olarak erişebilmesidir. Dört boyutu vardır: bulunabilirlik, erişilebilirlik, kullanım ve süreklilik.\n\nGıda güvencesini tehdit eden etkenler: İklim değişikliği ve kuraklık, savaşlar, tarım arazilerinin yapılaşması, gıda israfı, hızlı nüfus artışı, fiyat artışları.\n\nDünyada üretilen gıdanın yaklaşık üçte biri israf edilmektedir.",
+   "q": "Gıda güvencesi kavramı aşağıdakilerden hangisini ifade eder?",
+   "choices": [
+    "Yalnızca organik tarım yapılmasını",
+    "Gıda fiyatlarının yüksek olmasını",
+    "Yalnızca bol miktarda gıda üretilmesini",
+    "Herkesin her zaman yeterli, güvenli ve besleyici gıdaya erişebilmesini",
+    "Gıdaların ihraç edilmesini"
+   ],
+   "answer": 3,
+   "explain": "Gıda güvencesi, üretimin yanında herkesin yeterli ve güvenli gıdaya sürekli erişimini de kapsar."
+  },
+  {
+   "title": "Tarım Uygulamalarında Sürdürülebilirlik",
+   "text": "Sürdürülebilir tarım, bugünün gıda ihtiyacını, toprak, su ve biyoçeşitliliği gelecek nesiller için koruyarak karşılamayı amaçlar.\n\nSürdürülebilir olmayan uygulamalar:\nAşırı sulama: Tuzlanma ve yer altı suyunun tükenmesi (Konya Ovası'ndaki obruklar).\nAşırı gübre ve tarım ilacı: Toprak ve su kirliliği, göllerde ötrofikasyon.\nTek ürün tarımı (monokültür): Toprak verimliliğinin azalması, zararlıların artması.\nAnız yakma: Topraktaki organik maddenin ve canlıların yok olması.\nEğimli arazide yanlış sürüm: Erozyon.\n\nSürdürülebilir uygulamalar:\nDamla ve yağmurlama sulama.\nNöbetleşe ekim (münavebe): Farklı ürünlerin sırayla ekilmesi.\nOrganik ve iyi tarım uygulamaları.\nTeraslama ve eğime dik sürüm.\nAkıllı tarım: Sensörler, drone'lar ve uydu verileriyle su ve gübrenin gerektiği kadar kullanılması.\nYerel tohumların korunması.",
+   "q": "Konya Ovası'nda obrukların artmasının en önemli insan kaynaklı nedeni hangisidir?",
+   "choices": [
+    "Damla sulama",
+    "Yer altı sularının aşırı ve bilinçsiz kullanılması",
+    "Nöbetleşe ekim",
+    "Ağaçlandırma",
+    "Teraslama"
+   ],
+   "answer": 1,
+   "explain": "Sulama için yer altı suyunun aşırı çekilmesi, karstik araziyi boşaltarak çöküntülerin (obrukların) oluşmasını hızlandırır."
+  },
+  {
+   "title": "Stratejik ve Kritik Madenler",
+   "text": "Stratejik madenler: Bir ülkenin savunma, enerji ve sanayi güvenliği için vazgeçilmez olan madenlerdir.\nKritik madenler: Ekonomik önemi yüksek, ancak arzı belirli ülkelerde yoğunlaştığı için tedarik riski taşıyan madenlerdir.\n\nÖrnekler ve kullanım alanları:\nLityum ve kobalt: Elektrikli araç ve telefon pilleri.\nNadir toprak elementleri: Elektrik motorları, rüzgâr türbinleri, savunma sanayi, elektronik.\nBor: Cam, seramik, temizlik ürünleri, roket yakıtı, nükleer teknoloji. Dünya bor rezervlerinin yaklaşık %70'inden fazlası Türkiye'dedir (Eskişehir, Kütahya, Balıkesir, Bursa).\nKrom: Paslanmaz çelik (Türkiye önemli üreticilerdendir; Elazığ, Muğla).\nBakır, nikel, uranyum, tungsten.\n\nYeşil enerji dönüşümü (güneş, rüzgâr, elektrikli araç) bu madenlere olan talebi hızla artırmaktadır. Bu yüzden ülkeler arasında kritik madenleri bulma, işleme ve tedarik zincirini güvence altına alma rekabeti yaşanmaktadır. Eskişehir Beylikova'da bulunan nadir toprak elementi rezervi Türkiye için önemlidir.",
+   "q": "Dünya rezervlerinin büyük bölümü Türkiye'de bulunan stratejik maden hangisidir?",
+   "choices": [
+    "Altın",
+    "Uranyum",
+    "Lityum",
+    "Kobalt",
+    "Bor"
+   ],
+   "answer": 4,
+   "explain": "Dünya bor rezervlerinin büyük çoğunluğu Türkiye'dedir; bor cam, seramik, enerji ve savunma sanayinde kullanılır."
+  },
+  {
+   "title": "Enerji Kaynakları",
+   "text": "Enerji kaynakları yenilenemez ve yenilenebilir olarak ikiye ayrılır.\n\nYenilenemez kaynaklar:\nKömür: Türkiye'de taş kömürü Zonguldak'ta, linyit pek çok bölgede (Afşin-Elbistan, Soma) bulunur.\nPetrol: Türkiye'de üretim Güneydoğu Anadolu'da (Batman, Adıyaman) yapılır ve son yıllarda Gabar Dağı'nda (Şırnak) yeni rezervler bulunmuştur. İhtiyacın büyük kısmı ithal edilir.\nDoğal gaz: Karadeniz'de (Sakarya Gaz Sahası) büyük bir rezerv keşfedilmiştir.\nNükleer: Akkuyu Nükleer Santrali (Mersin).\n\nYenilenebilir kaynaklar:\nHidroelektrik: Fırat, Dicle, Kızılırmak ve Çoruh üzerindeki barajlar.\nRüzgâr: Ege ve Marmara kıyıları.\nGüneş: Güneydoğu Anadolu ve Akdeniz (Konya Karapınar'da büyük bir güneş santrali bulunur).\nJeotermal: Ege'deki fay hatları boyunca (Denizli, Aydın, Manisa).\nBiyokütle.\n\nTürkiye enerjide dışa bağımlıdır; yerli ve yenilenebilir kaynakların payını artırmak hem ekonomi hem çevre için önemlidir.",
+   "q": "Türkiye'de jeotermal enerji santrallerinin Ege Bölgesi'nde yoğunlaşmasının nedeni nedir?",
+   "choices": [
+    "Akarsuların çok olması",
+    "Yağışın fazla olması",
+    "Fay hatlarının ve yer altındaki sıcak su kaynaklarının yoğun olması",
+    "Nüfusun az olması",
+    "Rüzgârın sürekli esmesi"
+   ],
+   "answer": 2,
+   "explain": "Ege'deki fay hatları boyunca yer altındaki sıcak sular yüzeye yakındır; bu jeotermal enerji için uygundur."
+  },
+  {
+   "title": "Sanayileşmenin Mekânsal Etkileri",
+   "text": "Sanayi, hammaddenin işlenerek ürüne dönüştürülmesidir. Sanayinin yer seçiminde hammadde, enerji, iş gücü, sermaye, pazar ve ulaşım etkilidir.\n\nSanayileşmenin mekâna etkileri:\nKentleşme ve göç: Sanayi bölgeleri iş olanaklarıyla göç çeker; şehirler hızla büyür. Kocaeli, Bursa, Gaziantep ve Kayseri sanayiyle büyüyen şehirlerdir.\nArazi kullanımının değişmesi: Tarım arazileri sanayi ve konut alanlarına dönüşür.\nUlaşım ağlarının gelişmesi: Limanlar, otoyollar ve demir yolları sanayi bölgelerine yönelir.\nÇevre sorunları: Hava, su ve toprak kirliliği; atık sorunu.\nBölgesel gelişmişlik farkları: Sanayinin yoğunlaştığı yerlerle diğerleri arasında gelir farkı oluşur.\n\nPlanlı sanayileşme: Organize sanayi bölgeleri (OSB), sanayiyi şehir merkezlerinden uzak, altyapısı hazır alanlarda toplayarak çevre sorunlarını ve plansız yapılaşmayı azaltır. Teknoparklar ise üniversitelerle iş birliği içinde ileri teknoloji üretir.",
+   "q": "Organize sanayi bölgelerinin (OSB) kurulmasının temel amaçlarından biri hangisidir?",
+   "choices": [
+    "Sanayiyi altyapısı hazır alanlarda toplayarak plansız yapılaşmayı ve çevre sorunlarını azaltmak",
+    "Tarım alanlarını artırmak",
+    "Nüfusu azaltmak",
+    "Ulaşımı engellemek",
+    "Sanayiyi şehir merkezlerine taşımak"
+   ],
+   "answer": 0,
+   "explain": "OSB'ler, sanayi tesislerini ortak altyapıya sahip planlı alanlarda toplayarak düzenli gelişmeyi ve çevrenin korunmasını sağlar."
+  }
+ ],
+ "Afetler ve Sürdürülebilir Çevre": [
+  {
+   "title": "Gezegen Sınırı",
+   "text": "Gezegen sınırları kavramı, insanlığın güvenle yaşayabilmesi için Dünya sistemlerinin aşılmaması gereken eşikleri olduğunu anlatır. Bu sınırlar aşılırsa Dünya'nın dengesi geri dönülmesi zor biçimde bozulabilir.\n\nBilim insanlarının belirlediği dokuz gezegen sınırı:\nİklim değişikliği\nBiyoçeşitlilik kaybı (biyosfer bütünlüğü)\nAzot ve fosfor döngülerinin bozulması (aşırı gübre kullanımı)\nArazi kullanımındaki değişim (ormansızlaşma)\nTatlı su kullanımı\nOkyanus asitlenmesi\nOzon tabakasının incelmesi\nAtmosferdeki aerosol (parçacık) yükü\nYeni maddeler (plastik, kimyasallar)\n\nAraştırmalara göre bu sınırların birçoğu, özellikle iklim değişikliği, biyoçeşitlilik kaybı ve azot-fosfor döngüleri, güvenli bölgenin dışına çıkmıştır. Ozon tabakası ise uluslararası iş birliğiyle (Montreal Protokolü) iyileşmekte olan olumlu bir örnektir.\n\nEkolojik ayak izi, bir kişinin ya da toplumun tükettiği kaynakları üretmek ve atıklarını yok etmek için gereken alanı gösterir.",
+   "q": "Gezegen sınırlarından biri olan ozon tabakasının incelmesi sorununda iyileşme sağlanmasının temel nedeni nedir?",
+   "choices": [
+    "Okyanusların ısınması",
+    "Ormanların azalması",
+    "Nüfusun azalması",
+    "Uluslararası anlaşmalarla ozonu bozan CFC gazlarının kullanımının sınırlandırılması",
+    "Güneş'in zayıflaması"
+   ],
+   "answer": 3,
+   "explain": "Montreal Protokolü ile CFC gazlarının üretimi yasaklanmış ve ozon tabakası iyileşmeye başlamıştır."
+  },
+  {
+   "title": "Küresel İklim Değişikliği",
+   "text": "Küresel iklim değişikliği, başta fosil yakıt kullanımı olmak üzere insan etkinlikleriyle artan sera gazlarının atmosferde daha fazla ısı tutması sonucu Dünya'nın ortalama sıcaklığının yükselmesi ve iklim düzeninin değişmesidir.\n\nSera gazları: Karbondioksit (fosil yakıtlar, ormansızlaşma), metan (hayvancılık, çeltik, çöp alanları), diazot monoksit (gübreler), florlu gazlar.\n\nEtkileri:\nBuzulların erimesi ve deniz seviyesinin yükselmesi; kıyı şehirleri ve adalar için tehdit.\nAşırı hava olaylarının (sıcak dalgaları, kuraklık, sel, fırtına) sıklaşması.\nTarımsal üretimde düşüş ve gıda güvencesinin tehlikeye girmesi.\nOrman yangınlarının artması.\nTürlerin yaşam alanlarının değişmesi, biyoçeşitlilik kaybı.\nİklim göçleri.\n\nTürkiye, Akdeniz havzasında yer aldığı için iklim değişikliğinden en çok etkilenecek bölgeler arasındadır: Kuraklık ve su kıtlığı riski artmaktadır.\n\nMücadele: Sera gazı azaltımı (yenilenebilir enerji, enerji verimliliği, toplu taşıma) ve uyum (su tasarrufu, kuraklığa dayanıklı tarım). Paris Anlaşması küresel ısınmayı 1,5-2 °C ile sınırlamayı hedefler.",
+   "q": "Türkiye'nin iklim değişikliğinden en çok etkilenebilecek ülkeler arasında gösterilmesinin temel nedeni hangisidir?",
+   "choices": [
+    "Okyanus kıyısında olması",
+    "Kuraklık riskinin arttığı Akdeniz havzasında yer alması",
+    "Kutuplara yakın olması",
+    "Ekvator üzerinde bulunması",
+    "Nüfusunun çok az olması"
+   ],
+   "answer": 1,
+   "explain": "Akdeniz havzasında sıcaklık artışı ve yağış azalması beklenmektedir; bu da Türkiye'de kuraklık ve su kıtlığı riskini artırır."
+  },
+  {
+   "title": "Türkiye'de Suyun Sürdürülebilir Kullanımı",
+   "text": "Türkiye, kişi başına düşen yıllık kullanılabilir su miktarı bakımından su zengini bir ülke değildir; su stresi yaşayan ülkeler arasındadır. Nüfus artışı, kentleşme, sanayi ve iklim değişikliği su üzerindeki baskıyı artırmaktadır.\n\nSuyun kullanım alanları: En büyük pay tarımdadır (yaklaşık %75), ardından içme-kullanma ve sanayi gelir.\n\nSorunlar:\nVahşi (salma) sulama ile su israfı.\nYer altı sularının aşırı çekilmesi ve obruklar.\nŞebekelerdeki su kayıpları.\nSanayi ve evsel atıklarla su kirliliği.\nGöllerin kuruması (Burdur, Akşehir gölleri).\n\nÇözümler:\nTarımda damla ve yağmurlama sulamanın yaygınlaştırılması.\nAtık suların arıtılıp yeniden kullanılması (gri su).\nYağmur suyu hasadı.\nŞebeke kayıplarının azaltılması.\nSu tasarrufu sağlayan ev aletleri ve bilinçli tüketim.\nHavza bazlı su yönetimi.\n\nSu ayak izi: Bir ürünün üretiminde kullanılan toplam su miktarıdır. Örneğin 1 kg sığır eti için binlerce litre su gerekir.",
+   "q": "Türkiye'de en fazla suyun kullanıldığı sektör hangisidir ve bu sektörde su tasarrufu için hangi yöntem önerilir?",
+   "choices": [
+    "Turizm - havuz kapatma",
+    "Evsel kullanım - şişe su",
+    "Enerji - kömür santralleri",
+    "Sanayi - soğutma kuleleri",
+    "Tarım - damla sulama"
+   ],
+   "answer": 4,
+   "explain": "Suyun büyük bölümü tarımda kullanılır. Salma sulama yerine damla sulama büyük oranda su tasarrufu sağlar."
+  }
+ ],
+ "Bölgeler, Ülkeler ve Küresel Bağlantılar": [
+  {
+   "title": "Türkiye'nin Kültürel Hinterlandı",
+   "text": "Kültürel hinterland, Türkiye'nin tarihî, dil, din ve kültür bağları bulunan, etkileşim içinde olduğu geniş coğrafyadır.\n\nKapsamı:\nTürk dünyası: Azerbaycan, Kazakistan, Özbekistan, Kırgızistan, Türkmenistan ve diğer Türk toplulukları. Ortak dil, tarih ve gelenekler (Nevruz, destanlar, mutfak) bu bağı oluşturur.\nBalkanlar: Osmanlı mirası (köprüler, camiler, çarşılar), Türk ve Müslüman topluluklar (Bosna-Hersek, Kosova, Kuzey Makedonya, Bulgaristan).\nKafkasya ve Orta Doğu: Ortak tarih ve din bağları.\nKuzey Afrika ve Doğu Akdeniz: Osmanlı dönemine ait mimari ve kültürel izler.\nAvrupa'daki Türk diasporası: Almanya, Fransa, Hollanda gibi ülkelerde yaşayan milyonlarca Türk.\n\nKültürel hinterlandın önemi: Ekonomik ve siyasi iş birliği, turizm, eğitim (öğrenci değişimleri), ortak kültürel projeler. Türk Devletleri Teşkilatı, Yunus Emre Enstitüsü ve TİKA bu bağları güçlendiren kurumlardır.",
+   "q": "Türkiye'nin kültürel hinterlandının oluşmasında en belirleyici etken hangisidir?",
+   "choices": [
+    "Aynı saat dilimi",
+    "Yalnızca coğrafi yakınlık",
+    "Ortak tarih, dil, din ve kültür bağları",
+    "İklim benzerliği",
+    "Aynı para birimini kullanmak"
+   ],
+   "answer": 2,
+   "explain": "Kültürel hinterland, ortak tarih, dil, din ve kültürle oluşan bağları ifade eder; bu bağlar coğrafi uzaklığa rağmen sürebilir."
+  },
+  {
+   "title": "Tarımsal Üretim: Örnek Ülke",
+   "text": "Hollanda, yüz ölçümü küçük olmasına rağmen dünyanın en büyük tarım ürünü ihracatçılarından biridir. Bu başarı doğal koşullardan çok teknoloji ve bilgiye dayanır.\n\nHollanda tarımının özellikleri:\nSera tarımı: Cam seralarda iklim kontrollü, yıl boyu üretim (domates, biber, salatalık, çiçek).\nHassas tarım: Sensörler, bilgisayarlı sulama ve gübreleme ile su ve gübre en verimli şekilde kullanılır.\nAraştırma ve eğitim: Wageningen Üniversitesi gibi kurumlarla bilimsel tarım.\nKooperatifler ve güçlü lojistik (Rotterdam Limanı).\nÇiçekçilik: Lale ve diğer süs bitkilerinde dünya lideridir.\nPolderler: Denizden set (dijk) ile kazanılmış topraklarda tarım.\n\nBu örnek, sınırlı toprak ve olumsuz iklim koşullarına rağmen teknoloji, bilgi ve organizasyonla yüksek tarımsal verim elde edilebileceğini gösterir.\n\nKarşılaştırma: ABD, Brezilya ve Avustralya geniş arazileri ve makineleşmiş büyük çiftlikleriyle tarımda öne çıkar.",
+   "q": "Hollanda'nın küçük yüz ölçümüne rağmen tarım ürünleri ihracatında dünyanın önde gelen ülkelerinden biri olmasının temel nedeni hangisidir?",
+   "choices": [
+    "Sera tarımı, ileri teknoloji ve bilimsel üretim yöntemleri kullanması",
+    "Tropikal iklime sahip olması",
+    "Tarımda çalışan nüfusun çok fazla olması",
+    "Hiç sulama yapmaması",
+    "Geniş ve verimli ovalara sahip olması"
+   ],
+   "answer": 0,
+   "explain": "Hollanda, iklim kontrollü seralar, hassas tarım ve güçlü araştırma altyapısıyla küçük alandan yüksek verim alır."
+  },
+  {
+   "title": "Sanayileşme Süreci: Örnek Ülkeler",
+   "text": "Birleşik Krallık (İngiltere): Sanayi Devrimi 18. yüzyılın ikinci yarısında burada başladı. Buhar makinesi, zengin kömür ve demir yatakları, sömürgelerden gelen hammadde ve sermaye, deniz ticareti bu süreci hızlandırdı. Tekstil ve demir-çelik ilk gelişen sektörlerdi.\n\nAlmanya: Ruhr Bölgesi'ndeki kömür ve demir yatakları, Ren Nehri ulaşımı ve nitelikli iş gücüyle güçlü bir sanayi kurdu. Otomotiv, makine ve kimya sanayinde dünya lideridir.\n\nJaponya: Yer altı kaynakları çok az olmasına rağmen hammaddeyi ithal edip yüksek teknolojiyle işleyerek sanayileşti. Elektronik, otomotiv ve robotikte öncüdür. Bu durum sanayileşmede bilgi, teknoloji ve eğitimin hammaddeden daha önemli olabileceğini gösterir.\n\nÇin: 1980'lerden itibaren ucuz iş gücü, büyük nüfus, yabancı yatırımlar ve devlet politikalarıyla hızla sanayileşti; dünyanın fabrikası hâline geldi.\n\nGüney Kore: Eğitime ve ihracata yönelik sanayi politikalarıyla kısa sürede gelişmiş bir sanayi ülkesi oldu.",
+   "q": "Yer altı kaynakları çok sınırlı olmasına rağmen ileri teknoloji ve ithal hammaddeyle güçlü bir sanayi kuran ülke hangisidir?",
+   "choices": [
+    "Suudi Arabistan",
+    "Birleşik Krallık",
+    "Almanya",
+    "Japonya",
+    "Rusya"
+   ],
+   "answer": 3,
+   "explain": "Japonya hammaddeyi ithal edip teknoloji ve nitelikli iş gücüyle yüksek katma değerli ürünlere dönüştürerek sanayileşmiştir."
+  },
+  {
+   "title": "Madencilik Faaliyetleri: Örnek Ülke",
+   "text": "Şili, dünyanın en büyük bakır üreticisidir ve dünya bakır rezervlerinin önemli bir kısmına sahiptir. Ayrıca dünyanın önemli lityum üreticilerindendir (Atacama Çölü'ndeki tuz düzlükleri).\n\nŞili madenciliğinin özellikleri:\nAnd Dağları'nın tektonik yapısı zengin maden yatakları oluşturmuştur.\nDünyanın en büyük açık ocak bakır madenlerinden bazıları buradadır (Chuquicamata, Escondida).\nMadencilik ihracat gelirlerinin büyük bölümünü oluşturur; ekonomi bakır fiyatlarına bağımlıdır.\n\nSorunlar ve tartışmalar:\nAtacama Çölü gibi kurak bir bölgede madenciliğin çok su tüketmesi.\nToprak ve su kirliliği, yerel toplulukların etkilenmesi.\nTek bir ürüne bağımlı ekonominin fiyat dalgalanmalarına karşı kırılganlığı.\n\nDiğer örnekler: Avustralya (demir cevheri, boksit, kömür), Güney Afrika (altın, platin), Demokratik Kongo Cumhuriyeti (kobalt).",
+   "q": "Şili ekonomisinin dünya piyasalarındaki fiyat değişimlerinden kolay etkilenmesinin temel nedeni nedir?",
+   "choices": [
+    "Tarım ürünlerini ithal etmesi",
+    "İhracat gelirlerinin büyük ölçüde bakır gibi tek bir maden ürününe bağlı olması",
+    "Turizm gelirinin fazla olması",
+    "Hiç maden çıkarmaması",
+    "Sanayisinin çok çeşitli olması"
+   ],
+   "answer": 1,
+   "explain": "Ekonomi bakıra bağımlı olduğu için bakır fiyatları düştüğünde ülkenin gelirleri de büyük ölçüde azalır."
+  },
+  {
+   "title": "Enerji Kaynakları: Örnek Ülkeler",
+   "text": "Ülkeler enerji kaynaklarına ve politikalarına göre farklı yollar izler:\n\nSuudi Arabistan: Dünyanın en büyük petrol rezervlerinden birine sahiptir. Ekonomisi büyük ölçüde petrol ihracatına dayanır. Son yıllarda petrol sonrası döneme hazırlanmak için ekonomisini çeşitlendirmeye ve güneş enerjisine yatırım yapmaya çalışmaktadır.\n\nNorveç: Kuzey Denizi'ndeki petrol ve doğal gaz gelirlerini büyük bir varlık fonunda gelecek nesiller için biriktirmiştir. Elektriğinin neredeyse tamamını hidroelektrikten üretir ve elektrikli araç kullanımında dünya lideridir.\n\nFransa: Elektriğinin büyük bölümünü nükleer santrallerden üretir; bu sayede karbon salımı düşüktür.\n\nÇin: Dünyanın en büyük enerji tüketicisidir; kömür kullanımı yüksektir, ama aynı zamanda güneş ve rüzgâr enerjisine en çok yatırım yapan ülkedir.\n\nİzlanda: Elektriğinin ve ısınmasının neredeyse tamamını jeotermal ve hidroelektrikten sağlar.\n\nBu örnekler, enerji kaynaklarının dağılışının ülkelerin ekonomisini, dış politikasını ve çevre performansını nasıl etkilediğini gösterir.",
+   "q": "Elektrik ve ısınma ihtiyacının neredeyse tamamını jeotermal ve hidroelektrik kaynaklardan karşılayan ülke hangisidir?",
+   "choices": [
+    "Çin",
+    "Japonya",
+    "Suudi Arabistan",
+    "Fransa",
+    "İzlanda"
+   ],
+   "answer": 4,
+   "explain": "Volkanik bir ada olan İzlanda, jeotermal ve hidroelektrik kaynaklarıyla neredeyse tamamen yenilenebilir enerji kullanır."
+  }
+ ]
+}

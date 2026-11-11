@@ -197,6 +197,7 @@ function connect() {
     if (event.type === 'read') return onRead(event);
     if (event.type === 'homework') return tab === 'homework' && loadHomework();
     if (event.type === 'note') return tab === 'notes' && loadNotes();
+    if (event.type === 'deleted' && event.convoId === current) removeMessage(event.id);
     if (event.type === 'message') {
       const m = event.message;
       stopTyping(m.convoId, m.userId);
@@ -563,7 +564,32 @@ function messageEl(m) {
     el.append(h('button', { type: 'button', className: 'icon-button reply', title: t('reply'), ariaLabel: t('reply'), onclick: () => setReply(m) }, icon('reply')));
     swipeToReply(el, m);
   }
+  // Kendi mesajını herkes, öğrencinin mesajını öğretmen siler (sunucu da aynı kuralı uygular).
+  if (mine || (isTeacher() && m.role === 'student')) {
+    el.append(h('button', { type: 'button', className: 'icon-button msg-delete', title: t('delete'), ariaLabel: t('delete'), onclick: () => deleteMessage(m) }, icon('trash')));
+    // Telefonda üzerine gelme yok: balona dokununca sil düğmesi görünür.
+    bubble.addEventListener('click', (e) => {
+      if (!e.target.closest('button, audio') && matchMedia('(pointer: coarse)').matches) el.classList.toggle('show-actions');
+    });
+  }
   return el;
+}
+
+async function deleteMessage(m) {
+  if (!confirm(t('deleteMessageConfirm'))) return;
+  try {
+    await api(`/api/convos/${m.convoId}/messages/${m.id}`, { method: 'DELETE' });
+    removeMessage(m.id);
+    loadConvos();
+  } catch (err) {
+    $('send-error').textContent = err.message;
+  }
+}
+
+function removeMessage(id) {
+  $(`m${id}`)?.remove();
+  if (replyTo?.id === id) setReply(null);
+  decorate();
 }
 
 // Telefonda mesajı sağa kaydırınca yanıtlanır; dikey kaydırma (sayfayı gezme) bozulmaz.
@@ -968,7 +994,7 @@ $('homework-form').addEventListener('submit', async (e) => {
 // ---- Yazılıya hazırlık: ders -> ünite -> sorular
 let quiz = null; // { grade, subjects: [{ subject, source, units: [{ name, topics, count }] }] }
 let openSubject = null; // ünite listesi açık olan ders
-let run = null; // { subject, unit, all, list, index, right, open }
+let run = null; // { subject, unit, all, list, index, right, open, lesson }
 
 function showQuizPanel(name) {
   for (const panel of ['home', 'units', 'run']) $(`quiz-${panel}`).hidden = panel !== name;
@@ -1022,28 +1048,38 @@ function renderUnits() {
       h('span', { className: 'unit-no', textContent: i + 1 }),
       h('span', { className: 'unit-text' },
         h('strong', { textContent: u.name || t('otherUnit') }),
-        u.topics ? h('small', { textContent: u.topics }) : ''),
-      h('span', { className: 'unit-count', textContent: u.count ? t('questionsCount', { count: u.count }) : t('comingSoon') })))));
+        u.topics ? h('small', { textContent: u.topics }) : '',
+        u.score ? scoreEl(u.score) : ''),
+      h('span', { className: 'unit-count', textContent: u.count ? t('questionsCount', { count: u.count }) : t('comingSoon') })),
+    u.lessons ? h('button', { type: 'button', className: 'lesson-link', textContent: t('lessonButton', { count: u.lessons }), onclick: () => openUnit(s.subject, u.name, true) }) : '')));
 }
+// Yarıdan azı doğruysa ünite zayıf görünür; öğretmen hangi konuya dönmesi gerektiğini görür.
+function scoreEl({ correct, total, students }) {
+  const pct = Math.round((correct / total) * 100);
+  const text = isTeacher() ? t('classScore', { pct, students }) : t('lastScore', { correct, total });
+  return h('span', { className: `unit-score${pct < 50 ? ' weak' : ''}`, textContent: text });
+}
+
 $('units-back').onclick = () => {
   openSubject = null;
   showQuizPanel('home');
 };
 
-async function openUnit(subject, unit) {
+async function openUnit(subject, unit, lesson = false) {
   const params = new URLSearchParams({ subject, unit });
   if (isTeacher()) params.set('grade', quiz.grade);
   try {
-    const list = await api(`/api/quiz/questions?${params}`);
+    const list = await api(`/api/quiz/${lesson ? 'lesson' : 'questions'}?${params}`);
     $('quiz-error').textContent = '';
-    if (list.length) startQuiz(subject, unit, list);
+    if (list.length) startQuiz(subject, unit, list, lesson);
   } catch (err) {
     $('quiz-error').textContent = err.message;
   }
 }
 
-function startQuiz(subject, unit, all) {
-  run = { subject, unit, all, list: shuffle([...all]).slice(0, QUIZ_SIZE), index: 0, right: 0, open: 0 };
+// Konu anlatımında her bölüm önce konuyu anlatır, ardından o konudan bir soru sorar; sıra karışmaz, sonuç kaydedilmez.
+function startQuiz(subject, unit, all, lesson = false) {
+  run = { subject, unit, all, list: lesson ? all : shuffle([...all]).slice(0, QUIZ_SIZE), index: 0, right: 0, open: 0, lesson };
   $('quiz-subject').textContent = unit || t('otherUnit');
   showQuizPanel('run');
   renderQuestion();
@@ -1059,12 +1095,12 @@ $('quiz-back').onclick = endQuiz;
 function renderQuestion() {
   const q = run.list[run.index];
   const total = run.list.length;
-  $('quiz-progress').textContent = t('questionOf', { n: run.index + 1, total });
+  $('quiz-progress').textContent = t(run.lesson ? 'topicOf' : 'questionOf', { n: run.index + 1, total });
   $('quiz-bar').style.width = `${(run.index / total) * 100}%`;
   $('view-quiz').scrollTop = 0;
   const feedback = h('p', { className: 'feedback', hidden: true });
   const explain = h('div', { className: 'explain', hidden: true });
-  const next = h('button', { type: 'button', className: 'primary', textContent: t(run.index + 1 < total ? 'next' : 'finish'), hidden: true, onclick: nextQuestion });
+  const next = h('button', { type: 'button', className: 'primary', textContent: t(run.index + 1 < total ? (run.lesson ? 'nextTopic' : 'next') : 'finish'), hidden: true, onclick: nextQuestion });
   const reveal = (title) => {
     if (q.explain) {
       explain.replaceChildren(h('strong', { textContent: t(title) }), q.explain);
@@ -1074,6 +1110,10 @@ function renderQuestion() {
     next.focus();
   };
   const parts = [h('p', { className: 'quiz-q', textContent: q.q })];
+  if (q.text) {
+    parts.unshift(h('div', { className: 'lesson' }, h('h3', { textContent: q.title }),
+      ...q.text.split('\n\n').map((p) => h('p', { textContent: p }))), h('p', { className: 'hint', textContent: t('lessonCheck') }));
+  }
   if (q.choices) {
     const buttons = q.choices.map((choice, i) => h('button', { type: 'button', className: 'choice' },
       h('span', { className: 'letter', textContent: LETTERS[i] }), h('span', { textContent: choice })));
@@ -1123,10 +1163,16 @@ function nextQuestion() {
       h('p', { textContent: t('resultScore', { right: run.right, total: multiple }) }));
   }
   if (run.open) result.append(h('p', { className: 'hint', textContent: t('resultOpen', { count: run.open }) }));
-  const { subject, unit, all } = run;
+  const { subject, unit, all, lesson } = run;
+  if (multiple && !isTeacher() && !lesson) {
+    api('/api/quiz/results', { method: 'POST', json: { subject, unit, correct: run.right, total: multiple } })
+      .catch((err) => { $('quiz-error').textContent = err.message; });
+  }
   result.append(h('div', { className: 'quiz-actions' },
     h('button', { type: 'button', textContent: t('backToUnits'), onclick: endQuiz }),
-    h('button', { type: 'button', className: 'primary', textContent: t('tryAgain'), onclick: () => startQuiz(subject, unit, all) })));
+    lesson ? h('button', { type: 'button', textContent: t('tryAgain'), onclick: () => startQuiz(subject, unit, all, true) }) : '',
+    h('button', { type: 'button', className: 'primary', textContent: t(lesson ? 'unitTest' : 'tryAgain'),
+      onclick: () => (lesson ? openUnit(subject, unit) : startQuiz(subject, unit, all)) })));
   $('quiz-card').replaceChildren(result);
 }
 

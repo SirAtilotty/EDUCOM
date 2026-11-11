@@ -1,0 +1,204 @@
+{
+ "Etkileşim": [
+  {
+   "title": "Tepkimelerde Enerji Değişimi",
+   "text": "Kimyasal tepkimelerde bağlar kırılır ve yeni bağlar oluşur. Bağ kırmak enerji gerektirir, bağ oluşumu enerji açığa çıkarır. Bu yüzden her tepkimede bir enerji değişimi vardır.\n\nEntalpi (H): Bir sistemin sabit basınçtaki ısı içeriğidir. Tepkime entalpisi ΔH = H(ürünler) − H(girenler).\n\nEkzotermik (ısı veren) tepkimeler: ΔH < 0. Ürünlerin enerjisi girenlerden düşüktür; ortam ısınır.\nÖrnekler: Yanma, nötrleşme, solunum, donma ve yoğuşma, el ısıtıcıları.\n\nEndotermik (ısı alan) tepkimeler: ΔH > 0. Ürünlerin enerjisi girenlerden yüksektir; ortam soğur.\nÖrnekler: Fotosentez, suyun elektrolizi, erime ve buharlaşma, amonyum nitratın suda çözünmesi (anlık soğuk kompresler).\n\nEntalpi değişimi, tepkime denkleminin yanına yazılır ve katsayılarla orantılıdır. Tepkime ters çevrilirse ΔH'nin işareti değişir; katsayılar 2 ile çarpılırsa ΔH de 2 ile çarpılır.",
+   "q": "C(k) + O₂(g) → CO₂(g), ΔH = −394 kJ tepkimesi için hangisi doğrudur?",
+   "choices": [
+    "Ürünlerin enerjisi girenlerden yüksektir.",
+    "Ekzotermiktir; 1 mol C yandığında 394 kJ ısı açığa çıkar.",
+    "Tepkime ısı alarak gerçekleşir.",
+    "Ters tepkimenin ΔH değeri de −394 kJ'dir.",
+    "Endotermiktir."
+   ],
+   "answer": 1,
+   "explain": "ΔH negatif olduğu için tepkime ekzotermiktir; 1 mol karbon yandığında 394 kJ ısı açığa çıkar."
+  },
+  {
+   "title": "Maddelerin Enerji Kaynağı Olma Potansiyeli",
+   "text": "Maddelerin yanması ya da tepkimeye girmesiyle açığa çıkan enerji, onları yakıt ve besin olarak değerli kılar.\n\nYakıtlar:\nFosil yakıtlar (kömür, petrol, doğal gaz): Yüksek enerji verir ama CO₂ ve kirletici gazlar açığa çıkarır.\nHidrojen: Birim kütle başına en yüksek enerjiyi veren yakıtlardan biridir; yanma ürünü yalnızca sudur. Ancak üretimi ve depolanması zordur.\nBiyoyakıtlar (biyodizel, biyoetanol): Bitkisel kaynaklardan elde edilir; yenilenebilirdir.\n\nYakıt seçiminde ölçütler: Birim kütle başına açığa çıkan enerji (yakıt değeri), maliyet, bulunabilirlik, depolama ve taşıma kolaylığı, çevreye etkisi.\n\nBesinler de vücudumuz için yakıttır:\nKarbonhidrat ve protein: yaklaşık 4 kcal/g\nYağ: yaklaşık 9 kcal/g\nBesin etiketlerindeki kalori değerleri kalorimetre ile ölçülür.",
+   "q": "Yanma ürünü yalnızca su olduğu için çevre dostu bir yakıt olarak kabul edilen madde hangisidir?",
+   "choices": [
+    "Doğal gaz",
+    "Odun",
+    "Kömür",
+    "Benzin",
+    "Hidrojen"
+   ],
+   "answer": 4,
+   "explain": "2H₂ + O₂ → 2H₂O tepkimesinde karbon içeren bir ürün oluşmaz; hidrojenin yanma ürünü yalnızca sudur."
+  },
+  {
+   "title": "Bağ Enerjileriyle Tepkime Entalpisi",
+   "text": "Bağ enerjisi, gaz hâlindeki 1 mol bağı kırmak için gereken enerjidir. Bağ kırmak her zaman enerji ister, bağ oluşumu aynı miktarda enerji açığa çıkarır.\n\nTepkime entalpisi bağ enerjileriyle şöyle hesaplanır:\nΔH = Σ(kırılan bağların enerjisi) − Σ(oluşan bağların enerjisi)\nYani girenlerin bağ enerjileri toplamından ürünlerin bağ enerjileri toplamı çıkarılır.\n\nÖrnek: H₂ + Cl₂ → 2HCl\nBağ enerjileri: H−H 436 kJ, Cl−Cl 243 kJ, H−Cl 432 kJ.\nKırılan: 436 + 243 = 679 kJ\nOluşan: 2 · 432 = 864 kJ\nΔH = 679 − 864 = −185 kJ (ekzotermik)\n\nOluşan bağlar kırılanlardan daha güçlüyse tepkime ekzotermik olur.\n\nÇoklu bağlar tekli bağlardan daha güçlüdür: C≡C > C=C > C−C.",
+   "q": "A₂ + B₂ → 2AB tepkimesinde A−A bağ enerjisi 200 kJ, B−B 300 kJ, A−B 300 kJ'dir. Tepkimenin ΔH değeri kaç kJ'dir?",
+   "choices": [
+    "+200",
+    "−200",
+    "−100",
+    "0",
+    "+100"
+   ],
+   "answer": 2,
+   "explain": "Kırılan: 200 + 300 = 500 kJ. Oluşan: 2 · 300 = 600 kJ. ΔH = 500 − 600 = −100 kJ."
+  },
+  {
+   "title": "Standart Oluşum Entalpileri ve Hess Yasası",
+   "text": "Standart oluşum entalpisi (ΔH°f): Standart koşullarda (25 °C, 1 atm) 1 mol bileşiğin kendi elementlerinden oluşması sırasındaki entalpi değişimidir.\nElementlerin en kararlı hâllerinin oluşum entalpisi sıfır kabul edilir (O₂(g), C(grafit), H₂(g)).\n\nTepkime entalpisi oluşum entalpileriyle:\nΔH = Σ ΔH°f(ürünler) − Σ ΔH°f(girenler)\n\nÖrnek: CH₄ + 2O₂ → CO₂ + 2H₂O(s)\nΔH°f: CH₄ −75, CO₂ −394, H₂O(s) −286 kJ/mol\nΔH = [−394 + 2(−286)] − [−75 + 0] = −966 + 75 = −891 kJ\n\nHess Yasası: Bir tepkime birkaç basamakta gerçekleşse de toplam entalpi değişimi, tepkimenin tek basamakta gerçekleşmesindeki değerle aynıdır. Entalpi bir hâl fonksiyonudur; yalnızca başlangıç ve son duruma bağlıdır, izlenen yola bağlı değildir. Bu sayede ölçülmesi zor tepkimelerin ΔH'si başka tepkimelerin toplanmasıyla bulunur.",
+   "q": "Oluşum entalpileri ΔH°f(CO) = −110 kJ/mol ve ΔH°f(CO₂) = −394 kJ/mol ise CO + ½O₂ → CO₂ tepkimesinin ΔH değeri kaç kJ'dir?",
+   "choices": [
+    "−284",
+    "+284",
+    "+504",
+    "−504",
+    "−394"
+   ],
+   "answer": 0,
+   "explain": "ΔH = ΔH°f(CO₂) − [ΔH°f(CO) + 0] = −394 − (−110) = −284 kJ."
+  },
+  {
+   "title": "Kimyasal Tepkimelerde Hız",
+   "text": "Tepkime hızı, birim zamanda girenlerin derişimindeki azalma ya da ürünlerin derişimindeki artmadır:\nHız = Δ[derişim] / Δt (birimi mol/L·s)\n\nHız ölçmek için gözlenebilir bir özellikteki değişim izlenir: gaz hacmi, renk, basınç, iletkenlik, kütle kaybı ya da pH.\n\nÇarpışma teorisi: Bir tepkimenin gerçekleşmesi için tanecikler çarpışmalıdır. Ancak yalnızca yeterli enerjiye ve uygun yönelime sahip çarpışmalar (etkin çarpışmalar) ürün oluşturur.\n\nAktifleşme enerjisi (Ea): Tepkimenin başlayabilmesi için taneciklerin sahip olması gereken en düşük enerjidir. Ea büyükse tepkime yavaş, küçükse hızlıdır.\n\nAktifleşmiş kompleks: Tepkime sırasında oluşan, kararsız, yüksek enerjili ara yapıdır.\n\nHız bağıntısı: aA + bB → ürünler için tek basamaklı tepkimede Hız = k[A]ᵃ[B]ᵇ. Hız sabiti k sıcaklığa bağlıdır.",
+   "q": "Aktifleşme enerjisi için aşağıdakilerden hangisi doğrudur?",
+   "choices": [
+    "Katalizör aktifleşme enerjisini artırır.",
+    "Ürünlerin enerjisine eşittir.",
+    "Aktifleşme enerjisi büyük olan tepkime daha hızlıdır.",
+    "Tepkimenin başlaması için gereken en düşük enerjidir.",
+    "Ekzotermik tepkimelerde sıfırdır."
+   ],
+   "answer": 3,
+   "explain": "Aktifleşme enerjisi, taneciklerin etkin çarpışma yapabilmesi için sahip olması gereken en düşük enerjidir."
+  },
+  {
+   "title": "Tepkime Hızını Etkileyen Faktörler",
+   "text": "Maddenin cinsi: İyonlar arasındaki tepkimeler çok hızlıdır; bağ kırılması gereken tepkimeler daha yavaştır.\n\nDerişim: Derişim arttıkça birim hacimdeki tanecik sayısı, dolayısıyla çarpışma sayısı artar; hız artar. Gazlarda basıncı artırmak da aynı etkiyi yapar.\n\nSıcaklık: Sıcaklık artınca taneciklerin kinetik enerjisi artar; aktifleşme enerjisini aşan tanecik sayısı çok artar. Genel olarak sıcaklıktaki 10 °C'lik artış hızı yaklaşık 2 katına çıkarır. Yiyecekleri buzdolabında saklamak bozulma tepkimelerini yavaşlatır.\n\nTemas yüzeyi: Katılar toz hâline getirilirse yüzey alanı artar, hız artar. Toz şeker kesme şekerden hızlı çözünür; un fabrikalarında toz patlamaları olabilir.\n\nKatalizör: Tepkimeye farklı ve daha düşük aktifleşme enerjili bir yol açarak hızı artırır. Tepkimeden değişmeden çıkar; ΔH'yi değiştirmez. Canlılardaki katalizörler enzimlerdir. Araçlardaki katalitik konvertörler zararlı egzoz gazlarını daha az zararlı gazlara dönüştürür.",
+   "q": "Katalizörle ilgili aşağıdakilerden hangisi yanlıştır?",
+   "choices": [
+    "Aktifleşme enerjisini düşürür.",
+    "Tepkime entalpisini (ΔH) değiştirir.",
+    "Tepkimeden değişmeden çıkar.",
+    "Enzimler biyolojik katalizördür.",
+    "Tepkime hızını artırır."
+   ],
+   "answer": 1,
+   "explain": "Katalizör tepkimenin yolunu değiştirir ama girenlerin ve ürünlerin enerjisini değiştirmez; ΔH aynı kalır."
+  }
+ ],
+ "Çeşitlilik": [
+  {
+   "title": "Tersinir Tepkimeler ve Kimyasal Denge",
+   "text": "Bazı tepkimeler hem ileri hem geri yönde gerçekleşebilir. Bunlara tersinir tepkimeler denir ve ⇌ işaretiyle gösterilir.\nN₂(g) + 3H₂(g) ⇌ 2NH₃(g)\n\nKapalı bir kapta tersinir tepkime başladığında ileri tepkimenin hızı azalır, geri tepkimenin hızı artar. Sonunda iki hız eşitlenir. Bu duruma kimyasal denge denir.\n\nDengenin özellikleri:\nDinamiktir: Tepkimeler durmaz; ileri ve geri tepkimeler eşit hızla devam eder.\nGözlenebilir özellikler (renk, basınç, derişim) sabit kalır.\nKapalı sistemde ve sabit sıcaklıkta kurulur.\nDengeye girenlerle de ürünlerle de başlanarak ulaşılabilir.\n\nFiziksel denge: Kapalı bir kapta sıvı ile buharı arasındaki denge (buharlaşma hızı = yoğuşma hızı) ve doymuş çözeltide çözünme-çökelme dengesi fiziksel dengeye örnektir.",
+   "q": "Kimyasal dengedeki bir sistem için hangisi doğrudur?",
+   "choices": [
+    "Girenlerin derişimi ürünlerinkine eşittir.",
+    "Denge açık kapta kurulur.",
+    "Sıcaklık sürekli değişir.",
+    "Bütün tepkimeler durmuştur.",
+    "İleri ve geri tepkime hızları eşittir."
+   ],
+   "answer": 4,
+   "explain": "Denge dinamiktir: İleri ve geri tepkimeler durmaz, eşit hızla devam eder. Derişimler sabittir ama birbirine eşit olmak zorunda değildir."
+  },
+  {
+   "title": "Denge Sabiti İfadesi",
+   "text": "aA + bB ⇌ cC + dD tepkimesi için derişimler cinsinden denge sabiti:\nKc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ\n\nKurallar:\nKatı ve saf sıvıların derişimi sabit kabul edildiği için ifadeye yazılmaz.\nKc yalnızca sıcaklıkla değişir; derişim, basınç ya da katalizör Kc'yi değiştirmez.\n\nKc'nin büyüklüğü:\nKc çok büyükse (Kc > 1) dengede ürünler fazladır; tepkime büyük ölçüde ileri yönde gerçekleşmiştir.\nKc çok küçükse dengede girenler fazladır.\n\nDenklem ters çevrilirse yeni K = 1 / K.\nKatsayılar n ile çarpılırsa yeni K = Kⁿ.\n\nGaz tepkimelerinde kısmi basınçlarla da denge sabiti (Kp) yazılabilir.",
+   "q": "CaCO₃(k) ⇌ CaO(k) + CO₂(g) tepkimesinin denge sabiti ifadesi hangisidir?",
+   "choices": [
+    "Kc = [CaO][CO₂] / [CaCO₃]",
+    "Kc = [CaCO₃] / [CaO]",
+    "Kc = [CO₂]",
+    "Kc = 1 / [CO₂]",
+    "Kc = [CaO] / [CaCO₃]"
+   ],
+   "answer": 2,
+   "explain": "Katılar (CaCO₃ ve CaO) denge ifadesine yazılmaz; yalnızca gaz olan CO₂ kalır: Kc = [CO₂]."
+  },
+  {
+   "title": "Tepkime Oranı (Q)",
+   "text": "Tepkime oranı (Q), denge sabitiyle aynı biçimde yazılır ama herhangi bir anda (dengede olmak zorunda değil) derişimlerle hesaplanır.\n\nQ'yu Kc ile karşılaştırarak sistemin hangi yöne ilerleyeceğini tahmin ederiz:\nQ = Kc: Sistem dengededir.\nQ < Kc: Ürünler yeterince oluşmamıştır; tepkime ileri yönde ilerler.\nQ > Kc: Ürünler fazladır; tepkime geri yönde ilerler.\n\nÖrnek: A(g) ⇌ 2B(g), Kc = 4.\nBir anda [A] = 1 M, [B] = 1 M ise Q = 1² / 1 = 1.\nQ < Kc olduğu için tepkime ileri yönde ilerler: A azalır, B artar.\n\nBu yöntem, endüstride üretimi artırmak için koşulların nasıl değiştirileceğini planlamada kullanılır.",
+   "q": "Kc = 10 olan bir tepkimede belirli bir anda Q = 50 olarak hesaplanıyor. Sistem için hangisi doğrudur?",
+   "choices": [
+    "Geri yönde ilerler.",
+    "Tepkime durmuştur.",
+    "Kc artar.",
+    "Dengededir.",
+    "İleri yönde ilerler."
+   ],
+   "answer": 0,
+   "explain": "Q > Kc olduğu için ürünler fazladır; sistem dengeye ulaşmak için geri yönde ilerler."
+  },
+  {
+   "title": "Dengeyi Etkileyen Faktörler (Le Chatelier İlkesi)",
+   "text": "Le Chatelier İlkesi: Dengedeki bir sisteme dışarıdan bir etki yapılırsa sistem bu etkiyi azaltacak yönde kayar ve yeni bir dengeye ulaşır.\n\nDerişim: Bir maddenin derişimi artırılırsa denge o maddeyi harcayacak yöne kayar. Ürün ortamdan uzaklaştırılırsa denge ürün yönüne kayar.\n\nBasınç ve hacim (gazlarda): Hacim küçültülürse (basınç artarsa) denge gaz mol sayısının az olduğu yöne kayar. İki tarafta gaz mol sayısı eşitse basınç dengeyi etkilemez.\n\nSıcaklık: Sıcaklık artırılırsa denge endotermik (ısı alan) yöne kayar. Sıcaklık değişimi Kc'yi değiştiren tek etkendir.\nEkzotermik tepkimede sıcaklık artınca Kc azalır.\n\nKatalizör: Dengeye daha hızlı ulaşılmasını sağlar ama dengenin yerini ve Kc'yi değiştirmez.\n\nHaber-Bosch yöntemi: N₂ + 3H₂ ⇌ 2NH₃ (ekzotermik). Amonyak üretimini artırmak için yüksek basınç kullanılır ve oluşan amonyak ortamdan uzaklaştırılır.",
+   "q": "N₂(g) + 3H₂(g) ⇌ 2NH₃(g) dengesinde kabın hacmi küçültülürse (basınç artırılırsa) denge hangi yöne kayar?",
+   "choices": [
+    "Önce ileri sonra geri",
+    "Kc artacak yöne",
+    "Girenler yönüne",
+    "Ürünler (NH₃) yönüne",
+    "Denge etkilenmez."
+   ],
+   "answer": 3,
+   "explain": "Girenlerde 4 mol, ürünlerde 2 mol gaz vardır. Basınç artınca denge gaz mol sayısının az olduğu ürünler yönüne kayar."
+  },
+  {
+   "title": "Suyun Otoiyonizasyonu ve pH",
+   "text": "Saf su çok az da olsa kendi kendine iyonlaşır:\nH₂O(s) ⇌ H⁺(suda) + OH⁻(suda)\n\n25 °C'de suyun iyonlaşma sabiti:\nKsu = [H⁺][OH⁻] = 1 · 10⁻¹⁴\nSaf suda [H⁺] = [OH⁻] = 10⁻⁷ M.\n\npH ve pOH:\npH = −log[H⁺]\npOH = −log[OH⁻]\npH + pOH = 14 (25 °C'de)\n\nÇözeltilerin sınıflandırılması (25 °C):\npH < 7: Asidik ([H⁺] > [OH⁻])\npH = 7: Nötr\npH > 7: Bazik\n\nÖrnekler: Mide özsuyu pH ≈ 2, limon suyu ≈ 2,5, kahve ≈ 5, kan ≈ 7,4, deniz suyu ≈ 8, sabunlu su ≈ 10.\n\npH'taki 1 birimlik azalma, H⁺ derişiminin 10 kat artması demektir.",
+   "q": "[H⁺] = 1 · 10⁻³ M olan bir çözeltinin pH ve pOH değerleri hangisidir?",
+   "choices": [
+    "pH = −3, pOH = 17",
+    "pH = 3, pOH = 11",
+    "pH = 11, pOH = 3",
+    "pH = 3, pOH = 3",
+    "pH = 7, pOH = 7"
+   ],
+   "answer": 1,
+   "explain": "pH = −log(10⁻³) = 3. pOH = 14 − 3 = 11. Çözelti asidiktir."
+  },
+  {
+   "title": "Asit-Baz Teorilerinin Karşılaştırılması",
+   "text": "Arrhenius tanımı:\nAsit: Suda çözündüğünde H⁺ iyonu veren madde (HCl → H⁺ + Cl⁻).\nBaz: Suda çözündüğünde OH⁻ iyonu veren madde (NaOH → Na⁺ + OH⁻).\nSınırlılığı: Yalnızca sulu çözeltiler için geçerlidir; NH₃ gibi yapısında OH bulunmayan bazları açıklayamaz.\n\nBrønsted-Lowry tanımı:\nAsit: Proton (H⁺) veren madde.\nBaz: Proton alan madde.\nNH₃ + H₂O ⇌ NH₄⁺ + OH⁻ tepkimesinde su proton verdiği için asit, NH₃ proton aldığı için bazdır.\nKonjuge asit-baz çiftleri: Bir proton farkıyla birbirine dönüşen madde çiftleri (NH₄⁺ / NH₃, H₂O / OH⁻).\nSu hem asit hem baz gibi davranabilir (amfoter).\n\nKuvvetli asitler (HCl, HNO₃, H₂SO₄) ve bazlar (NaOH, KOH) suda tamamen iyonlaşır. Zayıf asitler (CH₃COOH, sirke) ve bazlar (NH₃) kısmen iyonlaşır ve dengede bulunur.",
+   "q": "HCO₃⁻ + H₂O ⇌ H₂CO₃ + OH⁻ tepkimesinde Brønsted-Lowry tanımına göre proton alan (baz olan) tanecik hangisidir?",
+   "choices": [
+    "H₂CO₃",
+    "OH⁻",
+    "Proton alışverişi yoktur.",
+    "H₂O",
+    "HCO₃⁻"
+   ],
+   "answer": 4,
+   "explain": "HCO₃⁻ bir proton alarak H₂CO₃'e dönüşür; proton alan tanecik bazdır. Su ise proton vererek OH⁻ olur, asit gibi davranır."
+  }
+ ],
+ "Sürdürülebilirlik": [
+  {
+   "title": "Fermantasyonla Yeşil Hidrojen Üretimi",
+   "text": "Hidrojen temiz bir yakıttır; yandığında yalnızca su oluşur. Ancak bugün hidrojenin büyük kısmı doğal gazdan üretilir ve bu süreçte CO₂ açığa çıkar (gri hidrojen). Yenilenebilir kaynaklarla, CO₂ salımı olmadan üretilen hidrojene yeşil hidrojen denir.\n\nKaranlık fermantasyon: Bazı bakteriler, oksijensiz ortamda şeker, nişasta ya da tarım ve gıda atıkları gibi organik maddeleri parçalarken hidrojen gazı üretir. Böylece atıklar enerjiye dönüşür.\n\nHidrojen gazı miktarına etki eden faktörler:\nSıcaklık: Bakterilerin en iyi çalıştığı optimum bir sıcaklık vardır (genellikle 35-37 °C).\npH: Genellikle hafif asidik ortam (pH ≈ 5,5-6) uygundur.\nSubstrat (besin) türü ve derişimi: Kolay parçalanan şekerler daha fazla hidrojen verir.\nBakteri türü ve miktarı.\nOrtamda oksijen bulunmaması.\nKarıştırma ve bekleme süresi.\n\nOkul laboratuvarında maya, şeker ve su ile yapılan basit fermantasyon deneyleri, gaz üretimine etki eden faktörleri incelemek için kullanılabilir.",
+   "q": "Fermantasyonla hidrojen üretiminde bakterilerin çalıştığı ortamın sıcaklığı çok yükseltilirse hidrojen üretiminin azalmasının nedeni nedir?",
+   "choices": [
+    "Ortama oksijen girmesi",
+    "Şekerin buharlaşması",
+    "Bakterilerdeki enzimlerin yapısının bozulması",
+    "Hidrojenin suya dönüşmesi",
+    "pH'ın sıfır olması"
+   ],
+   "answer": 2,
+   "explain": "Fermantasyon enzimlerle gerçekleşir. Optimum sıcaklığın çok üzerinde enzimler denatüre olur ve bakterilerin etkinliği azalır."
+  },
+  {
+   "title": "Nanoteknolojik Ürünlerin Fayda ve Zararları",
+   "text": "Nanoteknoloji, maddeyi 1-100 nanometre ölçeğinde tasarlayıp kullanma teknolojisidir. Bu boyutta maddeler farklı özellikler gösterir.\n\nPotansiyel faydalar:\nTıp: İlaçların yalnızca hastalıklı hücrelere taşınması (hedefli ilaç), erken teşhis testleri.\nEnerji: Daha verimli güneş panelleri ve piller, hidrojen üretimi için katalizörler.\nÇevre: Su arıtma filtreleri, kirleticileri parçalayan nano katalizörler.\nTekstil: Leke tutmayan, antibakteriyel kumaşlar.\nElektronik: Daha küçük, hızlı ve az enerji harcayan çipler.\nGıda ambalajları: Gıdanın daha uzun süre korunması.\n\nOlası zararlar:\nNanoparçacıklar çok küçük olduğu için solunum ve deri yoluyla vücuda girip hücrelere ulaşabilir.\nAtık sulara karışan nanoparçacıklar sudaki canlıları ve yararlı bakterileri etkileyebilir.\nUzun vadeli sağlık ve çevre etkileri henüz tam bilinmemektedir.\n\nBu yüzden nanoteknolojik ürünler için güvenlik testleri, etiketleme ve yasal düzenlemeler önemlidir.",
+   "q": "Nanoparçacıkların insan sağlığı açısından risk oluşturabilmesinin temel nedeni nedir?",
+   "choices": [
+    "Çok küçük oldukları için vücuda ve hücrelere kolayca girebilmeleri",
+    "Radyoaktif olmaları",
+    "Gözle görülebilmeleri",
+    "Suda hiç çözünmemeleri",
+    "Çok ağır olmaları"
+   ],
+   "answer": 0,
+   "explain": "Nanometre boyutundaki parçacıklar solunum ve deri yoluyla vücuda girebilir ve hücrelere ulaşabilir."
+  }
+ ]
+}

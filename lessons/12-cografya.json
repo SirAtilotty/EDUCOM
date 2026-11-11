@@ -1,0 +1,290 @@
+{
+ "Doğal Sistemler": [
+  {
+   "title": "Ekstrem Doğa Olayları ve Etkileri",
+   "text": "Ekstrem doğa olayları, şiddeti ve etkisi bakımından olağanın çok dışında kalan doğa olaylarıdır.\n\nÖrnekler:\nAşırı sıcak hava dalgaları ve kuraklık: Tarımsal üretimi düşürür, orman yangınlarını artırır, sağlık sorunlarına yol açar.\nAşırı yağışlar ve sel: Kısa sürede düşen çok yoğun yağış; özellikle dere yataklarında yapılaşma varsa büyük kayıplara neden olur.\nTropikal siklonlar (kasırga, tayfun): Okyanuslar üzerinde oluşan, çok güçlü rüzgâr ve yağış getiren alçak basınç sistemleri.\nHortum: Küçük alanda etkili, çok şiddetli dönen hava sütunu. Türkiye'de son yıllarda Akdeniz ve Batı Karadeniz kıyılarında sıklaşmıştır.\nDolu, şiddetli fırtına, aşırı soğuk ve kar.\nBüyük depremler ve tsunamiler, volkanik patlamalar.\n\nEtkileri: Can ve mal kaybı, altyapının çökmesi, ekonomik kayıplar, gıda güvencesinin tehlikeye girmesi, göçler, ekosistemlerin zarar görmesi.\n\nKüresel iklim değişikliği, aşırı sıcaklar, kuraklık ve şiddetli yağışlar gibi meteorolojik ekstrem olayların sıklığını ve şiddetini artırmaktadır.",
+   "q": "Okyanuslar üzerinde oluşan ve çok güçlü rüzgâr ile şiddetli yağış getiren alçak basınç sistemlerine ne ad verilir?",
+   "choices": [
+    "Fön rüzgârı",
+    "Kırağı",
+    "Muson",
+    "Tropikal siklon (kasırga, tayfun)",
+    "Meltem"
+   ],
+   "answer": 3,
+   "explain": "Sıcak okyanus suları üzerinde oluşan bu güçlü sistemlere tropikal siklon denir; bölgeye göre kasırga ya da tayfun adını alır."
+  },
+  {
+   "title": "Doğa Olaylarının Geleceği",
+   "text": "Doğa olaylarının gelecekte nasıl değişeceğini tahmin etmek için bilim insanları iklim modelleri, uydu verileri ve geçmiş kayıtları kullanır.\n\nBeklenen değişimler (IPCC raporlarına göre):\nKüresel ortalama sıcaklık artmaya devam edecek.\nSıcak hava dalgaları daha sık, daha uzun ve daha şiddetli olacak.\nAkdeniz havzası gibi bazı bölgelerde kuraklık artacak; bazı bölgelerde ise aşırı yağışlar ve seller sıklaşacak.\nDeniz seviyesi yükselecek; alçak kıyılar ve ada ülkeleri tehlike altında kalacak.\nBuzullar ve kar örtüsü azalacak; bu da akarsuların rejimini ve su kaynaklarını etkileyecek.\n\nDepremler ve volkanik patlamalar iklimle ilgili değildir; kesin zamanları tahmin edilemez, ancak risk haritalarıyla olası etkileri öngörülebilir.\n\nGeleceğe hazırlık:\nErken uyarı sistemleri.\nAfete dirençli şehirler ve altyapı.\nSera gazı salımını azaltma (önleme) ve değişen koşullara uyum sağlama (uyum politikaları).\nVerilere dayalı planlama ve toplumsal farkındalık.",
+   "q": "İklim modellerine göre gelecekte Akdeniz havzasında en çok hangi sorunun artması beklenmektedir?",
+   "choices": [
+    "Buzul çağının başlaması",
+    "Kuraklık ve su kıtlığı",
+    "Tropikal yağmur ormanlarının yayılması",
+    "Deniz seviyesinin düşmesi",
+    "Kar örtüsünün artması"
+   ],
+   "answer": 1,
+   "explain": "Akdeniz havzasında sıcaklık artışı ve yağış azalması beklendiği için kuraklık ve su kıtlığı riski artmaktadır."
+  }
+ ],
+ "Beşeri Sistemler": [
+  {
+   "title": "Ekonomik Faaliyetlerin Sosyal ve Kültürel Etkileri",
+   "text": "Ekonomik faaliyetler insanların yalnızca gelirini değil, yaşam biçimini, kültürünü ve toplumsal ilişkilerini de etkiler.\n\nTarım toplumları: Yaşam mevsimlere ve toprağa bağlıdır. Geniş aile yapısı, imece gibi dayanışma gelenekleri, hasat şenlikleri, yerel festivaller (Kırkpınar, Hıdrellez) öne çıkar.\n\nSanayi toplumları: Fabrikalar etrafında kentleşme, çekirdek aile yapısı, düzenli çalışma saatleri, sendikalar ve işçi hakları gelişir. Kadının çalışma hayatına katılımı artar.\n\nHizmet ve bilgi toplumları: Eğitim düzeyi yükselir, uzaktan çalışma ve dijital yaşam yaygınlaşır, tüketim alışkanlıkları değişir.\n\nTurizm: Yerel kültürün tanıtılmasını ve el sanatlarının yaşamasını sağlayabilir; ancak aşırı turizm yerel kültürün yozlaşmasına, fiyatların artmasına ve doğal çevrenin bozulmasına da yol açabilir.\n\nMadencilik ve enerji projeleri bulundukları bölgede göç, yeni yerleşmeler ve meslek değişimi gibi sonuçlar doğurur.",
+   "q": "Bir kıyı kasabasında turizmin hızla gelişmesinin olası olumsuz sosyal etkisi hangisidir?",
+   "choices": [
+    "Altyapının gelişmesi",
+    "Döviz gelirinin artması",
+    "İş olanaklarının artması",
+    "El sanatlarının tanıtılması",
+    "Konut ve gıda fiyatlarının yerel halk için çok artması"
+   ],
+   "answer": 4,
+   "explain": "Aşırı turizm talebi konut ve tüketim fiyatlarını artırarak yerel halkın yaşamını zorlaştırabilir."
+  },
+  {
+   "title": "Şehirleşme, Sanayi ve Göç İlişkisi",
+   "text": "Sanayileşme, şehirleşme ve göç birbirini besleyen süreçlerdir: Sanayi iş olanakları yaratır → kırsaldan şehre göç başlar → şehirler büyür → büyüyen şehirler yeni hizmet ve sanayi yatırımlarını çeker.\n\nTürkiye'de bu süreç özellikle 1950'lerden sonra hızlandı. Tarımda makineleşme kırsalda iş gücü fazlası oluşturdu; insanlar İstanbul, Ankara, İzmir, Bursa, Kocaeli gibi sanayi ve hizmet merkezlerine göç etti.\n\nToplumsal etkileri:\nOlumlu: Eğitim, sağlık ve kültür hizmetlerine erişimin artması, gelir düzeyinin yükselmesi, kadınların çalışma hayatına katılması.\nOlumsuz: Gecekondulaşma ve çarpık kentleşme, altyapı yetersizliği, trafik, hava kirliliği, işsizlik, kayıt dışı ekonomi, uyum sorunları, kırsalın boşalması ve yaşlanması.\n\nÇözüm yolları: Planlı kentleşme ve kentsel dönüşüm, kırsal kalkınma ve bölgesel kalkınma projeleriyle göçün kaynağında azaltılması, organize sanayi bölgeleri, sosyal konut projeleri.",
+   "q": "Türkiye'de 1950'lerden sonra kırsaldan şehirlere göçün hızlanmasının temel nedenlerinden biri hangisidir?",
+   "choices": [
+    "Kırsalda iş olanaklarının artması",
+    "Ulaşımın zorlaşması",
+    "Tarımda makineleşmeyle kırsalda iş gücü fazlası oluşması",
+    "Şehirlerin nüfusunun azalması",
+    "Sanayinin köylere taşınması"
+   ],
+   "answer": 2,
+   "explain": "Tarımda makine kullanımı arttıkça daha az iş gücüne ihtiyaç duyuldu; açıkta kalan kırsal nüfus iş bulmak için şehirlere göç etti."
+  },
+  {
+   "title": "Gelecekte Şehir ve Ekonomi",
+   "text": "Dünya nüfusunun yarıdan fazlası şehirlerde yaşamaktadır ve bu oranın 2050'ye kadar yaklaşık üçte ikiye çıkması beklenmektedir.\n\nGeleceğin şehirleri için yaklaşımlar:\nAkıllı şehirler: Sensörler, veriler ve dijital teknolojilerle trafik, enerji, su ve atık yönetiminin verimli yapılması. Akıllı trafik ışıkları, akıllı sayaçlar.\nSürdürülebilir (yeşil) şehirler: Yenilenebilir enerji, enerji verimli binalar, geniş yeşil alanlar, bisiklet ve yaya yolları, güçlü toplu taşıma.\nDirençli şehirler: Afetlere ve iklim değişikliğine dayanıklı altyapı.\nKompakt şehirler: Yayılmak yerine yoğun ve karma kullanımlı planlama ile ulaşım ihtiyacının azaltılması.\n\nGeleceğin ekonomisi:\nDijital ekonomi, yapay zekâ ve otomasyon: Bazı meslekler kaybolurken yeni meslekler ortaya çıkıyor.\nYeşil ekonomi: Yenilenebilir enerji, geri dönüşüm ve döngüsel ekonomi.\nUzaktan çalışma ve e-ticaret.\nBilgiye dayalı dördüncül sektörün büyümesi.",
+   "q": "Sensörler ve verilerle trafik, enerji ve atık yönetiminin daha verimli yapıldığı şehirlere ne ad verilir?",
+   "choices": [
+    "Akıllı şehir",
+    "Gecekondu bölgesi",
+    "Sanayi kenti",
+    "Tarım kenti",
+    "Uydu kent"
+   ],
+   "answer": 0,
+   "explain": "Dijital teknolojiler ve veriler kullanılarak şehir hizmetlerinin verimli yönetildiği şehirlere akıllı şehir denir."
+  },
+  {
+   "title": "Türkiye'nin İşlevsel Bölgeleri",
+   "text": "İşlevsel (fonksiyonel) bölge, bir merkez ile bu merkezin etkilediği çevre arasındaki ilişkilerle belirlenen bölgedir. Doğal bölgelerden farklı olarak sınırları ekonomik ve sosyal bağlantılara göre çizilir.\n\nTürkiye'de işlevsel bölge örnekleri:\nSanayi bölgeleri: İstanbul-Kocaeli-Bursa sanayi kuşağı, Ankara, İzmir-Manisa, Adana-Mersin, Gaziantep, Kayseri, Konya, Denizli.\nTarım bölgeleri: Çukurova (pamuk, turunçgil), Konya Ovası (tahıl), Doğu Karadeniz (çay, fındık), GAP Bölgesi (pamuk).\nTurizm bölgeleri: Antalya-Muğla kıyıları, Kapadokya, İstanbul.\nLiman hinterlandları: Mersin, İzmir, İskenderun, Ambarlı limanlarının etki alanları.\nMetropoliten alanlar: Büyük şehirler ve çevrelerindeki yerleşmeler (İstanbul metropoliten alanı).\n\nİstatistiki Bölge Birimleri Sınıflandırması (İBBS): Bölgesel planlama ve kalkınma için Türkiye 12 bölge (Düzey 1), 26 alt bölge (Düzey 2) ve 81 ile (Düzey 3) ayrılmıştır. Kalkınma ajansları Düzey 2 bölgelerinde çalışır.",
+   "q": "Türkiye'de kalkınma ajanslarının faaliyet gösterdiği bölgeler hangi sınıflandırmaya göre belirlenmiştir?",
+   "choices": [
+    "Bitki örtüsü bölgeleri",
+    "Deprem bölgeleri",
+    "Yedi coğrafi bölge",
+    "İBBS Düzey 2 bölgeleri",
+    "İklim bölgeleri"
+   ],
+   "answer": 3,
+   "explain": "Kalkınma ajansları, İstatistiki Bölge Birimleri Sınıflandırması'nın 26 Düzey 2 bölgesinde kurulmuştur."
+  },
+  {
+   "title": "Türkiye'nin Bölgesel Kalkınma Projeleri",
+   "text": "Bölgesel kalkınma projeleri, bölgeler arasındaki gelişmişlik farklarını azaltmak ve bölgenin potansiyelini değerlendirmek amacıyla uygulanır.\n\nGAP (Güneydoğu Anadolu Projesi): Fırat ve Dicle üzerinde barajlar (Atatürk, Karakaya, Birecik, Ilısu) ve sulama kanalları kuruldu. Elektrik üretimi ve sulu tarım arttı; pamuk üretiminde büyük artış oldu. Ayrıca eğitim, sağlık, sanayi ve turizm alanlarında da yatırımlar yapıldı. Türkiye'nin en kapsamlı bölgesel kalkınma projesidir.\n\nDAP (Doğu Anadolu Projesi): Hayvancılık, tarım, turizm (kış turizmi) ve sanayinin geliştirilmesi.\n\nDOKAP (Doğu Karadeniz Projesi): Tarım (çay, fındık), ulaşım, turizm (yayla turizmi) ve su ürünlerinin geliştirilmesi.\n\nKOP (Konya Ovası Projesi): Konya Ovası'nda su sorununa çözüm; Mavi Tünel ile Göksu Havzası'ndan Konya Ovası'na su aktarımı, modern sulama, tarım ve hayvancılığın geliştirilmesi.\n\nZBK (Zonguldak-Bartın-Karabük) ve Yeşilırmak Havzası projeleri de diğer örneklerdir.\n\nBu projelerle göçün azaltılması, istihdamın ve gelirin artırılması hedeflenir.",
+   "q": "Fırat ve Dicle üzerinde kurulan barajlarla sulama ve enerji üretimini amaçlayan, Türkiye'nin en kapsamlı bölgesel kalkınma projesi hangisidir?",
+   "choices": [
+    "DAP",
+    "GAP",
+    "KOP",
+    "ZBK",
+    "DOKAP"
+   ],
+   "answer": 1,
+   "explain": "Güneydoğu Anadolu Projesi (GAP), Fırat ve Dicle havzalarında barajlar, sulama ve çok yönlü kalkınmayı kapsar."
+  },
+  {
+   "title": "Türkiye Ekonomisinde Hizmet Sektörü",
+   "text": "Hizmet sektörü; ticaret, ulaşım, turizm, eğitim, sağlık, bankacılık-finans, iletişim, kamu hizmetleri gibi alanları kapsar. Türkiye'de hem milli gelirdeki hem de istihdamdaki en büyük pay hizmet sektörüne aittir.\n\nTurizm: Türkiye dünyanın en çok turist çeken ülkeleri arasındadır.\nDeniz-kum-güneş turizmi: Antalya, Muğla, Aydın, İzmir.\nKültür ve inanç turizmi: İstanbul, Efes, Göbeklitepe, Konya, Kapadokya.\nKış turizmi: Uludağ, Palandöken, Erciyes, Kartalkaya.\nTermal turizm: Afyonkarahisar, Denizli, Kütahya.\nSağlık turizmi: Özellikle İstanbul ve büyük şehirlerdeki hastaneler.\nTurizm önemli bir döviz kaynağıdır ve dış ticaret açığını kapatmaya yardım eder.\n\nTicaret: Türkiye'nin ihracatında otomotiv, tekstil-hazır giyim, demir-çelik, makine, beyaz eşya ve tarım ürünleri öne çıkar. İthalatta enerji (petrol, doğal gaz), ara mallar ve teknoloji ürünleri büyük paya sahiptir. En çok ticaret yapılan bölge Avrupa Birliği'dir.\n\nLojistik, finans ve bilişim hizmetleri hızla büyüyen alanlardır.",
+   "q": "Türkiye'nin ithalatında en büyük payı alan ürün gruplarından biri hangisidir?",
+   "choices": [
+    "Beyaz eşya",
+    "Kuru meyve",
+    "Fındık",
+    "Hazır giyim",
+    "Enerji kaynakları (petrol, doğal gaz)"
+   ],
+   "answer": 4,
+   "explain": "Türkiye petrol ve doğal gaz ihtiyacının büyük kısmını ithal ettiği için enerji, ithalatta en büyük kalemlerden biridir."
+  },
+  {
+   "title": "Ulaşımı Etkileyen Faktörler ve Ulaşım Sistemleri",
+   "text": "Ulaşımı etkileyen faktörler:\nDoğal faktörler: Yer şekilleri (dağlar, vadiler; geçitler ve vadiler yolların güzergâhını belirler), iklim (kar, sis, buzlanma), akarsular ve denizler.\nBeşerî faktörler: Nüfus ve yerleşme dağılışı, ekonomik faaliyetler, teknoloji, sermaye, siyasi ve stratejik kararlar.\n\nTürkiye'de ulaşım engebeli arazi nedeniyle maliyetlidir; yollar çoğunlukla vadileri ve geçitleri izler. Son yıllarda yapılan tüneller (Ovit, Zigana), viyadükler ve köprüler (Osmangazi, 1915 Çanakkale, Yavuz Sultan Selim) ulaşımı kolaylaştırmıştır.\n\nUlaşım sistemleri:\nKara yolu: Türkiye'de yolcu ve yük taşımacılığının büyük kısmı kara yoluyla yapılır.\nDemir yolu: Yüksek hızlı tren hatları (Ankara-İstanbul, Ankara-Konya, Ankara-Sivas) gelişmektedir; yük taşımacılığında ucuz ve çevrecidir.\nDeniz yolu: Uluslararası yük taşımacılığının en ucuz yoludur. Önemli limanlar: Mersin, İzmir, Ambarlı, İskenderun.\nHava yolu: En hızlı ama pahalı yoldur; İstanbul Havalimanı dünyanın en büyük aktarma merkezlerinden biridir.\nBoru hatları: Petrol ve doğal gaz taşımacılığı (Bakü-Tiflis-Ceyhan, TANAP, TürkAkım).\n\nYeni teknolojiler: Elektrikli ve otonom araçlar, akıllı ulaşım sistemleri.",
+   "q": "Uluslararası ticarette ağır ve büyük hacimli yüklerin en düşük maliyetle taşındığı ulaşım sistemi hangisidir?",
+   "choices": [
+    "Hava yolu",
+    "Kara yolu",
+    "Deniz yolu",
+    "Teleferik",
+    "Boru hattı"
+   ],
+   "answer": 2,
+   "explain": "Deniz yolu yavaş olsa da büyük miktarda yükü en düşük birim maliyetle taşır; dünya ticaretinin büyük kısmı deniz yoluyla yapılır."
+  }
+ ],
+ "Küresel Ortam: Bölgeler ve Ülkeler": [
+  {
+   "title": "Kıta ve Okyanusların Konumsal Önemi",
+   "text": "Kıtaların ve okyanusların konumu; iklimi, ticaret yollarını, kültürel etkileşimi ve ülkeler arası ilişkileri belirler.\n\nKıtalar: Asya, Afrika, Kuzey Amerika, Güney Amerika, Antarktika, Avrupa, Okyanusya (Avustralya).\nAsya en büyük ve en kalabalık kıtadır. Avrupa, Asya ve Afrika birbirine bitişiktir; tarih boyunca bu üç kıta arasında yoğun ticaret, göç ve kültürel etkileşim yaşanmıştır.\n\nOkyanuslar: Büyük (Pasifik) Okyanus en büyük okyanustur. Atlas Okyanusu Avrupa ile Amerika arasındaki ticarette önemlidir. Hint Okyanusu, Asya ile Afrika arasında ve enerji taşımacılığında kritik bir konuma sahiptir.\n\nStratejik geçitler (boğaz ve kanallar): Dünya ticaretinin önemli kısmı bu dar geçitlerden geçer.\nİstanbul ve Çanakkale boğazları (Karadeniz'in dünyaya açılan kapısı).\nSüveyş Kanalı (Akdeniz-Kızıldeniz).\nPanama Kanalı (Atlas-Büyük Okyanus).\nCebelitarık, Hürmüz (Basra Körfezi petrolü), Malakka (Hint-Büyük Okyanus) boğazları.\nBu geçitlerdeki bir kapanma, küresel ticareti ve enerji fiyatlarını doğrudan etkiler.",
+   "q": "Basra Körfezi'ndeki petrolün dünyaya taşınmasında kritik öneme sahip olan boğaz hangisidir?",
+   "choices": [
+    "Hürmüz Boğazı",
+    "Malakka Boğazı",
+    "İstanbul Boğazı",
+    "Bering Boğazı",
+    "Cebelitarık Boğazı"
+   ],
+   "answer": 0,
+   "explain": "Hürmüz Boğazı, Basra Körfezi'ni açık denizlere bağlar; dünya petrol ticaretinin önemli bir kısmı buradan geçer."
+  },
+  {
+   "title": "Ülkelerin Konumunun Küresel ve Bölgesel Etkileri",
+   "text": "Bir ülkenin konumu, onun ekonomisini, güvenliğini ve uluslararası ilişkilerini etkiler.\n\nMatematik konumun etkileri: Enlem iklimi, tarım ürünlerini ve enerji ihtiyacını belirler.\n\nÖzel konumun etkileri:\nKıyı ülkeleri: Deniz ticaretine, limanlara ve balıkçılığa erişim. Denize kıyısı olmayan ülkeler (Kazakistan, Bolivya, İsviçre) dış ticarette komşularına bağımlıdır.\nAda ülkeleri: Doğal savunma avantajı (Birleşik Krallık, Japonya); ancak küçük ada ülkeleri deniz seviyesi yükselmesine karşı çok savunmasızdır (Maldivler).\nStratejik geçitlere sahip ülkeler: Mısır (Süveyş), Panama, Türkiye (boğazlar), Singapur (Malakka) bu geçitlerden ekonomik ve siyasi güç elde eder.\nEnerji kaynaklarına sahip ya da yakın ülkeler: Orta Doğu ülkeleri ve Rusya enerji politikalarında belirleyicidir.\nBüyük güçlerin arasında kalan ülkeler: Tampon bölge olabilir ya da çatışmalardan etkilenebilir.\n\nKüreselleşme ile ulaşım ve iletişim teknolojileri geliştikçe uzaklığın etkisi azalmış; ancak konum, özellikle ticaret ve güvenlik açısından önemini korumaktadır.",
+   "q": "Denize kıyısı olmayan ülkelerin karşılaştığı en önemli ekonomik zorluk hangisidir?",
+   "choices": [
+    "Hiç komşularının olmaması",
+    "Nüfuslarının çok kalabalık olması",
+    "Turizm gelirlerinin çok yüksek olması",
+    "Dış ticarette komşu ülkelerin limanlarına ve yollarına bağımlı olmaları",
+    "Balıkçılıkta dünya lideri olmaları"
+   ],
+   "answer": 3,
+   "explain": "Denize kıyısı olmayan ülkeler ihracat ve ithalatlarında komşu ülkelerin liman ve ulaşım ağlarını kullanmak zorundadır; bu da maliyeti ve bağımlılığı artırır."
+  },
+  {
+   "title": "Türkiye'nin Jeopolitik Konumu",
+   "text": "Jeopolitik, bir ülkenin coğrafi konumunun ve özelliklerinin siyasi güç ve uluslararası ilişkiler üzerindeki etkisini inceler.\n\nTürkiye'nin jeopolitik önemi:\nAsya ile Avrupa'yı birbirine bağlayan bir köprüdür; Orta Doğu, Kafkasya ve Balkanlar'ın kesişiminde yer alır.\nİstanbul ve Çanakkale boğazları Karadeniz'i dünya denizlerine bağlar; boğazlardan geçiş Montrö Sözleşmesi (1936) ile düzenlenir.\nEnerji koridorudur: Hazar Havzası, Orta Asya ve Orta Doğu'daki enerji kaynaklarını Avrupa'ya taşıyan boru hatları Türkiye'den geçer (Bakü-Tiflis-Ceyhan, TANAP, TürkAkım, Kerkük-Yumurtalık).\nOrta Koridor (Çin'den Avrupa'ya uzanan ticaret yolu) üzerindedir; Bakü-Tiflis-Kars demir yolu bu koridorun parçasıdır.\nNATO üyesidir; Türk Devletleri Teşkilatı ve pek çok bölgesel kuruluşta etkin rol oynar.\nTarih boyunca farklı medeniyetlere ev sahipliği yapmıştır.\n\nBu konum Türkiye'ye ekonomik ve siyasi fırsatlar sunarken, çevresindeki bölgelerdeki çatışmalar ve göç hareketleri gibi riskler de getirir.",
+   "q": "Türk boğazlarından geçiş rejimini düzenleyen uluslararası sözleşme hangisidir?",
+   "choices": [
+    "Lozan Antlaşması",
+    "Montrö Sözleşmesi",
+    "Paris Anlaşması",
+    "Kyoto Protokolü",
+    "Sevr Antlaşması"
+   ],
+   "answer": 1,
+   "explain": "1936'da imzalanan Montrö Boğazlar Sözleşmesi, Türk boğazlarından barış ve savaş zamanında geçişi düzenler ve boğazlar üzerinde Türkiye'nin egemenliğini güçlendirir."
+  },
+  {
+   "title": "Türk Kültür Havzası",
+   "text": "Türk kültür havzası, Türklerin tarih boyunca yaşadığı ve kültürel izlerini bıraktığı geniş coğrafyadır. Orta Asya'dan Anadolu'ya, Balkanlar'dan Kafkasya'ya, Sibirya'dan Orta Doğu'ya kadar uzanır.\n\nOrtak unsurlar:\nDil: Türkçenin farklı lehçe ve şiveleri (Azerbaycan Türkçesi, Kazakça, Özbekçe, Kırgızca, Türkmence, Tatarca).\nTarih ve destanlar: Oğuz Kağan, Ergenekon, Manas, Dede Korkut.\nGelenekler: Nevruz, at ve okçuluk kültürü, misafirperverlik, aile yapısı.\nMüzik ve sanat: Kopuz-saz geleneği, halı ve kilim motifleri.\nMimari: Kümbetler, kervansaraylar, camiler, medreseler (Semerkant, Buhara, Bursa, Edirne).\nMutfak: Mantı, pilav, ayran, kımız gibi ortak yemekler.\n\nGünümüzde bağımsız Türk devletleri: Türkiye, Azerbaycan, Kazakistan, Kırgızistan, Özbekistan, Türkmenistan ve KKTC. Türk Devletleri Teşkilatı ile ekonomik, kültürel ve eğitim alanlarında iş birliği güçlenmektedir. TÜRKSOY ve Türk Akademisi kültürel bağları koruyan kurumlardır.",
+   "q": "Türk kültür havzasındaki ülkelerin ortak bayramı olan ve baharın gelişini kutlayan gün hangisidir?",
+   "choices": [
+    "Hasat Bayramı",
+    "Yılbaşı",
+    "Kurban Bayramı",
+    "Hıdrellez",
+    "Nevruz"
+   ],
+   "answer": 4,
+   "explain": "Nevruz, Türk dünyasında baharın ve yeni yılın başlangıcı olarak 21 Mart civarında kutlanan ortak bir bayramdır."
+  },
+  {
+   "title": "Teknolojik Gelişmelerin Kültürel ve Ekonomik Etkileri",
+   "text": "Teknolojik gelişmeler, mekân ve zaman engellerini azaltarak dünyayı birbirine daha bağlı hâle getirmiştir (küreselleşme).\n\nEkonomik etkiler:\nÜretimde otomasyon ve robotlar verimliliği artırır; bazı meslekler azalır, yeni meslekler ortaya çıkar.\nE-ticaret ve dijital ödeme sistemleri ticareti küreselleştirir.\nBilgiye dayalı sektörler (yazılım, yapay zekâ, biyoteknoloji) yüksek katma değer üretir.\nUzaktan çalışma ile iş ve yaşam yerinin birbirine bağlılığı azalır.\nÜretim küresel tedarik zincirlerine yayılır: Bir telefonun parçaları farklı ülkelerde üretilir.\n\nKültürel etkiler:\nSosyal medya ve internet farklı kültürlerin hızla tanınmasını sağlar.\nTüketim alışkanlıkları, müzik ve moda küreselleşir; yerel kültürlerin zayıflaması riski doğar.\nBilgiye erişim kolaylaşır; ama yanlış bilgi de hızla yayılır.\nDijital uçurum: Teknolojiye erişimi olanlarla olmayanlar arasındaki fark, ülkeler ve bölgeler arası eşitsizliği artırabilir.",
+   "q": "Teknolojiye erişimi olan ve olmayan toplumlar arasındaki farkın eşitsizliği artırmasına ne ad verilir?",
+   "choices": [
+    "Sanayi devrimi",
+    "Beyin göçü",
+    "Dijital uçurum",
+    "Kentsel dönüşüm",
+    "Demografik dönüşüm"
+   ],
+   "answer": 2,
+   "explain": "Dijital uçurum, internet ve dijital teknolojilere erişim farkının eğitim, gelir ve fırsat eşitsizliğine yol açmasıdır."
+  },
+  {
+   "title": "Gelişmişlik Seviyesini Belirleyen Faktörler",
+   "text": "Bir ülkenin gelişmişlik düzeyi yalnızca zenginlikle değil, insanların yaşam kalitesiyle de ölçülür.\n\nEkonomik göstergeler:\nKişi başına düşen milli gelir (GSYH / nüfus).\nEkonominin sektörel dağılımı: Gelişmiş ülkelerde hizmet ve sanayi, gelişmekte olanlarda tarım ağırlıklıdır.\nİhracattaki yüksek teknolojili ürünlerin payı.\nKişi başına enerji tüketimi.\n\nSosyal göstergeler:\nOrtalama yaşam süresi.\nBebek ölüm oranı.\nOkur-yazarlık oranı ve ortalama eğitim süresi.\nNüfus artış hızı ve nüfus piramidinin şekli.\nSağlık hizmetlerine erişim (kişi başına doktor sayısı).\nKadının toplumsal ve ekonomik hayata katılımı.\nKentleşme oranı.\n\nİnsani Gelişme Endeksi (İGE): Birleşmiş Milletler tarafından hesaplanır. Sağlık (doğumda beklenen yaşam süresi), eğitim (okullaşma ve eğitim süresi) ve gelir (kişi başına milli gelir) boyutlarını birlikte değerlendirir. Norveç, İsviçre, İzlanda gibi ülkeler en üst sıralardadır.",
+   "q": "Birleşmiş Milletler'in hesapladığı İnsani Gelişme Endeksi hangi üç boyutu birlikte değerlendirir?",
+   "choices": [
+    "Sağlık, eğitim ve gelir",
+    "İklim, toprak, su",
+    "İhracat, ithalat, borç",
+    "Turizm, sanayi, tarım",
+    "Nüfus, yüz ölçümü, ordu"
+   ],
+   "answer": 0,
+   "explain": "İGE; uzun ve sağlıklı yaşam (yaşam süresi), eğitim ve kişi başına gelir boyutlarını birlikte ölçer."
+  },
+  {
+   "title": "Gelişmiş ve Gelişmekte Olan Ülkelerin Ekonomik Özellikleri",
+   "text": "Gelişmiş ülkeler (ABD, Almanya, Japonya, Kanada, İsveç gibi):\nKişi başına gelir yüksektir.\nÇalışanların çoğu hizmet sektöründedir; tarım makineleşmiş ve verimlidir.\nİleri teknoloji ve yüksek katma değerli ürünler ihraç ederler.\nAr-Ge harcamaları yüksektir.\nNüfus artış hızı düşük, ortalama yaşam süresi uzundur; nüfus yaşlanmaktadır.\nSermaye ihraç eder, yatırım yaparlar.\n\nGelişmekte olan ülkeler:\nKişi başına gelir orta ya da düşüktür.\nTarımda çalışanların oranı yüksektir; tarım genellikle geleneksel yöntemlerle yapılır.\nİhracatta hammadde ve düşük katma değerli ürünler ağırlıktadır.\nNüfus artış hızı yüksek, genç nüfus fazladır.\nDış borç ve sermaye ihtiyacı fazladır.\n\nYükselen ekonomiler: Çin, Hindistan, Brezilya, Türkiye, Endonezya gibi ülkeler hızlı büyüme ve sanayileşme süreci yaşamaktadır.\n\nGelişmişlik farkları küresel göçün, ticaret dengesizliklerinin ve beyin göçünün önemli nedenlerindendir.",
+   "q": "Aşağıdaki özelliklerden hangisi gelişmiş ülkeler için genellikle geçerlidir?",
+   "choices": [
+    "Bebek ölüm oranının yüksek olması",
+    "Nüfus artış hızının yüksek olması",
+    "İhracatta hammaddenin ağırlıkta olması",
+    "Ar-Ge harcamalarının ve yaşam süresinin yüksek olması",
+    "Çalışanların çoğunun tarımda olması"
+   ],
+   "answer": 3,
+   "explain": "Gelişmiş ülkeler araştırma-geliştirmeye çok yatırım yapar; sağlık hizmetleri iyi olduğu için ortalama yaşam süresi uzundur."
+  }
+ ],
+ "Çevre ve Toplum": [
+  {
+   "title": "Doğal Çevrenin Sınırlılığı",
+   "text": "Doğal kaynaklar (su, toprak, orman, maden, enerji, temiz hava) sınırlıdır. Nüfus artışı, kentleşme ve tüketimin artması bu kaynaklar üzerindeki baskıyı büyütmektedir.\n\nTaşıma kapasitesi: Bir ortamın, çevreye kalıcı zarar vermeden barındırabileceği en fazla canlı sayısıdır. Aşıldığında kaynaklar tükenir ve ekosistem bozulur.\n\nEkolojik ayak izi: Bir kişinin ya da toplumun tükettiği kaynakları üretmek ve atıklarını yok etmek için gereken biyolojik verimli alandır. İnsanlığın toplam ekolojik ayak izi, Dünya'nın yenileyebildiği kapasiteyi aşmaktadır. Her yıl hesaplanan Dünya Limit Aşım Günü, insanlığın o yılki doğal kaynak bütçesini tükettiği tarihi gösterir ve bu tarih giderek öne gelmektedir.\n\nSınırlılığın göstergeleri: Su kıtlığı, toprak erozyonu ve çölleşme, ormansızlaşma, balık stoklarının azalması, biyoçeşitlilik kaybı, iklim değişikliği.\n\nÇözüm: Kaynakları verimli kullanmak, yenilenebilir enerjiye geçmek, döngüsel ekonomi (azalt, yeniden kullan, geri dönüştür) ve bilinçli tüketim.",
+   "q": "İnsanlığın bir yıl için Dünya'nın yenileyebileceği kaynakları tükettiği tarihi gösteren kavram hangisidir?",
+   "choices": [
+    "Ekinoks",
+    "Dünya Limit Aşım Günü",
+    "Gündönümü",
+    "Dünya Çevre Günü",
+    "Ozon Günü"
+   ],
+   "answer": 1,
+   "explain": "Dünya Limit Aşım Günü, insanlığın o yıl için doğanın yenileyebileceği kaynak bütçesini tükettiği tarihtir."
+  },
+  {
+   "title": "Çevre Sorunlarını Önlemeye Yönelik Politika ve Uygulamalar",
+   "text": "Çevre sorunlarıyla mücadele için devletler, yerel yönetimler, şirketler ve bireyler farklı politikalar uygular.\n\nYasal düzenlemeler: Çevre kanunları, çevresel etki değerlendirmesi (ÇED) raporu zorunluluğu, emisyon sınırları, korunan alanlar.\n\nEkonomik araçlar: Karbon vergisi ve karbon ticareti, yenilenebilir enerjiye teşvikler, kirleten öder ilkesi.\n\nTürkiye'deki uygulamalar:\nSıfır Atık Projesi: Atıkların kaynağında ayrıştırılması, geri dönüşümün artırılması.\nPlastik poşetlerin ücretli hâle getirilmesi.\nDepozito yönetim sistemi.\nAğaçlandırma ve erozyonla mücadele kampanyaları (TEMA Vakfı gibi sivil toplum kuruluşlarıyla birlikte).\nYenilenebilir enerji kaynaklarına yatırım (YEKA projeleri).\nAtık su arıtma tesisleri.\n\nBireysel sorumluluklar: Su ve enerji tasarrufu, toplu taşıma ve bisiklet kullanımı, geri dönüşüm, tek kullanımlık plastikten kaçınma, gıda israfını önleme.",
+   "q": "Türkiye'de atıkların kaynağında ayrıştırılarak geri kazanılmasını amaçlayan proje hangisidir?",
+   "choices": [
+    "Mavi Tünel",
+    "Marmaray",
+    "DOKAP",
+    "GAP",
+    "Sıfır Atık Projesi"
+   ],
+   "answer": 4,
+   "explain": "Sıfır Atık Projesi, atıkların kaynağında ayrı toplanması ve geri kazanılmasıyla israfın ve çevre kirliliğinin azaltılmasını amaçlar."
+  },
+  {
+   "title": "Çevreyi Korumada Örgütlenme ve Anlaşmalar",
+   "text": "Çevre sorunları sınır tanımadığı için uluslararası iş birliği gerektirir.\n\nUluslararası kuruluşlar:\nBirleşmiş Milletler Çevre Programı (UNEP).\nHükümetlerarası İklim Değişikliği Paneli (IPCC): İklim bilimini değerlendiren raporlar hazırlar.\nDünya Doğayı Koruma Vakfı (WWF), Greenpeace gibi sivil toplum kuruluşları.\nTürkiye'de TEMA Vakfı, Doğa Derneği, Deniz Temiz Derneği (TURMEPA).\n\nÖnemli anlaşmalar:\nMontreal Protokolü (1987): Ozon tabakasını bozan CFC gazlarının sınırlandırılması. En başarılı çevre anlaşması kabul edilir.\nBM İklim Değişikliği Çerçeve Sözleşmesi (1992), Kyoto Protokolü (1997) ve Paris Anlaşması (2015): Sera gazı salımını azaltma ve küresel ısınmayı 1,5-2 °C ile sınırlama hedefi.\nBiyolojik Çeşitlilik Sözleşmesi (1992).\nRamsar Sözleşmesi: Sulak alanların korunması.\nBarselona Sözleşmesi: Akdeniz'in kirliliğe karşı korunması.\nBasel Sözleşmesi: Tehlikeli atıkların sınır ötesi taşınması.\n\nAnlaşmaların başarısı, ülkelerin taahhütlerine uymasına ve denetime bağlıdır.",
+   "q": "Sulak alanların korunmasını amaçlayan uluslararası sözleşme hangisidir?",
+   "choices": [
+    "Montreal Protokolü",
+    "Paris Anlaşması",
+    "Ramsar Sözleşmesi",
+    "Basel Sözleşmesi",
+    "Kyoto Protokolü"
+   ],
+   "answer": 2,
+   "explain": "Ramsar Sözleşmesi, özellikle su kuşlarının yaşam alanı olan sulak alanların korunmasını amaçlar; Türkiye'de pek çok Ramsar alanı vardır (Kuş Cenneti, Göksu Deltası)."
+  },
+  {
+   "title": "Ortak Doğal ve Kültürel Mirasa Yönelik Tehditler",
+   "text": "Doğal miras: Olağanüstü güzellikteki doğal alanlar, jeolojik oluşumlar ve tür çeşitliliği açısından önemli ekosistemler.\nKültürel miras: Tarihî yapılar, arkeolojik alanlar, şehir dokuları ve somut olmayan kültürel miras (gelenekler, el sanatları, müzik).\n\nUNESCO Dünya Mirası Listesi'nde Türkiye'den: İstanbul Tarihî Alanları, Göreme Millî Parkı ve Kapadokya (karma miras), Pamukkale-Hierapolis (karma), Efes, Truva, Göbeklitepe, Çatalhöyük, Safranbolu, Nemrut Dağı, Divriği Ulu Camii ve Darüşşifası, Selimiye Camii gibi alanlar bulunur. Karagöz, âşıklık geleneği, kahve kültürü ve ebru Somut Olmayan Kültürel Miras listesindedir.\n\nMirasa yönelik tehditler:\nDoğal etkenler: Deprem, sel, erozyon, iklim değişikliği.\nİnsan etkenleri: Plansız kentleşme ve yapılaşma, aşırı ve kontrolsüz turizm, hava kirliliği (tarihî taşların aşınması), savaşlar ve terör, kaçak kazılar ve tarihî eser kaçakçılığı, baraj gölleri altında kalma, bakımsızlık, ihmal ve kültürel değerlerin unutulması.\n\nKorunması için: Yasal koruma, restorasyon, bilinçli turizm, eğitim ve toplumsal farkındalık.",
+   "q": "Aşağıdakilerden hangisi kültürel mirası tehdit eden insan kaynaklı etkenlerden biri değildir?",
+   "choices": [
+    "Deprem",
+    "Hava kirliliği",
+    "Kaçak kazılar",
+    "Plansız yapılaşma",
+    "Kontrolsüz turizm"
+   ],
+   "answer": 0,
+   "explain": "Deprem doğal bir etkendir. Kaçak kazı, plansız yapılaşma, kontrolsüz turizm ve hava kirliliği ise insan kaynaklıdır."
+  }
+ ]
+}

@@ -1,0 +1,232 @@
+{
+ "Etkileşim": [
+  {
+   "title": "Kimyasal Değişimin Göstergeleri ve Tepkimelerin Oluşumu",
+   "text": "Kimyasal tepkimede maddelerin kimlikleri değişir ve yeni maddeler oluşur. Bir kimyasal değişimin olduğunu şu gözlemlerden anlarız:\n\nGaz çıkışı (köpürme), renk değişimi, çökelek (katı) oluşumu, ısı ya da ışık açığa çıkması, koku değişimi.\n\nTepkimeler nasıl gerçekleşir? Çarpışma teorisine göre tepkimeye girecek tanecikler birbiriyle çarpışmalıdır. Ancak her çarpışma tepkime oluşturmaz; etkin çarpışma için tanecikler yeterli enerjiye (aktifleşme enerjisi) sahip olmalı ve uygun doğrultuda çarpışmalıdır.\n\nTepkimede atomlar yok olmaz ya da yeniden oluşmaz; yalnızca aralarındaki bağlar kırılıp yeni bağlar kurulur. Bu yüzden kütle korunur (Lavoisier).",
+   "q": "Aşağıdakilerden hangisi kimyasal değişim olduğunu kesin olarak göstermez?",
+   "choices": [
+    "Buzun erimesi",
+    "İki çözelti karıştırılınca çökelek oluşması",
+    "Kâğıdın yanarken ışık ve ısı vermesi",
+    "Demirin paslanırken renginin değişmesi",
+    "Sirkeye karbonat eklenince gaz çıkması"
+   ],
+   "answer": 0,
+   "explain": "Buzun erimesi hâl değişimidir; su yine sudur, yeni madde oluşmaz. Bu fiziksel bir değişimdir."
+  },
+  {
+   "title": "Kimyasal Tepkime Türleri",
+   "text": "Sık karşılaşılan tepkime türleri:\n\nYanma: Bir maddenin oksijenle tepkimesi. C ve H içeren maddeler tam yanınca CO₂ ve H₂O oluşur.\nSentez (oluşum): İki ya da daha fazla maddenin birleşerek tek bir madde oluşturması: 2H₂ + O₂ → 2H₂O\nAnaliz (ayrışma): Bir maddenin daha basit maddelere ayrılması: CaCO₃ → CaO + CO₂\nAsit-baz (nötrleşme): Asit ile baz tepkimeye girerek tuz ve su oluşturur: HCl + NaOH → NaCl + H₂O\nÇözünme-çökelme: Suda çözünmüş iyonlar birleşerek suda az çözünen bir katı (çökelek) oluşturur: Ag⁺ + Cl⁻ → AgCl(k)\n\nTepkime türünü tanımak, ürünleri tahmin etmenin anahtarıdır.",
+   "q": "Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O tepkimesi hangi türdendir?",
+   "choices": [
+    "Çözünme-çökelme",
+    "Yanma",
+    "Analiz",
+    "Asit-baz (nötrleşme)",
+    "Sentez"
+   ],
+   "answer": 3,
+   "explain": "Bir baz (Mg(OH)₂) ile bir asit (HCl) tepkimeye girerek tuz (MgCl₂) ve su oluşturuyor; bu bir nötrleşmedir."
+  },
+  {
+   "title": "Mol Kavramı",
+   "text": "Atomlar ve moleküller çok küçük olduğu için kimyacılar onları paketler hâlinde sayar. 1 mol, 6,02 · 10²³ tane tanecik demektir (Avogadro sayısı).\n\nMol kütlesi: 1 mol maddenin gram cinsinden kütlesidir. Periyodik tablodaki atom kütlelerinden hesaplanır.\nÖrnek: H = 1, O = 16 → H₂O'nun mol kütlesi 2 · 1 + 16 = 18 g/mol\n\nTemel bağıntılar:\nMol sayısı = kütle / mol kütlesi\nTanecik sayısı = mol sayısı · 6,02 · 10²³\nNormal koşullarda (0 °C, 1 atm) 1 mol gaz 22,4 L hacim kaplar.\n\nÖrneğin 36 g su 36/18 = 2 mol'dür ve 2 · 6,02 · 10²³ tane su molekülü içerir.",
+   "q": "88 gram CO₂ kaç mol'dür? (C = 12, O = 16)",
+   "choices": [
+    "1",
+    "2",
+    "4",
+    "44",
+    "0,5"
+   ],
+   "answer": 1,
+   "explain": "CO₂'nin mol kütlesi 12 + 2 · 16 = 44 g/mol. 88 / 44 = 2 mol."
+  },
+  {
+   "title": "Tepkime Denklemlerinin Denkleştirilmesi",
+   "text": "Kütlenin korunumu gereği tepkimenin iki tarafında her elementten eşit sayıda atom bulunmalıdır. Denkleştirmede yalnızca formüllerin önündeki katsayılar değiştirilir; formüllerin içindeki alt indisler asla değiştirilmez (yoksa madde değişir).\n\nAdımlar:\n1. Önce bileşiklerde tek geçen, karmaşık elementlerden başla.\n2. H ve O'yu genellikle sona bırak.\n3. Katsayıları en küçük tam sayılar olacak şekilde düzenle.\n\nÖrnek: CH₄ + O₂ → CO₂ + H₂O\nC: 1 = 1 ✓. H: 4 → 2H₂O. O: sağda 2 + 2 = 4 → 2O₂.\nSonuç: CH₄ + 2O₂ → CO₂ + 2H₂O",
+   "q": "aN₂ + bH₂ → cNH₃ tepkimesi en küçük tam sayılarla denkleştirildiğinde a + b + c toplamı kaç olur?",
+   "choices": [
+    "7",
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "answer": 4,
+   "explain": "N₂ + 3H₂ → 2NH₃. Katsayılar 1, 3, 2; toplam 6."
+  },
+  {
+   "title": "Kimyasal (Stokiyometrik) Hesaplamalar",
+   "text": "Denkleştirilmiş bir tepkime denklemindeki katsayılar, maddelerin mol oranlarını verir. Bu oranları kullanarak bir maddenin miktarından diğerlerini hesaplayabiliriz.\n\n2H₂ + O₂ → 2H₂O denklemi şunu söyler: 2 mol H₂, 1 mol O₂ ile tepkimeye girerek 2 mol H₂O oluşturur.\n\nAdımlar:\n1. Verilen miktarı mol'e çevir.\n2. Katsayı oranıyla istenen maddenin mol sayısını bul.\n3. Gerekirse sonucu kütleye, hacme ya da tanecik sayısına çevir.\n\nSınırlayıcı bileşen: Maddelerden biri tükenince tepkime durur. Önce biten madde ürün miktarını belirler, diğerinden artan kalır.",
+   "q": "2H₂ + O₂ → 2H₂O tepkimesine göre 8 gram H₂ yeterince O₂ ile tamamen tepkimeye girerse kaç gram su oluşur? (H = 1, O = 16)",
+   "choices": [
+    "36",
+    "54",
+    "72",
+    "144",
+    "18"
+   ],
+   "answer": 2,
+   "explain": "8 g H₂ = 8/2 = 4 mol. Oran 2:2 olduğu için 4 mol H₂O oluşur. 4 · 18 = 72 g."
+  },
+  {
+   "title": "Gazların Özellikleri ve Kinetik Moleküler Teori",
+   "text": "Gazlar bulundukları kabın hacmini ve şeklini alır, kolayca sıkıştırılabilir ve birbirleriyle her oranda karışırlar (homojen).\n\nKinetik moleküler teoriye göre ideal bir gazda:\n1. Tanecikler sürekli, rastgele ve doğrusal hareket eder.\n2. Taneciklerin kendi hacimleri, kabın hacmine göre ihmal edilecek kadar küçüktür.\n3. Tanecikler arasında çekim ya da itme kuvveti yoktur.\n4. Çarpışmalar esnektir; toplam kinetik enerji korunur.\n5. Ortalama kinetik enerji yalnızca mutlak sıcaklıkla (kelvin) orantılıdır.\n\nGaz basıncı, taneciklerin kabın çeperlerine çarpmasından kaynaklanır. Sıcaklık artınca tanecikler hızlanır, daha sık ve sert çarpar; basınç artar.",
+   "q": "Kinetik moleküler teoriye göre aynı sıcaklıktaki He ve CH₄ gazları için hangisi kesinlikle aynıdır?",
+   "choices": [
+    "Taneciklerin ortalama kinetik enerjileri",
+    "Gazların yoğunlukları",
+    "Mol kütleleri",
+    "Taneciklerin ortalama hızları",
+    "Taneciklerin kütleleri"
+   ],
+   "answer": 0,
+   "explain": "Ortalama kinetik enerji yalnızca sıcaklığa bağlıdır. Hafif olan He tanecikleri daha hızlı hareket eder ama ortalama kinetik enerjiler eşittir."
+  },
+  {
+   "title": "Gaz Yasaları ve İdeal Gaz Denklemi",
+   "text": "Gazın durumunu dört nicelik belirler: basınç (P), hacim (V), mol sayısı (n), mutlak sıcaklık (T, kelvin = °C + 273).\n\nBoyle: Sabit n ve T'de P · V = sabit (basınç artarsa hacim azalır).\nCharles: Sabit n ve P'de V / T = sabit (ısıtılan balon şişer).\nGay-Lussac: Sabit n ve V'de P / T = sabit (güneşte kalan sprey kutusu tehlikelidir).\nAvogadro: Sabit P ve T'de V / n = sabit.\n\nHepsi birleşince ideal gaz denklemi: P · V = n · R · T\nR = 0,082 L·atm/(mol·K) ya da 22,4/273.\n\nDikkat: Sıcaklık mutlaka kelvin olmalıdır; °C ile oran kurulmaz.",
+   "q": "Sabit basınçta 27 °C'de 6 L hacim kaplayan bir gaz 327 °C'ye ısıtılırsa hacmi kaç L olur?",
+   "choices": [
+    "3",
+    "6",
+    "9",
+    "12",
+    "72"
+   ],
+   "answer": 3,
+   "explain": "Kelvine çevir: 300 K ve 600 K. Charles yasası: 6/300 = V/600 → V = 12 L."
+  },
+  {
+   "title": "Gaz Karışımları ve Kısmi Basınç",
+   "text": "Tepkimeye girmeyen gazlar karıştırıldığında her gaz, kabın tamamını tek başına doldurmuş gibi davranır.\n\nDalton'un kısmi basınçlar yasası: Karışımın toplam basıncı, gazların kısmi basınçları toplamıdır.\nP(toplam) = P₁ + P₂ + ...\n\nBir gazın kısmi basıncı, mol kesriyle orantılıdır:\nP₁ = (n₁ / n(toplam)) · P(toplam)\n\nÖrnek: 1 mol O₂ ve 3 mol N₂ içeren kapta toplam basınç 2 atm ise O₂'nin kısmi basıncı 1/4 · 2 = 0,5 atm'dir.\n\nGünlük hayattan: Yükseklere çıkıldıkça havanın toplam basıncı azalır, oksijenin kısmi basıncı da düşer; dağcılar bu yüzden oksijen tüpü kullanır.",
+   "q": "Bir kapta 2 mol He ve 3 mol Ne gazı vardır, toplam basınç 10 atm'dir. He'nin kısmi basıncı kaç atm'dir?",
+   "choices": [
+    "2",
+    "4",
+    "5",
+    "6",
+    "8"
+   ],
+   "answer": 1,
+   "explain": "He'nin mol kesri 2/5. Kısmi basınç = 2/5 · 10 = 4 atm."
+  }
+ ],
+ "Çeşitlilik": [
+  {
+   "title": "Çözünme Süreci ve Çözünebilirlik",
+   "text": "Çözelti, bir maddenin (çözünen) başka bir madde (çözücü) içinde homojen olarak dağılmasıyla oluşan karışımdır.\n\nÇözünme sırasında üç şey olur: çözünen tanecikler birbirinden ayrılır, çözücü tanecikler arasında boşluk açılır ve çözücü ile çözünen tanecikleri arasında yeni etkileşimler kurulur. Su molekülleriyle çevrilmeye hidratasyon denir.\n\nBenzer benzeri çözer: Polar maddeler polar çözücülerde (tuz, şeker, alkol suda), apolar maddeler apolar çözücülerde (yağ benzinde, iyot karbon tetraklorürde) iyi çözünür. Yağ ile su bu yüzden karışmaz.\n\nÇözünme türleri: İyonik katılar suda iyonlarına ayrılarak çözünür (iyonik çözünme, NaCl → Na⁺ + Cl⁻). Şeker gibi moleküler maddeler molekül hâlinde dağılır (moleküler çözünme).",
+   "q": "Aşağıdaki madde çiftlerinden hangisi birbiri içinde iyi çözünmez?",
+   "choices": [
+    "Su - şeker",
+    "Su - etil alkol",
+    "Su - sofra tuzu",
+    "Benzin - zeytinyağı",
+    "Su - zeytinyağı"
+   ],
+   "answer": 4,
+   "explain": "Su polar, zeytinyağı apolardır. Benzer benzeri çözer kuralına göre birbirleri içinde çözünmezler."
+  },
+  {
+   "title": "Çözünürlük ve Etki Eden Faktörler",
+   "text": "Çözünürlük, belirli sıcaklık ve basınçta 100 g (ya da 100 mL) çözücüde çözünebilen en fazla madde miktarıdır. Her maddenin ayırt edici özelliğidir.\n\nÇözünürlüğü etkileyen faktörler:\n\nSıcaklık: Katıların çoğunun sudaki çözünürlüğü sıcaklıkla artar (sıcak suda daha çok şeker çözünür). Gazların çözünürlüğü ise sıcaklıkla azalır. Bu yüzden sıcak yaz günlerinde göllerde oksijen azalır, balıklar etkilenir.\n\nBasınç: Katı ve sıvıları neredeyse etkilemez. Gazların çözünürlüğü basınçla artar. Gazlı içecek şişesi açılınca basınç düşer ve CO₂ köpürerek çıkar.\n\nMadde cinsi: Çözücü ve çözünenin polarlığı belirleyicidir.\n\nKarıştırma ve toz hâline getirme çözünme hızını artırır ama çözünürlüğü değiştirmez.",
+   "q": "Gazlı bir içecek buzdolabından çıkarılıp sıcak bir ortamda açıldığında daha fazla köpürmesinin nedeni nedir?",
+   "choices": [
+    "Şeker gazı tutar.",
+    "Sıcaklık artınca gazların çözünürlüğü artar.",
+    "Sıcaklık artınca gazların çözünürlüğü azalır.",
+    "Basınç artınca çözünürlük azalır.",
+    "Karıştırma çözünürlüğü artırır."
+   ],
+   "answer": 2,
+   "explain": "Gazların sudaki çözünürlüğü sıcaklık arttıkça azalır; çözünemeyen CO₂ kabarcıklar hâlinde çıkar."
+  },
+  {
+   "title": "Çözeltilerin Sınıflandırılması",
+   "text": "Çözeltiler farklı ölçütlerle sınıflandırılır:\n\nÇözünen miktarına göre:\nDoymamış: Çözünürlükten daha az madde çözünmüştür; eklenen madde çözünmeye devam eder.\nDoymuş: Çözebileceği en fazla maddeyi çözmüştür; eklenen madde dibe çöker.\nAşırı doymuş: Çözünürlükten fazla madde çözünmüş, kararsız bir durumdur; küçük bir kristal eklenince fazlası hemen çöker.\n\nDerişime göre: Az çözünen içeren seyreltik, çok çözünen içeren derişik çözelti.\n\nElektrik iletkenliğine göre: İyon içeren (tuzlu su) elektrolit, iyon içermeyen (şekerli su) elektrolit olmayan çözelti.\n\nFiziksel hâline göre: Katı (alaşımlar), sıvı (tuzlu su), gaz (hava) çözeltiler.",
+   "q": "Doymuş bir şeker çözeltisine aynı sıcaklıkta biraz daha şeker eklenip karıştırılırsa ne gözlenir?",
+   "choices": [
+    "Eklenen şeker çözünmez, dibe çöker.",
+    "Çözelti aşırı doymuş olur.",
+    "Çözeltinin tamamı katılaşır.",
+    "Çözelti elektriği iletmeye başlar.",
+    "Şeker çözünür, çözelti derişikleşir."
+   ],
+   "answer": 0,
+   "explain": "Doymuş çözelti o sıcaklıkta daha fazla şeker çözemez; eklenen şeker dibe çöker."
+  },
+  {
+   "title": "Derişim Birimleri: Molarite ve ppm",
+   "text": "Derişim, çözeltideki çözünen miktarını belirtir.\n\nMolarite (M): 1 litre çözeltide çözünmüş maddenin mol sayısı.\nM = n / V (mol / L)\nÖrnek: 0,5 mol NaOH ile 250 mL çözelti hazırlanırsa M = 0,5 / 0,25 = 2 M olur.\n\nSeyreltme: Çözeltiye su eklendiğinde çözünen mol sayısı değişmez: M₁ · V₁ = M₂ · V₂\n\nppm (milyonda bir kısım): Çok seyreltik çözeltilerde kullanılır. 1 kg (10⁶ mg) çözeltide çözünen maddenin mg cinsinden miktarıdır. Suda 1 mg/kg kirletici varsa derişimi 1 ppm'dir. İçme suyundaki ağır metal ve flor derişimleri ppm ile ifade edilir.",
+   "q": "2 M'lık 300 mL tuz çözeltisine su eklenerek hacmi 1,2 L yapılıyor. Yeni çözeltinin derişimi kaç M olur?",
+   "choices": [
+    "4",
+    "8",
+    "0,25",
+    "0,5",
+    "1"
+   ],
+   "answer": 3,
+   "explain": "M₁ · V₁ = M₂ · V₂ → 2 · 0,3 = M₂ · 1,2 → M₂ = 0,5 M."
+  },
+  {
+   "title": "Koligatif Özellikler",
+   "text": "Koligatif özellikler, çözünen maddenin cinsine değil, çözeltideki çözünen tanecik sayısına bağlı olan özelliklerdir.\n\nKaynama noktası yükselmesi: Suya tuz eklenince su daha yüksek sıcaklıkta kaynar.\nDonma noktası alçalması: Tuzlu su 0 °C'nin altında donar. Kışın yollara tuz serpilmesi ve araçlara antifriz konması bu yüzdendir.\nBuhar basıncı düşmesi: Çözünen tanecikler yüzeydeki çözücü taneciklerinin buharlaşmasını azaltır.\nOsmotik basınç: Yarı geçirgen zardan suyun derişik tarafa geçmesi.\n\nİyonik maddeler suda iyonlarına ayrıldığı için etkileri daha büyüktür: 1 mol şeker 1 mol tanecik, 1 mol NaCl 2 mol, 1 mol CaCl₂ 3 mol tanecik verir.",
+   "q": "Eşit miktar suya eşit mol sayısında eklendiğinde aşağıdakilerden hangisi donma noktasını en çok düşürür?",
+   "choices": [
+    "KNO₃",
+    "CaCl₂",
+    "Şeker (C₁₂H₂₂O₁₁)",
+    "Glikoz (C₆H₁₂O₆)",
+    "NaCl"
+   ],
+   "answer": 1,
+   "explain": "CaCl₂ suda Ca²⁺ ve 2Cl⁻ olmak üzere 3 iyon verir; tanecik sayısı en fazla olduğu için donma noktasını en çok düşürür."
+  }
+ ],
+ "Sürdürülebilirlik": [
+  {
+   "title": "Yeşil Kimya ve Sürdürülebilirlik",
+   "text": "Yeşil kimya, kimyasal ürün ve süreçleri insan sağlığına ve çevreye en az zarar verecek şekilde tasarlama yaklaşımıdır. Atık oluştuktan sonra temizlemek yerine atığı baştan önlemeyi amaçlar.\n\nTemel ilkelerden bazıları:\nAtık oluşumunu önlemek.\nAtom ekonomisi: Başlangıç maddelerindeki atomların olabildiğince çoğunu ürüne dönüştürmek.\nDaha az zehirli maddeler ve güvenli çözücüler (örneğin su) kullanmak.\nEnerji verimliliği: Tepkimeleri mümkünse oda sıcaklığı ve basıncında yapmak.\nYenilenebilir hammaddeler kullanmak.\nDoğada parçalanabilen ürünler tasarlamak.\nKatalizör kullanarak daha az enerji ve madde harcamak.\n\nSürdürülebilirlik, bugünün ihtiyaçlarını gelecek nesillerin kaynaklarını tüketmeden karşılamaktır.",
+   "q": "Aşağıdakilerden hangisi yeşil kimya ilkelerine uygun değildir?",
+   "choices": [
+    "Biyolojik olarak parçalanabilen plastik üretmek",
+    "Katalizör kullanarak enerji tasarrufu sağlamak",
+    "Zehirli çözücü yerine su kullanmak",
+    "Tepkimeyi yüksek sıcaklık yerine oda sıcaklığında yapmak",
+    "Atığı oluştuktan sonra arıtmayı tercih etmek"
+   ],
+   "answer": 4,
+   "explain": "Yeşil kimyanın ilk ilkesi atığı oluşmadan önlemektir; sonradan arıtmak daha az tercih edilen yaklaşımdır."
+  },
+  {
+   "title": "Makro ve Mikro Ölçekli Deneyler",
+   "text": "Makro ölçekli deneyler okul laboratuvarlarında alışılmış miktarlarda (onlarca gram, yüzlerce mililitre) kimyasal kullanılarak yapılır.\n\nMikro ölçekli deneylerde aynı deney çok küçük miktarlarla (birkaç damla, miligramlar) yapılır. Plastik damlalıklar, kuyucuklu plakalar ve küçük tüpler kullanılır.\n\nMikro ölçeğin avantajları:\nDaha az kimyasal madde ve daha az atık.\nDaha düşük maliyet.\nDaha güvenli: Kaza ve zehirlenme riski azalır.\nDaha kısa sürede sonuç.\nEnerji tasarrufu.\n\nDezavantajı: Bazı gözlemlerin (renk, gaz çıkışı) zor görülmesi ve hassas ölçüm gerektirmesi. Mikro ölçekli deneyler, yeşil kimyanın okul laboratuvarındaki uygulamasıdır.",
+   "q": "Bir okulun asit-baz deneyini 100 mL'lik behers yerine kuyucuklu plakada birkaç damlayla yapmaya karar vermesinin en önemli çevresel yararı nedir?",
+   "choices": [
+    "Daha çok enerji harcanması",
+    "Deneyin daha uzun sürmesi",
+    "Oluşan kimyasal atığın azalması",
+    "Daha fazla gaz çıkması",
+    "Sonuçların değişmesi"
+   ],
+   "answer": 2,
+   "explain": "Mikro ölçekli deneyler çok az kimyasal kullandığı için atık miktarı büyük ölçüde azalır."
+  },
+  {
+   "title": "Atmosferdeki Tepkimeler ve Küresel Sorunlar",
+   "text": "Atmosferde gerçekleşen tepkimeler küresel çevre sorunlarına yol açar:\n\nAsit yağmurları: Fosil yakıtların yanmasıyla oluşan SO₂ ve azot oksitler (NOₓ) havadaki suyla tepkimeye girerek H₂SO₄ ve HNO₃ gibi asitler oluşturur. Ormanlara, göllere ve tarihî yapılara (mermer = CaCO₃) zarar verir.\n\nOzon tabakasının incelmesi: Eskiden spreylerde ve soğutucularda kullanılan CFC'ler stratosferde ışıkla parçalanır; açığa çıkan klor atomları ozonu (O₃) bozar. Ozon tabakası Güneş'in zararlı UV ışınlarını süzer.\n\nSera etkisi ve küresel ısınma: CO₂, CH₄ ve su buharı Dünya'dan yayılan ısıyı tutar. Fosil yakıt kullanımıyla artan CO₂ küresel ısınmayı hızlandırır.\n\nÇözüm: yenilenebilir enerji, filtreler, enerji verimliliği ve uluslararası anlaşmalar (Montreal, Paris).",
+   "q": "Tarihî mermer yapıların zamanla aşınmasına yol açan asit yağmurlarının oluşumunda en çok hangi gazlar etkilidir?",
+   "choices": [
+    "SO₂ ve NOₓ",
+    "He ve Ar",
+    "O₃ ve H₂",
+    "CFC ve He",
+    "O₂ ve N₂"
+   ],
+   "answer": 0,
+   "explain": "Kükürt dioksit ve azot oksitler suyla tepkimeye girip sülfürik ve nitrik asit oluşturur; bu asitler mermeri (CaCO₃) aşındırır."
+  }
+ ]
+}

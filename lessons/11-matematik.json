@@ -1,0 +1,222 @@
+{
+ "İstatistiksel Araştırma Süreci": [
+  {
+   "title": "İki Nicel Değişkenli Veriler",
+   "text": "İki nicel değişken arasındaki ilişkiyi incelemek için serpme (saçılım) grafiği kullanılır. Her bir gözlem, koordinat düzleminde bir noktadır: örneğin x ders çalışma süresi, y sınav notu.\n\nİlişkinin yönü:\nPozitif ilişki: x arttıkça y de artma eğilimindedir (noktalar sağa doğru yükselir). Çalışma süresi ve not.\nNegatif ilişki: x arttıkça y azalma eğilimindedir. Araç yaşı ve satış fiyatı.\nİlişki yok: Noktalar rastgele dağılmıştır. Ayakkabı numarası ve matematik notu.\n\nİlişkinin gücü: Noktalar bir doğruya ne kadar yakınsa ilişki o kadar güçlüdür. Korelasyon katsayısı (r) −1 ile 1 arasındadır; 1'e ya da −1'e yakınsa güçlü, 0'a yakınsa zayıf ilişki vardır.\n\nNoktalara en iyi uyan doğruya regresyon (eğilim) doğrusu denir; bu doğruyla tahmin yapılabilir.",
+   "q": "Bir şehirde hava sıcaklığı arttıkça satılan sıcak içecek miktarının azaldığı gözleniyor. Bu iki değişken arasındaki ilişki hangisidir?",
+   "choices": [
+    "Nedensellik yok, korelasyon 1",
+    "Doğrusal olmayan pozitif ilişki",
+    "Güçlü pozitif ilişki",
+    "Negatif ilişki",
+    "İlişki yok"
+   ],
+   "answer": 3,
+   "explain": "Bir değişken artarken diğeri azaldığı için ilişki negatiftir."
+  },
+  {
+   "title": "Başkalarının Oluşturduğu İki Nicel Değişkenli Verileri İnceleme",
+   "text": "Haberlerde iki değişken arasındaki ilişkiyi gösteren grafiklerle sık karşılaşırız. Bunları değerlendirirken dikkat edilmesi gerekenler:\n\nKorelasyon nedensellik değildir: İki değişkenin birlikte değişmesi, birinin diğerine neden olduğunu göstermez. Örneğin yaz aylarında dondurma satışları ile boğulma olayları birlikte artar; ama dondurma boğulmaya yol açmaz. İkisinin de nedeni sıcak havadır (üçüncü değişken).\n\nAykırı değerler: Diğerlerinden çok farklı tek bir nokta, ilişkinin gücünü olduğundan farklı gösterebilir.\n\nVeri aralığının dışına tahmin: Eğilim doğrusu, verilerin toplandığı aralık dışında güvenilir tahmin vermeyebilir.\n\nÖrneklem büyüklüğü ve seçimi: Az sayıda veriyle kurulan ilişki yanıltıcı olabilir.\n\nEksen ölçekleri: Eksenlerin farklı ölçeklenmesi ilişkiyi olduğundan güçlü ya da zayıf gösterebilir.",
+   "q": "Bir araştırmada bir ülkede yıllara göre internet kullanıcısı sayısı ile ortalama yaşam süresinin birlikte arttığı görülüyor. Hangi yorum en doğrudur?",
+   "choices": [
+    "Uzun yaşamak internet kullanımını artırır.",
+    "İki değişken arasında korelasyon vardır, ancak bu bir neden-sonuç ilişkisi olduğunu göstermez.",
+    "İki değişken arasında hiçbir ilişki yoktur.",
+    "Veriler kesinlikle yanlıştır.",
+    "İnternet kullanmak ömrü uzatır."
+   ],
+   "answer": 1,
+   "explain": "İki değişken birlikte artıyor; ancak ikisini de ekonomik ve teknolojik gelişme gibi üçüncü bir etken etkiliyor olabilir. Korelasyon nedensellik değildir."
+  }
+ ],
+ "Geometrik Şekiller": [
+  {
+   "title": "Dörtgenlerin Özellikleri",
+   "text": "Dört kenarlı kapalı şekillere dörtgen denir.\n\nTemel özellikler:\nİç açıların toplamı 360°'dir.\nDış açıların toplamı 360°'dir.\nİki köşegeni vardır.\n\nAlan hesapları:\nKöşegenleri dik kesişen dörtgenin alanı: (e · f) / 2.\nGenel dörtgenin alanı: ½ · e · f · sin α (α köşegenler arasındaki açı).\n\nKenar orta noktalarını birleştiren dörtgen her zaman bir paralelkenardır (Varignon paralelkenarı).\n\nDörtgen çeşitleri: Yamuk (bir çift kenar paralel), paralelkenar (iki çift kenar paralel), eşkenar dörtgen, dikdörtgen, kare, deltoit (iki çift komşu kenar eşit).",
+   "q": "Bir dörtgenin üç iç açısı 85°, 95° ve 110°'dir. Dördüncü iç açı kaç derecedir?",
+   "choices": [
+    "80",
+    "90",
+    "100",
+    "60",
+    "70"
+   ],
+   "answer": 4,
+   "explain": "İç açılar toplamı 360°'dir: 360 − (85 + 95 + 110) = 360 − 290 = 70°."
+  },
+  {
+   "title": "Özel Dörtgenler Arasındaki İlişkiler",
+   "text": "Özel dörtgenler birbirinin özel hâlleridir:\n\nYamuk: En az bir çift karşılıklı kenar paralel. İkizkenar yamukta paralel olmayan kenarlar eşit, taban açıları eşittir. Orta taban = (alt taban + üst taban) / 2.\nParalelkenar: Karşılıklı kenarlar paralel ve eşit, karşılıklı açılar eşittir. Köşegenler birbirini ortalar.\nEşkenar dörtgen: Bütün kenarları eşit paralelkenardır. Köşegenler birbirini dik keser ve açıortaydır.\nDikdörtgen: Bütün açıları 90° olan paralelkenardır. Köşegenler eşittir.\nKare: Hem eşkenar dörtgen hem dikdörtgendir. Köşegenler eşit, dik ve birbirini ortalar.\n\nİlişki zinciri: Her kare bir dikdörtgendir ve bir eşkenar dörtgendir. Her dikdörtgen ve her eşkenar dörtgen bir paralelkenardır. Ama her dikdörtgen bir kare değildir.",
+   "q": "Aşağıdaki ifadelerden hangisi her zaman doğrudur?",
+   "choices": [
+    "Her dikdörtgen bir karedir.",
+    "Her paralelkenar bir eşkenar dörtgendir.",
+    "Her kare bir eşkenar dörtgendir.",
+    "Her yamuk bir paralelkenardır.",
+    "Her eşkenar dörtgen bir karedir."
+   ],
+   "answer": 2,
+   "explain": "Karenin bütün kenarları eşittir ve karşılıklı kenarları paraleldir; bu yüzden her kare bir eşkenar dörtgendir."
+  },
+  {
+   "title": "Çokgenlerin Sınıflandırılması",
+   "text": "Çokgen, üç ya da daha fazla doğru parçasının uç uca birleşmesiyle oluşan kapalı düzlemsel şekildir. Kenar sayısına göre adlandırılır: üçgen, dörtgen, beşgen, altıgen...\n\nSınıflandırma:\nDışbükey (konveks) çokgen: Bütün iç açıları 180°'den küçüktür; herhangi iki iç noktayı birleştiren doğru parçası tamamen çokgenin içinde kalır.\nİçbükey (konkav) çokgen: En az bir iç açısı 180°'den büyüktür; içe doğru çöken bir köşesi vardır.\n\nDüzgün çokgen: Bütün kenarları ve bütün iç açıları eşit olan çokgendir (eşkenar üçgen, kare, düzgün altıgen).\nYalnızca kenarları eşit olması düzgün çokgen için yeterli değildir: eşkenar dörtgenin kenarları eşittir ama açıları eşit değilse düzgün değildir.\n\nDoğada ve mimaride düzgün çokgenler sık görülür: Arı peteklerindeki düzgün altıgenler, alanı en verimli kullanan şekillerden biridir.",
+   "q": "Kenarları eşit ama açıları eşit olmayan bir eşkenar dörtgen için hangisi doğrudur?",
+   "choices": [
+    "Düzgün çokgen değildir.",
+    "Çokgen değildir.",
+    "İç açılar toplamı 540°'dir.",
+    "Düzgün çokgendir.",
+    "İçbükey çokgendir."
+   ],
+   "answer": 0,
+   "explain": "Düzgün çokgen için hem kenarlar hem açılar eşit olmalıdır. Açıları eşit olmayan eşkenar dörtgen düzgün değildir."
+  },
+  {
+   "title": "Dışbükey Çokgenlerin Özellikleri",
+   "text": "n kenarlı dışbükey bir çokgende:\n\nİç açılar toplamı = (n − 2) · 180°\nBir köşeden çizilen köşegenler çokgeni (n − 2) üçgene ayırdığı için bu formül ortaya çıkar.\nDış açılar toplamı her zaman 360°'dir.\nBir köşeden çizilebilen köşegen sayısı: n − 3\nToplam köşegen sayısı: n(n − 3) / 2\n\nDüzgün çokgende:\nBir dış açı = 360° / n\nBir iç açı = 180° − 360° / n\n\nÖrnek: Düzgün altıgende bir dış açı 360 / 6 = 60°, bir iç açı 120°'dir; iç açılar toplamı (6 − 2) · 180 = 720°'dir; toplam köşegen sayısı 6 · 3 / 2 = 9'dur.",
+   "q": "İç açıları toplamı 1080° olan dışbükey çokgen kaç kenarlıdır?",
+   "choices": [
+    "10",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "answer": 3,
+   "explain": "(n − 2) · 180 = 1080 → n − 2 = 6 → n = 8 (sekizgen)."
+  },
+  {
+   "title": "Çokgenlerle İlgili Problemler",
+   "text": "Çokgen problemlerinde sık kullanılan stratejiler:\n\nDış açıdan kenar sayısı bulmak: Düzgün çokgende dış açı 360 / n olduğundan, bir dış açı biliniyorsa n = 360 / dış açı.\nÖrnek: Bir iç açısı 140° olan düzgün çokgenin dış açısı 40°, kenar sayısı 360 / 40 = 9'dur.\n\nAlanı parçalara bölmek: Düzgün altıgen 6 eşkenar üçgenden oluşur. Kenarı a olan düzgün altıgenin alanı 6 · (a²√3 / 4).\n\nKaplama (döşeme) problemleri: Bir noktada birleşen açılar toplamı 360° olmalıdır. Eşkenar üçgen (6 tane), kare (4 tane) ve düzgün altıgen (3 tane) düzlemi boşluksuz kaplayabilir; düzgün beşgen kaplayamaz (108° 360'ı tam bölmez).\n\nÇevre ve alan karşılaştırmaları, özellikle aynı çevreye sahip şekillerde en büyük alanı bulma problemleri.",
+   "q": "Bir iç açısı 150° olan düzgün çokgen kaç kenarlıdır?",
+   "choices": [
+    "10",
+    "12",
+    "15",
+    "18",
+    "8"
+   ],
+   "answer": 1,
+   "explain": "Dış açı 180 − 150 = 30°. Kenar sayısı 360 / 30 = 12."
+  }
+ ],
+ "Nicelikler ve Değişimler (1)": [
+  {
+   "title": "Trigonometrik Fonksiyonlar",
+   "text": "Birim çember, merkezi orijin ve yarıçapı 1 olan çemberdir. Pozitif x ekseniyle α açısı yapan yarıçapın çemberi kestiği noktanın koordinatları (cos α, sin α)'dır.\n\nAçı ölçü birimleri: 180° = π radyan. Örneğin 90° = π/2, 60° = π/3.\n\nİşaretler (bölgelere göre):\nI. bölge (0°-90°): hepsi pozitif.\nII. bölge (90°-180°): yalnızca sin pozitif.\nIII. bölge (180°-270°): tan ve cot pozitif.\nIV. bölge (270°-360°): yalnızca cos pozitif.\n\nFonksiyonların özellikleri:\nsin x ve cos x: Görüntü kümesi [−1, 1], periyot 2π (360°).\ntan x: Periyot π (180°); cos x = 0 olan noktalarda tanımsızdır.\nf(x) = a · sin(bx) için genlik |a|, periyot 2π / |b|'dir.\n\nTrigonometrik fonksiyonlar gel-git, ses dalgaları, alternatif akım gibi tekrar eden olayları modellemek için kullanılır.",
+   "q": "f(x) = 3 · sin(2x) fonksiyonunun periyodu kaçtır?",
+   "choices": [
+    "2π",
+    "3π",
+    "6π",
+    "π/2",
+    "π"
+   ],
+   "answer": 4,
+   "explain": "Periyot 2π / |b| = 2π / 2 = π."
+  },
+  {
+   "title": "Trigonometrik Denklemler",
+   "text": "Trigonometrik denklem, bilinmeyenin bir trigonometrik fonksiyonun içinde bulunduğu denklemdir.\n\nÇözüm yöntemi:\n1. Denklemi sin x = a, cos x = a ya da tan x = a biçimine getir.\n2. Birim çemberde bu değeri veren açıları bul.\n3. Periyodu ekleyerek genel çözümü yaz.\n\nsin x = a için çözümler: x = α + 2kπ ve x = π − α + 2kπ\ncos x = a için: x = α + 2kπ ve x = −α + 2kπ\ntan x = a için: x = α + kπ (k tam sayı)\n\nÖrnek: sin x = 1/2 denkleminin [0, 2π) aralığındaki çözümleri: x = π/6 (30°) ve x = 5π/6 (150°).\n\nÖnemli: sin x ve cos x değerleri [−1, 1] aralığı dışında olamaz. sin x = 2 denkleminin çözümü yoktur.",
+   "q": "cos x = 0 denkleminin [0°, 360°) aralığındaki çözümleri hangileridir?",
+   "choices": [
+    "Yalnızca 90°",
+    "0° ve 180°",
+    "90° ve 270°",
+    "45° ve 225°",
+    "60° ve 300°"
+   ],
+   "answer": 2,
+   "explain": "Birim çemberde x koordinatının 0 olduğu noktalar (0, 1) ve (0, −1)'dir; bunlar 90° ve 270°'ye karşılık gelir."
+  }
+ ],
+ "Nicelikler ve Değişimler (2)": [
+  {
+   "title": "Üstel Fonksiyonlar",
+   "text": "a > 0 ve a ≠ 1 olmak üzere f(x) = aˣ biçimindeki fonksiyonlara üstel fonksiyon denir.\n\nÖzellikler:\nTanım kümesi tüm gerçek sayılar, görüntü kümesi (0, ∞)'dur. Üstel fonksiyon hiçbir zaman sıfır ya da negatif olmaz.\nGrafik her zaman (0, 1) noktasından geçer, çünkü a⁰ = 1.\na > 1 ise fonksiyon artandır (üstel büyüme).\n0 < a < 1 ise fonksiyon azalandır (üstel azalma).\nx ekseni (y = 0) yatay asimptottur.\n\nÜstel büyüme ve azalma modelleri:\nBakteri çoğalması: Her saat ikiye katlanan 100 bakteri, t saat sonra 100 · 2ᵗ olur.\nBileşik faiz: A = P(1 + r)ᵗ\nRadyoaktif bozunma ve ilacın vücuttan atılması: Yarılanma ömrü ile modellenir.\n\ne ≈ 2,718 sayısı doğal büyüme süreçlerinde sık kullanılan özel bir tabandır.",
+   "q": "Bir bakteri kolonisi her 3 saatte ikiye katlanıyor. Başlangıçta 500 bakteri varsa 12 saat sonra kaç bakteri olur?",
+   "choices": [
+    "8000",
+    "16 000",
+    "2000",
+    "4000",
+    "6000"
+   ],
+   "answer": 0,
+   "explain": "12 saatte 12 / 3 = 4 kez ikiye katlanır: 500 · 2⁴ = 500 · 16 = 8000."
+  },
+  {
+   "title": "Üstel Fonksiyonun Tersi: Logaritma",
+   "text": "Üstel fonksiyon bire bir ve örten (görüntü kümesi (0, ∞) alınırsa) olduğu için tersi vardır. Bu ters fonksiyona logaritma fonksiyonu denir.\n\naˣ = b ⟺ x = logₐ b\nOkunuşu: a tabanında b'nin logaritması. Yani a'nın kaçıncı kuvveti b'yi verir?\n\nÖrnekler:\n2³ = 8 ⟺ log₂ 8 = 3\n10² = 100 ⟺ log 100 = 2 (10 tabanında logaritma kısaca log yazılır)\ne tabanında logaritmaya doğal logaritma denir: ln x.\n\nTaban ve sayı için koşullar: a > 0, a ≠ 1 ve b > 0. Negatif sayının ya da sıfırın logaritması tanımsızdır.\n\nf(x) = aˣ ve f⁻¹(x) = logₐ x grafikleri y = x doğrusuna göre simetriktir.",
+   "q": "log₃ 81 değeri kaçtır?",
+   "choices": [
+    "27",
+    "243",
+    "3",
+    "4",
+    "9"
+   ],
+   "answer": 3,
+   "explain": "3'ün kaçıncı kuvveti 81'dir? 3⁴ = 81, dolayısıyla log₃ 81 = 4."
+  },
+  {
+   "title": "Logaritma Fonksiyonu ve Özellikleri",
+   "text": "f(x) = logₐ x fonksiyonunun özellikleri:\nTanım kümesi (0, ∞), görüntü kümesi tüm gerçek sayılardır.\nGrafik her zaman (1, 0) noktasından geçer: logₐ 1 = 0.\nlogₐ a = 1.\na > 1 ise artan, 0 < a < 1 ise azalandır.\ny ekseni (x = 0) düşey asimptottur.\n\nLogaritma kuralları:\nlogₐ(x · y) = logₐ x + logₐ y\nlogₐ(x / y) = logₐ x − logₐ y\nlogₐ(xⁿ) = n · logₐ x\nTaban değiştirme: logₐ b = log b / log a\na^(logₐ x) = x\n\nKullanım alanları: Deprem büyüklüğü (Richter ölçeği), ses şiddeti (desibel) ve asitlik (pH) logaritmik ölçeklerdir. Richter ölçeğinde 1 birimlik artış, yer hareketinin genliğinde 10 katlık artış demektir.",
+   "q": "log 2 ≈ 0,30 ise log 8 yaklaşık kaçtır?",
+   "choices": [
+    "0,80",
+    "0,90",
+    "1,20",
+    "2,40",
+    "0,60"
+   ],
+   "answer": 1,
+   "explain": "log 8 = log 2³ = 3 · log 2 ≈ 3 · 0,30 = 0,90."
+  },
+  {
+   "title": "Üstel ve Logaritmik Denklem ve Eşitsizlikler",
+   "text": "Üstel denklemler:\nTabanlar eşitlenebiliyorsa üsler eşitlenir: 2ˣ = 32 → 2ˣ = 2⁵ → x = 5.\nTabanlar eşitlenemiyorsa iki tarafın logaritması alınır: 3ˣ = 7 → x = log₃ 7.\n\nLogaritmik denklemler:\nlogₐ f(x) = b → f(x) = aᵇ\nÇözüm bulunduktan sonra logaritmanın içinin pozitif olduğu mutlaka kontrol edilmelidir.\n\nEşitsizlikler:\nTaban 1'den büyükse eşitsizlik yön değiştirmez: 2ˣ > 8 → x > 3.\nTaban 0 ile 1 arasındaysa eşitsizlik yön değiştirir: (1/2)ˣ > 1/8 → x < 3.\n\nUygulama: Yıllık %10 faizle paranın ne zaman ikiye katlanacağı: (1,1)ᵗ = 2 → t = log 2 / log 1,1 ≈ 7,3 yıl.",
+   "q": "4ˣ⁺¹ = 64 denkleminin çözümü kaçtır?",
+   "choices": [
+    "3",
+    "4",
+    "5",
+    "1",
+    "2"
+   ],
+   "answer": 4,
+   "explain": "64 = 4³ olduğundan x + 1 = 3 → x = 2."
+  }
+ ],
+ "Nicelikler ve Değişimler (3)": [
+  {
+   "title": "Fonksiyonların Bileşkesi",
+   "text": "f ve g iki fonksiyon olmak üzere (f ∘ g)(x) = f(g(x)) fonksiyonuna f ile g'nin bileşkesi denir. İşlem sağdan sola yapılır: Önce g uygulanır, çıkan sonuç f'ye verilir.\n\nÖrnek: f(x) = 2x + 1 ve g(x) = x².\n(f ∘ g)(x) = f(x²) = 2x² + 1\n(g ∘ f)(x) = g(2x + 1) = (2x + 1)²\nGörüldüğü gibi f ∘ g ≠ g ∘ f; bileşke işleminin değişme özelliği yoktur.\n\nBileşke işleminin birleşme özelliği vardır: f ∘ (g ∘ h) = (f ∘ g) ∘ h.\nBirim fonksiyon I(x) = x, bileşkenin etkisiz elemanıdır: f ∘ I = I ∘ f = f.\nf ∘ f⁻¹ = f⁻¹ ∘ f = I.\n\nGünlük örnek: Bir ürüne önce %20 zam (g), sonra 10 TL indirim (f) yapılması bileşke fonksiyonla modellenir: f(g(x)) = 1,2x − 10.",
+   "q": "f(x) = x − 3 ve g(x) = 2x olduğuna göre (f ∘ g)(5) kaçtır?",
+   "choices": [
+    "16",
+    "4",
+    "7",
+    "10",
+    "13"
+   ],
+   "answer": 2,
+   "explain": "Önce g(5) = 10, sonra f(10) = 10 − 3 = 7."
+  },
+  {
+   "title": "Fonksiyonlarda Dört İşlem",
+   "text": "Tanım kümeleri kesişen iki fonksiyonla dört işlem yapılabilir:\n(f + g)(x) = f(x) + g(x)\n(f − g)(x) = f(x) − g(x)\n(f · g)(x) = f(x) · g(x)\n(f / g)(x) = f(x) / g(x), g(x) ≠ 0\n\nYeni fonksiyonun tanım kümesi, f ve g'nin tanım kümelerinin kesişimidir. Bölme işleminde ayrıca g(x) = 0 yapan değerler çıkarılır.\n\nÖrnek: f(x) = √x ve g(x) = x − 4.\n(f / g)(x) = √x / (x − 4). Tanım kümesi: x ≥ 0 ve x ≠ 4.\n\nUygulama: Bir şirketin gelir fonksiyonu G(x), gider fonksiyonu M(x) ise kâr fonksiyonu K(x) = G(x) − M(x)'tir. Ürün başına ortalama maliyet ise M(x) / x'tir.",
+   "q": "f(x) = x² − 1 ve g(x) = x + 1 ise (f / g)(x) fonksiyonu hangisidir? (x ≠ −1)",
+   "choices": [
+    "x − 1",
+    "x² + x",
+    "1 / (x − 1)",
+    "x",
+    "x + 1"
+   ],
+   "answer": 0,
+   "explain": "x² − 1 = (x − 1)(x + 1) olduğundan (x² − 1) / (x + 1) = x − 1 (x ≠ −1)."
+  }
+ ]
+}

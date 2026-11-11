@@ -1,0 +1,254 @@
+{
+ "Coğrafyanın Doğası": [
+  {
+   "title": "Coğrafi Bakış",
+   "text": "Coğrafya, insan ile doğal çevre arasındaki etkileşimi mekân üzerinden inceleyen bilimdir. Coğrafi bakış, bir olaya bakarken şu soruları sormaktır: Nerede? Neden orada? Çevresiyle nasıl bir ilişkisi var? Zamanla nasıl değişiyor?\n\nCoğrafi bakışın temel kavramları:\nMekân: Doğal ve beşerî özellikleriyle bir yer.\nKonum: Mutlak konum (enlem ve boylamla kesin yer) ve göreceli konum (çevresine göre yer, örneğin boğazların kıyısında olmak).\nEtkileşim: İnsanın doğayı değiştirmesi ve doğanın insanı etkilemesi.\nÖlçek: Olayın yerel, bölgesel ya da küresel boyutu.\n\nBir coğrafyacı, örneğin İstanbul'un büyük bir şehir olmasını yalnızca nüfusla değil; boğaz konumu, ticaret yolları ve tarihî süreçle birlikte açıklar.",
+   "q": "Bir şehrin önemini, iki kıta arasında ve önemli ticaret yolları üzerinde bulunmasıyla açıklamak hangi kavramla ilgilidir?",
+   "choices": [
+    "Göreceli konum",
+    "Ölçek",
+    "Yükselti",
+    "Matematik konum",
+    "Mutlak konum"
+   ],
+   "answer": 0,
+   "explain": "Bir yerin çevresindeki yerlere ve ulaşım yollarına göre durumu göreceli (özel) konumdur."
+  }
+ ],
+ "Mekânsal Bilgi Teknolojileri": [
+  {
+   "title": "CBS ve Uzaktan Algılamanın Uygulama Alanları",
+   "text": "Coğrafi Bilgi Sistemleri (CBS), konumla ilişkili verileri toplayan, depolayan, analiz eden ve haritalarla sunan bilgisayar sistemleridir. Veriler katmanlar hâlinde tutulur: yollar, nüfus, akarsular, binalar ayrı ayrı katmanlardır ve üst üste konarak sorgulanır.\n\nUzaktan algılama, yeryüzü hakkında uydu, uçak ya da insansız hava aracı gibi araçlarla, temas etmeden veri toplamaktır.\n\nUygulama alanları:\nAfet yönetimi: Deprem sonrası hasar tespiti, sel riski haritaları.\nTarım: Ürün deseni ve kuraklık takibi.\nŞehir planlama: Yeni okul, hastane yerinin seçimi.\nÇevre: Orman yangını, buzul erimesi, kıyı değişiminin izlenmesi.\nUlaşım: Navigasyon uygulamaları ve en kısa yol hesaplama.\n\nGPS (Küresel Konumlama Sistemi), uydular yardımıyla bir noktanın konumunu belirler ve CBS'ye veri sağlar.",
+   "q": "Bir belediye, yeni yapılacak hastane için nüfus yoğunluğu, ulaşım yolları ve mevcut sağlık kuruluşları katmanlarını üst üste getirerek en uygun yeri belirliyor. Belediye hangi teknolojiden yararlanmıştır?",
+   "choices": [
+    "Sismograf",
+    "Fiziki harita",
+    "Pusula",
+    "Coğrafi Bilgi Sistemleri",
+    "Barometre"
+   ],
+   "answer": 3,
+   "explain": "Farklı veri katmanlarını üst üste getirip mekânsal analiz yapmak CBS'nin temel özelliğidir."
+  },
+  {
+   "title": "Mekânsal Verilerin Haritalara Aktarılması",
+   "text": "Harita, yeryüzünün tamamının ya da bir bölümünün belirli bir ölçekle küçültülerek düzleme aktarılmış çizimidir.\n\nÖlçek, haritadaki uzunluğun gerçek uzunluğa oranıdır. Örneğin 1/100 000 ölçekli haritada 1 cm, gerçekte 100 000 cm = 1 km'dir.\nBüyük ölçekli harita (1/50 000 gibi): Paydası küçüktür; dar alanı çok ayrıntılı gösterir.\nKüçük ölçekli harita (1/5 000 000 gibi): Paydası büyüktür; geniş alanı az ayrıntıyla gösterir.\n\nVerilerin haritaya aktarılmasında farklı yöntemler kullanılır:\nNoktalar (nüfus dağılışı), çizgiler (yollar, akarsular), alanlar (orman), renk tonları (yoğunluk), izohipsler (yükselti), oklar (göç yönü), grafik ve diyagramlar.\n\nHaritada lejant (açıklama), ölçek, başlık ve yön oku bulunmalıdır.",
+   "q": "1/200 000 ölçekli bir haritada iki şehir arası 5 cm ise gerçek uzaklık kaç km'dir?",
+   "choices": [
+    "4",
+    "10",
+    "40",
+    "100",
+    "1"
+   ],
+   "answer": 1,
+   "explain": "5 · 200 000 = 1 000 000 cm = 10 km."
+  }
+ ],
+ "Doğal Sistemler ve Süreçler": [
+  {
+   "title": "Tektonik Süreçler",
+   "text": "Yer kabuğu levha adı verilen büyük parçalardan oluşur. Levhalar, altlarındaki magmadaki konveksiyon akımlarıyla hareket eder. Bu hareketleri oluşturan iç kuvvetlerin işlerine tektonik süreçler denir.\n\nOrojenez (dağ oluşumu): Levhalar çarpışınca kıvrılma ve kırılma olur; Alp-Himalaya kuşağı ve Türkiye'deki Toroslar ile Kuzey Anadolu Dağları böyle oluşmuştur.\nEpirojenez (kıta oluşumu): Geniş alanların yavaşça alçalıp yükselmesidir.\nDepremler: Levhalardaki gerilimin fay hatları boyunca aniden boşalmasıyla oluşur. Türkiye'de Kuzey Anadolu, Doğu Anadolu ve Batı Anadolu fay sistemleri önemlidir.\nVolkanizma: Magmanın yeryüzüne çıkmasıdır. Erciyes, Hasan, Nemrut, Ağrı Türkiye'deki sönmüş volkanlardır.\n\nTürkiye, Avrasya, Afrika ve Arap levhalarının etkileşim alanında yer aldığı için deprem riski yüksek bir ülkedir.",
+   "q": "Türkiye'de deprem riskinin yüksek olmasının temel nedeni nedir?",
+   "choices": [
+    "Akarsularının kısa olması",
+    "Karasal iklimin görülmesi",
+    "Üç tarafının denizlerle çevrili olması",
+    "Ortalama yükseltisinin fazla olması",
+    "Levhaların etkileşim alanında ve genç bir kıvrım kuşağında bulunması"
+   ],
+   "answer": 4,
+   "explain": "Türkiye Afrika, Arap ve Avrasya levhaları arasında, Alp-Himalaya kuşağında yer alır; bu levha hareketleri aktif fay hatları oluşturur."
+  },
+  {
+   "title": "İklim ve Kayaç Yapısının Aşınma ve Çözünmeye Etkisi",
+   "text": "Kayaçlar dış etkenlerle ufalanır ve çözünür. Buna çözülme (ayrışma) denir ve aşınmanın ilk adımıdır.\n\nFiziksel (mekanik) çözülme: Kayaç kimyasal yapısı değişmeden parçalanır. Gece-gündüz sıcaklık farkının büyük olduğu çöllerde ve suyun donup çözüldüğü soğuk yerlerde etkilidir.\n\nKimyasal çözülme: Kayaç su ile tepkimeye girerek yapısı değişir. Sıcak ve nemli iklimlerde (Ekvator çevresi) en etkili olandır.\n\nKayaç yapısı da önemlidir: Kalker (kireç taşı), jips ve kaya tuzu gibi kayaçlar suda kolay çözünür. Bu çözünmeyle oluşan şekillere karstik şekiller denir: mağara, obruk, polye, traverten (Pamukkale), sarkıt ve dikit. Türkiye'de Toroslar karstik şekiller açısından zengindir.",
+   "q": "Pamukkale travertenleri ve Toroslar'daki mağaraların oluşumunda en etkili süreç hangisidir?",
+   "choices": [
+    "Rüzgâr aşındırması",
+    "Buzul aşındırması",
+    "Kalker gibi kayaçların su ile kimyasal çözünmesi",
+    "Volkanik püskürme",
+    "Dalga birikimi"
+   ],
+   "answer": 2,
+   "explain": "Kalkerli kayaçların karbondioksitli suyla çözünmesi ve çözünen maddelerin yeniden çökelmesi karstik şekilleri oluşturur."
+  },
+  {
+   "title": "Aşınım ve Birikim Şekilleri",
+   "text": "Dış kuvvetler yeryüzünü aşındırır, taşıdıkları malzemeyi başka yerlerde biriktirir.\n\nAkarsular: En etkili dış kuvvettir. Aşındırma şekilleri: V vadi, kanyon (Ihlara, Köprülü), dev kazanı. Birikim şekilleri: Delta (Çukurova, Bafra, Çarşamba), birikinti konisi, taraça, menderes.\n\nRüzgâr: Kurak bölgelerde etkilidir. Aşındırma şekli mantar kaya; birikim şekli kum tepesi (barkan). Türkiye'de Karapınar (Konya) çevresinde görülür.\n\nBuzullar: Aşındırma şekilleri sirk ve U vadi; birikim şekli moren. Türkiye'de yüksek dağlarda (Ağrı, Erciyes, Kaçkarlar) görülür.\n\nDalgalar: Aşındırma şekli falez; birikim şekilleri kıyı oku, lagün (Köyceğiz), tombolo.\n\nAyrıca Kapadokya'daki peri bacaları, volkanik tüflerin sel ve akarsularla aşınmasından oluşur.",
+   "q": "Aşağıdaki şekillerden hangisi akarsuların biriktirmesiyle oluşmuştur?",
+   "choices": [
+    "Çukurova Deltası",
+    "Sirk",
+    "Kanyon",
+    "Falez",
+    "Mantar kaya"
+   ],
+   "answer": 0,
+   "explain": "Delta, akarsuyun taşıdığı malzemeyi denize döküldüğü yerde biriktirmesiyle oluşur. Kanyon ise akarsu aşındırmasıdır."
+  },
+  {
+   "title": "Yeryüzü Şekilleri ile Gözlem ve Saha Çalışması",
+   "text": "Coğrafya bir saha bilimidir. Yeryüzü şekillerini en iyi anlamanın yolu onları yerinde gözlemlemektir.\n\nSaha çalışması adımları:\n1. Hazırlık: Araştırma sorusunu belirle (örneğin: Okulumuzun yakınındaki dere vadisi nasıl oluştu?). Haritalar ve uydu görüntülerini incele.\n2. Gözlem ve veri toplama: Fotoğraf çek, kroki çiz, GPS ile konum al, ölçüm yap, yerel halkla görüşme yap.\n3. Değerlendirme: Verileri tablo, grafik ve haritalara aktar.\n4. Sonuç ve rapor: Bulguları açıkla, sunum hazırla.\n\nGüvenlik kuralları: Bir öğretmen eşliğinde ve grupla gitmek, uygun kıyafet ve ilk yardım malzemesi bulundurmak, doğaya ve özel mülke zarar vermemek.\n\nSaha çalışması, sınıfta öğrenilen kavramları gerçek yer şekilleriyle ilişkilendirmeyi sağlar.",
+   "q": "Saha çalışmasında elde edilen verilerin konumlarını kesin olarak kaydetmek için hangi araç kullanılır?",
+   "choices": [
+    "Higrometre",
+    "Rüzgâr gülü",
+    "Termometre",
+    "GPS",
+    "Barometre"
+   ],
+   "answer": 3,
+   "explain": "GPS, uydular yardımıyla bulunulan noktanın enlem ve boylamını kesin olarak belirler."
+  },
+  {
+   "title": "Yeryüzü Şekilleri ile Beşerî Faaliyetler",
+   "text": "Yeryüzü şekilleri insanların nerede yaşayacağını ve ne iş yapacağını etkiler; insanlar da yeryüzü şekillerini değiştirir.\n\nYer şekillerinin etkileri:\nDüz ve verimli ovalar (delta ovaları, Konya Ovası) tarım ve yerleşme için uygundur; nüfus yoğundur.\nEngebeli ve yüksek alanlarda tarım zor, ulaşım pahalıdır; hayvancılık ve yayla turizmi öne çıkar.\nKıyı şekilleri liman yerini belirler; girintili çıkıntılı kıyılar doğal limanlara uygundur.\nKarstik alanlar ve peri bacaları turizm geliri sağlar.\n\nİnsanın yeryüzü şekillerine etkileri:\nBarajlar, tüneller, viyadükler, kıyı dolguları, maden ocakları ve teraslama. Bu müdahaleler yarar sağlarken heyelan, erozyon ve ekosistem bozulması gibi riskler de oluşturabilir.",
+   "q": "Doğu Karadeniz'de yerleşmelerin dağınık olmasının ve çay tarımının teraslarla yapılmasının temel nedeni nedir?",
+   "choices": [
+    "Yağışın az olması",
+    "Arazinin engebeli ve eğimli olması",
+    "Nüfusun çok az olması",
+    "Kıyıların düz olması",
+    "Sanayinin gelişmiş olması"
+   ],
+   "answer": 1,
+   "explain": "Dağlar kıyıya paralel uzandığı için düz alan azdır; arazi eğimli olduğundan yerleşme dağınık, tarım teraslıdır."
+  }
+ ],
+ "Beşerî Sistemler ve Süreçler": [
+  {
+   "title": "Yerleşmelerin Kuruluşu ve Gelişimi",
+   "text": "İnsanlar yerleşme yeri seçerken doğal ve beşerî etkenleri göz önünde bulundurur.\n\nDoğal etkenler:\nSu kaynakları: Akarsu ve göl kenarları, kaynak suyu bulunan yerler.\nİklim: Aşırı sıcak, soğuk ve kurak yerler az tercih edilir.\nYer şekilleri: Düz ve verimli alanlar; taşkından korunmak için hafif yüksek yamaçlar.\nToprak verimliliği ve doğal kaynaklar (madenler, ormanlar).\n\nBeşerî etkenler:\nGüvenlik (tarihte tepe üstündeki kaleler), ulaşım yollarının kesiştiği yerler, ticaret, sanayi ve iş olanakları, siyasi kararlar (Ankara'nın başkent olması).\n\nYerleşmeler zamanla büyür ya da küçülür. Sanayileşme ve kentleşme ile köyden kente göç artar; ulaşım hatları boyunca uzanan şeritler hâlinde gelişmeler görülür.",
+   "q": "Tarihte pek çok yerleşmenin kalelerle çevrili tepeler üzerine kurulmasının temel nedeni hangisidir?",
+   "choices": [
+    "Su kaynağı",
+    "Ilıman iklim",
+    "Maden yatakları",
+    "Verimli toprak",
+    "Güvenlik"
+   ],
+   "answer": 4,
+   "explain": "Yüksek ve korunaklı tepeler, düşman saldırılarına karşı savunmayı kolaylaştırdığı için tercih edilmiştir."
+  },
+  {
+   "title": "Yerleşmelerin Fonksiyonları",
+   "text": "Bir yerleşmenin fonksiyonu, o yerleşmede öne çıkan ekonomik ve sosyal etkinliktir. Bir şehrin birden fazla fonksiyonu olabilir.\n\nÖrnekler:\nSanayi: Kocaeli, Bursa, Gaziantep.\nLiman ve ticaret: Mersin, İzmir, İskenderun.\nTurizm: Antalya, Muğla (Bodrum, Fethiye), Nevşehir (Kapadokya).\nMadencilik: Zonguldak (taş kömürü), Soma (linyit).\nİdari: Ankara (başkent).\nTarım: Çukurova ve Konya Ovası'ndaki şehirler.\nKültür ve eğitim: Üniversite kentleri.\nDinî: Konya (Mevlâna), Şanlıurfa.\n\nFonksiyonlar zamanla değişebilir: Bir maden kenti madenler tükenince turizme ya da sanayiye yönelebilir.",
+   "q": "Zonguldak şehrinin gelişmesinde öne çıkan fonksiyon hangisidir?",
+   "choices": [
+    "Liman ve balıkçılık",
+    "Turizm",
+    "Madencilik (taş kömürü)",
+    "İdari",
+    "Dinî"
+   ],
+   "answer": 2,
+   "explain": "Zonguldak, Türkiye'nin taş kömürü yataklarının bulunduğu yerdir ve madencilik şehrin gelişmesinde belirleyicidir."
+  }
+ ],
+ "Ekonomik Faaliyetler ve Etkileri": [
+  {
+   "title": "Ekonomik Faaliyetlerin Özellikleri",
+   "text": "Ekonomik faaliyetler, insanların ihtiyaçlarını karşılamak için mal ve hizmet üretmesi, dağıtması ve tüketmesidir.\n\nBu faaliyetlerin nerede ve nasıl yapılacağını iki grup etken belirler:\n\nDoğal etkenler: İklim, yer şekilleri, toprak, su kaynakları, madenler ve enerji kaynakları. Örneğin muz ve turunçgil tarımı ılık Akdeniz kıyılarında, fındık yağışlı Karadeniz'de yapılır.\n\nBeşerî etkenler: Sermaye, teknoloji, nitelikli iş gücü, ulaşım, pazar, devlet politikaları ve teşvikler. Örneğin otomotiv sanayi büyük pazar ve limanlara yakın Marmara'da yoğunlaşmıştır.\n\nTeknoloji geliştikçe doğal etkenlerin sınırlayıcılığı azalır: Seralarla iklim kontrol edilir, sulama ile kurak alanlar tarıma açılır (GAP).",
+   "q": "Güneydoğu Anadolu'da GAP ile sulamanın yaygınlaşmasının pamuk üretimini artırması aşağıdakilerden hangisine örnektir?",
+   "choices": [
+    "Teknolojinin doğal koşulların sınırlayıcılığını azaltmasına",
+    "Nüfusun azalmasına",
+    "Madenlerin tükenmesine",
+    "Turizmin gelişmesine",
+    "Doğal etkenlerin her zaman belirleyici olduğuna"
+   ],
+   "answer": 0,
+   "explain": "Sulama projeleri yaz kuraklığının olumsuz etkisini azaltmış; teknoloji doğal koşulların sınırlayıcılığını aşmayı sağlamıştır."
+  },
+  {
+   "title": "Ekonomik Sektörler ve Gelişmişlik",
+   "text": "Ekonomik faaliyetler dört sektörde toplanır:\n\nBirincil (ilkel) sektör: Doğadan doğrudan yararlanma. Tarım, hayvancılık, ormancılık, balıkçılık, madencilik.\nİkincil sektör: Hammaddeyi işleyerek ürün hâline getirme. Sanayi, imalat, enerji üretimi, inşaat.\nÜçüncül sektör: Hizmetler. Ticaret, ulaşım, eğitim, sağlık, turizm, bankacılık.\nDördüncül sektör: Bilgi üretimi. Araştırma-geliştirme, yazılım, danışmanlık.\n\nGelişmişlikle ilişkisi: Gelişmekte olan ülkelerde çalışanların büyük kısmı birincil sektördedir. Ülke geliştikçe çalışanlar sırasıyla sanayiye ve hizmetlere kayar. Gelişmiş ülkelerde (ABD, Almanya, Japonya) çalışanların çoğu hizmet sektöründedir; tarımda çalışanların payı %5'in altındadır ama makineleşme nedeniyle üretim yüksektir.",
+   "q": "Çalışan nüfusun %70'inin tarımda çalıştığı bir ülke için hangisi söylenebilir?",
+   "choices": [
+    "Tarımda makineleşme çok yüksektir.",
+    "Gelişmiş bir sanayi ülkesidir.",
+    "Hizmet sektörü en büyük sektördür.",
+    "Ekonomisi büyük ölçüde birincil sektöre dayanır, gelişmişlik düzeyi düşüktür.",
+    "Dördüncül sektörde öncüdür."
+   ],
+   "answer": 3,
+   "explain": "Çalışanların çoğunun tarımda olması ekonominin birincil sektöre dayandığını ve gelişmişlik düzeyinin düşük olduğunu gösterir."
+  },
+  {
+   "title": "Türkiye Ekonomisinin Sektörel Dağılımı",
+   "text": "Türkiye'de geçmişte çalışanların çoğu tarımda iken sanayileşme ve kentleşmeyle bu oran azalmıştır. Günümüzde istihdamın yarıdan fazlası hizmet sektöründedir; sanayi ikinci, tarım üçüncü sıradadır.\n\nTarım: Türkiye fındık, kayısı, incir ve kiraz üretiminde dünyada ilk sıralardadır. İklim çeşitliliği sayesinde çok farklı ürün yetiştirilir.\n\nSanayi: Marmara Bölgesi (İstanbul, Kocaeli, Bursa) sanayinin merkezidir. Otomotiv, tekstil, beyaz eşya, demir-çelik ve savunma sanayi öne çıkar.\n\nHizmetler: Turizm önemli bir döviz kaynağıdır (Antalya, İstanbul, Muğla). Ulaşım ve lojistikte Türkiye, Avrupa-Asya arasındaki konumuyla bir köprüdür.\n\nTürkiye, sektörel dağılımıyla gelişmekte olan ve sanayileşmesini hızla sürdüren bir ülke görünümündedir.",
+   "q": "Günümüzde Türkiye'de en fazla çalışanın bulunduğu sektör hangisidir?",
+   "choices": [
+    "Madencilik",
+    "Hizmetler",
+    "Ormancılık",
+    "Balıkçılık",
+    "Tarım"
+   ],
+   "answer": 1,
+   "explain": "Kentleşme ve ekonomik gelişmeyle Türkiye'de istihdamın yarıdan fazlası hizmet sektöründedir."
+  }
+ ],
+ "Afetler ve Sürdürülebilir Çevre": [
+  {
+   "title": "Afet Bilinci",
+   "text": "Doğal olaylar (deprem, sel, heyelan, çığ, orman yangını) her zaman afete dönüşmez. Bir doğal olayın afet olması için can ve mal kaybına yol açması, toplumun normal yaşamını kesintiye uğratması ve toplumun kendi imkânlarıyla baş edemeyeceği boyutta olması gerekir.\n\nAfet bilinci, afetlerin nedenlerini bilmek, risklerin farkında olmak ve buna göre davranmaktır. Afet zararını belirleyen yalnızca olayın büyüklüğü değil, toplumun hazırlıklı olup olmamasıdır. Aynı büyüklükteki bir deprem hazırlıklı bir ülkede az, hazırlıksız bir ülkede çok kayba yol açabilir.\n\nTürkiye'de en çok can kaybına yol açan afet depremdir. Heyelan özellikle Karadeniz'de, çığ Doğu Anadolu'da, sel ise yoğun yağış alan ve dere yataklarına yapılaşmanın olduğu yerlerde sık görülür.\n\nAFAD (Afet ve Acil Durum Yönetimi Başkanlığı) Türkiye'de afet yönetiminden sorumlu kurumdur.",
+   "q": "Aynı büyüklükteki iki depremden birinin çok az, diğerinin çok fazla kayba yol açmasını en iyi açıklayan durum hangisidir?",
+   "choices": [
+    "Deprem dalgalarının farklı renkte olması",
+    "Birinin gece olması",
+    "Nüfusun eşit olması",
+    "Depremlerin farklı mevsimlerde olması",
+    "Toplumların afete hazırlık düzeyinin ve yapı kalitesinin farklı olması"
+   ],
+   "answer": 4,
+   "explain": "Afet zararını büyük ölçüde toplumun hazırlığı ve yapıların dayanıklılığı belirler."
+  },
+  {
+   "title": "Afetlerden Korunma",
+   "text": "Afet yönetimi dört aşamadan oluşan bir döngüdür: zarar azaltma, hazırlık, müdahale ve iyileştirme.\n\nAfet öncesi bireysel hazırlık:\nAile afet planı yapmak, buluşma noktası belirlemek.\nDeprem çantası hazırlamak (su, yiyecek, el feneri, düdük, ilk yardım malzemesi, önemli belgeler).\nEvdeki dolap, kitaplık gibi eşyaları duvara sabitlemek.\n\nAfet sırasında:\nDeprem: Çök-kapan-tutun hareketini yap, merdiven ve asansör kullanma.\nSel: Yüksek yerlere çık, dere yataklarından uzak dur.\nOrman yangını: Rüzgârın tersi yönünde, yangından uzaklaş.\n\nAfet sonrası: Hasarlı binalara girme, resmî kurumların uyarılarını takip et, yalnızca acil durumlarda telefon kullan.",
+   "q": "Deprem sırasında bina içinde bulunan bir öğrenci için en doğru davranış hangisidir?",
+   "choices": [
+    "Hemen asansöre binip aşağı inmek",
+    "Merdivenlere koşmak",
+    "Çök-kapan-tutun hareketini yapmak",
+    "Pencereden atlamak",
+    "Balkona çıkmak"
+   ],
+   "answer": 2,
+   "explain": "Sarsıntı sırasında hareket etmek tehlikelidir; sağlam bir eşyanın yanında çök-kapan-tutun yapmak en güvenli davranıştır."
+  },
+  {
+   "title": "Afetlere Karşı Dirençli Yaşam Alanları ve İyi Uygulamalar",
+   "text": "Dirençli yaşam alanı, afetlerden en az zararla etkilenen ve hızla normale dönebilen şehir ve köylerdir.\n\nDirençli yerleşme için:\nZemin etüdü yapılmadan bina yapılmamalı; fay hatları, dere yatakları ve heyelan riskli yamaçlar yapılaşmaya açılmamalı.\nBinalar deprem yönetmeliğine uygun, nitelikli malzemeyle yapılmalı; riskli binalar kentsel dönüşümle yenilenmeli.\nAçık alanlar ve toplanma alanları yeterli olmalı.\nErken uyarı sistemleri kurulmalı.\n\nİyi uygulama örnekleri:\nJaponya: Sıkı bina yönetmelikleri, okullarda düzenli tatbikatlar ve deprem erken uyarı sistemi.\nHollanda: Deniz seviyesinin altındaki topraklarda setler ve barajlarla sel yönetimi.\nTürkiye: Zorunlu deprem sigortası (DASK), AFAD gönüllülüğü, okullarda afet eğitimi ve tatbikatlar.\n\nAğaçlandırma ve teraslama heyelan ve erozyonu, ormanlık alanların korunması çığ riskini azaltır.",
+   "q": "Aşağıdakilerden hangisi sel riskini azaltmaya yönelik doğru bir uygulamadır?",
+   "choices": [
+    "Dere yataklarının yapılaşmaya kapatılması ve ağaçlandırma yapılması",
+    "Ormanların kesilmesi",
+    "Derelerin üstünün betonla kapatılması",
+    "Toprak yüzeyinin tamamen asfaltlanması",
+    "Dere yataklarına konut yapılması"
+   ],
+   "answer": 0,
+   "explain": "Dere yataklarını yapılaşmadan korumak suyun yolunu açık tutar; ağaçlandırma da yağış suyunun toprakça tutulmasını sağlar."
+  }
+ ],
+ "Bölgeler, Ülkeler ve Küresel Bağlantılar": [
+  {
+   "title": "Türk Kültürünün Mekânsal Özellikleri",
+   "text": "Türkler tarih boyunca Orta Asya'dan Anadolu'ya, Balkanlar'dan Kuzey Afrika'ya kadar geniş bir alana yayılmıştır. Bu geniş coğrafya Türk kültürüne çeşitlilik kazandırmıştır.\n\nTürk kültürünün mekâna yansımaları:\nMimari: Kervansaraylar (ticaret yolları üzerinde), külliyeler, camiler, köprüler, kümbetler. Yapı malzemesi bölgeye göre değişir: Karadeniz'de ahşap, Güneydoğu'da taş, İç Anadolu'da kerpiç.\nYerleşme: Göçebe yaşamdan yerleşik hayata geçiş; yaylacılık geleneği.\nEl sanatları: Halı ve kilim motifleri, çini, ebru, telkâri.\nMutfak: Bölgelere göre değişen yemek kültürü (Gaziantep ve Hatay UNESCO gastronomi şehirleri).\n\nTürk dünyası bugün Türkiye, Azerbaycan, Kazakistan, Özbekistan, Kırgızistan ve Türkmenistan gibi bağımsız devletleri kapsar ve ortak dil, tarih ve kültürle birbirine bağlıdır. Türk Devletleri Teşkilatı bu bağı güçlendiren bir kuruluştur.",
+   "q": "Selçuklu ve Osmanlı döneminde ticaret yolları üzerinde yolcuların ve kervanların konaklaması için yapılan yapılar hangileridir?",
+   "choices": [
+    "Darüşşifalar",
+    "Saat kuleleri",
+    "Kümbetler",
+    "Kervansaraylar",
+    "Medreseler"
+   ],
+   "answer": 3,
+   "explain": "Kervansaraylar, ticaret yolları üzerinde belirli aralıklarla kurulan ve kervanların güvenle konaklamasını sağlayan yapılardır."
+  }
+ ]
+}

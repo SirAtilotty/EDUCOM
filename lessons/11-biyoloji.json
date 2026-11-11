@@ -1,0 +1,188 @@
+{
+ "Tepki": [
+  {
+   "title": "Canlıların Uyaranlara Tepkileri",
+   "text": "Uyaran (uyarı), canlıda tepki oluşturan iç ya da dış ortam değişikliğidir: ışık, sıcaklık, ses, dokunma, kimyasal maddeler, yer çekimi.\n\nBütün canlılar uyaranlara tepki verir, ama tepki mekanizmaları farklıdır:\nTek hücreliler: Öglena ışığa doğru yüzer; paramesyum zararlı kimyasallardan uzaklaşır.\nBitkiler: Sinir sistemleri yoktur; tepkiler bitkisel hormonlarla ve genellikle yavaş gerçekleşir (büyüme yönünün değişmesi).\nHayvanlar: Sinir sistemi ve hormonlar sayesinde hızlı ve karmaşık tepkiler verir. Sinir sisteminin karmaşıklığı canlı grubuna göre artar:\nHidra: Ağ şeklinde sinir sistemi.\nYassı solucan: Basit merdiven tipi sinir sistemi.\nBöcekler: Gangliyonlardan oluşan sinir sistemi.\nOmurgalılar: Beyin ve omurilikten oluşan merkezî sinir sistemi.\n\nTepki vermek, canlının hayatta kalmasını ve çevresine uyum sağlamasını kolaylaştırır.",
+   "q": "Aşağıdaki canlılardan hangisinde uyaranlara verilen tepkiler sinir sistemi olmadan, hormonlarla gerçekleşir?",
+   "choices": [
+    "Kedi",
+    "Ayçiçeği",
+    "Arı",
+    "İnsan",
+    "Kurbağa"
+   ],
+   "answer": 1,
+   "explain": "Bitkilerde sinir sistemi yoktur; ayçiçeğinin ışığa yönelmesi gibi tepkiler bitkisel hormonlarla gerçekleşir."
+  },
+  {
+   "title": "Bitkisel Hormonlar ve Bitkilerde Tepki",
+   "text": "Bitkisel hormonlar bitkinin büyümesini, gelişmesini ve tepkilerini düzenler:\nOksin: Hücre uzamasını sağlar; ışığın tersi tarafta birikir. Gövdenin ışığa yönelmesine yol açar.\nGibberellin: Gövde uzaması, tohum çimlenmesi.\nSitokinin: Hücre bölünmesi, yaprak yaşlanmasını geciktirme.\nEtilen: Meyve olgunlaşması (bir sepetteki olgun meyve diğerlerini de olgunlaştırır).\nAbsisik asit: Kuraklıkta stomaları kapatır, tohumda dormansiyi (uyku hâlini) sağlar.\n\nTropizma (yönelim): Uyaranın yönüne bağlı büyüme hareketidir.\nFototropizma: Işığa yönelim (gövde ışığa doğru, pozitif).\nGravitropizma: Yer çekimine yönelim (kök aşağı, pozitif; gövde yukarı, negatif).\nTigmotropizma: Dokunmaya yönelim (sarmaşıkların desteğe sarılması).\nHidrotropizma: Suya yönelim (kökler).\n\nNasti (irkilme): Uyaranın yönünden bağımsız hareketlerdir. Küstümotunun dokununca yapraklarını kapatması, lalenin sıcaklıkla açılıp kapanması, sinekkapan bitkisi.",
+   "q": "Küstümotunun dokunulduğunda yapraklarını hemen kapatması hangi tür bitki hareketidir?",
+   "choices": [
+    "Hidrotropizma",
+    "Fotosentez",
+    "Fototropizma",
+    "Gravitropizma",
+    "Nasti (irkilme)"
+   ],
+   "answer": 4,
+   "explain": "Bu hareket uyaranın yönüne bağlı bir büyüme hareketi değildir; hızlı bir irkilme hareketidir, yani nastidir."
+  },
+  {
+   "title": "Reseptörler ve Nöronların Yapısı",
+   "text": "Reseptörler, uyarıları algılayan özelleşmiş hücre ya da yapılardır. Uyaran çeşidine göre:\nFotoreseptörler: Işık (göz).\nMekanoreseptörler: Dokunma, basınç, ses, denge (deri, kulak).\nKemoreseptörler: Kimyasal maddeler (tat ve koku).\nTermoreseptörler: Sıcaklık.\nAğrı reseptörleri.\n\nNöron (sinir hücresi), sinir sisteminin temel birimidir:\nDendrit: Uyarıyı alıp hücre gövdesine taşıyan kısa uzantılar.\nHücre gövdesi: Çekirdek ve organellerin bulunduğu kısım.\nAkson: Uyarıyı hücre gövdesinden uzağa ileten uzun uzantı.\nMiyelin kılıf: Aksonu saran yağlı yalıtkan tabaka; iletimi hızlandırır.\nAkson uçları: Uyarıyı diğer hücreye aktarır.\n\nNöron çeşitleri:\nDuyu nöronu: Uyarıyı reseptörden merkezî sinir sistemine taşır.\nAra nöron: Beyin ve omurilikte bilgiyi işler.\nMotor nöron: Emri kas ya da bezlere iletir.\n\nOlgun nöronlar bölünmez; bu yüzden sinir hasarları zor onarılır.",
+   "q": "Nöronda uyarıyı hücre gövdesinden uzağa, diğer hücrelere doğru ileten uzun uzantı hangisidir?",
+   "choices": [
+    "Hücre gövdesi",
+    "Dendrit",
+    "Akson",
+    "Çekirdek",
+    "Reseptör"
+   ],
+   "answer": 2,
+   "explain": "Akson, uyarıyı hücre gövdesinden akson uçlarına ve oradan diğer hücrelere iletir."
+  },
+  {
+   "title": "Nöronlarda Sinyal İletimi ve Sinaps",
+   "text": "Dinlenme potansiyeli: Uyarılmamış nöronda zarın içi dışına göre negatiftir (yaklaşık −70 mV). Sodyum-potasyum pompası ATP harcayarak 3 Na⁺ iyonunu dışarı, 2 K⁺ iyonunu içeri taşır; bu da zar boyunca bir yük farkı oluşturur. Bu duruma polarizasyon denir.\n\nAksiyon potansiyeli: Eşik değeri aşan bir uyarı gelince Na⁺ kanalları açılır, Na⁺ hücre içine hızla girer ve zarın içi pozitif olur (depolarizasyon). Ardından K⁺ kanalları açılıp K⁺ dışarı çıkınca zar eski hâline döner (repolarizasyon). Bu elektriksel değişim akson boyunca dalga gibi ilerler.\n\nHep ya da hiç kuralı: Eşik altındaki uyarı yanıt oluşturmaz; eşiği aşan her uyarı aynı büyüklükte yanıt oluşturur.\n\nSinaps: İki nöron ya da nöron ile kas arasındaki bağlantı bölgesidir. Akson ucuna gelen uyarı, nörotransmitter adı verilen kimyasalların (asetilkolin, dopamin, serotonin) salgılanmasına yol açar. Bu maddeler sinaps boşluğundan geçerek diğer hücrenin reseptörlerine bağlanır. Sinapsta iletim tek yönlüdür.",
+   "q": "Sinapslarda uyarının bir nörondan diğerine iletilmesini sağlayan kimyasal maddelere ne ad verilir?",
+   "choices": [
+    "Nörotransmitterler",
+    "Antikorlar",
+    "Vitaminler",
+    "Bitkisel hormonlar",
+    "Enzimler"
+   ],
+   "answer": 0,
+   "explain": "Akson ucundan salgılanan nörotransmitterler sinaps boşluğunu geçerek bir sonraki hücrenin reseptörlerine bağlanır."
+  },
+  {
+   "title": "Duyu Organları",
+   "text": "Göz: Işık korneadan ve göz bebeğinden geçer, mercekte kırılır ve retinaya düşer. Retinadaki çubuk hücreler az ışıkta siyah-beyaz görmeyi, koni hücreler renkli ve net görmeyi sağlar. Uyarı görme siniriyle beyindeki görme merkezine iletilir. Görüntünün yorumlanması beyinde olur. Kör noktada reseptör yoktur.\n\nKulak: Ses dalgaları kulak zarını titreştirir; orta kulaktaki çekiç, örs ve üzengi kemikleri titreşimi güçlendirir; iç kulaktaki salyangozda (koklea) ses reseptörleri uyarılır. İç kulaktaki yarım daire kanalları dengeyi sağlar.\n\nBurun: Koku reseptörleri burun boşluğunun üst kısmındadır; havadaki kimyasal maddeleri algılar.\n\nDil: Tat tomurcukları tatlı, tuzlu, ekşi, acı ve umami tatlarını algılar. Tat alma koku almayla birlikte çalışır; nezle olunca yemeklerin tadını az almamız bu yüzdendir.\n\nDeri: Dokunma, basınç, sıcak, soğuk ve ağrı reseptörleri içerir. Parmak uçları ve dudaklarda reseptör sayısı fazladır.",
+   "q": "Az ışıkta görmeyi sağlayan, renk ayrımı yapmayan retina hücreleri hangileridir?",
+   "choices": [
+    "Tat tomurcukları",
+    "Salyangoz hücreleri",
+    "Koni hücreleri",
+    "Çubuk hücreler",
+    "Kornea hücreleri"
+   ],
+   "answer": 3,
+   "explain": "Çubuk hücreler ışığa çok duyarlıdır, az ışıkta görmeyi sağlar ama renk ayrımı yapmaz."
+  },
+  {
+   "title": "Uyarıların Yorumlanması: Sinir Sistemi",
+   "text": "İnsanda sinir sistemi iki kısımdan oluşur:\n\nMerkezî sinir sistemi:\nBeyin: Düşünme, öğrenme, hafıza, istemli hareketler ve duyuların yorumlanması (beyin kabuğu). Beyincik hareketlerin düzenlenmesini ve dengeyi sağlar. Beyin sapı (soğan, köprü, orta beyin) solunum ve kalp atışı gibi hayati işleri yönetir. Hipotalamus vücut sıcaklığı, açlık ve susuzluğu düzenler.\nOmurilik: Beyin ile vücut arasında iletim yolu ve refleks merkezidir.\n\nÇevresel sinir sistemi: Beyin ve omurilikten çıkan sinirlerdir.\nSomatik sinir sistemi: İstemli hareketler (iskelet kasları).\nOtonom sinir sistemi: İstemsiz işler (kalp, sindirim, bezler). Sempatik sistem vücudu tehlikeye hazırlar (kalp hızlanır); parasempatik sistem dinlenmeyi sağlar.\n\nRefleks: Uyarıya beyne danışılmadan omurilikte verilen hızlı ve istemsiz tepkidir. Sıcak bir yüzeye dokununca elin hemen çekilmesi bir omurilik refleksidir. Refleks yayı: reseptör → duyu nöronu → ara nöron (omurilik) → motor nöron → kas.",
+   "q": "Sıcak sobaya dokunan elin, kişi acıyı fark etmeden hemen geri çekilmesini sağlayan merkez neresidir?",
+   "choices": [
+    "Beyincik",
+    "Omurilik",
+    "Hipotalamus",
+    "Retina",
+    "Beyin kabuğu"
+   ],
+   "answer": 1,
+   "explain": "Bu bir omurilik refleksidir; uyarı beyne gitmeden omurilikte değerlendirilir ve hızlı tepki oluşur."
+  }
+ ],
+ "Homeostazi": [
+  {
+   "title": "Homeostazi ve Homeostatik Yapılar",
+   "text": "Homeostazi, dış ortam değişse bile canlının iç ortamını (sıcaklık, su ve tuz miktarı, kan şekeri, pH, oksijen düzeyi) belirli sınırlar içinde sabit tutmasıdır.\n\nFarklı canlılarda homeostatik yapılar:\nTek hücreliler: Tatlı suda yaşayan paramesyum, hücresine giren fazla suyu kontraktil kofulla dışarı atar.\nBitkiler: Stomalar açılıp kapanarak su kaybını düzenler.\nBalıklar: Tatlı su balıkları bol ve seyreltik idrar, tuzlu su balıkları az ve derişik idrar üretir.\nSürüngenler: Vücut sıcaklıkları ortama göre değişir (soğukkanlı); güneşlenerek ya da gölgeye geçerek sıcaklıklarını ayarlarlar.\nKuşlar ve memeliler: Vücut sıcaklıkları sabittir (sıcakkanlı); tüy, kıl, yağ tabakası, terleme ve titreme ile sıcaklığı düzenlerler.\n\nİnsanda homeostaziyi sinir sistemi ve endokrin sistem birlikte yönetir; dolaşım, solunum, boşaltım ve deri gibi sistemler bu dengeyi sağlamaya katılır.",
+   "q": "Tatlı su balıklarının bol ve seyreltik idrar üretmesinin nedeni nedir?",
+   "choices": [
+    "Tuz kaybetmek istemeleri",
+    "Su içmemeleri",
+    "Böbreklerinin olmaması",
+    "Vücut sıcaklıklarının sabit olması",
+    "Vücutlarına sürekli ozmozla su girmesi"
+   ],
+   "answer": 4,
+   "explain": "Tatlı su balığın vücut sıvısından daha seyreltiktir; ozmozla vücuda sürekli su girer. Balık fazla suyu bol ve seyreltik idrarla atar."
+  },
+  {
+   "title": "Pozitif ve Negatif Geri Bildirim",
+   "text": "Homeostatik süreçlerde bir kontrol döngüsü vardır: Algılayıcı (reseptör) değişikliği fark eder → kontrol merkezi (genellikle beyin) değerlendirir → etkileyici (kas ya da bez) yanıt verir.\n\nNegatif geri bildirim: Yanıt, başlangıçtaki değişikliği tersine çevirir ve sistemi normal değere döndürür. Homeostazinin temel mekanizmasıdır.\nÖrnek: Kan şekeri yükselince pankreas insülin salgılar, kan şekeri düşer; düşünce insülin salgısı azalır.\nÖrnek: Vücut ısınınca terleme ve damar genişlemesi olur; vücut soğuyunca titreme ve damar daralması olur.\nEvdeki termostatlı kombi de negatif geri bildirimle çalışır.\n\nPozitif geri bildirim: Yanıt başlangıçtaki değişikliği daha da artırır; süreç belli bir sonuca ulaşınca durur. Seyrek görülür.\nÖrnek: Doğum sırasında oksitosin hormonu rahim kasılmalarını artırır, kasılmalar daha fazla oksitosin salgılanmasına yol açar; doğumla döngü sona erer.\nÖrnek: Kanın pıhtılaşması.",
+   "q": "Doğum sırasında oksitosin hormonunun rahim kasılmalarını, kasılmaların da oksitosin salgısını giderek artırması hangi mekanizmaya örnektir?",
+   "choices": [
+    "Fotosentez",
+    "Negatif geri bildirim",
+    "Pozitif geri bildirim",
+    "Refleks",
+    "Ozmoz"
+   ],
+   "answer": 2,
+   "explain": "Yanıt, başlangıçtaki değişikliği güçlendirdiği için bu bir pozitif geri bildirimdir; doğumla sona erer."
+  },
+  {
+   "title": "Sinir Sistemi ve Endokrin Sistem ile Homeostazi",
+   "text": "Sinir sistemi hızlı ve kısa süreli, endokrin sistem ise yavaş ama uzun süreli düzenleme yapar. İkisi hipotalamus aracılığıyla birbirine bağlıdır.\n\nHipotalamus vücut sıcaklığını, su dengesini, açlık ve susuzluğu denetler ve hipofiz bezini yönetir.\n\nÖnemli endokrin bezler ve hormonlar:\nHipofiz: Büyüme hormonu; diğer bezleri uyaran hormonlar; ADH (böbreklerden su geri emilimini artırır).\nTiroit: Tiroksin (metabolizma hızı). Yapısında iyot vardır.\nParatiroit: Parathormon (kanda kalsiyumu artırır).\nPankreas: İnsülin (kan şekerini düşürür), glukagon (kan şekerini yükseltir). İnsülin yetersizliğinde şeker hastalığı (diyabet) görülür.\nBöbrek üstü bezleri: Adrenalin (stres ve tehlike anında kalp atışını ve kan şekerini artırır), kortizol, aldosteron (tuz dengesi).\nEşey bezleri: Östrojen, progesteron, testosteron.\n\nHormonlar kanla taşınır ve yalnızca kendi reseptörüne sahip hedef hücreleri etkiler.",
+   "q": "Yemekten sonra yükselen kan şekerini düşüren hormon ve salgılandığı bez hangisidir?",
+   "choices": [
+    "İnsülin - pankreas",
+    "Adrenalin - böbrek üstü",
+    "Tiroksin - tiroit",
+    "ADH - hipofiz",
+    "Glukagon - pankreas"
+   ],
+   "answer": 0,
+   "explain": "Pankreastan salgılanan insülin, glikozun hücrelere alınmasını ve karaciğerde glikojen olarak depolanmasını sağlayarak kan şekerini düşürür."
+  },
+  {
+   "title": "Dolaşım Sistemi ve Homeostazi",
+   "text": "Dolaşım sistemi kalp, damarlar ve kandan oluşur; oksijen, besin, hormon ve artıkları taşır, vücut sıcaklığını dağıtır ve bağışıklığa katkı sağlar.\n\nKalp: Dört odacıklıdır (iki kulakçık, iki karıncık). Sağ taraf kirli (CO₂'ce zengin), sol taraf temiz (O₂'ce zengin) kan taşır. Kapakçıklar kanın geri akmasını önler.\n\nDolaşım:\nKüçük (akciğer) dolaşım: Sağ karıncık → akciğer atardamarı → akciğerler (kan temizlenir) → akciğer toplardamarı → sol kulakçık.\nBüyük (vücut) dolaşım: Sol karıncık → aort → vücut → toplardamarlar → sağ kulakçık.\n\nDamarlar: Atardamarlar kanı kalpten uzaklaştırır (kalın, esnek çeperli). Toplardamarlar kalbe getirir (kapakçıklı). Kılcal damarlarda madde alışverişi olur.\n\nKan: Alyuvarlar (hemoglobin ile O₂ taşır), akyuvarlar (savunma), kan pulcukları (pıhtılaşma) ve plazma.\n\nHomeostazideki rolü: Vücut ısınınca deri damarları genişler ve ısı kaybı artar; egzersizde kalp atışı hızlanır ve kaslara daha fazla oksijen gider.",
+   "q": "Akciğerlerde temizlenen (oksijenlenen) kan kalbin hangi bölümüne gelir?",
+   "choices": [
+    "Aort",
+    "Sağ kulakçık",
+    "Sağ karıncık",
+    "Sol kulakçık",
+    "Sol karıncık"
+   ],
+   "answer": 3,
+   "explain": "Küçük dolaşımda akciğerlerde oksijenlenen kan, akciğer toplardamarıyla sol kulakçığa döner."
+  },
+  {
+   "title": "Solunum Sistemi ve Homeostazi",
+   "text": "Solunum sistemi burun, yutak, gırtlak, soluk borusu, bronşlar, bronşçuklar ve alveollerden (hava keseciklerinden) oluşur.\n\nSoluk alma: Diyafram kası kasılıp düzleşir, kaburgalar yukarı ve dışa kalkar; göğüs boşluğu genişler, akciğerlerdeki basınç düşer ve hava içeri girer.\nSoluk verme: Diyafram gevşeyip kubbe şeklini alır, göğüs boşluğu daralır, hava dışarı çıkar.\n\nGaz alışverişi: Alveollerde oksijen difüzyonla kana, karbondioksit kandan alveollere geçer. Alveollerin toplam yüzey alanı çok büyüktür ve çevreleri kılcal damarlarla sarılıdır.\n\nGazların taşınması: Oksijenin çoğu alyuvarlardaki hemoglobinle, karbondioksitin çoğu plazmada bikarbonat (HCO₃⁻) olarak taşınır.\n\nHomeostazideki rolü: Soluk alıp verme hızı, beyin sapındaki soğanilik (omurilik soğanı) tarafından kandaki CO₂ miktarına göre ayarlanır. Egzersizde CO₂ artar, kan pH'ı düşer; soğanilik solunumu hızlandırarak fazla CO₂'yi atar ve pH'ı dengeler.",
+   "q": "Egzersiz sırasında solunum hızının artmasını tetikleyen başlıca etken nedir?",
+   "choices": [
+    "Kandaki oksijenin artması",
+    "Kandaki CO₂ miktarının artması",
+    "Vücut sıcaklığının düşmesi",
+    "Kan şekerinin düşmesi",
+    "Diyaframın gevşemesi"
+   ],
+   "answer": 1,
+   "explain": "Kaslarda artan solunum CO₂ üretir. Soğanilik kandaki CO₂ artışını algılayarak solunumu hızlandırır."
+  },
+  {
+   "title": "Boşaltım Sistemi ve Homeostazi",
+   "text": "Boşaltım, metabolizma sonucu oluşan zararlı artıkların (üre, ürik asit, fazla su ve tuzlar, CO₂) vücuttan uzaklaştırılmasıdır. İnsanda böbrekler, akciğerler, deri ve karaciğer boşaltıma katılır.\n\nBöbreğin yapısı: Her böbrekte yaklaşık bir milyon nefron (böbreğin yapı ve görev birimi) bulunur.\n\nİdrar oluşumu üç aşamada gerçekleşir:\n1. Süzülme: Kan, nefronun başındaki glomerulustan süzülür; su, glikoz, tuzlar, üre süzüntüye geçer. Kan hücreleri ve büyük proteinler süzülmez.\n2. Geri emilim: Vücut için gerekli olan glikoz, amino asitler, suyun büyük kısmı ve tuzlar kana geri alınır.\n3. Salgılama: Bazı artıklar ve ilaçlar kandan nefrona aktarılır.\n\nHomeostazideki rolü:\nSu dengesi: Vücut su kaybettiğinde hipofizden ADH salgılanır; böbrekler daha çok su geri emer ve idrar azalır, koyulaşır.\nTuz dengesi: Aldosteron hormonu sodyumun geri emilimini artırır.\nKanın pH'ını dengeleme.\n\nKaraciğer, protein yıkımıyla oluşan zehirli amonyağı daha az zehirli üreye dönüştürür.",
+   "q": "Çok terleyip az su içen bir kişide ADH hormonunun salgılanması artarsa idrar için ne olur?",
+   "choices": [
+    "İdrarda glikoz bulunur.",
+    "Hiç değişmez.",
+    "İdrarda kan hücreleri bulunur.",
+    "Miktarı artar, seyreltik olur.",
+    "Miktarı azalır, derişik olur."
+   ],
+   "answer": 4,
+   "explain": "ADH böbreklerde suyun geri emilimini artırır; vücutta su tutulur, idrar miktarı azalır ve derişikleşir."
+  },
+  {
+   "title": "Sistemlerin Eş Güdümlü Çalışması",
+   "text": "Homeostazi, sistemlerin birbirinden bağımsız değil, eş güdüm içinde çalışmasıyla sağlanır. Sinir ve endokrin sistemler bu eş güdümün yöneticileridir.\n\nÖrnek 1: Koşu yapan bir öğrenci\nKaslar daha çok ATP için daha çok oksijen ister ve daha çok CO₂ üretir.\nSolunum sistemi: Solunum hızı ve derinliği artar.\nDolaşım sistemi: Kalp atışı hızlanır, kaslara giden damarlar genişler.\nEndokrin sistem: Adrenalin kan şekerini yükseltir.\nDeri ve sinir sistemi: Artan ısıyı atmak için terleme başlar.\nBoşaltım sistemi: Terleme ile su kaybı artınca ADH salgılanır, idrar azalır.\n\nÖrnek 2: Soğuk bir günde dışarı çıkmak\nDerideki reseptörler soğuğu algılar, hipotalamus uyarılır.\nDeri damarları daralır, titreme başlar (kaslar ısı üretir), tiroit hormonu metabolizmayı hızlandırır.\n\nBir sistemdeki aksaklık diğerlerini de etkiler: Böbrek yetmezliği kan basıncını, pH'ı ve kalp sağlığını bozabilir. Bu yüzden sağlıklı beslenme, yeterli su tüketimi, düzenli egzersiz ve uyku tüm sistemlerin uyumu için önemlidir.",
+   "q": "Soğuk bir ortamda vücudun titreyerek ısı üretmesi ve deri damarlarının daralması hangi yapının denetimiyle gerçekleşir?",
+   "choices": [
+    "Mide",
+    "Böbrekler",
+    "Hipotalamus",
+    "Pankreas",
+    "Akciğerler"
+   ],
+   "answer": 2,
+   "explain": "Vücut sıcaklığının düzenlenmesi hipotalamusun denetimindedir; titreme ve damar daralmasını hipotalamus başlatır."
+  }
+ ]
+}

@@ -1,0 +1,270 @@
+{
+ "School Life": [
+  {
+   "title": "Countries, Nationalities and Languages",
+   "text": "Students in an international school come from many countries.\n\nCountry → nationality → language:\nTürkiye → Turkish → Turkish\nGermany → German → German\nJapan → Japanese → Japanese\nItaly → Italian → Italian\nBrazil → Brazilian → Portuguese\nEgypt → Egyptian → Arabic\nthe USA → American → English\n\nLanguage focus, the verb be (am / is / are):\nI am (I'm) from Türkiye. I'm Turkish.\nShe is (She's) from Spain. She isn't from Mexico.\nThey are (They're) Japanese.\nWhere are you from? Is he Italian? Yes, he is. / No, he isn't.\n\nRemember: Country, nationality and language names always start with a capital letter.",
+   "q": "Hiro and Yuki ___ from Japan. They speak Japanese.",
+   "choices": [
+    "is",
+    "am",
+    "are",
+    "be",
+    "isn't"
+   ],
+   "answer": 2,
+   "explain": "Hiro and Yuki = they, so we use are."
+  },
+  {
+   "title": "Capitals and Tourist Attractions",
+   "text": "Capital cities and famous attractions:\nAnkara (Türkiye): Anıtkabir\nLondon (the UK): Big Ben, the London Eye\nParis (France): the Eiffel Tower, the Louvre\nRome (Italy): the Colosseum\nCairo (Egypt): the Pyramids of Giza (near Cairo)\nBeijing (China): the Forbidden City\n\nLanguage focus, there is / there are:\nThere is a famous tower in Paris.\nThere are many museums in London.\nIs there a castle in your city? Yes, there is.\nThere aren't any beaches in Ankara.\n\nUseful words: museum, palace, castle, tower, bridge, square, historical, modern, crowded, ancient.",
+   "q": "___ a lot of historical buildings in Istanbul.",
+   "choices": [
+    "There are",
+    "It is",
+    "They is",
+    "There be",
+    "There is"
+   ],
+   "answer": 0,
+   "explain": "A lot of historical buildings is plural, so we use There are."
+  },
+  {
+   "title": "Activities in Capitals and Countries",
+   "text": "What can tourists do in different capitals?\nvisit museums, go sightseeing, take photos, try local food, go on a boat tour, buy souvenirs, watch a show, walk in the parks.\n\nLanguage focus, can / can't for possibility and ability:\nYou can visit the Colosseum in Rome.\nYou can't swim in the sea in Ankara; there isn't a sea.\nCan I take photos in the museum? No, you can't.\nI can speak English, but I can't speak Chinese.\n\nAfter can we always use the base form of the verb: She can swim (not: can swims, can to swim).",
+   "q": "In London, you ___ take a ride on the London Eye.",
+   "choices": [
+    "can to",
+    "are can",
+    "can't to",
+    "can",
+    "cans"
+   ],
+   "answer": 3,
+   "explain": "can + base verb, with no -s and no to: you can take."
+  },
+  {
+   "title": "National Days and Celebrations",
+   "text": "Every country has special days:\nTürkiye: Republic Day (29 October), National Sovereignty and Children's Day (23 April).\nThe USA: Independence Day (4 July), Thanksgiving.\nChina: Chinese New Year (Spring Festival).\nIndia: Diwali, the festival of lights.\nMexico: Day of the Dead.\n\nWhat do people do?\ndecorate houses, wave flags, watch fireworks, wear traditional clothes, have a parade, give presents, eat special food, visit relatives.\n\nLanguage focus, present simple for traditions:\nPeople celebrate Republic Day on 29 October.\nChildren wear costumes.\nIn China, families eat dumplings at New Year.\nWhat do you do on national days?",
+   "q": "On Diwali, people in India ___ candles and lamps in their houses.",
+   "choices": [
+    "lights",
+    "light",
+    "lighting",
+    "is light",
+    "lighted"
+   ],
+   "answer": 1,
+   "explain": "Present simple with people (plural): base form, no -s. People light candles."
+  }
+ ],
+ "Classroom Life": [
+  {
+   "title": "Classmates and Friendship",
+   "text": "Talking about friends:\nbest friend, classmate, deskmate, close friend, get on well with, make friends, trust, share, support, help each other.\n\nA good friend is honest, kind, loyal, helpful and friendly.\n\nLanguage focus, possessive adjectives and 's:\nmy, your, his, her, its, our, their\nThis is my best friend. Her name is Elif.\nTheir classroom is on the second floor.\nAli's bag is blue. (the bag of Ali)\nThe students' books are on the desk. (plural nouns ending in -s take only ')\n\nAsking about friends:\nWho is your best friend? What is he like? He's funny and helpful.",
+   "q": "Zeynep and Can are my classmates. ___ favourite lesson is Biology.",
+   "choices": [
+    "Our",
+    "Its",
+    "His",
+    "Her",
+    "Their"
+   ],
+   "answer": 4,
+   "explain": "Zeynep and Can = they, so we use their."
+  },
+  {
+   "title": "Daily and Study Routines",
+   "text": "Daily routines: wake up, get up, have breakfast, catch the bus, have lessons, have lunch, do homework, revise for exams, go to bed.\n\nLanguage focus, present simple:\nI / you / we / they + base verb: I get up at 7.\nhe / she / it + verb-s/-es: She gets up at 7. He watches TV. She studies.\nNegative: I don't (do not) study at night. He doesn't (does not) like maths.\nQuestion: Do you revise every day? What time does she go to school?\n\nTime expressions: every day, at 8 o'clock, in the morning, on Mondays, at night, at the weekend.\n\nAfter doesn't we use the base form: He doesn't play (not: doesn't plays).",
+   "q": "My brother ___ his homework after dinner every day.",
+   "choices": [
+    "don't",
+    "do",
+    "does",
+    "doing",
+    "is do"
+   ],
+   "answer": 2,
+   "explain": "Present simple with he (my brother): does."
+  }
+ ],
+ "Personal Life: Physical Appearance & Personality": [
+  {
+   "title": "Physical Appearance",
+   "text": "Describing people:\nHeight: tall, short, medium height\nBuild: slim, thin, well-built, overweight\nHair: long, short, curly, straight, wavy, blond(e), dark, red, bald\nEyes: blue, green, brown, hazel\nOther: beard, moustache, freckles, glasses\n\nLanguage focus, have got / has got and be:\nShe has got (She's got) long curly hair.\nHe hasn't got a beard.\nHave you got blue eyes?\nHe is tall and slim.\n\nWe use be for height, build and age: She is short.\nWe use have got for hair, eyes and features: She has got green eyes.\n\nWhat does she look like? She's tall and she's got short dark hair.",
+   "q": "My teacher ___ short grey hair and glasses.",
+   "choices": [
+    "has got",
+    "have got",
+    "are",
+    "is got",
+    "is"
+   ],
+   "answer": 0,
+   "explain": "For hair and features we use have got. With he/she (my teacher) it is has got."
+  },
+  {
+   "title": "Personality and Character",
+   "text": "Personality adjectives:\nPositive: friendly, generous, hard-working, honest, patient, polite, cheerful, confident, creative.\nNegative: lazy, rude, selfish, impatient, bossy, mean, shy (not always negative).\n\nOpposites: hard-working ↔ lazy, polite ↔ rude, generous ↔ mean (selfish), patient ↔ impatient.\n\nLanguage focus, asking about personality:\nWhat is he like? He's very friendly and generous.\n(Do not confuse with: What does he like? He likes football.)\n\nAdverbs of degree: very, really, quite, a bit\nShe's really creative. He's a bit shy.\n\nWe can use and / but / because:\nShe is clever but a bit lazy.",
+   "q": "Mert never shares his things with anyone. He is ___.",
+   "choices": [
+    "patient",
+    "cheerful",
+    "generous",
+    "selfish",
+    "polite"
+   ],
+   "answer": 3,
+   "explain": "A person who never shares and thinks only of himself is selfish."
+  }
+ ],
+ "Family Life": [
+  {
+   "title": "Jobs and Workplaces",
+   "text": "Jobs and where people work:\ndoctor, nurse → hospital\nteacher → school\nchef, waiter → restaurant\npilot, flight attendant → plane, airport\nfarmer → farm\nengineer → office, factory, construction site\nfirefighter → fire station\nmechanic → garage\nsoftware developer → office or home\nshop assistant → shop\n\nLanguage focus, a / an with jobs:\nMy father is a pilot. My aunt is an engineer. (an before vowel sounds)\n\nWhat does your mother do? She's a nurse.\nWhere does she work? She works in a hospital.",
+   "q": "My uncle is ___ architect. He designs buildings.",
+   "choices": [
+    "a",
+    "an",
+    "the",
+    "-",
+    "some"
+   ],
+   "answer": 1,
+   "explain": "Architect starts with a vowel sound, so we use an: an architect."
+  },
+  {
+   "title": "Work Routines and Activities",
+   "text": "Talking about work routines:\nwork shifts, work from home, start work, finish work, take a break, have meetings, wear a uniform, earn money, look after patients, serve customers.\n\nLanguage focus, frequency adverbs with present simple:\nalways, usually, often, sometimes, rarely, never\nMy mother usually starts work at 8.\nA nurse sometimes works at night.\nMy father is never late for work. (after be)\n\nHow often questions:\nHow often does he travel for work? Once a month.\n\nWe also use present continuous for actions happening now:\nShe works in a bank, but today she is working from home.",
+   "q": "A firefighter ___ a uniform at work. (always)",
+   "choices": [
+    "is always wear",
+    "always wearing",
+    "wears always",
+    "always wear",
+    "always wears"
+   ],
+   "answer": 4,
+   "explain": "The frequency adverb comes before the main verb, and the verb takes -s with a firefighter (he/she): always wears."
+  }
+ ],
+ "Life in the House & Neighbourhood": [
+  {
+   "title": "Types of Houses, Rooms and Furniture",
+   "text": "Types of houses: flat (apartment), detached house, terraced house, cottage, villa.\n\nRooms: living room, bedroom, kitchen, bathroom, dining room, hall, balcony, garden, garage.\n\nFurniture: sofa, armchair, bed, wardrobe, bookshelf, desk, table, chairs, carpet, fridge, cooker, washing machine.\n\nLanguage focus, prepositions of place:\nin, on, under, next to, between, behind, in front of, opposite\nThe lamp is on the desk.\nThe cat is under the bed.\nThe sofa is between the armchair and the bookshelf.\nThe wardrobe is next to the window.\n\nThere is a fridge in the kitchen. There are two beds in my room.",
+   "q": "The television is ___ the two windows. One is on the left, the other is on the right.",
+   "choices": [
+    "in",
+    "under",
+    "between",
+    "on",
+    "behind"
+   ],
+   "answer": 2,
+   "explain": "Something in the middle of two things is between them."
+  },
+  {
+   "title": "Activities in the House",
+   "text": "Household chores: do the washing-up, do the laundry, make the bed, tidy the room, vacuum the floor, set the table, take out the rubbish, water the plants, cook dinner.\n\nLeisure activities at home: watch TV, read books, play board games, listen to music, chat online.\n\nLanguage focus, present continuous for actions happening now:\nam / is / are + verb-ing\nMum is cooking dinner in the kitchen.\nMy brothers are playing a video game in the living room.\nI'm not watching TV; I'm doing my homework.\nWhat are you doing? I'm tidying my room.\n\nSpelling: make → making, sit → sitting, tidy → tidying.",
+   "q": "Look! Dad ___ the plants in the garden.",
+   "choices": [
+    "is watering",
+    "are watering",
+    "watered",
+    "water",
+    "waters"
+   ],
+   "answer": 0,
+   "explain": "Look! shows the action is happening now: present continuous. Dad is watering."
+  }
+ ],
+ "Life in the City & Country": [
+  {
+   "title": "Local and International Food Culture",
+   "text": "Turkish dishes: kebab, pide, mantı, lahmacun, baklava, menemen, dolma.\nInternational dishes: pizza and pasta (Italy), sushi (Japan), tacos (Mexico), fish and chips (the UK), paella (Spain), curry (India).\n\nTaste words: delicious, tasty, spicy, sweet, sour, salty, bitter, hot, fresh.\n\nLanguage focus, like / love / enjoy / hate + verb-ing or noun:\nI love eating Japanese food.\nMy sister doesn't like spicy food.\nThey enjoy cooking together.\n\nOrdering food:\nWhat would you like? I'd like a pizza, please.\nWould you like something to drink? Yes, an orange juice, please.\n(I'd like = I would like: a polite way to ask for something.)",
+   "q": "Waiter: What would you like to eat? Customer: ___",
+   "choices": [
+    "I would to like soup.",
+    "Yes, I am.",
+    "I like pizza every day.",
+    "I'd like the vegetable soup, please.",
+    "I'm liking soup."
+   ],
+   "answer": 3,
+   "explain": "To order politely we say I'd like (I would like) + noun."
+  },
+  {
+   "title": "Food Festivals in the City",
+   "text": "Food festivals celebrate local products and cooking: Gaziantep Gastronomy Festival, Adana Kebab and Şalgam Festival, Mesir Paste Festival in Manisa, Oktoberfest in Germany, the Tomato Festival (La Tomatina) in Spain.\n\nAt a festival people taste food, watch cooking shows, listen to music, buy local products and meet chefs.\n\nLanguage focus, comparatives:\nshort adjectives + -er: cheap → cheaper, hot → hotter, tasty → tastier\nlong adjectives: more + adjective: more delicious, more crowded\nirregular: good → better, bad → worse\nThe festival this year is bigger than last year.\nStreet food is cheaper than restaurant food.\nAdana kebab is spicier than Urfa kebab.",
+   "q": "This year's food festival is ___ than last year's. There are many more visitors.",
+   "choices": [
+    "crowded",
+    "more crowded",
+    "crowdeder",
+    "the most crowded",
+    "most crowded"
+   ],
+   "answer": 1,
+   "explain": "Crowded is a long adjective, so the comparative is more crowded than."
+  }
+ ],
+ "Life in the World & Nature": [
+  {
+   "title": "Endangered Animals and Their Habitats",
+   "text": "Endangered animals are in danger of disappearing (becoming extinct).\nExamples: giant panda (bamboo forests in China), polar bear (the Arctic), tiger (Asian forests), Mediterranean monk seal and loggerhead sea turtle (Caretta caretta) on the coasts of Türkiye, orangutan (rainforests of Borneo).\n\nHabitats: rainforest, desert, ocean, mountain, grassland, wetland, the Arctic.\n\nWhy are they in danger? habitat loss, deforestation, hunting, pollution, climate change.\n\nLanguage focus, present simple for facts:\nPolar bears live in the Arctic.\nPandas eat bamboo.\nSea turtles lay their eggs on sandy beaches.\nThey don't live in hot places.",
+   "q": "Loggerhead sea turtles ___ their eggs on sandy beaches like İztuzu in Muğla.",
+   "choices": [
+    "laying",
+    "is lay",
+    "are lay",
+    "lays",
+    "lay"
+   ],
+   "answer": 4,
+   "explain": "Present simple for facts; the subject is plural (turtles), so we use the base form: lay."
+  },
+  {
+   "title": "Protecting Animals and Nature",
+   "text": "How can we protect endangered animals?\ncreate national parks and protected areas, stop illegal hunting, plant trees, reduce plastic waste, recycle, keep beaches clean, support wildlife organisations, raise awareness.\n\nLanguage focus, should / shouldn't and must / mustn't:\nWe should plant more trees.\nWe shouldn't leave rubbish on the beach.\nYou must not (mustn't) touch the turtle nests. (it is forbidden)\nPeople must protect wild animals.\n\nshould = advice, must = strong obligation, mustn't = prohibition.\nAfter should and must we use the base form of the verb.",
+   "q": "Sign on the beach: Turtle nests! You ___ walk here at night.",
+   "choices": [
+    "have to",
+    "must",
+    "mustn't",
+    "should",
+    "can"
+   ],
+   "answer": 2,
+   "explain": "The sign shows a prohibition (it is not allowed), so we use mustn't."
+  }
+ ],
+ "Life in the Universe & Future": [
+  {
+   "title": "Films and Film Genres",
+   "text": "Film genres: action, adventure, animation (cartoon), comedy, drama, fantasy, horror, science fiction (sci-fi), documentary, thriller, romance.\n\nPeople in films: actor, actress, director, character, hero, villain.\n\nAdjectives: exciting, boring, funny, scary, thrilling, amazing, moving, realistic.\n\nLanguage focus, past simple to talk about films you watched:\nregular verbs + -ed: watch → watched, enjoy → enjoyed\nirregular verbs: see → saw, go → went, be → was / were\nI watched a sci-fi film last night. It was amazing.\nWe didn't like the ending.\nDid you see the new animation film? Yes, I did.",
+   "q": "Last weekend we ___ to the cinema and watched a comedy.",
+   "choices": [
+    "went",
+    "are going",
+    "will go",
+    "go",
+    "goes"
+   ],
+   "answer": 0,
+   "explain": "Last weekend shows the past: past simple of go is went."
+  },
+  {
+   "title": "Futuristic Films, Ideas and Technology",
+   "text": "Science fiction films show ideas about the future: robots, time travel, flying cars, space colonies, artificial intelligence, holograms, virtual reality, teleportation.\n\nSome old sci-fi ideas are real today: video calls, smart watches, self-driving cars, voice assistants.\n\nLanguage focus, will for predictions about the future:\nwill + base verb\nIn the future, robots will do the housework.\nPeople will travel to Mars.\nWe won't (will not) use paper money.\nWill cars fly? I think they will.\n\nI think / I don't think / Maybe / Probably:\nMaybe we will live on the Moon.\nI don't think people will stop reading books.",
+   "q": "I think people ___ holiday in space in fifty years.",
+   "choices": [
+    "goes on",
+    "going on",
+    "go on",
+    "will go on",
+    "went on"
+   ],
+   "answer": 3,
+   "explain": "A prediction about the future: will + base verb. People will go on holiday."
+  }
+ ]
+}

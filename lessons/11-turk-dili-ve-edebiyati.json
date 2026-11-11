@@ -1,0 +1,178 @@
+{
+ "Bir Diyeceğim Var!": [
+  {
+   "title": "Karagöz Oyunu",
+   "text": "Karagöz, deve ya da manda derisinden yapılmış renkli tasvirlerin (figürlerin), arkadan ışık verilen beyaz bir perdeye yansıtılmasıyla oynanan geleneksel Türk gölge oyunudur. 2009'da UNESCO Somut Olmayan Kültürel Miras listesine alınmıştır.\n\nOyunun bölümleri:\nMukaddime (giriş): Hacivat perde gazeli okur ve Karagöz'ü çağırır.\nMuhavere (söyleşme): Karagöz ile Hacivat arasındaki, olay örgüsüne bağlı olmayan, söz oyunlarına ve yanlış anlamalara dayalı konuşmalar.\nFasıl (asıl oyun): Oyunun konusunun işlendiği bölüm; diğer tipler de sahneye çıkar.\nBitiş: Karagöz, Hacivat'a söylediği bir sözle oyunu bitirir ve kusurlar için özür diler.\n\nBaş kişiler:\nKaragöz: Okumamış, saf, açık sözlü, halkın sağduyusunu temsil eden kişi.\nHacivat: Biraz eğitim görmüş, ağdalı Osmanlıca konuşan, işini bilen, kurallara uyan kişi.\nİkisi arasındaki anlaşmazlık güldürünün temel kaynağıdır.\n\nDiğer tipler: Tiryaki, Beberuhi, Zenne, Çelebi, Acem, Arnavut, Kayserili gibi toplumdaki farklı kesimleri temsil eden tipler.\n\nKaragöz, toplumdaki aksaklıkları güldürerek eleştirir.",
+   "q": "Karagöz oyununda Hacivat'ın perde gazeli okuduğu giriş bölümüne ne ad verilir?",
+   "choices": [
+    "Fasıl",
+    "Mukaddime",
+    "Bitiş",
+    "Tekerleme",
+    "Muhavere"
+   ],
+   "answer": 1,
+   "explain": "Karagöz oyunu mukaddime ile başlar; bu bölümde Hacivat perde gazeli okur."
+  },
+  {
+   "title": "Mektup",
+   "text": "Mektup, bir kişinin ya da kurumun başka bir kişi ya da kuruma duygu, düşünce, istek ya da haber iletmek amacıyla yazdığı yazıdır.\n\nMektup türleri:\nÖzel mektup: Aile ve arkadaşlara yazılır; samimi bir dil kullanılır.\nİş mektubu: İş hayatıyla ilgili, açık ve resmî bir dille yazılır.\nResmî mektup (resmî yazı): Kurumlar arasında yazılır; belirli bir düzene uyulur.\nEdebî mektup: Sanatçıların sanat, edebiyat ve hayat hakkındaki görüşlerini paylaştığı mektuplardır. Edebî değer taşır, kitap olarak yayımlanabilir.\nAçık mektup: Bir kişiye yazılmış gibi görünse de kamuoyuna seslenmek için gazete ya da dergide yayımlanır.\n\nMektubun bölümleri: Yer ve tarih, hitap, giriş, gelişme, sonuç, saygı ve sevgi ifadesi, imza.\n\nTürk edebiyatında Namık Kemal, Cahit Sıtkı Tarancı (Ziya'ya Mektuplar), Sabahattin Ali ve Ahmet Hamdi Tanpınar'ın mektupları önemlidir.\n\nGünümüzde e-posta ve mesajlaşma uygulamaları mektubun yerini büyük ölçüde almıştır.",
+   "q": "Bir kişiye yazılmış gibi görünse de amacı kamuoyuna seslenmek olan ve gazetede yayımlanan mektup türü hangisidir?",
+   "choices": [
+    "Resmî yazı",
+    "Dilekçe",
+    "Özel mektup",
+    "İş mektubu",
+    "Açık mektup"
+   ],
+   "answer": 4,
+   "explain": "Açık mektup, bir kişiye hitap edilse de toplumu bilgilendirmek ya da etkilemek amacıyla basında yayımlanır."
+  },
+  {
+   "title": "Dilekçe",
+   "text": "Dilekçe, bir kişinin resmî ya da özel bir kuruma istek, şikâyet ya da bildirimini iletmek amacıyla belirli kurallara göre yazdığı resmî yazıdır.\n\nDilekçe yazım kuralları:\nA4 boyutunda beyaz kâğıda yazılır.\nSağ üst köşeye tarih yazılır.\nKurumun adı büyük harflerle ortalanarak yazılır (örneğin ... LİSESİ MÜDÜRLÜĞÜNE). Ardından bir alt satıra kurumun bulunduğu şehir yazılır.\nDilekçe metni kısa, açık ve anlaşılır olmalıdır; konu net belirtilmelidir.\nSaygılı bir dil kullanılır; sonunda Gereğinin yapılmasını saygılarımla arz ederim. gibi kalıp ifadeler yer alır.\nMetnin sağ alt kısmına ad-soyad yazılır ve imza atılır.\nSol alt kısma adres, telefon ve varsa ekler yazılır.\n\nDilekçede argo, gereksiz ayrıntı ve duygusal ifadelerden kaçınılır.\n\nGünümüzde birçok dilekçe e-Devlet üzerinden elektronik olarak da verilebilmektedir. Dilekçe hakkı, Anayasa'da güvence altına alınmış bir vatandaşlık hakkıdır.",
+   "q": "Dilekçe yazımı için aşağıdakilerden hangisi yanlıştır?",
+   "choices": [
+    "Kurumun adı büyük harflerle yazılır.",
+    "Konu açık ve kısa anlatılır.",
+    "Samimi ve argo ifadeler kullanılabilir.",
+    "Ad-soyad ve imza bulunur.",
+    "Tarih sağ üst köşeye yazılır."
+   ],
+   "answer": 2,
+   "explain": "Dilekçe resmî bir yazıdır; argo ve aşırı samimi ifadeler kullanılmaz, saygılı ve açık bir dil tercih edilir."
+  }
+ ],
+ "Kültür Yolculuğu": [
+  {
+   "title": "Cumhuriyet Dönemi Hikâyesi",
+   "text": "Cumhuriyet döneminde Türk hikâyeciliği farklı yönlerde gelişti:\n\nToplumcu gerçekçi hikâye: Toplumsal sorunları, köylünün ve işçinin hayatını gerçekçi bir dille anlatır. Sabahattin Ali (Değirmen, Kağnı), Sait Faik'in bazı eserleri, Orhan Kemal (çukurova ve işçi hayatı), Kemal Tahir.\n\nDurum hikâyesi: Sait Faik Abasıyanık bu türün en önemli temsilcisidir (Semaver, Sarnıç, Lüzumsuz Adam). İstanbul'un kenar mahallelerini, balıkçıları, sıradan insanları insan sevgisiyle anlatır. Memduh Şevket Esendal da durum hikâyesinin öncülerindendir.\n\nMillî ve manevi değerleri işleyen hikâye: Mustafa Kutlu, Rasim Özdenören, Sevinç Çokum.\n\nModernist hikâye: Bireyin iç dünyasını, yalnızlığını ve yabancılaşmasını yeni anlatım teknikleriyle (bilinç akışı, iç monolog) anlatır: Bilge Karasu, Vüs'at O. Bener, Leyla Erbil, Füruzan.\n\nKöy hikâyesi: Anadolu köyünü ve köylünün sorunlarını yakından anlatır: Fakir Baykurt, Talip Apaydın.",
+   "q": "İstanbul'un kenar mahallelerindeki sıradan insanları insan sevgisiyle anlatan, durum hikâyesinin en önemli temsilcisi kimdir?",
+   "choices": [
+    "Sait Faik Abasıyanık",
+    "Refik Halit Karay",
+    "Halide Edip Adıvar",
+    "Namık Kemal",
+    "Ömer Seyfettin"
+   ],
+   "answer": 0,
+   "explain": "Sait Faik, Semaver ve Sarnıç gibi eserleriyle durum hikâyesinin Türk edebiyatındaki en önemli temsilcisidir."
+  },
+  {
+   "title": "Anı ve Kültürel Hafıza",
+   "text": "Anı, yazarın kendi yaşadığı ya da tanık olduğu olayları, aradan zaman geçtikten sonra anlattığı yazılardır. Cumhuriyet döneminde anılar, toplumun kültürel hafızasını korumada önemli bir rol üstlenmiştir.\n\nAnının özellikleri:\nYaşanmış olaylar anlatılır; gerçekliğe dayanır.\nBirinci tekil kişi ağzından yazılır.\nYazarın kişisel yorumları bulunduğu için özneldir.\nDönemin siyasi, sosyal ve kültürel hayatına ışık tutar; tarih araştırmaları için kaynak oluşturur.\n\nCumhuriyet döneminden örnekler:\nHalide Edip Adıvar, Türk'ün Ateşle İmtihanı: Kurtuluş Savaşı yıllarını anlatır.\nFalih Rıfkı Atay, Zeytindağı ve Çankaya: I. Dünya Savaşı ve Atatürk'ü anlatır.\nYakup Kadri Karaosmanoğlu, Zoraki Diplomat ve Anamın Kitabı.\nSamiha Ayverdi, İbrahim Efendi Konağı: Eski İstanbul hayatı.\nAbdülhak Şinasi Hisar, Boğaziçi Mehtapları ve Boğaziçi Yalıları.\n\nAnılar, okura bir dönemi tarih kitaplarından farklı olarak bir insanın gözünden, duygularıyla birlikte tanıma fırsatı verir.",
+   "q": "Kurtuluş Savaşı yıllarını yazarın kendi tanıklığıyla anlatan Türk'ün Ateşle İmtihanı adlı anı kitabının yazarı kimdir?",
+   "choices": [
+    "Sait Faik Abasıyanık",
+    "Abdülhak Şinasi Hisar",
+    "Falih Rıfkı Atay",
+    "Halide Edip Adıvar",
+    "Samiha Ayverdi"
+   ],
+   "answer": 3,
+   "explain": "Halide Edip Adıvar, Kurtuluş Savaşı'na bizzat katılmış ve bu yılları Türk'ün Ateşle İmtihanı'nda anlatmıştır."
+  },
+  {
+   "title": "Âşık Atışması",
+   "text": "Âşık atışması (karşılaşma), iki ya da daha fazla âşığın saz eşliğinde, doğaçlama olarak karşılıklı şiir söyleyerek ustalıklarını sınamasıdır. Âşık edebiyatının en canlı geleneklerinden biridir.\n\nÖzellikleri:\nŞiirler önceden hazırlanmaz; o anda (irticalen, doğaçlama) söylenir.\nÂşıklar birbirlerine takılır, sorular sorar, birbirlerinin sözlerine karşılık verir.\nAyak açma: Atışmaya başlayan âşık uyağı (ayağı) belirler; diğer âşık aynı ayakla devam etmek zorundadır.\nCevap veremeyen ya da ayağı bozan âşık atışmayı kaybeder ve geleneğe göre sazını rakibine bırakabilir (saz bağlatma).\nHece ölçüsü ve koşma biçimi kullanılır.\n\nAtışma türleri: Muamma (bilmece) sorma, taşlama, nazire (benzer şiirle karşılık verme).\n\nÂşıklık geleneği bugün de yaşamaktadır; Âşık Veysel, Âşık Mahzuni Şerif, Âşık Şeref Taşlıova ve Murat Çobanoğlu bu geleneğin önemli temsilcileridir. Âşıklık geleneği UNESCO Somut Olmayan Kültürel Miras listesindedir.",
+   "q": "Âşık atışmasında şiirlerin önceden hazırlanmadan, o anda söylenmesine ne ad verilir?",
+   "choices": [
+    "Nazire",
+    "Doğaçlama (irticalen söyleme)",
+    "Mahlas",
+    "Muamma",
+    "Ayak"
+   ],
+   "answer": 1,
+   "explain": "Âşık atışmasında şiirler hazırlıksız, o anda söylenir; buna doğaçlama ya da irticalen söyleme denir."
+  }
+ ],
+ "Yaşamın İzinde": [
+  {
+   "title": "Cumhuriyet Dönemi Romanı",
+   "text": "Cumhuriyet döneminde Türk romanı çok çeşitli yönlerde gelişti:\n\nMillî mücadele ve toplumsal değişim: Yakup Kadri (Yaban, Ankara), Halide Edip (Ateşten Gömlek), Reşat Nuri.\n\nToplumcu gerçekçi roman: Köylünün, işçinin, toplumsal adaletsizliğin anlatıldığı romanlar.\nYaşar Kemal, İnce Memed: Çukurova'da ağalara karşı direnen eşkıya Memed'in destansı hikâyesi.\nKemal Tahir (Devlet Ana, Yorgun Savaşçı), Orhan Kemal (Bereketli Topraklar Üzerinde), Sabahattin Ali (Kuyucaklı Yusuf, İçimizdeki Şeytan, Kürk Mantolu Madonna).\n\nBireyin iç dünyası ve modernizm:\nAhmet Hamdi Tanpınar (Huzur, Saatleri Ayarlama Enstitüsü), Peyami Safa (Dokuzuncu Hariciye Koğuşu), Oğuz Atay (Tutunamayanlar), Yusuf Atılgan (Anayurt Oteli).\n\nMillî ve manevi değerler: Tarık Buğra (Küçük Ağa), Sezai Karakoç, Mustafa Kutlu.\n\nTarihî roman: Kemal Tahir, Tarık Buğra (Osmancık).\n\nPostmodern roman: Orhan Pamuk (Benim Adım Kırmızı; 2006 Nobel Edebiyat Ödülü).",
+   "q": "Çukurova'da ağalara karşı direnen bir eşkıyanın hikâyesini anlatan İnce Memed romanının yazarı kimdir?",
+   "choices": [
+    "Oğuz Atay",
+    "Orhan Pamuk",
+    "Orhan Kemal",
+    "Kemal Tahir",
+    "Yaşar Kemal"
+   ],
+   "answer": 4,
+   "explain": "İnce Memed, Yaşar Kemal'in Çukurova'yı ve toplumsal adaletsizliği anlatan destansı romanıdır."
+  },
+  {
+   "title": "Biyografi",
+   "text": "Biyografi (yaşam öyküsü), tanınmış bir kişinin hayatını, kişiliğini, eserlerini ve topluma katkılarını belgelere dayanarak anlatan yazılardır. Yazar, hayatını anlattığı kişiden farklıdır.\n\nÖzellikleri:\nÜçüncü kişi ağzından yazılır.\nBelgelere, mektuplara, anılara ve tanıklıklara dayanır; gerçeklere bağlı kalınır.\nKişinin hayatı genellikle doğumdan ölüme kronolojik sırayla anlatılır.\nKişinin yalnızca başarıları değil, yaşadığı zorluklar ve yaşadığı dönemin özellikleri de anlatılır.\nNesnel olmaya çalışılır; yazar övgü ya da yergiye kaçmamalıdır.\n\nBenzer türlerle karşılaştırma:\nOtobiyografi: Kişi kendi hayatını kendisi yazar.\nAnı: Belirli bir dönem ve olaylar ön plandadır.\nTezkire: Divan edebiyatında şairlerin biyografilerinin toplandığı eserler (biyografinin geleneksel kökü).\n\nÖrnekler: Şevket Süreyya Aydemir'in Tek Adam (Atatürk) ve İkinci Adam (İsmet İnönü); Beşir Ayvazoğlu'nun Peyami Safa ve Yahya Kemal biyografileri.",
+   "q": "Atatürk'ün hayatını anlatan Tek Adam adlı biyografinin yazarı kimdir?",
+   "choices": [
+    "Halide Edip Adıvar",
+    "Falih Rıfkı Atay",
+    "Şevket Süreyya Aydemir",
+    "Yakup Kadri Karaosmanoğlu",
+    "Beşir Ayvazoğlu"
+   ],
+   "answer": 2,
+   "explain": "Tek Adam, Şevket Süreyya Aydemir'in Atatürk'ün hayatını belgelere dayanarak anlattığı biyografisidir."
+  },
+  {
+   "title": "Tezkire",
+   "text": "Tezkire, divan edebiyatında şairlerin hayatlarını kısaca anlatan, şiirlerinden örnekler veren ve onlar hakkında değerlendirmeler yapan eserlerdir. Biyografi türünün geleneksel edebiyatımızdaki karşılığıdır.\n\nÖzellikleri:\nŞairler genellikle alfabetik sırayla ya da yaşadıkları döneme göre sıralanır.\nHer şair için hayatı, kişiliği, eğitimi, mesleği ve sanatı hakkında bilgi verilir.\nŞiirlerinden örnek beyitler sunulur.\nDil genellikle süslü ve sanatlıdır; nesnellikten çok övgü ağır basabilir.\n\nTezkire türleri:\nŞuara tezkireleri: Şairlerin biyografileri (en yaygın tür).\nEvliya tezkireleri: Din büyüklerinin hayatları.\nHattat ve musiki tezkireleri.\n\nÖnemli örnekler:\nAli Şir Nevai, Mecalisü'n-Nefais: Türk edebiyatının (Çağatayca) ilk şuara tezkiresi.\nSehi Bey, Heşt Behişt: Anadolu'da yazılan ilk şuara tezkiresi.\nLatifi Tezkiresi ve Âşık Çelebi'nin Meşairü'ş-Şuara'sı.\n\nTezkireler divan edebiyatı tarihinin en önemli kaynaklarıdır.",
+   "q": "Anadolu sahasında yazılan ilk şuara tezkiresi hangisidir?",
+   "choices": [
+    "Heşt Behişt",
+    "Meşairü'ş-Şuara",
+    "Kutadgu Bilig",
+    "Divanü Lügati't-Türk",
+    "Mecalisü'n-Nefais"
+   ],
+   "answer": 0,
+   "explain": "Sehi Bey'in Heşt Behişt adlı eseri Anadolu'da yazılan ilk şairler tezkiresidir. Mecalisü'n-Nefais Çağatay sahasında yazılmıştır."
+  },
+  {
+   "title": "Radyo Tiyatrosu",
+   "text": "Radyo tiyatrosu, yalnızca ses yoluyla dinleyiciye ulaştırılan, sahnelenmek yerine seslendirilmek üzere yazılan tiyatro türüdür.\n\nÖzellikleri:\nGörsel öğe yoktur; her şey ses, müzik ve efektlerle anlatılır.\nDekor ve hareketler anlatıcı ya da diyaloglar aracılığıyla dinleyicinin zihninde canlandırılır.\nSes efektleri (kapı gıcırtısı, yağmur, ayak sesleri) ve müzik atmosferi oluşturur.\nKişi sayısı sınırlıdır; dinleyicinin karıştırmaması için seslerin birbirinden ayırt edilebilmesi gerekir.\nKısa ve akıcı olması, diyalogların açık olması önemlidir.\nAnlatıcı (dış ses) olayların akışını ve mekânı tanıtabilir.\n\nTürkiye'de radyo tiyatrosu, TRT'nin Arkası Yarın gibi programlarıyla çok sevilmiş, birçok kuşağın hayal gücünü beslemiştir.\n\nGünümüzde radyo tiyatrosu sesli kitap ve podcast biçimleriyle yeniden ilgi görmektedir.",
+   "q": "Radyo tiyatrosunda mekânın ve atmosferin dinleyicinin zihninde canlandırılmasını sağlayan temel öğeler hangileridir?",
+   "choices": [
+    "Fotoğraf ve resim",
+    "Yazı ve altyazı",
+    "Dekor ve kostüm",
+    "Ses efektleri, müzik ve diyaloglar",
+    "Işıklandırma ve sahne"
+   ],
+   "answer": 3,
+   "explain": "Radyo tiyatrosunda görsellik olmadığı için mekân ve atmosfer ses efektleri, müzik ve diyaloglarla oluşturulur."
+  }
+ ],
+ "Hayatın Aynası": [
+  {
+   "title": "Cumhuriyet Dönemi Tiyatrosu",
+   "text": "Cumhuriyet'in ilanından sonra tiyatro, toplumu eğitmenin ve kültürel gelişmenin önemli bir aracı olarak görüldü. Darülbedayi, İstanbul Şehir Tiyatroları'na dönüştü; 1949'da Devlet Tiyatroları kuruldu.\n\nDönemin önemli tiyatro yazarları ve eserleri:\nMusahipzade Celal: İstanbul Efendisi, Aynaroz Kadısı (geleneksel tiyatro öğeleri ve güldürü).\nNecip Fazıl Kısakürek: Bir Adam Yaratmak, Reis Bey (bireyin iç dünyası).\nHaldun Taner: Keşanlı Ali Destanı. Epik tiyatroyu geleneksel Türk tiyatrosu öğeleriyle birleştirdi.\nTurgut Özakman: Ah Şu Gençler, Kanaviçe.\nOrhan Asena, Recep Bilginer, Güngör Dilmen (mitolojik konular).\nAzra Erhat ve Melih Cevdet Anday'ın tiyatro eserleri.\n\nTemalar: Millî Mücadele, Cumhuriyet'in getirdiği değişimler, toplumsal sorunlar, köyden kente göç, bireyin yalnızlığı, eski-yeni çatışması.\n\nTiyatronun yapı unsurları: Perde ve sahneler, diyalog ve monolog, yan metin (sahne yönergeleri), çatışma, karakterler.",
+   "q": "Epik tiyatroyu geleneksel Türk tiyatrosu öğeleriyle birleştiren Keşanlı Ali Destanı'nın yazarı kimdir?",
+   "choices": [
+    "Necip Fazıl Kısakürek",
+    "Haldun Taner",
+    "Musahipzade Celal",
+    "Turgut Özakman",
+    "Güngör Dilmen"
+   ],
+   "answer": 1,
+   "explain": "Keşanlı Ali Destanı, Haldun Taner'in epik tiyatro anlayışıyla yazdığı en tanınmış eseridir."
+  },
+  {
+   "title": "Belgesel Metin ve Senaryo",
+   "text": "Belgesel, gerçek olay, kişi, yer ve olguları belgelere dayanarak anlatan, bilgilendirme amaçlı görsel-işitsel yapımdır.\n\nBelgesel metninin (senaryosunun) hazırlanması:\n1. Konu seçimi ve araştırma: Kaynaklar, arşiv belgeleri, uzman görüşleri toplanır.\n2. Senaryo: Görüntü ve ses birlikte planlanır. Senaryoda genellikle iki sütun bulunur: Görüntü (ne gösterilecek) ve ses (dış ses metni, müzik, röportaj).\n3. Çekim: Mekân görüntüleri, röportajlar, canlandırmalar.\n4. Kurgu (montaj): Görüntüler, ses ve müzik bir araya getirilir.\n\nDış ses metni:\nAçık, anlaşılır ve akıcı olmalıdır.\nGörüntüyü tekrar etmek yerine görüntüyü tamamlayan bilgiler vermelidir.\nNesnel ve bilgilendirici bir dil kullanılır; ancak izleyicinin ilgisini canlı tutmak için betimleyici ifadelere de yer verilebilir.\n\nBelgesel, öğretici metinler grubundadır; ama iyi bir belgesel aynı zamanda etkileyici bir anlatı kurar. TRT Belgesel ve Türk belgeselciliğinin öncüleri (Süha Arın gibi) bu alanda önemli eserler üretmiştir.",
+   "q": "Belgesel senaryosunda dış ses metni için aşağıdakilerden hangisi doğrudur?",
+   "choices": [
+    "Hayal ürünü olaylar anlatmalıdır.",
+    "Uzun ve karmaşık cümlelerden oluşmalıdır.",
+    "Yalnızca müzikten oluşmalıdır.",
+    "Görüntüde görüleni aynen tekrar etmelidir.",
+    "Görüntüyü tamamlayan, açık ve bilgilendirici bir dil kullanmalıdır."
+   ],
+   "answer": 4,
+   "explain": "Dış ses, görüntünün tekrarı olmamalı; izleyiciye görüntüyü tamamlayan bilgileri açık ve akıcı bir dille sunmalıdır."
+  }
+ ]
+}

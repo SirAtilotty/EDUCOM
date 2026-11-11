@@ -1,0 +1,234 @@
+{
+ "Sözün Ezgisi": [
+  {
+   "title": "Koşuk",
+   "text": "Koşuk, İslamiyet öncesi Türk edebiyatında sığır adı verilen av törenlerinde ve şölenlerde kopuz eşliğinde söylenen lirik şiirlerdir. Halk edebiyatındaki koşmanın atası kabul edilir.\n\nÖzellikleri:\nDoğa sevgisi, aşk, kahramanlık ve yiğitlik konularını işler.\nHece ölçüsüyle (genellikle 7'li ya da 4+3) söylenir.\nDörtlüklerle kurulur; uyak düzeni genellikle aaab, cccb biçimindedir.\nYarım uyak ve redif kullanılır.\n\nKoşuk örnekleri bize Kaşgarlı Mahmud'un Divanü Lügati't-Türk adlı eseri sayesinde ulaşmıştır. Kaşgarlı bu eseri, Araplara Türkçe öğretmek amacıyla 11. yüzyılda yazmıştır.\n\nİslamiyet öncesi şiir türleri: koşuk (lirik), sagu (ölen kişinin ardından söylenen ağıt) ve sav (atasözü).",
+   "q": "İslamiyet öncesi Türk edebiyatının koşuk ve sagu örnekleri hangi eser aracılığıyla günümüze ulaşmıştır?",
+   "choices": [
+    "Divanü Lügati't-Türk",
+    "Dede Korkut Hikâyeleri",
+    "Atabetü'l-Hakayık",
+    "Mesnevi",
+    "Kutadgu Bilig"
+   ],
+   "answer": 0,
+   "explain": "Kaşgarlı Mahmud'un Divanü Lügati't-Türk'ü, koşuk, sagu ve savların günümüze ulaşmasını sağlayan temel kaynaktır."
+  },
+  {
+   "title": "Koşma",
+   "text": "Koşma, âşık edebiyatının en yaygın nazım biçimidir; aşk, doğa güzellikleri, ayrılık ve özlem gibi lirik konuları işler. Koşuğun devamı olarak kabul edilir.\n\nBiçim özellikleri:\nHece ölçüsünün 11'li (6+5 ya da 4+4+3) kalıbıyla yazılır.\nDörtlüklerden oluşur; dörtlük sayısı genellikle 3 ile 5 arasındadır.\nUyak düzeni: abab, cccb, dddb ya da xaxa, bbba, ccca.\nSon dörtlükte şair mahlasını (takma adını) söyler.\n\nKonusuna göre türleri:\nGüzelleme: Sevgili ve doğa güzelliklerini anlatır.\nKoçaklama: Yiğitlik ve savaşı anlatır.\nTaşlama: Toplumdaki aksaklıkları ve kişileri eleştirir.\nAğıt: Ölümün ardından duyulan acıyı anlatır.\n\nKaracaoğlan, koşmanın en güçlü temsilcisidir.",
+   "q": "Âşık edebiyatında toplumdaki aksaklıkları ve kişileri eleştiren koşma türüne ne ad verilir?",
+   "choices": [
+    "Destan",
+    "Güzelleme",
+    "Koçaklama",
+    "Taşlama",
+    "Ağıt"
+   ],
+   "answer": 3,
+   "explain": "Taşlama, toplumsal bozuklukları ve kişileri alaycı bir dille eleştiren koşma türüdür."
+  },
+  {
+   "title": "Türkü",
+   "text": "Türkü, anonim halk edebiyatının en yaygın nazım biçimidir. Kendine özgü bir ezgiyle söylenir; söyleyeni genellikle bilinmez ve halkın ortak malı olmuştur.\n\nYapısı: Türküler iki bölümden oluşur.\nBent: Asıl konunun anlatıldığı bölümdür.\nBağlama (nakarat): Her bentten sonra tekrarlanan bölümdür; türkünün ezgisini taşır.\n\nÖzellikleri:\nHece ölçüsünün farklı kalıplarıyla söylenir (7'li, 8'li, 11'li).\nAşk, ayrılık, gurbet, askerlik, ölüm, doğa, kahramanlık gibi konuları işler.\nBir olay üzerine doğar; çoğu zaman yöreden yöreye değişerek yayılır.\n\nTürkünün ezgisine göre türleri: Bozlak (Orta Anadolu), hoyrat (Kerkük, Erzurum), zeybek (Ege), uzun hava ve kırık hava.\n\nTürküler, bir milletin duygu dünyasını ve tarihini en içten yansıtan eserlerdir.",
+   "q": "Türkülerde her bentten sonra tekrarlanan ve ezgiyi taşıyan bölüme ne ad verilir?",
+   "choices": [
+    "Mahlas",
+    "Bağlama (nakarat)",
+    "Matla",
+    "Beyit",
+    "Bent"
+   ],
+   "answer": 1,
+   "explain": "Türkülerde bentten sonra tekrarlanan bölüme bağlama ya da nakarat denir."
+  },
+  {
+   "title": "Ninni",
+   "text": "Ninni, anne ya da büyüklerin bebekleri uyutmak için belirli bir ezgiyle söyledikleri anonim halk şiiridir.\n\nÖzellikleri:\nGenellikle 7'li ve 8'li hece ölçüsüyle söylenir.\nDörtlük ya da beyitlerle kurulur.\nAnonimdir; söyleyenin duygu ve isteğine göre değişebilir.\nYumuşak, tekrar eden bir ezgiyle okunur.\n\nKonuları:\nBebeğe duyulan sevgi ve onun için kurulan hayaller.\nAnnenin kendi dertleri, gurbetteki eşini özlemesi, yoksulluk.\nBebeğin sağlıklı büyümesi ve iyi bir insan olması için dualar.\n\nNinni, çocuğun dille ve müzikle ilk karşılaşması olduğu için kültürün aktarılmasında önemli bir rol üstlenir. Ninnilerde dili ve ezgiyi birlikte öğrenen çocuk, toplumun değerleriyle de tanışır.",
+   "q": "Ninnilerle ilgili aşağıdakilerden hangisi yanlıştır?",
+   "choices": [
+    "Annenin kendi dertlerini de yansıtabilir.",
+    "Anonim halk edebiyatı ürünüdür.",
+    "Ezgiyle söylenir.",
+    "Bebeklere duyulan sevgiyi anlatır.",
+    "Divan edebiyatının aruzla yazılmış bir nazım biçimidir."
+   ],
+   "answer": 4,
+   "explain": "Ninni, hece ölçüsüyle söylenen anonim bir halk şiiridir; divan edebiyatına ve aruza ait değildir."
+  },
+  {
+   "title": "Masal",
+   "text": "Masal, olağanüstü olay ve kişilerin yer aldığı, genellikle sözlü gelenekte doğup kuşaktan kuşağa aktarılan anonim halk anlatısıdır.\n\nÖzellikleri:\nOlaylar belirsiz bir zamanda ve yerde geçer (Evvel zaman içinde, kalbur saman içinde...).\nDev, peri, cin, konuşan hayvanlar gibi olağanüstü varlıklar bulunur.\nKahramanlar genellikle iyi ve kötü olarak keskin çizgilerle ayrılır; sonunda iyiler kazanır.\nTekerleme ile başlar, kalıp sözlerle biter (Onlar ermiş muradına...).\nAmaç, dinleyeni eğlendirirken ahlaki bir ders vermektir.\nAnlatımda üç, yedi, kırk gibi kalıplaşmış sayılar sık kullanılır.\n\nMasalı efsaneden ayıran özellik: Efsanede anlatılanların gerçek olduğuna inanılır ve olay belirli bir yer ya da varlıkla ilişkilidir; masalda ise dinleyici anlatılanların gerçek olmadığını bilir.",
+   "q": "Masalın girişinde dinleyiciyi olağanüstü dünyaya hazırlamak için söylenen kalıplaşmış söz grubuna ne ad verilir?",
+   "choices": [
+    "Redif",
+    "Dörtlük",
+    "Tekerleme",
+    "Nakarat",
+    "Mahlas"
+   ],
+   "answer": 2,
+   "explain": "Masallar genellikle tekerlemeyle başlar; tekerleme dinleyiciyi masalın gerçek dışı dünyasına hazırlar."
+  }
+ ],
+ "Kelimelerin Ritmi": [
+  {
+   "title": "Gazel",
+   "text": "Gazel, divan edebiyatında aşk, sevgilinin güzelliği, eğlence meclisleri ve hayatın geçiciliği gibi konuları işleyen lirik şiirlerdir. Arap ve İran edebiyatından geçmiştir.\n\nBiçim özellikleri:\nBeyitlerle yazılır; beyit sayısı genellikle 5 ile 15 arasındadır.\nUyak düzeni: aa, ba, ca, da...\nAruz ölçüsüyle yazılır.\nİlk beyte matla, son beyte makta denir. Şair mahlasını genellikle maktada söyler.\nGazelin en güzel beytine beytü'l-gazel (şah beyit) denir.\n\nGazelde her beyit kendi içinde anlamca bağımsız olabilir. Bütün beyitleri aynı konuyu işleyen gazellere yek-âvâz, bütün beyitleri aynı güzellikte olanlara yek-âhenk gazel denir.\n\nFuzûlî, Bâkî ve Nedîm gazelin en önemli şairleridir.",
+   "q": "Gazelde şairin mahlasını (takma adını) genellikle söylediği son beyte ne ad verilir?",
+   "choices": [
+    "Makta",
+    "Beytü'l-gazel",
+    "Nakarat",
+    "Bent",
+    "Matla"
+   ],
+   "answer": 0,
+   "explain": "Gazelin ilk beyti matla, son beyti makta adını alır; şair mahlasını genellikle maktada kullanır."
+  },
+  {
+   "title": "Kaside",
+   "text": "Kaside, divan edebiyatında din ve devlet büyüklerini övmek amacıyla yazılan uzun şiirlerdir. Gazelle aynı uyak düzenine sahiptir (aa, ba, ca...) ancak daha uzundur; beyit sayısı genellikle 33 ile 99 arasındadır.\n\nKasidenin bölümleri:\nNesib (teşbib): Giriş bölümü; doğa, mevsim ya da bir olay tasvir edilir. Kaside adını bu bölümdeki konudan alır (Su Kasidesi, Bahariye).\nGirizgâh: Asıl konuya geçişi sağlayan beyit.\nMethiye: Övülen kişinin anlatıldığı asıl bölüm.\nFahriye: Şairin kendisini övdüğü bölüm.\nDua: Övülen kişi için iyi dileklerin dile getirildiği son bölüm.\n\nKonusuna göre türleri: Allah'ı övmek için tevhid, Allah'a yalvarmak için münacat, Hz. Muhammed'i övmek için naat, devlet büyüklerini övmek için methiye.\n\nFuzûlî'nin Su Kasidesi, Hz. Muhammed için yazılmış en ünlü naatlardan biridir.",
+   "q": "Kasidede şairin kendini övdüğü bölüme ne ad verilir?",
+   "choices": [
+    "Nesib",
+    "Girizgâh",
+    "Methiye",
+    "Fahriye",
+    "Dua"
+   ],
+   "answer": 3,
+   "explain": "Fahriye, şairin kendi sanatını ve kişiliğini övdüğü bölümdür."
+  },
+  {
+   "title": "Şiirde Ahenk ve Yapı",
+   "text": "Şiiri düzyazıdan ayıran en önemli özellik ahenk, yani ses ve ritim uyumudur. Ahengi sağlayan başlıca unsurlar:\n\nÖlçü: Dizelerdeki hece sayısının eşitliği (hece ölçüsü) ya da açık ve kapalı hecelerin belirli bir düzende sıralanması (aruz ölçüsü). Modern şiirde serbest ölçü de kullanılır.\nUyak (kafiye): Dize sonlarındaki anlamları ve görevleri farklı olan ses benzerliği.\nRedif: Dize sonlarında uyaktan sonra gelen, görevleri ve anlamları aynı olan ek ya da kelimeler.\nAliterasyon: Aynı ünsüzün tekrarı. Asonans: Aynı ünlünün tekrarı.\n\nŞiirin yapı birimleri: dize (mısra), beyit (iki dize), dörtlük (dört dize), bent.\n\nŞiirin temasıyla biçimi uyumlu olmalıdır. Coşkulu bir kahramanlık şiirinde hızlı bir ritim, hüzünlü bir şiirde ise uzun ve ağır bir ritim tercih edilir.",
+   "q": "Dize sonlarında uyaktan sonra gelen, yazılışı, anlamı ve görevi aynı olan ek ya da kelimelere ne ad verilir?",
+   "choices": [
+    "Ölçü",
+    "Redif",
+    "Aliterasyon",
+    "Asonans",
+    "Beyit"
+   ],
+   "answer": 1,
+   "explain": "Görevi ve anlamı aynı olan ses tekrarları rediftir. Örneğin gözlerin / sözlerin kelimelerinde -öz uyak, -lerin ise rediftir."
+  },
+  {
+   "title": "Söyleşi",
+   "text": "Söyleşi (sohbet), yazarın bir konudaki düşüncelerini, karşısında biriyle konuşuyormuş gibi samimi ve içten bir dille anlattığı düşünce yazısıdır.\n\nÖzellikleri:\nKonuşma dilinin rahatlığına yakın, samimi bir üslup kullanılır.\nYazar okuru muhatap alır, ona sorular sorar: Siz de böyle düşünmez misiniz?\nKonu derinlemesine incelenmez; kanıt sunma zorunluluğu yoktur.\nYazar kişisel deneyimlerinden, gözlemlerinden yola çıkar.\nKısa ve akıcı bir yapısı vardır.\n\nDeneme ile karşılaştırma: İkisi de kişisel düşünce yazısıdır. Denemede yazar kendisiyle konuşur gibidir; söyleşide ise okurla konuşur gibidir. Söyleşi, denemeye göre daha az derinlik taşır.\n\nTürk edebiyatında Ahmet Rasim, Nurullah Ataç, Şevket Rado ve Hıfzı Topuz söyleşinin önemli temsilcileridir.",
+   "q": "Söyleşiyi denemeden ayıran en belirgin özellik hangisidir?",
+   "choices": [
+    "Kanıt sunmanın zorunlu olması",
+    "Olağanüstü olayları anlatması",
+    "Ölçülü ve uyaklı olması",
+    "Kişisel düşüncelere yer vermesi",
+    "Yazarın okurla karşılıklı konuşuyormuş gibi bir hava oluşturması"
+   ],
+   "answer": 4,
+   "explain": "Söyleşide yazar okuru doğrudan muhatap alır ve onunla sohbet ediyormuş gibi yazar; denemede ise kendi kendine düşünür gibidir."
+  }
+ ],
+ "Dünden Bugüne": [
+  {
+   "title": "Destan",
+   "text": "Destan, bir milletin hayatında derin izler bırakan olayların (savaş, göç, kıtlık, kurtuluş) halkın ortak hayal gücüyle olağanüstü unsurlarla süslenerek anlatıldığı uzun anlatılardır.\n\nÖzellikleri:\nOlağanüstü olaylar ve kahramanlar bulunur; kahraman genellikle milleti temsil eder.\nUzun bir süreçte, anonim olarak oluşur ve sözlü gelenekle aktarılır.\nManzum ya da manzum-mensur karışık olabilir.\nMilletin inançlarını, değerlerini ve yaşam biçimini yansıtır.\n\nDoğal destan: Halk arasında kendiliğinden oluşur ve yazıya geçirilir.\nYapma destan: Bir şair tarafından destan özellikleri taşıyan bir eser olarak yazılır (Mehmet Emin Yurdakul'un eserleri, Çanakkale ve İstiklal Marşı benzeri şiirler).\n\nİslamiyet öncesi Türk destanları: Alp Er Tunga, Şu, Oğuz Kağan, Göktürk (Bozkurt ve Ergenekon), Uygur (Türeyiş ve Göç). İslami dönem: Satuk Buğra Han, Manas, Battal Gazi.",
+   "q": "Göktürklerin demir dağları eriterek yurtlarından çıktığını anlatan destan hangisidir?",
+   "choices": [
+    "Şu",
+    "Oğuz Kağan",
+    "Ergenekon",
+    "Alp Er Tunga",
+    "Manas"
+   ],
+   "answer": 2,
+   "explain": "Ergenekon Destanı, Göktürklerin dağlarla çevrili Ergenekon'dan demir dağı eriterek çıkışını anlatır."
+  },
+  {
+   "title": "Halk Hikâyesi",
+   "text": "Halk hikâyeleri, destan geleneğinden sonra ortaya çıkan, âşıklar tarafından halk arasında anlatılan, nazım-nesir karışık uzun anlatılardır. Destan ile modern hikâye ve roman arasında bir köprü kabul edilir.\n\nÖzellikleri:\nOlaylar anlatılırken düzyazı, duyguların yoğunlaştığı yerlerde şiir kullanılır.\nOlağanüstülükler destana göre azdır ama tamamen yok değildir (bade içme, rüyada âşık olma).\nTekerleme ile başlar ve dua ile biter.\nÂşıklar tarafından kahvehane ve düğünlerde anlatılır.\n\nKonularına göre ikiye ayrılır:\nAşk hikâyeleri: Kerem ile Aslı, Âşık Garip, Tahir ile Zühre, Leyla ile Mecnun, Ferhat ile Şirin.\nKahramanlık hikâyeleri: Köroğlu, Dede Korkut Hikâyeleri.\n\nDede Korkut Hikâyeleri, Oğuz Türklerinin yaşamını, değerlerini ve dilini yansıtan en önemli eserdir.",
+   "q": "Halk hikâyelerinde düzyazı ile şiirin birlikte kullanılmasının nedeni nedir?",
+   "choices": [
+    "Olaylar düzyazıyla anlatılırken duyguların yoğunlaştığı yerlerde şiire geçilmesi",
+    "Aruz ölçüsünü göstermek",
+    "Yazılı edebiyata ait olması",
+    "Okurun kafasını karıştırmak",
+    "Hikâyeyi kısaltmak"
+   ],
+   "answer": 0,
+   "explain": "Halk hikâyelerinde olay örgüsü düzyazıyla ilerler; kahramanların duygularını dile getirdiği anlarda şiir kullanılır."
+  },
+  {
+   "title": "Mesnevi",
+   "text": "Mesnevi, divan edebiyatında uzun konuların, olay ve öykülerin anlatıldığı nazım biçimidir. Divan edebiyatında roman ve hikâyenin yerini tutar.\n\nBiçim özellikleri:\nBeyitlerle yazılır ve her beyit kendi içinde uyaklıdır: aa, bb, cc, dd...\nBu sayede uyak bulmak kolaylaştığı için çok uzun yazılabilir; binlerce beyitten oluşan mesneviler vardır.\nAruzun kısa kalıplarıyla yazılır.\n\nKonuları: Aşk, din, tasavvuf, ahlak, kahramanlık, savaş, öğüt.\nÖnemli eserler:\nMevlâna, Mesnevi (Farsça; tasavvufi).\nFuzûlî, Leylâ vü Mecnûn.\nŞeyh Galip, Hüsn ü Aşk.\nYusuf Has Hacib, Kutadgu Bilig (ilk Türkçe mesnevi örneği sayılır).\n\nBirden fazla mesneviyi bir araya getiren şaire hamse sahibi denir.",
+   "q": "Mesnevinin binlerce beyitle uzun yazılabilmesini sağlayan özellik hangisidir?",
+   "choices": [
+    "Nakarat bulunması",
+    "Mahlas kullanılması",
+    "Hece ölçüsüyle yazılması",
+    "Her beytin kendi içinde uyaklı olması (aa, bb, cc)",
+    "Dörtlüklerle yazılması"
+   ],
+   "answer": 3,
+   "explain": "Her beytin kendi içinde uyaklı olması, şairin her beyitte yeni uyak bulabilmesini sağlar ve uzun anlatımı kolaylaştırır."
+  },
+  {
+   "title": "Fabl",
+   "text": "Fabl, hayvanların, bitkilerin ya da cansız varlıkların insan gibi düşünüp konuştuğu, sonunda ders veren kısa öykülerdir. Manzum ya da mensur olabilir.\n\nÖzellikleri:\nKişileştirme sanatına dayanır; kahramanlar insan özelliklerini temsil eder (tilki kurnazlığı, aslan gücü, karınca çalışkanlığı).\nOlaylar kısa ve basittir.\nSonunda açıkça ya da sezdirilerek verilen bir ders (kıssadan hisse) bulunur.\nToplumdaki aksaklıkları doğrudan değil, hayvanlar aracılığıyla dolaylı yoldan eleştirir.\n\nDünya edebiyatında: Ezop (Yunan), Beydaba (Hint; Kelile ve Dimne), La Fontaine (Fransız).\nTürk edebiyatında: Mevlâna ve Ziya Paşa'nın bazı eserleri; Şinasi'nin La Fontaine çevirileri; Orhan Veli'nin La Fontaine'den çevirdiği masallar.",
+   "q": "Fabl türünün temelini oluşturan söz sanatı hangisidir?",
+   "choices": [
+    "Abartma (mübalağa)",
+    "Kişileştirme (teşhis)",
+    "Tezat",
+    "Tekrir",
+    "Cinas"
+   ],
+   "answer": 1,
+   "explain": "Fabllarda hayvan ve nesneler insan gibi konuşup düşündüğü için temel sanat kişileştirmedir."
+  }
+ ],
+ "Nesillerin Mirası": [
+  {
+   "title": "Millî Edebiyat Dönemi ve Şiir",
+   "text": "Millî Edebiyat Dönemi 1911'de Selanik'te çıkan Genç Kalemler dergisinde Ömer Seyfettin, Ziya Gökalp ve Ali Canip'in Yeni Lisan makalesiyle başladı ve Cumhuriyet'in ilk yıllarına kadar sürdü.\n\nTemel ilkeler:\nSade bir Türkçe kullanmak; yabancı dil kurallarını ve gereksiz yabancı kelimeleri dilden atmak. İstanbul Türkçesi esas alındı.\nKonuları yerli hayattan, Anadolu'dan ve Türk tarihinden almak.\nHalk edebiyatına ve hece ölçüsüne dönmek.\n\nŞiir: Hece ölçüsü yaygınlaştı. Beş Hececiler (Faruk Nafiz Çamlıbel, Halit Fahri Ozansoy, Enis Behiç Koryürek, Yusuf Ziya Ortaç, Orhan Seyfi Orhon) bu dönemde öne çıktı. Faruk Nafiz'in Han Duvarları şiiri Anadolu'yu konu alan ünlü bir örnektir.\n\nBu dönemin dışında kalan ama aruzla millî duyguları işleyen Mehmet Âkif Ersoy, İstiklal Marşı'nın şairidir. Yahya Kemal ise aruzla, sade bir dille İstanbul ve tarih şiirleri yazdı.",
+   "q": "Millî Edebiyat Dönemi'nin dilde sadeleşme ilkesini ilan eden Yeni Lisan makalesi hangi dergide yayımlanmıştır?",
+   "choices": [
+    "Tercüman-ı Ahval",
+    "Dergâh",
+    "Varlık",
+    "Servet-i Fünun",
+    "Genç Kalemler"
+   ],
+   "answer": 4,
+   "explain": "Yeni Lisan makalesi 1911'de Selanik'te çıkan Genç Kalemler dergisinde yayımlandı."
+  },
+  {
+   "title": "Millî Edebiyat Döneminde Roman",
+   "text": "Millî Edebiyat Dönemi romanında Anadolu, Kurtuluş Savaşı, toplumsal sorunlar ve Batılılaşmanın yanlış anlaşılması gibi konular öne çıktı. Sade bir dil kullanıldı ve olaylar gerçekçi bir anlayışla anlatıldı.\n\nÖnemli romancılar:\nHalide Edip Adıvar: Ateşten Gömlek, Vurun Kahpeye, Sinekli Bakkal. Kurtuluş Savaşı'nı ve kadın kahramanları anlattı.\nReşat Nuri Güntekin: Çalıkuşu, Yaprak Dökümü. Çalıkuşu'nda Anadolu'ya öğretmen olarak giden Feride'nin hikâyesi anlatılır; Anadolu'yu edebiyata taşıyan en önemli eserlerdendir.\nYakup Kadri Karaosmanoğlu: Yaban, Kiralık Konak, Sodom ve Gomore. Yaban'da aydın-köylü çatışmasını işledi.\nRefik Halit Karay: Memleket Hikâyeleri ile Anadolu'yu gerçekçi biçimde anlattı.\n\nBu dönemde roman, toplumu tanımanın ve millî bilinç oluşturmanın bir aracı olarak görüldü.",
+   "q": "Anadolu'ya öğretmen olarak giden Feride'nin hikâyesini anlatan roman ve yazarı hangisidir?",
+   "choices": [
+    "Yaban, Yakup Kadri Karaosmanoğlu",
+    "Ateşten Gömlek, Halide Edip Adıvar",
+    "Çalıkuşu, Reşat Nuri Güntekin",
+    "Kiralık Konak, Yakup Kadri Karaosmanoğlu",
+    "Sinekli Bakkal, Halide Edip Adıvar"
+   ],
+   "answer": 2,
+   "explain": "Çalıkuşu, Reşat Nuri Güntekin'in Feride'nin Anadolu'daki öğretmenlik yıllarını anlattığı romanıdır."
+  },
+  {
+   "title": "Millî Edebiyat Döneminde Hikâye",
+   "text": "Millî Edebiyat Dönemi'nde hikâye türü, özellikle Ömer Seyfettin ile büyük gelişme gösterdi.\n\nÖmer Seyfettin:\nKısa, sade ve akıcı hikâyeler yazdı; konuşma dilini edebiyata taşıdı.\nOlay hikâyesinin (Maupassant tarzı) Türk edebiyatındaki en önemli temsilcisidir: Serim, düğüm ve çözüm bölümleri belirgindir, sonu genellikle şaşırtıcıdır.\nTarihî hikâyelerinde millî duyguları işledi: Kaşağı, Forsa, Yalnız Efe, Diyet, Pembe İncili Kaftan, Bomba.\nKaşağı, çocukluk anılarından yola çıkarak yalan söylemenin vicdandaki etkisini anlatır.\n\nRefik Halit Karay: Memleket Hikâyeleri'nde sürgünde tanıdığı Anadolu'yu gerçekçi bir dille anlattı.\n\nMemduh Şevket Esendal ise durum hikâyesinin (Çehov tarzı) öncüsü oldu: Bu tarzda belirgin bir olay örgüsünden çok, bir kesitin ya da durumun anlatımı öne çıkar.",
+   "q": "Olay hikâyesinin Türk edebiyatındaki en önemli temsilcisi olan ve Kaşağı ile Forsa hikâyelerinin yazarı kimdir?",
+   "choices": [
+    "Ömer Seyfettin",
+    "Refik Halit Karay",
+    "Yahya Kemal Beyatlı",
+    "Memduh Şevket Esendal",
+    "Sait Faik Abasıyanık"
+   ],
+   "answer": 0,
+   "explain": "Ömer Seyfettin, Maupassant tarzı olay hikâyesinin Türk edebiyatındaki en güçlü temsilcisidir; Kaşağı ve Forsa onun eserleridir."
+  }
+ ]
+}

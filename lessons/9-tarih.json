@@ -1,0 +1,190 @@
+{
+ "Geçmişin İnşa Sürecinde Tarih": [
+  {
+   "title": "Tarih Öğrenmenin Faydaları",
+   "text": "Tarih, geçmişteki insan topluluklarının siyasi, sosyal, ekonomik ve kültürel faaliyetlerini yer ve zaman göstererek, neden-sonuç ilişkisi içinde ve belgelere dayanarak inceleyen bilimdir.\n\nTarih öğrenmenin faydaları:\nGeçmişi anlayarak bugünü daha iyi yorumlamak.\nMillî kimlik ve aidiyet bilinci kazanmak; kültürel mirası tanımak ve korumak.\nNeden-sonuç ilişkisi kurma, karşılaştırma, kanıt değerlendirme gibi düşünme becerileri geliştirmek.\nFarklı bakış açılarını anlamak, empati kurmak.\nGeçmişte yapılan hatalardan ders çıkarmak.\n\nTarih bilinci, bireyin kendini geçmişle gelecek arasında bir halka olarak görmesidir. Atatürk'ün de vurguladığı gibi tarih, bir milletin geleceğine yön veren en önemli bilgi kaynaklarından biridir.",
+   "q": "Tarih öğrenmenin bireye sağladığı faydalardan biri aşağıdakilerden hangisidir?",
+   "choices": [
+    "Doğal afetleri önlemek",
+    "Hava durumunu tahmin etmek",
+    "Geleceği kesin olarak tahmin etmek",
+    "Neden-sonuç ilişkisi kurma becerisini geliştirmek",
+    "Matematik problemlerini çözmek"
+   ],
+   "answer": 3,
+   "explain": "Tarih, olayları nedenleri ve sonuçlarıyla inceler; bu da neden-sonuç ilişkisi kurma becerisini geliştirir."
+  },
+  {
+   "title": "Tarihin Doğası",
+   "text": "Tarihin üç temel unsuru vardır: insan, zaman ve mekân. Tarihî olaylar tekrarlanamaz ve laboratuvarda deneyle incelenemez; bu yüzden tarihçi kaynaklara dayanarak geçmişi yeniden kurar.\n\nZaman kavramları:\nKronoloji: Olayların oluş sırasına göre dizilmesi.\nDönemlendirme: Tarihin belirli olaylara göre çağlara ayrılması. Yazının icadından önceki döneme tarih öncesi, sonrasına tarih çağları denir.\nİlk Çağ: Yazının icadı (MÖ 3200) - Kavimler Göçü (375).\nOrta Çağ: 375 - İstanbul'un fethi (1453).\nYeni Çağ: 1453 - Fransız İhtilali (1789).\nYakın Çağ: 1789'dan günümüze.\n\nTakvimler: Toplumlar zamanı ölçmek için farklı takvimler kullanmıştır: On İki Hayvanlı Türk Takvimi (Güneş yılı), Hicri takvim (Ay yılı), Miladi takvim (Güneş yılı). Türkiye'de 1926'dan itibaren Miladi takvim kullanılmaktadır.\n\nTarihçi tarafsız olmaya çalışmalı, olayları kendi dönemlerinin koşulları içinde değerlendirmelidir.",
+   "q": "Yeni Çağ'ı başlatan olay olarak kabul edilen gelişme hangisidir?",
+   "choices": [
+    "Kavimler Göçü",
+    "İstanbul'un fethi",
+    "Fransız İhtilali",
+    "Malazgirt Savaşı",
+    "Yazının icadı"
+   ],
+   "answer": 1,
+   "explain": "1453'te İstanbul'un fethi Orta Çağ'ı kapatıp Yeni Çağ'ı başlatan olay kabul edilir."
+  },
+  {
+   "title": "Tarihsel Bilginin Üretim Süreci",
+   "text": "Tarihçi geçmişe ait bilgiyi kaynaklardan elde eder.\n\nKaynak türleri:\nYazılı kaynaklar: Yazıtlar, fermanlar, antlaşmalar, kronikler, mektuplar, gazeteler.\nYazısız kaynaklar: Araç-gereçler, mimari kalıntılar, paralar, kemikler, sözlü gelenekler (destanlar).\nBirinci el (birincil) kaynak: Olayın yaşandığı döneme ait ya da olaya tanık olan kişilerce hazırlanmış kaynak (Orhun Yazıtları, bir savaşa katılan askerin günlüğü).\nİkinci el kaynak: Birinci el kaynaklardan yararlanılarak sonradan yazılmış eserler (ders kitapları, araştırma kitapları).\n\nTarih yöntemi: Kaynakları arama ve bulma → tasnif etme → kaynağın doğruluğunu ve güvenilirliğini eleştirme (iç ve dış tenkit) → yorumlama → yazma (sentez).\n\nTarih, yardımcı bilimlerden yararlanır: Arkeoloji (kazı), paleografya (eski yazılar), epigrafya (kitabeler), nümizmatik (paralar), diplomatik (resmî belgeler), kronoloji, coğrafya.",
+   "q": "Eski paraları inceleyerek tarih araştırmalarına yardımcı olan bilim dalı hangisidir?",
+   "choices": [
+    "Diplomatik",
+    "Antropoloji",
+    "Paleografya",
+    "Epigrafya",
+    "Nümizmatik"
+   ],
+   "answer": 4,
+   "explain": "Nümizmatik, eski paraları ve madalyaları inceleyen yardımcı bilim dalıdır."
+  },
+  {
+   "title": "Tarih Araştırma ve Yazımında Dijitalleşme",
+   "text": "Teknolojideki gelişmeler tarih araştırmalarını büyük ölçüde değiştirmiştir.\n\nDijital arşivler: Devlet arşivleri, kütüphaneler ve müzeler belgeleri tarayarak çevrim içi erişime açmaktadır. Türkiye'de Cumhurbaşkanlığı Devlet Arşivleri milyonlarca Osmanlı ve Cumhuriyet belgesini dijital ortama aktarmıştır.\n\nYeni araçlar:\nDijital haritalar ve Coğrafi Bilgi Sistemleri ile savaşlar, ticaret yolları ve göçler haritalanır.\nÜç boyutlu modelleme ve sanal gerçeklik ile yıkılmış yapılar yeniden canlandırılır.\nYapay zekâ ve yazı tanıma sistemleri eski el yazmalarının okunmasına yardım eder.\nRadyokarbon (C-14) yöntemi ve DNA analizleri buluntuların yaşını ve kökenini belirler.\n\nDikkat edilmesi gerekenler: İnternetteki her bilgi doğru değildir. Kaynağın kim tarafından, ne zaman ve hangi amaçla hazırlandığı sorgulanmalı; dijital belgelerin de iç ve dış tenkidi yapılmalıdır.",
+   "q": "Tarih araştırmalarında dijitalleşmenin sağladığı yararlardan biri hangisidir?",
+   "choices": [
+    "Tarihçilere ihtiyaç kalmaması",
+    "Kaynak eleştirisine gerek kalmaması",
+    "Arşiv belgelerine uzaktan ve hızlı erişim sağlanması",
+    "Bütün internet bilgilerinin doğru olması",
+    "Arkeolojik kazıların sona ermesi"
+   ],
+   "answer": 2,
+   "explain": "Dijital arşivler belgelere dünyanın her yerinden hızla ulaşmayı sağlar. Ancak kaynak eleştirisi hâlâ gereklidir."
+  }
+ ],
+ "Eski Çağ Medeniyetleri": [
+  {
+   "title": "Tarım Devrimi ve Yerleşik Hayat",
+   "text": "Neolitik Çağ'da (Cilalı Taş Devri) insanlar tarım yapmayı ve hayvanları evcilleştirmeyi öğrendi. Bu büyük değişime Tarım Devrimi denir.\n\nSonuçları:\nAvcı-toplayıcı yaşamdan yerleşik hayata geçildi; ilk köyler kuruldu.\nBesin üretimi arttı, nüfus çoğaldı.\nÜretim fazlası ortaya çıktı; ticaret ve iş bölümü başladı.\nMülkiyet anlayışı gelişti, toplumsal sınıflar oluştu.\nÇömlekçilik ve dokumacılık gelişti.\n\nAnadolu'daki önemli yerleşmeler:\nGöbeklitepe (Şanlıurfa): Yaklaşık 12 000 yıllık, dünyanın bilinen en eski tapınak alanıdır. Avcı-toplayıcılar tarafından yapılmış olması, tarihin yeniden yazılmasına yol açmıştır.\nÇatalhöyük (Konya): İlk planlı köy yerleşmelerinden biri; evlere damdan merdivenle girilirdi.\nHacılar, Çayönü ve Alişar diğer önemli merkezlerdir.\n\nİlk şehir devletleri, verimli akarsu boylarında (Mezopotamya, Nil) ortaya çıktı.",
+   "q": "Dünyanın bilinen en eski tapınak alanı olarak kabul edilen ve Şanlıurfa'da bulunan yerleşim hangisidir?",
+   "choices": [
+    "Göbeklitepe",
+    "Hacılar",
+    "Truva",
+    "Alacahöyük",
+    "Çatalhöyük"
+   ],
+   "answer": 0,
+   "explain": "Göbeklitepe yaklaşık 12 000 yıllık geçmişiyle bilinen en eski tapınak alanıdır."
+  },
+  {
+   "title": "Eski Çağ'da Yönetim ve Ordu",
+   "text": "İlk devletler kurulduğunda yöneticiler gücünü genellikle tanrıdan aldığına inanırdı (teokratik yönetim).\n\nMezopotamya (Sümerler): Şehir devletleri hâlinde yaşadılar. Yöneticilere rahip-kral (Patesi) denirdi. Ziggurat adı verilen tapınaklar hem dinî hem yönetim ve ekonomi merkeziydi.\n\nMısır: Firavunlar kendilerini tanrı ya da tanrının oğlu sayardı. Merkezî ve güçlü bir yönetim vardı.\n\nHititler (Anadolu): Kral yetkilerini Pankuş adlı soylular meclisiyle paylaşırdı. Kraliçe (Tavananna) de yönetimde söz sahibiydi. Bu yönüyle Hititler, yetkisi sınırlı krallığın ilk örneklerinden kabul edilir.\n\nPersler: Ülkeyi satraplık denen eyaletlere ayırdılar. Kral Yolu ile eyaletler arasında hızlı haberleşme sağlandı.\n\nYunan şehir devletleri (polis): Atina'da demokrasinin ilk örnekleri görüldü (yalnızca özgür erkek vatandaşlar katılabiliyordu). Sparta ise askerî düzenle yönetiliyordu.",
+   "q": "Kralın yetkilerini Pankuş adlı meclisle paylaştığı Eski Çağ devleti hangisidir?",
+   "choices": [
+    "Babil",
+    "Mısır",
+    "Sümerler",
+    "Hititler",
+    "Persler"
+   ],
+   "answer": 3,
+   "explain": "Hititlerde Pankuş meclisi kralın yetkilerini sınırlandırıyordu."
+  },
+  {
+   "title": "Eski Çağ'da Hukuk",
+   "text": "Toplumlar büyüyüp karmaşıklaştıkça düzeni sağlamak için yazılı kurallara ihtiyaç duyuldu.\n\nUrukagina Kanunları (Sümer): Bilinen ilk yazılı kanunlardır. Yöneticilerin halka haksızlık yapmasını ve rahiplerin aşırı vergi almasını önlemeye çalıştı.\n\nHammurabi Kanunları (Babil): Yaklaşık MÖ 1750'de bir taş dikilitaşa yazıldı. Kısasa kısas (göze göz, dişe diş) anlayışına dayanır; cezalar suçu işleyenin toplumsal sınıfına göre değişirdi.\n\nHitit hukuku: Kısas yerine tazminat (zarar ödeme) esasına dayanıyordu; daha insancıl kabul edilir.\n\nRoma hukuku: On İki Levha Kanunları ile kurallar yazılı hâle getirildi. Roma hukuku günümüzde pek çok ülkenin hukuk sisteminin temelini oluşturur.\n\nEski Türklerde hukuk: Töre adı verilen yazısız kurallar uygulanırdı. Töre adalet, eşitlik, iyilik ve insan sevgisine dayanırdı; hükümdar da töreye uymak zorundaydı.",
+   "q": "Kısasa kısas yerine zarar gören tarafa tazminat ödenmesini esas alan Eski Çağ hukuku hangi uygarlığa aittir?",
+   "choices": [
+    "Babil",
+    "Hitit",
+    "Sümer",
+    "Mısır",
+    "Asur"
+   ],
+   "answer": 1,
+   "explain": "Hitit hukuku tazminata dayanıyordu ve Hammurabi'nin kısas anlayışına göre daha insancıldı."
+  },
+  {
+   "title": "Eski Çağ'da İnançlar, Bilim ve Sanat",
+   "text": "İnançlar: Eski Çağ toplumlarının çoğu çok tanrılıydı. Mısırlılar öldükten sonra dirilişe inandıkları için cesetleri mumyaladı ve piramitler yaptı.\n\nBilim ve buluşlar:\nSümerler: Çivi yazısını buldular (MÖ 3200), böylece tarih çağları başladı. 60 tabanlı sayı sistemi, ilk takvim çalışmaları ve tekerlek.\nMısırlılar: Hiyeroglif yazısı, Güneş yılına dayalı 365 günlük takvim, tıp (mumyalama), geometri (Nil taşkınları sonrası arazi ölçümü).\nFenikeliler: 22 harflik alfabeyi geliştirdi; Yunan ve Latin alfabelerinin temeli oldu.\nLidyalılar: Parayı ilk kullanan uygarlıktır; ticareti kolaylaştırdı.\nİyonlar: Bilim ve felsefede ilerlediler. Thales, Pisagor, Heredot (tarihin babası) bu bölgedendir.\n\nSanat: Mezopotamya'da ziggurat, Mısır'da piramit ve sfenks, Yunan'da tapınaklar ve heykeller, Hititlerde kaya kabartmaları (Yazılıkaya).",
+   "q": "Parayı ilk kez kullanarak ticarette büyük kolaylık sağlayan Anadolu uygarlığı hangisidir?",
+   "choices": [
+    "Urartular",
+    "İyonlar",
+    "Hititler",
+    "Frigler",
+    "Lidyalılar"
+   ],
+   "answer": 4,
+   "explain": "Lidyalılar parayı ilk kullanan uygarlıktır; bu buluş takas usulünü kolaylaştırıp ticareti geliştirmiştir."
+  },
+  {
+   "title": "Türklerde Konargöçer Yaşam",
+   "text": "Orta Asya'nın bozkır coğrafyası ve karasal iklimi, Türklerin konargöçer (göçebe) bir hayat sürmesine yol açtı. Hayvancılık ekonominin temeliydi; yaz aylarında yaylaklara, kışın kışlaklara göç edilirdi.\n\nKonargöçer yaşamın sonuçları:\nAt evcilleştirildi ve atlı göçebe kültürü gelişti; Türkler usta binicilerdi.\nKalıcı yapılar yerine taşınabilir çadırlar (otağ) kullanıldı; taşınabilir sanat eserleri (kilim, halı, maden işçiliği) gelişti.\nToplum aile, urug, boy ve budun şeklinde örgütlendi.\nHer erkek iyi bir asker olarak yetişirdi; ordu-millet anlayışı oluştu.\n\nDevlet anlayışı:\nKut: Hükümdara yönetme yetkisinin Gök Tanrı tarafından verildiğine inanılırdı.\nKurultay (toy): Devlet işlerinin görüşüldüğü meclis.\nÜlke hanedanın ortak malı sayılırdı; bu yüzden taht kavgaları sık yaşandı.\n\nİlk Türk devleti Asya Hun Devleti'dir. Mete Han ordu yapısında onlu sistemi kurdu.",
+   "q": "Eski Türklerde hükümdara yönetme yetkisinin Gök Tanrı tarafından verildiği inancına ne ad verilir?",
+   "choices": [
+    "Töre",
+    "Kurultay",
+    "Kut",
+    "Otağ",
+    "Urug"
+   ],
+   "answer": 2,
+   "explain": "Kut, hükümdarın yönetme yetkisini Tanrı'dan aldığı inancıdır."
+  }
+ ],
+ "Orta Çağ Medeniyetleri": [
+  {
+   "title": "Orta Çağ'da Kitlesel Göçler",
+   "text": "Kavimler Göçü (375): Karadeniz'in kuzeyindeki bozkırlarda yaşayan Hunların batıya ilerlemesiyle başladı. Hunların önünden kaçan Germen kavimleri (Gotlar, Vandallar, Franklar) Roma topraklarına girdi.\n\nSonuçları:\nAvrupa'nın siyasi ve etnik yapısı değişti; bugünkü Avrupa milletlerinin temelleri atıldı.\nRoma İmparatorluğu ikiye ayrıldı (395). Batı Roma 476'da yıkıldı; Doğu Roma (Bizans) varlığını 1453'e kadar sürdürdü.\nAvrupa'da merkezî otorite zayıfladı ve feodalite (derebeylik) ortaya çıktı.\nİlk Çağ sona erdi, Orta Çağ başladı.\n\nAvrupa Hun Devleti: Balamir döneminde kuruldu. En parlak dönemini Attila zamanında yaşadı; Doğu ve Batı Roma'yı vergiye bağladı.\n\nOrta Çağ'da Türk göçleri: Orta Asya'dan dünyanın farklı bölgelerine yapılan göçler; Türk kültürünün geniş bir coğrafyaya yayılmasını sağladı.",
+   "q": "Kavimler Göçü'nün Avrupa üzerindeki sonuçlarından biri hangisidir?",
+   "choices": [
+    "Feodalite (derebeylik) düzeninin ortaya çıkması",
+    "Avrupa'da merkezî krallıkların hemen kurulması",
+    "İstanbul'un fethedilmesi",
+    "Haçlı Seferleri'nin başlaması",
+    "Roma İmparatorluğu'nun güçlenmesi"
+   ],
+   "answer": 0,
+   "explain": "Göçlerin yarattığı kargaşa ortamında merkezî otorite zayıfladı; halk korunmak için derebeylerine sığındı ve feodalite doğdu."
+  },
+  {
+   "title": "Orta Çağ Devletlerinde Yönetim ve Ordu",
+   "text": "Avrupa'da feodalite: Toprak derebeylerinin elindeydi. Kral zayıftı; derebeyleri kendi topraklarında vergi toplar, asker besler ve yargılama yapardı. Toplum soylular, din adamları ve köylülerden (serfler) oluşuyordu; serfler toprağa bağlıydı ve toprakla birlikte alınıp satılırdı. Kilise de büyük bir siyasi güçtü.\n\nBizans: Güçlü bir merkezî yönetim ve imparatorun dinî lider sayıldığı bir yapı vardı. Tema sistemiyle askerlere toprak verilirdi.\n\nİslam devletleri: Dört Halife döneminden sonra Emeviler ve Abbasiler kuruldu. Abbasiler döneminde Türk askerler orduda önemli görevler üstlendi.\n\nTürk devletleri (Göktürk, Uygur, Karahanlı):\nHükümdar kut anlayışıyla yönetir, kurultayda devlet işleri görüşülürdü.\nÜlke ikili teşkilatla (doğu ve batı) yönetilirdi.\nOrdu atlı birliklerden oluşur, onlu sisteme göre düzenlenirdi.\nGöktürkler, Türk adıyla kurulan ilk devlettir; Orhun Yazıtları bu devlete aittir.",
+   "q": "Orta Çağ Avrupa'sında toprağa bağlı yaşayan ve toprakla birlikte el değiştiren köylülere ne ad verilir?",
+   "choices": [
+    "Şövalye",
+    "Soylu",
+    "Senatör",
+    "Serf",
+    "Burjuva"
+   ],
+   "answer": 3,
+   "explain": "Feodal düzende serfler derebeyinin toprağına bağlıydı ve toprakla birlikte el değiştirirdi."
+  },
+  {
+   "title": "Orta Çağ'da Ticaret Yolları",
+   "text": "Orta Çağ'da ticaret yolları medeniyetler arasında mal, fikir ve kültür alışverişini sağladı.\n\nİpek Yolu: Çin'den başlayıp Orta Asya, İran ve Anadolu üzerinden Akdeniz limanlarına ve Avrupa'ya ulaşırdı. İpek, porselen, kâğıt ve barut gibi ürünler taşınırdı. Bu yolun kontrolü için Türkler, Çinliler ve Sasaniler arasında mücadeleler yaşandı. Göktürkler, İpek Yolu ticaretinde önemli rol oynadı.\n\nBaharat Yolu: Hindistan ve Güneydoğu Asya'dan başlayıp Kızıldeniz ve Basra Körfezi üzerinden Akdeniz'e ulaşırdı. Baharat, değerli taşlar ve fildişi taşınırdı.\n\nKürk Yolu: Sibirya ve Doğu Avrupa'dan Karadeniz'in kuzeyine uzanırdı; Hazarlar bu yolu kontrol ederdi.\n\nTicaret yolları üzerindeki şehirler zenginleşti (Semerkant, Buhara, Bağdat, İstanbul). Kâğıt, pusula ve barut gibi buluşlar bu yollarla Avrupa'ya ulaştı.",
+   "q": "Kâğıt ve barut gibi Çin buluşlarının batıya ulaşmasında en önemli rolü oynayan ticaret yolu hangisidir?",
+   "choices": [
+    "Kürk Yolu",
+    "İpek Yolu",
+    "Kral Yolu",
+    "Amber Yolu",
+    "Baharat Yolu"
+   ],
+   "answer": 1,
+   "explain": "İpek Yolu Çin'den Avrupa'ya uzanıyordu ve Çin'e ait ürün ve buluşların batıya ulaşmasını sağladı."
+  },
+  {
+   "title": "Orta Çağ Medeniyet Havzalarında Bilim, Kültür ve Sanat",
+   "text": "İslam dünyası: Abbasi Halifesi Me'mun döneminde Bağdat'ta Beytülhikme kuruldu; Yunan, Hint ve İran eserleri Arapçaya çevrildi. Bilim insanları:\nHarezmi: Cebirin kurucusu; sıfırı ve onluk sayı sistemini yaygınlaştırdı.\nFarabi: Felsefe ve müzik; Muallim-i Sani (ikinci öğretmen) olarak anılır.\nİbn Sina: Kanun fi't-Tıp adlı eseri yüzyıllarca Avrupa'da ders kitabı olarak okutuldu.\nBiruni: Astronomi ve coğrafya.\n\nTürk dünyası:\nOrhun (Göktürk) Yazıtları: Türk adının geçtiği ve Türkçe yazılmış ilk yazılı belgelerdendir.\nUygurlar yerleşik hayata geçerek tapınaklar, kütüphaneler ve matbaa (tahta kalıplarla baskı) kullandı.\nKaşgarlı Mahmud'un Divanü Lügati't-Türk'ü ve Yusuf Has Hacib'in Kutadgu Bilig'i Karahanlılar dönemine aittir.\n\nAvrupa: Bilim kilisenin denetimindeydi; dinî bilgileri akılla kanıtlamaya çalışan skolastik düşünce hâkimdi.\n\nÇin: Kâğıt, pusula, barut ve matbaayı geliştirdi.",
+   "q": "Kanun fi't-Tıp adlı eseri yüzyıllarca Avrupa üniversitelerinde ders kitabı olarak okutulan bilgin kimdir?",
+   "choices": [
+    "Biruni",
+    "Kaşgarlı Mahmud",
+    "Harezmi",
+    "Farabi",
+    "İbn Sina"
+   ],
+   "answer": 4,
+   "explain": "İbn Sina'nın Kanun fi't-Tıp'ı Latinceye çevrilmiş ve 17. yüzyıla kadar Avrupa'da tıp eğitiminde temel kaynak olmuştur."
+  }
+ ]
+}

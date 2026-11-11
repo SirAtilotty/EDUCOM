@@ -1,0 +1,190 @@
+{
+ "Türkistan’dan Türkiye’ye (1040-1299)": [
+  {
+   "title": "Önemli Askerî Mücadeleler",
+   "text": "Selçuklular, 1040 Dandanakan Savaşı'nda Gaznelileri yenerek Büyük Selçuklu Devleti'ni kurdu. Bu savaşla Horasan'ın hâkimi oldular.\n\n1048 Pasinler Savaşı: Selçuklular ile Bizans arasındaki ilk büyük savaştır; Türklerin Anadolu'yu tanıması hızlandı.\n\n1071 Malazgirt Savaşı: Sultan Alparslan, Bizans İmparatoru Romen Diyojen'i yendi. Anadolu'nun kapıları Türklere açıldı; Anadolu Türk yurdu olmaya başladı.\n\nHaçlı Seferleri (1096'dan itibaren): Avrupa'dan gelen Haçlılar Kudüs'ü almak için doğuya yürüdü. Türkiye Selçukluları başkenti İznik'ten Konya'ya taşıdı.\n\n1176 Miryokefalon Savaşı: II. Kılıç Arslan Bizans'ı yendi. Bizans, Türkleri Anadolu'dan çıkarma umudunu kaybetti; Anadolu'nun Türk yurdu olduğu kesinleşti.\n\n1243 Kösedağ Savaşı: Türkiye Selçukluları Moğollara yenildi; Anadolu Moğol egemenliğine girdi ve beylikler dönemi başladı.",
+   "q": "Bizans'ın Türkleri Anadolu'dan atma umudunu kaybettiği ve Anadolu'nun Türk yurdu olduğunun kesinleştiği savaş hangisidir?",
+   "choices": [
+    "Malazgirt",
+    "Miryokefalon",
+    "Kösedağ",
+    "Dandanakan",
+    "Pasinler"
+   ],
+   "answer": 1,
+   "explain": "Malazgirt Anadolu'nun kapılarını açmış, 1176 Miryokefalon ise Anadolu'nun Türk yurdu olduğunu kesinleştirmiştir."
+  },
+  {
+   "title": "Türk Devlet ve Ordu Teşkilatındaki Değişim",
+   "text": "Türkler İslamiyet'i kabul edip Orta Doğu ve Anadolu'ya gelince eski Türk gelenekleri, İslam ve İran devlet anlayışıyla birleşti.\n\nDevlet yönetimi:\nSultan: Hükümdar unvanı oldu; halife tarafından onaylanması meşruiyet kazandırdı.\nBüyük Divan: Devlet işlerinin görüşüldüğü meclis; başında vezir bulunurdu.\nMelik ve atabey: Hükümdarın oğulları (melikler) eyaletlere yönetici olarak gönderilir, yanlarına eğitim için atabeyler verilirdi. Ülke hanedanın ortak malı sayıldığı için taht kavgaları sürdü.\n\nOrdu ve toprak:\nİkta sistemi: Devletin vergi gelirleri askerlere maaş karşılığı bırakılır, onlar da savaşta asker yetiştirirdi. Bu sistemle hazineden para çıkmadan güçlü bir ordu beslendi, üretim ve güvenlik sürdü.\nGulamlar: Saraya bağlı, maaşlı ve sürekli askerlerdi.",
+   "q": "Selçuklularda devlet gelirlerinin bir kısmının, maaş karşılığı olarak askerlere bırakıldığı ve onların da savaşta asker yetiştirdiği sistem hangisidir?",
+   "choices": [
+    "Vakıf",
+    "Ahilik",
+    "İltizam",
+    "Devşirme",
+    "İkta"
+   ],
+   "answer": 4,
+   "explain": "İkta sistemi, toprak gelirlerinin askerî görev karşılığında verilmesidir; Osmanlı tımar sisteminin temelini oluşturur."
+  },
+  {
+   "title": "Türklerin Sosyal Yaşamı ve Ekonomik Faaliyetleri",
+   "text": "Anadolu'ya gelen Türkler zamanla göçebe yaşamdan yerleşik hayata geçti; ancak konar-göçer Türkmen grupları da varlığını sürdürdü.\n\nTicaret: Türkiye Selçukluları ticarete büyük önem verdi.\nKervansaraylar: Ticaret yolları üzerinde kervanların konaklaması için yapıldı.\nDevlet sigortası: Yolda malı zarar gören tüccarın zararı devlet tarafından karşılandı.\nLimanlar: Antalya, Alanya ve Sinop alınarak Akdeniz ve Karadeniz ticareti kontrol edildi.\nYabancı tüccarlara düşük gümrük vergisi uygulandı.\n\nAhilik: Esnaf ve sanatkârları birleştiren bir teşkilattır; kurucusu Ahi Evran'dır. Üretimin kalitesini, fiyatların adaletli olmasını ve çırak-kalfa-usta düzeniyle meslek eğitimini sağladı. Ahlak ve meslek eğitimini birlikte verirdi.\n\nKadınlar da toplumsal hayatta etkindi; Bacıyân-ı Rûm adlı kadınlar teşkilatı bunun örneğidir.",
+   "q": "Türkiye Selçuklularında yolda malı zarar gören tüccarın kaybını devletin karşılaması hangi amaca yöneliktir?",
+   "choices": [
+    "Medrese sayısının artırılması",
+    "Ordunun güçlendirilmesi",
+    "Ticaretin canlandırılması ve tüccarların Anadolu'ya çekilmesi",
+    "Halifeliğin alınması",
+    "Tarımın geliştirilmesi"
+   ],
+   "answer": 2,
+   "explain": "Devlet sigortası tüccarlara güven vererek ticaret yollarının Anadolu'dan geçmesini ve ticaretin gelişmesini sağlamıştır."
+  },
+  {
+   "title": "Türk-İslam Medeniyeti",
+   "text": "Selçuklu döneminde bilim, eğitim, sağlık ve sanatta zengin bir medeniyet ortaya çıktı.\n\nEğitim: Büyük Selçuklu veziri Nizamülmülk, Nizamiye Medreselerini kurdu. Bu medreseler devlet memuru ve din adamı yetiştiren ilk düzenli yükseköğretim kurumları arasındadır.\n\nSağlık: Darüşşifalar hastane olarak hizmet verdi. Kayseri'deki Gevher Nesibe Darüşşifası aynı zamanda tıp okuluydu.\n\nDüşünce ve edebiyat: Mevlâna Celâleddin-i Rûmî, Yunus Emre, Hacı Bektaş-ı Veli ve Ahi Evran, Anadolu'da hoşgörüye ve birliğe dayalı bir kültürün oluşmasına katkı yaptı. Yunus Emre, şiirlerini halkın anlayacağı Türkçeyle yazdı.\n\nMimari: Camiler, medreseler, kervansaraylar, kümbetler ve taç kapılardaki taş işçiliği Selçuklu sanatının özelliğidir (Sivas Gök Medrese, Divriği Ulu Camii ve Darüşşifası).",
+   "q": "Kayseri'de hem hastane hem de tıp okulu olarak hizmet veren Selçuklu yapısı hangisidir?",
+   "choices": [
+    "Gevher Nesibe Darüşşifası",
+    "Sultan Hanı",
+    "Divriği Ulu Camii",
+    "Nizamiye Medresesi",
+    "Gök Medrese"
+   ],
+   "answer": 0,
+   "explain": "Gevher Nesibe Darüşşifası (1206) hem hastane hem de tıp eğitimi verilen bir kurumdur."
+  }
+ ],
+ "Beylikten Devlete Osmanlı (1299-1453)": [
+  {
+   "title": "Osmanlı Devleti'nin Kuruluşuna Dair Farklı Görüşler",
+   "text": "Küçük bir uç beyliğinin kısa sürede büyük bir devlete dönüşmesi tarihçiler tarafından farklı biçimlerde açıklanmıştır:\n\nH. A. Gibbons: Osmanlıların, Müslümanlığı kabul eden Rum ve Bizans unsurlarıyla yeni bir devlet kurduğunu ileri sürdü. Bu görüş bugün geçerliliğini yitirmiştir.\n\nPaul Wittek (Gaza tezi): Kuruluşu, beyliğin Bizans sınırında yürüttüğü gaza (cihat) faaliyetlerine bağladı.\n\nFuat Köprülü: Osmanlıların Anadolu'daki Türk boylarının ve Selçuklu birikiminin devamı olduğunu, devletin Türk geleneği üzerine kurulduğunu savundu.\n\nHalil İnalcık: Gaza düşüncesinin yanında uç bölgesindeki ekonomik, sosyal ve coğrafi koşullar ile yerel halka yönelik hoşgörü politikasını birlikte değerlendirdi.\n\nBaşarının ortak nedenleri: Bizans sınırında olmak, Bizans'ın zayıflığı, Anadolu'dan gelen Türkmen göçleri, adil yönetim ve iskân politikası, ahilerin desteği.",
+   "q": "Osmanlı Devleti'nin, Anadolu'daki Türk boylarının ve Selçuklu kurumlarının devamı olarak kurulduğunu savunan tarihçi kimdir?",
+   "choices": [
+    "Kâtip Çelebi",
+    "H. A. Gibbons",
+    "Paul Wittek",
+    "Fuat Köprülü",
+    "Evliya Çelebi"
+   ],
+   "answer": 3,
+   "explain": "Fuat Köprülü, Osmanlıları Türk boylarının ve Anadolu Selçuklu birikiminin devamı olarak görür."
+  },
+  {
+   "title": "Anadolu ve Rumeli'deki Siyasi ve Askerî Mücadeleler",
+   "text": "Osman Bey döneminde Bizans'a karşı ilk savaş 1302 Koyunhisar (Bafeus) Savaşı'dır.\n\nOrhan Bey: 1326'da Bursa alındı ve başkent yapıldı. 1329 Maltepe (Pelekanon) Savaşı'nda Bizans yenildi. 1353'te Çimpe Kalesi alınarak Rumeli'ye geçildi.\n\nI. Murat: Edirne alınıp başkent yapıldı. 1364 Sırpsındığı ve 1389 I. Kosova savaşlarıyla Balkanlarda ilerlendi.\n\nYıldırım Bayezid: 1396 Niğbolu'da Haçlı ordusu yenildi. Ancak 1402 Ankara Savaşı'nda Timur'a yenildi; Osmanlı, şehzadeler arasında taht kavgalarının yaşandığı Fetret Devri'ne girdi.\n\nÇelebi Mehmet devleti yeniden birleştirdi. II. Murat döneminde 1444 Varna ve 1448 II. Kosova savaşlarıyla Haçlılar yenildi; Balkanlardaki Türk hâkimiyeti kesinleşti.",
+   "q": "Osmanlı Devleti'nin Fetret Devri'ne girmesine yol açan olay hangisidir?",
+   "choices": [
+    "Niğbolu Savaşı",
+    "Ankara Savaşı'nda Timur'a yenilmesi",
+    "Varna Savaşı",
+    "I. Kosova Savaşı",
+    "Bursa'nın fethi"
+   ],
+   "answer": 1,
+   "explain": "1402 Ankara Savaşı'nda Yıldırım Bayezid'in yenilmesinin ardından şehzadeler arasında taht kavgaları başlamış, Fetret Devri yaşanmıştır."
+  },
+  {
+   "title": "Devletleşme Sürecinde Ordu, Hukuk ve Toprak Sistemleri",
+   "text": "Osmanlı beylikten devlete geçerken kalıcı kurumlar oluşturdu.\n\nOrdu:\nOrhan Bey döneminde ilk düzenli ordu olan Yaya ve Müsellemler kuruldu.\nI. Murat döneminde Pençik sistemiyle (savaş esirlerinin beşte biri) ve ardından devşirme sistemiyle Kapıkulu askerleri ve Yeniçeri Ocağı oluşturuldu. Bu askerler doğrudan padişaha bağlıydı.\nTımarlı sipahiler eyalet ordusunun temelini oluşturdu.\n\nToprak (tımar sistemi): Devlete ait (miri) toprakların vergi geliri sipahilere maaş karşılığı verildi. Sipahi bu gelirle cebelü denen askerleri yetiştirir, bölgenin güvenliğini sağlar ve üretimi denetlerdi. Köylü toprağı işler ama satamazdı. Böylece hazineden para çıkmadan büyük bir ordu beslendi.\n\nHukuk: Şer'i hukukun (İslam hukuku) yanında padişahların koyduğu kurallara dayanan örfi hukuk uygulandı.",
+   "q": "Tımar sisteminin sağladığı yararlardan biri aşağıdakilerden hangisidir?",
+   "choices": [
+    "Yeniçeri Ocağı'nın kurulması",
+    "Ticaret yollarının değişmesi",
+    "Halifeliğin Osmanlılara geçmesi",
+    "Toprakların özel mülk hâline gelmesi",
+    "Hazineden para çıkmadan büyük bir atlı ordu beslenmesi"
+   ],
+   "answer": 4,
+   "explain": "Tımar sisteminde askerlerin geliri toprak vergisinden karşılandığı için hazineye yük olmadan güçlü bir eyalet ordusu beslendi."
+  },
+  {
+   "title": "Fethedilen Topraklarda Kalıcılık Politikaları",
+   "text": "Osmanlılar fethettikleri yerlerde kalıcı olabilmek için akıllıca politikalar izledi:\n\nİstimalet politikası: Fethedilen yerlerin halkına hoşgörülü davranmak, din ve vicdan özgürlüğü tanımak, ağır vergileri kaldırmak. Böylece yerel halkın gönlü kazanıldı. Feodal baskı altındaki Balkan köylüleri Osmanlı yönetimini daha adil buldu.\n\nİskân politikası: Anadolu'daki Türkmen aileleri Balkanlara yerleştirildi. Böylece bölge Türkleştirildi ve İslamlaştırıldı, Anadolu'daki nüfus baskısı da azaltıldı.\n\nVakıflar: Camiler, imaretler, hanlar, köprüler ve medreseler yaptırılarak şehirler Türk-İslam kimliği kazandı.\n\nTahrir: Fethedilen yerlerde toprak ve nüfus sayımı yapılarak vergiler adil biçimde belirlendi.\n\nBu politikalar sayesinde Balkanlarda yüzyıllar sürecek bir Osmanlı hâkimiyeti kuruldu.",
+   "q": "Osmanlı Devleti'nin fethettiği yerlerdeki halka hoşgörülü davranarak onların gönlünü kazanma politikasına ne ad verilir?",
+   "choices": [
+    "İltizam",
+    "İskân",
+    "İstimalet",
+    "Tahrir",
+    "Müsadere"
+   ],
+   "answer": 2,
+   "explain": "İstimalet, gönül alma anlamına gelir; yerel halka din özgürlüğü ve adil vergi düzeni sunarak bağlılıklarını kazanmaktır."
+  }
+ ],
+ "Cihan Devleti Osmanlı (1453-1683)": [
+  {
+   "title": "1453-1683 Arası Siyasi ve Askerî Mücadeleler",
+   "text": "İstanbul'un Fethi (1453): II. Mehmet (Fatih) İstanbul'u aldı, Bizans İmparatorluğu sona erdi. Osmanlı Devleti imparatorluğa dönüştü; Karadeniz ile Akdeniz arasındaki ticaret yolları kontrol altına alındı. Bazı tarihçiler bu olayı Orta Çağ'ın sonu kabul eder.\n\nYavuz Sultan Selim: 1514 Çaldıran'da Safevileri yendi. 1516 Mercidabık ve 1517 Ridaniye savaşlarıyla Memlükleri yıktı; halifelik Osmanlılara geçti, kutsal emanetler İstanbul'a getirildi.\n\nKanuni Sultan Süleyman: 1526 Mohaç'ta Macaristan'ı yendi. 1538 Preveze Deniz Savaşı'nda Barbaros Hayreddin Paşa, Haçlı donanmasını yendi; Akdeniz bir Türk gölü hâline geldi.\n\n1683 II. Viyana Kuşatması: Başarısızlıkla sonuçlandı. Bu yenilgiyle Osmanlı'nın Avrupa'daki ilerleyişi durdu ve toprak kayıpları başladı.",
+   "q": "Osmanlı Devleti'nin Akdeniz'de deniz üstünlüğünü ele geçirdiği savaş hangisidir?",
+   "choices": [
+    "Preveze",
+    "Ridaniye",
+    "Mercidabık",
+    "Çaldıran",
+    "Mohaç"
+   ],
+   "answer": 0,
+   "explain": "1538 Preveze Deniz Savaşı'nda Barbaros Hayreddin Paşa Haçlı donanmasını yendi ve Akdeniz'de Osmanlı üstünlüğü kuruldu."
+  },
+  {
+   "title": "Yönetim ve Ordu Yapısında Değişim",
+   "text": "Fatih Sultan Mehmet döneminde merkezî otorite güçlendirildi:\nKanunname-i Âl-i Osman ile devlet teşkilatı ve saltanat kuralları yazılı hâle getirildi. Kardeş katli bu kanunnamede yer aldı; amaç taht kavgalarını önlemekti.\nSadrazamlar devşirme kökenlilerden seçilmeye başlandı; böylece padişaha bağlılık arttı.\nPadişah Divan-ı Hümayun toplantılarına doğrudan katılmayı bıraktı; toplantıyı sadrazam yönetmeye başladı.\n\nKanuni döneminde kanunlar genişletildi ve devlet en geniş sınırlarına ulaştı.\n\n17. yüzyıl başında I. Ahmet döneminde ekber ve erşed sistemine geçildi: Tahta hanedanın en yaşlı ve akıllı üyesi geçecekti. Şehzadeler sancağa gönderilmek yerine sarayda kafes usulüyle yetiştirildi; bu durum yönetim tecrübesi olmayan padişahların tahta çıkmasına yol açtı.\n\nOrdu: Ateşli silahların gelişmesiyle Yeniçerilerin önemi arttı, tımarlı sipahilerin önemi azaldı.",
+   "q": "Ekber ve erşed sistemine geçilmesiyle şehzadelerin sancağa gönderilmeyip sarayda yetiştirilmesinin olumsuz sonucu nedir?",
+   "choices": [
+    "Divanın kaldırılması",
+    "Yeniçeri Ocağı'nın kaldırılması",
+    "Kardeş katlinin artması",
+    "Tecrübesiz padişahların tahta çıkması",
+    "Toprakların genişlemesi"
+   ],
+   "answer": 3,
+   "explain": "Sancakta yönetim tecrübesi kazanamayan şehzadeler, devlet işlerini bilmeden tahta çıktı ve yönetim zayıfladı."
+  },
+  {
+   "title": "Avrupa'nın Sömürgeci Politikalarının Etkileri",
+   "text": "15. yüzyıl sonunda Avrupalılar Coğrafi Keşifler'e başladı. Ümit Burnu'nun dolaşılmasıyla Hindistan'a deniz yolu bulundu, Amerika keşfedildi.\n\nSonuçları:\nAvrupalılar Amerika, Afrika ve Asya'da sömürgeler kurdu; buralardan hammadde, altın ve gümüş getirdi.\nTicaret yolları Akdeniz'den Atlas Okyanusu'na kaydı. İpek ve Baharat yollarının önemi azaldı; Osmanlı'nın gümrük gelirleri düştü.\nAmerika'dan gelen bol altın ve gümüş Avrupa'da ve Osmanlı'da enflasyona yol açtı (fiyat devrimi). Osmanlı parasının değeri düştü.\nAvrupa'da sermaye birikti; burjuva sınıfı güçlendi, bu gelişme ileride sanayi devrimine zemin hazırladı.\n\nOsmanlı Devleti bu gelişmelere karşı Hint Okyanusu'na donanmalar gönderdi ve Portekizlilerle mücadele etti; Süveyş Kanalı ve Don-Volga Kanalı projeleri ticaret yollarını yeniden canlandırma amacı taşıyordu.",
+   "q": "Coğrafi Keşifler'in Osmanlı ekonomisine etkilerinden biri hangisidir?",
+   "choices": [
+    "Akdeniz ticaretinin canlanması",
+    "Ticaret yollarının önem kaybetmesiyle gelirlerin azalması",
+    "Osmanlı parasının değer kazanması",
+    "Sömürgelerden altın elde edilmesi",
+    "Gümrük gelirlerinin artması"
+   ],
+   "answer": 1,
+   "explain": "Ticaret Atlas Okyanusu'na kayınca Osmanlı topraklarından geçen yolların önemi azaldı ve gümrük gelirleri düştü."
+  },
+  {
+   "title": "Önemli İsyanların Neden ve Sonuçları",
+   "text": "16. yüzyıl sonundan itibaren Anadolu'da Celali isyanları adı verilen ayaklanmalar yaşandı. Adını Yavuz döneminde isyan eden Bozoklu Celal'den alır.\n\nNedenleri:\nTımar sisteminin bozulması ve iltizam usulüne geçilmesiyle köylü üzerindeki vergi yükünün artması.\nUzun süren savaşlar ve ekonomik bunalım (enflasyon).\nNüfus artışına karşılık toprakların yetersiz kalması; işsiz medrese öğrencileri (suhte) ve levendler.\nYöneticilerin halka kötü davranması.\n\nSonuçları:\nKöylüler topraklarını bırakıp şehirlere ve dağlara kaçtı (Büyük Kaçgun); üretim düştü.\nVergi gelirleri azaldı, devletin otoritesi sarsıldı.\nAnadolu'da güvenlik ortamı bozuldu.\n\nAyrıca İstanbul'da maaşları geç ya da değeri düşük paralarla ödenen yeniçerilerin isyanları da devlet otoritesini zayıflattı.",
+   "q": "Celali isyanları sonucunda köylülerin topraklarını bırakıp kaçmasına ne ad verilir?",
+   "choices": [
+    "Kafes usulü",
+    "Fetret Devri",
+    "Tahrir",
+    "İstimalet",
+    "Büyük Kaçgun"
+   ],
+   "answer": 4,
+   "explain": "Celali isyanlarının yarattığı güvensizlik ortamında köylülerin topraklarını terk etmesine Büyük Kaçgun denir."
+  },
+  {
+   "title": "Bilim, Kültür, Sanat ve Mimari",
+   "text": "1453-1683 arası Osmanlı bilim ve sanatının parlak dönemidir.\n\nEğitim: Fatih, İstanbul'da Sahn-ı Seman Medreselerini kurdu. Kanuni döneminde Süleymaniye Medreseleri açıldı; burada tıp medresesi de vardı.\n\nBilim insanları:\nAli Kuşçu: Astronomi ve matematik; Ayasofya Medresesi'nde ders verdi.\nPiri Reis: Kitab-ı Bahriye adlı denizcilik eseri ve Amerika'yı da gösteren ünlü dünya haritası.\nTakiyüddin: İstanbul'da gözlemevi kurdu.\nKâtip Çelebi: Cihannüma (coğrafya) ve Keşfü'z-Zünun (bibliyografya).\nEvliya Çelebi: Seyahatname ile gezdiği yerleri anlattı.\nMatrakçı Nasuh: Minyatür, matematik ve tarih.\n\nMimari: Mimar Sinan bu dönemin simgesidir. Şehzade Camii çıraklık, Süleymaniye Camii kalfalık, Edirne Selimiye Camii ustalık eseridir.",
+   "q": "Mimar Sinan'ın kendisinin ustalık eseri olarak nitelendirdiği yapı hangisidir?",
+   "choices": [
+    "Şehzade Camii",
+    "Süleymaniye Camii",
+    "Selimiye Camii",
+    "Ayasofya",
+    "Sultanahmet Camii"
+   ],
+   "answer": 2,
+   "explain": "Mimar Sinan Şehzade Camii'ni çıraklık, Süleymaniye'yi kalfalık, Edirne'deki Selimiye Camii'ni ustalık eseri olarak tanımlamıştır."
+  }
+ ]
+}

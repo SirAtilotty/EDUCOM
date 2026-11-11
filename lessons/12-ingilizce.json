@@ -1,0 +1,302 @@
+{
+ "Music": [
+  {
+   "title": "Music Genres and Instruments",
+   "text": "Music genres: pop, rock, jazz, classical, hip-hop, rap, folk, Turkish folk music (türkü), Turkish classical music, electronic, R&B, opera.\n\nInstruments:\nString: guitar, violin, cello, bağlama (saz), oud, kanun.\nWind: flute, ney, saxophone, trumpet, zurna.\nPercussion: drums, davul, darbuka, tambourine.\nKeyboard: piano.\n\nPeople: composer, singer, musician, conductor, band, orchestra, choir, audience.\n\nLanguage focus, expressing preferences:\nprefer + noun / verb-ing + to: I prefer jazz to rock. I prefer listening to playing.\nwould rather + base verb + than: I'd rather go to a concert than watch it online.\nwould prefer + to infinitive: I'd prefer to learn the piano.\n\nTalking about musical taste:\nI'm really into hip-hop.\nClassical music isn't my cup of tea.\nThis song always cheers me up.",
+   "q": "I'd rather ___ to a live concert than listen to the album at home.",
+   "choices": [
+    "to go",
+    "go",
+    "went",
+    "goes",
+    "going"
+   ],
+   "answer": 1,
+   "explain": "After would rather we use the base form of the verb: I'd rather go."
+  },
+  {
+   "title": "Talking About Music Experiences",
+   "text": "Language focus, present perfect and past simple:\n\nPresent perfect (have / has + V3): experiences up to now, no specific time.\nI have been to three rock concerts.\nShe has played the violin since she was seven.\nHave you ever heard Turkish folk music live?\n\nPast simple: finished actions at a specific past time.\nI went to a jazz festival last summer.\nBarış Manço released this song in 1981.\n\nfor and since with present perfect:\nfor + a period of time: for ten years, for a long time\nsince + a point in time: since 2015, since childhood\n\nUseful phrases: go on tour, release an album, perform live, hit the charts, be in tune, play by ear.",
+   "q": "My brother ___ the guitar since he was twelve.",
+   "choices": [
+    "is playing",
+    "will play",
+    "plays",
+    "played",
+    "has played"
+   ],
+   "answer": 4,
+   "explain": "An action that started in the past and continues now, with since: present perfect, has played."
+  }
+ ],
+ "Friendship": [
+  {
+   "title": "Expressing Opinions About Friendship",
+   "text": "What makes a good friendship? trust, loyalty, honesty, respect, support, shared interests, good communication, spending quality time.\n\nGiving opinions:\nIn my opinion, ... / I think ... / As far as I'm concerned, ... / Personally, I believe ...\nTo be honest, ...\n\nAgreeing:\nI totally agree. / You're right. / That's true. / Exactly!\n\nDisagreeing politely:\nI'm not sure about that. / I see your point, but ... / I'm afraid I disagree. / That's not always true.\n\nAdding reasons:\nbecause, since, as, that's why, for this reason.\n\nExample: In my opinion, online friends can be real friends because they can support you when you need it. However, I think face-to-face friendships are usually deeper.",
+   "q": "Which expression is a polite way to disagree with someone?",
+   "choices": [
+    "Whatever.",
+    "You're totally wrong!",
+    "I see your point, but I don't think so.",
+    "That's a stupid idea.",
+    "No way!"
+   ],
+   "answer": 2,
+   "explain": "I see your point, but ... shows respect for the other person's view before disagreeing."
+  },
+  {
+   "title": "Regrets and Criticism: should have / could have",
+   "text": "We use modal perfect forms to talk about past actions:\n\nshould have + V3: something was the right thing to do, but you didn't do it (regret or criticism).\nI should have called my friend on her birthday. (I didn't call her.)\nYou shouldn't have told her secret to everyone. (You told it.)\n\ncould have + V3: a possibility in the past that didn't happen.\nYou could have asked me for help. (You didn't ask.)\n\nmust have + V3: a strong guess about the past.\nShe isn't answering. She must have fallen asleep.\n\nmight have + V3: a weaker guess about the past.\nHe might have forgotten our plan.\n\nThese forms are very useful when friends talk about misunderstandings and arguments.",
+   "q": "I forgot my best friend's birthday. I ___ it in my calendar.",
+   "choices": [
+    "should have written",
+    "must write",
+    "could write",
+    "would write",
+    "should write"
+   ],
+   "answer": 0,
+   "explain": "A regret about the past (I didn't write it) takes should have + past participle: should have written."
+  }
+ ],
+ "Human Rights": [
+  {
+   "title": "Human Rights Vocabulary",
+   "text": "Human rights are the basic rights and freedoms that belong to every person in the world. The Universal Declaration of Human Rights was adopted by the United Nations in 1948.\n\nBasic rights: the right to life, freedom of speech, freedom of religion, the right to education, the right to a fair trial, equality before the law, the right to vote, the right to work, children's rights, women's rights.\n\nProblems: discrimination, inequality, poverty, child labour, violence, censorship, slavery, racism.\n\nOrganisations: the United Nations (UN), UNICEF (children), Amnesty International, the Red Cross / Red Crescent (Kızılay).\n\nUseful verbs: protect, violate, defend, respect, deny, guarantee, fight for, raise awareness.\n\nExample: Every child has the right to education. Child labour violates children's rights.",
+   "q": "Making children work in factories instead of sending them to school ___ their right to education.",
+   "choices": [
+    "respects",
+    "defends",
+    "protects",
+    "violates",
+    "guarantees"
+   ],
+   "answer": 3,
+   "explain": "Child labour goes against (breaks) children's rights, so the correct verb is violates."
+  },
+  {
+   "title": "Passive Voice with Modals",
+   "text": "We often use the passive with modals when we talk about rules, rights and duties, because the action is more important than the person.\n\nForm: modal + be + past participle (V3)\nHuman rights must be protected.\nEvery citizen should be treated equally.\nChildren cannot be forced to work.\nThis problem can be solved through education.\nWomen's rights have to be respected everywhere.\n\nActive → passive:\nGovernments must protect freedom of speech.\n→ Freedom of speech must be protected (by governments).\n\nNegative: People shouldn't be judged by their appearance.\nQuestion: Can discrimination be stopped?",
+   "q": "Everyone ___ equally, regardless of their religion or nationality.",
+   "choices": [
+    "should treat",
+    "should be treated",
+    "should treated",
+    "should be treat",
+    "should treating"
+   ],
+   "answer": 1,
+   "explain": "Everyone receives the action, so we need the passive: should be + past participle (treated)."
+  }
+ ],
+ "Coming Soon": [
+  {
+   "title": "Films, Trailers and Reviews",
+   "text": "Film vocabulary: trailer, plot, cast, director, script, scene, special effects, soundtrack, sequel, premiere, box office, blockbuster, review, rating.\n\nGenres: action, thriller, horror, comedy, romantic comedy, drama, science fiction, fantasy, animation, documentary, biopic.\n\nAdjectives for reviews: gripping, thrilling, hilarious, moving, predictable, dull, breathtaking, overrated, must-see.\n\nWriting a film review:\n1. Introduction: title, genre, director, main actors.\n2. Plot summary (without spoilers!).\n3. Opinion: acting, special effects, music.\n4. Recommendation: I highly recommend it to ... / It's worth watching. / Don't miss it!\n\nPhrases: It's set in ... / It stars ... / It's based on a true story. / The plot is about ...",
+   "q": "The ending of the film was so ___ that I guessed it in the first ten minutes.",
+   "choices": [
+    "breathtaking",
+    "thrilling",
+    "hilarious",
+    "gripping",
+    "predictable"
+   ],
+   "answer": 4,
+   "explain": "An ending you can guess easily is predictable."
+  },
+  {
+   "title": "Future Continuous and Future Perfect",
+   "text": "Future continuous (will be + verb-ing): an action in progress at a specific time in the future.\nThis time next week, I will be watching the new film at the cinema.\nAt 9 pm tonight, they will be filming the final scene.\n\nFuture perfect (will have + V3): an action that will be completed before a specific time in the future.\nBy the end of this year, the director will have finished the sequel.\nBy 2030, people will have stopped going to cinemas, some say.\nby + time: by Friday, by next month, by the time ...\n\nOther future forms:\nbe going to: plans and predictions with evidence.\nPresent continuous: fixed arrangements (We're seeing the film on Saturday.)\nPresent simple: timetables (The film starts at 8 pm.)",
+   "q": "By the time the film is released next year, the actors ___ three years working on it.",
+   "choices": [
+    "will spend",
+    "will be spending",
+    "will have spent",
+    "spend",
+    "are spending"
+   ],
+   "answer": 2,
+   "explain": "An action completed before a future time (by the time ...): future perfect, will have spent."
+  }
+ ],
+ "Psychology": [
+  {
+   "title": "Emotions and the Mind",
+   "text": "Psychology is the scientific study of the mind and behaviour.\n\nEmotions and states: anxiety, stress, motivation, confidence, self-esteem, empathy, frustration, happiness, fear, anger, curiosity.\n\nPersonality types: introvert (enjoys being alone, quiet), extrovert (sociable, outgoing), optimist, pessimist, perfectionist.\n\nHealthy mental habits: getting enough sleep, exercising, talking about feelings, mindfulness and breathing exercises, limiting social media, asking for professional help when needed.\n\nUseful phrases:\nI tend to get nervous before exams.\nShe is good at dealing with stress.\nHe gets angry easily.\nTalking to a friend helps me calm down.\n\nBody language: eye contact, gestures, facial expressions, posture. Psychologists say much of our communication is non-verbal.",
+   "q": "Someone who enjoys being alone and feels tired after big social events is usually described as ___.",
+   "choices": [
+    "an introvert",
+    "a pessimist",
+    "a perfectionist",
+    "an optimist",
+    "an extrovert"
+   ],
+   "answer": 0,
+   "explain": "An introvert is a person who prefers quiet time alone and finds large social events tiring."
+  },
+  {
+   "title": "Reported Speech",
+   "text": "We use reported (indirect) speech to tell what someone else said. The verb tense usually moves one step back into the past.\n\nDirect → reported:\nam / is / are → was / were\n\"I am stressed,\" she said. → She said (that) she was stressed.\npresent simple → past simple\n\"I feel better,\" he said. → He said he felt better.\npresent continuous → past continuous\npast simple / present perfect → past perfect\n\"I have finished the test,\" Ali said. → Ali said he had finished the test.\nwill → would, can → could\n\nPronouns and time words also change: today → that day, tomorrow → the next day, here → there.\n\nReported questions use statement word order:\n\"Are you nervous?\" → She asked me if I was nervous.\n\"Why are you sad?\" → He asked me why I was sad.\n\nReported commands: \"Relax!\" → The doctor told me to relax.",
+   "q": "\"I can't sleep well at night,\" Ayşe said. → Ayşe said that she ___ sleep well at night.",
+   "choices": [
+    "doesn't",
+    "hasn't",
+    "can't",
+    "couldn't",
+    "won't"
+   ],
+   "answer": 3,
+   "explain": "In reported speech can moves back to could: can't → couldn't."
+  }
+ ],
+ "Favors": [
+  {
+   "title": "Asking for and Offering Favors",
+   "text": "A favour is something kind that you do to help someone.\n\nAsking for a favour (from informal to very polite):\nCan you help me with this?\nCould you lend me your notes?\nWould you mind carrying this bag for me? (would you mind + verb-ing)\nI was wondering if you could help me with my project.\nDo you think you could ...?\n\nAccepting: Sure, no problem. / Of course. / I'd be happy to.\nRefusing politely: I'm sorry, but I can't. I'm really busy. / I wish I could, but ...\n\nOffering help:\nShall I open the window for you?\nCan I give you a hand?\nWould you like me to carry that?\nLet me help you.\nI'll do it for you if you like.\n\nThanking: Thanks a lot. / I really appreciate it. / That's very kind of you. / I owe you one!",
+   "q": "Which is the most polite way to ask a teacher for a favour?",
+   "choices": [
+    "Give me your book.",
+    "I was wondering if you could explain this topic again.",
+    "Explain this again.",
+    "You must help me.",
+    "Help me now."
+   ],
+   "answer": 1,
+   "explain": "I was wondering if you could ... is a very polite and indirect way to make a request."
+  },
+  {
+   "title": "Volunteering and Helping Others",
+   "text": "Volunteering means working to help others without being paid.\n\nVolunteering activities: helping elderly people, tutoring younger students, planting trees, cleaning beaches, working at animal shelters, collecting donations, helping after disasters (with AFAD or Kızılay), reading books to children in hospitals.\n\nBenefits: You gain experience and new skills, make new friends, feel useful and happier, and contribute to society.\n\nLanguage focus, gerunds and infinitives:\nSome verbs are followed by -ing: enjoy, avoid, mind, suggest, keep, finish.\nI enjoy helping children with their homework.\nSome verbs are followed by to + infinitive: decide, want, hope, plan, offer, agree, refuse.\nShe offered to help at the animal shelter.\nWe decided to collect books for the village school.\n\nInfinitive of purpose (to + verb = in order to):\nThey organised a concert to raise money for charity.",
+   "q": "My friends and I decided ___ a book drive for the village school.",
+   "choices": [
+    "organised",
+    "organises",
+    "organising",
+    "organise",
+    "to organise"
+   ],
+   "answer": 4,
+   "explain": "The verb decide is followed by to + infinitive: decided to organise."
+  }
+ ],
+ "New Stories": [
+  {
+   "title": "News and Media",
+   "text": "News vocabulary: headline, article, reporter, journalist, editor, breaking news, front page, source, eyewitness, interview, coverage, fake news, press release.\n\nTypes of news: politics, economy, sports, technology, health, science, environment, culture and arts, local news.\n\nMedia: newspapers, magazines, TV channels, radio, news websites, podcasts, social media.\n\nReading news critically:\nWho wrote it? Is the source reliable?\nIs it a fact or an opinion?\nAre other sources reporting the same story?\nIs the headline exaggerated (clickbait)?\nCheck the date and look for evidence.\n\nFake news spreads quickly on social media. Fact-checking websites help people find out whether a story is true.",
+   "q": "A shocking headline written only to make people click on a link, without real content, is called ___.",
+   "choices": [
+    "breaking news",
+    "an eyewitness",
+    "clickbait",
+    "a press release",
+    "an editorial"
+   ],
+   "answer": 2,
+   "explain": "Clickbait is a misleading or exaggerated headline designed to attract clicks."
+  },
+  {
+   "title": "Telling a News Story: Past Tenses and the Passive",
+   "text": "News stories use past tenses together to report events clearly:\n\nPast simple: the main events.\nA strong earthquake hit the region yesterday.\nPast continuous: background actions.\nMost people were sleeping when the earthquake struck.\nPast perfect: earlier events.\nRescue teams had arrived before the sun rose.\n\nThe passive is very common in news because the event or the people affected are more important than who did the action:\nThe bridge was damaged by the flood.\nThree people were rescued from the building.\nA new vaccine has been developed by scientists.\nThe winners will be announced tomorrow.\n\nHeadlines use special grammar: present simple for past events, infinitive for future, and no articles.\nEARTHQUAKE HITS EASTERN CITY\nPRESIDENT TO VISIT JAPAN\nTEENAGER FOUND SAFE",
+   "q": "Choose the correct passive sentence for a news report.",
+   "choices": [
+    "The thieves were arrested by the police yesterday.",
+    "The thieves are arrest yesterday.",
+    "The thieves was arrested yesterday.",
+    "The thieves arresting yesterday.",
+    "The thieves arrested the police yesterday."
+   ],
+   "answer": 0,
+   "explain": "Past simple passive with a plural subject: were + past participle (arrested)."
+  }
+ ],
+ "Alternative Energy": [
+  {
+   "title": "Renewable Energy Sources",
+   "text": "Renewable (alternative) energy sources do not run out and produce little or no pollution.\n\nSolar energy: Solar panels change sunlight into electricity.\nWind energy: Wind turbines produce electricity from the wind.\nHydroelectric energy: The power of moving water in dams produces electricity.\nGeothermal energy: Heat from inside the Earth (Türkiye is rich in geothermal sources, especially in the Aegean region).\nBiomass: Energy from plants and organic waste.\nTidal and wave energy: Energy from the movement of the sea.\n\nNon-renewable sources: coal, oil, natural gas, nuclear fuel (uranium).\n\nAdvantages of renewable energy: clean, sustainable, reduces greenhouse gases, creates new jobs.\nDisadvantages: high installation costs, depends on weather (no sun at night, no wind on calm days), needs large areas, energy storage problems.",
+   "q": "Which energy source uses heat from inside the Earth?",
+   "choices": [
+    "coal",
+    "solar",
+    "wind",
+    "geothermal",
+    "tidal"
+   ],
+   "answer": 3,
+   "explain": "Geothermal energy comes from the heat inside the Earth."
+  },
+  {
+   "title": "Conditionals: Talking About Possibilities",
+   "text": "First conditional: real or likely future situations.\nIf + present simple, will + base verb\nIf we use more solar energy, we will reduce air pollution.\n\nSecond conditional: imaginary or unlikely present / future situations.\nIf + past simple, would + base verb\nIf every house had solar panels, we wouldn't need coal power stations.\nIf I were the mayor, I would build wind farms. (We use were for all persons.)\n\nThird conditional: imaginary past situations.\nIf + past perfect, would have + V3\nIf people had invested in renewable energy earlier, the climate crisis wouldn't have become so serious.\n\nZero conditional: general truths.\nIf you heat water to 100 °C, it boils.\n\nunless = if not: Unless we change our habits, the planet will get warmer.",
+   "q": "If I ___ a lot of money, I would install solar panels on our roof.",
+   "choices": [
+    "have",
+    "had",
+    "will have",
+    "would have",
+    "having"
+   ],
+   "answer": 1,
+   "explain": "Second conditional for an imaginary situation: If + past simple (had), would + base verb."
+  }
+ ],
+ "Technology": [
+  {
+   "title": "Inventions and Modern Technology",
+   "text": "Technology vocabulary: device, gadget, app, software, hardware, artificial intelligence (AI), virtual reality (VR), robot, drone, 3D printer, smart home, wearable technology, cloud storage, cybersecurity.\n\nFamous inventions: the printing press, the telephone, the light bulb, the computer, the internet, the smartphone.\n\nTurkish contributions: Cahit Arf (Arf invariant in mathematics), Aziz Sancar (Nobel Prize, DNA repair), Turkish UAVs (Bayraktar drones), the first Turkish astronaut Alper Gezeravcı (2024).\n\nLanguage focus, describing purpose and function:\nbe used for + verb-ing: A drone is used for taking aerial photos.\nbe used to + base verb: A 3D printer is used to make objects layer by layer.\nIt allows / enables us to + verb: AI enables doctors to diagnose diseases faster.\n\nAdvantages and disadvantages: It saves time, but it can be addictive. On the one hand ..., on the other hand ...",
+   "q": "A smartwatch is used ___ your heart rate and daily steps.",
+   "choices": [
+    "tracking for",
+    "to tracks",
+    "for track",
+    "to tracking",
+    "for tracking"
+   ],
+   "answer": 4,
+   "explain": "be used for + verb-ing describes purpose: is used for tracking."
+  },
+  {
+   "title": "Passive Voice in Different Tenses",
+   "text": "We often use the passive to talk about technology, inventions and processes.\n\nPresent simple passive: am / is / are + V3\nMillions of messages are sent every second.\nPast simple passive: was / were + V3\nThe first smartphone was introduced in the 1990s.\nPresent perfect passive: have / has been + V3\nMany jobs have been changed by artificial intelligence.\nPresent continuous passive: am / is / are being + V3\nA new app is being developed by our school's robotics team.\nFuture passive: will be + V3\nMore cars will be driven by AI in the future.\nModal passive: can / must / should be + V3\nPasswords should be changed regularly.\n\nUse by + agent only when it is important to say who did the action.",
+   "q": "The new science lab ___ at the moment, so we can't use it this week.",
+   "choices": [
+    "builds",
+    "is building",
+    "is being built",
+    "was built",
+    "has built"
+   ],
+   "answer": 2,
+   "explain": "An action in progress now and the lab receives the action: present continuous passive, is being built."
+  }
+ ],
+ "Manners": [
+  {
+   "title": "Good Manners Around the World",
+   "text": "Manners are the rules of polite behaviour in a society. They can be very different from one culture to another.\n\nTable manners: Don't talk with your mouth full. Wait until everyone is served. In Türkiye, people say Afiyet olsun before or after meals. In Japan, it is polite to slurp noodles. In some countries, finishing all the food shows you liked it; in others, leaving a little food is polite.\n\nGreetings: shaking hands (Western countries), bowing (Japan), kissing on both cheeks (Türkiye, France), the namaste gesture (India).\n\nOther manners: queueing politely, holding the door for someone, apologising when you bump into someone, giving up your seat to elderly people on public transport, not using your phone during a conversation.\n\nDigital manners (netiquette): Don't write in capital letters (it looks like shouting), respect others' privacy, think before you post.",
+   "q": "According to online etiquette (netiquette), why should you avoid writing whole messages in CAPITAL LETTERS?",
+   "choices": [
+    "Because it looks like shouting",
+    "Because it uses more data",
+    "Because it is illegal",
+    "Because phones can't show them",
+    "Because it is too slow"
+   ],
+   "answer": 0,
+   "explain": "In online communication, writing everything in capital letters is seen as shouting and can be considered rude."
+  },
+  {
+   "title": "Gerunds as Subjects and Expressing Expectations",
+   "text": "Language focus, gerunds (verb-ing) as the subject of a sentence:\nInterrupting people is rude.\nSaying thank you shows respect.\nChewing gum loudly in class is not polite.\n\nAlternative form with it:\nIt is rude to interrupt people.\nIt's polite to say thank you.\n\nExpressing expectations and rules:\nbe expected to + verb: Students are expected to arrive on time.\nbe supposed to + verb: You're supposed to take your shoes off here.\nbe (not) allowed to + verb: You aren't allowed to use phones in the exam.\n\nGiving advice about manners:\nYou'd better not be late for the dinner.\nYou should always knock before you enter.\nIf I were you, I'd apologise to her.",
+   "q": "___ loudly on the phone in a library is considered rude.",
+   "choices": [
+    "To talking",
+    "Talk",
+    "Talks",
+    "Talking",
+    "Talked"
+   ],
+   "answer": 3,
+   "explain": "A gerund (verb-ing) can be the subject of a sentence: Talking loudly ... is rude."
+  }
+ ]
+}

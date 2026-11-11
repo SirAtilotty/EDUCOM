@@ -108,6 +108,18 @@ db.exec(`
     at INTEGER NOT NULL
   );
   CREATE INDEX IF NOT EXISTS questions_grade ON questions(grade);
+  -- Öğrencinin bir ünitede çözdüğü her test: çoktan seçmelilerde doğru sayısı / soru sayısı.
+  CREATE TABLE IF NOT EXISTS quiz_results (
+    id INTEGER PRIMARY KEY,
+    user_id INTEGER NOT NULL REFERENCES users(id),
+    grade INTEGER NOT NULL,
+    subject TEXT NOT NULL,
+    unit TEXT NOT NULL,
+    correct INTEGER NOT NULL,
+    total INTEGER NOT NULL,
+    at INTEGER NOT NULL
+  );
+  CREATE INDEX IF NOT EXISTS quiz_results_user ON quiz_results(user_id, grade);
   CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value TEXT NOT NULL);
   CREATE TABLE IF NOT EXISTS push_subs (
     endpoint TEXT PRIMARY KEY,
@@ -125,11 +137,20 @@ if (!db.prepare("SELECT 1 FROM pragma_table_info('questions') WHERE name = 'unit
 const SUBJECT_ORDER = ['Türk Dili ve Edebiyatı', 'Matematik', 'Fizik', 'Kimya', 'Biyoloji', 'Tarih',
   'T.C. İnkılap Tarihi ve Atatürkçülük', 'Coğrafya', 'İngilizce'];
 const BANK = [];
-const CATALOG = new Map(); // sınıf -> [{ subject, source, units: [{ name, topics }] }]
+const CATALOG = new Map(); // sınıf -> [{ subject, source, units: [{ name, topics, lessons }] }]
+// Konu anlatımı: lessons/ klasöründe aynı adlı dosya, ünite adı -> [{ title, text, q, choices, answer, explain }].
+const LESSONS = new Map(); // "sınıf|ders|ünite" -> bölümler
 for (const file of fs.readdirSync(path.join(__dirname, 'questions')).filter((f) => f.endsWith('.json'))) {
   const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'questions', file), 'utf8'));
+  const lessonFile = path.join(__dirname, 'lessons', file);
+  const lessons = fs.existsSync(lessonFile) ? JSON.parse(fs.readFileSync(lessonFile, 'utf8')) : {};
+  for (const name of Object.keys(lessons)) {
+    if (!data.units.some((u) => u.name === name)) throw new Error(`lessons/${file}: bilinmeyen ünite "${name}"`);
+    LESSONS.set(`${data.grade}|${data.subject}|${name}`, lessons[name]);
+  }
   if (!CATALOG.has(data.grade)) CATALOG.set(data.grade, []);
-  CATALOG.get(data.grade).push({ subject: data.subject, source: data.source, units: data.units.map(({ name, topics }) => ({ name, topics })) });
+  CATALOG.get(data.grade).push({ subject: data.subject, source: data.source,
+    units: data.units.map(({ name, topics }) => ({ name, topics, lessons: lessons[name]?.length || 0 })) });
   for (const unit of data.units) {
     for (const x of unit.questions) {
       BANK.push({ id: `b${BANK.length}`, teacherId: null, grade: data.grade, subject: data.subject, unit: unit.name, choices: null, answer: null, explain: '', ...x });
@@ -154,8 +175,11 @@ async function verifyPassword(password, stored) {
   return crypto.timingSafeEqual(Buffer.from(candidate), Buffer.from(stored));
 }
 
+let inTransaction = false;
 function transaction(fn) {
+  if (inTransaction) return fn(); // iç içe çağrı dıştaki işlemin parçası olur
   db.exec('BEGIN IMMEDIATE');
+  inTransaction = true;
   try {
     const out = fn();
     db.exec('COMMIT');
@@ -163,6 +187,15 @@ function transaction(fn) {
   } catch (e) {
     db.exec('ROLLBACK');
     throw e;
+  } finally {
+    inTransaction = false;
+  }
+}
+
+// Silinen mesajların fotoğraf ve ses dosyaları; dosya zaten yoksa sorun değil.
+function removeFiles(files) {
+  for (const file of files) {
+    if (file) fs.promises.unlink(path.join(UPLOADS, file)).catch((e) => e.code !== 'ENOENT' && console.error(e));
   }
 }
 
@@ -202,16 +235,31 @@ function ensureClass(value) {
   });
 }
 
+// Sınıf grubunun eski duyuruları görünür ama hepsi okunmamış sayılmaz.
+const joinClass = db.prepare(`INSERT OR IGNORE INTO members (convo_id, user_id, last_read)
+  SELECT c.convo_id, ?, COALESCE((SELECT MAX(id) FROM messages WHERE convo_id = c.convo_id), 0) FROM classes c WHERE c.id = ?`);
+
+// Kişiyi bütün sınıf gruplarından çıkarıp verilen sınıflara koyar; özel sohbet ve gruplar kalır.
+function setClasses(userId, classIds) {
+  transaction(() => {
+    db.prepare('DELETE FROM members WHERE user_id = ? AND convo_id IN (SELECT convo_id FROM classes)').run(userId);
+    for (const id of classIds) joinClass.run(userId, id);
+  });
+}
+
 // ---- Yönetici komutları
 const USAGE = `Commands:
   invite student <class> [count]     e.g. invite student 9-A 30
   invite teacher <class> [class...]  e.g. invite teacher 9-A 10-B
+  move <username> <class> [class...]  e.g. move ali 10-B (a student has one class)
+  promote [--yes]                    students go up a grade, 12th graders graduate
+  prune <days>                       delete photos and voice messages older than this
   classes | remove <username> | reset <username> | backup <folder>`;
 
 function runCommand([cmd, ...args]) {
   const arg = args[0];
   const findUser = () => {
-    const u = db.prepare('SELECT id FROM users WHERE username = ? AND disabled = 0').get(str(arg));
+    const u = db.prepare('SELECT id, role FROM users WHERE username = ? AND disabled = 0').get(str(arg));
     if (!u) throw new Error(`User not found: ${arg}`);
     return u;
   };
@@ -245,6 +293,43 @@ function runCommand([cmd, ...args]) {
     remove() {
       disableUser(findUser().id);
       console.log(`${arg} has been removed.`);
+    },
+    move() {
+      const user = findUser();
+      const names = args.slice(1);
+      if (!names.length || (user.role === 'student' && names.length > 1)) throw new Error(USAGE);
+      const classes = names.map(ensureClass);
+      setClasses(user.id, classes.map((c) => c.id));
+      console.log(`${arg} is now in ${classes.map((c) => c.name).join(', ')}.`);
+    },
+    // Yıl sonu: 9-A'daki öğrenciler 10-A'ya geçer, 12. sınıflar mezun olup çıkarılır. Öğretmenler yerinde kalır.
+    promote() {
+      const plan = db.prepare(`SELECT u.id, c.grade, c.name FROM users u JOIN members m ON m.user_id = u.id
+        JOIN classes c ON c.convo_id = m.convo_id WHERE u.role = 'student' AND u.disabled = 0 ORDER BY c.grade, c.name`).all()
+        .map((r) => ({ ...r, to: r.grade >= 12 ? null : `${r.grade + 1}-${r.name.split('-')[1]}` }));
+      const summary = new Map();
+      for (const p of plan) {
+        const line = `${p.name} -> ${p.to || 'graduated (removed)'}`;
+        summary.set(line, (summary.get(line) || 0) + 1);
+      }
+      for (const [line, count] of summary) console.log(`${line}: ${count} students`);
+      if (!plan.length) return console.log('No students to promote.');
+      if (arg !== '--yes') return console.log('Nothing changed yet. Take a backup, then run: node server.js promote --yes');
+      transaction(() => {
+        for (const p of plan) {
+          if (p.to) setClasses(p.id, [ensureClass(p.to).id]);
+          else disableUser(p.id);
+        }
+      });
+      console.log('Done. Teachers keep their classes; change them with: node server.js move <username> <class...>');
+    },
+    prune() {
+      const days = Number(arg);
+      if (!Number.isInteger(days) || days < 1) throw new Error('Give an age in days: node server.js prune 365');
+      const files = db.prepare('DELETE FROM messages WHERE image IS NOT NULL AND at < ? RETURNING image')
+        .all(Date.now() - days * 864e5).map((r) => r.image);
+      removeFiles(files);
+      console.log(`${files.length} photos and voice messages older than ${days} days deleted.`);
     },
     async reset() {
       const { id } = findUser();
@@ -293,7 +378,6 @@ const validSession = (hash) => sessionUser.get(hash, Date.now());
 function startSession(req, res, userId) {
   const token = crypto.randomBytes(32).toString('hex');
   const maxAge = SESSION_DAYS * 86400;
-  db.prepare('DELETE FROM sessions WHERE expires <= ?').run(Date.now());
   db.prepare('INSERT INTO sessions VALUES (?, ?, ?)').run(sha256(token), userId, Date.now() + maxAge * 1000);
   const secure = req.headers['x-forwarded-proto'] === 'https' ? '; Secure' : '';
   res.setHeader('Set-Cookie', `${COOKIE}=${token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=${maxAge}${secure}`);
@@ -301,11 +385,29 @@ function startSession(req, res, userId) {
 
 const clearCookie = (res) => res.setHeader('Set-Cookie', `${COOKIE}=; HttpOnly; SameSite=Strict; Path=/; Max-Age=0`);
 
-// Kaba kuvvet koruması: yalnızca var olan kullanıcılar sayılır, böylece tablo sınırsız büyümez.
-const failedLogins = new Map();
+// Kaba kuvvet koruması: kilit adres + hesap çiftine konur. Hesaba konsaydı kullanıcı adını bilen
+// herkes (örneğin bir öğrenci) öğretmenin hesabını sürekli kilitleyebilirdi.
+// Yalnızca var olan kullanıcılar sayılır; süresi dolan kayıtları saatlik temizlik siler.
+const failedLogins = new Map(); // "adres kullanıcı" -> { count, until }
 const LOCK_AFTER = 10;
 const LOCK_MS = 15 * 60 * 1000;
 const DUMMY_HASH = `${'0'.repeat(32)}:${'0'.repeat(64)}`;
+
+// Ters vekil (Tailscale vb.) gerçek adresi X-Forwarded-For'un sonuna ekler; baştakileri istemci uydurabilir.
+// Başlığa yalnızca bağlantı aynı makinedeki vekilden geliyorsa güvenilir.
+function clientIp(req) {
+  const peer = req.socket.remoteAddress || '';
+  const forwarded = str(req.headers['x-forwarded-for']).split(',').at(-1).trim();
+  return forwarded && /^(127\.|::1$|::ffff:127\.)/.test(peer) ? forwarded : peer;
+}
+
+// Saatlik temizlik: süresi dolan oturumlar, kayıt kodları ve giriş kilitleri.
+function cleanup() {
+  const now = Date.now();
+  db.prepare('DELETE FROM sessions WHERE expires <= ?').run(now);
+  db.prepare('DELETE FROM invites WHERE expires <= ?').run(now);
+  for (const [key, lock] of failedLogins) if (lock.until <= now) failedLogins.delete(key);
+}
 
 // ---- Canlı akış (SSE)
 const streams = new Map(); // userId -> Set<res>
@@ -547,10 +649,7 @@ route('POST', /^\/api\/register$/, async ({ req, res }) => {
     const invite = db.prepare('DELETE FROM invites WHERE hash = ? AND expires > ? RETURNING classes').get(sha256(code), Date.now());
     if (!invite) throw new HttpError(403, 'inviteInvalid');
     const userId = db.prepare('INSERT INTO users (username, name, pass, role) VALUES (?, ?, ?, ?)').run(username, name, pass, role).lastInsertRowid;
-    // Sınıf grubunun eski duyuruları görünür ama hepsi okunmamış sayılmaz.
-    const join = db.prepare(`INSERT OR IGNORE INTO members (convo_id, user_id, last_read)
-      SELECT c.convo_id, ?, COALESCE((SELECT MAX(id) FROM messages WHERE convo_id = c.convo_id), 0) FROM classes c WHERE c.id = ?`);
-    for (const classId of JSON.parse(invite.classes)) join.run(userId, classId);
+    for (const classId of JSON.parse(invite.classes)) joinClass.run(userId, classId);
     return userId;
   });
   startSession(req, res, id);
@@ -563,7 +662,8 @@ route('POST', /^\/api\/login$/, async ({ req, res }) => {
   const b = await readJson(req);
   const username = str(b.username).trim();
   const user = db.prepare('SELECT id, username, name, role, pass FROM users WHERE username = ? AND disabled = 0').get(username);
-  const lock = user && failedLogins.get(user.id);
+  const key = user && `${clientIp(req)} ${user.id}`;
+  const lock = key && failedLogins.get(key);
   if (lock && lock.count >= LOCK_AFTER && lock.until > Date.now()) {
     throw new HttpError(429, 'tooManyAttempts');
   }
@@ -572,11 +672,11 @@ route('POST', /^\/api\/login$/, async ({ req, res }) => {
   if (!user || !ok) {
     if (user) {
       const expired = !lock || lock.until <= Date.now();
-      failedLogins.set(user.id, { count: expired ? 1 : lock.count + 1, until: Date.now() + LOCK_MS });
+      failedLogins.set(key, { count: expired ? 1 : lock.count + 1, until: Date.now() + LOCK_MS });
     }
     throw new HttpError(401, 'badLogin');
   }
-  failedLogins.delete(user.id);
+  failedLogins.delete(key);
   startSession(req, res, user.id);
   return profile(user);
 }, true);
@@ -709,7 +809,15 @@ route('DELETE', /^\/api\/convos\/(\d+)\/members\/me$/, ({ user, match }) => {
   const convoId = Number(match[1]);
   requireGroup(convoId, user.id);
   publish(convoId, { type: 'convo' }); // ayrılanın diğer cihazları da duysun diye silmeden önce
-  db.prepare('DELETE FROM members WHERE convo_id = ? AND user_id = ?').run(convoId, user.id);
+  // Son üye de çıkınca grubu görecek kimse kalmaz; mesajları ve dosyalarıyla silinir.
+  const files = transaction(() => {
+    db.prepare('DELETE FROM members WHERE convo_id = ? AND user_id = ?').run(convoId, user.id);
+    if (db.prepare('SELECT 1 FROM members WHERE convo_id = ?').get(convoId)) return [];
+    const images = db.prepare('DELETE FROM messages WHERE convo_id = ? RETURNING image').all(convoId);
+    db.prepare('DELETE FROM convos WHERE id = ?').run(convoId);
+    return images.map((r) => r.image);
+  });
+  removeFiles(files);
   return {};
 });
 
@@ -751,7 +859,21 @@ route('POST', /^\/api\/convos\/(\d+)\/images$/, async ({ req, user, match, url }
   return addMessage(convoId, user.id, '', file, replyTo);
 });
 
-route('POST', /^\/api\/convos\/(\d+)\/read$/, ({ user, match }) => {
+// Herkes kendi mesajını, öğretmen ayrıca öğrencinin mesajını siler (moderasyon). Herkesten silinir.
+route('DELETE', /^\/api\/convos\/(\d+)\/messages\/(\d+)$/, ({ user, match }) => {
+  const convoId = Number(match[1]);
+  const id = Number(match[2]);
+  requireMember(convoId, user.id);
+  const m = db.prepare(`SELECT m.user_id AS userId, m.image, u.role FROM messages m JOIN users u ON u.id = m.user_id
+    WHERE m.id = ? AND m.convo_id = ?`).get(id, convoId);
+  if (!m || (m.userId !== user.id && !(user.role === 'teacher' && m.role === 'student'))) throw new HttpError(404, 'notFound');
+  db.prepare('DELETE FROM messages WHERE id = ?').run(id);
+  removeFiles([m.image]);
+  publish(convoId, { type: 'deleted', convoId, id });
+  return {};
+});
+
+route('POST', /^\/api\/convos\/(\d+)\/read$/,({ user, match }) => {
   const convoId = Number(match[1]);
   requireMember(convoId, user.id);
   const { max } = db.prepare('SELECT COALESCE(MAX(id), 0) AS max FROM messages WHERE convo_id = ?').get(convoId);
@@ -860,7 +982,40 @@ route('GET', /^\/api\/quiz$/, ({ user, url }) => {
     if (!unit) subject.units.push(unit = { name: q.unit, topics: '', count: 0 });
     unit.count++;
   }
+  // Öğrenci her ünitede son denemesini, öğretmen kendi sınıflarındaki öğrencilerin son denemelerinin toplamını görür.
+  const scores = user.role === 'teacher' ? classScores.all(user.id, grade) : ownScores.all(user.id, grade);
+  for (const { subject, unit, ...score } of scores) {
+    const found = subjects.find((s) => s.subject === subject)?.units.find((u) => u.name === unit);
+    if (found) found.score = score;
+  }
   return { grade, subjects };
+});
+
+const ownScores = db.prepare(`SELECT subject, unit, correct, total, 1 AS students FROM quiz_results
+  WHERE id IN (SELECT MAX(id) FROM quiz_results WHERE user_id = ? AND grade = ? GROUP BY subject, unit)`);
+const classScores = db.prepare(`SELECT subject, unit, SUM(correct) AS correct, SUM(total) AS total, COUNT(*) AS students
+  FROM quiz_results WHERE id IN (
+    SELECT MAX(r.id) FROM quiz_results r
+    JOIN members ms ON ms.user_id = r.user_id JOIN classes c ON c.convo_id = ms.convo_id
+    JOIN members mt ON mt.convo_id = c.convo_id AND mt.user_id = ?
+    WHERE r.grade = ? GROUP BY r.user_id, r.subject, r.unit)
+  GROUP BY subject, unit`);
+
+// Test bitince öğrencinin sonucu kaydedilir; yalnızca çoktan seçmeliler sayılır.
+route('POST', /^\/api\/quiz\/results$/, async ({ req, user }) => {
+  if (user.role !== 'student') throw new HttpError(403, 'studentsOnly');
+  const b = await readJson(req);
+  const grade = gradeOf(user.id);
+  const subject = str(b.subject);
+  const unit = str(b.unit);
+  const available = gradeQuestions(grade).filter((q) => q.subject === subject && q.unit === unit && q.choices).length;
+  const { correct, total } = b;
+  if (!Number.isInteger(total) || !Number.isInteger(correct) || total < 1 || total > available || correct < 0 || correct > total) {
+    throw new HttpError(400, 'badRequest');
+  }
+  db.prepare('INSERT INTO quiz_results (user_id, grade, subject, unit, correct, total, at) VALUES (?, ?, ?, ?, ?, ?, ?)')
+    .run(user.id, grade, subject, unit, correct, total, Date.now());
+  return {};
 });
 
 route('GET', /^\/api\/quiz\/questions$/, ({ user, url }) => {
@@ -868,6 +1023,9 @@ route('GET', /^\/api\/quiz\/questions$/, ({ user, url }) => {
   const unit = url.searchParams.get('unit');
   return gradeQuestions(quizGrade(user, url)).filter((q) => q.subject === subject && q.unit === unit);
 });
+
+route('GET', /^\/api\/quiz\/lesson$/, ({ user, url }) =>
+  LESSONS.get(`${quizGrade(user, url)}|${url.searchParams.get('subject')}|${url.searchParams.get('unit')}`) || []);
 
 route('POST', /^\/api\/quiz$/, async ({ req, user }) => {
   requireTeacher(user);
@@ -987,6 +1145,8 @@ if (process.argv[2]) {
       process.exitCode = 1;
     });
 } else {
+  cleanup();
+  setInterval(cleanup, 3600 * 1000).unref();
   http.createServer((req, res) => {
     for (const [k, v] of Object.entries(SECURITY_HEADERS)) res.setHeader(k, v);
     handle(req, res).catch((e) => {

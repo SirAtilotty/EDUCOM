@@ -1,0 +1,218 @@
+{
+ "Etkileşim": [
+  {
+   "title": "Kimya Hayattır",
+   "text": "Kimya, maddenin yapısını, özelliklerini, değişimlerini ve bu değişimlerdeki enerjiyi inceleyen bilimdir. Yediğimiz yemekten kullandığımız ilaca, giydiğimiz kumaştan telefonumuzun piline kadar her şeyde kimya vardır.\n\nKimyanın alt disiplinleri:\nAnalitik kimya: Maddelerin neyden ve ne kadar oluştuğunu belirler (gıda ve su analizleri).\nOrganik kimya: Karbon bileşiklerini inceler (ilaç, plastik, yakıt).\nAnorganik kimya: Karbon bileşikleri dışındaki maddeleri inceler (metaller, mineraller).\nFizikokimya: Kimyasal olayları fizik yasalarıyla açıklar (enerji, hız).\nBiyokimya: Canlılardaki kimyasal olayları inceler.\nPolimer kimyası: Plastik ve lif gibi büyük molekülleri inceler.\n\nKariyer: Kimya mühendisliği, eczacılık, gıda mühendisliği, metalurji, ilaç ve kozmetik sektörü, adli kimya, çevre analiz laboratuvarları.",
+   "q": "Bir gıda ürünündeki koruyucu madde miktarını ölçen bir uzman, kimyanın en çok hangi alt disipliniyle çalışır?",
+   "choices": [
+    "Polimer kimyası",
+    "Analitik kimya",
+    "Fizikokimya",
+    "Anorganik kimya",
+    "Biyokimya"
+   ],
+   "answer": 1,
+   "explain": "Bir maddenin içinde neyin ve ne kadar olduğunu belirlemek analitik kimyanın konusudur."
+  },
+  {
+   "title": "Kimyasal Maddelerin Kullanımı ve Güvenlik",
+   "text": "Kimyasallar doğru kullanıldığında yararlı, yanlış kullanıldığında tehlikelidir. Ürün etiketlerindeki güvenlik işaretleri (piktogramlar) maddenin tehlikesini gösterir:\n\nAlev: Yanıcı madde (alkol, aseton).\nÇember üzerinde alev: Yakıcı (oksitleyici) madde.\nKafatası: Akut zehirli madde.\nAşındırıcı (sıvının el ve yüzeyi aşındırdığı resim): Cilde ve metallere zarar verir (çamaşır suyu, tuz ruhu).\nÜnlem işareti: Tahriş edici ya da zararlı.\nÖlü balık ve ağaç: Çevreye zararlı.\nPatlayan bomba: Patlayıcı.\n\nGüvenlik kuralları:\nÇamaşır suyu ile tuz ruhu (ya da kireç çözücü) asla karıştırılmamalıdır; zehirli klor gazı açığa çıkar.\nKimyasallar orijinal kabında, çocukların ulaşamayacağı yerde saklanmalıdır.\nLaboratuvarda gözlük, önlük ve eldiven kullanılmalı; kimyasallar koklanmamalı, tadılmamalıdır.",
+   "q": "Çamaşır suyu ile tuz ruhunun karıştırılmasının tehlikeli olmasının nedeni nedir?",
+   "choices": [
+    "Karışım renksiz olur.",
+    "Temizlik gücü artar.",
+    "Karışım suya dönüşür.",
+    "Karışım donar.",
+    "Zehirli klor gazı açığa çıkar."
+   ],
+   "answer": 4,
+   "explain": "Bu iki madde tepkimeye girerek solunduğunda çok zararlı olan klor gazı oluşturur."
+  },
+  {
+   "title": "Atom Teorileri",
+   "text": "Atom kavramı tarih boyunca gelişmiştir:\n\nDalton: Atomlar bölünemez, içi dolu kürelerdir. Aynı elementin atomları özdeştir.\nThomson: Elektronu keşfetti. Atomu, pozitif yüklü bir küre içine gömülü elektronlar olarak düşündü (üzümlü kek modeli).\nRutherford: Altın levha deneyiyle atomun büyük kısmının boşluk olduğunu, kütlenin ve pozitif yükün küçük bir çekirdekte toplandığını gösterdi.\nBohr: Elektronlar çekirdek etrafında belirli enerji düzeylerinde (katmanlarda) dolanır. Elektron bir üst düzeye çıkarken enerji alır, inerken ışık yayar. Bu model yalnızca hidrojen gibi tek elektronlu taneciklerde tam çalışır.\nModern atom teorisi: Elektronların yeri kesin olarak belirlenemez; elektronların bulunma olasılığının yüksek olduğu bölgelere orbital denir. Elektronlar bir elektron bulutu hâlinde düşünülür.",
+   "q": "Atomun büyük kısmının boşluk olduğunu ve pozitif yükün küçük bir çekirdekte toplandığını gösteren bilim insanı kimdir?",
+   "choices": [
+    "Dalton",
+    "Thomson",
+    "Rutherford",
+    "Bohr",
+    "Mendeleyev"
+   ],
+   "answer": 2,
+   "explain": "Rutherford'un altın levha deneyinde taneciklerin çoğu levhadan geçti, çok azı geri saptı. Bu sonuç atomun çekirdekli yapısını ortaya koydu."
+  },
+  {
+   "title": "Atomun Yapısı",
+   "text": "Atom; çekirdekte bulunan protonlar (+) ve nötronlar (yüksüz) ile çekirdek çevresindeki elektronlardan (−) oluşur.\n\nAtom numarası (Z): Proton sayısı. Elementin kimliğini belirler.\nKütle numarası (A): Proton sayısı + nötron sayısı.\nNötr atomda elektron sayısı = proton sayısı.\n\nİyonlar:\nKatyon: Elektron vermiş, pozitif yüklü iyon (Na⁺: 11 proton, 10 elektron).\nAnyon: Elektron almış, negatif yüklü iyon (Cl⁻: 17 proton, 18 elektron).\n\nİzotop: Proton sayısı aynı, nötron sayısı farklı atomlar (¹²C ve ¹⁴C). Kimyasal özellikleri aynı, fiziksel özellikleri farklıdır.\n\nElektron dizilimi: Elektronlar katmanlara 2, 8, 8 kuralıyla yerleşir (ilk 20 element için). Son katmandaki elektronlara değerlik elektronu denir; elementin kimyasal davranışını belirler.",
+   "q": "²⁷₁₃Al³⁺ iyonunun elektron sayısı kaçtır?",
+   "choices": [
+    "10",
+    "13",
+    "14",
+    "16",
+    "27"
+   ],
+   "answer": 0,
+   "explain": "Proton sayısı 13'tür. 3+ yük, 3 elektron verildiğini gösterir: 13 − 3 = 10 elektron."
+  },
+  {
+   "title": "Periyodik Tablo",
+   "text": "Periyodik tabloda elementler artan atom numarasına göre dizilir. Yatay sıralara periyot (7 tane), düşey sütunlara grup denir.\n\nAynı gruptaki elementlerin değerlik elektron sayıları aynı olduğu için kimyasal özellikleri benzerdir.\n1A: Alkali metaller (Li, Na, K). Çok aktiftir, suyla şiddetli tepkime verir.\n2A: Toprak alkali metaller (Mg, Ca).\n7A: Halojenler (F, Cl, Br, I). Ametal, çok aktiftir.\n8A: Soy gazlar (He, Ne, Ar). Değerlik katmanları dolu olduğu için tepkimeye girmeye isteksizdir.\n\nPeriyodik özellikler:\nAtom yarıçapı: Grupta aşağı doğru artar, periyotta soldan sağa azalır.\nİyonlaşma enerjisi ve elektronegatiflik: Genellikle grupta yukarı, periyotta sağa doğru artar.\nMetalik özellik solda ve aşağıda, ametalik özellik sağda ve yukarıda fazladır.\n\nBir elementin periyot numarası katman sayısını, A grubu numarası değerlik elektron sayısını verir.",
+   "q": "Elektron dizilimi 2, 8, 7 olan element periyodik tablonun hangi periyot ve grubundadır?",
+   "choices": [
+    "7. periyot 3A",
+    "2. periyot 8A",
+    "2. periyot 7A",
+    "3. periyot 7A",
+    "3. periyot 1A"
+   ],
+   "answer": 3,
+   "explain": "Üç katman olduğu için 3. periyotta, son katmanda 7 elektron olduğu için 7A grubundadır (klor)."
+  }
+ ],
+ "Çeşitlilik": [
+  {
+   "title": "Metalik Bağ",
+   "text": "Metal atomları değerlik elektronlarını kolayca serbest bırakır. Pozitif yüklü metal iyonları, aralarında serbestçe dolaşan elektron denizi tarafından bir arada tutulur. Bu çekime metalik bağ denir.\n\nMetalik bağın açıkladığı özellikler:\nElektrik ve ısı iletkenliği: Serbest elektronlar yükü ve enerjiyi kolayca taşır.\nTel ve levha hâline getirilebilme (işlenebilirlik): Katmanlar kaydığında elektron denizi bağı korur, metal kırılmaz.\nParlaklık: Serbest elektronlar ışığı yansıtır.\n\nAlaşım: Bir metalin başka metal ya da ametallerle eritilip karıştırılmasıyla elde edilen karışımdır. Alaşımlar genellikle saf metallerden daha dayanıklıdır.\nÇelik: demir + karbon\nTunç (bronz): bakır + kalay\nPirinç: bakır + çinko",
+   "q": "Metallerin elektriği iyi iletmesinin nedeni nedir?",
+   "choices": [
+    "Atomlarının çok büyük olması",
+    "Yapılarında serbest dolaşan değerlik elektronlarının bulunması",
+    "Moleküllerden oluşmaları",
+    "Erime noktalarının düşük olması",
+    "Hepsinin sıvı olması"
+   ],
+   "answer": 1,
+   "explain": "Metalik bağda değerlik elektronları serbestçe hareket eder ve yük taşır; bu yüzden metaller iyi iletkendir."
+  },
+  {
+   "title": "İyonik Bağ",
+   "text": "İyonik bağ, genellikle bir metal ile bir ametal arasında oluşur. Metal elektron vererek katyon (+), ametal elektron alarak anyon (−) olur; zıt yüklü iyonlar arasındaki güçlü elektrostatik çekim iyonik bağdır.\n\nÖrnek: Na (2, 8, 1) bir elektron verir → Na⁺; Cl (2, 8, 7) bir elektron alır → Cl⁻. Böylece ikisi de soy gaz elektron dizilimine ulaşır.\n\nİyonik bileşiklerin özellikleri:\nOda sıcaklığında kristal yapılı katılardır.\nErime ve kaynama noktaları yüksektir.\nKatı hâlde elektriği iletmez; sıvı hâlde ya da suda çözündüğünde iyonlar serbestleştiği için iletir.\nSert ama kırılgandır.\n\nFormül yazma: Toplam yük sıfır olmalıdır. Mg²⁺ ile Cl⁻ → MgCl₂; Al³⁺ ile O²⁻ → Al₂O₃.",
+   "q": "Ca²⁺ ve N³⁻ iyonlarından oluşan bileşiğin formülü hangisidir?",
+   "choices": [
+    "Ca₂N",
+    "CaN",
+    "CaN₂",
+    "Ca₂N₃",
+    "Ca₃N₂"
+   ],
+   "answer": 4,
+   "explain": "Toplam yükün sıfır olması için 3 Ca²⁺ (+6) ve 2 N³⁻ (−6) gerekir: Ca₃N₂."
+  },
+  {
+   "title": "Kovalent Bağ ve Lewis Yapısı",
+   "text": "Kovalent bağ, genellikle iki ametal atomunun elektronlarını ortaklaşa kullanmasıyla oluşur. Ortaklaşa kullanılan her elektron çifti bir bağdır.\n\nTekli bağ: Bir çift (H₂, H−H). İkili bağ: İki çift (O₂, O=O). Üçlü bağ: Üç çift (N₂).\n\nLewis nokta yapısı: Elementin simgesi etrafına değerlik elektronları nokta olarak yazılır. Atomlar çoğunlukla 8 elektrona (oktet; hidrojen için 2, dublet) ulaşacak şekilde elektron paylaşır.\n\nÖrnek H₂O: Oksijenin 6 değerlik elektronu vardır; iki hidrojenle birer çift paylaşır. Oksijen üzerinde 2 bağ ve 2 ortaklanmamış elektron çifti kalır.\n\nKovalent bağlı maddeler moleküllerden oluşur (su, karbondioksit, şeker). Genellikle erime ve kaynama noktaları iyonik bileşiklerden düşüktür.",
+   "q": "N₂ molekülünde iki azot atomu arasında kaç bağ (ortak elektron çifti) bulunur?",
+   "choices": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "answer": 2,
+   "explain": "Azotun 5 değerlik elektronu vardır; okteti tamamlamak için her atom 3 elektronunu ortaklaşa kullanır. Aralarında üçlü bağ oluşur."
+  },
+  {
+   "title": "Molekül Polarlığı",
+   "text": "Elektronegatiflik, bir atomun bağ elektronlarını kendine çekme yeteneğidir.\n\nApolar kovalent bağ: Aynı atomlar arasında; elektronlar eşit paylaşılır (H₂, O₂, Cl₂).\nPolar kovalent bağ: Farklı atomlar arasında; elektronlar elektronegatifliği büyük atoma daha yakındır. O atom kısmi negatif (δ−), diğeri kısmi pozitif (δ+) olur (H−Cl).\n\nMolekülün polarlığı, bağların polarlığına ve molekülün geometrisine bağlıdır:\nCO₂ doğrusal ve simetrik olduğu için bağları polar olduğu hâlde molekül apolardır; bağ etkileri birbirini yok eder.\nH₂O kırık (açısal) yapıda olduğu için polardır.\nCH₄ simetrik olduğu için apolardır.\n\nGenel ipucu: Merkez atomda ortaklanmamış elektron çifti yoksa ve bağlı atomlar aynıysa molekül genellikle apolardır.",
+   "q": "Aşağıdaki moleküllerden hangisi polardır?",
+   "choices": [
+    "H₂O",
+    "O₂",
+    "H₂",
+    "CO₂",
+    "CH₄"
+   ],
+   "answer": 0,
+   "explain": "H₂O molekülü kırık yapıdadır; bağ polarlıkları birbirini yok etmez ve molekül polar olur."
+  },
+  {
+   "title": "Bileşiklerin Adlandırılması",
+   "text": "İyonik bileşikler: Önce katyonun, sonra anyonun adı söylenir. Tek değerlikli metallerde değerlik belirtilmez.\nNaCl: sodyum klorür\nCaO: kalsiyum oksit\nMg₃N₂: magnezyum nitrür\n\nBirden fazla değerlik alabilen metallerde değerlik Roma rakamıyla belirtilir:\nFeCl₂: demir(II) klorür, FeCl₃: demir(III) klorür\n\nÇok atomlu iyonlar: OH⁻ hidroksit, NO₃⁻ nitrat, SO₄²⁻ sülfat, CO₃²⁻ karbonat, PO₄³⁻ fosfat, NH₄⁺ amonyum.\nNaOH: sodyum hidroksit, CaCO₃: kalsiyum karbonat.\n\nKovalent (iki ametalli) bileşikler: Atom sayıları Yunanca ön eklerle belirtilir: mono (1), di (2), tri (3), tetra (4), penta (5).\nCO: karbon monoksit, CO₂: karbon dioksit, N₂O₅: diazot pentaoksit.\n\nBazı bileşiklerin yaygın adları vardır: H₂O su, NH₃ amonyak.",
+   "q": "CaCO₃ bileşiğinin adı hangisidir?",
+   "choices": [
+    "Kalsiyum oksit",
+    "Kalsiyum hidroksit",
+    "Kalsiyum karbür",
+    "Kalsiyum karbonat",
+    "Karbon trioksit"
+   ],
+   "answer": 3,
+   "explain": "Ca²⁺ kalsiyum, CO₃²⁻ karbonat iyonudur: kalsiyum karbonat (kireç taşı)."
+  },
+  {
+   "title": "Moleküller Arası Etkileşimler",
+   "text": "Moleküllerin arasında, molekülleri bir arada tutan zayıf etkileşimler vardır. Bu etkileşimler maddenin erime ve kaynama noktasını belirler.\n\nLondon (dağılma) kuvvetleri: Bütün moleküller arasında bulunur. Apolar moleküller arasındaki tek etkileşimdir. Molekül büyüdükçe güçlenir.\nDipol-dipol etkileşimleri: Polar moleküller arasında, bir molekülün δ+ ucu ile diğerinin δ− ucu arasında oluşur.\nHidrojen bağı: H atomunun F, O ya da N atomuna bağlı olduğu moleküller arasında oluşan güçlü bir dipol-dipol etkileşimidir (H₂O, NH₃, HF).\n\nSuyun küçük bir molekül olmasına rağmen kaynama noktasının yüksek (100 °C) olması, moleküller arasındaki hidrojen bağlarından kaynaklanır.\n\nEtkileşim güçlendikçe kaynama noktası yükselir, uçuculuk azalır.",
+   "q": "Suyun kaynama noktasının benzer büyüklükteki moleküllere göre çok yüksek olmasının nedeni nedir?",
+   "choices": [
+    "Su moleküllerinin apolar olması",
+    "Moleküller arasında hidrojen bağları bulunması",
+    "Suyun iyonik bir bileşik olması",
+    "Su moleküllerinin çok büyük olması",
+    "Suyun metalik bağ içermesi"
+   ],
+   "answer": 1,
+   "explain": "Su molekülleri arasındaki hidrojen bağları güçlü olduğu için bunları koparmak daha çok enerji ister; kaynama noktası yüksektir."
+  },
+  {
+   "title": "Katılar: Amorf ve Kristal",
+   "text": "Katılarda tanecikler birbirine çok yakındır ve yalnızca titreşim hareketi yapar; bu yüzden belirli bir şekilleri ve hacimleri vardır.\n\nKristal katılar: Tanecikler düzenli, tekrarlanan bir geometrik yapıda dizilmiştir. Belirli bir erime noktaları vardır.\nİyonik kristal: Tuz (NaCl).\nMoleküler kristal: Buz, şeker, iyot.\nKovalent ağ kristal: Elmas, kuvars. Çok serttir, erime noktası çok yüksektir.\nMetalik kristal: Demir, bakır.\n\nAmorf katılar: Tanecikler düzensiz dizilmiştir. Belirli bir erime noktaları yoktur; ısıtıldıkça yavaş yavaş yumuşarlar.\nÖrnekler: Cam, plastik, tereyağı, mum, kauçuk.\n\nElmas ve grafit aynı elementten (karbon) oluşur ama dizilişleri farklı olduğu için özellikleri çok farklıdır: elmas en sert doğal madde, grafit ise yumuşak ve elektriği iletir.",
+   "q": "Isıtıldığında belirli bir sıcaklıkta erimek yerine yavaş yavaş yumuşayan madde hangisidir?",
+   "choices": [
+    "Elmas",
+    "Demir",
+    "Buz",
+    "Sofra tuzu",
+    "Cam"
+   ],
+   "answer": 4,
+   "explain": "Cam amorf bir katıdır; tanecikleri düzensiz dizildiği için belirli bir erime noktası yoktur."
+  },
+  {
+   "title": "Sıvılar ve Özellikleri",
+   "text": "Sıvılarda tanecikler birbirine yakındır ama birbiri üzerinden kayabilir. Belirli bir hacimleri vardır, şekilleri kaba göre değişir.\n\nBuhar basıncı: Kapalı bir kapta sıvının buharının yaptığı basınçtır. Sıcaklık arttıkça artar. Moleküller arası etkileşimi zayıf sıvıların (uçucu sıvılar, örneğin aseton) buhar basıncı yüksektir.\n\nKaynama: Sıvının buhar basıncı dış basınca eşit olduğunda sıvı kaynar. Dış basınç düşükse (yüksek dağlar) kaynama noktası düşer.\n\nViskozite (akmaya karşı direnç): Bal ve gliserin viskoz, su ve alkol akıcıdır. Moleküller arası etkileşim arttıkça viskozite artar; sıcaklık arttıkça azalır (ısıtılan bal daha kolay akar).\n\nYüzey gerilimi: Sıvının yüzeyindeki moleküllerin içe doğru çekilmesiyle yüzeyin gergin bir zar gibi davranması. Su damlalarının küresel olması ve su örümceğinin su üzerinde yürüyebilmesi bu özellikten kaynaklanır.",
+   "q": "Balın soğukken zor, ısıtılınca daha kolay akmasını açıklayan kavram hangisidir?",
+   "choices": [
+    "Çözünürlük",
+    "Yüzey gerilimi",
+    "Viskozite",
+    "Buhar basıncı",
+    "Özkütle"
+   ],
+   "answer": 2,
+   "explain": "Viskozite akmaya karşı dirençtir ve sıcaklık arttıkça azalır."
+  }
+ ],
+ "Sürdürülebilirlik": [
+  {
+   "title": "Metal Nanoparçacıklar",
+   "text": "Nanometre, metrenin milyarda biridir (1 nm = 10⁻⁹ m). Boyutu 1-100 nm arasında olan parçacıklara nanoparçacık denir.\n\nMadde nano boyuta indiğinde yüzey alanı / hacim oranı çok büyür. Bu yüzden aynı maddenin nanoparçacıkları, büyük parçalarından çok farklı özellikler gösterebilir: renk, iletkenlik, tepkime hızı ve antibakteriyel etki değişir. Örneğin altın nanoparçacıklar sarı değil, boyutlarına göre kırmızı ya da mor görünebilir.\n\nKullanım alanları:\nGümüş nanoparçacıklar: Antibakteriyel kumaşlar, yara bantları, buzdolabı yüzeyleri.\nTitanyum dioksit nanoparçacıklar: Güneş kremleri, kendi kendini temizleyen camlar.\nAltın nanoparçacıklar: Tıbbi testler ve kanser araştırmaları.\nKatalizörler: Yüzey alanı büyük olduğu için tepkimeleri hızlandırır.\n\nNanoteknoloji, daha az madde kullanarak daha etkili ürünler üretmeyi sağlar.",
+   "q": "Nanoparçacıkların aynı maddenin büyük parçalarından farklı özellik göstermesinin temel nedeni nedir?",
+   "choices": [
+    "Yüzey alanı / hacim oranlarının çok büyük olması",
+    "Atom yapılarının değişmesi",
+    "Farklı elementlere dönüşmeleri",
+    "Sıcaklıklarının yüksek olması",
+    "Kütlelerinin artması"
+   ],
+   "answer": 0,
+   "explain": "Nano boyutta atomların büyük bölümü yüzeyde bulunur. Yüzey alanı / hacim oranının büyümesi maddenin özelliklerini değiştirir."
+  },
+  {
+   "title": "Atık Önleme ve Metallerin Çevresel Etkileri",
+   "text": "Yeşil kimyanın ilk ilkesi atık önlemedir: Atığı oluştuktan sonra temizlemek yerine hiç oluşturmamak daha iyidir.\n\nMetallerin, alaşımların ve nanoparçacıkların çevresel etkileri:\nMadencilik: Toprak ve su kirliliği, ormanların yok olması, yüksek enerji tüketimi.\nAğır metaller (kurşun, cıva, kadmiyum): Doğada parçalanmaz, besin zincirinde birikir ve sağlığa zarar verir. Atık piller bu yüzden ayrı toplanmalıdır.\nNanoparçacıklar: Çok küçük oldukları için canlı hücrelerine kolayca girebilir; atık sulara karışan gümüş nanoparçacıklar yararlı bakterilere zarar verebilir. Uzun vadeli etkileri hâlâ araştırılmaktadır.\n\nÇözümler:\nMetallerin geri dönüşümü: Alüminyum kutuların geri dönüşümü, cevherden üretime göre yaklaşık %95 daha az enerji harcar.\nElektronik atıkların ayrı toplanması.\nDaha az zehirli maddelerle üretim ve ürünlerin ömrünü uzatmak.",
+   "q": "Atık pillerin çöpe atılmayıp ayrı toplanmasının temel nedeni nedir?",
+   "choices": [
+    "Pillerin pahalı olması",
+    "Pillerin plastikten yapılması",
+    "Pillerin çok hafif olması",
+    "İçerdikleri ağır metallerin toprağı ve suyu kirletmesi",
+    "Pillerin yeniden şarj edilememesi"
+   ],
+   "answer": 3,
+   "explain": "Pillerdeki cıva, kurşun ve kadmiyum gibi ağır metaller doğada parçalanmaz, toprağa ve suya karışarak canlılara zarar verir."
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "Enerji": [
+  {
+   "title": "ATP: Hücrenin Enerji Parası",
+   "text": "Canlılar büyümek, hareket etmek, madde taşımak ve sentez yapmak için enerjiye ihtiyaç duyar. Hücreler bu enerjiyi doğrudan besinlerden değil, ATP (adenozin trifosfat) molekülünden kullanır.\n\nATP'nin yapısı: Adenin bazı + riboz şekeri + 3 fosfat grubu. Fosfatlar arasındaki bağlara yüksek enerjili bağ denir.\n\nATP → ADP + P + enerji\nSon fosfat koptuğunda açığa çıkan enerji hücre etkinliklerinde kullanılır. ADP'ye yeniden fosfat eklenerek ATP üretilir (fosforilasyon).\n\nATP hücrede depolanmaz, sürekli üretilip harcanır. Bütün canlılarda ortak enerji molekülüdür. Fotosentez, kemosentez ve hücresel solunum ATP üretim yollarıdır.",
+   "q": "ATP molekülü ile ilgili aşağıdakilerden hangisi yanlıştır?",
+   "choices": [
+    "Üç fosfat grubu içerir.",
+    "Hücrede büyük miktarlarda uzun süre depolanır.",
+    "Bütün canlılarda enerji aktarımında kullanılır.",
+    "Fosfat koptuğunda enerji açığa çıkar.",
+    "Yapısında riboz şekeri bulunur."
+   ],
+   "answer": 1,
+   "explain": "ATP kararsız bir moleküldür, depolanmaz; ihtiyaç anında sürekli üretilip harcanır. Enerji depolama görevini yağ ve nişasta gibi moleküller yapar."
+  },
+  {
+   "title": "Fotosentez: Işığın Kullanıldığı Tepkimeler",
+   "text": "Fotosentez, ışık enerjisini kullanarak inorganik maddelerden (CO₂ ve H₂O) organik besin (glikoz) üretme olayıdır:\n6CO₂ + 6H₂O + ışık → C₆H₁₂O₆ + 6O₂\n\nBitkilerde kloroplastta gerçekleşir ve iki evreden oluşur.\n\nIşığa bağımlı tepkimeler kloroplastın tilakoit zarlarında olur:\nKlorofil ışığı soğurur ve elektronları uyarılır.\nSu molekülleri parçalanır (fotoliz); açığa çıkan O₂ atmosfere verilir.\nBu evrede ATP ve NADPH üretilir; bunlar bir sonraki evrede kullanılacaktır.\n\nYani fotosentezde açığa çıkan oksijenin kaynağı CO₂ değil, sudur.",
+   "q": "Fotosentezde atmosfere verilen oksijen gazının kaynağı hangisidir?",
+   "choices": [
+    "Klorofil",
+    "ATP",
+    "Karbondioksit",
+    "Glikoz",
+    "Su"
+   ],
+   "answer": 4,
+   "explain": "Işığa bağımlı tepkimelerde su molekülleri parçalanır (fotoliz) ve O₂ açığa çıkar."
+  },
+  {
+   "title": "Fotosentez: Işığın Kullanılmadığı Tepkimeler",
+   "text": "Işıktan bağımsız tepkimeler (Calvin döngüsü) kloroplastın sıvı kısmında, yani stromada gerçekleşir.\n\nBu evrede:\nAtmosferden alınan CO₂ organik bir moleküle bağlanır (karbon tutma).\nIşığa bağımlı evrede üretilen ATP ve NADPH harcanarak glikoz sentezlenir.\nDöngüdeki başlangıç molekülü yeniden üretilir.\n\nAdı ışıktan bağımsız olsa da bu tepkimeler ışığa dolaylı olarak bağlıdır, çünkü ihtiyaç duyulan ATP ve NADPH ışıklı evrede üretilir. Işık kesilirse bir süre sonra Calvin döngüsü de durur.\n\nBu evrede enzimler görev yaptığı için sıcaklıktan etkilenir.",
+   "q": "Calvin döngüsünün (ışıktan bağımsız tepkimeler) gerçekleştiği yer ve kullandığı maddeler hangi seçenekte doğru verilmiştir?",
+   "choices": [
+    "Hücre zarı; CO₂ ve su",
+    "Tilakoit zar; su ve ışık",
+    "Stroma; CO₂, ATP ve NADPH",
+    "Mitokondri; glikoz ve O₂",
+    "Stroma; O₂ ve glikoz"
+   ],
+   "answer": 2,
+   "explain": "Calvin döngüsü stromada gerçekleşir; CO₂ tutularak ışıklı evrede üretilen ATP ve NADPH yardımıyla glikoz sentezlenir."
+  },
+  {
+   "title": "Fotosentez Hızına Etki Eden Çevresel Faktörler",
+   "text": "Fotosentez hızı şu çevresel faktörlerden etkilenir:\n\nIşık şiddeti: Arttıkça fotosentez hızı belirli bir noktaya kadar artar, sonra sabit kalır (diğer faktörler sınırlayıcı olur).\nIşığın dalga boyu: Klorofil en çok mor-mavi ve kırmızı ışığı soğurur; yeşil ışığı yansıtır. Bu yüzden yeşil ışıkta fotosentez hızı en düşüktür.\nCO₂ miktarı: Arttıkça hız belirli bir noktaya kadar artar. Seralarda CO₂ verilmesi bu yüzdendir.\nSıcaklık: Enzimler görev yaptığı için hız optimum sıcaklıkta en yüksektir; çok yüksek sıcaklıkta enzimler bozulur ve hız düşer.\nSu: Su eksikliğinde stomalar kapanır, CO₂ girişi azalır.\n\nMinimum yasası: Fotosentez hızını en az bulunan faktör belirler.",
+   "q": "Aynı koşullardaki özdeş bitkilere farklı renkte ışık veriliyor. Hangi renkteki ışıkta fotosentez hızı en düşük olur?",
+   "choices": [
+    "Yeşil",
+    "Beyaz",
+    "Mavi",
+    "Kırmızı",
+    "Mor"
+   ],
+   "answer": 0,
+   "explain": "Klorofil yeşil ışığı soğurmaz, yansıtır. Bu yüzden yeşil ışıkta fotosentez hızı en düşüktür."
+  },
+  {
+   "title": "Kemosentez",
+   "text": "Bazı bakteriler ışık kullanmadan besin üretir. Bu olaya kemosentez denir.\n\nKemosentetik bakteriler, amonyak (NH₃), hidrojen sülfür (H₂S), demir ya da nitrit gibi inorganik maddeleri oksitler. Bu oksitlenme sırasında açığa çıkan kimyasal enerjiyi kullanarak CO₂ ve sudan organik madde sentezler.\n\nFotosentezle farkı: Enerji kaynağı ışık değil, kimyasal tepkimelerdir. Benzerliği: İkisinde de CO₂ kullanılarak inorganik maddelerden organik besin üretilir; ikisini yapan canlılar da üreticidir (ototrof).\n\nÖnemi: Nitrifikasyon bakterileri (azot döngüsü) toprağa bitkilerin kullanabileceği nitratı kazandırır. Okyanus tabanındaki sıcak su kaynaklarında, ışığın hiç ulaşmadığı yerlerde ekosistemin üreticileri kemosentetik bakterilerdir.",
+   "q": "Fotosentez ve kemosentez için aşağıdakilerden hangisi ortaktır?",
+   "choices": [
+    "Amonyağın oksitlenmesi",
+    "Işık enerjisi kullanılması",
+    "Klorofil bulunması",
+    "CO₂ kullanılarak organik besin üretilmesi",
+    "Yalnızca bitkilerde görülmesi"
+   ],
+   "answer": 3,
+   "explain": "İki olayda da CO₂ kullanılarak inorganik maddelerden organik besin sentezlenir. Fark, kullanılan enerjinin kaynağıdır."
+  },
+  {
+   "title": "Hücresel Solunum: Oksijenli Solunum",
+   "text": "Hücreler besinlerdeki kimyasal enerjiyi ATP'ye dönüştürmek için solunum yapar.\n\nOksijenli solunum:\nC₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + enerji (ATP)\n\nÜç evrede gerçekleşir:\nGlikoliz: Sitoplazmada, glikoz iki pirüvata parçalanır; az miktarda ATP üretilir. Oksijen gerektirmez.\nKrebs döngüsü: Mitokondride, CO₂ açığa çıkar.\nElektron taşıma sistemi: Mitokondri iç zarında, oksijen son elektron alıcısıdır ve su oluşur. ATP'nin büyük kısmı burada üretilir.\n\nOksijenli solunum, oksijensiz yollara göre çok daha fazla ATP üretir; çünkü glikoz tamamen CO₂ ve suya kadar parçalanır.\n\nFotosentez ve oksijenli solunum birbirinin tersi gibidir: birinin ürünleri diğerinin başlangıç maddeleridir.",
+   "q": "Oksijenli solunumda oksijenin görevi nedir?",
+   "choices": [
+    "Glikozu ikiye bölmek",
+    "Elektron taşıma sisteminde son elektron alıcısı olmak",
+    "CO₂ üretmek",
+    "Klorofili uyarmak",
+    "Glikolizi başlatmak"
+   ],
+   "answer": 1,
+   "explain": "Oksijen elektron taşıma sisteminin sonunda elektronları ve hidrojenleri alarak suyu oluşturur."
+  },
+  {
+   "title": "Oksijensiz Solunum ve Fermantasyon",
+   "text": "Oksijen yokken bazı canlılar ve hücreler glikozu tam parçalamadan enerji elde eder. Bu olaya fermantasyon denir. Glikoliz evresi aynıdır; sonrasında pirüvat farklı ürünlere dönüşür.\n\nEtil alkol fermantasyonu: Maya mantarları ve bazı bakteriler yapar. Ürünleri etil alkol ve CO₂'dir. Hamurun kabarması (CO₂ kabarcıkları) bu olaydandır.\n\nLaktik asit fermantasyonu: Yoğurt bakterileri ve oksijen yetersiz kaldığında insan iskelet kası hücreleri yapar. Ürünü laktik asittir. Ağır egzersizde kaslarda yorgunluk hissinin bir nedeni budur.\n\nFermantasyonda glikoz başına yalnızca 2 ATP net kazanç sağlanır; ürünlerde hâlâ enerji vardır. Bu yüzden fermantasyon, oksijenli solunuma göre çok daha az verimlidir.",
+   "q": "Ekmek hamurunun mayalanınca kabarmasının nedeni aşağıdakilerden hangisidir?",
+   "choices": [
+    "Hamurdaki suyun buharlaşması",
+    "Fotosentez yapılması",
+    "Laktik asit oluşması",
+    "Maya hücrelerinin O₂ üretmesi",
+    "Etil alkol fermantasyonunda CO₂ açığa çıkması"
+   ],
+   "answer": 4,
+   "explain": "Maya mantarları etil alkol fermantasyonu yapar; açığa çıkan CO₂ kabarcıkları hamuru kabartır."
+  }
+ ],
+ "Ekoloji": [
+  {
+   "title": "Ekosistemin Bileşenleri",
+   "text": "Ekoloji, canlıların birbirleriyle ve çevreleriyle ilişkilerini inceleyen bilim dalıdır.\n\nEkosistemin cansız (abiyotik) bileşenleri: ışık, sıcaklık, su, toprak, mineraller, iklim.\nCanlı (biyotik) bileşenleri:\nÜreticiler: Kendi besinini üreten bitkiler, algler, bazı bakteriler.\nTüketiciler: Besinini dışarıdan hazır alan hayvanlar (otçul, etçil, hepçil).\nAyrıştırıcılar: Ölü organizmaları parçalayıp maddeleri toprağa geri kazandıran bakteri ve mantarlar.\n\nOrganizasyon düzeyleri:\nPopülasyon: Belirli bir alanda yaşayan aynı türden bireyler.\nKomünite: Aynı alandaki farklı popülasyonların tamamı.\nEkosistem: Komünite + cansız çevre.\nBiyosfer: Dünya'daki bütün ekosistemler.",
+   "q": "Bir göldeki bütün canlı türleri, suyun sıcaklığı, ışık ve mineraller birlikte ele alındığında hangi düzeyden söz edilir?",
+   "choices": [
+    "Popülasyon",
+    "Komünite",
+    "Ekosistem",
+    "Tür",
+    "Birey"
+   ],
+   "answer": 2,
+   "explain": "Canlı topluluk (komünite) cansız çevreyle birlikte düşünüldüğünde ekosistem olur."
+  },
+  {
+   "title": "Tür İçi ve Türler Arası Etkileşimler",
+   "text": "Tür içi etkileşimler: Aynı türün bireyleri besin, su, alan ve eş için rekabet eder. Bazı türlerde iş bölümü ve iş birliği görülür (arı ve karınca kolonileri).\n\nTürler arası etkileşimler:\nRekabet: Aynı kaynağı kullanan türler arasında görülür; iki tür de zarar görür.\nAv-avcı ilişkisi: Avcı yarar, av zarar görür; popülasyonları birbirini dengeler.\n\nSimbiyotik (ortak) yaşam:\nMutualizm (+/+): İki tür de yararlanır. Örnek: Liken (alg + mantar), baklagil kökündeki azot bakterileri.\nKommensalizm (+/0): Biri yararlanır, diğeri etkilenmez. Örnek: Köpek balığına tutunan vantuz balığı.\nParazitlik (+/−): Biri yararlanır, diğeri zarar görür. Örnek: Bit, tenya, küsküt bitkisi.",
+   "q": "Baklagil bitkilerinin köklerinde yaşayan azot bağlayıcı bakteriler bitkiye azot sağlarken bitkiden besin alır. Bu ilişki hangisidir?",
+   "choices": [
+    "Mutualizm",
+    "Rekabet",
+    "Av-avcı",
+    "Parazitlik",
+    "Kommensalizm"
+   ],
+   "answer": 0,
+   "explain": "İki taraf da yarar sağladığı (+/+) için bu ilişki mutualizmdir."
+  },
+  {
+   "title": "Süksesyon ve Popülasyon Dinamikleri",
+   "text": "Süksesyon (ekolojik ardışıklık): Bir alandaki komünitenin zamanla değişerek kararlı bir yapıya (klimaks komünite) ulaşmasıdır.\nBirincil süksesyon: Hiç canlı ve toprak olmayan yerde başlar (soğumuş lav, çıplak kaya). İlk gelen öncü canlılar likenlerdir; kayayı aşındırıp toprak oluştururlar.\nİkincil süksesyon: Yangın, sel gibi olaylardan sonra toprağın kaldığı yerde başlar; daha hızlıdır.\n\nPopülasyon dinamikleri: Popülasyon büyüklüğü doğum ve göçle (içe göç) artar, ölüm ve dışa göçle azalır.\nSınırsız kaynakta popülasyon J şeklinde (üstel) büyür.\nGerçekte kaynaklar sınırlı olduğu için büyüme yavaşlar ve S şeklinde bir eğri oluşur. Ortamın besleyebileceği en fazla birey sayısına taşıma kapasitesi denir.",
+   "q": "Volkanik patlama sonrası soğumuş lav üzerinde başlayan süksesyonda ilk yerleşen öncü canlılar genellikle hangileridir?",
+   "choices": [
+    "Yırtıcı kuşlar",
+    "Büyük ağaçlar",
+    "Otçul memeliler",
+    "Likenler",
+    "Çalılar"
+   ],
+   "answer": 3,
+   "explain": "Birincil süksesyonda toprak yoktur. Likenler kayayı aşındırarak ilk toprağı oluşturur ve diğer canlılara zemin hazırlar."
+  },
+  {
+   "title": "Ekosistemde Madde ve Enerji Akışı",
+   "text": "Besin zinciri, bir ekosistemde kimin kimi yediğini gösteren doğrusal sıralamadır: ot → çekirge → kurbağa → yılan → kartal. Birbirine bağlı pek çok besin zinciri besin ağını oluşturur.\n\nEnerji akışı tek yönlüdür: Güneş → üreticiler → tüketiciler. Her basamakta enerjinin büyük kısmı solunum ve ısı olarak kaybedilir; bir üst basamağa ortalama yalnızca %10'u aktarılır.\n\nEkolojik piramitler:\nEnerji piramidi her zaman düzdür (tabanda üreticiler).\nBiyokütle ve sayı piramitleri bazen ters olabilir (örneğin tek bir ağaçta yaşayan binlerce böcek).\n\nBiyolojik birikim: Parçalanamayan zehirli maddeler (DDT, cıva, kurşun) besin zinciri boyunca her basamakta birikerek derişimi artar. En çok zarar gören, zincirin en üstündeki canlılardır.",
+   "q": "Bir ekosistemde üreticilerin 10 000 kJ enerji depoladığı biliniyorsa %10 kuralına göre ikincil tüketicilere ulaşan enerji yaklaşık kaç kJ'dir?",
+   "choices": [
+    "10",
+    "100",
+    "1000",
+    "5000",
+    "10 000"
+   ],
+   "answer": 1,
+   "explain": "Birincil tüketicilere 10 000 · 0,1 = 1000 kJ, ikincil tüketicilere 1000 · 0,1 = 100 kJ aktarılır."
+  },
+  {
+   "title": "Madde Döngüleri",
+   "text": "Enerji ekosistemde akıp giderken madde sürekli döner ve yeniden kullanılır.\n\nSu döngüsü: Buharlaşma (denizler) ve terleme (bitkiler) → yoğunlaşma (bulut) → yağış → yüzey ve yer altı suları → tekrar buharlaşma.\n\nKarbon döngüsü: Üreticiler fotosentezle havadaki CO₂'yi organik maddeye dönüştürür. Solunum, ayrıştırıcıların çürütmesi ve fosil yakıtların yanması CO₂'yi atmosfere geri verir. İnsan etkisiyle artan CO₂ küresel ısınmaya yol açar.\n\nAzot döngüsü: Havadaki azotun (N₂) büyük kısmını canlılar doğrudan kullanamaz.\nAzot bağlama: Bakteriler N₂'yi amonyağa çevirir.\nNitrifikasyon: Kemosentetik bakteriler amonyağı nitrata dönüştürür; bitkiler nitratı alır.\nDenitrifikasyon: Bazı bakteriler nitratı yeniden N₂'ye çevirip havaya verir.\nAyrıştırıcılar ölü canlılardaki azotu amonyak olarak toprağa geri kazandırır.",
+   "q": "Azot döngüsünde topraktaki nitratı yeniden atmosfere N₂ olarak geri veren olay hangisidir?",
+   "choices": [
+    "Fotosentez",
+    "Terleme",
+    "Azot bağlama",
+    "Nitrifikasyon",
+    "Denitrifikasyon"
+   ],
+   "answer": 4,
+   "explain": "Denitrifikasyon bakterileri nitratı serbest azot gazına (N₂) dönüştürüp atmosfere verir."
+  },
+  {
+   "title": "Güncel Çevre Sorunları ve Sürdürülebilirlik",
+   "text": "İnsan etkinlikleri ekosistemlerin dengesini bozabilir:\n\nHava kirliliği: Fosil yakıtlar, sanayi ve trafik; solunum hastalıkları ve asit yağmuru.\nSu ve toprak kirliliği: Arıtılmamış atık sular, aşırı gübre ve tarım ilaçları. Göllere karışan fazla gübre alglerin aşırı çoğalmasına, sudaki oksijenin tükenmesine yol açar (ötrofikasyon).\nKüresel iklim değişikliği: Artan sera gazları; buzulların erimesi, kuraklık, türlerin yaşam alanı kaybı.\nBiyoçeşitlilik kaybı: Habitat tahribi, aşırı avlanma, istilacı türler.\n\nSürdürülebilirlik için: Kaynakları tasarruflu kullanmak, geri dönüşüm, yenilenebilir enerji, korunan alanlar oluşturmak ve karbon ayak izini azaltmak. Türkiye, yaklaşık 3000'i endemik olmak üzere zengin bir bitki çeşitliliğine sahiptir; bu zenginliği korumak hepimizin görevidir.",
+   "q": "Tarım alanlarından göle karışan aşırı gübrenin göldeki balık ölümlerine yol açmasının temel nedeni nedir?",
+   "choices": [
+    "Gölün kuruması",
+    "Suyun ısınması",
+    "Alglerin aşırı çoğalıp ölünce ayrıştırılmasıyla sudaki oksijenin azalması",
+    "Suyun tuzlanması",
+    "Balıkların gübreyi yemesi"
+   ],
+   "answer": 2,
+   "explain": "Gübreler algleri aşırı çoğaltır (ötrofikasyon). Ölen alglerin bakterilerce ayrıştırılması suyun oksijenini tüketir ve balıklar ölür."
+  }
+ ]
+}

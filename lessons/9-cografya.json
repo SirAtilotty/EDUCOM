@@ -1,0 +1,268 @@
+{
+ "Coğrafyanın Doğası": [
+  {
+   "title": "Coğrafyanın Konusu, Bölümleri ve Önemi",
+   "text": "Coğrafya, yeryüzündeki doğal ve beşerî olayların dağılışını, nedenlerini ve birbirleriyle etkileşimini inceleyen bilimdir.\n\nCoğrafyanın bölümleri:\nFiziki coğrafya: Doğal ortamı inceler. Klimatoloji (iklim), jeomorfoloji (yer şekilleri), hidrografya (sular), biyocoğrafya (bitki ve hayvanların dağılışı), toprak coğrafyası.\nBeşerî coğrafya: İnsanı ve etkinliklerini inceler. Nüfus, yerleşme, kültür ve siyasi coğrafya.\nEkonomik coğrafya: Tarım, sanayi, ticaret, ulaşım ve turizm.\nBölgesel coğrafya: Belirli bir bölgeyi bütün özellikleriyle inceler.\n\nNiçin coğrafya öğrenmeliyiz?\nYaşadığımız çevreyi tanımak, doğal kaynakları bilinçli kullanmak, afetlere hazırlıklı olmak, yerleşme ve tarım için doğru yer seçmek, dünyadaki olayları anlamlandırmak ve farklı kültürlere saygı duymak için.",
+   "q": "Akarsu, göl ve yer altı sularını inceleyen fiziki coğrafya dalı hangisidir?",
+   "choices": [
+    "Klimatoloji",
+    "Jeomorfoloji",
+    "Hidrografya",
+    "Biyocoğrafya",
+    "Kartografya"
+   ],
+   "answer": 2,
+   "explain": "Hidrografya, yeryüzündeki suları (akarsu, göl, deniz, yer altı suyu) inceler."
+  },
+  {
+   "title": "Coğrafya Biliminin Gelişimi",
+   "text": "İlk Çağ: Eratosthenes, Dünya'nın çevresini şaşırtıcı bir doğrulukla hesapladı ve coğrafya terimini ilk kullananlardan biri oldu. Strabon, gezdiği yerleri anlatan büyük bir eser yazdı. Batlamyus (Ptolemaios), enlem ve boylam kullanarak haritalar çizdi.\n\nOrta Çağ İslam ve Türk dünyası:\nKaşgarlı Mahmud, Divanü Lügati't-Türk'te Türk dünyasını gösteren bir dünya haritası çizdi.\nBiruni, enlem-boylam ve Dünya'nın büyüklüğü üzerine çalıştı.\nİdrisi, ayrıntılı dünya haritaları hazırladı.\n\nOsmanlı: Piri Reis'in dünya haritası ve Kitab-ı Bahriye'si; Kâtip Çelebi'nin Cihannüma'sı; Evliya Çelebi'nin Seyahatname'si.\n\nYeni ve Yakın Çağ: Coğrafi keşifler dünya haritalarını tamamladı. Alexander von Humboldt ve Carl Ritter modern coğrafyanın kurucuları kabul edilir. Günümüzde uydular, CBS ve uzaktan algılama coğrafyanın en önemli araçlarıdır.",
+   "q": "Türk dünyasını gösteren ilk dünya haritalarından birini çizen bilgin kimdir?",
+   "choices": [
+    "Kaşgarlı Mahmud",
+    "Evliya Çelebi",
+    "Biruni",
+    "Piri Reis",
+    "Kâtip Çelebi"
+   ],
+   "answer": 0,
+   "explain": "Kaşgarlı Mahmud, Divanü Lügati't-Türk adlı eserine Türklerin yaşadığı coğrafyayı gösteren bir dünya haritası eklemiştir."
+  }
+ ],
+ "Mekânsal Bilgi Teknolojileri": [
+  {
+   "title": "Mekânın Aynası: Haritalar",
+   "text": "Harita, yeryüzünün tamamının ya da bir parçasının kuş bakışı görünümünün belirli bir ölçekle küçültülerek düzleme aktarılmış hâlidir.\n\nHaritanın temel unsurları: Başlık, ölçek, lejant (açıklama), yön oku, koordinatlar.\n\nÖlçek: Haritadaki uzunluğun gerçek uzunluğa oranı. 1/100 000 ölçekli haritada 1 cm = 1 km.\nBüyük ölçekli haritalar (paydası küçük) dar alanı çok ayrıntılı gösterir: şehir planları.\nKüçük ölçekli haritalar (paydası büyük) geniş alanı az ayrıntılı gösterir: dünya haritası.\n\nYer şekillerinin gösterimi:\nİzohips (eş yükselti eğrileri): Aynı yükseltideki noktaları birleştiren eğriler. Eğriler sıklaşmışsa eğim fazla, seyrekse eğim azdır.\nRenklendirme: Yeşil alçak, sarı-kahverengi yüksek yerleri gösterir; mavi tonları deniz derinliğini.\n\nKüre yüzeyi düzleme aktarılırken bozulmalar olur; bu yüzden farklı amaçlar için farklı projeksiyonlar kullanılır.",
+   "q": "Bir izohipsli haritada eğrilerin birbirine çok yaklaştığı yerler için ne söylenebilir?",
+   "choices": [
+    "Akarsu yoktur.",
+    "Ölçek küçüktür.",
+    "Arazi düzdür.",
+    "Eğim fazladır.",
+    "Deniz seviyesinin altındadır."
+   ],
+   "answer": 3,
+   "explain": "İzohipslerin sıklaştığı yerlerde kısa mesafede çok yükselti değişir; yani eğim fazladır."
+  },
+  {
+   "title": "Türkiye'nin Coğrafi Konumu",
+   "text": "Matematik (mutlak) konum: Türkiye 36°-42° kuzey enlemleri ile 26°-45° doğu boylamları arasında yer alır.\n\nEnlemin sonuçları: Kuzey Yarım Küre'de ve orta kuşakta yer aldığı için dört mevsim belirgindir; ılıman iklim görülür. Güneyden kuzeye gidildikçe sıcaklık azalır. Güneşli gün sayısı fazladır.\n\nBoylamın sonuçları: Doğu-batı arasında 19 boylam farkı olduğu için en doğu ile en batı arasında 76 dakikalık yerel saat farkı vardır. Güneş önce doğuda (Iğdır) doğar. Türkiye'de ulusal saat olarak 45° doğu boylamına göre belirlenen saat (UTC+3) kullanılır.\n\nÖzel (göreceli) konum:\nAsya ile Avrupa'yı birbirine bağlar; üç tarafı denizlerle çevrilidir.\nİstanbul ve Çanakkale boğazları Karadeniz'i Akdeniz'e bağlar.\nEnerji kaynaklarına zengin bölgelere (Orta Doğu, Kafkasya) yakındır; enerji koridorudur.\nOrtalama yükseltisi fazladır ve doğudan batıya doğru alçalır.",
+   "q": "Türkiye'de Güneş'in doğudaki illerde batıdaki illerden daha önce doğmasının nedeni nedir?",
+   "choices": [
+    "Enlem farkı",
+    "Boylam farkı (yerel saat farkı)",
+    "Yükselti farkı",
+    "Denize uzaklık",
+    "Bitki örtüsü"
+   ],
+   "answer": 1,
+   "explain": "Dünya batıdan doğuya döndüğü için doğudaki boylamlar Güneş'i önce görür; bu durum boylam farkının sonucudur."
+  },
+  {
+   "title": "Mekânsal Bilgi Teknolojilerinin Bileşenleri",
+   "text": "Mekânsal bilgi teknolojileri, konumla ilgili verileri toplayan, işleyen ve sunan teknolojilerdir.\n\nCoğrafi Bilgi Sistemleri (CBS) beş bileşenden oluşur:\nDonanım: Bilgisayar, sunucu, GPS cihazı, tarayıcı.\nYazılım: Verileri işleyip haritalayan programlar.\nVeri: Konum verisi (nerede?) ve öznitelik verisi (ne, ne kadar?). En önemli ve en pahalı bileşendir.\nİnsan: Sistemi kullanan ve yöneten uzmanlar.\nYöntem: Verilerin nasıl toplanıp analiz edileceğine dair kurallar.\n\nVeri toplama yolları:\nUzaktan algılama: Uydu ve hava fotoğrafları.\nGPS (Küresel Konumlama Sistemi): Uydular yardımıyla enlem, boylam ve yükseltinin belirlenmesi.\nArazi çalışması, anketler, istatistikler.\n\nCBS'de veriler katmanlar hâlinde tutulur (yollar, binalar, akarsular) ve üst üste getirilerek analiz yapılır.",
+   "q": "CBS'nin bileşenlerinden hangisi en önemli ve elde edilmesi en pahalı olanıdır?",
+   "choices": [
+    "Yöntem",
+    "Monitör",
+    "Donanım",
+    "Yazılım",
+    "Veri"
+   ],
+   "answer": 4,
+   "explain": "Doğru ve güncel veri toplamak çok emek ve maliyet ister; veri CBS'nin en önemli bileşenidir."
+  }
+ ],
+ "Doğal Sistemler ve Süreçler": [
+  {
+   "title": "Hava Olayları ve Günlük Hayata Etkileri",
+   "text": "Hava durumu, kısa süreli (saatlik, günlük) atmosfer koşullarıdır. İklim ise geniş bir alanda uzun yıllar boyunca görülen hava koşullarının ortalamasıdır.\n\nHava durumunu meteoroloji, iklimi klimatoloji inceler.\n\nHava olayları: Yağmur, kar, dolu, sis, rüzgâr, fırtına, kırağı, çiy.\n\nGünlük hayata etkileri:\nUlaşım: Sis ve buzlanma kara, hava ve deniz ulaşımını aksatır.\nTarım: Don ve dolu ürünlere zarar verir; ani yağışlar hasadı etkiler.\nSağlık: Aşırı sıcaklar güneş çarpmasına, soğuklar donmaya yol açabilir.\nGiyim ve günlük planlar hava tahminine göre şekillenir.\nEnerji tüketimi: Soğuk günlerde ısınma, sıcak günlerde soğutma ihtiyacı artar.\n\nMeteoroloji Genel Müdürlüğü hava tahminleri ve meteorolojik uyarılar (sarı, turuncu, kırmızı kodlar) yayımlar.",
+   "q": "Aşağıdakilerden hangisi iklim ile ilgili bir ifadedir?",
+   "choices": [
+    "Yarın İstanbul'da kar bekleniyor.",
+    "Bu sabah Ankara'da sis vardı.",
+    "Akdeniz kıyılarında yazlar sıcak ve kurak, kışlar ılık ve yağışlı geçer.",
+    "Bugün rüzgâr kuvvetli esiyor.",
+    "Hafta sonu sağanak yağış görülecek."
+   ],
+   "answer": 2,
+   "explain": "Uzun yıllar boyunca geçerli olan ortalama koşulları anlatan ifade iklimdir; diğerleri kısa süreli hava durumudur."
+  },
+  {
+   "title": "İklim Sisteminin Bileşen ve Değişkenleri",
+   "text": "İklim sistemi atmosfer, hidrosfer (sular), litosfer (kara), kriyosfer (buzlar) ve biyosferin etkileşimiyle oluşur.\n\nİklimin değişkenleri (elemanları):\nSıcaklık: Güneş ışınlarının geliş açısına bağlıdır. Ekvator'dan kutuplara doğru ve yükseldikçe sıcaklık azalır (her 100 m'de yaklaşık 0,5 °C).\nBasınç: Sıcaklık ve yükseltiyle ilgilidir. Isınan hava yükselir (alçak basınç), soğuyan hava çöker (yüksek basınç).\nRüzgâr: Yüksek basınçtan alçak basınca doğru hava hareketidir.\nNem ve yağış: Havadaki su buharı soğuyup yoğunlaşınca yağış oluşur. Yükselici hava hareketleri yağış getirir.\n\nİklimi etkileyen faktörler: Enlem, yükselti, denize uzaklık, dağların uzanışı, okyanus akıntıları, bitki örtüsü.\n\nÖrneğin Karadeniz'de dağların denize paralel uzanması, nemli havanın yükselip her mevsim yağış bırakmasına yol açar.",
+   "q": "Rüzgârların oluşmasının temel nedeni nedir?",
+   "choices": [
+    "İki yer arasındaki basınç farkı",
+    "Bitki örtüsünün az olması",
+    "Okyanusların tuzlu olması",
+    "Ay'ın çekim kuvveti",
+    "Dünya'nın Güneş etrafında dolanması"
+   ],
+   "answer": 0,
+   "explain": "Rüzgâr, havanın yüksek basınç alanından alçak basınç alanına doğru hareketidir."
+  },
+  {
+   "title": "İklim Türleri",
+   "text": "Sıcak iklimler:\nEkvatoral iklim: Her mevsim sıcak ve yağışlı. Bitki örtüsü yağmur ormanları.\nSavan iklimi: Yazlar yağışlı, kışlar kurak. Bitki örtüsü savan (uzun otlar).\nÇöl iklimi: Çok az yağış, gece-gündüz sıcaklık farkı büyük.\n\nIlıman iklimler:\nAkdeniz iklimi: Yazlar sıcak ve kurak, kışlar ılık ve yağışlı. Bitki örtüsü maki. Türkiye'de Akdeniz, Ege ve Marmara'nın güneyinde görülür.\nKaradeniz (ılıman okyanusal) iklimi: Her mevsim yağışlı. Bitki örtüsü geniş yapraklı ormanlar.\nKarasal iklim: Yazlar sıcak ve kurak, kışlar soğuk ve kar yağışlı. Bitki örtüsü bozkır. Türkiye'nin iç kesimlerinde görülür.\n\nSoğuk iklimler: Tundra ve kutup iklimleri.\n\nTürkiye'de dağların uzanışı, yükselti ve denize uzaklık nedeniyle kısa mesafelerde farklı iklimler görülür.",
+   "q": "Yazları sıcak ve kurak, kışları ılık ve yağışlı geçen; doğal bitki örtüsü maki olan iklim hangisidir?",
+   "choices": [
+    "Tundra iklimi",
+    "Karasal iklim",
+    "Karadeniz iklimi",
+    "Akdeniz iklimi",
+    "Ekvatoral iklim"
+   ],
+   "answer": 3,
+   "explain": "Akdeniz ikliminde yaz kuraklığı belirgindir ve doğal bitki örtüsü kuraklığa dayanıklı makidir."
+  },
+  {
+   "title": "İklim Sisteminde Yaşanan Değişiklikler",
+   "text": "İklim, jeolojik zamanlar boyunca doğal nedenlerle (Güneş enerjisindeki değişimler, volkanik patlamalar, Dünya'nın yörüngesindeki değişimler) değişmiştir. Buzul çağları ve sıcak dönemler bunun örneğidir.\n\nGünümüzdeki küresel iklim değişikliğinin ana nedeni ise insan etkinlikleridir:\nFosil yakıtların (kömür, petrol, doğal gaz) yakılmasıyla atmosferdeki CO₂ artmıştır.\nOrmanların yok edilmesi CO₂'nin tutulmasını azaltmıştır.\nTarım ve hayvancılıktan metan salınımı.\n\nArtan sera gazları sera etkisini güçlendirir ve küresel ısınmaya yol açar.\n\nSonuçları: Buzulların erimesi ve deniz seviyesinin yükselmesi, aşırı sıcak dalgaları, kuraklık ve orman yangınlarının artması, şiddetli sel ve fırtınalar, türlerin yaşam alanlarını kaybetmesi, tarımsal üretimde düşüş.\n\nÇözüm: Yenilenebilir enerji, enerji verimliliği, ağaçlandırma ve uluslararası anlaşmalar (Paris İklim Anlaşması).",
+   "q": "Günümüzdeki küresel ısınmanın en önemli nedeni aşağıdakilerden hangisidir?",
+   "choices": [
+    "Dünya'nın Güneş'e yaklaşması",
+    "Fosil yakıt kullanımıyla atmosferdeki sera gazlarının artması",
+    "Okyanusların tuzluluğunun azalması",
+    "Ay'ın çekim etkisi",
+    "Dağların yükselmesi"
+   ],
+   "answer": 1,
+   "explain": "Fosil yakıtların yakılmasıyla artan CO₂ gibi sera gazları atmosferin daha fazla ısı tutmasına neden olur."
+  }
+ ],
+ "Beşerî Sistemler ve Süreçler": [
+  {
+   "title": "Nüfusun Tarihsel Değişimi ve Geleceği",
+   "text": "Dünya nüfusu tarih boyunca çok yavaş artmıştır. Tarım Devrimi ile yerleşik hayata geçilince besin üretimi arttı ve nüfus artışı hızlandı.\n\nSanayi Devrimi'nden sonra (18. yüzyıl sonu) tıp, beslenme ve hijyendeki gelişmeler ölüm oranlarını düşürdü. Bu yüzden nüfus çok hızlı arttı:\n1800'de yaklaşık 1 milyar,\n1960'larda 3 milyar,\n2022'de 8 milyar kişiye ulaştı.\n\nGünümüzde dünya nüfusu artmaya devam ediyor ama artış hızı yavaşlıyor. Gelişmiş ülkelerde doğum oranları düştüğü için nüfus yaşlanıyor, bazılarında azalıyor. Gelişmekte olan ülkelerde (özellikle Afrika'da) nüfus hâlâ hızlı artıyor.\n\nTürkiye'nin nüfusu Cumhuriyet'in ilanından sonra hızla arttı; günümüzde artış hızı azalmaktadır ve nüfus giderek yaşlanmaktadır.",
+   "q": "Dünya nüfusunun 19. ve 20. yüzyıllarda çok hızlı artmasının en önemli nedeni hangisidir?",
+   "choices": [
+    "Savaşların artması",
+    "Tarımın terk edilmesi",
+    "Göçlerin durması",
+    "Doğum oranlarının hızla düşmesi",
+    "Tıp ve sağlık koşullarındaki gelişmelerle ölüm oranlarının azalması"
+   ],
+   "answer": 4,
+   "explain": "Sanayi Devrimi sonrası sağlık, beslenme ve hijyendeki gelişmeler ölüm oranlarını düşürdü; doğumlar yüksek kalınca nüfus hızla arttı."
+  },
+  {
+   "title": "Nüfusun Dağılışı ve Hareketleri",
+   "text": "Dünya nüfusu düzensiz dağılmıştır. Nüfus yoğunluğu = nüfus / yüz ölçümü.\n\nNüfusun yoğun olduğu yerler: Ilıman iklimli, düz ve verimli ovalar, su kaynaklarının yakını, kıyılar, sanayi ve ticaret merkezleri (Güney ve Doğu Asya, Batı Avrupa, ABD'nin doğusu).\nNüfusun seyrek olduğu yerler: Çok soğuk (kutuplar), çok sıcak ve kurak (çöller), çok yüksek ve engebeli alanlar, Ekvator'daki sık ormanlar.\n\nTürkiye'de nüfus kıyılarda ve Marmara Bölgesi'nde yoğun; Doğu Anadolu ve İç Anadolu'nun bazı kesimlerinde seyrektir.\n\nGöç (nüfus hareketleri): İnsanların sürekli ya da uzun süreli yer değiştirmesidir.\nNedenleri: Ekonomik (iş), eğitim, sağlık, savaş ve güvenlik, doğal afetler, siyasi baskı.\nTürleri: İç göç (ülke içinde, köyden kente), dış göç (ülkeler arası), beyin göçü, mevsimlik göç (tarım işçileri).\nSonuçları: Göç alan şehirlerde konut, ulaşım ve altyapı sorunları; göç veren yerlerde nüfusun azalması ve yaşlanması.",
+   "q": "Türkiye'de nüfusun Marmara Bölgesi'nde yoğunlaşmasının en önemli nedeni hangisidir?",
+   "choices": [
+    "Akarsularının az olması",
+    "Yükseltisinin fazla olması",
+    "Sanayi, ticaret ve iş olanaklarının fazla olması",
+    "İkliminin çok soğuk olması",
+    "Ormanlarla kaplı olması"
+   ],
+   "answer": 2,
+   "explain": "Marmara Türkiye'nin sanayi ve ticaret merkezidir; iş olanakları nüfusu ve göçü buraya çeker."
+  },
+  {
+   "title": "Demografik Dönüşüm ve Nüfus Piramitleri",
+   "text": "Demografik dönüşüm, bir ülkenin gelişmesiyle birlikte doğum ve ölüm oranlarının değişmesini anlatan modeldir:\n1. Aşama: Doğum ve ölüm oranları yüksek, nüfus yavaş artar.\n2. Aşama: Ölüm oranları hızla düşer, doğumlar yüksek kalır; nüfus hızla artar.\n3. Aşama: Doğum oranları da düşmeye başlar; artış yavaşlar.\n4. Aşama: Doğum ve ölüm oranları düşüktür; nüfus durağanlaşır ve yaşlanır.\n\nNüfus piramitleri, nüfusun yaş ve cinsiyete göre dağılışını gösterir:\nTabanı geniş, tepesi dar (üçgen) piramit: Doğum oranı yüksek, genç nüfus fazla, ortalama yaşam süresi kısa. Gelişmekte olan ülkeler (Nijer).\nTabanı daralmış, orta kısmı geniş piramit: Doğumlar azalıyor, nüfus yaşlanıyor. Türkiye bu aşamadadır.\nTabanı dar, üst kısımları geniş piramit: Doğum oranı çok düşük, yaşlı nüfus fazla. Gelişmiş ülkeler (Japonya, Almanya).",
+   "q": "Nüfus piramidinin tabanı geniş, tepesi dar ise o ülke için hangisi söylenebilir?",
+   "choices": [
+    "Doğum oranı yüksek ve genç nüfus fazladır.",
+    "Nüfus azalmaktadır.",
+    "Ortalama yaşam süresi çok uzundur.",
+    "Gelişmişlik düzeyi en yüksek ülkelerdendir.",
+    "Yaşlı nüfus oranı çok yüksektir."
+   ],
+   "answer": 0,
+   "explain": "Geniş taban çok sayıda doğumu ve genç nüfusu gösterir; dar tepe ise yaşlıların azlığını gösterir."
+  },
+  {
+   "title": "Nüfusla İlgili Fırsat, Sorun ve Politikalar",
+   "text": "Nüfus bir ülke için hem fırsat hem sorun olabilir.\n\nFırsatlar: Genç ve eğitimli nüfus üretim, yenilik ve ekonomik büyüme için büyük bir güçtür. Çalışma çağındaki nüfusun fazla olduğu döneme demografik fırsat penceresi denir.\n\nSorunlar:\nHızlı nüfus artışı: İşsizlik, konut, eğitim ve sağlık hizmetlerinde yetersizlik, çevre kirliliği.\nNüfusun yaşlanması: İş gücünün azalması, emeklilik ve sağlık harcamalarının artması.\nDengesiz dağılış: Büyük şehirlerde aşırı kalabalık, kırsalda boşalma.\n\nNüfus politikaları:\nNüfus artışını azaltmaya yönelik (anti-natalist): Örneğin Çin'in uzun yıllar uyguladığı tek çocuk politikası.\nNüfus artışını teşvik eden (pro-natalist): Doğum yardımı, ebeveyn izinleri, çocuk bakım destekleri. Doğum oranı düşen birçok Avrupa ülkesi ve Türkiye bu politikaları uygular.\nNitelik odaklı: Eğitim ve sağlık yatırımlarıyla nüfusun niteliğini artırma.",
+   "q": "Doğum oranları çok düşen bir ülkenin aileye doğum yardımı ve uzun ebeveyn izni vermesi hangi tür nüfus politikasıdır?",
+   "choices": [
+    "Tek çocuk politikası",
+    "Kentleşmeyi durduran politika",
+    "Nüfus artışını azaltan politika",
+    "Nüfus artışını teşvik eden politika",
+    "Göçü yasaklayan politika"
+   ],
+   "answer": 3,
+   "explain": "Doğumları desteklemeye yönelik bu uygulamalar nüfus artışını teşvik eden (pro-natalist) politikalardır."
+  }
+ ],
+ "Ekonomik Faaliyetler ve Etkileri": [
+  {
+   "title": "Ekonomik Faaliyetleri Etkileyen Coğrafi Faktörler",
+   "text": "Ekonomik faaliyetlerin nerede ve nasıl yapıldığını doğal ve beşerî faktörler belirler.\n\nDoğal faktörler:\nİklim: Tarım ürünlerinin dağılışını belirler. Çay ve fındık yağışlı Karadeniz'de, muz ve turunçgiller ılık Akdeniz kıyılarında, buğday karasal iklimli İç Anadolu'da yetişir.\nYer şekilleri: Düz ovalar tarım ve sanayi için uygun; engebeli alanlarda hayvancılık öne çıkar.\nToprak ve su kaynakları.\nYer altı kaynakları: Madencilik ve enerji üretimi (Zonguldak taş kömürü, Batman petrol).\n\nBeşerî faktörler:\nSermaye ve teknoloji.\nİş gücü ve nüfus (aynı zamanda pazar).\nUlaşım olanakları: Limanlar, otoyollar, demir yolları.\nDevlet politikaları ve teşvikler.\n\nTeknoloji geliştikçe doğal faktörlerin etkisi azalır: Seracılık, sulama ve ısıtma ile iklimin sınırlamaları aşılabilir.",
+   "q": "Türkiye'de çay tarımının yalnızca Doğu Karadeniz kıyılarında yapılmasının temel nedeni hangisidir?",
+   "choices": [
+    "Nüfusun fazla olması",
+    "Her mevsim yağışlı ve ılıman iklimin görülmesi",
+    "Sanayinin gelişmiş olması",
+    "Arazinin düz olması",
+    "Limanların bulunması"
+   ],
+   "answer": 1,
+   "explain": "Çay bitkisi bol yağış ve ılıman sıcaklık ister; bu koşullar Türkiye'de en iyi Doğu Karadeniz'de görülür."
+  }
+ ],
+ "Afetler ve Sürdürülebilir Çevre": [
+  {
+   "title": "Tehlike, Risk ve Afet",
+   "text": "Bu üç kavram birbirinden farklıdır:\n\nTehlike: Can ve mal kaybına yol açma olasılığı olan doğal ya da insan kaynaklı olaydır. Örneğin fay hattı üzerinde bulunmak deprem tehlikesidir.\n\nRisk: Tehlikenin gerçekleşme olasılığı ile bu olayın yol açacağı kayıpların birlikte değerlendirilmesidir. Aynı deprem tehlikesi; sağlam binaların olduğu seyrek nüfuslu bir yerde düşük, çürük binaların bulunduğu kalabalık bir şehirde yüksek risk oluşturur.\nRisk = Tehlike × Zarar görebilirlik\n\nAfet: Tehlikenin gerçekleşip toplumun normal yaşamını durduran, can ve mal kaybına yol açan ve toplumun kendi imkânlarıyla baş edemeyeceği olaya dönüşmesidir.\n\nIssız bir bölgede olan büyük bir deprem afet değil, doğal bir olaydır. Afet zararlarını azaltmanın yolu, riski azaltmaktır: sağlam yapılar, doğru yer seçimi ve bilinçli toplum.",
+   "q": "Fay hattı üzerinde bulunan iki şehirden birinde binalar depreme dayanıklı, diğerinde dayanıksızdır. Bu durumda iki şehir arasında farklı olan nedir?",
+   "choices": [
+    "Fay hattının yeri",
+    "Depremin büyüklüğü",
+    "Yer kabuğunun yapısı",
+    "Deprem tehlikesi",
+    "Deprem riski"
+   ],
+   "answer": 4,
+   "explain": "İkisinde de deprem tehlikesi vardır. Ancak binaların dayanıklılığı farklı olduğu için olası kayıplar, yani risk farklıdır."
+  },
+  {
+   "title": "Afet Türleri",
+   "text": "Afetler kaynağına göre sınıflandırılır:\n\nDoğal kaynaklı afetler:\nJeolojik: Deprem, volkanizma, tsunami, heyelan.\nMeteorolojik (klimatik): Sel, taşkın, kuraklık, fırtına, hortum, çığ, dolu, aşırı sıcak ve soğuk.\nBiyolojik: Salgın hastalıklar, tarım zararlıları.\n\nİnsan kaynaklı afetler: Endüstriyel kazalar, maden kazaları, nükleer kazalar, büyük yangınlar, savaşlar ve terör.\n\nBazı afetlerde insan etkisi doğal süreçleri tetikler:\nOrmanların kesilmesi heyelan ve sel riskini artırır.\nDere yataklarına yapılan yapılar sel zararını büyütür.\nYanlış tarım uygulamaları kuraklığın etkilerini artırır.\n\nTürkiye'de en sık görülen afetler: Deprem, heyelan (özellikle Karadeniz), sel, çığ (Doğu Anadolu), orman yangınları (Akdeniz ve Ege) ve kuraklık.",
+   "q": "Aşağıdakilerden hangisi meteorolojik (klimatik) kaynaklı bir afettir?",
+   "choices": [
+    "Deprem",
+    "Tsunami",
+    "Çığ",
+    "Volkanizma",
+    "Maden kazası"
+   ],
+   "answer": 2,
+   "explain": "Çığ, yoğun kar yağışı ve hava koşullarına bağlı olarak oluşan meteorolojik kaynaklı bir afettir."
+  },
+  {
+   "title": "Bütüncül Afet Yönetimi",
+   "text": "Bütüncül afet yönetimi, afet öncesi, sırası ve sonrasında yapılacak bütün çalışmaların planlı ve koordineli yürütülmesidir. Dört aşamalı bir döngüdür:\n\nAfet öncesi:\n1. Zarar azaltma: Riskleri belirleme, sağlam yapılaşma, imar planları, dere yataklarını yapılaşmaya kapatma, erken uyarı sistemleri.\n2. Hazırlık: Afet planları, tatbikatlar, deprem çantası, eğitim, ekiplerin ve malzemelerin hazır tutulması.\n\nAfet sonrası:\n3. Müdahale: Arama-kurtarma, ilk yardım, barınma, yiyecek ve su sağlama.\n4. İyileştirme: Hasar tespiti, yeniden yapılanma, psikolojik destek, normal yaşama dönüş.\n\nEski anlayış afet sonrasındaki müdahaleye odaklanıyordu (kriz yönetimi). Bütüncül yaklaşım ise afet öncesindeki zarar azaltma ve hazırlığa önem verir (risk yönetimi); çünkü önlem almak, sonradan müdahale etmekten çok daha az maliyetlidir ve hayat kurtarır.\n\nTürkiye'de afet yönetimini AFAD koordine eder.",
+   "q": "Bütüncül afet yönetiminde okulda deprem tatbikatı yapılması hangi aşamaya örnektir?",
+   "choices": [
+    "Hazırlık",
+    "Yeniden yapılanma",
+    "Hasar tespiti",
+    "Müdahale",
+    "İyileştirme"
+   ],
+   "answer": 0,
+   "explain": "Tatbikatlar afet öncesinde yapılan hazırlık çalışmalarıdır."
+  }
+ ],
+ "Bölgeler, Ülkeler ve Küresel Bağlantılar": [
+  {
+   "title": "Bölge ve Bölge Sınırı",
+   "text": "Bölge, belirli özellikler bakımından benzerlik gösteren ve çevresinden bu özelliklerle ayrılan alandır.\n\nBölge türleri:\nDoğal bölgeler: İklim bölgeleri, bitki örtüsü bölgeleri, yer şekli bölgeleri (Akdeniz iklim bölgesi, bozkır bölgesi).\nBeşerî bölgeler: Dil, din, kültür, nüfus özelliklerine göre (Türk dünyası, Arap dünyası).\nEkonomik bölgeler: Tarım, sanayi, turizm bölgeleri (Çukurova tarım bölgesi, Ruhr sanayi bölgesi).\nİdari ve siyasi bölgeler: İller, ülkeler, Avrupa Birliği gibi birlikler.\nFonksiyonel bölgeler: Bir merkezin etki alanı (bir şehrin metro ağı, bir limanın hizmet alanı).\n\nBölge sınırı: Doğal bölgelerde sınırlar genellikle kesin değildir; bir bölgeden diğerine geçiş kuşağıyla yavaş yavaş geçilir. İdari bölgelerde ise sınırlar kesin ve haritada çizgiyle belirlenmiştir.\n\nTürkiye 1941'deki I. Coğrafya Kongresi'nde iklim, yer şekilleri, bitki örtüsü ve ekonomik faaliyetler dikkate alınarak yedi coğrafi bölgeye ayrılmıştır.",
+   "q": "Türkiye'nin yedi coğrafi bölgeye ayrıldığı kongre hangi yılda toplanmıştır?",
+   "choices": [
+    "1960",
+    "1923",
+    "1932",
+    "1941",
+    "1950"
+   ],
+   "answer": 3,
+   "explain": "I. Coğrafya Kongresi 1941'de Ankara'da toplanmış ve Türkiye yedi coğrafi bölgeye ayrılmıştır."
+  }
+ ]
+}

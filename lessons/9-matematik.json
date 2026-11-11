@@ -1,0 +1,282 @@
+{
+ "Sayılar": [
+  {
+   "title": "Üslü ve Köklü Gösterimler",
+   "text": "Üslü ifade, bir sayının kendisiyle tekrar tekrar çarpımının kısa yazılışıdır: 2⁵ = 2 · 2 · 2 · 2 · 2 = 32.\n\nTemel kurallar:\naᵐ · aⁿ = aᵐ⁺ⁿ\naᵐ / aⁿ = aᵐ⁻ⁿ\n(aᵐ)ⁿ = aᵐ·ⁿ\na⁰ = 1 (a ≠ 0)\na⁻ⁿ = 1 / aⁿ\n\nKöklü ifade, üslü ifadenin tersidir: √9 = 3 çünkü 3² = 9. Kök, kesirli üs olarak da yazılabilir: √a = a^(1/2), ∛a = a^(1/3).\n\nKök dışına çıkarma: √50 = √(25 · 2) = 5√2.\nToplama yalnızca kök içleri aynıysa yapılır: 3√2 + 5√2 = 8√2.\nPaydayı kökten kurtarmak için pay ve payda aynı kökle çarpılır: 1/√2 = √2/2.",
+   "q": "2³ · 2⁴ / 2⁵ işleminin sonucu kaçtır?",
+   "choices": [
+    "2",
+    "4",
+    "8",
+    "16",
+    "32"
+   ],
+   "answer": 1,
+   "explain": "Üsler toplanır ve çıkarılır: 2^(3 + 4 − 5) = 2² = 4."
+  },
+  {
+   "title": "Gerçek Sayı Aralıkları",
+   "text": "Gerçek sayılar sayı doğrusunun tamamını doldurur. Bir sayı aralığı, iki sayı arasındaki bütün gerçek sayıları gösterir.\n\nKapalı aralık [a, b]: a ve b dahil, a ≤ x ≤ b.\nAçık aralık (a, b): a ve b hariç, a < x < b.\nYarı açık aralıklar: [a, b) ve (a, b].\nSınırsız aralıklar: [a, ∞) yani x ≥ a; (−∞, b) yani x < b. Sonsuzluk tarafı her zaman açık paranteze yazılır.\n\nAralıklarla küme işlemleri yapılır:\nKesişim (∩): iki aralıkta da olan sayılar.\nBirleşim (∪): en az birinde olan sayılar.\n\nÖrnek: [1, 5) ∩ (3, 8] = (3, 5). Sayı doğrusuna iki aralığı çizip ortak bölgeye bakmak en kolay yoldur.",
+   "q": "[−2, 4) ∩ [1, 7] aralığı hangisidir?",
+   "choices": [
+    "(1, 4]",
+    "[1, 4]",
+    "[−2, 1]",
+    "[−2, 7]",
+    "[1, 4)"
+   ],
+   "answer": 4,
+   "explain": "Ortak kısım 1'den (dahil) 4'e (hariç) kadardır: [1, 4)."
+  },
+  {
+   "title": "Sayı Kümeleri ve İşlem Özellikleri",
+   "text": "Sayı kümeleri iç içedir:\nDoğal sayılar ℕ = {0, 1, 2, ...}\nTam sayılar ℤ = {..., −2, −1, 0, 1, 2, ...}\nRasyonel sayılar ℚ: a/b biçiminde yazılabilen sayılar (b ≠ 0). Devirli ondalıklar da rasyoneldir: 0,333... = 1/3.\nİrrasyonel sayılar: Kesir olarak yazılamayan sayılar: √2, π, e.\nGerçek sayılar ℝ = rasyoneller ∪ irrasyoneller.\nℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ\n\nİşlem özellikleri:\nKapalılık: Bir kümedeki iki sayının işlem sonucu yine o kümedeyse küme bu işleme göre kapalıdır. ℕ çıkarmaya göre kapalı değildir (2 − 5 = −3).\nDeğişme: a + b = b + a\nBirleşme: (a + b) + c = a + (b + c)\nDağılma: a(b + c) = ab + ac\nEtkisiz eleman: toplamada 0, çarpmada 1.\nTers eleman: a'nın toplamaya göre tersi −a, çarpmaya göre tersi 1/a.",
+   "q": "Aşağıdaki sayılardan hangisi irrasyoneldir?",
+   "choices": [
+    "0,25",
+    "√16",
+    "√7",
+    "−3/4",
+    "0,777..."
+   ],
+   "answer": 2,
+   "explain": "√7 hiçbir kesir olarak yazılamaz. √16 = 4, 0,777... = 7/9 rasyoneldir."
+  },
+  {
+   "title": "İşlem Özelliklerini Cebirsel İfade Etme",
+   "text": "Sayılarla yaptığımız işlemleri harflerle genelleyerek cebirsel ifadeler yazarız. Böylece bir kuralın her sayı için geçerli olduğunu gösterebiliriz.\n\nÖzdeşlikler:\n(a + b)² = a² + 2ab + b²\n(a − b)² = a² − 2ab + b²\na² − b² = (a − b)(a + b)\n\nBu özdeşlikler hesaplamayı kolaylaştırır:\n101² = (100 + 1)² = 10 000 + 200 + 1 = 10 201\n49 · 51 = (50 − 1)(50 + 1) = 2500 − 1 = 2499\n\nÇarpanlara ayırma: Ortak çarpan parantezine almak dağılma özelliğinin tersidir: 6x + 9 = 3(2x + 3).\n\nCebirsel ifadelerde benzer terimler toplanır: 3x + 5x = 8x, ama 3x + 5y daha fazla sadeleşmez.",
+   "q": "98 · 102 işleminin sonucu kaçtır?",
+   "choices": [
+    "9996",
+    "9994",
+    "10 004",
+    "9984",
+    "10 000"
+   ],
+   "answer": 0,
+   "explain": "(100 − 2)(100 + 2) = 100² − 2² = 10 000 − 4 = 9996."
+  }
+ ],
+ "Nicelikler ve Değişimler": [
+  {
+   "title": "Doğrusal Fonksiyonlar",
+   "text": "f(x) = ax + b biçimindeki fonksiyonlara doğrusal fonksiyon denir; grafiği bir doğrudur.\n\na: Eğim (değişim oranı). x 1 arttığında f(x)'in ne kadar değiştiğini gösterir.\na > 0 ise fonksiyon artandır, a < 0 ise azalandır, a = 0 ise sabittir.\nb: Grafiğin y eksenini kestiği nokta (0, b).\n\nGünlük hayattan örnek: Bir taksi açılışta 50 TL, her km için 20 TL alıyorsa ücret f(x) = 20x + 50'dir. 20 eğim, 50 başlangıç değeridir.\n\nGrafiğin x eksenini kestiği nokta f(x) = 0 yapılarak bulunur: 20x + 50 = 0 → x = −2,5.\n\nTablodan doğrusallığı anlamak: x eşit adımlarla artarken f(x) de eşit miktarlarda değişiyorsa fonksiyon doğrusaldır.",
+   "q": "Bir su deposunda 400 L su var ve her dakika 25 L boşalıyor. Depodaki su miktarını gösteren fonksiyon hangisidir? (x: dakika)",
+   "choices": [
+    "f(x) = 425x",
+    "f(x) = 25x + 400",
+    "f(x) = 400x − 25",
+    "f(x) = 400 − 25x",
+    "f(x) = 25x − 400"
+   ],
+   "answer": 3,
+   "explain": "Başlangıç 400 L, her dakika 25 L azalıyor: f(x) = 400 − 25x. Eğim negatif, fonksiyon azalan."
+  },
+  {
+   "title": "Mutlak Değer Fonksiyonu",
+   "text": "Bir sayının mutlak değeri, sayı doğrusunda sıfıra olan uzaklığıdır; uzaklık negatif olamaz.\n|x| = x (x ≥ 0 ise), |x| = −x (x < 0 ise)\n|5| = 5, |−5| = 5, |0| = 0\n\nf(x) = |x| fonksiyonunun grafiği V şeklindedir; tepe noktası orijindedir.\nf(x) = |x − a| + b grafiği, |x| grafiğinin a birim sağa ve b birim yukarı ötelenmesidir; tepe noktası (a, b) olur.\n\nMutlak değerli denklem: |x − 3| = 5 → x − 3 = 5 ya da x − 3 = −5 → x = 8 ya da x = −2.\nMutlak değerli eşitsizlik: |x| < 4 → −4 < x < 4. |x| > 4 → x < −4 ya da x > 4.\n\nMutlak değer, iki sayı arasındaki uzaklığı da verir: |a − b|.",
+   "q": "|2x − 1| = 7 denkleminin çözüm kümesindeki sayıların toplamı kaçtır?",
+   "choices": [
+    "−3",
+    "1",
+    "4",
+    "7",
+    "8"
+   ],
+   "answer": 1,
+   "explain": "2x − 1 = 7 → x = 4; 2x − 1 = −7 → x = −3. Toplam 4 + (−3) = 1."
+  },
+  {
+   "title": "Doğrusal Denklem ve Eşitsizlik Problemleri",
+   "text": "Gerçek hayat problemlerini çözmek için önce durumu bir denklem ya da eşitsizlikle modelleriz.\n\nAdımlar:\n1. Bilinmeyeni belirle (x).\n2. Verilenleri x cinsinden yaz.\n3. Denklemi ya da eşitsizliği kur ve çöz.\n4. Sonucu problemle kontrol et.\n\nEşitsizlik çözerken dikkat: İki taraf negatif bir sayıyla çarpılır ya da bölünürse eşitsizlik yön değiştirir.\n−2x < 6 → x > −3\n\nÖrnek: Bir spor salonu aylık 300 TL üyelik ve her giriş için 20 TL istiyor. Başka bir salon girişte 50 TL alıyor, üyelik yok. Kaç girişten sonra ilk salon daha ucuz olur?\n300 + 20x < 50x → 300 < 30x → x > 10. Yani 11 ve daha fazla girişte ilk salon daha ucuzdur.",
+   "q": "Bir kafede çayın tanesi 15 TL'dir. 200 TL'si olan bir öğrenci, 50 TL'lik bir tostla birlikte en fazla kaç çay alabilir?",
+   "choices": [
+    "11",
+    "13",
+    "8",
+    "9",
+    "10"
+   ],
+   "answer": 4,
+   "explain": "50 + 15x ≤ 200 → 15x ≤ 150 → x ≤ 10. En fazla 10 çay."
+  }
+ ],
+ "Geometrik Şekiller": [
+  {
+   "title": "Üçgende Açı Özellikleri",
+   "text": "Üçgenin iç açıları toplamı 180°'dir.\n\nDış açı: Bir köşedeki dış açı, kendisine komşu olmayan iki iç açının toplamına eşittir. Dış açılar toplamı 360°'dir.\n\nÜçgen türleri (açılara göre):\nDar açılı: Bütün açılar 90°'den küçük.\nDik açılı: Bir açı 90°.\nGeniş açılı: Bir açı 90°'den büyük.\n\nÜçgen türleri (kenarlara göre):\nEşkenar: Üç kenar eşit, her açı 60°.\nİkizkenar: İki kenar eşit, bu kenarların karşısındaki taban açıları da eşit.\nÇeşitkenar: Bütün kenarlar farklı.\n\nÖrnek: İkizkenar üçgende tepe açısı 40° ise taban açıları (180 − 40) / 2 = 70°'dir.",
+   "q": "Bir üçgenin iki iç açısı 50° ve 65°'dir. Üçüncü köşedeki dış açı kaç derecedir?",
+   "choices": [
+    "65",
+    "100",
+    "115",
+    "130",
+    "145"
+   ],
+   "answer": 2,
+   "explain": "Dış açı, komşu olmayan iki iç açının toplamıdır: 50 + 65 = 115°."
+  },
+  {
+   "title": "Üçgende Kenar Özellikleri ve Açı-Kenar İlişkisi",
+   "text": "Üçgen eşitsizliği: Bir üçgende herhangi bir kenar, diğer iki kenarın toplamından küçük, farkının mutlak değerinden büyüktür.\n|b − c| < a < b + c\nÖrneğin kenarları 3 ve 7 olan üçgenin üçüncü kenarı 4 ile 10 arasında olmalıdır (4 ve 10 hariç).\n\nAçı-kenar ilişkisi: Bir üçgende büyük açının karşısında büyük kenar, küçük açının karşısında küçük kenar bulunur.\nm(A) > m(B) ise a > b.\n\nDik üçgende en büyük açı 90° olduğu için en uzun kenar hipotenüstür.\n\nBu bilgiler, verilen ölçülerle bir üçgen çizilip çizilemeyeceğini anlamamızı sağlar: 2, 3 ve 6 birimlik çubuklarla üçgen oluşturulamaz, çünkü 2 + 3 < 6.",
+   "q": "Kenar uzunlukları 5 cm ve 9 cm olan bir üçgenin üçüncü kenarı tam sayı ise kaç farklı değer alabilir?",
+   "choices": [
+    "9",
+    "10",
+    "13",
+    "7",
+    "8"
+   ],
+   "answer": 0,
+   "explain": "9 − 5 < x < 9 + 5 → 4 < x < 14. Tam sayılar 5, 6, ..., 13: toplam 9 değer."
+  }
+ ],
+ "Eşlik ve Benzerlik": [
+  {
+   "title": "Geometrik Dönüşümler",
+   "text": "Geometrik dönüşüm, bir şeklin düzlemde yerini, yönünü ya da boyutunu değiştirmektir.\n\nÖteleme: Şekil belirli bir yönde kaydırılır. Biçim, boyut ve yön değişmez.\nA(x, y) noktası a birim sağa, b birim yukarı ötelenirse A'(x + a, y + b) olur.\n\nYansıma (simetri):\nx eksenine göre: (x, y) → (x, −y)\ny eksenine göre: (x, y) → (−x, y)\nOrijine göre: (x, y) → (−x, −y)\n\nDönme: Şekil bir nokta etrafında belirli bir açıyla döndürülür. Orijin etrafında 90° (saat yönünün tersine) dönme: (x, y) → (−y, x).\n\nÖteleme, yansıma ve dönme şeklin boyutunu değiştirmez; bu yüzden şekil kendisine eş kalır. Genişletme (büyütme ya da küçültme) ise şekli benzer ama farklı boyutta yapar.",
+   "q": "A(3, −5) noktasının y eksenine göre yansıması hangisidir?",
+   "choices": [
+    "(5, −3)",
+    "(−5, 3)",
+    "(3, 5)",
+    "(−3, −5)",
+    "(−3, 5)"
+   ],
+   "answer": 3,
+   "explain": "y eksenine göre yansımada x'in işareti değişir, y aynı kalır: (−3, −5)."
+  },
+  {
+   "title": "Eşlik ve Benzerlik Koşulları",
+   "text": "Eş üçgenler: Karşılıklı bütün kenarları ve açıları eşit üçgenlerdir (≅). Eşlik için şu koşullardan biri yeterlidir:\nKKK: Üç kenar eşit.\nKAK: İki kenar ve aralarındaki açı eşit.\nAKA: İki açı ve aralarındaki kenar eşit.\n\nBenzer üçgenler: Karşılıklı açıları eşit, karşılıklı kenarları orantılı üçgenlerdir (∼). Kenarlar oranına benzerlik oranı (k) denir.\nAA: İki açı eşit (üçüncüsü de otomatik eşit olur).\nKKK: Üç kenar orantılı.\nKAK: İki kenar orantılı ve aralarındaki açı eşit.\n\nBenzerlik oranı k ise çevreler oranı k, alanlar oranı k²'dir.\nÖrneğin kenarları 2 kat büyütülen bir üçgenin alanı 4 kat büyür.",
+   "q": "İki benzer üçgenin benzerlik oranı 1/3'tür. Küçük üçgenin alanı 5 cm² ise büyük üçgenin alanı kaç cm²'dir?",
+   "choices": [
+    "30",
+    "45",
+    "75",
+    "15",
+    "25"
+   ],
+   "answer": 1,
+   "explain": "Alanlar oranı benzerlik oranının karesidir: (1/3)² = 1/9. Büyük alan 5 · 9 = 45 cm²."
+  },
+  {
+   "title": "Tales, Öklid ve Pisagor Teoremleri",
+   "text": "Pisagor teoremi: Dik üçgende dik kenarların kareleri toplamı hipotenüsün karesine eşittir: a² + b² = c².\nBilinen Pisagor üçlüleri: 3-4-5, 5-12-13, 8-15-17 ve katları (6-8-10).\n\nÖklid bağıntıları: Dik üçgende hipotenüse çizilen yükseklik h, hipotenüsü p ve k parçalarına ayırsın.\nh² = p · k\nDik kenarlar için: b² = p · c, a² = k · c\n\nTales teoremi: Paralel doğrular, kendilerini kesen iki doğru üzerinde orantılı parçalar ayırır. Bir üçgende bir kenara paralel çizilen doğru, diğer iki kenarı orantılı böler ve büyük üçgene benzer küçük bir üçgen oluşturur.\n\nTales, gölgesinden yararlanarak piramidin yüksekliğini benzerlikle hesaplamıştır.",
+   "q": "Bir dik üçgende dik kenarlar 9 cm ve 12 cm'dir. Hipotenüs kaç cm'dir?",
+   "choices": [
+    "16",
+    "21",
+    "13",
+    "14",
+    "15"
+   ],
+   "answer": 4,
+   "explain": "9² + 12² = 81 + 144 = 225 → hipotenüs 15 cm (3-4-5 üçlüsünün 3 katı)."
+  },
+  {
+   "title": "Benzer Üçgenler Oluşturma ve Problemler",
+   "text": "Benzerlik, doğrudan ölçemediğimiz uzunlukları hesaplamamızı sağlar.\n\nGölge problemi: Aynı anda güneş ışınları paralel geldiği için cisimler ve gölgeleri benzer dik üçgenler oluşturur.\nboy₁ / gölge₁ = boy₂ / gölge₂\n\nÖrnek: 1,5 m boyundaki bir öğrencinin gölgesi 2 m iken bir ağacın gölgesi 12 m ise ağacın boyu: 1,5 / 2 = h / 12 → h = 9 m.\n\nHarita ve maket ölçekleri de benzerliğe dayanır: Ölçekli çizimde bütün uzunluklar aynı oranda küçültülür, açılar korunur.\n\nBenzer üçgen oluşturmak için bir üçgenin bir kenarına paralel doğru çizmek ya da kenarları aynı oranla büyütmek yeterlidir.",
+   "q": "Boyu 2 m olan bir direğin gölgesi 3 m iken aynı anda bir binanın gölgesi 18 m'dir. Binanın yüksekliği kaç metredir?",
+   "choices": [
+    "9",
+    "10",
+    "12",
+    "15",
+    "27"
+   ],
+   "answer": 2,
+   "explain": "2 / 3 = h / 18 → h = 12 m."
+  }
+ ],
+ "Algoritma ve Bilişim": [
+  {
+   "title": "Algoritma Temelli Problemler",
+   "text": "Algoritma, bir problemi çözmek için izlenen, açık, sıralı ve sonlu adımlardır. Bir yemek tarifi de bir algoritmadır.\n\nİyi bir algoritmanın özellikleri: Her adım açık ve anlaşılırdır, belirli bir başlangıcı ve sonu vardır, aynı girdi her zaman aynı sonucu verir.\n\nAlgoritmalar şöyle gösterilir:\nSözel olarak adım adım yazarak.\nAkış şemasıyla: Oval başla / bitir, dikdörtgen işlem, eşkenar dörtgen karar (evet / hayır), paralelkenar girdi / çıktı.\n\nÖrnek algoritma (bir sayının çift mi tek mi olduğu):\n1. Başla. 2. Sayıyı al (n). 3. n'nin 2'ye bölümünden kalan 0 mı? 4. Evetse Çift yaz, hayırsa Tek yaz. 5. Bitir.\n\nAlgoritmayı küçük girdilerle adım adım izleyerek doğruluğunu kontrol etmeliyiz.",
+   "q": "Akış şemalarında karar (koşul kontrolü) adımı hangi şekille gösterilir?",
+   "choices": [
+    "Eşkenar dörtgen",
+    "Paralelkenar",
+    "Daire",
+    "Oval",
+    "Dikdörtgen"
+   ],
+   "answer": 0,
+   "explain": "Evet / hayır sonucuna göre dallanan karar adımları eşkenar dörtgenle gösterilir."
+  },
+  {
+   "title": "Mantık Bağlaçları ve Niceleyiciler",
+   "text": "Önerme, doğru ya da yanlış olduğu kesin olarak söylenebilen ifadedir. Doğru önermeye 1, yanlışa 0 değeri verilir.\n\nBağlaçlar:\nVe (∧): İki önerme de doğruysa doğrudur.\nVeya (∨): En az biri doğruysa doğrudur.\nDeğil (′): Önermenin doğruluk değerini tersine çevirir.\nİse (⇒): Yalnızca 1 ⇒ 0 durumunda yanlıştır.\nAncak ve ancak (⇔): İki önermenin değeri aynıysa doğrudur.\n\nNiceleyiciler:\nHer (∀): Bütün elemanlar için. Her x ∈ ℝ için x² ≥ 0 doğrudur.\nBazı (∃): En az bir eleman için. Bazı x ∈ ℕ için x + 2 = 5 doğrudur (x = 3).\n\nOlumsuzu: Her ... değil yerine bazı ... değildir denir. Her öğrenci gözlüklüdür önermesinin olumsuzu: Gözlüklü olmayan en az bir öğrenci vardır.",
+   "q": "p doğru ve q yanlış bir önerme ise aşağıdakilerden hangisi doğrudur?",
+   "choices": [
+    "p ∧ q",
+    "p ⇒ q",
+    "p ⇔ q",
+    "p ∨ q",
+    "p′"
+   ],
+   "answer": 3,
+   "explain": "Veya bağlacında en az birinin doğru olması yeterlidir: 1 ∨ 0 = 1."
+  }
+ ],
+ "İstatistiksel Araştırma Süreci": [
+  {
+   "title": "Tek Nicel Değişkenli Veri Dağılımları",
+   "text": "Nicel değişken sayıyla ölçülen değişkendir: boy, not, süre. Bu verileri özetlemek için merkezî eğilim ve yayılım ölçüleri kullanılır.\n\nMerkezî eğilim ölçüleri:\nAritmetik ortalama: Verilerin toplamı / veri sayısı.\nMedyan (ortanca): Veriler sıralandığında ortadaki değer. Veri sayısı çiftse ortadaki iki değerin ortalaması.\nMod (tepe değer): En çok tekrar eden değer.\n\nYayılım ölçüleri:\nAçıklık: En büyük değer − en küçük değer.\nÇeyrekler açıklığı ve standart sapma: Verilerin ortalama etrafında ne kadar dağıldığını gösterir.\n\nUç değerler (aşırı büyük ya da küçük) ortalamayı çok etkiler ama medyanı az etkiler. Bu yüzden gelir gibi verilerde medyan daha iyi bir özettir.\n\nGrafikler: Histogram, nokta grafiği, kutu grafiği.",
+   "q": "4, 7, 7, 9, 13 veri grubunun ortalaması ile medyanının toplamı kaçtır?",
+   "choices": [
+    "14",
+    "15",
+    "16",
+    "17",
+    "18"
+   ],
+   "answer": 1,
+   "explain": "Ortalama (4 + 7 + 7 + 9 + 13) / 5 = 40 / 5 = 8. Medyan, sıralı verilerde ortadaki değer olan 7'dir. Toplam 8 + 7 = 15."
+  },
+  {
+   "title": "Başkalarının Veri Dağılımlarını İnceleme",
+   "text": "Haberlerde ve raporlarda verilen istatistikleri incelerken şunlara dikkat etmeliyiz:\n\nHangi ölçü kullanılmış? Bir şirket ortalama maaşımız yüksek diyebilir; ama birkaç yöneticinin çok yüksek maaşı ortalamayı şişirmiş olabilir. Medyan daha gerçekçi bilgi verir.\n\nVeri nereden geliyor? Örneklem küçük ya da yanlı olabilir.\n\nGrafik doğru çizilmiş mi? Eksenler 0'dan başlamıyorsa farklar abartılı görünür; histogramda aralık genişlikleri eşit olmalıdır.\n\nYayılım verilmiş mi? İki sınıfın ortalaması aynı olsa da birinde notlar çok dağınık, diğerinde birbirine yakın olabilir.\n\nSonuç: Bir veri dağılımını tek bir sayıyla değerlendirmek yanıltıcı olabilir; merkez, yayılım ve şekil birlikte incelenmelidir.",
+   "q": "Bir şirkette 9 çalışanın maaşı 20 000 TL, müdürün maaşı 200 000 TL'dir. Bu şirkette tipik bir çalışanın maaşını en iyi hangi ölçü gösterir?",
+   "choices": [
+    "Açıklık",
+    "En büyük değer",
+    "Toplam",
+    "Aritmetik ortalama",
+    "Medyan"
+   ],
+   "answer": 4,
+   "explain": "Müdürün maaşı uç değerdir ve ortalamayı 38 000 TL'ye çıkarır. Medyan 20 000 TL'dir ve tipik çalışanı doğru gösterir."
+  }
+ ],
+ "Veriden Olasılığa": [
+  {
+   "title": "Deneysel Olasılık",
+   "text": "Deneysel olasılık, bir deney çok kez tekrarlandığında bir olayın gerçekleşme sıklığından hesaplanır:\nDeneysel olasılık = olayın gerçekleşme sayısı / toplam deneme sayısı\n\nÖrnek: Bir raptiye 50 kez atılıyor ve 30 kez sivri ucu yukarı geliyor. Sivri ucun yukarı gelme deneysel olasılığı 30 / 50 = 0,6'dır.\n\nDeneme sayısı arttıkça deneysel olasılık teorik olasılığa yaklaşır. Buna büyük sayılar yasası denir. 10 kez atılan bir parada 7 tura gelebilir; ama 10 000 kez atılırsa tura oranı 0,5'e çok yakın olur.\n\nDeneysel olasılık, teorik olarak hesaplanamayan durumlarda (hava tahmini, bir oyuncunun penaltı başarısı, ürünlerin kusurlu çıkma oranı) kullanılır.",
+   "q": "Bir basketbolcu son 40 serbest atışının 34'ünü sokmuştur. Bir sonraki serbest atışı sokma deneysel olasılığı kaçtır?",
+   "choices": [
+    "0,6",
+    "0,75",
+    "0,85",
+    "0,9",
+    "0,34"
+   ],
+   "answer": 2,
+   "explain": "34 / 40 = 0,85."
+  },
+  {
+   "title": "Teorik Olasılık",
+   "text": "Bütün sonuçların eşit olasılıklı olduğu durumlarda teorik olasılık hesaplanır:\nP(A) = istenen durum sayısı / tüm durumların sayısı\n\nÖrnek uzay (E): Bir deneyin bütün olası sonuçlarının kümesi. Zar için E = {1, 2, 3, 4, 5, 6}.\n\nTemel özellikler:\n0 ≤ P(A) ≤ 1\nİmkânsız olayın olasılığı 0, kesin olayın olasılığı 1'dir.\nBir olayın olmama olasılığı: P(A′) = 1 − P(A)\n\nÖrnek: Bir torbada 3 kırmızı, 5 mavi, 2 yeşil top var. Rastgele çekilen topun mavi olma olasılığı 5/10 = 1/2, mavi olmama olasılığı 1 − 1/2 = 1/2'dir.\n\nİki zar atıldığında örnek uzayda 6 · 6 = 36 sonuç vardır; toplamın 7 olma olasılığı 6/36 = 1/6'dır.",
+   "q": "Bir zar atıldığında asal sayı gelme olasılığı kaçtır?",
+   "choices": [
+    "1/2",
+    "2/3",
+    "5/6",
+    "1/6",
+    "1/3"
+   ],
+   "answer": 0,
+   "explain": "Zardaki asal sayılar 2, 3 ve 5'tir. 3 / 6 = 1/2."
+  }
+ ]
+}

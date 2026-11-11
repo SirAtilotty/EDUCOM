@@ -1,0 +1,296 @@
+{
+ "Üstel ve Logaritmik Fonksiyonlar": [
+  {
+   "title": "Üstel Fonksiyon",
+   "text": "a > 0, a ≠ 1 olmak üzere f(x) = aˣ fonksiyonuna üstel fonksiyon denir.\n\nÖzellikleri:\nTanım kümesi ℝ, görüntü kümesi (0, ∞).\nGrafik her zaman (0, 1) noktasından geçer.\na > 1 ise artan, 0 < a < 1 ise azalandır.\nBire bir ve örtendir (görüntü kümesi (0, ∞) alındığında), bu yüzden tersi vardır.\n\nÜs kuralları:\naˣ · aʸ = aˣ⁺ʸ, aˣ / aʸ = aˣ⁻ʸ, (aˣ)ʸ = aˣʸ, a⁻ˣ = 1 / aˣ\n\nUygulamalar: Nüfus artışı, bileşik faiz A = P(1 + r)ⁿ, radyoaktif bozunma (yarılanma ömrü), bakteri çoğalması.\n\nÖrnek: Yarılanma ömrü 5 yıl olan 80 g radyoaktif madde 15 yıl sonra 80 · (1/2)³ = 10 g kalır.",
+   "q": "Yarılanma ömrü 8 gün olan 64 gram radyoaktif bir maddenin 32 gün sonra kaç gramı kalır?",
+   "choices": [
+    "8",
+    "16",
+    "32",
+    "2",
+    "4"
+   ],
+   "answer": 4,
+   "explain": "32 / 8 = 4 yarılanma olur: 64 · (1/2)⁴ = 64 / 16 = 4 g."
+  },
+  {
+   "title": "Logaritma Fonksiyonu ve Kuralları",
+   "text": "Üstel fonksiyonun tersi logaritma fonksiyonudur: aˣ = b ⟺ x = logₐ b (a > 0, a ≠ 1, b > 0).\n\nTemel değerler: logₐ 1 = 0, logₐ a = 1, logₐ aⁿ = n, a^(logₐ b) = b.\n\nKurallar:\nlogₐ(xy) = logₐ x + logₐ y\nlogₐ(x/y) = logₐ x − logₐ y\nlogₐ(xⁿ) = n · logₐ x\nlog_(aᵐ) xⁿ = (n/m) · logₐ x\nTaban değiştirme: logₐ b = log_c b / log_c a\nlogₐ b · log_b a = 1\n\nOnluk logaritma: log x (taban 10). Doğal logaritma: ln x (taban e ≈ 2,718).\n\nBir sayının basamak sayısı: x ≥ 1 için log x'in tam kısmı + 1. Örneğin 2¹⁰⁰ için log 2¹⁰⁰ = 100 · 0,301 = 30,1 → 31 basamaklıdır.",
+   "q": "log₂ 12 − log₂ 3 işleminin sonucu kaçtır?",
+   "choices": [
+    "9",
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 2,
+   "explain": "log₂ 12 − log₂ 3 = log₂(12/3) = log₂ 4 = 2."
+  },
+  {
+   "title": "Üstel ve Logaritmik Denklem ve Eşitsizlikler",
+   "text": "Üstel denklemler:\nTabanlar eşitlenebiliyorsa üsler eşitlenir: 9ˣ = 27 → 3²ˣ = 3³ → x = 3/2.\nEşitlenemiyorsa logaritma alınır: 5ˣ = 12 → x = log₅ 12.\nDeğişken değiştirme: 4ˣ − 3 · 2ˣ − 4 = 0 denkleminde 2ˣ = t dersek t² − 3t − 4 = 0 → t = 4 (t = −1 olamaz) → x = 2.\n\nLogaritmik denklemler:\nlogₐ f(x) = logₐ g(x) → f(x) = g(x), ama f(x) > 0 ve g(x) > 0 olmalı.\nKökler mutlaka tanım koşuluyla kontrol edilmelidir.\n\nEşitsizlikler:\na > 1 için aˣ > aʸ ⟺ x > y ve logₐ x > logₐ y ⟺ x > y > 0.\n0 < a < 1 için eşitsizlik yön değiştirir.\n\nÖrnek: log₃(x − 1) < 2 → 0 < x − 1 < 9 → 1 < x < 10.",
+   "q": "log₂(x + 3) = 4 denkleminin çözümü kaçtır?",
+   "choices": [
+    "13",
+    "19",
+    "5",
+    "8",
+    "11"
+   ],
+   "answer": 0,
+   "explain": "x + 3 = 2⁴ = 16 → x = 13. Kontrol: x + 3 = 16 > 0."
+  }
+ ],
+ "Diziler": [
+  {
+   "title": "Gerçek Sayı Dizileri",
+   "text": "Tanım kümesi pozitif tam sayılar (ℤ⁺) olan fonksiyonlara dizi denir. Dizinin n'inci terimi aₙ ile gösterilir; dizi (aₙ) biçiminde yazılır.\n\nÖrnek: aₙ = 2n + 1 dizisinin terimleri 3, 5, 7, 9, ...\n\nGenel terim: Dizinin bütün terimlerini veren kural.\nİndirgemeli (rekürsif) tanım: Her terim öncekiler cinsinden verilir. Fibonacci dizisi: a₁ = a₂ = 1, aₙ = aₙ₋₁ + aₙ₋₂ → 1, 1, 2, 3, 5, 8, 13, ...\n\nSonlu ve sonsuz diziler, sabit dizi (bütün terimler eşit).\n\nArtan dizi: aₙ₊₁ > aₙ (her terim öncekinden büyük).\nAzalan dizi: aₙ₊₁ < aₙ.\nMonotonluğu anlamak için aₙ₊₁ − aₙ farkının işaretine bakılır.\n\nİki dizinin eşitliği: Bütün karşılık gelen terimleri eşitse diziler eşittir.",
+   "q": "aₙ = n² − 2n dizisinin 5. terimi kaçtır?",
+   "choices": [
+    "25",
+    "5",
+    "10",
+    "15",
+    "20"
+   ],
+   "answer": 3,
+   "explain": "a₅ = 5² − 2 · 5 = 25 − 10 = 15."
+  },
+  {
+   "title": "Aritmetik Dizi",
+   "text": "Ardışık iki terimi arasındaki fark sabit olan dizilere aritmetik dizi denir. Bu sabit farka ortak fark (d) denir.\n\nGenel terim: aₙ = a₁ + (n − 1) · d\nİki terim arasında: aₙ = aₖ + (n − k) · d\n\nÖzellik: Bir terim, kendisine eşit uzaklıktaki iki terimin aritmetik ortalamasıdır: aₙ = (aₙ₋ₖ + aₙ₊ₖ) / 2.\n\nİlk n terim toplamı:\nSₙ = n · (a₁ + aₙ) / 2\nSₙ = n · [2a₁ + (n − 1)d] / 2\n\nÖrnek: 1'den 100'e kadar doğal sayıların toplamı: S = 100 · (1 + 100) / 2 = 5050. (Gauss'un çocukken bulduğu söylenen yöntem.)\n\nGünlük örnek: Her ay maaşına 500 TL zam alan bir kişinin aylık maaşları aritmetik dizi oluşturur.",
+   "q": "İlk terimi 4, ortak farkı 3 olan aritmetik dizinin 10. terimi kaçtır?",
+   "choices": [
+    "30",
+    "31",
+    "34",
+    "37",
+    "27"
+   ],
+   "answer": 1,
+   "explain": "a₁₀ = a₁ + 9d = 4 + 9 · 3 = 31."
+  },
+  {
+   "title": "Geometrik Dizi",
+   "text": "Ardışık iki teriminin oranı sabit olan dizilere geometrik dizi denir. Bu sabit orana ortak çarpan (r) denir.\n\nGenel terim: aₙ = a₁ · rⁿ⁻¹\nİki terim arasında: aₙ = aₖ · rⁿ⁻ᵏ\n\nÖzellik: Bir terimin karesi, kendisine eşit uzaklıktaki iki terimin çarpımına eşittir: aₙ² = aₙ₋ₖ · aₙ₊ₖ.\n\nİlk n terim toplamı (r ≠ 1):\nSₙ = a₁ · (rⁿ − 1) / (r − 1)\n\nSonsuz geometrik seri: |r| < 1 ise terimler sıfıra yaklaşır ve toplam sonludur:\nS = a₁ / (1 − r)\nÖrnek: 1 + 1/2 + 1/4 + ... = 1 / (1 − 1/2) = 2.\n\nUygulamalar: Bileşik faiz, bakteri çoğalması (her saat 2 katı), yarılanma, top sekmesi problemleri (her seferinde önceki yüksekliğin belli bir kesrine çıkan top).",
+   "q": "İlk terimi 3, ortak çarpanı 2 olan geometrik dizinin ilk 5 teriminin toplamı kaçtır?",
+   "choices": [
+    "96",
+    "189",
+    "48",
+    "62",
+    "93"
+   ],
+   "answer": 4,
+   "explain": "S₅ = 3 · (2⁵ − 1) / (2 − 1) = 3 · 31 = 93. (Terimler: 3, 6, 12, 24, 48)"
+  }
+ ],
+ "Trigonometri": [
+  {
+   "title": "Toplam ve Fark Formülleri",
+   "text": "İki açının toplamının ya da farkının trigonometrik değerleri şu formüllerle bulunur:\n\nsin(a + b) = sin a · cos b + cos a · sin b\nsin(a − b) = sin a · cos b − cos a · sin b\ncos(a + b) = cos a · cos b − sin a · sin b\ncos(a − b) = cos a · cos b + sin a · sin b\ntan(a + b) = (tan a + tan b) / (1 − tan a · tan b)\ntan(a − b) = (tan a − tan b) / (1 + tan a · tan b)\n\nKullanım: Özel olmayan açıları özel açılar cinsinden yazarak hesaplama.\nÖrnek: sin 75° = sin(45° + 30°) = (√2/2)(√3/2) + (√2/2)(1/2) = (√6 + √2) / 4.\n\nKosinüs formüllerinde işaretin değiştiğine dikkat et: cos(a + b)'de eksi, cos(a − b)'de artı vardır.",
+   "q": "cos 15° değeri aşağıdakilerden hangisidir?",
+   "choices": [
+    "(√3 − 1) / 2",
+    "(√6 − √2) / 4",
+    "(√6 + √2) / 4",
+    "√3 / 2",
+    "1/2"
+   ],
+   "answer": 2,
+   "explain": "cos 15° = cos(45° − 30°) = cos 45° cos 30° + sin 45° sin 30° = (√6/4) + (√2/4) = (√6 + √2) / 4."
+  },
+  {
+   "title": "İki Kat Açı Formülleri",
+   "text": "Toplam formüllerinde a = b alınırsa iki kat açı formülleri elde edilir:\n\nsin 2a = 2 sin a · cos a\ncos 2a = cos² a − sin² a = 2cos² a − 1 = 1 − 2sin² a\ntan 2a = 2 tan a / (1 − tan² a)\n\nYarım açı (kuvvet azaltma) formülleri:\nsin² a = (1 − cos 2a) / 2\ncos² a = (1 + cos 2a) / 2\n\nÖrnek: sin a = 3/5 ve a dar açı ise cos a = 4/5.\nsin 2a = 2 · (3/5) · (4/5) = 24/25\ncos 2a = 1 − 2 · (9/25) = 7/25\n\nBu formüller trigonometrik ifadeleri sadeleştirmede ve denklem çözmede kullanılır: sin 2x = sin x denkleminde 2 sin x cos x − sin x = 0 → sin x (2cos x − 1) = 0.",
+   "q": "sin x = 1/3 olduğuna göre cos 2x kaçtır?",
+   "choices": [
+    "7/9",
+    "8/9",
+    "1/9",
+    "2/9",
+    "1/3"
+   ],
+   "answer": 0,
+   "explain": "cos 2x = 1 − 2sin² x = 1 − 2 · (1/9) = 1 − 2/9 = 7/9."
+  },
+  {
+   "title": "Trigonometrik Denklemler",
+   "text": "Trigonometrik denklemleri çözmek için önce denklem temel biçime (sin x = a, cos x = a, tan x = a) getirilir.\n\nGenel çözümler (k ∈ ℤ):\nsin x = sin α → x = α + 2kπ veya x = π − α + 2kπ\ncos x = cos α → x = α + 2kπ veya x = −α + 2kπ\ntan x = tan α → x = α + kπ\n\nİkinci dereceden trigonometrik denklemler: Değişken değiştirilir.\nÖrnek: 2sin² x − sin x − 1 = 0. sin x = t: 2t² − t − 1 = 0 → t = 1 ya da t = −1/2.\nsin x = 1 → x = π/2 + 2kπ\nsin x = −1/2 → x = 7π/6 + 2kπ veya x = 11π/6 + 2kπ\n\n|a| > 1 ise sin x = a ve cos x = a denklemlerinin çözümü yoktur.\n\nBelirli bir aralıktaki çözümleri bulmak için k'ye tam sayı değerleri verilir.",
+   "q": "[0, 2π) aralığında 2cos x + 1 = 0 denkleminin kaç çözümü vardır?",
+   "choices": [
+    "4",
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "answer": 3,
+   "explain": "cos x = −1/2 → x = 2π/3 ve x = 4π/3. Aralıkta 2 çözüm vardır."
+  }
+ ],
+ "Dönüşümler": [
+  {
+   "title": "Analitik Düzlemde Öteleme ve Yansıma",
+   "text": "Öteleme: Bir şeklin biçim ve boyutu değişmeden belirli bir yönde kaydırılmasıdır.\nA(x, y) noktası a birim sağa (x yönünde) ve b birim yukarı ötelenirse A'(x + a, y + b) olur.\n\nFonksiyon grafiklerinde öteleme:\ny = f(x − a): grafik a birim sağa.\ny = f(x + a): a birim sola.\ny = f(x) + b: b birim yukarı.\ny = f(x) − b: b birim aşağı.\n\nYansıma (simetri):\nx eksenine göre: (x, y) → (x, −y); y = f(x) grafiği y = −f(x) olur.\ny eksenine göre: (x, y) → (−x, y); y = f(−x).\nOrijine göre: (x, y) → (−x, −y).\ny = x doğrusuna göre: (x, y) → (y, x). Bir fonksiyon ile tersinin grafikleri bu doğruya göre simetriktir.\ny = −x doğrusuna göre: (x, y) → (−y, −x).",
+   "q": "y = x² fonksiyonunun grafiği 3 birim sağa ve 2 birim aşağı ötelenirse yeni fonksiyon hangisi olur?",
+   "choices": [
+    "y = (x + 3)² − 2",
+    "y = (x − 3)² − 2",
+    "y = (x − 3)² + 2",
+    "y = x² + 3x − 2",
+    "y = (x − 2)² − 3"
+   ],
+   "answer": 1,
+   "explain": "Sağa öteleme x yerine (x − 3), aşağı öteleme sonuçtan 2 çıkarma demektir: y = (x − 3)² − 2."
+  },
+  {
+   "title": "Analitik Düzlemde Dönme",
+   "text": "Dönme: Bir noktanın ya da şeklin sabit bir merkez etrafında belirli bir açıyla döndürülmesidir. Pozitif yön saat yönünün tersidir.\n\nOrijin etrafında dönme:\n90°: (x, y) → (−y, x)\n180°: (x, y) → (−x, −y) (orijine göre yansıma ile aynıdır)\n270° (ya da −90°): (x, y) → (y, −x)\nGenel α açısıyla: (x, y) → (x cos α − y sin α, x sin α + y cos α)\n\nOrijin dışındaki bir M(a, b) noktası etrafında döndürmek için:\n1. Noktayı M orijine gelecek şekilde ötele.\n2. Orijin etrafında döndür.\n3. Geri ötele.\n\nÖteleme, yansıma ve dönme izometrik dönüşümlerdir; uzunlukları ve açıları korur, şekil kendisine eş kalır.\n\nArt arda uygulanan dönüşümlere dönüşümlerin bileşkesi denir.",
+   "q": "A(3, 1) noktası orijin etrafında pozitif yönde 90° döndürülürse hangi noktaya gelir?",
+   "choices": [
+    "(−3, −1)",
+    "(1, −3)",
+    "(3, −1)",
+    "(1, 3)",
+    "(−1, 3)"
+   ],
+   "answer": 4,
+   "explain": "90° dönmede (x, y) → (−y, x): (3, 1) → (−1, 3)."
+  }
+ ],
+ "Türev": [
+  {
+   "title": "Limit ve Süreklilik",
+   "text": "Limit: x bir a değerine yaklaşırken f(x)'in yaklaştığı değerdir: lim (x→a) f(x) = L.\n\nSoldan ve sağdan limitler eşitse limit vardır. Limit, fonksiyonun a noktasındaki değerinden bağımsızdır; f(a) tanımsız olsa bile limit var olabilir.\n\nLimit hesaplama: Önce x yerine a yazılır. 0/0 belirsizliği çıkarsa çarpanlara ayırma ya da eşlenikle çarpma yapılır.\nÖrnek: lim (x→2) (x² − 4) / (x − 2) = lim (x→2) (x + 2) = 4.\n\nSüreklilik: f fonksiyonu x = a'da süreklidir, eğer:\n1. f(a) tanımlıysa,\n2. lim (x→a) f(x) varsa,\n3. lim (x→a) f(x) = f(a) ise.\n\nPolinomlar her yerde süreklidir. Rasyonel fonksiyonlar paydayı sıfır yapan noktalar dışında süreklidir.\n\nSonsuzdaki limit: lim (x→∞) 1/x = 0.",
+   "q": "lim (x→3) (x² − 9) / (x − 3) değeri kaçtır?",
+   "choices": [
+    "0",
+    "3",
+    "6",
+    "9",
+    "Tanımsız"
+   ],
+   "answer": 2,
+   "explain": "0/0 belirsizliği var. (x − 3)(x + 3) / (x − 3) = x + 3 → x = 3 için 6."
+  },
+  {
+   "title": "Türev Kavramı ve Kuralları",
+   "text": "Türev, bir fonksiyonun anlık değişim hızıdır. Geometrik olarak, fonksiyon grafiğine o noktada çizilen teğetin eğimidir.\n\nTanım: f'(a) = lim (h→0) [f(a + h) − f(a)] / h\n\nTemel türev kuralları:\nSabitin türevi: (c)' = 0\n(xⁿ)' = n · xⁿ⁻¹\n(c · f)' = c · f'\n(f ± g)' = f' ± g'\nÇarpım: (f · g)' = f' · g + f · g'\nBölüm: (f / g)' = (f' · g − f · g') / g²\nZincir kuralı: [f(g(x))]' = f'(g(x)) · g'(x)\n\nÖzel fonksiyonlar:\n(sin x)' = cos x, (cos x)' = −sin x\n(eˣ)' = eˣ, (ln x)' = 1/x\n\nÖrnek: f(x) = 3x⁴ − 5x² + 7 → f'(x) = 12x³ − 10x.\n\nFizikte konumun türevi hız, hızın türevi ivmedir.",
+   "q": "f(x) = 2x³ − 4x + 1 fonksiyonu için f'(2) kaçtır?",
+   "choices": [
+    "20",
+    "24",
+    "28",
+    "12",
+    "16"
+   ],
+   "answer": 0,
+   "explain": "f'(x) = 6x² − 4. f'(2) = 6 · 4 − 4 = 20."
+  },
+  {
+   "title": "Türevin Uygulamaları: Artan-Azalan ve Ekstremum",
+   "text": "Artan ve azalan fonksiyonlar:\nBir aralıkta f'(x) > 0 ise f artandır.\nf'(x) < 0 ise f azalandır.\n\nEkstremum (yerel maksimum ve minimum):\nf'(x) = 0 olan noktalara kritik (durağan) nokta denir.\nf' işaret değiştirirken + → − ise yerel maksimum, − → + ise yerel minimum vardır.\nİkinci türev testi: f'(a) = 0 ve f''(a) < 0 ise yerel maksimum, f''(a) > 0 ise yerel minimum.\n\nÖrnek: f(x) = x³ − 3x. f'(x) = 3x² − 3 = 0 → x = ±1.\nx = −1'de f' + → − (yerel maksimum, f(−1) = 2).\nx = 1'de f' − → + (yerel minimum, f(1) = −2).\n\nTeğet denklemi: x = a noktasındaki teğet: y − f(a) = f'(a)(x − a).",
+   "q": "f(x) = x² − 6x + 2 fonksiyonu hangi aralıkta azalandır?",
+   "choices": [
+    "x < −3",
+    "Her yerde artandır.",
+    "x > 3",
+    "x < 3",
+    "x > 6"
+   ],
+   "answer": 3,
+   "explain": "f'(x) = 2x − 6 < 0 → x < 3. Fonksiyon x < 3 aralığında azalandır."
+  },
+  {
+   "title": "Optimizasyon (Maksimum-Minimum) Problemleri",
+   "text": "Gerçek hayatta bir niceliği en büyük ya da en küçük yapmak isteriz: en çok kâr, en az malzeme, en büyük alan.\n\nÇözüm adımları:\n1. Değişkenleri belirle ve şekil çiz.\n2. En büyük ya da en küçük yapılacak niceliği tek değişkenli bir fonksiyon olarak yaz (koşul denkleminden diğer değişkeni yok et).\n3. Türevi al ve sıfıra eşitle.\n4. Bulunan değerin maksimum mu minimum mu olduğunu kontrol et (işaret tablosu ya da ikinci türev).\n5. Soruda istenen değeri hesapla.\n\nÖrnek: Çevresi 40 m olan dikdörtgen bir bahçenin alanı en çok kaç m² olur?\nKenarlar x ve 20 − x. A(x) = x(20 − x) = 20x − x².\nA'(x) = 20 − 2x = 0 → x = 10.\nA(10) = 100 m². Yani en büyük alan kare olduğunda elde edilir.",
+   "q": "Toplamları 12 olan iki pozitif sayının çarpımı en çok kaç olabilir?",
+   "choices": [
+    "35",
+    "36",
+    "20",
+    "27",
+    "32"
+   ],
+   "answer": 1,
+   "explain": "Sayılar x ve 12 − x. P(x) = 12x − x², P'(x) = 12 − 2x = 0 → x = 6. En büyük çarpım 6 · 6 = 36."
+  }
+ ],
+ "İntegral": [
+  {
+   "title": "Belirsiz İntegral",
+   "text": "İntegral, türevin ters işlemidir. Türevi f(x) olan F(x) fonksiyonuna f'nin ilkeli (ters türevi) denir:\n∫ f(x) dx = F(x) + c\nc integral sabitidir, çünkü sabitin türevi sıfırdır.\n\nTemel kurallar:\n∫ xⁿ dx = xⁿ⁺¹ / (n + 1) + c (n ≠ −1)\n∫ 1/x dx = ln|x| + c\n∫ eˣ dx = eˣ + c\n∫ sin x dx = −cos x + c\n∫ cos x dx = sin x + c\n∫ k · f(x) dx = k ∫ f(x) dx\n∫ [f(x) ± g(x)] dx = ∫ f(x) dx ± ∫ g(x) dx\n\nÖrnek: ∫ (6x² − 4x + 3) dx = 2x³ − 2x² + 3x + c.\n\nDeğişken değiştirme yöntemi: İç fonksiyonun türevi ifadede varsa u = iç fonksiyon denir. ∫ 2x(x² + 1)⁵ dx için u = x² + 1, du = 2x dx → ∫ u⁵ du = u⁶/6 + c.",
+   "q": "∫ (3x² + 2x) dx ifadesinin sonucu hangisidir?",
+   "choices": [
+    "3x³ + 2x² + c",
+    "x³ + 2x² + c",
+    "x² + x + c",
+    "6x + 2 + c",
+    "x³ + x² + c"
+   ],
+   "answer": 4,
+   "explain": "∫ 3x² dx = x³ ve ∫ 2x dx = x². Sonuç x³ + x² + c. (Kontrol: türevi 3x² + 2x.)"
+  },
+  {
+   "title": "Belirli İntegral",
+   "text": "Belirli integral, bir fonksiyonun [a, b] aralığındaki birikimini (toplamını) verir.\n\nRiemann toplamı: Aralık çok sayıda küçük parçaya bölünür; her parçada dikdörtgen alanları toplanır. Parça sayısı sonsuza giderken bu toplamın limiti belirli integraldir.\n\nİntegral hesabın temel teoremi:\n∫ₐᵇ f(x) dx = F(b) − F(a)\nF, f'nin herhangi bir ilkelidir.\n\nÖrnek: ∫₀² 3x² dx = [x³]₀² = 8 − 0 = 8.\n\nÖzellikler:\n∫ₐᵃ f(x) dx = 0\n∫ₐᵇ f(x) dx = −∫ᵦᵃ f(x) dx\n∫ₐᵇ f(x) dx + ∫ᵦᶜ f(x) dx = ∫ₐᶜ f(x) dx\n\nFizik uygulaması: Hız fonksiyonunun belirli integrali, o zaman aralığındaki yer değiştirmeyi verir.",
+   "q": "∫₁³ 2x dx belirli integralinin değeri kaçtır?",
+   "choices": [
+    "4",
+    "6",
+    "8",
+    "9",
+    "10"
+   ],
+   "answer": 2,
+   "explain": "∫ 2x dx = x². [x²]₁³ = 9 − 1 = 8."
+  },
+  {
+   "title": "İntegralle Alan Hesabı",
+   "text": "y = f(x) eğrisi, x ekseni ve x = a, x = b doğruları arasında kalan alan:\nf(x) ≥ 0 ise Alan = ∫ₐᵇ f(x) dx.\nf(x) ≤ 0 ise integral negatif çıkar; alan = −∫ₐᵇ f(x) dx (mutlak değer alınır).\nFonksiyon aralıkta işaret değiştiriyorsa, aralık sıfır noktalarından bölünür ve her parçanın alanı ayrı hesaplanıp toplanır.\n\nİki eğri arasındaki alan:\nf(x) ≥ g(x) olmak üzere: Alan = ∫ₐᵇ [f(x) − g(x)] dx\nÜstteki fonksiyondan alttaki çıkarılır. Sınırlar genellikle iki eğrinin kesişim noktalarıdır.\n\nÖrnek: y = x² ile y = x arasındaki alan.\nKesişim: x² = x → x = 0 ve x = 1. Bu aralıkta x ≥ x².\nAlan = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6.",
+   "q": "y = x², x ekseni ve x = 3 doğrusu arasında kalan bölgenin alanı kaç birimkaredir?",
+   "choices": [
+    "9",
+    "18",
+    "27",
+    "3",
+    "6"
+   ],
+   "answer": 0,
+   "explain": "Alan = ∫₀³ x² dx = [x³/3]₀³ = 27/3 = 9."
+  }
+ ],
+ "Analitik Geometri": [
+  {
+   "title": "Çemberin Denklemi",
+   "text": "Çember, düzlemde sabit bir noktaya (merkez) eşit uzaklıktaki noktaların kümesidir. Bu uzaklık yarıçaptır (r).\n\nMerkezi M(a, b), yarıçapı r olan çemberin denklemi:\n(x − a)² + (y − b)² = r²\n\nMerkezi orijinde olan çember: x² + y² = r²\n\nGenel denklem: x² + y² + Dx + Ey + F = 0\nMerkez: (−D/2, −E/2)\nYarıçap: r = √(D² + E² − 4F) / 2 (D² + E² − 4F > 0 olmalı)\n\nÖrnek: x² + y² − 6x + 4y − 3 = 0.\nTam kareye tamamlama: (x − 3)² − 9 + (y + 2)² − 4 − 3 = 0 → (x − 3)² + (y + 2)² = 16.\nMerkez (3, −2), yarıçap 4.\n\nEksenlere teğet çemberler: x eksenine teğetse r = |b|, y eksenine teğetse r = |a|.",
+   "q": "x² + y² − 4x + 2y − 4 = 0 çemberinin yarıçapı kaçtır?",
+   "choices": [
+    "9",
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 3,
+   "explain": "(x − 2)² − 4 + (y + 1)² − 1 − 4 = 0 → (x − 2)² + (y + 1)² = 9. Yarıçap 3."
+  },
+  {
+   "title": "Doğru ile Çemberin Durumları",
+   "text": "Bir doğru ile bir çember arasında üç durum olabilir. Çemberin merkezinin doğruya uzaklığı d, yarıçap r olsun:\n\nd < r: Doğru çemberi iki noktada keser (kesen).\nd = r: Doğru çembere bir noktada değer (teğet).\nd > r: Doğru çemberi kesmez.\n\nNoktanın doğruya uzaklığı: (x₀, y₀) noktasının ax + by + c = 0 doğrusuna uzaklığı:\nd = |ax₀ + by₀ + c| / √(a² + b²)\n\nCebirsel yöntem: Doğru denklemi çember denkleminde yerine yazılır, ikinci dereceden bir denklem elde edilir. Diskriminant Δ > 0 ise iki, Δ = 0 ise bir, Δ < 0 ise hiç kesim noktası yoktur.\n\nTeğet özelliği: Teğet, değme noktasında yarıçapa diktir. Bu yüzden teğetin eğimi ile yarıçapın eğiminin çarpımı −1'dir.\n\nÇemberin dışındaki bir noktadan çizilen teğet uzunlukları eşittir.",
+   "q": "x² + y² = 25 çemberi ile 3x + 4y − 25 = 0 doğrusunun durumu hangisidir?",
+   "choices": [
+    "Doğru çemberi iki noktada keser.",
+    "Doğru çembere teğettir.",
+    "Doğru çemberi kesmez.",
+    "Doğru çemberin merkezinden geçer.",
+    "Belirlenemez."
+   ],
+   "answer": 1,
+   "explain": "Merkez (0, 0)'ın doğruya uzaklığı |−25| / √(9 + 16) = 25 / 5 = 5 = r. Uzaklık yarıçapa eşit olduğu için doğru teğettir."
+  }
+ ]
+}

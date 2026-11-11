@@ -1,0 +1,308 @@
+{
+ "Çembersel Hareket": [
+  {
+   "title": "Düzgün Çembersel Hareket ve Uygulamaları",
+   "text": "Sabit süratle çembersel yörüngede dolanan cismin hız vektörünün yönü sürekli değişir. Bu yüzden cismin merkeze doğru bir ivmesi vardır:\na = v² / r = ω² · r\nMerkezcil kuvvet: F = m · v² / r\n\nUygulamalar:\nYatay virajda araç: Merkezcil kuvveti sürtünme sağlar. Kaymadan dönebileceği en büyük hız: v = √(k · g · r). Yol ıslaksa k azalır, güvenli hız düşer.\nEğimli viraj: Yolun eğimi sayesinde tepki kuvvetinin bir bileşeni merkezcil kuvvete katkı yapar; sürtünme olmadan da belirli bir hızda dönülebilir.\nDüşey düzlemde dönen cisim (lunapark trenindeki çember, ipe bağlı kova): Tepe noktasında düşmeden dönebilmek için gereken en küçük hız: v = √(g · r).\n\nSantrifüj makineleri ve çamaşır makinesinin sıkma programı da çembersel hareketten yararlanır: Su damlaları gerekli merkezcil kuvveti sağlayamayınca teğet doğrultusunda dışarı fırlar.",
+   "q": "Yarıçapı 10 m olan düşey bir çemberde dönen lunapark vagonunun tepe noktasında düşmeden geçebilmesi için en küçük hızı kaç m/s olmalıdır? (g = 10 m/s²)",
+   "choices": [
+    "50",
+    "100",
+    "5",
+    "10",
+    "20"
+   ],
+   "answer": 3,
+   "explain": "Tepe noktasında gereken en küçük hız v = √(g · r) = √(10 · 10) = 10 m/s."
+  },
+  {
+   "title": "Dönerek Öteleme Hareketi",
+   "text": "Yuvarlanan bir top ya da tekerlek hem kendi ekseni etrafında döner hem de ilerler. Buna dönerek öteleme hareketi denir.\n\nKaymadan yuvarlanma koşulu: v = ω · r\nTekerlek bir tam tur döndüğünde çevresi kadar (2πr) yol alır.\n\nKinetik enerji iki bileşenden oluşur:\nÖteleme kinetik enerjisi: ½ m v²\nDönme kinetik enerjisi: ½ I ω²\nI: eylemsizlik momenti. Kütlenin dönme eksenine göre nasıl dağıldığını gösterir. Kütle eksenden uzaktaysa I büyüktür.\nToplam: E = ½ m v² + ½ I ω²\n\nEğik düzlemden yuvarlanan cisimler: Aynı yükseklikten bırakılan içi dolu küre, içi dolu silindir ve çember (halka) yarıştırılırsa önce içi dolu küre, sonra silindir, en son halka iner. Çünkü halkanın eylemsizlik momenti büyüktür; enerjinin daha büyük kısmı dönmeye gider ve öteleme hızı küçük kalır.\n\nTork: τ = F · d (kuvvet × dönme eksenine dik uzaklık). Dönme hareketini değiştiren etkidir.",
+   "q": "Yarıçapı 0,5 m olan bir bisiklet tekerleği kaymadan 10 tam tur dönüyor. Bisiklet kaç metre yol alır? (π = 3)",
+   "choices": [
+    "15",
+    "30",
+    "60",
+    "300",
+    "5"
+   ],
+   "answer": 1,
+   "explain": "Bir turda alınan yol 2πr = 2 · 3 · 0,5 = 3 m. 10 turda 30 m."
+  },
+  {
+   "title": "Açısal Momentum",
+   "text": "Dönen cisimlerin dönme hareketine devam etme eğilimini gösteren niceliğe açısal momentum denir:\nL = I · ω\nNoktasal cisim için L = m · v · r.\n\nAçısal momentumun korunumu: Cisme dışarıdan net tork etki etmiyorsa açısal momentum korunur:\nI₁ · ω₁ = I₂ · ω₂\n\nGünlük hayattan örnekler:\nBuz patencisi kollarını açıkken yavaş döner. Kollarını göğsüne çekince eylemsizlik momenti azalır, dönme hızı artar.\nDönen bir sandalyede kolları açıp kapamak da aynı etkiyi gösterir.\nTramplenden atlayan sporcu vücudunu toplayarak (top gibi büzülerek) daha hızlı takla atar.\nGezegenler Güneş'e yaklaştıkça yörüngede daha hızlı hareket eder.\nNötron yıldızları, büzülen dev yıldızların çok hızlı dönmesiyle oluşur.\n\nAçısal momentum vektörel bir büyüklüktür; dönen topacın devrilmemesi ve bisikletin hareket hâlinde dengede kalması da bu sayededir.",
+   "q": "Buz patencisinin dönerken kollarını vücuduna çekince daha hızlı dönmesi hangi ilkeyle açıklanır?",
+   "choices": [
+    "Newton'ın üçüncü yasası",
+    "Arşimet ilkesi",
+    "Bernoulli ilkesi",
+    "Enerjinin yok olması",
+    "Açısal momentumun korunumu"
+   ],
+   "answer": 4,
+   "explain": "Kollar çekilince eylemsizlik momenti azalır. Açısal momentum (I · ω) korunduğu için dönme hızı artar."
+  },
+  {
+   "title": "Kütle Çekim Kuvveti",
+   "text": "Newton'un Evrensel Kütle Çekim Yasası: Kütlesi olan bütün cisimler birbirini çeker.\nF = G · m₁ · m₂ / d²\nG = 6,67 · 10⁻¹¹ N·m²/kg²\nKuvvet kütlelerin çarpımıyla doğru, merkezler arasındaki uzaklığın karesiyle ters orantılıdır.\n\nÇekim ivmesi (g): Bir gezegenin yüzeyindeki çekim ivmesi g = G · M / R².\nDünya yüzeyinde g ≈ 9,8 m/s². Yükseldikçe g azalır: Yüzeyden R kadar yükseklikte (merkezden 2R) g dörtte birine düşer.\nAy'da g, Dünya'dakinin yaklaşık 1/6'sıdır. Bu yüzden astronotlar Ay'da daha hafif hissederler; kütleleri değişmez ama ağırlıkları azalır.\n\nUydu hareketi: Uydunun yörüngede kalmasını sağlayan merkezcil kuvvet kütle çekim kuvvetidir. Uydunun hızı yörünge yarıçapına bağlıdır, kendi kütlesine bağlı değildir.\n\nKaçış hızı: Bir cismin gezegenin çekiminden kurtulması için gereken en küçük hızdır (Dünya için yaklaşık 11,2 km/s).",
+   "q": "İki cisim arasındaki uzaklık yarıya indirilirse aralarındaki kütle çekim kuvveti ne olur?",
+   "choices": [
+    "Değişmez.",
+    "2 katına çıkar.",
+    "4 katına çıkar.",
+    "4'te 1'ine iner.",
+    "Yarıya iner."
+   ],
+   "answer": 2,
+   "explain": "Kuvvet uzaklığın karesiyle ters orantılıdır: Uzaklık 1/2 olunca kuvvet (1/2)⁻² = 4 katına çıkar."
+  },
+  {
+   "title": "Kepler Kanunları",
+   "text": "Johannes Kepler, Tycho Brahe'nin gözlem verilerini inceleyerek gezegenlerin hareketini üç yasayla açıkladı:\n\n1. Yörüngeler Yasası: Gezegenler Güneş etrafında elips biçiminde yörüngelerde dolanır; Güneş elipsin odak noktalarından birindedir.\n\n2. Alanlar Yasası: Güneş'i gezegene birleştiren doğru, eşit zaman aralıklarında eşit alanlar tarar. Bu yüzden gezegen Güneş'e yakınken (günberi) daha hızlı, uzakken (günöte) daha yavaş hareket eder. Bu yasa açısal momentumun korunumunun bir sonucudur.\n\n3. Periyotlar Yasası: Gezegenin dolanma periyodunun karesi, yörüngesinin ortalama yarıçapının (yarı büyük eksen) küpüyle orantılıdır:\nT² / r³ = sabit (aynı merkezî cisim etrafında dönen bütün gezegenler için)\nGüneş'ten uzak gezegenlerin bir yılı çok daha uzundur: Mars'ın yılı yaklaşık 1,9, Jüpiter'in yaklaşık 12 Dünya yılıdır.\n\nNewton daha sonra bu yasaların kütle çekim yasasıyla açıklanabileceğini gösterdi.",
+   "q": "Kepler'in alanlar yasasına göre bir gezegen yörüngesinde nerede en hızlı hareket eder?",
+   "choices": [
+    "Güneş'e en yakın olduğu noktada",
+    "Yörüngenin her yerinde aynı hızla",
+    "Yalnızca kış mevsiminde",
+    "Yörüngenin tam ortasında",
+    "Güneş'e en uzak olduğu noktada"
+   ],
+   "answer": 0,
+   "explain": "Eşit sürelerde eşit alan taranması için gezegen Güneş'e yakınken (günberi) daha hızlı hareket etmelidir."
+  }
+ ],
+ "Basit Harmonik Hareket": [
+  {
+   "title": "Basit Harmonik Hareket ve Yay Sarkacı",
+   "text": "Bir denge noktası etrafında, uzanımla orantılı ve denge noktasına doğru yönelen bir geri çağırıcı kuvvetin etkisiyle yapılan titreşim hareketine basit harmonik hareket (BHH) denir:\nF = −k · x\n\nKavramlar:\nUzanım (x): Denge noktasına uzaklık.\nGenlik (A): En büyük uzanım.\nPeriyot (T): Bir tam salınım süresi.\n\nHareketin özellikleri:\nDenge noktasında hız en büyük, ivme ve kuvvet sıfırdır.\nUç noktalarda hız sıfır, ivme ve kuvvet en büyüktür.\nEnerji: Uçlarda tamamı potansiyel, dengede tamamı kinetik enerjidir.\n\nYay sarkacının periyodu:\nT = 2π √(m / k)\nPeriyot kütle arttıkça artar, yay sertleştikçe (k arttıkça) azalır. Genliğe ve yer çekimine bağlı değildir.\n\nBasit harmonik hareket düzgün çembersel hareketin bir çap üzerindeki izdüşümü olarak da düşünülebilir.",
+   "q": "Bir yay sarkacında asılı kütle 4 katına çıkarılırsa periyot ne olur?",
+   "choices": [
+    "Yarıya iner.",
+    "16 katına çıkar.",
+    "Değişmez.",
+    "2 katına çıkar.",
+    "4 katına çıkar."
+   ],
+   "answer": 3,
+   "explain": "T = 2π √(m / k). Kütle 4 katına çıkınca √4 = 2 olduğundan periyot 2 katına çıkar."
+  },
+  {
+   "title": "Basit Sarkaç",
+   "text": "Basit sarkaç, hafif ve uzamayan bir ipin ucuna asılmış küçük bir kütleden oluşur. Küçük açılarla (yaklaşık 10°'nin altında) salındırıldığında basit harmonik hareket yapar.\n\nBasit sarkacın periyodu:\nT = 2π √(L / g)\nL: ipin boyu, g: yer çekimi ivmesi.\n\nSonuçlar:\nPeriyot kütleye ve (küçük açılarda) genliğe bağlı değildir.\nİp uzadıkça periyot artar; sarkaç daha yavaş salınır.\nYer çekimi ivmesi azalırsa periyot artar. Aynı sarkaç Ay'da daha yavaş salınır.\nYükseklere çıkıldıkça g biraz azaldığı için sarkaçlı saatler geri kalır.\n\nTarihçe: Galileo, kilisedeki avizenin salınımlarını nabzıyla ölçerek periyodun genliğe bağlı olmadığını fark etti. Huygens ilk sarkaçlı saati yaptı.\n\nSarkaç, g'yi deneysel olarak ölçmek için kullanılır.",
+   "q": "Basit sarkacın periyodunu artırmak için ne yapılmalıdır?",
+   "choices": [
+    "Kütleyi azaltmak",
+    "İpin boyunu uzatmak",
+    "İpin boyunu kısaltmak",
+    "Genliği biraz artırmak",
+    "Kütleyi artırmak"
+   ],
+   "answer": 1,
+   "explain": "T = 2π √(L / g); periyot ipin boyunun karekökü ile artar. Kütle periyodu etkilemez."
+  }
+ ],
+ "Dalga Mekaniği": [
+  {
+   "title": "Kırınım ve Girişim",
+   "text": "Kırınım: Dalgaların bir engelin kenarından ya da dar bir aralıktan geçerken yayılma doğrultusunun değişmesi ve engelin arkasına bükülmesidir. Aralığın genişliği dalga boyuna yakın ya da daha küçükse kırınım belirgindir. Ses dalgalarının dalga boyu büyük olduğu için duvarın arkasındaki sesi duyabiliriz.\n\nGirişim: İki ya da daha fazla dalganın aynı ortamda karşılaşarak üst üste binmesidir.\nYapıcı girişim: Tepe ile tepe karşılaşır; genlik büyür (aydınlık saçak).\nYıkıcı girişim: Tepe ile çukur karşılaşır; dalgalar birbirini söndürür (karanlık saçak).\n\nYoung'ın çift yarık deneyi (1801): Işığın iki dar yarıktan geçirildiğinde perdede aydınlık ve karanlık saçaklar oluşturduğunu gösterdi. Bu deney ışığın dalga özelliğine sahip olduğunun en önemli kanıtıdır.\nSaçak aralığı: Δx = λ · L / d\nd: yarıklar arası uzaklık, L: perde uzaklığı.\n\nUygulamalar: Gürültü önleyici kulaklıklar (yıkıcı girişim), sabun köpüğündeki renkler (ince zar girişimi).",
+   "q": "Gürültü önleyici kulaklıkların çalışma prensibi hangi olaya dayanır?",
+   "choices": [
+    "Yansıma",
+    "Fotoelektrik olay",
+    "Kırılma",
+    "Yapıcı girişim",
+    "Yıkıcı girişim"
+   ],
+   "answer": 4,
+   "explain": "Kulaklık dış sese ters fazda bir ses dalgası üretir; iki dalga yıkıcı girişim yaparak birbirini söndürür."
+  },
+  {
+   "title": "Doppler Olayı",
+   "text": "Doppler olayı, dalga kaynağı ile gözlemci birbirine göre hareket ettiğinde gözlemcinin algıladığı frekansın değişmesidir.\n\nKaynak ve gözlemci birbirine yaklaşıyorsa: Dalga cepheleri sıkışır, algılanan frekans artar, ses daha tiz duyulur.\nUzaklaşıyorsa: Dalga cepheleri seyrekleşir, algılanan frekans azalır, ses daha pes duyulur.\n\nGünlük örnek: Yanımızdan geçen ambulansın siren sesi yaklaşırken ince, uzaklaşırken kalın duyulur.\n\nUygulamalar:\nTrafik radarları: Araçtan yansıyan dalganın frekans değişiminden hız ölçülür.\nMeteoroloji radarları: Yağmur bulutlarının hareketi.\nTıp: Doppler ultrasonografi ile kan akış hızı ölçülür.\nAstronomi: Uzaklaşan galaksilerden gelen ışığın dalga boyu uzar (kırmızıya kayma). Hubble bu gözlemle evrenin genişlediğini keşfetti.",
+   "q": "Uzak galaksilerden gelen ışıkta görülen kırmızıya kayma neyin kanıtıdır?",
+   "choices": [
+    "Işığın kütlesi olduğunun",
+    "Galaksilerin bize yaklaştığının",
+    "Galaksilerin bizden uzaklaştığının, evrenin genişlediğinin",
+    "Işığın hızının azaldığının",
+    "Galaksilerin sıcaklığının arttığının"
+   ],
+   "answer": 2,
+   "explain": "Kaynak uzaklaştığında algılanan frekans azalır, dalga boyu uzar (kırmızıya kayar). Bu, galaksilerin uzaklaştığını ve evrenin genişlediğini gösterir."
+  },
+  {
+   "title": "Elektromanyetik Dalgalar",
+   "text": "Elektromanyetik dalgalar, birbirine ve yayılma doğrultusuna dik titreşen elektrik ve manyetik alanlardan oluşur. Maxwell kuramsal olarak öngördü, Hertz deneysel olarak üretti.\n\nÖzellikleri:\nEnine dalgalardır.\nBoşlukta da yayılır; boşluktaki hızları c = 3 · 10⁸ m/s'dir.\nYüklü taneciklerin ivmeli hareketiyle oluşur.\nc = λ · f\n\nElektromanyetik spektrum (dalga boyu büyükten küçüğe, frekans küçükten büyüğe):\nRadyo dalgaları: Radyo, televizyon yayını.\nMikrodalgalar: Mikrodalga fırın, cep telefonu, Wi-Fi, radar.\nKızılötesi: Isı, uzaktan kumanda, termal kamera.\nGörünür ışık: Kırmızıdan mora.\nMorötesi (UV): Güneş yanığı, sterilizasyon, D vitamini sentezi.\nX ışınları: Röntgen, havalimanı güvenlik cihazları.\nGama ışınları: Radyoaktif bozunma, kanser tedavisi.\n\nFrekans arttıkça foton enerjisi artar; UV, X ve gama ışınları canlı dokular için zararlıdır.",
+   "q": "Elektromanyetik spektrumda frekansı en büyük, dolayısıyla enerjisi en yüksek olan dalga hangisidir?",
+   "choices": [
+    "Gama ışınları",
+    "Radyo dalgaları",
+    "Mikrodalgalar",
+    "Görünür ışık",
+    "X ışınları"
+   ],
+   "answer": 0,
+   "explain": "Gama ışınları spektrumun en yüksek frekanslı ve en kısa dalga boylu ucundadır; enerjileri en yüksektir."
+  }
+ ],
+ "Atom Fiziğine Giriş ve Radyoaktivite": [
+  {
+   "title": "Atom Kavramının Tarihsel Gelişimi",
+   "text": "Demokritos (MÖ 5. yy): Maddenin bölünemeyen taneciklerden (atomos) oluştuğunu ileri sürdü; bu düşünce deneye dayanmıyordu.\n\nDalton (1803): Atomlar içi dolu, bölünemez kürelerdir; aynı elementin atomları özdeştir.\n\nThomson (1897): Katot ışınlarıyla elektronu keşfetti. Üzümlü kek modeli: Pozitif yüklü küre içinde elektronlar.\n\nRutherford (1911): Alfa taneciklerini ince altın levhaya gönderdi. Taneciklerin çoğu geçti, çok azı büyük açıyla saptı. Sonuç: Atomun kütlesi ve pozitif yükü çok küçük bir çekirdekte toplanmıştır; atomun büyük kısmı boşluktur. Ancak bu model, dolanan elektronun neden enerji kaybedip çekirdeğe düşmediğini açıklayamadı.\n\nBohr (1913): Elektronlar yalnızca belirli enerji düzeylerinde (yörüngelerde) bulunabilir. Elektron bir düzeyden diğerine geçerken enerji farkı kadar foton salar ya da soğurur: E = h · f. Bu model hidrojenin çizgi spektrumunu açıkladı.\n\nModern atom modeli: Elektronların yeri kesin bilinemez; bulunma olasılığı orbitallerle ifade edilir (Schrödinger, Heisenberg).",
+   "q": "Bohr atom modelinin açıklayabildiği önemli olay hangisidir?",
+   "choices": [
+    "Nötronun varlığı",
+    "Elektronun keşfi",
+    "Atomun bölünemezliği",
+    "Hidrojen atomunun çizgi spektrumu",
+    "Radyoaktivite"
+   ],
+   "answer": 3,
+   "explain": "Bohr, elektronların belirli enerji düzeyleri arasında geçiş yaparken belirli frekansta ışık yaydığını öne sürerek hidrojenin çizgi spektrumunu açıkladı."
+  },
+  {
+   "title": "Büyük Patlama ve Evrenin Oluşumu",
+   "text": "Büyük Patlama (Big Bang) teorisine göre evren yaklaşık 13,8 milyar yıl önce son derece sıcak ve yoğun bir hâlden genişlemeye başlamıştır.\n\nTeoriyi destekleyen kanıtlar:\nEvrenin genişlemesi: Hubble, uzak galaksilerin bizden uzaklaştığını ve uzaklaştıkça daha hızlı uzaklaştıklarını gözlemledi (kırmızıya kayma).\nKozmik mikrodalga arka plan ışıması: Evrenin her yönünden gelen, yaklaşık 2,7 K sıcaklığa karşılık gelen ışıma. Büyük Patlama'dan kalan iz olarak kabul edilir (1965, Penzias ve Wilson).\nHafif elementlerin bolluğu: Evrendeki hidrojen ve helyum oranı teorinin öngörüsüyle uyumludur.\n\nEvrenin gelişimi:\nİlk anlarda temel parçacıklar (kuarklar, elektronlar) oluştu.\nKuarklar birleşerek proton ve nötronları oluşturdu.\nİlk birkaç dakikada hafif çekirdekler (H, He) oluştu.\nYaklaşık 380 000 yıl sonra atomlar oluştu ve evren ışığa saydam hâle geldi.\nDaha sonra yıldızlar ve galaksiler oluştu. Ağır elementler yıldızların içinde ve süpernova patlamalarında üretildi.",
+   "q": "Büyük Patlama teorisinin en önemli kanıtlarından biri olan, evrenin her yönünden gelen ışıma hangisidir?",
+   "choices": [
+    "Güneş rüzgârı",
+    "Kozmik mikrodalga arka plan ışıması",
+    "Kuzey ışıkları",
+    "Gama ışını patlamaları",
+    "Radyo yayınları"
+   ],
+   "answer": 1,
+   "explain": "Kozmik mikrodalga arka plan ışıması, evrenin ilk dönemlerinden kalan ve her yönden gelen ışımadır; Büyük Patlama'nın güçlü bir kanıtıdır."
+  },
+  {
+   "title": "Radyoaktivite",
+   "text": "Radyoaktivite, kararsız atom çekirdeklerinin kendiliğinden ışıma yaparak daha kararlı çekirdeklere dönüşmesidir. Henri Becquerel keşfetti; Marie ve Pierre Curie çalışmalarını geliştirdi.\n\nIşıma türleri:\nAlfa (α): Helyum çekirdeği (2 proton, 2 nötron). Kütle numarası 4, atom numarası 2 azalır. Giricilik düşüktür; bir kâğıt yaprağı durdurur.\nBeta (β⁻): Çekirdekteki bir nötron protona dönüşürken elektron salınır. Atom numarası 1 artar, kütle numarası değişmez. Alüminyum levha durdurur.\nGama (γ): Yüksek enerjili elektromanyetik dalga. Kütle ve atom numarası değişmez. Giricilik en yüksektir; kalın kurşun ya da beton gerekir.\n\nYarılanma süresi: Radyoaktif çekirdeklerin yarısının bozunması için geçen süre. Her madde için sabittir.\n\nUygulamalar: Karbon-14 ile yaş tayini, kanser tedavisi (radyoterapi), tıbbi görüntüleme, nükleer santraller (fisyon). Güneş'in enerjisi füzyondan (hidrojen çekirdeklerinin birleşmesi) gelir.\n\nRadyasyondan korunma: Süre, uzaklık ve zırh.",
+   "q": "Bir çekirdek alfa ışıması yaptığında atom numarası ve kütle numarası nasıl değişir?",
+   "choices": [
+    "İkisi de değişmez.",
+    "Atom numarası 4 azalır, kütle numarası 2 azalır.",
+    "Atom numarası 2 artar, kütle numarası 4 artar.",
+    "Atom numarası 1 artar, kütle numarası değişmez.",
+    "Atom numarası 2 azalır, kütle numarası 4 azalır."
+   ],
+   "answer": 4,
+   "explain": "Alfa taneciği bir helyum çekirdeğidir (2 proton, 2 nötron); çekirdeğin atom numarası 2, kütle numarası 4 azalır."
+  }
+ ],
+ "Modern Fizik": [
+  {
+   "title": "Özel Görelilik",
+   "text": "Einstein 1905'te özel görelilik kuramını iki temel varsayıma dayandırdı:\n1. Fizik yasaları, birbirine göre sabit hızla hareket eden bütün gözlemciler için aynıdır.\n2. Işığın boşluktaki hızı (c) bütün gözlemciler için aynıdır; kaynağın ya da gözlemcinin hızına bağlı değildir.\n\nSonuçları (ışık hızına yakın hızlarda belirgindir):\nZaman genişlemesi: Hareket eden saat, durgun gözlemciye göre daha yavaş işler. Ünlü ikizler paradoksu: Işık hızına yakın bir hızla uzay yolculuğu yapan ikiz, döndüğünde kardeşinden daha genç olur.\nBoy kısalması: Hareket eden cisim, hareket doğrultusunda daha kısa ölçülür.\nKütle-enerji eşdeğerliği: E = m · c². Küçük bir kütle çok büyük bir enerjiye karşılık gelir. Nükleer enerji ve Güneş'in enerjisi bu ilişkiyle açıklanır.\nHiçbir cisim ışık hızına ulaşamaz.\n\nGünlük hayat: GPS uydularındaki atomik saatler görelilik etkileri hesaba katılarak düzeltilir; aksi hâlde konum hesaplarında günde kilometrelerce hata oluşurdu.",
+   "q": "Özel göreliliğe göre ışık hızına yakın hızla hareket eden bir uzay aracındaki saat, Dünya'daki gözlemciye göre nasıl işler?",
+   "choices": [
+    "Geri gider.",
+    "Daha hızlı işler.",
+    "Daha yavaş işler.",
+    "Aynı hızda işler.",
+    "Durur."
+   ],
+   "answer": 2,
+   "explain": "Zaman genişlemesi nedeniyle hareket eden saat, durgun gözlemciye göre daha yavaş işler."
+  },
+  {
+   "title": "Kuantum Fiziğine Giriş",
+   "text": "19. yüzyıl sonunda klasik fizik, siyah cisim ışımasını açıklayamadı. Siyah cisim, üzerine düşen bütün ışığı soğuran ve sıcaklığına bağlı olarak ışıma yapan ideal bir cisimdir. Klasik fizik, yüksek frekanslarda sonsuz enerji öngörüyordu (morötesi felaketi).\n\nMax Planck (1900): Enerjinin sürekli değil, paketler (kuantumlar) hâlinde yayıldığını önerdi:\nE = h · f\nh = 6,63 · 10⁻³⁴ J·s (Planck sabiti)\nBu öneri kuantum fiziğinin başlangıcıdır.\n\nSiyah cisim ışımasının özellikleri:\nSıcaklık arttıkça yayılan toplam enerji artar.\nSıcaklık arttıkça en çok ışıma yapılan dalga boyu küçülür (Wien yasası). Isıtılan demir önce kırmızı, sonra turuncu-sarı, çok yüksek sıcaklıkta beyazımsı parlar. Mavi yıldızlar kırmızı yıldızlardan daha sıcaktır.\n\nKuantum fiziğinin temel fikirleri: Enerji kuantumludur, ışık hem dalga hem tanecik özelliği gösterir, mikro dünyada olaylar olasılıklarla tanımlanır (Heisenberg belirsizlik ilkesi).",
+   "q": "Gökyüzünde mavi renkte görünen bir yıldızla kırmızı renkte görünen bir yıldız karşılaştırıldığında hangisi doğrudur?",
+   "choices": [
+    "Mavi yıldız daha sıcaktır.",
+    "İkisinin sıcaklığı aynıdır.",
+    "Renk sıcaklıkla ilgili değildir.",
+    "Mavi yıldız ışıma yapmaz.",
+    "Kırmızı yıldız daha sıcaktır."
+   ],
+   "answer": 0,
+   "explain": "Wien yasasına göre sıcaklık arttıkça en çok ışıma yapılan dalga boyu kısalır; mavi ışık kırmızıdan kısa dalga boyludur, bu yüzden mavi yıldız daha sıcaktır."
+  },
+  {
+   "title": "Fotoelektrik Olay",
+   "text": "Fotoelektrik olay, yeterli enerjiye sahip ışık bir metal yüzeye düştüğünde yüzeyden elektron sökülmesidir. Einstein bu olayı ışığın tanecik (foton) modeliyle açıkladı ve 1921 Nobel Fizik Ödülü'nü aldı.\n\nFotonun enerjisi: E = h · f\n\nEinstein'ın fotoelektrik denklemi:\nh · f = W₀ + Eₖ(maks)\nW₀: Bağlanma enerjisi (eşik enerjisi), metalden elektron sökmek için gereken en küçük enerji. Her metal için farklıdır.\nEₖ: Sökülen elektronun en büyük kinetik enerjisi.\n\nDeneysel sonuçlar (dalga modeliyle açıklanamayan):\nEşik frekansının altındaki ışık, ne kadar şiddetli olursa olsun elektron sökemez.\nIşığın şiddeti artırılırsa sökülen elektron sayısı artar, ama elektronların kinetik enerjisi değişmez.\nIşığın frekansı artırılırsa elektronların kinetik enerjisi artar.\nElektron sökülmesi anında gerçekleşir.\n\nUygulamalar: Güneş panelleri, fotoğraf makinesi sensörleri, otomatik kapılar, ışık sensörleri.",
+   "q": "Fotoelektrik olayda metal yüzeye düşen ışığın frekansı sabit tutulup şiddeti artırılırsa ne olur?",
+   "choices": [
+    "Eşik enerjisi azalır.",
+    "Sökülen elektron sayısı azalır.",
+    "Sökülen elektronların kinetik enerjisi artar.",
+    "Sökülen elektron sayısı artar, kinetik enerjileri değişmez.",
+    "Hiç elektron sökülmez."
+   ],
+   "answer": 3,
+   "explain": "Şiddet artınca birim zamanda gelen foton sayısı artar, bu yüzden daha çok elektron sökülür. Her fotonun enerjisi aynı kaldığı için kinetik enerji değişmez."
+  },
+  {
+   "title": "Compton Saçılması ve de Broglie Dalga Boyu",
+   "text": "Compton saçılması (1923): X ışınları bir elektrona çarptığında saçılan X ışınının dalga boyu artar (enerjisi azalır), elektron ise bir miktar enerji kazanarak hareket eder. Bu olay, fotonun bir bilardo topu gibi momentum taşıyan bir tanecik gibi davrandığını gösterdi. Çarpışmada enerji ve momentum korunur.\nFotonun momentumu: p = h / λ\n\nde Broglie hipotezi (1924): Işık tanecik gibi davranabiliyorsa, tanecikler de dalga gibi davranabilir. Hareketli her taneciğin bir dalga boyu vardır:\nλ = h / (m · v)\n\nGünlük cisimlerin kütlesi büyük olduğu için dalga boyları ölçülemeyecek kadar küçüktür. Ama elektron gibi çok küçük kütleli taneciklerde dalga özelliği belirgindir. Elektronların kristallerden kırınıma uğraması (Davisson-Germer deneyi) bu hipotezi doğruladı.\n\nDalga-tanecik ikiliği: Işık ve madde, deneye göre hem dalga hem tanecik özelliği gösterir.\n\nUygulama: Elektron mikroskobu, elektronların çok kısa dalga boyundan yararlanarak ışık mikroskobundan çok daha ayrıntılı görüntü verir.",
+   "q": "Elektron mikroskobunun ışık mikroskobundan çok daha küçük ayrıntıları gösterebilmesinin nedeni nedir?",
+   "choices": [
+    "Elektronların renkli olması",
+    "Elektronların de Broglie dalga boyunun görünür ışığın dalga boyundan çok küçük olması",
+    "Elektronların kütlesinin olmaması",
+    "Elektronların ışıktan yavaş olması",
+    "Elektronların yüksüz olması"
+   ],
+   "answer": 1,
+   "explain": "Görüntüleme ayrıntısı dalga boyuyla sınırlıdır. Hızlandırılmış elektronların dalga boyu görünür ışıktan çok küçük olduğu için çok daha ince ayrıntılar görülebilir."
+  }
+ ],
+ "Modern Fiziğin Teknolojideki Uygulamaları": [
+  {
+   "title": "Görüntüleme Teknolojileri",
+   "text": "Modern fizik, tıpta ve endüstride vücudun ve cisimlerin içini görmemizi sağlayan teknolojiler geliştirmiştir:\n\nRöntgen (X ışını): X ışınları yumuşak dokulardan geçer, kemik gibi yoğun dokular tarafından soğurulur. Kırık ve diş sorunlarının teşhisinde kullanılır.\n\nBilgisayarlı tomografi (BT): X ışınlarıyla vücudun farklı açılardan çok sayıda görüntüsü alınır, bilgisayar bunları birleştirerek kesit görüntüler oluşturur.\n\nManyetik rezonans (MR): Güçlü manyetik alan ve radyo dalgaları kullanır; vücuttaki hidrojen çekirdeklerinin (protonların) davranışından görüntü elde edilir. İyonlaştırıcı radyasyon içermez; beyin ve yumuşak doku görüntülemede çok başarılıdır. Mıknatısı süper iletkenlerle yapılır.\n\nUltrason: Yüksek frekanslı ses dalgalarının dokulardan yansımasıyla görüntü oluşturulur. Radyasyon içermediği için hamilelikte bebeği izlemek için kullanılır.\n\nPET: Vücuda verilen radyoaktif maddenin yaydığı ışınlarla dokuların metabolik etkinliği görüntülenir; kanser teşhisinde kullanılır.\n\nTermal kamera: Kızılötesi ışımayı algılayarak sıcaklık farklarını gösterir.",
+   "q": "Hamile bir kadında bebeğin gelişimini izlemek için radyasyon içermeyen ve en yaygın kullanılan görüntüleme yöntemi hangisidir?",
+   "choices": [
+    "PET",
+    "Gama kamera",
+    "Röntgen",
+    "Bilgisayarlı tomografi",
+    "Ultrason"
+   ],
+   "answer": 4,
+   "explain": "Ultrason, ses dalgalarıyla çalıştığı için iyonlaştırıcı radyasyon içermez ve hamilelikte güvenle kullanılır."
+  },
+  {
+   "title": "Yarı İletken Teknolojisi",
+   "text": "Yarı iletkenler, iletkenliği iletkenler ile yalıtkanlar arasında olan maddelerdir: silisyum (Si), germanyum (Ge). İletkenlikleri sıcaklık, ışık ve katkılama ile kontrol edilebilir.\n\nKatkılama (doping): Saf yarı iletkene az miktarda başka atom eklemek.\nn-tipi: Fazla elektron veren atomlar (fosfor) eklenir; yük taşıyıcılar elektronlardır.\np-tipi: Elektron eksikliği oluşturan atomlar (bor) eklenir; yük taşıyıcılar boşluklardır (pozitif yük gibi davranır).\n\nDiyot: p ve n tipi yarı iletkenlerin birleştirilmesiyle yapılır. Akımı yalnızca bir yönde geçirir; alternatif akımı doğru akıma çevirmede kullanılır.\nLED (ışık yayan diyot): Elektronlar boşluklarla birleşirken ışık yayar; az enerji harcar.\nTransistör: Akımı yükseltir ya da anahtar gibi açıp kapatır. Bilgisayar işlemcilerinde milyarlarca transistör bulunur.\nGüneş pili: Işık p-n ekleminde elektron-boşluk çiftleri oluşturarak elektrik üretir.\n\nYarı iletken teknolojisi telefonlardan bilgisayarlara, otomobillerden uydu sistemlerine kadar modern hayatın temelidir.",
+   "q": "Akımı yalnızca bir yönde geçiren ve p-n ekleminden oluşan yarı iletken devre elemanı hangisidir?",
+   "choices": [
+    "Direnç",
+    "Kondansatör",
+    "Diyot",
+    "Bobin",
+    "Sigorta"
+   ],
+   "answer": 2,
+   "explain": "Diyot, p ve n tipi yarı iletkenlerin birleşiminden oluşur ve akımı yalnızca bir yönde iletir."
+  },
+  {
+   "title": "Süper İletkenler",
+   "text": "Süper iletkenler, belirli bir kritik sıcaklığın altına soğutulduğunda elektrik direnci tamamen sıfır olan maddelerdir. 1911'de Kamerlingh Onnes, cıvanın yaklaşık 4 K'de direncinin sıfıra düştüğünü keşfetti.\n\nÖzellikleri:\nDirenç sıfır olduğu için akım hiç enerji kaybı olmadan akar; bir halkada başlatılan akım yıllarca sürebilir.\nMeissner etkisi: Süper iletken, manyetik alanı içinden dışarı iter. Bu yüzden süper iletken üzerine konan bir mıknatıs havada asılı kalır (manyetik levitasyon).\n\nSorun: Çoğu süper iletken çok düşük sıcaklıklarda çalışır ve sıvı helyum ya da sıvı azotla soğutulması gerekir; bu pahalıdır. Bilim insanları oda sıcaklığına yakın süper iletkenler bulmaya çalışmaktadır.\n\nUygulamalar:\nMR cihazlarındaki güçlü elektromıknatıslar.\nManyetik raylı (maglev) hızlı trenler: Raylara değmeden, sürtünmesiz hareket eder.\nParçacık hızlandırıcıları (CERN).\nKayıpsız elektrik iletimi ve kuantum bilgisayarlar.",
+   "q": "Süper iletkenlerin manyetik alanı içlerinden dışarı itmesiyle bir mıknatısın üzerinde havada asılı kalabilmesine ne ad verilir?",
+   "choices": [
+    "Meissner etkisi",
+    "Doppler olayı",
+    "Compton saçılması",
+    "Kırınım",
+    "Fotoelektrik olay"
+   ],
+   "answer": 0,
+   "explain": "Süper iletkenin manyetik alanı dışarı itmesi Meissner etkisidir; manyetik levitasyonu sağlar."
+  },
+  {
+   "title": "Nanoteknoloji ve Laser Işınları",
+   "text": "Nanoteknoloji: Maddenin 1-100 nanometre ölçeğinde tasarlanıp kullanılmasıdır. Bu boyutta kuantum etkileri belirginleşir ve maddeler farklı özellikler gösterir.\nÖrnekler: Karbon nanotüpler ve grafen (çelikten çok daha dayanıklı, çok iyi iletken), kendi kendini temizleyen yüzeyler, hedefli ilaç taşıyıcıları, daha küçük ve hızlı bilgisayar çipleri, verimli güneş panelleri.\n\nLaser (uyarılmış ışıma ile ışığın güçlendirilmesi):\nAtomlar uyarılmış hâle getirilir; uyarılmış bir atoma uygun bir foton çarptığında atom, gelen fotonla aynı özellikte ikinci bir foton salar (uyarılmış emisyon). Bu süreç aynalarla tekrarlanarak güçlü bir ışın elde edilir.\n\nLaser ışığının özellikleri:\nTek renklidir (tek dalga boyu).\nEş fazlıdır (koherent).\nÇok az dağılır, dar bir ışın hâlinde uzaklara gider.\nEnerjisi küçük bir alanda yoğunlaşır.\n\nUygulamalar: Göz ameliyatları, cerrahi, fiber optik iletişim, barkod okuyucular, metal kesme ve kaynak, Ay'a uzaklık ölçümü, ışık gösterileri.",
+   "q": "Laser ışığını sıradan ışıktan ayıran özelliklerden biri hangisidir?",
+   "choices": [
+    "Hiç enerji taşımaması",
+    "Bütün renkleri içermesi",
+    "Her yöne dağılması",
+    "Tek renkli ve eş fazlı olması",
+    "Yalnızca boşlukta yayılması"
+   ],
+   "answer": 3,
+   "explain": "Laser ışığı tek dalga boyuna sahiptir (tek renkli), fotonlar eş fazlıdır ve çok az dağılarak dar bir ışın oluşturur."
+  }
+ ]
+}

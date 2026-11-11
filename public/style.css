@@ -283,9 +283,12 @@ label > span:first-child:not(.avatar, .letter) { font-size: .9rem; color: var(--
 .photo { display: block; padding: 0; min-height: 0; margin: .1rem -.35rem .15rem; border: 0; border-radius: 12px; background: none; }
 .bubble img { display: block; max-width: 100%; max-height: 22rem; border-radius: 12px; }
 .bubble audio { display: block; width: 16rem; max-width: 100%; margin: .15rem 0; }
-.reply { width: 34px; min-height: 34px; color: var(--muted); opacity: 0; }
-.message:hover .reply, .reply:focus-visible { opacity: 1; }
-@media (pointer: coarse) { .reply:not(:focus-visible) { display: none; } }
+.reply, .msg-delete { width: 34px; min-height: 34px; color: var(--muted); opacity: 0; }
+.message:hover :is(.reply, .msg-delete), :is(.reply, .msg-delete):focus-visible, .show-actions .msg-delete { opacity: 1; }
+@media (pointer: coarse) {
+  :is(.reply, .msg-delete):not(:focus-visible) { display: none; }
+  .show-actions .msg-delete { display: inline-grid; }
+}
 .flash .bubble { animation: flash 1.2s; }
 @keyframes flash { 0%, 40% { box-shadow: 0 0 0 3px var(--accent); } 100% { box-shadow: var(--shadow); } }
 
@@ -339,6 +342,11 @@ label > span:first-child:not(.avatar, .letter) { font-size: .9rem; color: var(--
 /* Yazılıya hazırlık */
 #quiz-home, #quiz-units, #quiz-run { display: grid; gap: .8rem; }
 .units { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+.units > li { display: grid; gap: .35rem; }
+.lesson-link { justify-self: start; margin-inline-start: 3.9rem; font-size: .85rem; }
+.lesson { display: grid; gap: .6rem; padding-bottom: .85rem; border-bottom: 1px solid var(--line); line-height: 1.55; }
+.lesson h3 { margin: 0; color: var(--accent); }
+.lesson p { margin: 0; white-space: pre-wrap; }
 .unit {
   display: flex; align-items: center; gap: .8rem;
   width: 100%; min-height: 64px; padding: .7rem .9rem;
@@ -351,6 +359,8 @@ label > span:first-child:not(.avatar, .letter) { font-size: .9rem; color: var(--
 .unit-text strong { line-height: 1.3; }
 /* Konular uzun olabilir; iki satırdan sonrası kesilir. */
 .unit-text small { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; color: var(--muted); font-size: .8rem; line-height: 1.35; }
+.unit-score { color: var(--accent); font-size: .8rem; font-weight: 600; }
+.unit-score.weak { color: var(--error); }
 .unit-count { flex: none; color: var(--accent); font-size: .82rem; font-weight: 700; white-space: nowrap; }
 .unit:disabled .unit-count { color: var(--muted); font-weight: 600; }
 .subjects { display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: .7rem; }

@@ -1,0 +1,260 @@
+{
+ "Kuvvet ve Hareket": [
+  {
+   "title": "Serbest Düşme",
+   "text": "Hava direncinin ihmal edildiği ortamda, ilk hızı olmadan bırakılan cismin yalnızca yer çekimi etkisiyle yaptığı harekete serbest düşme denir. Bu, ivmesi g ≈ 10 m/s² olan sabit ivmeli bir harekettir.\n\nDenklemler (aşağı yön pozitif):\nv = g · t\nh = ½ · g · t²\nv² = 2 · g · h\n\nÖnemli sonuçlar:\nHava direnci yoksa kütlesi farklı cisimler aynı yükseklikten bırakıldığında yere aynı anda düşer. Galileo bunu göstermiştir; Ay'da yapılan çekiç-tüy deneyi de bunu doğrular.\nCisim her saniye 10 m/s hız kazanır.\nArdışık eşit zaman aralıklarında alınan yollar 1 : 3 : 5 : 7 ... oranındadır.\n\nYukarı atış: Cisim yukarı atıldığında hızı her saniye 10 m/s azalır; tepe noktasında hızı sıfırdır. Çıkış süresi iniş süresine eşittir.",
+   "q": "Sürtünmesiz ortamda serbest bırakılan bir cisim 3 saniye sonra yere çarpıyor. Cisim kaç metre yükseklikten bırakılmıştır? (g = 10 m/s²)",
+   "choices": [
+    "15",
+    "30",
+    "45",
+    "60",
+    "90"
+   ],
+   "answer": 2,
+   "explain": "h = ½ · g · t² = ½ · 10 · 9 = 45 m."
+  },
+  {
+   "title": "İki Boyutta Sabit İvmeli Hareket",
+   "text": "Yatay atış ve eğik atış iki boyutlu hareketlerdir. Bu hareketler birbirinden bağımsız iki harekete ayrılarak incelenir.\n\nYatay atış (h yükseklikten v₀ hızla yatay atılan cisim):\nYatayda: Kuvvet olmadığı için sabit hızlı hareket. x = v₀ · t\nDüşeyde: Serbest düşme. h = ½ · g · t²\nUçuş süresi yalnızca yüksekliğe bağlıdır; yatay hız süreyi değiştirmez.\n\nEğik atış (v₀ hızıyla yatayla α açısı yaparak atılan cisim):\nYatay hız bileşeni: vₓ = v₀ · cos α (sabit kalır)\nDüşey hız bileşeni: vᵧ = v₀ · sin α (yukarı atış gibi azalır)\nTepe noktasında düşey hız sıfırdır, yatay hız devam eder.\nAynı hızla 45°'lik açıyla atılan cisim en uzağa gider. Toplamı 90° olan açılarla (30° ve 60°) atılan cisimler aynı uzaklığa düşer.",
+   "q": "Aynı yükseklikten biri serbest bırakılan, diğeri yatay olarak 20 m/s hızla atılan iki özdeş topun yere düşme süreleri için ne söylenebilir? (Hava direnci ihmal)",
+   "choices": [
+    "İkisi aynı anda düşer.",
+    "Yatay atılan hiç düşmez.",
+    "Süre topların kütlesine bağlıdır.",
+    "Yatay atılan daha önce düşer.",
+    "Serbest bırakılan daha önce düşer."
+   ],
+   "answer": 0,
+   "explain": "Düşey hareket iki topta da serbest düşmedir; yatay hız düşme süresini etkilemez. İkisi aynı anda yere düşer."
+  },
+  {
+   "title": "Newton'ın Hareket Yasaları",
+   "text": "1. Yasa (Eylemsizlik): Bir cisme etki eden net kuvvet sıfırsa cisim duruyorsa durmaya, hareket ediyorsa sabit hızla doğrusal hareketine devam eder. Otobüs aniden fren yapınca yolcuların öne savrulması eylemsizlikten kaynaklanır.\n\n2. Yasa (Temel yasa): Net kuvvet, kütle ile ivmenin çarpımına eşittir.\nF(net) = m · a\nAynı kuvvet uygulandığında kütlesi küçük olan cisim daha büyük ivme kazanır. Kuvvetin birimi newton'dur: 1 N = 1 kg · m/s².\n\n3. Yasa (Etki-tepki): Bir cisim diğerine kuvvet uygularsa ikinci cisim de birinciye eşit büyüklükte ve zıt yönde bir kuvvet uygular. Etki ve tepki kuvvetleri farklı cisimlere etki eder; bu yüzden birbirini dengelemez.\nÖrnekler: Roketin yanan gazları geriye itmesi, gazların da roketi ileri itmesi; yüzücünün suyu geriye itmesi.\n\nAğırlık: G = m · g. Kütle her yerde aynıdır; ağırlık ise çekim ivmesine göre değişir.",
+   "q": "Kütlesi 4 kg olan bir cisme sürtünmesiz yatay düzlemde 20 N'luk net kuvvet uygulanıyor. Cismin ivmesi kaç m/s²'dir?",
+   "choices": [
+    "80",
+    "0,2",
+    "4",
+    "5",
+    "16"
+   ],
+   "answer": 3,
+   "explain": "F = m · a → a = 20 / 4 = 5 m/s²."
+  },
+  {
+   "title": "Sürtünme Kuvveti",
+   "text": "Sürtünme kuvveti, birbirine temas eden yüzeyler arasında harekete ya da hareket etme eğilimine karşı koyan kuvvettir. Her zaman hareket yönüne (ya da harekete zorlanma yönüne) zıttır.\n\nStatik sürtünme: Cisim henüz hareket etmeden önce etki eder; uygulanan kuvvetle birlikte artar ve en büyük değerine kadar cismi tutar.\nKinetik sürtünme: Cisim kayarken etki eder:\nFs = k · N\nk: sürtünme katsayısı (yüzeylerin cinsine ve pürüzlülüğüne bağlı), N: yüzeyin cisme uyguladığı tepki kuvveti. Yatay düzlemde N = m · g.\n\nSürtünme kuvveti temas yüzeyinin alanına bağlı değildir.\n\nYararları: Yürümek, araçların fren yapması, kibrit yakmak, eşyaların masada durması.\nZararları: Makinelerde aşınma, ısınma ve enerji kaybı. Yağlama, rulman ve tekerlek sürtünmeyi azaltır.",
+   "q": "Kütlesi 5 kg olan bir kutu, kinetik sürtünme katsayısı 0,2 olan yatay zeminde kayıyor. Kutuya etki eden sürtünme kuvveti kaç N'dur? (g = 10 m/s²)",
+   "choices": [
+    "2,5",
+    "10",
+    "25",
+    "50",
+    "1"
+   ],
+   "answer": 1,
+   "explain": "N = m · g = 50 N. Fs = k · N = 0,2 · 50 = 10 N."
+  },
+  {
+   "title": "Limit Hız",
+   "text": "Hava ya da su gibi bir akışkan içinde hareket eden cisme, hareketine zıt yönde bir direnç kuvveti etki eder. Bu kuvvet cismin hızı arttıkça artar; ayrıca cismin kesit alanına, şekline ve akışkanın yoğunluğuna bağlıdır.\n\nYüksekten düşen bir cisim düşünelim:\nBaşta hız küçük olduğu için direnç kuvveti küçüktür; cisim hızlanır.\nHız arttıkça direnç kuvveti büyür, ivme azalır.\nDirenç kuvveti ağırlığa eşit olduğunda net kuvvet sıfır olur ve cisim artık sabit hızla düşer. Bu sabit hıza limit hız (son hız) denir.\n\nUygulamalar:\nParaşüt açılınca kesit alanı büyür, direnç kuvveti artar ve limit hız birkaç m/s'ye düşer; böylece güvenli iniş yapılır.\nYağmur damlaları limit hıza ulaştığı için bize zarar vermez.\nAraç ve uçaklar, direnç kuvvetini azaltmak için aerodinamik tasarlanır.",
+   "q": "Paraşüt açıldığında paraşütçünün limit hızının küçülmesinin nedeni nedir?",
+   "choices": [
+    "Yer çekimi ivmesinin azalması",
+    "Havanın yoğunluğunun artması",
+    "Paraşütçünün ağırlığının artması",
+    "Paraşütçünün kütlesinin azalması",
+    "Kesit alanının büyümesiyle hava direncinin artması"
+   ],
+   "answer": 4,
+   "explain": "Açılan paraşüt kesit alanını büyütür. Daha düşük bir hızda direnç kuvveti ağırlığa eşitlenir ve limit hız küçülür."
+  },
+  {
+   "title": "Düzgün Çembersel Hareket",
+   "text": "Bir cismin çembersel yörüngede sabit süratle dolanmasına düzgün çembersel hareket denir. Sürat sabittir ama hızın yönü sürekli değiştiği için cismin bir ivmesi vardır.\n\nPeriyot (T): Bir tam dolanım süresi.\nFrekans (f): Birim zamandaki dolanım sayısı. f = 1 / T\nÇizgisel hız: v = 2πr / T (yörüngeye teğettir)\nAçısal hız: ω = 2π / T, v = ω · r\n\nMerkezcil ivme: a = v² / r (her zaman merkeze doğru)\nMerkezcil kuvvet: F = m · v² / r\n\nMerkezcil kuvveti sağlayan farklı kuvvetler olabilir:\nİpe bağlı döndürülen taş: ipteki gerilme.\nViraj alan araç: tekerlek ile yol arasındaki sürtünme.\nDünya etrafında dolanan uydu: kütle çekim kuvveti.\n\nİp koparsa cisim merkezden kaçmaz; o andaki hız yönünde, yani çembere teğet olarak düz bir çizgide hareket eder.",
+   "q": "Yarıçapı 2 m olan çembersel yörüngede 4 m/s sabit süratle dolanan 3 kg kütleli cisme etki eden merkezcil kuvvet kaç N'dur?",
+   "choices": [
+    "6",
+    "12",
+    "24",
+    "48",
+    "96"
+   ],
+   "answer": 2,
+   "explain": "F = m · v² / r = 3 · 16 / 2 = 24 N."
+  }
+ ],
+ "Elektrik ve Manyetizma": [
+  {
+   "title": "Elektriksel Kuvvet ve Elektriksel Alan",
+   "text": "Yüklü cisimler birbirine kuvvet uygular: Aynı işaretli yükler birbirini iter, zıt işaretli yükler birbirini çeker.\n\nCoulomb Yasası: F = k · q₁ · q₂ / d²\nk = 9 · 10⁹ N·m²/C²\nKuvvet yüklerin çarpımıyla doğru, aralarındaki uzaklığın karesiyle ters orantılıdır. Uzaklık 2 katına çıkarsa kuvvet 4'te 1'ine düşer.\n\nElektriksel alan: Yüklü bir cismin çevresinde, başka yüklere kuvvet uyguladığı bölgedir.\nE = k · q / d² (birimi N/C)\nAlan çizgileri pozitif yükten çıkar, negatif yüke girer. Çizgilerin sık olduğu yerde alan güçlüdür.\nAlan içine konan q yüküne etki eden kuvvet: F = q · E\n\nParalel yüklü levhalar arasında düzgün (her noktada aynı) elektriksel alan oluşur: E = V / d.",
+   "q": "Aralarında d uzaklığı bulunan iki noktasal yük birbirine F büyüklüğünde kuvvet uyguluyor. Uzaklık 3d yapılırsa kuvvet ne olur?",
+   "choices": [
+    "F/9",
+    "9F",
+    "F",
+    "3F",
+    "F/3"
+   ],
+   "answer": 0,
+   "explain": "Kuvvet uzaklığın karesiyle ters orantılıdır: uzaklık 3 katına çıkınca kuvvet 3² = 9'da 1'ine iner, F/9 olur."
+  },
+  {
+   "title": "Manyetik Alan ve Manyetik Kuvvet",
+   "text": "Mıknatısların ve akım geçen tellerin çevresinde manyetik alan oluşur. Manyetik alan çizgileri mıknatısın dışında N kutbundan S kutbuna doğrudur. Dünya da büyük bir mıknatıs gibi davranır; pusula bu sayede yön gösterir.\n\nAkım geçen düz telin manyetik alanı: Tel çevresinde çembersel çizgiler oluşur. Yönü sağ el kuralıyla bulunur: Başparmak akım yönünü gösterirse diğer parmaklar alan yönünü gösterir.\nB = 2 · 10⁻⁷ · I / d\n\nAkım geçen bobin (selenoid), bir çubuk mıknatıs gibi davranır. İçine demir çekirdek konursa elektromıknatıs elde edilir; akım kesilince mıknatıslık özelliği kaybolur. Hurdalık vinçleri, zil ve hoparlörlerde kullanılır.\n\nManyetik kuvvet:\nManyetik alandaki akım geçen tele: F = B · I · L (tel alana dik ise).\nManyetik alanda hareket eden yüklü taneciğe: F = q · v · B.\nElektrik motorları bu kuvvetle çalışır.",
+   "q": "Elektromıknatısın sıradan bir mıknatısa göre en önemli üstünlüğü hangisidir?",
+   "choices": [
+    "Kutuplarının olmaması",
+    "Dünya'nın manyetik alanını değiştirmesi",
+    "Hiç elektrik harcamaması",
+    "Manyetik özelliğinin akımla açılıp kapatılabilmesi ve şiddetinin ayarlanabilmesi",
+    "Yalnızca plastiği çekmesi"
+   ],
+   "answer": 3,
+   "explain": "Elektromıknatısın mıknatıslığı akım varken oluşur, akım kesilince kaybolur ve akım şiddetiyle ayarlanabilir."
+  },
+  {
+   "title": "İndüksiyon Akımı",
+   "text": "Michael Faraday, bir iletken halkadan geçen manyetik akı değiştiğinde halkada akım oluştuğunu keşfetti. Bu akıma indüksiyon akımı denir.\n\nManyetik akı: Bir yüzeyden geçen manyetik alan çizgilerinin miktarıdır. Φ = B · A · cos θ\n\nİndüksiyon akımı oluşturmanın yolları:\nBobine mıknatıs yaklaştırmak ya da uzaklaştırmak.\nManyetik alanın şiddetini değiştirmek.\nHalkayı manyetik alanda döndürmek.\nMıknatıs ve bobin birlikte durursa akı değişmediği için akım oluşmaz.\n\nFaraday Yasası: İndüksiyon emk'sı akının değişim hızıyla orantılıdır. Mıknatıs ne kadar hızlı hareket ettirilirse akım o kadar büyük olur.\n\nLenz Kuralı: İndüksiyon akımı, kendisini oluşturan akı değişimine karşı koyacak yöndedir.\n\nUygulamalar: Elektrik santrallerindeki jeneratörler (dinamo), bisiklet dinamosu, indüksiyonlu ocaklar, kablosuz şarj cihazları.",
+   "q": "Bir bobin içinde duran bir mıknatıs varken bobinde indüksiyon akımı oluşmamasının nedeni nedir?",
+   "choices": [
+    "Mıknatısın çok güçlü olması",
+    "Bobinden geçen manyetik akının değişmemesi",
+    "Bobinin direncinin sıfır olması",
+    "Mıknatısın kutuplarının olmaması",
+    "Havanın yalıtkan olması"
+   ],
+   "answer": 1,
+   "explain": "İndüksiyon akımı için manyetik akının değişmesi gerekir. Mıknatıs ve bobin hareketsizse akı sabittir, akım oluşmaz."
+  },
+  {
+   "title": "Transformatörler",
+   "text": "Transformatör, alternatif akımın gerilimini artırmaya ya da azaltmaya yarayan araçtır. Ortak bir demir çekirdek üzerine sarılmış iki bobinden oluşur: birincil (primer) ve ikincil (sekonder) bobin.\n\nBirincil bobindeki alternatif akım, demir çekirdekte sürekli değişen bir manyetik akı oluşturur. Bu akı ikincil bobinde indüksiyon gerilimi oluşturur. Bu yüzden transformatörler yalnızca alternatif akımla çalışır.\n\nV₁ / V₂ = N₁ / N₂\nN: sarım sayısı.\nYükseltici transformatör: N₂ > N₁, gerilim artar.\nAlçaltıcı transformatör: N₂ < N₁, gerilim azalır.\n\nİdeal transformatörde güç korunur: V₁ · I₁ = V₂ · I₂. Gerilim artarsa akım azalır.\n\nElektrik santrallerinde gerilim yüz binlerce volta yükseltilir; böylece akım küçülür ve iletim hatlarındaki ısı kaybı azalır. Şehirlere gelince gerilim alçaltılarak evlere 220 V verilir. Telefon şarj aletleri de alçaltıcı transformatör içerir.",
+   "q": "Birincil bobini 1000 sarım, ikincil bobini 50 sarım olan ideal bir transformatörün birincil bobinine 220 V uygulanıyor. İkincil bobinin gerilimi kaç volttur?",
+   "choices": [
+    "22",
+    "110",
+    "4400",
+    "4,4",
+    "11"
+   ],
+   "answer": 4,
+   "explain": "V₂ = V₁ · N₂ / N₁ = 220 · 50 / 1000 = 11 V."
+  }
+ ],
+ "Optik": [
+  {
+   "title": "Işık Şiddeti, Işık Akısı ve Aydınlanma",
+   "text": "Işık şiddeti (I): Bir ışık kaynağının birim zamanda yaydığı ışık enerjisinin ölçüsüdür. Birimi kandela (cd).\n\nIşık akısı (Φ): Bir yüzeyden birim zamanda geçen ışık miktarıdır. Birimi lümen (lm). Noktasal bir kaynağın toplam ışık akısı Φ = 4π · I'dır.\n\nAydınlanma şiddeti (E): Birim yüzeye düşen ışık akısıdır. Birimi lüks (lx = lm/m²).\nE = I · cos α / d²\nd: kaynağın yüzeye uzaklığı, α: ışınların yüzey normaliyle yaptığı açı.\n\nSonuçlar:\nKaynak uzaklaştıkça aydınlanma uzaklığın karesiyle azalır. Uzaklık 2 katına çıkarsa aydınlanma 4'te 1'ine düşer.\nIşık yüzeye dik geldiğinde (α = 0°) aydınlanma en büyüktür. Kutuplara güneş ışınlarının eğik gelmesi bu yüzden daha az ısınmaya yol açar.\n\nOkuma ve çalışma ortamlarında yeterli aydınlanma göz sağlığı için önemlidir.",
+   "q": "Bir lamba masadan 1 m yükseklikteyken masadaki aydınlanma E'dir. Lamba 2 m yüksekliğe çıkarılırsa aydınlanma ne olur?",
+   "choices": [
+    "E",
+    "E/2",
+    "E/4",
+    "4E",
+    "2E"
+   ],
+   "answer": 2,
+   "explain": "Aydınlanma uzaklığın karesiyle ters orantılıdır: uzaklık 2 katına çıkınca aydınlanma E/4 olur."
+  },
+  {
+   "title": "Düzlem Aynalar",
+   "text": "Yansıma kanunları:\n1. Gelen ışın, yüzeyin normali ve yansıyan ışın aynı düzlemdedir.\n2. Gelme açısı yansıma açısına eşittir (açılar normalle ölçülür).\n\nDüzgün yansıma pürüzsüz yüzeylerde (ayna), dağınık yansıma pürüzlü yüzeylerde (duvar, kâğıt) olur. Etrafımızdaki cisimleri her yönden görebilmemiz dağınık yansıma sayesindedir.\n\nDüzlem aynada görüntünün özellikleri:\nGörüntü sanaldır (aynanın arkasında oluşur, perdeye düşürülemez).\nGörüntü cisimle aynı boydadır ve düzdür.\nCismin aynaya uzaklığı, görüntünün aynaya uzaklığına eşittir.\nSağ-sol yer değiştirir (ambulans yazısının ters yazılması bu yüzdendir).\n\nAralarında açı olan iki düzlem aynada görüntü sayısı: n = 360 / α − 1 (360/α tam sayı ise).\nTam boyunu görmek için gereken ayna boyu, kişinin boyunun yarısıdır.",
+   "q": "Düzlem aynadan 3 m uzakta duran bir öğrenci aynaya 1 m yaklaşırsa öğrenci ile görüntüsü arasındaki uzaklık kaç metre olur?",
+   "choices": [
+    "4",
+    "5",
+    "6",
+    "2",
+    "3"
+   ],
+   "answer": 0,
+   "explain": "Öğrenci aynaya 2 m uzaklıkta olur; görüntü de aynanın 2 m arkasındadır. Aradaki uzaklık 2 + 2 = 4 m."
+  },
+  {
+   "title": "Küresel Aynalar",
+   "text": "Küresel aynalar, bir kürenin parçası biçimindeki yansıtıcı yüzeylerdir.\n\nÇukur (içbükey) ayna: Yansıtıcı yüzey kürenin içidir. Asal eksene paralel gelen ışınlar odak noktasında toplanır (toplayıcı ayna).\nKullanım: Araba farları, el fenerleri, diş hekimi aynası, güneş ocakları, teleskoplar.\nCisim odak ile ayna arasındaysa görüntü düz, büyük ve sanaldır (makyaj aynası).\nCisim odağın dışındaysa görüntü ters ve gerçektir.\n\nTümsek (dışbükey) ayna: Yansıtıcı yüzey kürenin dışıdır. Paralel ışınlar odaktan geliyormuş gibi dağılır (dağıtıcı ayna).\nGörüntü her zaman düz, cisimden küçük ve sanaldır.\nGeniş bir alanı gösterdiği için araç yan aynalarında, mağaza güvenlik aynalarında ve kör virajlarda kullanılır.\n\nAyna denklemi: 1/f = 1/dc + 1/dg. Odak uzaklığı f = r / 2 (r: eğrilik yarıçapı).",
+   "q": "Kör virajlarda ve araç yan aynalarında geniş bir alanı görebilmek için hangi ayna kullanılır?",
+   "choices": [
+    "Prizma",
+    "Düzlem ayna",
+    "Çukur ayna",
+    "Tümsek ayna",
+    "Yarı saydam ayna"
+   ],
+   "answer": 3,
+   "explain": "Tümsek ayna dağıtıcıdır ve küçük, düz görüntüler oluşturarak geniş bir görüş alanı sağlar."
+  },
+  {
+   "title": "Kırılma",
+   "text": "Işığın bir saydam ortamdan başka bir saydam ortama geçerken doğrultusunu değiştirmesine kırılma denir. Kırılmanın nedeni ışığın farklı ortamlarda farklı hızla yayılmasıdır.\n\nKırılma indisi: n = c / v. Işığın boşluktaki hızının (c) ortamdaki hızına oranıdır. Havanın kırılma indisi yaklaşık 1, suyunki 1,33, camınki 1,5'tir.\n\nSnell Yasası: n₁ · sin θ₁ = n₂ · sin θ₂\n\nIşık az yoğun ortamdan çok yoğun ortama geçerken (hava → su) yavaşlar ve normale yaklaşarak kırılır.\nÇok yoğun ortamdan az yoğun ortama geçerken (su → hava) hızlanır ve normalden uzaklaşır.\nNormal doğrultusunda gelen ışık kırılmadan geçer.\n\nTam yansıma: Işık çok yoğundan az yoğun ortama geçerken gelme açısı sınır açısını aşarsa ışık hiç kırılmaz, tamamen yansır.\n\nGünlük örnekler: Suya batırılmış kalemin kırık görünmesi, serap, gökkuşağı.",
+   "q": "Işık havadan suya eğik olarak geçerken ne olur?",
+   "choices": [
+    "Hızlanır ve normalden uzaklaşır.",
+    "Yavaşlar ve normale yaklaşır.",
+    "Hızı ve doğrultusu değişmez.",
+    "Tamamen yansır.",
+    "Frekansı artar."
+   ],
+   "answer": 1,
+   "explain": "Su havaya göre daha yoğun bir ortamdır; ışık yavaşlar ve normale yaklaşarak kırılır."
+  },
+  {
+   "title": "Görünür Derinlik",
+   "text": "Su içindeki bir cisme dışarıdan bakıldığında cisim olduğundan daha yakında (daha sığda) görünür. Bunun nedeni, cisimden gelen ışınların sudan havaya geçerken normalden uzaklaşarak kırılmasıdır. Göz, ışınların geldiği doğrultunun uzantısında cismi görür.\n\nNormale yakın bakışta:\nGörünür derinlik = gerçek derinlik · (n gözlemci ortamı / n cismin ortamı)\nHavadan suya bakışta: h' = h · 1 / 1,33 ≈ 3h/4\n\nÖrneğin 4 m derinliğindeki bir havuzun tabanı yukarıdan yaklaşık 3 m derinlikte görünür. Bu yüzden havuzlar olduklarından sığ görünür ve yüzme bilmeyenler için tehlike oluşturabilir.\n\nTersi durumda: Sudaki bir balık, havadaki bir kuşu olduğundan daha uzakta görür.",
+   "q": "Gerçek derinliği 2 m olan bir havuzun tabanı, yukarıdan dik bakıldığında yaklaşık kaç metre derinlikte görünür? (n(su) = 4/3, n(hava) = 1)",
+   "choices": [
+    "2",
+    "2,5",
+    "2,67",
+    "1",
+    "1,5"
+   ],
+   "answer": 4,
+   "explain": "Görünür derinlik = 2 · (1 / (4/3)) = 2 · 3/4 = 1,5 m."
+  },
+  {
+   "title": "Fiber Optik",
+   "text": "Fiber optik kablolar, ışığı tam yansıma ilkesiyle bir uçtan diğerine çok az kayıpla taşıyan ince cam ya da plastik liflerdir.\n\nYapısı: Kırılma indisi büyük bir çekirdek ve onu saran, kırılma indisi daha küçük bir kaplama (yansıtıcı tabaka). Işık çekirdekte ilerlerken kaplamaya sınır açısından büyük açıyla çarptığı için tamamen yansır ve kablo bükülse bile dışarı çıkmadan ilerler.\n\nKullanım alanları:\nİletişim: İnternet ve telefon sinyallerini çok yüksek hızda, uzun mesafelere taşır. Okyanus altındaki internet kabloları fiber optiktir.\nTıp: Endoskopi ve kapalı ameliyatlarda vücudun içini görmek için kullanılır.\nAydınlatma ve dekorasyon.\n\nBakır kablolara göre üstünlükleri: Daha fazla veri taşır, daha hafiftir, elektromanyetik parazitten etkilenmez, sinyal kaybı azdır.",
+   "q": "Fiber optik kablolarda ışığın kablo bükülse bile dışarı çıkmadan ilerlemesini sağlayan olay hangisidir?",
+   "choices": [
+    "Girişim",
+    "Dağınık yansıma",
+    "Tam yansıma",
+    "Kırınım",
+    "Soğurma"
+   ],
+   "answer": 2,
+   "explain": "Işık, kırılma indisi büyük çekirdekten küçük olan kaplamaya sınır açısından büyük açıyla çarptığı için tam yansımaya uğrar."
+  },
+  {
+   "title": "Prizmalar",
+   "text": "Prizma, ışığı kıran saydam, geometrik bir cisimdir. Işık prizmaya girerken ve çıkarken iki kez kırılır ve tabana doğru sapar.\n\nRenklerine ayrılma (dispersiyon): Beyaz ışık bir prizmadan geçince renklerine ayrılır: kırmızı, turuncu, sarı, yeşil, mavi, lacivert, mor. Bunun nedeni, camın kırılma indisinin her renk için farklı olmasıdır.\nMor ışığın kırılma indisi en büyüktür, en çok sapar.\nKırmızı ışığın kırılma indisi en küçüktür, en az sapar.\n\nNewton, beyaz ışığın renklerin karışımı olduğunu prizma deneyleriyle göstermiştir.\n\nGökkuşağı: Güneş ışığının yağmur damlalarında kırılması, yansıması ve renklerine ayrılmasıyla oluşur; her damla küçük bir prizma gibi davranır.\n\nTam yansımalı prizmalar: 45°-45°-90° prizmalar ışığı 90° ya da 180° döndürür. Periskoplarda ve dürbünlerde ayna yerine kullanılır.",
+   "q": "Beyaz ışık cam prizmadan geçerken renklerine ayrıldığında en çok sapan renk hangisidir?",
+   "choices": [
+    "Mor",
+    "Kırmızı",
+    "Sarı",
+    "Yeşil",
+    "Mavi"
+   ],
+   "answer": 0,
+   "explain": "Camın kırılma indisi mor ışık için en büyüktür; bu yüzden mor ışık en çok kırılır ve sapar."
+  },
+  {
+   "title": "Mercekler",
+   "text": "Mercekler, ışığı kırarak görüntü oluşturan saydam cisimlerdir.\n\nİnce kenarlı (yakınsak) mercek: Ortası kalın, kenarları incedir. Paralel ışınları odakta toplar.\nCisim odak ile mercek arasındaysa görüntü düz, büyük ve sanaldır: Büyüteç.\nCisim odak dışındaysa görüntü ters ve gerçektir: Fotoğraf makinesi, göz merceği, projeksiyon.\nHipermetrop (yakını göremeyen) gözlerde ince kenarlı mercek kullanılır.\n\nKalın kenarlı (ıraksak) mercek: Ortası ince, kenarları kalındır. Paralel ışınları dağıtır.\nGörüntü her zaman düz, küçük ve sanaldır.\nMiyop (uzağı göremeyen) gözlerde kalın kenarlı mercek kullanılır.\n\nMercek denklemi: 1/f = 1/dc + 1/dg\nMerceğin gücü (yakınsaklık): P = 1/f (birimi diyoptri, f metre cinsinden). Gözlük numarası diyoptridir.\n\nMikroskop ve teleskop birden fazla mercek kullanılarak yapılır.",
+   "q": "Uzaktaki cisimleri net göremeyen miyop bir kişinin gözlüğünde hangi tür mercek kullanılır?",
+   "choices": [
+    "Çukur ayna",
+    "Prizma",
+    "İnce kenarlı mercek",
+    "Kalın kenarlı mercek",
+    "Düzlem ayna"
+   ],
+   "answer": 3,
+   "explain": "Miyopta görüntü retinanın önünde oluşur. Kalın kenarlı (ıraksak) mercek ışınları dağıtarak görüntünün retinaya düşmesini sağlar."
+  }
+ ]
+}

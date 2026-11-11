@@ -1,0 +1,262 @@
+{
+ "Kuvvet ve Hareket": [
+  {
+   "title": "Sabit Hızlı Hareket",
+   "text": "Bir cisim eşit zaman aralıklarında eşit yollar alıyor ve yönünü değiştirmiyorsa sabit hızlı (düzgün doğrusal) hareket yapar. Bu harekette ivme sıfırdır, yani cisme etki eden net kuvvet sıfırdır.\n\nTemel bağıntı: x = v · t (yer değiştirme = hız × zaman)\n\nGrafikler:\nKonum-zaman grafiği eğik bir doğrudur; doğrunun eğimi hızı verir.\nHız-zaman grafiği yatay bir doğrudur; grafiğin altındaki alan yer değiştirmeyi verir.\n\nSürat ile hız farklıdır: sürat skalerdir (yalnızca büyüklük), hız vektöreldir (büyüklük ve yön). Örneğin bir pistte tam tur atan koşucunun yer değiştirmesi ve ortalama hızı sıfırdır ama ortalama sürati sıfır değildir.",
+   "q": "Sabit 20 m/s hızla giden bir araç 3 dakikada kaç metre yol alır?",
+   "choices": [
+    "1200",
+    "3600",
+    "6000",
+    "60",
+    "600"
+   ],
+   "answer": 1,
+   "explain": "3 dakika = 180 s. x = v · t = 20 · 180 = 3600 m."
+  },
+  {
+   "title": "Bir Boyutta Sabit İvmeli Hareket",
+   "text": "İvme, hızın birim zamandaki değişimidir: a = Δv / Δt (birimi m/s²). İvme sabitse hız her saniye aynı miktarda değişir.\n\nDenklemler (ilk hız v₀):\nv = v₀ + a · t\nx = v₀ · t + ½ · a · t²\nv² = v₀² + 2 · a · x\n\nHız ile ivme aynı yöndeyse cisim hızlanır, zıt yöndeyse yavaşlar.\n\nGrafikler:\nHız-zaman grafiğinin eğimi ivmeyi, altındaki alan yer değiştirmeyi verir.\nİvme-zaman grafiğinin altındaki alan hız değişimini verir.\n\nSerbest düşme de sabit ivmeli bir harekettir: hava direnci ihmal edilirse ivme g ≈ 10 m/s²'dir.",
+   "q": "Durgun hâlden 4 m/s² sabit ivmeyle hızlanan bir cisim 5 saniyede kaç metre yol alır?",
+   "choices": [
+    "100",
+    "10",
+    "20",
+    "40",
+    "50"
+   ],
+   "answer": 4,
+   "explain": "v₀ = 0 olduğundan x = ½ · a · t² = ½ · 4 · 25 = 50 m."
+  }
+ ],
+ "Enerji": [
+  {
+   "title": "İş, Enerji ve Güç",
+   "text": "Fizikte iş yapılması için cisme kuvvet uygulanması ve cismin kuvvet doğrultusunda yer değiştirmesi gerekir:\nW = F · Δx (birimi joule, J)\n\nKuvvet hareket yönüne dik ise iş yapılmaz. Örneğin elinde çantayla yatay yürüyen kişi, çantayı yukarı doğru tuttuğu için çantaya fiziksel anlamda iş yapmaz.\n\nEnerji, iş yapabilme yeteneğidir; birimi de joule'dür. Bir cisme iş yapıldığında enerjisi değişir.\n\nGüç, birim zamanda yapılan iştir:\nP = W / t (birimi watt, W)\nAynı işi daha kısa sürede yapan makine daha güçlüdür.",
+   "q": "Bir işçi 50 N'luk kuvvetle bir kasayı kuvvet doğrultusunda 8 m itiyor ve bunu 20 saniyede yapıyor. İşçinin gücü kaç watt'tır?",
+   "choices": [
+    "2,5",
+    "10",
+    "20",
+    "40",
+    "400"
+   ],
+   "answer": 2,
+   "explain": "W = 50 · 8 = 400 J. P = W / t = 400 / 20 = 20 W."
+  },
+  {
+   "title": "Enerji Biçimleri",
+   "text": "Enerji farklı biçimlerde bulunur ve bir biçimden diğerine dönüşebilir:\n\nKinetik enerji: hareket enerjisi.\nPotansiyel enerji: konum ya da şekil değişikliğinden gelen depolanmış enerji (çekim, esneklik).\nIsı ve iç enerji: taneciklerin hareketi.\nKimyasal enerji: besinler, yakıtlar, piller.\nElektrik enerjisi, ışık enerjisi, ses enerjisi, nükleer enerji.\n\nEnerji yoktan var edilemez, var olan enerji yok edilemez; yalnızca dönüşür. Bu, enerjinin korunumudur.\n\nÖrnekler: Pil ile çalışan el fenerinde kimyasal → elektrik → ışık (ve bir miktar ısı). Hidroelektrik santralde suyun potansiyel enerjisi → kinetik → elektrik enerjisine dönüşür.",
+   "q": "Bir bisiklet dinamosuyla yanan lambada gerçekleşen enerji dönüşümü hangisidir?",
+   "choices": [
+    "Kinetik → elektrik → ışık",
+    "Elektrik → kinetik → ışık",
+    "Isı → elektrik → ışık",
+    "Nükleer → elektrik → ışık",
+    "Kimyasal → ışık"
+   ],
+   "answer": 0,
+   "explain": "Pedal çevrildikçe tekerleğin hareket (kinetik) enerjisi dinamoda elektriğe, lambada da ışığa dönüşür."
+  },
+  {
+   "title": "Mekanik Enerji",
+   "text": "Mekanik enerji, kinetik ve potansiyel enerjinin toplamıdır.\n\nKinetik enerji: Eₖ = ½ · m · v²\nKütle 2 katına çıkarsa Eₖ 2 kat, hız 2 katına çıkarsa Eₖ 4 kat artar.\n\nÇekim potansiyel enerjisi: Eₚ = m · g · h\nCisim ne kadar yüksekteyse o kadar çok enerji depolar.\n\nSürtünme yoksa mekanik enerji korunur: Eₖ + Eₚ = sabit. Yüksekten bırakılan bir top düşerken potansiyel enerjisi azalır, kinetik enerjisi aynı miktarda artar.\n\nSürtünme varsa mekanik enerjinin bir kısmı ısıya dönüşür; toplam enerji yine korunur ama mekanik enerji azalır.",
+   "q": "Sürtünmesiz ortamda 20 m yükseklikten serbest bırakılan bir cisim yere çarptığında hızı kaç m/s olur? (g = 10 m/s²)",
+   "choices": [
+    "200",
+    "10",
+    "14",
+    "20",
+    "40"
+   ],
+   "answer": 3,
+   "explain": "m · g · h = ½ · m · v² → v² = 2 · 10 · 20 = 400 → v = 20 m/s."
+  },
+  {
+   "title": "Enerji Kaynakları",
+   "text": "Enerji kaynakları ikiye ayrılır:\n\nYenilenemez kaynaklar: Kömür, petrol, doğal gaz (fosil yakıtlar) ve nükleer yakıtlar. Oluşmaları milyonlarca yıl sürer, kullandıkça tükenirler. Fosil yakıtlar yanınca karbondioksit açığa çıkar ve küresel ısınmaya katkı yapar.\n\nYenilenebilir kaynaklar: Güneş, rüzgâr, hidroelektrik (su), jeotermal, biyokütle, dalga ve gel-git enerjisi. Doğada kendini yeniler, çevreye daha az zarar verir. Ancak bazıları hava koşullarına bağlıdır (güneş geceleri, rüzgâr rüzgârsız günlerde üretim yapmaz).\n\nTürkiye; güneş (özellikle Güneydoğu ve Akdeniz), rüzgâr (Ege ve Marmara kıyıları) ve jeotermal (Denizli, Aydın) açısından zengin bir ülkedir. Enerjiyi verimli kullanmak da bir enerji kaynağı kadar önemlidir.",
+   "q": "Aşağıdakilerden hangisi yenilenebilir enerji kaynağıdır?",
+   "choices": [
+    "Linyit kömürü",
+    "Jeotermal",
+    "Petrol",
+    "Uranyum",
+    "Doğal gaz"
+   ],
+   "answer": 1,
+   "explain": "Jeotermal enerji yer altındaki ısıdan gelir ve sürekli yenilenir; diğerleri tükenen kaynaklardır."
+  }
+ ],
+ "Elektrik": [
+  {
+   "title": "Basit Elektrik Devreleri",
+   "text": "Bir elektrik devresinin temel elemanları: üreteç (pil), iletken kablolar, anahtar ve alıcı (lamba, direnç, motor).\n\nDevre kapalıysa (anahtar kapalı, kopukluk yok) akım geçer ve alıcı çalışır. Devre açıksa akım geçmez.\n\nKısa devre: Akımın alıcıya uğramadan dirençsiz bir yoldan geçmesidir. Akım her zaman dirençsiz yolu tercih ettiği için kısa devre yapılan lamba söner. Üretecin uçları doğrudan bağlanırsa çok büyük akım geçer, pil ısınır ve tehlike oluşur.\n\nDevre şemalarında her eleman bir sembolle gösterilir: pil uzun ve kısa çizgilerle, direnç zikzak ya da dikdörtgenle, lamba içi çarpılı daireyle.",
+   "q": "Bir devrede iki lambadan birinin uçları iletken bir telle birleştiriliyor. Bu lamba için ne olur?",
+   "choices": [
+    "Parlaklığı değişmez.",
+    "Diğer lamba söner.",
+    "Pil hemen biter.",
+    "Daha parlak yanar.",
+    "Kısa devre olur ve söner."
+   ],
+   "answer": 4,
+   "explain": "Akım dirençsiz telden geçer, lambadan akım geçmez; lamba kısa devre olmuştur ve söner."
+  },
+  {
+   "title": "Elektrik Akımı",
+   "text": "Elektrik akımı, bir iletkenin kesitinden birim zamanda geçen yük miktarıdır:\nI = q / t (birimi amper, A)\n\nMetallerde akımı serbest elektronlar taşır. Elektronlar üretecin (−) kutbundan (+) kutbuna hareket eder, ancak geleneksel olarak akım yönü (+)'dan (−)'ye doğru kabul edilir.\n\nAkımı ölçmek için ampermetre kullanılır ve devreye seri bağlanır. Potansiyel farkı (gerilimi) ölçmek için voltmetre kullanılır ve ölçülecek elemana paralel bağlanır.\n\nİdeal ampermetrenin direnci sıfır, ideal voltmetrenin direnci sonsuz kabul edilir.",
+   "q": "Bir iletkenin kesitinden 2 dakikada 240 C yük geçiyor. Akım şiddeti kaç amperdir?",
+   "choices": [
+    "480",
+    "0,5",
+    "2",
+    "4",
+    "120"
+   ],
+   "answer": 2,
+   "explain": "t = 120 s. I = q / t = 240 / 120 = 2 A."
+  },
+  {
+   "title": "Ohm Yasası",
+   "text": "Bir iletkenin uçları arasındaki potansiyel farkı ile içinden geçen akım doğru orantılıdır. Oran direnci verir:\nV = I · R (V volt, I amper, R ohm)\n\nDirenç, iletkenin akıma karşı gösterdiği zorluktur ve şunlara bağlıdır:\nR = ρ · L / A\nρ: maddenin öz direnci (cinsi)\nL: iletkenin boyu (boy artarsa direnç artar)\nA: kesit alanı (kalınlaşırsa direnç azalır)\n\nSıcaklık da metallerde direnci artırır. Gerilim-akım grafiği orijinden geçen bir doğruysa eğimi direnci verir.",
+   "q": "Direnci 6 Ω olan bir iletkenin uçları arasına 24 V'luk gerilim uygulanıyor. İletkenden geçen akım kaç amperdir?",
+   "choices": [
+    "4",
+    "18",
+    "144",
+    "0,25",
+    "2"
+   ],
+   "answer": 0,
+   "explain": "I = V / R = 24 / 6 = 4 A."
+  },
+  {
+   "title": "Dirençlerin Bağlanması",
+   "text": "Seri bağlama: Dirençler art arda, tek bir yol üzerindedir.\nEşdeğer direnç: Rₑ = R₁ + R₂ + ...\nHer dirençten aynı akım geçer, gerilim dirençlerle orantılı paylaşılır.\n\nParalel bağlama: Dirençler aynı iki nokta arasına bağlanır.\nEşdeğer direnç: 1/Rₑ = 1/R₁ + 1/R₂ + ...\nHer direncin uçları arasındaki gerilim aynıdır, akım dirençle ters orantılı paylaşılır.\n\nKısa yol: İki paralel direnç için Rₑ = R₁ · R₂ / (R₁ + R₂). Eşit n tane R paralel bağlıysa Rₑ = R / n.\n\nEvlerdeki prizler paralel bağlıdır; böylece her cihaz aynı gerilimi alır ve biri bozulunca diğerleri çalışmaya devam eder.",
+   "q": "3 Ω ve 6 Ω'luk iki direnç paralel bağlanıyor, bu ikiliye 4 Ω'luk bir direnç seri bağlanıyor. Eşdeğer direnç kaç Ω'dur?",
+   "choices": [
+    "13",
+    "2",
+    "4",
+    "6",
+    "9"
+   ],
+   "answer": 3,
+   "explain": "Paralel kısım: 3 · 6 / (3 + 6) = 2 Ω. Seri eklenen 4 Ω ile: 2 + 4 = 6 Ω."
+  },
+  {
+   "title": "Üreteçlerin Bağlanması",
+   "text": "Üreteçler (piller) de seri ya da paralel bağlanabilir.\n\nSeri bağlama: Bir pilin (+) ucu diğerinin (−) ucuna bağlanır. Toplam gerilim pillerin gerilimleri toplamıdır: 1,5 V'luk 3 pil seri bağlanırsa 4,5 V elde edilir. Lambalar daha parlak yanar ama piller daha çabuk biter.\n\nTers bağlanan pil: Bir pil ters çevrilirse gerilimi toplamdan çıkarılır.\n\nParalel bağlama: Aynı kutuplar birbirine bağlanır. Özdeş pillerde toplam gerilim tek bir pilin gerilimine eşittir, ama piller daha uzun süre dayanır.\n\nUzaktan kumandalarda pillerin seri bağlanması, cihazın ihtiyaç duyduğu gerilimi sağlamak içindir.",
+   "q": "Gerilimleri 1,5 V olan dört özdeş pilden üçü düz, biri ters yönde seri bağlanıyor. Toplam gerilim kaç volttur?",
+   "choices": [
+    "1,5",
+    "3",
+    "4,5",
+    "6",
+    "0"
+   ],
+   "answer": 1,
+   "explain": "Düz bağlı üç pil 4,5 V verir, ters bağlı pil 1,5 V çıkarır: 4,5 − 1,5 = 3 V."
+  },
+  {
+   "title": "Topraklamanın Önemi",
+   "text": "Elektrikli cihazların metal gövdesine, bir arıza sonucu elektrik kaçabilir. Bu durumda gövdeye dokunan kişinin vücudu üzerinden akım toprağa geçer ve elektrik çarpması yaşanır.\n\nTopraklama, cihazın metal gövdesini topraklı prizdeki üçüncü bir hatla toprağa bağlamaktır. Böylece kaçak akım, direnci çok küçük olan topraklama hattından toprağa akar; insan vücudundan geçmez.\n\nÇamaşır makinesi, buzdolabı, fırın gibi metal gövdeli cihazlar mutlaka topraklı prize takılmalıdır. Evlerde kullanılan kaçak akım rölesi de topraklamayla birlikte çalışarak hayat kurtarır.\n\nYıldırımdan korunmak için binalara yerleştirilen paratonerler de yükü toprağa ileten bir topraklama sistemidir.",
+   "q": "Çamaşır makinesinin topraklı prize takılmasının temel amacı nedir?",
+   "choices": [
+    "Makinenin daha hızlı çalışmasını sağlamak",
+    "Gerilimi artırmak",
+    "Prizdeki akımı artırmak",
+    "Daha az elektrik harcamasını sağlamak",
+    "Gövdeye kaçan akımı insan yerine toprağa iletmek"
+   ],
+   "answer": 4,
+   "explain": "Topraklama hattının direnci çok küçük olduğundan kaçak akım bu yoldan toprağa gider; gövdeye dokunan kişi çarpılmaz."
+  }
+ ],
+ "Dalgalar": [
+  {
+   "title": "Periyodik Hareketler",
+   "text": "Kendini eşit zaman aralıklarıyla tekrarlayan harekete periyodik hareket denir. Saatin sarkacı, salıncak, kalp atışı, Dünya'nın Güneş etrafında dolanması periyodik hareketlerdir.\n\nPeriyot (T): Bir tam salınımın süresi (saniye).\nFrekans (f): Birim zamandaki salınım sayısı (hertz, Hz).\nİkisi birbirinin tersidir: f = 1 / T\n\nÖrneğin bir sarkaç 1 dakikada 30 tam salınım yapıyorsa frekansı 30/60 = 0,5 Hz, periyodu 2 s'dir.\n\nGenlik, denge konumundan en uzak noktaya olan uzaklıktır. Basit sarkaçta periyot genliğe değil, ipin boyuna ve yer çekimi ivmesine bağlıdır.",
+   "q": "Frekansı 4 Hz olan bir yayın periyodu kaç saniyedir?",
+   "choices": [
+    "4",
+    "8",
+    "0,25",
+    "0,5",
+    "2"
+   ],
+   "answer": 2,
+   "explain": "T = 1 / f = 1 / 4 = 0,25 s."
+  },
+  {
+   "title": "Dalgaların Temel Kavramları",
+   "text": "Dalga, enerjinin bir yerden başka bir yere madde taşınmadan aktarılmasıdır. Denizdeki bir şamandıra dalga geçerken yalnızca aşağı yukarı hareket eder, dalgayla birlikte sürüklenmez.\n\nTemel kavramlar:\nDalga boyu (λ): Art arda iki tepe (ya da iki çukur) arasındaki uzaklık.\nGenlik: Denge konumundan tepeye olan uzaklık; dalganın taşıdığı enerjiyle ilgilidir.\nFrekans (f): Kaynağın saniyedeki titreşim sayısı.\nPeriyot (T): Bir dalga boyunun oluşma süresi.\n\nDalga denklemi: v = λ · f\nDalganın frekansını kaynak belirler; dalga bir ortamdan diğerine geçerken frekans değişmez.",
+   "q": "Frekansı 5 Hz, dalga boyu 40 cm olan bir dalganın yayılma sürati kaç cm/s'dir?",
+   "choices": [
+    "200",
+    "400",
+    "8",
+    "45",
+    "100"
+   ],
+   "answer": 0,
+   "explain": "v = λ · f = 40 · 5 = 200 cm/s."
+  },
+  {
+   "title": "Dalgaların Sınıflandırılması",
+   "text": "Dalgalar farklı ölçütlere göre sınıflandırılır:\n\nTitreşim doğrultusuna göre:\nEnine dalga: Ortam tanecikleri, dalganın yayılma doğrultusuna dik titreşir (ip dalgası, ışık).\nBoyuna dalga: Tanecikler yayılma doğrultusunda titreşir; sıkışma ve seyrelmeler oluşur (ses dalgası, yayda sıkıştırma).\n\nTaşıdığı enerjiye / ortam ihtiyacına göre:\nMekanik dalga: Yayılmak için maddesel ortam gerekir (ses, su, deprem dalgaları). Boşlukta yayılmaz.\nElektromanyetik dalga: Boşlukta da yayılır (ışık, radyo, X ışını).\n\nBoyutuna göre: ip dalgası tek, su dalgası iki, ses dalgası üç boyutludur.\n\nAyrıca tek bir dalgaya atma, sürekli dalgaya periyodik dalga denir.",
+   "q": "Uzay boşluğunda iki astronotun birbirini telsiz olmadan duyamamasının nedeni nedir?",
+   "choices": [
+    "Ses ışıktan hızlıdır.",
+    "Ses elektromanyetik bir dalgadır.",
+    "Ses enine bir dalgadır.",
+    "Ses mekanik bir dalgadır ve yayılmak için ortam gerekir.",
+    "Uzayda sesin frekansı çok yüksektir."
+   ],
+   "answer": 3,
+   "explain": "Ses mekanik dalgadır, boşlukta yayılamaz. Telsiz ise elektromanyetik dalga (radyo) kullanır."
+  },
+  {
+   "title": "Dalgaların Yayılma Süratini Etkileyen Etmenler",
+   "text": "Bir dalganın yayılma sürati kaynağa değil, ortamın özelliklerine bağlıdır.\n\nİp ve yay dalgalarında: Gergin ipte dalga daha hızlı ilerler. İp ne kadar gerginse ve birim uzunluğunun kütlesi ne kadar küçükse sürat o kadar büyüktür.\n\nSu dalgalarında: Derinlik arttıkça sürat artar. Sığ suda dalgalar yavaşlar.\n\nSes dalgalarında: Genellikle katılarda en hızlı, gazlarda en yavaştır. Sıcaklık arttıkça havada ses daha hızlı yayılır.\n\nÖnemli: Kaynağın frekansını artırmak sürati değiştirmez; v = λ · f bağıntısına göre frekans artınca dalga boyu küçülür, sürat aynı kalır.",
+   "q": "Aynı gerilmedeki bir ipte üretilen dalgaların frekansı iki katına çıkarılırsa ne olur?",
+   "choices": [
+    "Sürat iki katına çıkar.",
+    "Dalga boyu yarıya iner, sürat değişmez.",
+    "Dalga boyu iki katına çıkar.",
+    "Sürat yarıya iner.",
+    "Genlik iki katına çıkar."
+   ],
+   "answer": 1,
+   "explain": "Sürat ortama bağlıdır ve değişmez. v = λ · f sabit kaldığından f iki katına çıkınca λ yarıya iner."
+  },
+  {
+   "title": "Su Dalgalarında Yansıma ve Kırılma",
+   "text": "Yansıma: Dalga bir engele çarpınca geri döner. Gelme açısı yansıma açısına eşittir. Düz engelde düz dalga düz olarak yansır; çukur engelde dalga odakta toplanır.\n\nKırılma: Dalga bir ortamdan diğerine eğik geçerken yayılma doğrultusu değişir. Su dalgalarında ortam değişikliği derinlik değişikliğidir.\n\nDerin → sığ geçişte: Sürat azalır, dalga boyu kısalır, dalga normale yaklaşarak kırılır.\nSığ → derin geçişte: Sürat artar, dalga boyu uzar, dalga normalden uzaklaşır.\nHer iki durumda da frekans değişmez.\n\nKıyıya eğik gelen deniz dalgalarının kıyıya paralel hâle gelmesi kırılmanın günlük hayattaki örneğidir.",
+   "q": "Su dalgaları derin bölgeden sığ bölgeye geçerken hangi nicelik değişmez?",
+   "choices": [
+    "Yayılma doğrultusu",
+    "Hiçbiri değişmez",
+    "Sürat",
+    "Dalga boyu",
+    "Frekans"
+   ],
+   "answer": 4,
+   "explain": "Frekansı kaynak belirler, ortam değişse de değişmez. Sürat ve dalga boyu azalır, eğik gelişte doğrultu da değişir."
+  },
+  {
+   "title": "Rezonans ve Deprem",
+   "text": "Her cismin kendine özgü bir titreşim frekansı vardır (doğal frekans). Bir cisme dışarıdan bu frekansta titreşim uygulanırsa genlik giderek büyür. Buna rezonans denir.\n\nÖrnekler: Salıncağı doğru anlarda iterek yükseltmek, belirli bir notada kadehin kırılması, askerlerin köprüden geçerken adım uydurmaması.\n\nDeprem dalgaları da mekanik dalgalardır. P dalgaları boyuna ve en hızlıdır; S dalgaları enine ve daha yavaştır; en çok hasarı yüzey dalgaları verir.\n\nDeprem dalgasının frekansı bir binanın doğal frekansına yakınsa bina rezonansa girer ve hasar büyür. Bu yüzden mühendisler binaları zemine ve olası deprem frekanslarına göre tasarlar; sönümleyici ve deprem izolatörleri binanın salınımını azaltır.",
+   "q": "Bir depremde aynı mahalledeki binalardan yalnızca belli yükseklikteki binaların çok hasar görmesi en çok hangi kavramla açıklanır?",
+   "choices": [
+    "Yansıma",
+    "Kırılma",
+    "Rezonans",
+    "Kısa devre",
+    "Enerjinin korunumu"
+   ],
+   "answer": 2,
+   "explain": "Doğal frekansı deprem dalgalarının frekansına yakın olan binalar rezonansa girer, salınım genliği büyür ve hasar artar."
+  }
+ ]
+}

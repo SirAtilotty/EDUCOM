@@ -1,0 +1,368 @@
+{
+ "School Life & Education": [
+  {
+   "title": "Different Types of Schools",
+   "text": "Schools around the world are different. Some useful words:\n\nstate (public) school: free, run by the government\nprivate school: students' families pay fees\nboarding school: students live and sleep at school\nvocational school: students learn a job, like cooking or electronics\nsingle-sex / mixed school: only boys or only girls / boys and girls together\nhomeschooling: children learn at home\n\nLanguage focus, present simple for facts and routines:\nStudents at a boarding school live on campus.\nThe school day starts at 8.30.\nWe don't wear uniforms. Does your school have a library?\n\nRemember: he / she / it takes -s: She studies at a vocational school.",
+   "q": "Choose the correct sentence.",
+   "choices": [
+    "She goes to a boarding school in England.",
+    "She going to a boarding school in England.",
+    "She is go to a boarding school in England.",
+    "She goed to a boarding school in England.",
+    "She go to a boarding school in England."
+   ],
+   "answer": 0,
+   "explain": "Present simple with she: verb + -es. She goes to a boarding school."
+  },
+  {
+   "title": "Regular and Extracurricular Activities",
+   "text": "Regular activities are lessons in the timetable: maths, history, PE. Extracurricular activities happen outside normal lessons: clubs, school teams, the school choir, the drama club, robotics, volunteering.\n\nLanguage focus, frequency adverbs:\nalways (100%) - usually - often - sometimes - rarely - never (0%)\nThey come before the main verb but after be:\nI usually go to the chess club on Tuesdays.\nShe is always at the library after school.\n\nAsking about frequency:\nHow often do you play in the school team? Twice a week.\n\nUseful phrases: join a club, take part in a competition, be a member of the team.",
+   "q": "Put the adverb in the correct place: I / go / to the robotics club / on Fridays (usually).",
+   "choices": [
+    "I go to usually the robotics club on Fridays.",
+    "I go usually to the robotics club on Fridays.",
+    "Usually I go to the robotics club on Fridays usually.",
+    "I usually go to the robotics club on Fridays.",
+    "I go to the robotics club usually on Fridays usually."
+   ],
+   "answer": 3,
+   "explain": "Frequency adverbs come before the main verb: I usually go."
+  },
+  {
+   "title": "School Anxiety and Stress",
+   "text": "Many students feel stressed before exams or on the first day at a new school. Useful words: anxious, nervous, worried, stressed out, relaxed, confident, pressure, deadline.\n\nLanguage focus, giving advice with should / shouldn't:\nYou should get enough sleep before the exam.\nYou shouldn't study all night.\nYou should talk to your teacher or the school counsellor.\n\nOther ways to give advice:\nWhy don't you make a study plan?\nIt's a good idea to take short breaks.\n\nAfter should we use the base form of the verb: You should study (not: should to study, should studies).",
+   "q": "My friend is very nervous about tomorrow's exam. Which is the best advice?",
+   "choices": [
+    "You shouldn't sleep at all.",
+    "You should get some rest and review your notes.",
+    "You should studies all night.",
+    "You shouldn't to eat breakfast.",
+    "You should to stay up all night."
+   ],
+   "answer": 1,
+   "explain": "should + base verb, and the advice is sensible: You should get some rest and review your notes."
+  },
+  {
+   "title": "National Days and Celebrations",
+   "text": "Every country has national days. In Türkiye we celebrate:\n23 April, National Sovereignty and Children's Day\n19 May, Commemoration of Atatürk, Youth and Sports Day\n30 August, Victory Day\n29 October, Republic Day\n\nLanguage focus, prepositions of time:\non + days and dates: on 29 October, on Monday, on Republic Day\nin + months, years, seasons: in October, in 1923, in summer\nat + clock times and some holidays: at 9 o'clock, at the weekend (UK), at New Year\n\nUseful verbs: celebrate, decorate, wave flags, watch a parade, give a speech, perform a folk dance.",
+   "q": "Republic Day is celebrated ___ 29 October in Türkiye.",
+   "choices": [
+    "by",
+    "for",
+    "in",
+    "at",
+    "on"
+   ],
+   "answer": 4,
+   "explain": "We use on with dates: on 29 October."
+  }
+ ],
+ "Classroom Life & Learning": [
+  {
+   "title": "Learning Activities in the Classroom",
+   "text": "Classroom activities: group work, pair work, presentations, debates, projects, experiments, role-plays, quizzes, brainstorming.\n\nLanguage focus, present continuous for actions happening now:\nsubject + am / is / are + verb-ing\nLook! The students are doing an experiment.\nI am preparing a presentation at the moment.\nThey aren't listening. Is she taking notes?\n\nPresent simple vs present continuous:\nWe usually work in pairs (routine).\nToday we are working in groups (now / temporary).\n\nTime words for continuous: now, right now, at the moment, today, Look!, Listen!",
+   "q": "Be quiet! The teacher ___ the instructions now.",
+   "choices": [
+    "explain",
+    "explains",
+    "is explaining",
+    "explained",
+    "are explaining"
+   ],
+   "answer": 2,
+   "explain": "Now shows an action in progress: present continuous. The teacher is explaining."
+  },
+  {
+   "title": "Personal Learning Styles",
+   "text": "People learn in different ways:\nVisual learners learn best with pictures, charts, colours and mind maps.\nAuditory learners learn best by listening: podcasts, discussions, reading aloud.\nKinaesthetic learners learn best by doing: experiments, moving, building models.\n\nLanguage focus, talking about preferences:\nlike / love / enjoy / prefer / hate + verb-ing\nI enjoy drawing mind maps.\nShe prefers listening to podcasts.\nprefer A to B: I prefer working alone to working in a group.\n\nwould rather + base verb:\nI'd rather watch a video than read a long text.",
+   "q": "Ali learns best by building models and doing experiments. What kind of learner is he?",
+   "choices": [
+    "kinaesthetic",
+    "lazy",
+    "musical",
+    "visual",
+    "auditory"
+   ],
+   "answer": 0,
+   "explain": "Learning by doing and moving is the kinaesthetic learning style."
+  },
+  {
+   "title": "Learning with Technology",
+   "text": "Technology in the classroom: smart board, tablet, online platform, educational app, video conference, e-book, artificial intelligence (AI) tools.\n\nLanguage focus, comparatives:\nshort adjectives: + -er than: fast → faster than, easy → easier than\nlong adjectives: more + adjective + than: more useful than, more interesting than\nirregular: good → better, bad → worse\n\nE-books are lighter than printed books.\nOnline quizzes are more fun than paper tests.\nA slow internet connection is worse than no connection!\n\nnot as + adjective + as: Paper maps are not as practical as GPS apps.",
+   "q": "For me, learning with videos is ___ than reading long texts.",
+   "choices": [
+    "the easiest",
+    "more easy",
+    "easyer",
+    "easier",
+    "most easy"
+   ],
+   "answer": 3,
+   "explain": "Easy is a short adjective ending in -y: y → i + -er, so easier than."
+  }
+ ],
+ "Personal Life and Well-being": [
+  {
+   "title": "Body Parts, Illnesses and Diseases",
+   "text": "Body parts: head, neck, shoulder, chest, stomach, back, arm, elbow, wrist, leg, knee, ankle.\n\nTalking about illness:\nI have a headache / a stomachache / a toothache / a sore throat / a fever / a cold / the flu.\nMy back hurts. I feel dizzy. I've got a cough.\n\nLanguage focus, what's the matter?\nA: What's the matter? / What's wrong?\nB: I have a terrible headache.\nA: You should take a painkiller and lie down.\n\nDisease vs illness: Disease is often used for a specific medical condition (heart disease, diabetes). Illness is a more general word for being unwell.",
+   "q": "A: What's the matter? B: I ate too much fast food and now I have a ___.",
+   "choices": [
+    "toothache",
+    "stomachache",
+    "broken leg",
+    "backache",
+    "sore throat"
+   ],
+   "answer": 1,
+   "explain": "Eating too much causes a pain in your stomach: a stomachache."
+  },
+  {
+   "title": "Human Nature and Well-being, Today and in the Future",
+   "text": "Well-being means being healthy and happy in body and mind. Good habits: a balanced diet, regular exercise, enough sleep, spending time in nature, limiting screen time, spending time with friends.\n\nLanguage focus, making predictions with will:\nwill + base verb\nIn the future, people will live longer.\nRobots will help elderly people at home.\nPeople won't (will not) need to go to the doctor for small problems; they will use health apps.\n\nWe often use will with I think, I'm sure, probably, maybe:\nI think we will have smart clothes that check our health.\n\nbe going to for predictions with present evidence:\nLook at those clouds! It's going to rain.",
+   "q": "Which sentence is a prediction about the future?",
+   "choices": [
+    "She is exercising now.",
+    "He exercised yesterday.",
+    "We walk every morning.",
+    "People usually walk to work.",
+    "I think people will use more health apps in the future."
+   ],
+   "answer": 4,
+   "explain": "I think ... will + verb is used to make predictions about the future."
+  },
+  {
+   "title": "Fashion and Personal Fashion Preferences",
+   "text": "Clothes and fashion words: casual, formal, sporty, trendy, old-fashioned, comfortable, colourful, second-hand, vintage, brand.\nPatterns: striped, checked, spotted, plain.\n\nLanguage focus, order of adjectives:\nopinion → size → age → colour → material + noun\na beautiful long old red woollen scarf\nShe's wearing a nice new blue cotton shirt.\n\nTalking about preferences:\nI'm into vintage clothes.\nI can't stand tight jeans.\nIt suits you! (looks good on you)\nIt fits you. (is the right size)\n\nSustainable fashion: buying fewer clothes, choosing second-hand items and recycling helps the environment.",
+   "q": "Choose the correct order: She bought a ___ jacket.",
+   "choices": [
+    "leather black nice",
+    "black nice leather",
+    "nice black leather",
+    "leather nice black",
+    "nice leather black"
+   ],
+   "answer": 2,
+   "explain": "Adjective order: opinion (nice) → colour (black) → material (leather)."
+  }
+ ],
+ "Family Life & Home": [
+  {
+   "title": "Family Members and Daily Routines, Today and in the Past",
+   "text": "Family words: parents, siblings, grandparents, cousin, aunt, uncle, nephew, niece, stepmother, only child, extended family, nuclear family.\n\nLanguage focus, used to for past habits:\nused to + base verb shows something that was true in the past but is not true now.\nMy grandparents used to live in a village.\nPeople didn't use to have mobile phones.\nDid your mother use to walk to school?\n\nCompare with present simple:\nMy grandmother used to bake bread every day, but now she buys it from the bakery.\n\nNote: In negatives and questions with did, we write use to (without -d).",
+   "q": "When my father was a child, he ___ play football in the street every evening, but now he doesn't have time.",
+   "choices": [
+    "used to",
+    "uses to",
+    "using to",
+    "is used to",
+    "use to"
+   ],
+   "answer": 0,
+   "explain": "For a past habit that is not true now: used to + base verb."
+  },
+  {
+   "title": "Hobbies and Interests of Family Members",
+   "text": "Sports: football, basketball, volleyball, swimming, cycling, chess, hiking.\nWith sports we use:\nplay + ball games and games: play football, play chess\ngo + -ing activities: go swimming, go cycling, go hiking\ndo + individual activities and martial arts: do yoga, do karate, do gymnastics\n\nFilms: action, comedy, horror, science fiction, animation, documentary, drama.\n\nLanguage focus, talking about interests:\nbe interested in / be keen on / be fond of + noun or verb-ing\nMy brother is interested in documentaries.\nMy aunt is keen on doing yoga.",
+   "q": "My sister ___ judo twice a week.",
+   "choices": [
+    "takes",
+    "plays",
+    "goes",
+    "does",
+    "makes"
+   ],
+   "answer": 3,
+   "explain": "We use do with martial arts and individual activities: do judo, do karate, do yoga."
+  },
+  {
+   "title": "Different Types of Houses and Families",
+   "text": "Types of houses: detached house, semi-detached house, terraced house, flat (apartment), cottage, villa, bungalow, tent, igloo, houseboat, stilt house.\n\nFamily types: nuclear family (parents and children), extended family (with grandparents, aunts, uncles), single-parent family, blended family (with step-parents and step-siblings).\n\nLanguage focus, there is / there are:\nThere is a big garden behind our house.\nThere are three bedrooms in the flat.\nIs there a balcony? Yes, there is.\nThere isn't any furniture in the attic.\n\nLanguage focus, comparing places with superlatives:\nIt's the oldest house in the street.\nThis is the most comfortable room in our home.",
+   "q": "___ two bathrooms and a large kitchen in our new flat.",
+   "choices": [
+    "There is",
+    "There are",
+    "It is",
+    "They are",
+    "There be"
+   ],
+   "answer": 1,
+   "explain": "Two bathrooms is plural, so we use there are."
+  }
+ ],
+ "Life in the Neighbourhood, City & Social Life": [
+  {
+   "title": "Activities to Do in Attractions",
+   "text": "Places in the city: café, cinema, gym, sports club, museum, park, shopping mall, bowling alley, concert hall.\n\nLanguage focus, making suggestions and invitations:\nLet's go to the cinema tonight.\nWhy don't we try the new café?\nHow about going to the gym together? (How about / What about + verb-ing)\nWould you like to come to the match?\n\nAccepting: That sounds great! / Sure, why not? / I'd love to.\nRefusing politely: Sorry, I can't. I have to study. / Maybe another time.\n\nUseful phrases: book a ticket, work out, grab a coffee, hang out with friends.",
+   "q": "How about ___ to the new sports club this weekend?",
+   "choices": [
+    "goes",
+    "went",
+    "go",
+    "to go",
+    "going"
+   ],
+   "answer": 4,
+   "explain": "After How about / What about we use verb-ing: How about going ...?"
+  },
+  {
+   "title": "Getting Help from Services",
+   "text": "Services in a neighbourhood: pharmacy (chemist's), hospital, clinic, police station, fire station, post office, bank, municipality, library.\n\nLanguage focus, asking for help politely:\nCould you help me, please?\nCan you tell me where the nearest pharmacy is?\nI'd like to make an appointment with a doctor.\nCould I have something for a headache?\n\nIndirect questions are more polite:\nWhere is the hospital? → Could you tell me where the hospital is?\n(In indirect questions the word order is like a sentence: where the hospital is.)\n\nEmergency numbers in Türkiye: 112 (all emergencies).",
+   "q": "Which question is the most polite and grammatically correct?",
+   "choices": [
+    "Where the pharmacy is?",
+    "Could you tell me where is the pharmacy?",
+    "Could you tell me where the pharmacy is?",
+    "Tell me where pharmacy.",
+    "Where pharmacy is, please?"
+   ],
+   "answer": 2,
+   "explain": "In indirect questions we use statement word order: Could you tell me where the pharmacy is?"
+  },
+  {
+   "title": "Pros and Cons of Different Types of Transportation",
+   "text": "Transport: bus, metro (underground), tram, ferry, taxi, bicycle, electric scooter, car, on foot.\n\nPros (advantages) and cons (disadvantages):\nMetro: fast and no traffic, but crowded at rush hour.\nCycling: cheap, healthy and eco-friendly, but dangerous in heavy traffic.\nCar: comfortable and flexible, but expensive and it causes pollution.\n\nLanguage focus, comparatives and superlatives:\nThe metro is faster than the bus.\nCycling is the cheapest way to get to school.\nA car is more comfortable than a bus, but it is the most expensive option.\n\nLinking ideas: However, ... / On the other hand, ... / Although ...\nAlthough the ferry is slow, it is very relaxing.",
+   "q": "In big cities, the metro is usually ___ way to travel during rush hour.",
+   "choices": [
+    "the fastest",
+    "more fast",
+    "most fast",
+    "fast",
+    "faster"
+   ],
+   "answer": 0,
+   "explain": "Comparing more than two things: superlative. Fast → the fastest."
+  }
+ ],
+ "Life in the World & Culture": [
+  {
+   "title": "Continents, Countries and Nationalities",
+   "text": "The seven continents: Asia, Africa, North America, South America, Antarctica, Europe, Australia (Oceania).\n\nCountries and nationalities:\nTürkiye → Turkish, Japan → Japanese, Brazil → Brazilian, Spain → Spanish, Germany → German, France → French, China → Chinese, Egypt → Egyptian, the UK → British.\n\nNationality adjectives and languages always start with a capital letter in English: She is Italian. He speaks French.\n\nLanguage focus, asking about origin:\nWhere are you from? I'm from Mexico. I'm Mexican.\nWhere is she from? She's from Kenya.\nWhat language do they speak in Brazil? They speak Portuguese.",
+   "q": "Maria is from Brazil. She is ___, and she speaks Portuguese.",
+   "choices": [
+    "brazilian",
+    "Brazilese",
+    "Brazil",
+    "Brazilian",
+    "Brazilish"
+   ],
+   "answer": 3,
+   "explain": "The nationality adjective for Brazil is Brazilian, written with a capital letter."
+  },
+  {
+   "title": "Shopping for Food and Food Preferences",
+   "text": "Containers and quantities: a bottle of water, a carton of milk, a loaf of bread, a kilo of tomatoes, a packet of pasta, a can of tuna, a dozen eggs, a jar of honey.\n\nLanguage focus, countable and uncountable nouns:\nCountable: apple, egg, tomato (a / an, many, a few)\nUncountable: milk, rice, sugar, bread, water (some, much, a little)\n\nHow many eggs do we need? / How much sugar do we need?\nThere are a few apples. / There is a little milk.\nsome in positive sentences and offers, any in negatives and questions:\nWe need some cheese. We don't have any rice. Have we got any oranges?\n\nAt the market: How much is it? / How much are they? It costs 40 lira a kilo.",
+   "q": "How ___ rice do we need for dinner?",
+   "choices": [
+    "many",
+    "much",
+    "few",
+    "a few",
+    "lot"
+   ],
+   "answer": 1,
+   "explain": "Rice is uncountable, so we use How much."
+  },
+  {
+   "title": "Food and Food Culture from Around the World",
+   "text": "Famous dishes: sushi (Japan), pizza and pasta (Italy), tacos (Mexico), paella (Spain), curry (India), kimchi (Korea), baklava and kebab (Türkiye).\n\nFlavours and textures: spicy, sweet, sour, salty, bitter, crispy, creamy, juicy.\nCooking verbs: boil, fry, bake, grill, roast, chop, slice, stir, mix.\n\nLanguage focus, the passive (present simple) to describe how food is made:\nam / is / are + past participle\nSushi is made with rice and raw fish.\nBaklava is baked in the oven.\nThe vegetables are chopped and fried.\nTea is grown in Rize.\n\nWe use the passive when the action is more important than the person who does it.",
+   "q": "Turkish coffee ___ in a small pot called a cezve.",
+   "choices": [
+    "made",
+    "is making",
+    "are made",
+    "makes",
+    "is made"
+   ],
+   "answer": 4,
+   "explain": "Present simple passive with a singular subject: is + past participle (made)."
+  }
+ ],
+ "Life in Nature & Global Problems": [
+  {
+   "title": "Natural Resources",
+   "text": "Natural resources are things in nature that people use: water, air, soil, forests, minerals, oil, natural gas, coal, sunlight, wind.\n\nRenewable resources can be replaced naturally: solar energy, wind, water, forests (if we plant trees).\nNon-renewable resources will run out one day: oil, coal, natural gas, minerals.\n\nUseful vocabulary: run out of, consume, supply, extract, scarce (rare), fossil fuel.\n\nLanguage focus, present simple for general truths:\nPlants produce oxygen.\nCoal comes from ancient plants.\nWind turbines turn wind into electricity.",
+   "q": "Which of these is a non-renewable resource?",
+   "choices": [
+    "sunlight",
+    "wind",
+    "coal",
+    "water",
+    "forests"
+   ],
+   "answer": 2,
+   "explain": "Coal is a fossil fuel; it takes millions of years to form, so it will run out."
+  },
+  {
+   "title": "Global Problems Related to Natural Resources",
+   "text": "Global problems: climate change, global warming, air pollution, water shortage, drought, deforestation, plastic pollution, loss of biodiversity, endangered species.\n\nLanguage focus, cause and effect:\nbecause / because of / so / as a result / lead to / cause\nThe weather is getting hotter because of greenhouse gases.\nPeople cut down forests, so many animals lose their homes.\nDeforestation leads to soil erosion.\nAs a result, some species become extinct.\n\nNote: because + clause (subject + verb), because of + noun:\nThe lake dried up because it didn't rain.\nThe lake dried up because of the drought.",
+   "q": "Many fish are dying ___ plastic pollution in the oceans.",
+   "choices": [
+    "because of",
+    "although",
+    "but",
+    "because",
+    "so"
+   ],
+   "answer": 0,
+   "explain": "Plastic pollution is a noun phrase, so we use because of."
+  },
+  {
+   "title": "Protecting Natural Resources",
+   "text": "Ways to protect nature: reduce, reuse, recycle; save water and energy; use public transport; plant trees; avoid single-use plastic; use renewable energy.\n\nLanguage focus, first conditional for real possibilities:\nIf + present simple, will + base verb\nIf we recycle paper, we will save trees.\nIf people use public transport, there will be less air pollution.\nWe won't have enough clean water if we don't save it.\n\nGiving strong advice and obligation:\nWe must protect the forests.\nWe have to reduce plastic waste.\nYou mustn't throw rubbish into the sea.",
+   "q": "If we ___ off the lights when we leave a room, we will save energy.",
+   "choices": [
+    "would turn",
+    "will turn",
+    "turned",
+    "turn",
+    "turning"
+   ],
+   "answer": 3,
+   "explain": "First conditional: If + present simple (turn), will + base verb."
+  }
+ ],
+ "Life in the Universe & the Future": [
+  {
+   "title": "Planets and Space",
+   "text": "Our solar system has eight planets. In order from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.\n\nFacts:\nJupiter is the biggest planet.\nMercury is the closest planet to the Sun.\nVenus is the hottest planet because of its thick atmosphere.\nMars is called the Red Planet.\n\nSpace vocabulary: star, galaxy, orbit, moon, comet, asteroid, astronaut, telescope, satellite, gravity, atmosphere.\n\nLanguage focus, superlatives:\nthe + adjective-est / the most + adjective\nthe biggest, the hottest, the coldest, the most interesting",
+   "q": "Jupiter is ___ planet in our solar system.",
+   "choices": [
+    "bigger",
+    "the biggest",
+    "the most big",
+    "biggest than",
+    "big"
+   ],
+   "answer": 1,
+   "explain": "We compare Jupiter with all the planets: superlative. Big → the biggest (double g)."
+  },
+  {
+   "title": "Life in the Universe",
+   "text": "Scientists are looking for life on other planets and moons. For life as we know it, a planet needs liquid water, a suitable temperature, an atmosphere and energy.\n\nPlaces scientists study: Mars (there may have been water in the past), Europa (a moon of Jupiter with an ocean under the ice), Enceladus (a moon of Saturn).\n\nLanguage focus, possibility with may / might / could:\nThere may be life on Europa.\nAliens might exist on distant planets.\nMars could be a home for humans one day.\n\nCertainty: must (almost sure it's true) and can't (almost sure it's not true):\nThere can't be life on the Sun; it's far too hot.",
+   "q": "Scientists are not sure, but there ___ be water under the ice on Europa.",
+   "choices": [
+    "mustn't",
+    "doesn't",
+    "isn't",
+    "can't",
+    "might"
+   ],
+   "answer": 4,
+   "explain": "When we are not sure, we use may / might / could to express possibility."
+  },
+  {
+   "title": "Space Explorations",
+   "text": "Milestones in space exploration:\n1957: The first satellite, Sputnik 1.\n1961: Yuri Gagarin became the first person in space.\n1969: Neil Armstrong walked on the Moon.\n1998: Building of the International Space Station (ISS) started.\n2024: Alper Gezeravcı became the first Turkish astronaut and went to the ISS.\n\nLanguage focus, past simple for finished events:\nregular: walk → walked, explore → explored\nirregular: go → went, become → became, fly → flew\nWhen did Armstrong walk on the Moon? He walked on the Moon in 1969.\n\nPresent perfect for experiences up to now:\nHumans have sent robots to Mars.\nNo one has visited Jupiter yet.",
+   "q": "Neil Armstrong ___ on the Moon in 1969.",
+   "choices": [
+    "walks",
+    "has walked",
+    "walked",
+    "is walking",
+    "will walk"
+   ],
+   "answer": 2,
+   "explain": "A finished action at a specific past time (in 1969) takes the past simple: walked."
+  }
+ ]
+}

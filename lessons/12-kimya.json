@@ -1,0 +1,262 @@
+{
+ "Kimya ve Elektrik": [
+  {
+   "title": "İndirgenme-Yükseltgenme (Redoks) Tepkimeleri",
+   "text": "Elektron alışverişiyle gerçekleşen tepkimelere redoks tepkimeleri denir.\n\nYükseltgenme: Elektron verme; yükseltgenme basamağı artar. Zn → Zn²⁺ + 2e⁻\nİndirgenme: Elektron alma; yükseltgenme basamağı azalır. Cu²⁺ + 2e⁻ → Cu\nYükseltgenme ve indirgenme her zaman birlikte olur: Bir maddenin verdiği elektronu başka bir madde alır.\n\nİndirgen: Kendisi yükseltgenen, karşısındakini indirgeyen madde (Zn).\nYükseltgen: Kendisi indirgenen, karşısındakini yükseltgeyen madde (Cu²⁺).\n\nYükseltgenme basamağı kuralları:\nElementlerde 0. Bileşiklerde toplam 0, çok atomlu iyonlarda iyonun yükü.\nH genellikle +1, O genellikle −2. 1A metalleri +1, 2A metalleri +2.\n\nRedoks tepkimelerinde elektronların bir dış devreden akması sağlanırsa kimyasal enerji elektrik enerjisine dönüşür; pillerin temeli budur.",
+   "q": "Zn + Cu²⁺ → Zn²⁺ + Cu tepkimesinde indirgen olan madde hangisidir?",
+   "choices": [
+    "Zn",
+    "Zn²⁺",
+    "Cu",
+    "Tepkimede indirgen yoktur.",
+    "Cu²⁺"
+   ],
+   "answer": 0,
+   "explain": "Zn elektron vererek Zn²⁺'ye yükseltgenir; kendisi yükseltgendiği ve Cu²⁺'yi indirgediği için indirgendir."
+  },
+  {
+   "title": "Elektrotlar ve Elektrokimyasal Hücreler",
+   "text": "Elektrot: Elektrokimyasal hücrede elektron alışverişinin gerçekleştiği iletken (genellikle metal çubuk).\nAnot: Yükseltgenmenin olduğu elektrot (elektron verilir).\nKatot: İndirgenmenin olduğu elektrot (elektron alınır).\nHatırlatma: Anot-yükseltgenme, katot-indirgenme (iki ünlüyle başlayanlar eşleşir).\n\nGalvanik (voltaik) hücre: Kendiliğinden gerçekleşen redoks tepkimesiyle kimyasal enerjiyi elektrik enerjisine çevirir (pil).\nÖrnek: Daniell pili. Zn elektrot ZnSO₄ çözeltisinde (anot), Cu elektrot CuSO₄ çözeltisinde (katot).\nElektronlar dış devrede anottan katoda akar.\nTuz köprüsü: İki yarı hücre arasında iyon akışını sağlayarak devreyi tamamlar ve yük dengesini korur.\nZaman içinde anot aşınır (kütlesi azalır), katotta metal birikir (kütlesi artar).\n\nElektrolitik hücre: Dışarıdan elektrik verilerek kendiliğinden olmayan bir tepkime gerçekleştirilir (elektroliz).",
+   "q": "Galvanik hücrede elektronlar dış devrede hangi yönde akar?",
+   "choices": [
+    "Çözeltiden elektrota",
+    "Elektron akışı olmaz.",
+    "Katottan anoda",
+    "Anottan katoda",
+    "Tuz köprüsünden anoda"
+   ],
+   "answer": 3,
+   "explain": "Anotta yükseltgenme ile açığa çıkan elektronlar dış devre üzerinden katoda gider."
+  },
+  {
+   "title": "Elektrot Potansiyelleri ve Pil Gerilimi",
+   "text": "Standart elektrot potansiyeli (E°), bir yarı hücrenin standart hidrojen elektroduna (E° = 0,00 V) göre elektron alma ya da verme eğilimini gösterir. Standart koşullar: 25 °C, 1 M derişim, 1 atm.\n\nİndirgenme potansiyeli büyük olan madde daha kolay indirgenir (katot olur).\nİndirgenme potansiyeli küçük olan madde daha kolay yükseltgenir (anot olur).\n\nÖrnekler (indirgenme potansiyelleri):\nCu²⁺ / Cu: +0,34 V\nZn²⁺ / Zn: −0,76 V\nAg⁺ / Ag: +0,80 V\n\nPil gerilimi:\nE°(pil) = E°(katot) − E°(anot)  (ikisi de indirgenme potansiyeli olarak)\nDaniell pili için: 0,34 − (−0,76) = 1,10 V\nE°(pil) > 0 ise tepkime kendiliğinden gerçekleşir.\n\nDerişim ve sıcaklık değiştiğinde pil gerilimi de değişir (Nernst denklemi). Pil boşaldıkça gerilimi düşer.",
+   "q": "İndirgenme potansiyelleri Ag⁺/Ag = +0,80 V ve Cu²⁺/Cu = +0,34 V olan elektrotlarla kurulan pilin standart gerilimi kaç volttur?",
+   "choices": [
+    "0,34",
+    "0,46",
+    "0,80",
+    "1,14",
+    "1,26"
+   ],
+   "answer": 1,
+   "explain": "Katot Ag (büyük potansiyel), anot Cu. E°(pil) = 0,80 − 0,34 = 0,46 V."
+  },
+  {
+   "title": "Kimyasallardan Elektrik Üretimi: Piller",
+   "text": "Piller, kimyasal enerjiyi elektrik enerjisine dönüştüren taşınabilir galvanik hücrelerdir.\n\nPrimer (tek kullanımlık) piller: Tepkime tersinir değildir; biten pil şarj edilemez.\nÇinko-karbon (Leclanché) pil: Ucuzdur; düşük güç gerektiren cihazlarda kullanılır.\nAlkalin pil: Daha uzun ömürlüdür; elektrolit baziktir.\nGümüş oksit ve lityum düğme piller: Saat, hesap makinesi.\n\nSekonder (şarj edilebilir) piller: Dışarıdan akım verilerek tepkime tersine çevrilir.\nKurşun-asit akü: Otomobillerde kullanılır.\nNikel-metal hidrür (Ni-MH) piller.\nLityum-iyon piller: Telefon, dizüstü bilgisayar ve elektrikli araçlarda kullanılır. Hafiftir, enerji yoğunluğu yüksektir. Geliştiricileri 2019 Nobel Kimya Ödülü'nü aldı.\n\nYakıt pilleri: Hidrojen ve oksijenin tepkimesiyle sürekli elektrik üretir; ürün yalnızca sudur. Uzay araçlarında ve hidrojenli araçlarda kullanılır.\n\nAtık piller ağır metaller içerdiği için mutlaka ayrı toplanmalıdır.",
+   "q": "Akıllı telefonlarda ve elektrikli araçlarda en yaygın kullanılan şarj edilebilir pil türü hangisidir?",
+   "choices": [
+    "Alkalin pil",
+    "Kurşun-asit akü",
+    "Gümüş oksit pil",
+    "Çinko-karbon pil",
+    "Lityum-iyon pil"
+   ],
+   "answer": 4,
+   "explain": "Lityum-iyon piller hafif, enerji yoğunluğu yüksek ve şarj edilebilir oldukları için telefon ve elektrikli araçlarda kullanılır."
+  },
+  {
+   "title": "Elektroliz",
+   "text": "Elektroliz, elektrik enerjisi kullanılarak kendiliğinden gerçekleşmeyen bir redoks tepkimesinin gerçekleştirilmesidir. Elektrolitik hücrede gerçekleşir.\n\nElektrolitik hücrede de anotta yükseltgenme, katotta indirgenme olur. Ancak burada anot güç kaynağının (+) kutbuna, katot (−) kutbuna bağlıdır.\n\nÖrnekler:\nSuyun elektrolizi: 2H₂O → 2H₂ + O₂. Katotta hidrojen, anotta oksijen gazı toplanır. Hidrojen gazının hacmi oksijenin iki katıdır.\nEritilmiş NaCl'nin elektrolizi: Katotta sodyum metali, anotta klor gazı oluşur.\nAlüminyum üretimi: Boksit cevherinden elde edilen alüminyum oksidin elektroliziyle.\n\nUygulamalar:\nKaplamacılık (galvanoplasti): Bir metalin yüzeyini başka bir metalle kaplamak (krom, gümüş, altın kaplama). Kaplanacak cisim katot yapılır.\nMetallerin saflaştırılması: Bakırın arıtılması.\nKlor ve sodyum hidroksit üretimi.\nYeşil hidrojen üretimi: Yenilenebilir enerjiyle suyun elektrolizi.",
+   "q": "Bir anahtarı gümüşle kaplamak için yapılan elektrolizde anahtar hangi elektrot olarak kullanılmalıdır?",
+   "choices": [
+    "Fark etmez",
+    "Anot",
+    "Katot",
+    "Tuz köprüsü",
+    "Elektrolit"
+   ],
+   "answer": 2,
+   "explain": "Gümüş iyonları katotta indirgenerek metal gümüş olarak birikir; bu yüzden kaplanacak anahtar katot yapılır."
+  },
+  {
+   "title": "Korozyon",
+   "text": "Korozyon, metallerin çevreleriyle (oksijen, su, asitler, tuzlar) tepkimeye girerek yükseltgenmesi ve aşınmasıdır. En bilinen örneği demirin paslanmasıdır:\nDemir, nem ve oksijenle tepkimeye girerek pas (Fe₂O₃ · nH₂O) oluşturur.\n\nKorozyonu hızlandıran etkenler: Nem, tuz (deniz kenarı ve kışın yollara atılan tuz), asit yağmurları, yüksek sıcaklık, farklı metallerin birbirine teması.\n\nKorozyondan korunma yöntemleri:\nYüzey kaplama: Boya, yağ, plastik kaplama; metal yüzeyi oksijen ve sudan yalıtılır.\nGalvanizleme: Demirin çinkoyla kaplanması. Çinko demirden daha aktif olduğu için önce kendisi yükseltgenir.\nKatodik koruma (kurban anot): Korunacak metale daha aktif bir metal (magnezyum, çinko) bağlanır. Aktif metal yükseltgenerek aşınır, demir korunur. Gemi gövdeleri, yer altı boru hatları ve su ısıtıcılarında kullanılır.\nAlaşım yapma: Paslanmaz çelik (demir + krom + nikel).\n\nAlüminyum, yüzeyinde oluşan ince ve sağlam oksit tabakası sayesinde kendini korur.",
+   "q": "Gemi gövdelerine magnezyum ya da çinko blokların bağlanmasıyla demirin korunması hangi yöntemdir?",
+   "choices": [
+    "Katodik koruma (kurban anot)",
+    "Elektroliz",
+    "Fotosentez",
+    "Damıtma",
+    "Boyama"
+   ],
+   "answer": 0,
+   "explain": "Daha aktif olan magnezyum ya da çinko demir yerine yükseltgenir ve aşınır; bu yönteme katodik koruma (kurban anot) denir."
+  }
+ ],
+ "Karbon Kimyasına Giriş": [
+  {
+   "title": "Anorganik ve Organik Bileşikler",
+   "text": "Organik bileşikler, yapısında karbon atomları bulunan ve genellikle C, H, O, N, S gibi elementlerden oluşan bileşiklerdir. Canlıların yapısındaki karbonhidrat, protein, yağ ve nükleik asitler organiktir. CO, CO₂, karbonatlar ve siyanürler karbon içerse de anorganik kabul edilir.\n\n1828'de Friedrich Wöhler, anorganik bir maddeden (amonyum siyanat) organik bir madde olan üreyi sentezledi. Bu deney, organik maddelerin yalnızca canlılar tarafından üretilebileceği görüşünü (yaşam gücü teorisi) çürüttü.\n\nOrganik ve anorganik bileşiklerin karşılaştırılması:\nOrganik bileşikler genellikle kovalent bağlıdır; erime ve kaynama noktaları düşüktür; çoğu yanıcıdır; suda genellikle az çözünür; tepkimeleri yavaştır.\nAnorganik bileşikler çoğunlukla iyonik bağlıdır; erime noktaları yüksektir; çoğu yanmaz; suda çözünenleri elektriği iletir.\n\nKarbonun dört bağ yapabilmesi ve kendisiyle uzun zincirler, halkalar oluşturabilmesi milyonlarca farklı organik bileşiğin var olmasını sağlar.",
+   "q": "Organik bileşiklerin laboratuvarda da sentezlenebileceğini gösteren ilk deney hangisidir?",
+   "choices": [
+    "Pasteur'ün kuğu boyunlu şişe deneyi",
+    "Torricelli deneyi",
+    "Rutherford'un altın levha deneyi",
+    "Wöhler'in üre sentezi",
+    "Mendel'in bezelye deneyleri"
+   ],
+   "answer": 3,
+   "explain": "Wöhler 1828'de anorganik amonyum siyanattan organik bir madde olan üreyi sentezleyerek yaşam gücü teorisini çürüttü."
+  },
+  {
+   "title": "Basit Formül ve Molekül Formülü",
+   "text": "Basit (kaba, ampirik) formül: Bileşikteki atomların en küçük tam sayılarla oranını gösterir.\nMolekül formülü: Bir moleküldeki atomların gerçek sayılarını gösterir.\n\nÖrnekler:\nGlikoz: Molekül formülü C₆H₁₂O₆, basit formülü CH₂O.\nBenzen: C₆H₆, basit formülü CH.\nAsetilen: C₂H₂, basit formülü CH. (Farklı maddelerin basit formülü aynı olabilir.)\nSu: H₂O, basit ve molekül formülü aynı.\n\nBasit formül bulma:\n1. Kütleler (ya da yüzdeler) mol sayısına çevrilir.\n2. Mol sayıları en küçüğüne bölünerek oran bulunur.\n3. Gerekirse tam sayıya getirilir.\n\nMolekül formülü bulma:\nMolekül formülü = (basit formül)ₙ\nn = mol kütlesi / basit formülün kütlesi\n\nÖrnek: Basit formülü CH₂ (14 g/mol), mol kütlesi 56 g/mol olan bileşik: n = 4 → C₄H₈.\n\nOrganik maddelerin bileşimi genellikle yakma analiziyle bulunur: Oluşan CO₂'den C, H₂O'dan H miktarı hesaplanır.",
+   "q": "Basit formülü CH₂O, mol kütlesi 180 g/mol olan bileşiğin molekül formülü hangisidir? (C = 12, H = 1, O = 16)",
+   "choices": [
+    "C₃H₆O₃",
+    "C₆H₁₂O₆",
+    "C₁₂H₂₂O₁₁",
+    "CH₂O",
+    "C₂H₄O₂"
+   ],
+   "answer": 1,
+   "explain": "CH₂O'nun kütlesi 12 + 2 + 16 = 30. n = 180 / 30 = 6. Molekül formülü C₆H₁₂O₆ (glikoz)."
+  },
+  {
+   "title": "Doğada Karbon",
+   "text": "Karbon doğada hem element hâlinde hem de bileşikler hâlinde bulunur.\n\nAllotrop: Aynı elementin farklı yapıdaki biçimleridir. Karbonun allotropları:\nElmas: Her karbon dört karbona bağlıdır (sp³), üç boyutlu ağ yapı. Bilinen en sert doğal maddedir; elektriği iletmez. Kesici aletlerde ve mücevherde kullanılır.\nGrafit: Her karbon üç karbona bağlıdır (sp²), katmanlı yapı. Katmanlar birbiri üzerinde kayar; yumuşaktır. Serbest elektronlar sayesinde elektriği iletir. Kurşun kalem ucu ve elektrotlarda kullanılır.\nGrafen: Tek atom kalınlığında grafit tabakası; çok dayanıklı ve çok iyi iletkendir.\nFulleren (C₆₀): Futbol topu biçiminde kafes molekül.\nKarbon nanotüp: Grafen tabakasının silindir biçiminde kıvrılmış hâli.\nAmorf karbon: Kömür, is, odun kömürü.\n\nKarbon bileşikleri: Fosil yakıtlar (kömür, petrol, doğal gaz), kireç taşı (CaCO₃), atmosferdeki CO₂ ve bütün canlılar. Karbon döngüsü ile karbon atmosfer, canlılar, okyanuslar ve kayaçlar arasında dolaşır.",
+   "q": "Grafitin elektriği iletmesi, elmasın ise iletmemesinin nedeni nedir?",
+   "choices": [
+    "Elmasın metal olması",
+    "Grafitin iyonik bağlı olması",
+    "Elmasın sıvı olması",
+    "Grafitin karbon içermemesi",
+    "Grafitte her karbonun üç bağ yapması ve serbest elektronların bulunması"
+   ],
+   "answer": 4,
+   "explain": "Grafitte her karbon atomu üç komşuya bağlıdır; dördüncü değerlik elektronu tabakalar boyunca serbestçe hareket ederek akımı iletir. Elmasta bütün elektronlar bağlarda kullanılır."
+  },
+  {
+   "title": "Lewis Formülleri, Hibritleşme ve Molekül Geometrisi",
+   "text": "Karbonun 4 değerlik elektronu vardır ve genellikle 4 kovalent bağ yapar. Lewis formüllerinde bağ çiftleri çizgiyle, ortaklanmamış elektronlar noktayla gösterilir.\n\nHibritleşme: Atom orbitallerinin karışarak eş enerjili yeni orbitaller oluşturmasıdır. Karbonun hibritleşme türü, molekülün geometrisini belirler:\n\nsp³: Karbon dört tekli bağ yapar. Düzgün dörtyüzlü (tetrahedral) geometri, bağ açısı 109,5°. Örnek: Metan (CH₄), etan.\nsp²: Karbon bir ikili bağ ve iki tekli bağ yapar. Düzlem üçgen geometri, bağ açısı 120°. Örnek: Eten (C₂H₄).\nsp: Karbon bir üçlü bağ ve bir tekli bağ (ya da iki ikili bağ) yapar. Doğrusal geometri, bağ açısı 180°. Örnek: Etin (asetilen, C₂H₂), CO₂.\n\nSigma (σ) ve pi (π) bağları:\nTekli bağ: 1 σ.\nİkili bağ: 1 σ + 1 π.\nÜçlü bağ: 1 σ + 2 π.\nPi bağları sigma bağlarından daha zayıftır; bu yüzden ikili ve üçlü bağlar tepkimelere daha yatkındır.",
+   "q": "Etin (C₂H₂, H−C≡C−H) molekülündeki karbon atomlarının hibritleşme türü ve molekül geometrisi hangisidir?",
+   "choices": [
+    "sp³ - düzgün dörtyüzlü",
+    "sp² - düzlem üçgen",
+    "sp - doğrusal",
+    "sp³ - doğrusal",
+    "sp² - doğrusal"
+   ],
+   "answer": 2,
+   "explain": "Üçlü bağ yapan karbon sp hibritleşmesi yapar; bağ açısı 180° olduğu için molekül doğrusaldır."
+  }
+ ],
+ "Organik Bileşikler": [
+  {
+   "title": "Hidrokarbonlar",
+   "text": "Hidrokarbonlar yalnızca karbon ve hidrojenden oluşan bileşiklerdir.\n\nAlkanlar: Yalnızca tekli bağ içerir (doymuş). Genel formül CₙH₂ₙ₊₂.\nMetan (CH₄), etan (C₂H₆), propan (C₃H₈), bütan (C₄H₁₀). Doğal gaz ve LPG'nin ana bileşenleridir. Tepkimeleri genellikle yanma ve yer değiştirmedir.\n\nAlkenler: En az bir ikili bağ içerir (doymamış). Genel formül CₙH₂ₙ.\nEten (etilen, C₂H₄): Polietilen plastiğin hammaddesidir; meyve olgunlaşmasını da sağlar. Katılma tepkimeleri verir.\n\nAlkinler: En az bir üçlü bağ içerir. Genel formül CₙH₂ₙ₋₂.\nEtin (asetilen, C₂H₂): Kaynak işlerinde kullanılır.\n\nAromatik hidrokarbonlar: Benzen halkası (C₆H₆) içerir. Halkadaki elektronlar dağılmış (rezonans) olduğu için kararlıdır.\n\nAdlandırma (IUPAC): En uzun karbon zinciri bulunur; ön ek karbon sayısını (met-1, et-2, prop-3, büt-4, pent-5, heks-6), son ek bağ türünü (-an, -en, -in) gösterir.\n\nİzomeri: Aynı molekül formülüne sahip ama yapısı farklı bileşikler (n-bütan ve izobütan).",
+   "q": "Genel formülü CₙH₂ₙ₊₂ olan ve yalnızca tekli bağlar içeren hidrokarbon sınıfı hangisidir?",
+   "choices": [
+    "Alkanlar",
+    "Aromatikler",
+    "Alkoller",
+    "Alkenler",
+    "Alkinler"
+   ],
+   "answer": 0,
+   "explain": "Alkanlar doymuş hidrokarbonlardır; yalnızca tekli bağ içerir ve genel formülleri CₙH₂ₙ₊₂'dir."
+  },
+  {
+   "title": "Fonksiyonel Gruplar",
+   "text": "Fonksiyonel grup, organik bir molekülün kimyasal özelliklerini belirleyen atom ya da atom grubudur. Aynı fonksiyonel gruba sahip bileşikler benzer tepkimeler verir ve bir homolog sıra oluşturur.\n\nÖnemli fonksiyonel gruplar:\nAlkoller: −OH (hidroksil). Etanol, CH₃CH₂OH.\nEterler: −O− (iki karbon arasında oksijen). Dietil eter.\nAldehitler: −CHO (zincir ucunda karbonil). Metanal (formaldehit).\nKetonlar: −CO− (zincir içinde karbonil). Propanon (aseton).\nKarboksilik asitler: −COOH (karboksil). Etanoik asit (asetik asit, sirke).\nEsterler: −COO− (karboksil grubunun hidrojeni yerine karbon). Meyve kokuları.\nAminler: −NH₂ (amino).\nAmitler: −CONH₂.\nHalojenür: −X (F, Cl, Br, I).\n\nBir molekülde birden fazla fonksiyonel grup bulunabilir. Örneğin amino asitlerde hem −NH₂ hem −COOH grubu vardır.",
+   "q": "Sirkenin asidik özelliğini veren etanoik asitteki fonksiyonel grup hangisidir?",
+   "choices": [
+    "−O− (eter)",
+    "−OH (hidroksil)",
+    "−CHO (aldehit)",
+    "−COOH (karboksil)",
+    "−NH₂ (amino)"
+   ],
+   "answer": 3,
+   "explain": "Karboksilik asitlerin asidik özelliği −COOH (karboksil) grubundan gelir; etanoik asit CH₃COOH'tur."
+  },
+  {
+   "title": "Alkoller ve Eterler",
+   "text": "Alkoller: Hidrokarbondaki bir hidrojen yerine −OH grubu bağlanmış bileşiklerdir. Genel formül R−OH.\nMetanol (CH₃OH): Çok zehirlidir; körlüğe ve ölüme yol açabilir. Çözücü ve yakıt olarak kullanılır.\nEtanol (C₂H₅OH): Şekerlerin mayalanmasıyla (fermantasyon) elde edilir. Dezenfektan, kolonya, yakıt (biyoetanol) ve çözücü olarak kullanılır.\nGliserin (3 −OH grubu): Kozmetik ve gıda sanayisinde kullanılır.\n\nAlkollerin özellikleri:\n−OH grubu sayesinde molekülleri arasında hidrojen bağı vardır; kaynama noktaları benzer büyüklükteki alkan ve eterlerden yüksektir.\nKüçük alkoller suda her oranda çözünür.\nYükseltgendiklerinde aldehit, keton ya da karboksilik aside dönüşebilirler.\n\nEterler: İki karbon grubu bir oksijen atomuyla bağlanmıştır. Genel formül R−O−R'.\nDietil eter eskiden ameliyatlarda anestezik olarak kullanılmıştır.\nEter molekülleri arasında hidrojen bağı olmadığı için kaynama noktaları düşüktür ve çok uçucudurlar.\nAynı molekül formülüne sahip alkol ve eterler birbirinin fonksiyonel grup izomeridir (etanol ve dimetil eter, C₂H₆O).",
+   "q": "Etanol (C₂H₅OH) ile dimetil eterin (CH₃OCH₃) aynı molekül formülüne sahip olmalarına rağmen etanolün kaynama noktasının çok daha yüksek olmasının nedeni nedir?",
+   "choices": [
+    "Etanolün mol kütlesinin daha büyük olması",
+    "Etanol molekülleri arasında hidrojen bağı bulunması",
+    "Eterin iyonik olması",
+    "Etanolün apolar olması",
+    "Eterin daha ağır olması"
+   ],
+   "answer": 1,
+   "explain": "Etanoldeki −OH grubu moleküller arasında hidrojen bağı oluşturur. Eterde O'ya bağlı H yoktur; hidrojen bağı oluşmaz."
+  },
+  {
+   "title": "Karbonil Bileşikleri: Aldehitler ve Ketonlar",
+   "text": "Karbonil grubu, karbon ile oksijen arasındaki ikili bağdır: C=O.\n\nAldehitler: Karbonil grubu zincirin ucundadır (−CHO). Genel formül R−CHO.\nMetanal (formaldehit): Suda çözeltisi (formalin) dezenfektan ve doku koruyucu olarak kullanılır.\nEtanal (asetaldehit).\nAldehitler kolay yükseltgenerek karboksilik asitlere dönüşür. Bu özellik Tollens (gümüş aynası) ve Fehling deneyleriyle aldehitleri ketonlardan ayırt etmeye yarar.\n\nKetonlar: Karbonil grubu iki karbon atomu arasındadır (R−CO−R').\nPropanon (aseton): Oje çıkarıcı ve çözücü olarak yaygın kullanılır.\nKetonlar kolay yükseltgenmez.\n\nKarbonil bileşiklerinin oluşumu:\nPrimer (birincil) alkoller yükseltgenince aldehit, aldehitler de karboksilik asit oluşturur.\nSekonder (ikincil) alkoller yükseltgenince keton oluşturur.\nTersiyer (üçüncül) alkoller kolay yükseltgenmez.\n\nGlikoz bir aldehit grubu, fruktoz ise bir keton grubu içerir.",
+   "q": "Oje çıkarıcı olarak kullanılan ve en basit keton olan bileşik hangisidir?",
+   "choices": [
+    "Metanal",
+    "Etanoik asit",
+    "Metanol",
+    "Etanol",
+    "Propanon (aseton)"
+   ],
+   "answer": 4,
+   "explain": "Propanon (aseton) en basit ketondur; iyi bir çözücü olduğu için oje çıkarıcıda kullanılır."
+  },
+  {
+   "title": "Karboksilik Asitler ve Esterler",
+   "text": "Karboksilik asitler: −COOH (karboksil) grubu içerir. Genel formül R−COOH.\nMetanoik asit (formik asit): Karınca ve ısırgan otunda bulunur.\nEtanoik asit (asetik asit): Sirkenin %4-5'ini oluşturur.\nSitrik asit (limon), laktik asit (yoğurt, kaslar), yağ asitleri.\n\nÖzellikleri:\nSuda kısmen iyonlaşarak H⁺ verir; zayıf asittir.\nBazlarla tepkimeye girerek tuz ve su oluşturur.\nMoleküller arası hidrojen bağı nedeniyle kaynama noktaları yüksektir.\n\nEsterler: Karboksilik asit ile alkolün tepkimesiyle (esterleşme) su açığa çıkarak oluşur:\nR−COOH + R'−OH ⇌ R−COO−R' + H₂O\nBu tepkime tersinirdir ve asit katalizörlüğünde gerçekleşir.\n\nEsterlerin özellikleri: Genellikle hoş kokuludur. Meyve ve çiçeklerin kokusunu esterler verir (muz kokusu: izoamil asetat). Parfüm ve gıda aromalarında kullanılır.\nYağlar (trigliseritler) da gliserin ile yağ asitlerinin esterleridir.\nSabunlaşma: Yağların bazlarla (NaOH) tepkimesiyle sabun ve gliserin oluşur.",
+   "q": "Bir karboksilik asit ile bir alkolün tepkimesinden su açığa çıkarak oluşan hoş kokulu bileşik sınıfı hangisidir?",
+   "choices": [
+    "Eter",
+    "Aldehit",
+    "Ester",
+    "Alkan",
+    "Keton"
+   ],
+   "answer": 2,
+   "explain": "Karboksilik asit ve alkol esterleşme tepkimesiyle ester ve su oluşturur. Esterler meyve kokularının kaynağıdır."
+  }
+ ],
+ "Enerji Kaynakları ve Bilimsel Gelişmeler": [
+  {
+   "title": "Fosil Yakıtlar",
+   "text": "Fosil yakıtlar, milyonlarca yıl önce yaşamış canlıların kalıntılarının toprak altında yüksek basınç ve sıcaklık etkisiyle dönüşmesiyle oluşmuştur: kömür, petrol, doğal gaz.\n\nKömür: Bitki kalıntılarından oluşur. Karbon oranı arttıkça kalitesi artar: turba → linyit → taş kömürü → antrasit. Yanınca CO₂, SO₂ ve kül oluşturur.\n\nPetrol: Deniz canlılarının kalıntılarından oluşur. Ham petrol bir hidrokarbon karışımıdır ve rafinerilerde ayrımsal damıtma ile bileşenlerine ayrılır: LPG, benzin, gaz yağı (jet yakıtı), motorin, fuel oil, asfalt. Ayrıca plastik, ilaç, gübre ve boya gibi petrokimya ürünlerinin hammaddesidir.\n\nDoğal gaz: Büyük kısmı metandır (CH₄). Diğer fosil yakıtlara göre daha temiz yanar ve daha az CO₂ salar.\n\nSorunlar:\nYenilenemez ve sınırlıdır.\nYanmalarıyla oluşan CO₂ küresel ısınmaya, SO₂ ve NOₓ asit yağmurlarına yol açar.\nEksik yanmada zehirli karbon monoksit (CO) oluşur; soba ve şofben zehirlenmelerinin nedeni budur.",
+   "q": "Ham petrolün benzin, motorin ve gaz yağı gibi bileşenlerine ayrılmasında kullanılan yöntem hangisidir?",
+   "choices": [
+    "Ayrımsal (fraksiyonlu) damıtma",
+    "Süzme",
+    "Kristallendirme",
+    "Fermantasyon",
+    "Elektroliz"
+   ],
+   "answer": 0,
+   "explain": "Ham petrol rafinerilerde, bileşenlerin farklı kaynama noktalarından yararlanılarak ayrımsal damıtma ile ayrıştırılır."
+  },
+  {
+   "title": "Alternatif Enerji Kaynakları ve Sürdürülebilirlik",
+   "text": "Fosil yakıtların sınırlı olması ve çevreye verdikleri zarar, alternatif enerji kaynaklarına yönelmeyi zorunlu kılmaktadır.\n\nGüneş enerjisi: Güneş panelleri (fotovoltaik hücreler) ile doğrudan elektrik ya da güneş kollektörleriyle ısı elde edilir.\nRüzgâr enerjisi: Rüzgâr türbinleriyle elektrik üretilir.\nHidroelektrik: Barajlarda suyun potansiyel enerjisi elektriğe dönüştürülür.\nJeotermal: Yer altındaki sıcak sulardan elektrik ve ısınma.\nBiyokütle: Bitkisel ve hayvansal atıklardan biyogaz (metan), biyodizel ve biyoetanol.\nHidrojen: Yakıt pillerinde su oluşturarak enerji verir; yenilenebilir enerjiyle elektrolizle üretilirse yeşil hidrojen olur.\nNükleer enerji: Uranyum çekirdeklerinin bölünmesi (fisyon). Karbon salımı düşüktür ama radyoaktif atık sorunu vardır.\n\nSürdürülebilirlik: Bugünün enerji ihtiyacını gelecek nesillerin olanaklarını tüketmeden karşılamaktır. Bunun için yenilenebilir kaynakların payını artırmak, enerji verimliliği, yalıtım, toplu taşıma, geri dönüşüm ve yeşil kimya ilkelerine uygun üretim gereklidir.",
+   "q": "Aşağıdaki enerji kaynaklarından hangisi hem yenilenebilir hem de atık maddelerin değerlendirilmesini sağlar?",
+   "choices": [
+    "Uranyum",
+    "Kömür",
+    "Doğal gaz",
+    "Biyogaz",
+    "Petrol"
+   ],
+   "answer": 3,
+   "explain": "Biyogaz, hayvan gübresi ve organik atıkların bakterilerce oksijensiz ortamda ayrıştırılmasıyla üretilir; hem yenilenebilir hem de atıkları değerlendirir."
+  },
+  {
+   "title": "Nanoteknoloji ve Bilimsel Gelişmeler",
+   "text": "Nanoteknoloji, maddeyi atom ve molekül düzeyinde (1-100 nm) tasarlayarak yeni özellikler kazandırma teknolojisidir. Nano ölçekte yüzey alanı / hacim oranı çok büyüdüğü için maddeler farklı renk, iletkenlik, dayanıklılık ve tepkime yeteneği gösterir.\n\nKimyadaki uygulamalar:\nNano katalizörler: Daha az madde ile daha hızlı ve verimli tepkimeler; egzoz gazlarının temizlenmesi.\nEnerji: Daha verimli güneş hücreleri, yüksek kapasiteli piller, hidrojen depolama malzemeleri.\nMalzeme: Karbon nanotüp ve grafen ile hafif ama çok dayanıklı malzemeler.\nTıp: Hedefli ilaç taşıma, erken teşhis kitleri, antibakteriyel gümüş nanoparçacıklar.\nÇevre: Su arıtma filtreleri, kirleticileri parçalayan fotokatalitik yüzeyler (TiO₂).\nTekstil: Su ve leke tutmayan kumaşlar.\n\nDikkat edilmesi gerekenler: Nanoparçacıkların insan sağlığı ve ekosistem üzerindeki uzun vadeli etkileri henüz tam bilinmemektedir. Bu yüzden güvenlik araştırmaları ve düzenlemeler önemlidir.\n\nBilimsel gelişmeler, kimyanın sürdürülebilir bir gelecek için çözümler üretmesine olanak tanımaktadır.",
+   "q": "Nano boyutlu katalizörlerin aynı maddenin büyük parçalarından daha etkili olmasının temel nedeni nedir?",
+   "choices": [
+    "Kütlelerinin daha büyük olması",
+    "Yüzey alanlarının çok büyük olması",
+    "Farklı elementlerden oluşmaları",
+    "Erime noktalarının yüksek olması",
+    "Radyoaktif olmaları"
+   ],
+   "answer": 1,
+   "explain": "Tepkimeler katalizör yüzeyinde gerçekleşir. Nanoparçacıkların yüzey alanı / hacim oranı çok büyük olduğu için daha fazla etkin yüzey sağlarlar."
+  }
+ ]
+}

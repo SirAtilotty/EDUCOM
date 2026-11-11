@@ -221,10 +221,26 @@ test('yazılı hazırlık: ders -> ünite -> soru; öğrenci kendi seviyesini g�
   assert.equal((await call(`/api/quiz/${made.data.id}`, { cookie: hoca.cookie, method: 'DELETE' })).status, 200);
 });
 
+test('sınav sonucu: öğrenci kaydeder, ünitede son denemesini görür; öğretmen yalnızca kendi sınıflarını görür', async () => {
+  const save = (cookie, body) => call('/api/quiz/results', { cookie, json: { subject: 'Matematik', unit: 'Sayılar', ...body } });
+  const sayilar = async (cookie, grade = '') =>
+    (await call(`/api/quiz?grade=${grade}`, { cookie })).data.subjects.find((s) => s.subject === 'Matematik').units.find((u) => u.name === 'Sayılar');
+  assert.equal((await save(hoca.cookie, { correct: 1, total: 2 })).status, 403);
+  for (const bad of [{ correct: 3, total: 2 }, { correct: 0, total: 0 }, { correct: 1, total: 999 }, { correct: '1', total: 2 }, { unit: 'Yok', correct: 1, total: 2 }]) {
+    assert.equal((await save(ali.cookie, bad)).status, 400, JSON.stringify(bad));
+  }
+  assert.equal((await save(ali.cookie, { correct: 2, total: 10 })).status, 200);
+  assert.equal((await save(ali.cookie, { correct: 8, total: 10 })).status, 200);
+  assert.equal((await save(can.cookie, { correct: 4, total: 10 })).status, 200);
+  assert.deepEqual((await sayilar(ali.cookie)).score, { correct: 8, total: 10, students: 1 }); // son deneme
+  assert.deepEqual((await sayilar(hoca.cookie, 9)).score, { correct: 12, total: 20, students: 2 });
+  assert.equal((await sayilar(hoca2.cookie, 9)).score, undefined); // 11-C öğretmeni 9-A'yı görmez
+});
+
 // Soruları tamamlanan sınıflar; yeni sınıf bitince listeye eklenir.
 const COMPLETE_GRADES = [9, 10, 11, 12];
 
-test('soru bankası: dosyalar geçerli, ünite adları tekil, 9. sınıfta ünite başına 20, sonraki sınıflarda ders başına 70 soru', () => {
+test('soru bankası: dosyalar geçerli, ünite adları tekil, 9. sınıfta ünite başına 20, 10. sınıfta ders başına 140, 11-12. sınıflarda 70 soru', () => {
   const dirPath = path.join(__dirname, 'questions');
   const files = fs.readdirSync(dirPath).filter((f) => f.endsWith('.json'));
   assert.equal(files.length, 32);
@@ -233,7 +249,7 @@ test('soru bankası: dosyalar geçerli, ünite adları tekil, 9. sınıfta ünit
     assert.ok([9, 10, 11, 12].includes(data.grade) && data.subject && data.source && data.units.length, file);
     assert.equal(new Set(data.units.map((u) => u.name)).size, data.units.length, file);
     const total = data.units.reduce((n, u) => n + u.questions.length, 0);
-    if (COMPLETE_GRADES.includes(data.grade) && data.grade > 9) assert.ok(total >= 70, `${file}: ${total} soru`);
+    if (COMPLETE_GRADES.includes(data.grade) && data.grade > 9) assert.ok(total >= (data.grade === 10 ? 140 : 70), `${file}: ${total} soru`);
     for (const unit of data.units) {
       const label = `${file} / ${unit.name}`;
       if (data.grade === 9) assert.ok(unit.questions.length >= 20, `${label}: ${unit.questions.length} soru`);
@@ -251,6 +267,31 @@ test('soru bankası: dosyalar geçerli, ünite adları tekil, 9. sınıfta ünit
       }
     }
   }
+});
+
+test('konu anlatımı: her sınıfta her ünitede; her bölümde konu ve tek bir çoktan seçmeli soru', async () => {
+  for (const file of fs.readdirSync(path.join(__dirname, 'questions')).filter((f) => f.endsWith('.json'))) {
+    const { units } = JSON.parse(fs.readFileSync(path.join(__dirname, 'questions', file), 'utf8'));
+    const lessons = JSON.parse(fs.readFileSync(path.join(__dirname, 'lessons', file), 'utf8'));
+    for (const unit of units) {
+      assert.ok(lessons[unit.name]?.length, `${file} / ${unit.name}: konu anlatımı yok`);
+      for (const x of lessons[unit.name]) {
+        const where = `${file} / ${unit.name} / ${x.title}`;
+        assert.ok(Object.keys(x).every((k) => ['title', 'text', 'q', 'choices', 'answer', 'explain'].includes(k)), where);
+        assert.ok(x.title && x.text && x.q && x.explain, where);
+        assert.ok(x.choices.length >= 2 && x.choices.length <= 5 && new Set(x.choices).size === x.choices.length, where);
+        assert.ok(Number.isInteger(x.answer) && x.answer >= 0 && x.answer < x.choices.length, where);
+      }
+    }
+  }
+  const units = (await call('/api/quiz', { cookie: veli.cookie })).data.subjects.find((s) => s.subject === 'Fizik').units;
+  assert.ok(units.every((u) => u.lessons > 0));
+  const lesson = (cookie) => call(`/api/quiz/lesson?${new URLSearchParams({ subject: 'Fizik', unit: units[0].name })}`, { cookie });
+  const own = (await lesson(veli.cookie)).data;
+  assert.equal(own.length, units[0].lessons);
+  // Öğrenci başka sınıfın anlatımını isteyemez: grade parametresi yalnızca öğretmende geçerli.
+  const askedOther = await call(`/api/quiz/lesson?${new URLSearchParams({ subject: 'Fizik', unit: units[0].name, grade: 9 })}`, { cookie: veli.cookie });
+  assert.deepEqual(askedOther.data, own);
 });
 
 test('oturumsuz API erişimi reddedilir', async () => {
@@ -373,6 +414,7 @@ test('okundu, yazıyor ve ödev bilgisi canlı akışla gelir', async () => {
 
 test('grup: ad değişir, kişi eklenir, üye çıkabilir; özel sohbette olmaz', async () => {
   const g = (await call('/api/convos', { cookie: ali.cookie, json: { userIds: [ayse.id, hoca.id], title: 'Eski' } })).data.id;
+  assert.equal((await call(`/api/convos/${g}`, { cookie: ali.cookie, method: 'PATCH', json: { title: 'Öğrenci verdi' } })).status, 200);
   assert.equal((await call(`/api/convos/${g}`, { cookie: ayse.cookie, method: 'PATCH', json: { title: 'Yeni' } })).status, 200);
   const extra = await register('ekstra', 'teacher', '9-A');
   assert.equal((await call(`/api/convos/${g}/members`, { cookie: ali.cookie, json: { userIds: [extra.id] } })).status, 200);
@@ -384,6 +426,36 @@ test('grup: ad değişir, kişi eklenir, üye çıkabilir; özel sohbette olmaz'
   assert.equal((await call(`/api/convos/${dm}`, { cookie: ali.cookie, method: 'PATCH', json: { title: 'x' } })).status, 400);
   assert.equal((await call(`/api/convos/${dm}/members/me`, { cookie: ali.cookie, method: 'DELETE' })).status, 400);
   assert.equal((await call(`/api/convos/${g}/members`, { cookie: can.cookie, json: { userIds: [can.id] } })).status, 404);
+});
+
+test('son üye çıkınca grup mesajları ve dosyalarıyla silinir', async () => {
+  const g = (await call('/api/convos', { cookie: hoca.cookie, json: { userIds: [ayse.id, hoca2.id], title: 'Geçici' } })).data.id;
+  const photo = (await call(`/api/convos/${g}/images`, { cookie: hoca.cookie, body: PNG })).data.image;
+  const file = path.join(dir, 'uploads', photo);
+  const leave = (cookie) => call(`/api/convos/${g}/members/me`, { cookie, method: 'DELETE' });
+  assert.equal((await leave(hoca.cookie)).status, 200);
+  assert.equal((await leave(ayse.cookie)).status, 200);
+  assert.ok(fs.existsSync(file)); // hoca2 hâlâ üye
+  assert.equal((await leave(hoca2.cookie)).status, 200);
+  await new Promise((r) => setTimeout(r, 50));
+  assert.ok(!fs.existsSync(file));
+  assert.equal((await call(`/api/convos/${g}/messages`, { cookie: hoca2.cookie })).status, 404);
+});
+
+test('mesaj silme: herkes kendi mesajını, öğretmen öğrencinin mesajını siler; dosya da gider', async () => {
+  const del = (cookie, id, convo = dm) => call(`/api/convos/${convo}/messages/${id}`, { cookie, method: 'DELETE' });
+  const fromAli = (await call(`/api/convos/${dm}/messages`, { cookie: ali.cookie, json: { body: 'yanlışlıkla' } })).data;
+  const fromAyse = (await call(`/api/convos/${dm}/messages`, { cookie: ayse.cookie, json: { body: 'öğretmen yazdı' } })).data;
+  assert.equal((await del(ali.cookie, fromAyse.id)).status, 404); // öğrenci öğretmenin mesajını silemez
+  assert.equal((await del(hoca.cookie, fromAli.id)).status, 404); // sohbetin üyesi olmayan silemez
+  assert.equal((await del(ayse.cookie, fromAli.id)).status, 200);
+  assert.equal((await del(ali.cookie, fromAli.id)).status, 404);
+  const photo = (await call(`/api/convos/${dm}/images`, { cookie: ali.cookie, body: PNG })).data;
+  assert.equal((await del(ali.cookie, photo.id)).status, 200);
+  await new Promise((r) => setTimeout(r, 50));
+  assert.ok(!fs.existsSync(path.join(dir, 'uploads', photo.image)));
+  const left = (await call(`/api/convos/${dm}/messages`, { cookie: ali.cookie })).data.map((m) => m.id);
+  assert.ok(!left.includes(fromAli.id) && !left.includes(photo.id) && left.includes(fromAyse.id));
 });
 
 test('hesap silme şifre ister, girişi kapatır, mesajlar kalır', async () => {
@@ -451,6 +523,9 @@ test('art arda hatalı giriş hesabı geçici kilitler', async () => {
   }
   const locked = await call('/api/login', { json: { username: 'kilitli', password: PASSWORD } });
   assert.equal(locked.status, 429);
+  // Kilit yalnızca deneyen adrese konur; hesabın sahibi başka adresten girebilir.
+  const owner = await call('/api/login', { json: { username: 'kilitli', password: PASSWORD }, headers: { 'X-Forwarded-For': '10.0.0.5' } });
+  assert.equal(owner.status, 200);
 });
 
 test('yönetici şifre sıfırlar ve üye çıkarır', async () => {
@@ -572,4 +647,33 @@ test('yedek veritabanını ve fotoğrafları içerir', async () => {
   const made = /Backup saved: (.+)/.exec(out)[1].trim();
   assert.ok(fs.statSync(path.join(made, 'educom.db')).size > 0);
   assert.ok(fs.readdirSync(path.join(made, 'uploads')).length >= 1);
+});
+
+test('öğrenci başka sınıfa taşınır, eski sınıf grubundan çıkar', async () => {
+  const u = await register('tasinan', 'student', '9-A');
+  assert.throws(() => cli('move', 'tasinan', '10-B', '11-C')); // öğrencinin tek sınıfı olur
+  assert.match(cli('move', 'tasinan', '10-B'), /now in 10-B/);
+  const classes = (await call('/api/me', { cookie: u.cookie })).data.classes.map((c) => c.name);
+  assert.deepEqual(classes, ['10-B']);
+  assert.equal((await call(`/api/convos/${class9a.convoId}/messages`, { cookie: u.cookie })).status, 404);
+  assert.match(cli('move', 'hoca2', '11-C', '12-C'), /11-C, 12-C/);
+});
+
+test('eski fotoğraf ve sesler süreyle silinir', async () => {
+  assert.throws(() => cli('prune', 'x'));
+  assert.match(cli('prune', '1'), /^0 photos/); // hepsi bugünden
+});
+
+// Herkesin sınıfını değiştirdiği için en sonda çalışır.
+test('yıl sonu: önce plan gösterilir; --yes ile öğrenciler bir üst sınıfa geçer, 12. sınıflar mezun olur', async () => {
+  const mezun = await register('mezun', 'student', '12-A');
+  const plan = cli('promote');
+  assert.match(plan, /9-A -> 10-A: \d+ students/);
+  assert.match(plan, /12-A -> graduated/);
+  assert.equal((await call('/api/me', { cookie: ali.cookie })).data.classes[0].name, '9-A'); // plan bir şey değiştirmez
+  cli('promote', '--yes');
+  assert.equal((await call('/api/me', { cookie: ali.cookie })).data.classes[0].name, '10-A');
+  assert.equal((await call('/api/me', { cookie: veli.cookie })).data.classes[0].name, '11-B');
+  assert.equal((await call('/api/me', { cookie: mezun.cookie })).status, 401);
+  assert.ok((await call('/api/me', { cookie: hoca.cookie })).data.classes.some((c) => c.name === '9-A')); // öğretmen yerinde
 });

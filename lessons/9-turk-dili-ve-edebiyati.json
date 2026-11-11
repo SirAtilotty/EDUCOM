@@ -1,0 +1,206 @@
+{
+ "Sözün İnceliği": [
+  {
+   "title": "Şiirin Temel Unsurları",
+   "text": "Şiir, duygu, düşünce ve hayallerin ahenkli ve etkileyici bir dille, imgelerle anlatıldığı edebî türdür.\n\nŞiirin temel unsurları:\nTema: Şiirde işlenen ana duygu ya da düşünce (aşk, vatan sevgisi, ölüm, doğa, yalnızlık).\nİmge: Şairin duyulara seslenerek zihinde canlandırdığı görüntüler. Gökyüzünün mavi bir çarşaf gibi serilmesi bir imgedir.\nAhenk: Ses ve ritim uyumu. Ölçü, uyak, redif, aliterasyon ve tekrarlarla sağlanır.\nŞiir dili: Sözcükler gerçek anlamlarının yanında mecaz ve yan anlamlarıyla kullanılır.\nŞairane söyleyiş: Söz sanatlarıyla anlatımın güçlendirilmesi.\n\nŞiirin yapı birimleri: Dize (mısra), beyit (iki dize), dörtlük (dört dize), bent.\n\nŞiir okurken önce şiiri sesli okumak, sonra temasını, şairin duygusunu ve imgelerini bulmak şiiri anlamayı kolaylaştırır.",
+   "q": "Şairin okurun zihninde canlandırdığı, duyulara seslenen görüntülere ne ad verilir?",
+   "choices": [
+    "Beyit",
+    "Tema",
+    "İmge",
+    "Redif",
+    "Dize"
+   ],
+   "answer": 2,
+   "explain": "İmge, şairin duyular aracılığıyla zihinde canlandırdığı görüntüdür."
+  },
+  {
+   "title": "Deneme",
+   "text": "Deneme, yazarın herhangi bir konudaki kişisel düşüncelerini, kesin yargılara varmadan, kendi kendine konuşuyormuş gibi samimi bir dille anlattığı düşünce yazısıdır.\n\nÖzellikleri:\nKonu sınırlaması yoktur; yazar her konuda deneme yazabilir.\nYazar düşüncelerini kanıtlama zorunluluğu taşımaz.\nSamimi, içten ve akıcı bir dil kullanılır.\nYazar kendi deneyimlerinden, gözlemlerinden ve okuduklarından yararlanır.\nOkuru düşünmeye yöneltir.\n\nDenemenin babası Fransız yazar Montaigne'dir; türe adını onun Denemeler (Essais) adlı eseri vermiştir.\nTürk edebiyatında önemli deneme yazarları: Nurullah Ataç, Suut Kemal Yetkin, Sabahattin Eyüboğlu, Nurettin Topçu, Cemil Meriç, Mehmet Kaplan.\n\nDeneme ile makale farkı: Makalede yazar düşüncesini kanıtlamak zorundadır ve nesnel bir dil kullanır; denemede kanıt zorunluluğu yoktur ve dil öznel, samimidir.",
+   "q": "Denemeyi makaleden ayıran temel özellik hangisidir?",
+   "choices": [
+    "Düşüncelerin kanıtlanma zorunluluğu olmaması ve samimi bir dille anlatılması",
+    "Bir konunun işlenmesi",
+    "Paragraflardan oluşması",
+    "Gazetede yayımlanabilmesi",
+    "Düzyazı biçiminde yazılması"
+   ],
+   "answer": 0,
+   "explain": "Makalede düşünceler kanıtlarla desteklenir; denemede yazar kanıt zorunluluğu taşımadan kişisel düşüncelerini samimi bir dille paylaşır."
+  },
+  {
+   "title": "Mülakat",
+   "text": "Mülakat, bir kişinin belirli bir konudaki görüşlerini öğrenmek amacıyla onunla yapılan konuşmanın, soru-cevap biçiminde yazıya geçirilmesidir.\n\nÖzellikleri:\nGenellikle alanında tanınmış kişilerle (sanatçı, bilim insanı, sporcu) yapılır.\nAmaç, kişinin düşüncelerini okura aktarmaktır; kişinin hayatından çok görüşleri öne çıkar.\nSoru-cevap biçiminde yazılır.\nSorular önceden hazırlanır; konuşma kayda alınır.\nYazılı basında, radyo ve televizyonda yayımlanabilir.\n\nMülakat ile röportaj farkı: Mülakatta amaç kişinin görüşlerini almaktır ve soru-cevap düzeni hâkimdir. Röportajda ise yazar bir kişiyi ya da olayı yerinde gözlemler, kendi izlenimlerini de katarak daha edebî bir dille anlatır.\n\nİyi bir mülakat için: Konuşulacak kişi ve konu önceden araştırılmalı; sorular açık, kısa ve konuyla ilgili olmalı; kişinin sözleri değiştirilmeden aktarılmalıdır.",
+   "q": "Mülakatı röportajdan ayıran temel özellik hangisidir?",
+   "choices": [
+    "Mülakatın şiir biçiminde yazılması",
+    "Röportajda hiç soru sorulmaması",
+    "Mülakatta yazarın kendi gözlem ve izlenimlerinin ağırlıkta olması",
+    "Mülakatta amacın bir kişinin görüşlerini soru-cevap yoluyla öğrenmek olması",
+    "Mülakatın yalnızca televizyonda yapılması"
+   ],
+   "answer": 3,
+   "explain": "Mülakatta odak, kişinin görüşleridir ve soru-cevap düzeni vardır. Röportajda yazarın gözlem ve izlenimleri öne çıkar."
+  }
+ ],
+ "Anlam Arayışı": [
+  {
+   "title": "Hikâyenin Yapı Unsurları",
+   "text": "Hikâye (öykü), yaşanmış ya da yaşanabilecek olayları, belirli bir yer ve zamanda, kişiler etrafında anlatan kısa edebî türdür.\n\nHikâyenin yapı unsurları:\nOlay örgüsü: Birbirine bağlı olayların sıralanışı. Serim (giriş), düğüm (gelişme) ve çözüm (sonuç) bölümlerinden oluşur.\nKişiler (karakterler): Olayları yaşayan ya da olaylara tanık olan kişiler.\nYer (mekân): Olayların geçtiği çevre.\nZaman: Olayların geçtiği dönem ve süre.\nAnlatıcı ve bakış açısı.\nTema: Hikâyede verilmek istenen ana düşünce.\n\nHikâye türleri:\nOlay hikâyesi (Maupassant tarzı): Serim, düğüm, çözüm belirgindir; merak unsuru güçlüdür. Türk edebiyatında Ömer Seyfettin.\nDurum hikâyesi (Çehov tarzı): Belirgin bir olay örgüsü yoktur; günlük hayattan bir kesit ya da bir durum anlatılır. Türk edebiyatında Sait Faik Abasıyanık ve Memduh Şevket Esendal.",
+   "q": "Belirgin bir olay örgüsü bulunmayan, günlük hayattan bir kesitin anlatıldığı hikâye türünün Türk edebiyatındaki önemli temsilcisi kimdir?",
+   "choices": [
+    "Ömer Seyfettin",
+    "Sait Faik Abasıyanık",
+    "Halide Edip Adıvar",
+    "Namık Kemal",
+    "Yahya Kemal Beyatlı"
+   ],
+   "answer": 1,
+   "explain": "Sait Faik, durum (Çehov tarzı) hikâyesinin Türk edebiyatındaki en önemli temsilcilerindendir."
+  },
+  {
+   "title": "Anı (Hatıra)",
+   "text": "Anı, bir kişinin kendi yaşadığı ya da tanık olduğu olayları, aradan zaman geçtikten sonra kendi bakış açısıyla anlattığı yazılardır.\n\nÖzellikleri:\nYaşanmış gerçek olaylar anlatılır; hayal ürünü değildir.\nBirinci tekil kişi ağzından (ben) yazılır.\nYazarın kişisel duygu ve yorumları yer alır; bu yüzden öznel bir türdür.\nOlaylar yaşandıktan uzun zaman sonra yazıldığı için hatırlama hataları olabilir.\nTarihe ve döneme ışık tutar; tarihçiler için önemli bir kaynaktır.\n\nAnının günlükten farkı: Günlük, olaylar yaşandığı gün tarih atılarak yazılır. Anı ise aradan zaman geçtikten sonra, geriye dönük olarak yazılır.\n\nÖrnekler: Halide Edip Adıvar'ın Türk'ün Ateşle İmtihanı (Kurtuluş Savaşı yılları), Falih Rıfkı Atay'ın Zeytindağı, Yahya Kemal'in Çocukluğum, Gençliğim, Siyasi ve Edebî Hatıralarım.",
+   "q": "Anıyı günlükten ayıran özellik hangisidir?",
+   "choices": [
+    "Yazarın duygularını içermesi",
+    "Düzyazı olması",
+    "Gerçek olayları anlatması",
+    "Birinci kişi ağzından yazılması",
+    "Olayların yaşandıktan uzun zaman sonra yazılması"
+   ],
+   "answer": 4,
+   "explain": "Günlük olaylar yaşandığı gün yazılır; anı ise aradan zaman geçtikten sonra geriye dönük olarak kaleme alınır."
+  },
+  {
+   "title": "Şiirde Söz Sanatları",
+   "text": "Şairler anlatımı etkileyici kılmak için söz sanatlarından yararlanır:\n\nBenzetme (teşbih): Aralarında ilgi bulunan iki varlıktan zayıf olanı güçlü olana benzetmek. Kız gül gibi güzel. Benzeyen (kız), kendisine benzetilen (gül), benzetme yönü (güzel), benzetme edatı (gibi).\nKişileştirme (teşhis): İnsan dışındaki varlıklara insan özellikleri vermek. Rüzgâr ağlıyordu.\nKonuşturma (intak): İnsan dışındaki varlıkları konuşturmak.\nAbartma (mübalağa): Bir durumu olduğundan çok büyük ya da küçük göstermek. Bir ah çeksem dağı taşı eritir.\nTezat (karşıtlık): Karşıt kavramları bir arada kullanmak. Gülerken ağlıyordu.\nTekrir: Sözcük ya da söz öbeklerini tekrarlayarak etkiyi artırmak.\nSoru sorma (istifham): Cevap beklemeden duyguyu güçlendirmek için soru sormak.",
+   "q": "Dağlar başını eğmiş, sessizce ağlıyordu. dizesinde hangi söz sanatı kullanılmıştır?",
+   "choices": [
+    "Soru sorma",
+    "Tezat",
+    "Kişileştirme (teşhis)",
+    "Abartma",
+    "Tekrir"
+   ],
+   "answer": 2,
+   "explain": "Dağlara baş eğmek ve ağlamak gibi insana ait özellikler verilmiştir; bu kişileştirmedir."
+  }
+ ],
+ "Anlamın Yapı Taşları": [
+  {
+   "title": "Hikâyede Anlatıcı ve Bakış Açısı",
+   "text": "Anlatıcı, hikâyeyi okura aktaran kurgusal sestir; yazarla aynı kişi değildir.\n\nBakış açıları:\nKahraman anlatıcı (birinci kişi, ben): Anlatıcı olayların içindedir ve kendi yaşadıklarını anlatır. Okur yalnızca anlatıcının bildiklerini öğrenir.\nGözlemci anlatıcı (üçüncü kişi): Anlatıcı olayları bir kamera gibi dışarıdan anlatır; kişilerin iç dünyasına girmez, yalnızca gördüklerini aktarır.\nİlahi (hâkim, tanrısal) anlatıcı: Her şeyi bilir; kişilerin geçmişini, duygularını, düşüncelerini ve geleceğini anlatabilir.\n\nAnlatım teknikleri:\nÖyküleme (anlatma): Olayların hareket hâlinde aktarılması.\nBetimleme (tasvir): Kişi, yer ve nesnelerin sözle resminin çizilmesi.\nDiyalog: Kişilerin karşılıklı konuşmaları.\nİç monolog: Bir kişinin kendi kendine konuşması, iç sesinin aktarılması.\nGeriye dönüş: Geçmişteki olaylara dönülmesi.",
+   "q": "Kahramanın o an ne düşündüğünü, çocukluğunda ne yaşadığını ve yıllar sonra başına neler geleceğini bilen anlatıcı türü hangisidir?",
+   "choices": [
+    "İlahi (hâkim) anlatıcı",
+    "Diyalog",
+    "Betimleme",
+    "Kahraman anlatıcı",
+    "Gözlemci anlatıcı"
+   ],
+   "answer": 0,
+   "explain": "Kişilerin iç dünyasını, geçmişini ve geleceğini bilen anlatıcı ilahi (hâkim) bakış açısına sahiptir."
+  },
+  {
+   "title": "Şiirde Nazım Birimi, Ölçü ve Uyak",
+   "text": "Nazım birimi: Şiirin en küçük anlam ve yapı birimidir. Halk şiirinde genellikle dörtlük, divan şiirinde genellikle beyit kullanılır. Modern şiirde serbest bentler görülür.\n\nÖlçü (vezin):\nHece ölçüsü: Dizelerdeki hece sayısının eşitliğine dayanır. Türk şiirinin millî ölçüsüdür. Duraklarla bölümlere ayrılır (6+5, 4+4+3).\nAruz ölçüsü: Hecelerin açık ve kapalı olmasına dayanır; divan şiirinde kullanılmıştır.\nSerbest ölçü: Ölçü kaygısı yoktur.\n\nUyak (kafiye) türleri:\nYarım uyak: Tek ses benzerliği (taş / kuş: -ş).\nTam uyak: İki ses benzerliği (dağlar / bağlar'da -ağ).\nZengin uyak: İkiden fazla ses benzerliği (yaprak / toprak'ta -rak).\nCinaslı uyak: Yazılışı aynı, anlamı farklı sözcüklerle yapılan uyak (yüz: sayı / yüz: surat).\n\nRedif: Uyaktan sonra gelen aynı görevli ek ya da sözcükler.",
+   "q": "yaprak ve toprak sözcükleri arasındaki uyak türü hangisidir?",
+   "choices": [
+    "Uyak yoktur",
+    "Yarım uyak",
+    "Tam uyak",
+    "Zengin uyak",
+    "Cinaslı uyak"
+   ],
+   "answer": 3,
+   "explain": "İki sözcük arasında -rak olmak üzere üç sesin benzerliği vardır; ikiden fazla ses benzerliği zengin uyaktır."
+  },
+  {
+   "title": "Gezi Yazısı",
+   "text": "Gezi yazısı (seyahatname), yazarın gezip gördüğü yerlerin doğal güzelliklerini, tarihî eserlerini, insanlarını, yaşayışını ve kültürünü kendi gözlemleriyle anlattığı yazıdır.\n\nÖzellikleri:\nGözleme dayanır; yazar anlattığı yeri bizzat görmüştür.\nBetimleyici ve öyküleyici anlatım ağırlıktadır.\nYazarın izlenimleri, duyguları ve yorumları yer aldığı için öznel öğeler bulunur.\nOkura bilgi verir; okurda o yerleri görme isteği uyandırır.\nGenellikle birinci kişi ağzından yazılır.\n\nTürk edebiyatında önemli örnekler:\nEvliya Çelebi, Seyahatname: Osmanlı coğrafyasını ve komşu ülkeleri anlatan on ciltlik dev eser.\nSeydi Ali Reis, Mir'atü'l-Memalik.\nAhmet Hamdi Tanpınar, Beş Şehir: Ankara, Erzurum, Konya, Bursa ve İstanbul'u anlatır.\nYahya Kemal, Aziz İstanbul.\nNihat Sami Banarlı ve Haldun Taner'in gezi yazıları.",
+   "q": "Ankara, Erzurum, Konya, Bursa ve İstanbul'u anlatan Beş Şehir adlı eserin yazarı kimdir?",
+   "choices": [
+    "Yahya Kemal Beyatlı",
+    "Ahmet Hamdi Tanpınar",
+    "Seydi Ali Reis",
+    "Nurullah Ataç",
+    "Evliya Çelebi"
+   ],
+   "answer": 1,
+   "explain": "Beş Şehir, Ahmet Hamdi Tanpınar'ın gezi ve deneme özellikleri taşıyan eseridir."
+  },
+  {
+   "title": "Belgesel",
+   "text": "Belgesel, gerçek olayları, kişileri, yerleri ya da doğa olaylarını belgelere ve gözleme dayanarak, bilgi vermek amacıyla anlatan görsel-işitsel (ya da yazılı) anlatım türüdür.\n\nÖzellikleri:\nGerçeklere dayanır; kurgu değildir.\nAmaç bilgilendirmek ve farkındalık oluşturmaktır.\nGörüntü, ses, anlatıcı sesi (dış ses), röportajlar, arşiv belgeleri, haritalar ve grafikler kullanılır.\nAnlatım genellikle açıklayıcı ve nesneldir.\n\nBelgesel türleri: Doğa belgeseli, tarih belgeseli, bilim belgeseli, biyografik belgesel, sosyal konulu belgesel.\n\nBelgesel izlerken eleştirel olmak gerekir: Hangi kaynaklara dayanıyor? Farklı görüşlere yer verilmiş mi? Görüntüler gerçek mi, canlandırma mı?\n\nBelgesel metni yazarken: Konu araştırılır, senaryo hazırlanır, görüntüler ve dış ses metni uyumlu biçimde planlanır.",
+   "q": "Belgeselin en temel amacı aşağıdakilerden hangisidir?",
+   "choices": [
+    "Yalnızca eğlendirmek",
+    "Şiirsel bir dil kullanmak",
+    "Reklam yapmak",
+    "Hayal ürünü bir hikâye anlatmak",
+    "Gerçeklere dayanarak bilgi vermek"
+   ],
+   "answer": 4,
+   "explain": "Belgesel gerçek olay ve olgulara dayanır ve izleyiciyi bilgilendirmeyi amaçlar."
+  }
+ ],
+ "Dilin Zenginliği": [
+  {
+   "title": "Roman",
+   "text": "Roman, yaşanmış ya da yaşanabilecek olayları, geniş bir zaman ve mekân içinde, çok sayıda kişiye yer vererek ayrıntılı biçimde anlatan uzun kurgusal anlatı türüdür.\n\nHikâyeden farkları: Roman daha uzundur; olay örgüsü daha karmaşık, kişi sayısı daha fazladır; kişilerin iç dünyaları ve toplumsal çevre daha ayrıntılı işlenir.\n\nRomanın yapı unsurları: Olay örgüsü, kişiler, zaman, mekân, anlatıcı ve bakış açısı, tema.\n\nRoman türleri:\nTarihî roman, macera romanı, bilim kurgu romanı, polisiye roman, psikolojik roman, köy romanı, sosyal roman.\n\nTürk edebiyatında roman Tanzimat Dönemi'nde Batı'dan alınmıştır. İlk çeviri roman Yusuf Kamil Paşa'nın Telemak'ı, ilk yerli roman Şemsettin Sami'nin Taaşşuk-ı Talat ve Fitnat'ıdır.\n\nÖnemli yazarlar: Halit Ziya Uşaklıgil (Aşk-ı Memnu), Reşat Nuri Güntekin (Çalıkuşu), Peyami Safa, Ahmet Hamdi Tanpınar, Yaşar Kemal (İnce Memed), Orhan Pamuk.",
+   "q": "Türk edebiyatındaki ilk yerli roman kabul edilen eser hangisidir?",
+   "choices": [
+    "İnce Memed",
+    "Telemak",
+    "Taaşşuk-ı Talat ve Fitnat",
+    "Çalıkuşu",
+    "Aşk-ı Memnu"
+   ],
+   "answer": 2,
+   "explain": "Şemsettin Sami'nin Taaşşuk-ı Talat ve Fitnat'ı (1872) ilk yerli roman kabul edilir. Telemak ilk çeviri romandır."
+  },
+  {
+   "title": "Tiyatro",
+   "text": "Tiyatro, olayların oyuncular tarafından sahnede canlandırılmak üzere yazıldığı edebî türdür. Okunmaktan çok sahnelenmek için yazılır.\n\nTiyatro metninin özellikleri:\nDiyalog (karşılıklı konuşma) ağırlıklı yazılır.\nParantez içindeki açıklamalar (yan metin) oyuncuların hareketlerini, dekoru ve ışığı tarif eder.\nPerde ve sahnelere ayrılır.\n\nTiyatro türleri:\nTrajedi: Soylu kişilerin acıklı hikâyelerini anlatır; genellikle kötü sonla biter.\nKomedi: İnsanların ve toplumun gülünç yönlerini anlatır; güldürürken düşündürür. Molière bu türün ustasıdır.\nDram: Trajedi ile komedinin birleşimidir; günlük hayattan konular işlenir.\n\nGeleneksel Türk tiyatrosu:\nKaragöz (gölge oyunu), Ortaoyunu, Meddah, Köylü seyirlik oyunları.\n\nBatılı anlamda ilk Türk tiyatro eseri İbrahim Şinasi'nin Şair Evlenmesi (1860) adlı komedisidir.",
+   "q": "Batılı anlamda yazılmış ilk Türk tiyatro eseri hangisidir?",
+   "choices": [
+    "Şair Evlenmesi",
+    "Karagöz",
+    "Zavallı Çocuk",
+    "Hamlet",
+    "Vatan yahut Silistre"
+   ],
+   "answer": 0,
+   "explain": "Şinasi'nin 1860'ta yazdığı Şair Evlenmesi, görücü usulü evliliği eleştiren tek perdelik bir komedidir ve ilk Batılı tarzda Türk tiyatro eseridir."
+  },
+  {
+   "title": "Eleştiri",
+   "text": "Eleştiri, bir sanat ya da düşünce eserini olumlu ve olumsuz yönleriyle inceleyip değerlendiren yazılardır.\n\nÖzellikleri:\nAmaç eseri tanıtmak, değerini ortaya koymak ve okura rehberlik etmektir.\nEleştirmen nesnel olmaya çalışır; görüşlerini eserden alınan örneklerle destekler.\nYalnızca eksikleri değil, eserin güçlü yönlerini de gösterir.\nEleştirmenin edebiyat ve sanat bilgisi geniş olmalıdır.\n\nEleştiri yöntemleri:\nEserden hareketle: Eserin dilini, yapısını, temasını inceleme.\nSanatçıdan hareketle: Yazarın hayatı ve kişiliğiyle eser arasındaki ilişki.\nToplumdan hareketle: Eserin dönemin toplumsal koşullarıyla ilişkisi.\n\nTürk edebiyatında eleştirinin öncüleri Namık Kemal ve sonraki dönemlerde Nurullah Ataç, Mehmet Kaplan, Asım Bezirci ve Berna Moran'dır.\n\nİyi bir eleştiri, kişisel beğeniden öte, gerekçeli ve kanıtlı bir değerlendirmedir.",
+   "q": "Bir eleştiri yazısını iyi bir eleştiri yapan özellik hangisidir?",
+   "choices": [
+    "Eserin özetini vermesi",
+    "Yazarı övmesi",
+    "Yalnızca eserin kusurlarını göstermesi",
+    "Değerlendirmelerin eserden alınan örneklerle gerekçelendirilmesi",
+    "Yazarın kişisel beğenisini kanıtsız aktarması"
+   ],
+   "answer": 3,
+   "explain": "İyi bir eleştiri, olumlu ve olumsuz yönleri eserden örneklerle gerekçelendirerek nesnel bir değerlendirme yapar."
+  },
+  {
+   "title": "Otobiyografi",
+   "text": "Otobiyografi (öz yaşam öyküsü), bir kişinin kendi hayatını doğumundan yazının yazıldığı zamana kadar kendisinin anlattığı yazılardır.\n\nÖzellikleri:\nBirinci tekil kişi ağzından (ben) yazılır.\nYazarın hayatı bir bütün olarak, kronolojik sırayla anlatılır.\nYazarın ailesi, eğitimi, çevresi, başarıları, başarısızlıkları ve kişisel gelişimi yer alır.\nGerçeklere dayanır; ancak yazar kendi hayatını anlattığı için öznel öğeler bulunur.\n\nBenzer türlerle farkı:\nBiyografi (yaşam öyküsü): Bir kişinin hayatını başka biri yazar; üçüncü kişi ağzından anlatılır.\nAnı: Yazar hayatının tamamını değil, belirli bir dönemini ve tanık olduğu olayları anlatır; odak olaylardır.\nOtobiyografide ise odak yazarın kendi hayatının bütünüdür.\n\nÖrnekler: Halide Edip Adıvar'ın Mor Salkımlı Ev'i, Yahya Kemal'in Çocukluğum, Gençliğim... adlı eseri (anı-otobiyografi özellikleri taşır), Cahit Sıtkı'nın ve Tarık Buğra'nın öz yaşam yazıları.",
+   "q": "Otobiyografiyi biyografiden ayıran temel özellik hangisidir?",
+   "choices": [
+    "Gerçek bir kişinin hayatını anlatması",
+    "Kişinin kendi hayatını kendisinin yazması",
+    "Düzyazı olması",
+    "Kronolojik sırayla yazılması",
+    "Ünlü kişileri anlatması"
+   ],
+   "answer": 1,
+   "explain": "Otobiyografide kişi kendi hayatını kendisi yazar; biyografide ise bir kişinin hayatını başka biri yazar."
+  }
+ ]
+}

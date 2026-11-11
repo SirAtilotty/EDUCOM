@@ -1,0 +1,248 @@
+{
+ "Fizik Bilimi ve Kariyer Keşfi": [
+  {
+   "title": "Fizik Bilimi",
+   "text": "Fizik, madde ve enerjiyi, bunların birbirleriyle etkileşimini inceleyen temel bilimdir. Gözlem ve deneyle doğadaki olayların nedenlerini araştırır, bunları matematiksel modellerle açıklar.\n\nFiziğin alt dalları:\nMekanik: Kuvvet ve hareket.\nTermodinamik: Isı ve sıcaklık.\nElektromanyetizma: Elektrik ve manyetizma.\nOptik: Işık.\nDalgalar ve ses.\nAtom ve nükleer fizik, katıhal fiziği, yüksek enerji ve plazma fiziği.\n\nFizik diğer bilimlerle iç içedir: biyofizik, jeofizik, astrofizik, tıbbi fizik.\n\nKariyer: Fizik bilgisi mühendislik, tıp (radyoloji, MR), havacılık ve uzay, enerji, yazılım, iklim bilimi ve meteoroloji gibi pek çok alanda kullanılır. Türk fizikçi Feza Gürsey, kuramsal fizikteki çalışmalarıyla dünyaca tanınır.",
+   "q": "Bir mühendisin bir köprünün taşıyabileceği yükü hesaplaması en çok fiziğin hangi alt dalıyla ilgilidir?",
+   "choices": [
+    "Optik",
+    "Mekanik",
+    "Atom fiziği",
+    "Termodinamik",
+    "Elektromanyetizma"
+   ],
+   "answer": 1,
+   "explain": "Kuvvetler ve denge mekaniğin konusudur; köprü hesapları mekanik bilgisine dayanır."
+  }
+ ],
+ "Kuvvet ve Hareket": [
+  {
+   "title": "Temel ve Türetilmiş Nicelikler",
+   "text": "Fiziksel nicelik, ölçülebilen büyüklüklerdir. Uluslararası Birim Sistemi'nde (SI) yedi temel nicelik vardır:\n\nUzunluk: metre (m)\nKütle: kilogram (kg)\nZaman: saniye (s)\nElektrik akımı: amper (A)\nSıcaklık: kelvin (K)\nMadde miktarı: mol\nIşık şiddeti: kandela (cd)\n\nTüretilmiş nicelikler, temel niceliklerden matematiksel işlemlerle elde edilir:\nHız: m/s\nİvme: m/s²\nKuvvet: newton (N = kg·m/s²)\nEnerji: joule (J)\nAlan: m², hacim: m³, özkütle: kg/m³\n\nÖlçme yaparken doğru birim kullanmak ve birim dönüşümlerini bilmek gerekir: 1 km = 1000 m, 1 saat = 3600 s.",
+   "q": "Aşağıdakilerden hangisi SI'daki temel niceliklerden biridir?",
+   "choices": [
+    "Hacim",
+    "Enerji",
+    "Hız",
+    "Kuvvet",
+    "Kütle"
+   ],
+   "answer": 4,
+   "explain": "Kütle (kg) yedi temel nicelikten biridir. Hız, kuvvet, hacim ve enerji türetilmiş niceliklerdir."
+  },
+  {
+   "title": "Skaler ve Vektörel Nicelikler",
+   "text": "Skaler nicelikler yalnızca büyüklük ve birimle tam olarak ifade edilir:\nKütle, zaman, sıcaklık, enerji, sürat, alınan yol, hacim, özkütle.\n\nVektörel nicelikler büyüklüğün yanında yön de gerektirir:\nKuvvet, hız, ivme, yer değiştirme, ağırlık.\n\nÖrnek: 5 kg dediğimizde bilgi tamdır. Ama 10 N'luk kuvvet dediğimizde, kuvvetin hangi yöne uygulandığını söylemezsek bilgi eksik kalır.\n\nAlınan yol ile yer değiştirme farklıdır: Evden okula 1 km yürüyüp geri dönen bir öğrencinin aldığı yol 2 km, yer değiştirmesi ise 0'dır.\n\nVektörler ok ile gösterilir: Okun uzunluğu büyüklüğü, ucu yönü gösterir.",
+   "q": "Aşağıdakilerden hangisi vektörel bir niceliktir?",
+   "choices": [
+    "Sıcaklık",
+    "Kütle",
+    "Ağırlık",
+    "Zaman",
+    "Enerji"
+   ],
+   "answer": 2,
+   "explain": "Ağırlık, Dünya'nın merkezine doğru yönelen bir kuvvettir; bu yüzden vektörel bir niceliktir."
+  },
+  {
+   "title": "Vektörler",
+   "text": "Vektörlerin dört özelliği vardır: başlangıç noktası, doğrultu, yön ve büyüklük.\n\nVektörlerin toplanması:\nAynı yönlü vektörler: Büyüklükler toplanır. 3 N + 4 N (aynı yön) = 7 N.\nZıt yönlü vektörler: Büyük olandan küçük çıkarılır, bileşke büyüğün yönündedir. 7 N sağa, 3 N sola → 4 N sağa.\nDik vektörler: Pisagor ile bulunur. 3 N ve 4 N dik → √(9 + 16) = 5 N.\n\nUç uca ekleme yöntemi: İkinci vektörün başlangıcı birincinin ucuna konur; ilk vektörün başından son vektörün ucuna çizilen vektör bileşkedir.\n\nİki vektörün bileşkesi en büyük, vektörler aynı yöndeyken; en küçük, zıt yöndeyken olur.\n|A − B| ≤ R ≤ A + B",
+   "q": "Bir cisme birbirine dik 6 N ve 8 N'luk iki kuvvet etki ediyor. Bileşke kuvvet kaç N'dur?",
+   "choices": [
+    "10",
+    "14",
+    "48",
+    "2",
+    "7"
+   ],
+   "answer": 0,
+   "explain": "Dik vektörlerde R = √(6² + 8²) = √100 = 10 N."
+  },
+  {
+   "title": "Doğadaki Temel Kuvvetler",
+   "text": "Evrendeki bütün etkileşimler dört temel kuvvetle açıklanır:\n\nKütle çekim kuvveti: Kütlesi olan bütün cisimler arasında çekme şeklinde etki eder. En zayıf kuvvettir ama etki alanı sonsuzdur; gezegenlerin hareketini ve ağırlığı açıklar.\n\nElektromanyetik kuvvet: Yüklü tanecikler arasında etki eder; çekme ya da itme şeklinde olabilir. Sürtünme, kimyasal bağlar, ipteki gerilme gibi günlük kuvvetlerin kaynağıdır.\n\nGüçlü nükleer kuvvet: Atom çekirdeğinde proton ve nötronları bir arada tutar. En güçlü kuvvettir ama etki alanı çok kısadır.\n\nZayıf nükleer kuvvet: Bazı radyoaktif bozunmalardan sorumludur; Güneş'teki tepkimelerde rol oynar.\n\nGüçten zayıfa sıralama: güçlü nükleer > elektromanyetik > zayıf nükleer > kütle çekim.",
+   "q": "Atom çekirdeğinde birbirini iten protonların dağılmadan bir arada durmasını sağlayan kuvvet hangisidir?",
+   "choices": [
+    "Manyetik kuvvet",
+    "Kütle çekim kuvveti",
+    "Sürtünme kuvveti",
+    "Güçlü nükleer kuvvet",
+    "Zayıf nükleer kuvvet"
+   ],
+   "answer": 3,
+   "explain": "Güçlü nükleer kuvvet, protonlar arasındaki elektriksel itmeyi yenecek kadar güçlüdür ve çekirdeği bir arada tutar."
+  },
+  {
+   "title": "Hareket ve Hareket Türleri",
+   "text": "Bir cismin bir referans noktasına göre konumunun zamanla değişmesine hareket denir. Hareket görecelidir: Otobüste oturan yolcu otobüse göre durgun, yoldaki birine göre hareketlidir.\n\nHareket türleri:\nÖteleme hareketi: Cismin bütün noktaları aynı yönde, aynı miktarda yer değiştirir (yolda giden araba).\nDönme hareketi: Cisim bir eksen etrafında döner (dönme dolap, pervane).\nTitreşim hareketi: Bir denge noktası etrafında gidip gelme (salıncak, gitar teli).\n\nSürat ve hız:\nOrtalama sürat = alınan toplam yol / geçen süre\nOrtalama hız = yer değiştirme / geçen süre\n\nÖrnek: 120 km yolu 2 saatte alan bir aracın ortalama sürati 60 km/sa'tir.",
+   "q": "Dünya'nın kendi ekseni etrafında dönmesi ile salıncağın gidip gelmesi sırasıyla hangi hareket türleridir?",
+   "choices": [
+    "Öteleme, dönme",
+    "Dönme, titreşim",
+    "Titreşim, öteleme",
+    "Dönme, öteleme",
+    "Öteleme, titreşim"
+   ],
+   "answer": 1,
+   "explain": "Eksen etrafında dönme dönme hareketidir; salıncağın denge noktası etrafında gidip gelmesi titreşim hareketidir."
+  }
+ ],
+ "Akışkanlar": [
+  {
+   "title": "Basınç",
+   "text": "Basınç, birim yüzeye dik olarak etki eden kuvvettir:\nP = F / A (birimi pascal, Pa = N/m²)\n\nAynı kuvvet küçük bir yüzeye uygulanırsa basınç büyük, geniş bir yüzeye uygulanırsa küçük olur.\n\nGünlük hayattan örnekler:\nBıçağın keskin tarafı yüzey alanı küçük olduğu için büyük basınç yapar ve kolay keser.\nKar ayakkabıları ve paletli araçların geniş tabanı basıncı azaltarak batmayı önler.\nRaptiye ucunun sivri olması duvara kolay girmesini sağlar.\nAğır kamyonların çok tekerlekli olması yola yapılan basıncı azaltır.\n\nKatılar üzerlerine uygulanan kuvveti aynı doğrultuda iletir; akışkanlar (sıvı ve gazlar) ise basıncı her yöne iletir.",
+   "q": "Ağırlığı 600 N olan bir öğrenci 0,03 m²'lik ayakkabı tabanlarıyla duruyor. Yere yaptığı basınç kaç Pa'dır?",
+   "choices": [
+    "180 000",
+    "18",
+    "200",
+    "2000",
+    "20 000"
+   ],
+   "answer": 4,
+   "explain": "P = F / A = 600 / 0,03 = 20 000 Pa."
+  },
+  {
+   "title": "Sıvılarda Basınç",
+   "text": "Sıvılar ağırlıklarından dolayı bulundukları kabın tabanına ve yan yüzeylerine basınç uygular:\nP = h · d · g\nh: derinlik, d: sıvının özkütlesi, g: yer çekimi ivmesi.\n\nSıvı basıncı derinlikle ve sıvının özkütlesiyle doğru orantılıdır. Kabın şekline ve sıvının miktarına bağlı değildir.\n\nSonuçları:\nBarajların alt kısımları üst kısımlarından daha kalın yapılır.\nDalgıçlar derine indikçe kulaklarında basınç hisseder.\nBileşik kaplarda sıvı, kapların şekli farklı olsa da her kolda aynı yüksekliğe çıkar (çaydanlığın gövdesi ve emziği).\n\nPascal ilkesi: Kapalı bir kaptaki sıvıya uygulanan basınç, sıvının her noktasına aynen iletilir. Hidrolik fren ve hidrolik kriko bu ilkeyle çalışır.",
+   "q": "Özkütlesi 1000 kg/m³ olan suyun 5 m derinliğindeki basıncı kaç Pa'dır? (g = 10 m/s²)",
+   "choices": [
+    "5000",
+    "10 000",
+    "50 000",
+    "500 000",
+    "500"
+   ],
+   "answer": 2,
+   "explain": "P = h · d · g = 5 · 1000 · 10 = 50 000 Pa."
+  },
+  {
+   "title": "Açık Hava Basıncı",
+   "text": "Atmosferi oluşturan hava, ağırlığından dolayı yeryüzündeki her şeye basınç uygular. Buna açık hava (atmosfer) basıncı denir.\n\nTorricelli deneyi: Deniz seviyesinde, 0 °C'de cıva dolu bir tüp cıva çanağına ters çevrildiğinde cıva 76 cm yükseklikte durur. Bu basınç 1 atm = 76 cmHg ≈ 101 300 Pa'dır.\n\nYükseklere çıkıldıkça üstteki hava sütunu azaldığı için açık hava basıncı düşer.\nYüksek yerlerde su daha düşük sıcaklıkta kaynar (Ağrı Dağı'nın zirvesinde yaklaşık 80 °C). Bu yüzden yüksek yerlerde yemek geç pişer; düdüklü tencere basıncı artırarak kaynama sıcaklığını yükseltir.\nUçaklarda kulak tıkanması basınç değişiminden kaynaklanır.\n\nAçık hava basıncı barometre ile ölçülür. Pipetle içecek içmek ve vantuzun yapışması açık hava basıncı sayesinde olur.",
+   "q": "Yüksek dağlarda suyun 100 °C'den daha düşük sıcaklıkta kaynamasının nedeni nedir?",
+   "choices": [
+    "Açık hava basıncının daha düşük olması",
+    "Suyun özkütlesinin artması",
+    "Yer çekiminin artması",
+    "Havadaki oksijenin artması",
+    "Havanın daha soğuk olması"
+   ],
+   "answer": 0,
+   "explain": "Kaynama sıcaklığı dış basınca bağlıdır. Yükseklerde açık hava basıncı azaldığı için su daha düşük sıcaklıkta kaynar."
+  },
+  {
+   "title": "Kaldırma Kuvveti",
+   "text": "Bir sıvıya batırılan cisme sıvı tarafından yukarı doğru bir kuvvet uygulanır. Buna kaldırma kuvveti denir.\n\nArşimet ilkesi: Kaldırma kuvveti, cismin batan kısmının yerini değiştirdiği sıvının ağırlığına eşittir:\nFk = V(batan) · d(sıvı) · g\n\nYüzme, askıda kalma ve batma:\nCismin özkütlesi sıvınınkinden küçükse cisim yüzer (tahta suda).\nEşitse cisim sıvı içinde askıda kalır.\nBüyükse cisim batar (demir bilye suda).\n\nYüzen cisimlerde kaldırma kuvveti cismin ağırlığına eşittir.\n\nÇelikten yapılan gemiler, içlerindeki büyük hava boşluğu sayesinde ortalama özkütleleri sudan küçük olduğu için yüzer. Denizaltılar tanklarına su alıp boşaltarak batar ya da yüzeye çıkar. Ölü Deniz'de özkütle yüksek olduğu için insan kolayca yüzer.",
+   "q": "Hacmi 0,002 m³ olan bir cisim suya tamamen batırılıyor. Cisme etki eden kaldırma kuvveti kaç N'dur? (d(su) = 1000 kg/m³, g = 10 m/s²)",
+   "choices": [
+    "2000",
+    "2",
+    "10",
+    "20",
+    "200"
+   ],
+   "answer": 3,
+   "explain": "Fk = V · d · g = 0,002 · 1000 · 10 = 20 N."
+  },
+  {
+   "title": "Bernoulli İlkesi",
+   "text": "Bernoulli ilkesine göre akışkanın hızının arttığı yerde basıncı azalır, hızının azaldığı yerde basıncı artar.\n\nGünlük hayattan örnekler:\nUçak kanadı: Kanadın üst yüzeyi kavisli olduğu için hava üstten daha hızlı akar; üstte basınç azalır, alttaki büyük basınç kanadı yukarı iter (kaldırma).\nFırtınalı havalarda çatıların uçması: Çatının üstünden hızla esen rüzgâr basıncı düşürür, içerideki daha büyük basınç çatıyı yukarı iter.\nİki kâğıt arasına üflemek: Kâğıtlar ayrılmak yerine birbirine yaklaşır.\nHızla geçen trenin yanında durmak tehlikelidir: Tren ile kişi arasındaki havanın hızı artar, basınç düşer ve kişi trene doğru itilebilir.\nParfüm şişesi ve boya tabancası da bu ilkeyle çalışır.",
+   "q": "İki kâğıt yaprağı arasına hızlıca üflendiğinde kâğıtların birbirine yaklaşmasının nedeni nedir?",
+   "choices": [
+    "Aradaki havanın basıncının artması",
+    "Aradaki havanın hızlanıp basıncının azalması",
+    "Kâğıtların elektriklenmesi",
+    "Kâğıtların ağırlığının artması",
+    "Kaldırma kuvvetinin artması"
+   ],
+   "answer": 1,
+   "explain": "Hızlı akan havanın basıncı düşer; dışarıdaki daha büyük basınç kâğıtları birbirine doğru iter."
+  }
+ ],
+ "Enerji": [
+  {
+   "title": "İç Enerji, Isı ve Sıcaklık",
+   "text": "Maddeyi oluşturan tanecikler sürekli hareket eder. Taneciklerin kinetik ve potansiyel enerjilerinin toplamına iç enerji denir.\n\nSıcaklık: Taneciklerin ortalama kinetik enerjisinin bir göstergesidir. Termometreyle ölçülür; birimleri °C, K ve °F'dir. T(K) = t(°C) + 273.\n\nIsı: Sıcaklık farkından dolayı bir maddeden diğerine aktarılan enerjidir. Birimi joule (J) ya da kaloridir. Isı her zaman sıcak maddeden soğuk maddeye akar.\n\nIsı ve sıcaklık farklı kavramlardır:\nBir bardak kaynar su ile bir kova ılık suyu düşün. Bardaktaki suyun sıcaklığı daha yüksektir; ama kovadaki suyun tanecik sayısı çok fazla olduğu için iç enerjisi daha büyük olabilir.\n\nMaddeler ısı aldığında genellikle sıcaklıkları artar ve genleşir.",
+   "q": "Isı ile sıcaklık için aşağıdakilerden hangisi doğrudur?",
+   "choices": [
+    "Isı soğuktan sıcağa akar.",
+    "Sıcaklığın birimi joule'dür.",
+    "Isı ve sıcaklık aynı kavramdır.",
+    "Isı termometreyle ölçülür.",
+    "Isı, sıcaklık farkından dolayı aktarılan enerjidir."
+   ],
+   "answer": 4,
+   "explain": "Isı bir enerji aktarımıdır ve sıcaklık farkı nedeniyle sıcaktan soğuğa akar. Sıcaklık ise termometreyle ölçülür."
+  },
+  {
+   "title": "Isı, Öz Isı ve Isı Sığası",
+   "text": "Bir maddenin sıcaklığını değiştirmek için gereken ısı:\nQ = m · c · ΔT\nm: kütle, c: öz ısı, ΔT: sıcaklık değişimi.\n\nÖz ısı (c): 1 g maddenin sıcaklığını 1 °C artırmak için gereken ısı. Maddenin ayırt edici özelliğidir. Suyun öz ısısı 1 cal/g°C (4,18 J/g°C) ile çok yüksektir.\n\nIsı sığası (C = m · c): Bir cismin tamamının sıcaklığını 1 °C artırmak için gereken ısı. Ayırt edici özellik değildir, kütleye bağlıdır.\n\nÖz ısısı büyük maddeler geç ısınır, geç soğur. Bu yüzden:\nDeniz kıyısında gece ile gündüz arasındaki sıcaklık farkı azdır.\nKum, suya göre çok daha çabuk ısınır.\nSu, motorlarda soğutma sıvısı olarak kullanılır.",
+   "q": "Öz ısısı 1 cal/g°C olan 200 g suyun sıcaklığını 20 °C'den 50 °C'ye çıkarmak için kaç kalori ısı gerekir?",
+   "choices": [
+    "600",
+    "4000",
+    "6000",
+    "10 000",
+    "14 000"
+   ],
+   "answer": 2,
+   "explain": "Q = m · c · ΔT = 200 · 1 · 30 = 6000 cal."
+  },
+  {
+   "title": "Hâl Değişimi",
+   "text": "Maddeler ısı alıp verdiklerinde hâl değiştirebilir:\nErime (katı → sıvı) ve buharlaşma (sıvı → gaz) ısı alarak olur.\nDonma (sıvı → katı) ve yoğuşma (gaz → sıvı) ısı vererek olur.\nSüblimleşme (katı → gaz, naftalin) ve kırağılaşma (gaz → katı).\n\nSaf maddeler hâl değiştirirken sıcaklıkları sabit kalır. Verilen ısı tanecikler arasındaki bağları koparmak için kullanılır. Örneğin buz erirken su-buz karışımı 0 °C'de kalır.\n\nHâl değişimi için gereken ısı: Q = m · L\nL: erime ya da buharlaşma ısısı. Buzun erime ısısı 80 cal/g'dır.\n\nGünlük örnekler: Terlediğimizde ter buharlaşırken vücudumuzdan ısı alır ve serinleriz. Kışın meyve depolarına su konur; su donarken ısı vererek meyvelerin donmasını önler.",
+   "q": "0 °C'deki 50 g buzu tamamen eritmek için kaç kalori ısı gerekir? (Buzun erime ısısı 80 cal/g)",
+   "choices": [
+    "4000",
+    "8000",
+    "130",
+    "400",
+    "1600"
+   ],
+   "answer": 0,
+   "explain": "Q = m · L = 50 · 80 = 4000 cal. Erime sırasında sıcaklık 0 °C'de sabit kalır."
+  },
+  {
+   "title": "Isıl Denge",
+   "text": "Sıcaklıkları farklı iki madde temas ettiğinde, sıcak olan ısı verir, soğuk olan ısı alır. Sıcaklıklar eşitlenince ısı akışı durur. Bu duruma ısıl denge denir.\n\nDış ortamla ısı alışverişi yoksa:\nVerilen ısı = alınan ısı\nm₁ · c₁ · (T₁ − Td) = m₂ · c₂ · (Td − T₂)\n\nDenge sıcaklığı her zaman iki başlangıç sıcaklığı arasındadır.\n\nAynı cins sıvılarda kısa yol: Kütleleri eşit, sıcaklıkları 20 °C ve 60 °C olan iki su karıştırılırsa denge sıcaklığı tam ortadadır: 40 °C. Kütleler farklıysa denge sıcaklığı, kütlesi büyük olanın sıcaklığına daha yakındır.\n\nTermometreyle ölçüm de ısıl dengeye dayanır: Termometre ölçtüğü maddeyle dengeye gelince kendi sıcaklığını gösterir.",
+   "q": "40 °C'deki 100 g su ile 10 °C'deki 200 g su karıştırılıyor. Isı kaybı yoksa denge sıcaklığı kaç °C olur?",
+   "choices": [
+    "30",
+    "35",
+    "15",
+    "20",
+    "25"
+   ],
+   "answer": 3,
+   "explain": "100 · (40 − T) = 200 · (T − 10) → 4000 − 100T = 200T − 2000 → 300T = 6000 → T = 20 °C."
+  },
+  {
+   "title": "Isı Aktarım Yolları",
+   "text": "Isı üç yolla aktarılır:\n\nİletim: Isı, tanecikler arasındaki çarpışmalarla komşu taneciklere aktarılır. En çok katılarda, özellikle metallerde görülür. Ucu ateşe tutulan metal çubuğun diğer ucunun ısınması iletimdir.\n\nKonveksiyon (akım): Akışkanlarda (sıvı ve gaz) ısınan kısım genleşip hafifler ve yükselir, soğuk kısım aşağı iner. Böylece madde akımıyla ısı taşınır. Odayı ısıtan kalorifer peteği, tencerede ısınan su, rüzgârların oluşumu.\n\nIşıma: Isının elektromanyetik dalgalarla aktarılmasıdır. Maddesel ortam gerektirmez; Güneş'in ısısı boşluktan geçerek Dünya'ya ışımayla gelir. Koyu renkli yüzeyler ışımayı daha çok soğurur.\n\nTermos bu üç yolu da azaltacak şekilde tasarlanmıştır: Arası boşluklu çift cam (iletim ve konveksiyon) ve parlak gümüş yüzey (ışıma).",
+   "q": "Güneş'ten gelen ısının Dünya'ya ulaşması hangi ısı aktarım yoluyla olur?",
+   "choices": [
+    "Konveksiyon",
+    "Işıma",
+    "Buharlaşma",
+    "Yoğuşma",
+    "İletim"
+   ],
+   "answer": 1,
+   "explain": "Güneş ile Dünya arasında büyük ölçüde boşluk vardır. Isı maddesel ortam gerektirmeyen ışımayla aktarılır."
+  },
+  {
+   "title": "Isı İletim Hızı",
+   "text": "Bir maddeden birim zamanda iletilen ısı miktarına ısı iletim hızı denir. Şunlara bağlıdır:\n\nMaddenin cinsi: Metaller (bakır, alüminyum, gümüş) ısıyı iyi iletir; tahta, plastik, cam, hava ve strafor yalıtkandır.\nSıcaklık farkı: İki yüz arasındaki sıcaklık farkı büyüdükçe iletim hızı artar.\nKesit alanı: Kesit büyüdükçe iletim hızı artar.\nKalınlık: Kalınlık arttıkça iletim hızı azalır.\n\nUygulamalar:\nTencereler metalden, sapları plastik ya da tahtadan yapılır.\nBinalarda dış cephe yalıtımı (mantolama) ve çift camlı pencereler (arada hava ya da gaz) ısı kaybını azaltır.\nKuş tüyü montlar, tüylerin arasında hapsedilen hava sayesinde sıcak tutar.\n\nEnerji verimliliği için yalıtım hem ekonomiye hem çevreye katkı sağlar.",
+   "q": "Çift camlı pencerelerin ısı kaybını azaltmasının nedeni nedir?",
+   "choices": [
+    "Camın ışığı engellemesi",
+    "Camların kalınlığının az olması",
+    "Pencerenin metal olması",
+    "Camların ısıyı iyi iletmesi",
+    "İki cam arasındaki hava ya da gazın ısıyı kötü iletmesi"
+   ],
+   "answer": 4,
+   "explain": "İki cam arasındaki hava ya da gaz iyi bir yalıtkandır ve ısı iletim hızını düşürür."
+  }
+ ]
+}

@@ -1,0 +1,310 @@
+{
+ "Geometrik Şekiller": [
+  {
+   "title": "Dik Üçgende Trigonometrik Oranlar",
+   "text": "Bir dik üçgende dar açılardan birine α dersek kenarlar bu açıya göre adlandırılır: α'nın karşısındaki kenar karşı dik kenar, α'nın yanındaki dik kenar komşu dik kenar, 90°'nin karşısındaki en uzun kenar ise hipotenüstür.\n\nsin α = karşı / hipotenüs\ncos α = komşu / hipotenüs\ntan α = karşı / komşu\ncot α = komşu / karşı\n\nEn önemli özdeşlik Pisagor bağıntısından gelir: sin²α + cos²α = 1. Ayrıca tan α = sin α / cos α ve tan α · cot α = 1'dir.\n\nÖzel açıları ezberlemek işini hızlandırır: sin 30° = 1/2, sin 45° = √2/2, sin 60° = √3/2. Tümler açılarda sin α = cos(90° − α) olduğu için cos 60° = 1/2, cos 30° = √3/2 olur.",
+   "q": "Bir dik üçgende α dar açısı için cos α = 5/13 ise tan α kaçtır?",
+   "choices": [
+    "13/5",
+    "5/12",
+    "12/13",
+    "12/5",
+    "13/12"
+   ],
+   "answer": 3,
+   "explain": "Komşu 5, hipotenüs 13 alınırsa karşı kenar √(169 − 25) = 12 olur. tan α = karşı / komşu = 12/5."
+  },
+  {
+   "title": "Üçgende Yardımcı Elemanlar",
+   "text": "Bir üçgende üç önemli yardımcı eleman vardır:\n\nKenarortay: Bir köşeyi karşı kenarın orta noktasına birleştirir. Üç kenarortay ağırlık merkezinde (G) kesişir. G, her kenarortayı köşeden itibaren 2'ye 1 oranında böler.\n\nAçıortay: Bir açıyı iki eş parçaya böler. İç açıortaylar iç teğet çemberin merkezinde kesişir. Açıortay teoremi: A açısının açıortayı BC kenarını, AB ve AC kenarlarıyla orantılı parçalara ayırır.\n\nYükseklik: Bir köşeden karşı kenara (ya da uzantısına) çizilen dikmedir. Üç yükseklik diklik merkezinde kesişir.\n\nDik üçgende hipotenüse ait kenarortay hipotenüsün yarısına eşittir; bu bilgi sorularda sık kullanılır.",
+   "q": "Bir üçgende A köşesinden çizilen kenarortayın uzunluğu 12 cm'dir. Ağırlık merkezi G ile A arasındaki uzaklık kaç cm'dir?",
+   "choices": [
+    "6",
+    "8",
+    "9",
+    "10",
+    "4"
+   ],
+   "answer": 1,
+   "explain": "G kenarortayı köşeden itibaren 2:1 oranında böler. |AG| = 12 · 2/3 = 8 cm."
+  },
+  {
+   "title": "Üçgenin Alanı",
+   "text": "Üçgenin alanı en temel hâliyle taban × yükseklik / 2'dir. Ancak yükseklik verilmediğinde trigonometri yardımımıza koşar.\n\nİki kenarı ve aralarındaki açıyı bildiğimiz bir üçgende:\nAlan = ½ · a · b · sin C\n\nÖrneğin kenarları 6 ve 10, aralarındaki açı 30° ise alan = ½ · 6 · 10 · ½ = 15 olur.\n\nBu formül, aradaki açı 90° olduğunda (sin 90° = 1) bildiğimiz dik üçgen alanına döner. Açı 150° olduğunda da sin 150° = sin 30° = 1/2 olduğuna dikkat et: geniş açılı üçgenlerde de formül aynen çalışır.",
+   "q": "İki kenarı 8 cm ve 5 cm, bu kenarlar arasındaki açısı 150° olan üçgenin alanı kaç cm²'dir?",
+   "choices": [
+    "20",
+    "10√3",
+    "40",
+    "5",
+    "10"
+   ],
+   "answer": 4,
+   "explain": "sin 150° = sin 30° = 1/2. Alan = ½ · 8 · 5 · ½ = 10 cm²."
+  },
+  {
+   "title": "Sinüs ve Kosinüs Teoremleri",
+   "text": "Dik olmayan üçgenlerde kenar ve açıları bulmak için iki teorem kullanılır.\n\nSinüs teoremi: a / sin A = b / sin B = c / sin C = 2R\nBurada R çevrel çemberin yarıçapıdır. İki açı ve bir kenar biliniyorsa diğer kenarlar bulunur.\n\nKosinüs teoremi: a² = b² + c² − 2bc · cos A\nİki kenar ve aralarındaki açı biliniyorsa üçüncü kenar bulunur. A = 90° olunca cos A = 0 olur ve formül Pisagor teoremine dönüşür.\n\nKüçük ipucu: Üç kenar verilip bir açı soruluyorsa kosinüs teoremini cos A'yı yalnız bırakacak şekilde kullan.",
+   "q": "ABC üçgeninde |AB| = 3, |AC| = 5 ve m(A) = 120°'dir. |BC| kaçtır?",
+   "choices": [
+    "√19",
+    "6",
+    "7",
+    "8",
+    "4"
+   ],
+   "answer": 2,
+   "explain": "|BC|² = 3² + 5² − 2 · 3 · 5 · cos 120° = 9 + 25 − 30 · (−1/2) = 49. |BC| = 7."
+  }
+ ],
+ "İstatistiksel Araştırma Süreci": [
+  {
+   "title": "İki Kategorik Değişkenli Veriler",
+   "text": "Kategorik değişken, sayı değil grup bildiren değişkendir: cinsiyet, okul türü, sevilen spor gibi. İki kategorik değişken arasındaki ilişkiyi incelemek için iki yönlü tablo (çapraz tablo) kullanılır.\n\nÖrneğin 100 öğrenciye sınıfı (9 / 10) ve kahvaltı yapıp yapmadığı sorulmuş olsun. Satırlar sınıfları, sütunlar cevapları gösterir; satır ve sütun toplamlarına marjinal toplamlar denir.\n\nİlişki aranırken ham sayılar değil oranlar karşılaştırılır. 9. sınıfların %60'ı, 10. sınıfların %40'ı kahvaltı yapıyorsa iki değişken arasında bir ilişki olabilir. Oranlar aynı çıksaydı değişkenler arasında ilişki yok diyebilirdik.",
+   "q": "Bir okulda 80 kız öğrencinin 48'i, 120 erkek öğrencinin 60'ı kitap okumayı seviyor. Buna göre hangisi doğrudur?",
+   "choices": [
+    "Kızlarda oran %60, erkeklerde %50; kızlarda oran daha yüksek.",
+    "İki grupta oran eşittir.",
+    "Erkeklerde oran %60'tır.",
+    "Veriler karşılaştırma yapmaya yetmez.",
+    "Kitap okumayı seven erkek sayısı daha fazla olduğu için erkekler daha çok seviyor."
+   ],
+   "answer": 0,
+   "explain": "Gruplar farklı büyüklükte olduğu için oranlar karşılaştırılır: 48/80 = %60, 60/120 = %50."
+  },
+  {
+   "title": "Başkalarının Oluşturduğu Verileri İncelemek",
+   "text": "Haberlerde, reklamlarda ya da araştırmalarda gördüğün verileri eleştirel okumalısın. Sorman gereken sorular:\n\n1. Örneklem nasıl seçildi? Yalnızca bir spor salonunda yapılan anket, bütün şehrin spor alışkanlığını göstermez. Bu duruma örneklem yanlılığı denir.\n2. Örneklem yeterince büyük mü? 10 kişiyle yapılan bir anket genelleme için zayıftır.\n3. Grafik yanıltıcı mı? Dikey eksen 0'dan başlamıyorsa küçük farklar büyük görünebilir.\n4. Oran mı sayı mı verilmiş? Büyük bir grubun sayıca fazla olması, oranca da fazla olduğu anlamına gelmez.\n\nİyi bir araştırmada soru net sorulur, örneklem rastgele seçilir ve sonuçlar oranlarla verilir.",
+   "q": "Bir dergi, okurlarına internet sitesinden anket yaparak ülkedeki gençlerin %90'ının internette günde 5 saatten fazla vakit geçirdiğini açıklıyor. Bu sonuçtaki temel sorun nedir?",
+   "choices": [
+    "Sorun yoktur, sonuç genellenebilir.",
+    "Yüzde yerine sayı kullanılmalıydı.",
+    "Grafik çizilmemiştir.",
+    "Örneklem yalnızca internet kullanan okurlardan oluştuğu için yanlıdır.",
+    "Anket çok kısa sürmüştür."
+   ],
+   "answer": 3,
+   "explain": "Anketi internet sitesinde cevaplayanlar zaten interneti çok kullananlardır; örneklem tüm gençleri temsil etmez."
+  }
+ ],
+ "Sayılar": [
+  {
+   "title": "Asal Çarpanlar ve Bölenler",
+   "text": "Her doğal sayı (1'den büyük) asal sayıların çarpımı olarak tek bir şekilde yazılabilir. Örneğin 360 = 2³ · 3² · 5.\n\nBir sayı a^m · b^n · c^k biçiminde asal çarpanlarına ayrılmışsa:\nPozitif bölen sayısı = (m + 1)(n + 1)(k + 1)\n\n360 için (3 + 1)(2 + 1)(1 + 1) = 24 pozitif bölen vardır. Tam sayı bölen sayısı bunun iki katıdır (negatifler de sayılır): 48.\n\nAsal çarpanlara ayırırken sayıyı en küçük asaldan başlayarak sırayla bölmek en güvenli yoldur.",
+   "q": "72 sayısının kaç tane pozitif böleni vardır?",
+   "choices": [
+    "9",
+    "12",
+    "15",
+    "6",
+    "8"
+   ],
+   "answer": 1,
+   "explain": "72 = 2³ · 3². Pozitif bölen sayısı (3 + 1)(2 + 1) = 12."
+  },
+  {
+   "title": "EBOB ve EKOK",
+   "text": "EBOB (en büyük ortak bölen), iki sayıyı da bölen en büyük sayıdır. EKOK (en küçük ortak kat), iki sayının da katı olan en küçük pozitif sayıdır.\n\nAsal çarpanlarla bulmak kolaydır: 24 = 2³ · 3 ve 36 = 2² · 3²\nEBOB: ortak asalların en küçük üsleri → 2² · 3 = 12\nEKOK: tüm asalların en büyük üsleri → 2³ · 3² = 72\n\nFaydalı bir bağıntı: a · b = EBOB(a, b) · EKOK(a, b). Kontrol: 24 · 36 = 864 = 12 · 72.\n\nProblemlerde ayırt etme: Bir şeyi eş parçalara bölmek (fayans, kesme) EBOB; olayların tekrar aynı anda gerçekleşmesi (otobüsler, zil) EKOK sorusudur.",
+   "q": "İki otobüs aynı duraktan sırasıyla 12 ve 18 dakikada bir kalkıyor. Saat 08.00'de birlikte kalktıklarına göre ilk kez saat kaçta yine birlikte kalkarlar?",
+   "choices": [
+    "08.54",
+    "09.12",
+    "08.06",
+    "08.30",
+    "08.36"
+   ],
+   "answer": 4,
+   "explain": "Birlikte kalkış EKOK sorusudur: EKOK(12, 18) = 36 dakika. 08.00 + 36 dk = 08.36."
+  },
+  {
+   "title": "Bölünebilme Kuralları",
+   "text": "Bölme işlemini yapmadan bir sayının bölünüp bölünmediğini anlamak için kurallar:\n\n2: Son basamak çift.\n3: Rakamları toplamı 3'ün katı.\n4: Son iki basamak 4'ün katı.\n5: Son basamak 0 ya da 5.\n9: Rakamları toplamı 9'un katı.\n10: Son basamak 0.\n11: Sağdan başlayarak rakamlara +, −, +, − işaretleri verilir; toplam 11'in katıysa bölünür.\n\nBileşik kurallar: 6 ile bölünme için hem 2 hem 3; 12 için hem 3 hem 4; 15 için hem 3 hem 5 kuralı sağlanmalıdır (aralarında asal çarpanlar).",
+   "q": "Dört basamaklı 52a4 sayısı 6 ile tam bölünebildiğine göre a'nın alabileceği değerler toplamı kaçtır?",
+   "choices": [
+    "21",
+    "9",
+    "12",
+    "15",
+    "18"
+   ],
+   "answer": 2,
+   "explain": "Son basamak 4 olduğundan 2'ye bölünür. 3 ile bölünmesi için 5 + 2 + a + 4 = 11 + a, 3'ün katı olmalı: a = 1, 4 ya da 7. Toplam 1 + 4 + 7 = 12."
+  }
+ ],
+ "Nicelikler ve Değişimler": [
+  {
+   "title": "Fonksiyon Olma Şartları",
+   "text": "A kümesinden B kümesine bir bağıntının fonksiyon olması için iki şart vardır:\n\n1. A'daki her eleman kullanılmalıdır (boşta eleman kalmaz).\n2. A'daki her eleman yalnızca bir elemanla eşlenmelidir.\n\nB'de boşta eleman kalması ya da B'deki bir elemana birden fazla ok gelmesi sorun değildir.\n\nGrafik üzerinde dikey doğru testi uygulanır: Tanım kümesindeki her x için çizilen dikey doğru grafiği yalnızca bir noktada kesiyorsa grafik bir fonksiyona aittir. Örneğin x² + y² = 4 çemberi fonksiyon değildir, çünkü x = 0'da dikey doğru çemberi iki noktada keser.",
+   "q": "Aşağıdakilerden hangisi gerçek sayılarda y'yi x'in fonksiyonu olarak tanımlamaz?",
+   "choices": [
+    "y² = x",
+    "y = |x|",
+    "y = x³",
+    "y = x²",
+    "y = 2x − 1"
+   ],
+   "answer": 0,
+   "explain": "y² = x için örneğin x = 4'te y = 2 ve y = −2 elde edilir; bir x'e iki y karşılık geldiği için fonksiyon değildir."
+  },
+  {
+   "title": "Karesel Fonksiyon",
+   "text": "f(x) = ax² + bx + c (a ≠ 0) biçimindeki fonksiyonlara karesel fonksiyon denir; grafiği paraboldür.\n\na > 0 ise kollar yukarı, fonksiyonun en küçük değeri vardır.\na < 0 ise kollar aşağı, fonksiyonun en büyük değeri vardır.\n\nTepe noktası T(r, k): r = −b / 2a, k = f(r).\nSimetri ekseni x = r doğrusudur.\n\nGrafiğin y eksenini kestiği nokta (0, c)'dir. x eksenini kestiği noktalar ax² + bx + c = 0 denkleminin kökleridir; Δ = b² − 4ac > 0 ise iki, = 0 ise bir, < 0 ise hiç kesim noktası yoktur.",
+   "q": "f(x) = x² − 6x + 5 fonksiyonunun alabileceği en küçük değer kaçtır?",
+   "choices": [
+    "0",
+    "3",
+    "5",
+    "−4",
+    "−1"
+   ],
+   "answer": 3,
+   "explain": "a > 0 olduğu için en küçük değer tepe noktasındadır. r = 6/2 = 3, f(3) = 9 − 18 + 5 = −4."
+  },
+  {
+   "title": "Karekök Fonksiyonu",
+   "text": "f(x) = √x fonksiyonu yalnızca x ≥ 0 için gerçek sayı değeri verir. Bu yüzden tanım kümesi [0, ∞), görüntü kümesi de [0, ∞)'dur.\n\nGenel hâli f(x) = √(ax + b) + c olabilir. Tanım kümesini bulmak için kök içi sıfır ya da pozitif olmalıdır: ax + b ≥ 0.\n\nGrafiğin özellikleri: Başlangıç noktasından başlar, sürekli artar ama artış hızı giderek azalır. Örneğin √0 = 0, √1 = 1, √4 = 2, √9 = 3: x 9 kat artarken değer yalnızca 3 kat artar.\n\n√x grafiği, y = x² grafiğinin x ≥ 0 olan kısmının y = x doğrusuna göre simetriğidir.",
+   "q": "f(x) = √(2x − 6) fonksiyonunun en geniş tanım kümesi hangisidir?",
+   "choices": [
+    "x ≥ 2",
+    "x ≥ 3",
+    "x > 3",
+    "x ≤ 3",
+    "x ≥ 0"
+   ],
+   "answer": 1,
+   "explain": "Kök içi negatif olamaz: 2x − 6 ≥ 0 → x ≥ 3."
+  },
+  {
+   "title": "Rasyonel Fonksiyon",
+   "text": "Pay ve paydası polinom olan fonksiyonlara rasyonel fonksiyon denir; en basit örneği f(x) = 1/x'tir.\n\nPaydayı sıfır yapan değerler tanım kümesine girmez. f(x) = 1/x için x ≠ 0'dır.\n\nAsimptot: Grafiğin yaklaştığı ama değmediği doğrudur.\nf(x) = 1/(x − a) + b fonksiyonunda düşey asimptot x = a, yatay asimptot y = b'dir.\n\n1/x grafiği iki parçadan oluşur: x > 0 iken pozitif, x < 0 iken negatif değerler alır. x büyüdükçe 1/x sıfıra yaklaşır; x sıfıra yaklaştıkça değeri çok büyür. Ters orantı (hız-zaman, işçi-gün) problemleri bu fonksiyonla modellenir.",
+   "q": "f(x) = 3/(x − 2) + 1 fonksiyonunun düşey ve yatay asimptotları hangileridir?",
+   "choices": [
+    "x = −2, y = 1",
+    "x = 1, y = 2",
+    "x = 2, y = 3",
+    "x = 3, y = 2",
+    "x = 2, y = 1"
+   ],
+   "answer": 4,
+   "explain": "Paydayı sıfır yapan x = 2 düşey asimptot; fonksiyona eklenen sabit 1 ise yatay asimptot y = 1'dir."
+  },
+  {
+   "title": "Ters Fonksiyon",
+   "text": "Bir f fonksiyonu bire bir ve örten ise tersi vardır; f(a) = b ise f⁻¹(b) = a'dır. Ters fonksiyon, fonksiyonun yaptığı işi geri alır.\n\nBulma yöntemi: y = f(x) yaz, x'i yalnız bırak, sonra x ile y'nin yerini değiştir.\n\nÖrnek: f(x) = 2x + 3 → y = 2x + 3 → x = (y − 3)/2 → f⁻¹(x) = (x − 3)/2.\n\nKaresel fonksiyon tüm gerçek sayılarda bire bir olmadığı için tersi için tanım kümesi kısıtlanır (örneğin x ≥ 0 için f(x) = x² ise f⁻¹(x) = √x). f ve f⁻¹ grafikleri y = x doğrusuna göre simetriktir.",
+   "q": "f(x) = (x + 1)/3 fonksiyonu için f⁻¹(5) kaçtır?",
+   "choices": [
+    "6",
+    "12",
+    "14",
+    "16",
+    "2"
+   ],
+   "answer": 2,
+   "explain": "f⁻¹(5) = a ise f(a) = 5'tir: (a + 1)/3 = 5 → a = 14."
+  },
+  {
+   "title": "Fonksiyonlarla Denklem ve Eşitsizlikler",
+   "text": "f(x) = g(x) denkleminin çözümleri, iki fonksiyonun grafiklerinin kesiştiği noktaların x değerleridir. f(x) > g(x) eşitsizliğinin çözümü ise f'nin grafiğinin g'nin grafiğinin üstünde kaldığı x aralığıdır.\n\nKaresel eşitsizlikte yöntem: Önce denklemin köklerini bul, sonra parabolün kollarına bak.\n\nÖrnek: x² − 4 < 0. Kökler −2 ve 2. Kollar yukarı olduğu için parabol kökler arasında x ekseninin altındadır. Çözüm: −2 < x < 2.\n\nGerçek hayat problemlerinde (en çok kâr, en uzun mesafe) önce durumu fonksiyonla modelle, sonra denklemi ya da eşitsizliği çöz.",
+   "q": "x² − 5x + 6 ≤ 0 eşitsizliğinin çözüm kümesi hangisidir?",
+   "choices": [
+    "2 ≤ x ≤ 3",
+    "x ≤ 2 veya x ≥ 3",
+    "−3 ≤ x ≤ −2",
+    "x ≤ 2",
+    "x ≥ 3"
+   ],
+   "answer": 0,
+   "explain": "Kökler 2 ve 3. Kollar yukarı olduğundan ifade kökler arasında sıfır ya da negatiftir: 2 ≤ x ≤ 3."
+  }
+ ],
+ "Sayma, Algoritma ve Bilişim": [
+  {
+   "title": "Sayma Stratejileri",
+   "text": "Toplama yoluyla sayma: Seçenekler ayrı ayrıysa (ya biri ya diğeri) sayılar toplanır. 3 tatlı ya da 4 meyveden biri seçilecekse 3 + 4 = 7 yol vardır.\n\nÇarpma yoluyla sayma: Seçimler art arda yapılıyorsa (hem biri hem diğeri) sayılar çarpılır. 3 tişört ve 4 pantolondan bir kombin 3 · 4 = 12 yolla seçilir.\n\nPermütasyon (sıralama): n farklı nesne n! yolla sıralanır. 5 kişi bir sıraya 5! = 120 yolla dizilir.\n\nKombinasyon (seçme): Sıranın önemsiz olduğu seçimlerdir. C(n, r) = n! / (r!(n − r)!). 6 kişiden 2 kişilik bir ekip C(6, 2) = 15 yolla seçilir.\n\nSoruyu çözmeden önce sor: Sıra önemli mi?",
+   "q": "8 kişilik bir sınıftan 3 kişilik bir temsilci grubu (görev dağılımı olmadan) kaç farklı şekilde seçilebilir?",
+   "choices": [
+    "336",
+    "512",
+    "24",
+    "56",
+    "112"
+   ],
+   "answer": 3,
+   "explain": "Sıra önemsiz olduğu için kombinasyon: C(8, 3) = 8 · 7 · 6 / 3! = 56."
+  },
+  {
+   "title": "Cebirsel ve Fonksiyonel İşlemlerin Algoritmik Yapısı",
+   "text": "Algoritma, bir problemi çözmek için izlenen sıralı ve sonlu adımlardır. Matematikteki işlemler de birer algoritmadır: bileşke fonksiyon hesaplamak, bir işlemi adım adım uygulamak gibi.\n\nAlgoritmaların temel yapıları:\nSıralı yapı: Adımlar sırayla yapılır.\nKarar yapısı: Eğer koşul doğruysa bir şey, değilse başka bir şey yap.\nDöngü: Bir koşul sağlanana kadar adımları tekrarla.\n\nÖrnek algoritma: 1) x'i al. 2) x çiftse x'i 2'ye böl, tekse 3x + 1 yap. 3) Sonuç 1 değilse 2. adıma dön.\nx = 6 için: 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1.\n\nAlgoritmayı adım adım bir tabloya yazarak izlemek hata yapmayı önler.",
+   "q": "Bir algoritma şöyle çalışıyor: 1) Sayıyı al. 2) Sayı 10'dan küçükse 3 ile çarp, değilse 4 çıkar. 3) Bu işlemi toplam 3 kez uygula. Başlangıç sayısı 4 ise sonuç kaçtır?",
+   "choices": [
+    "12",
+    "24",
+    "28",
+    "36",
+    "8"
+   ],
+   "answer": 1,
+   "explain": "4 < 10 → 12; 12 ≥ 10 → 8; 8 < 10 → 24. Üç işlem sonunda 24."
+  }
+ ],
+ "Analitik İnceleme": [
+  {
+   "title": "Noktanın Analitik İncelenmesi",
+   "text": "Dik koordinat sisteminde her nokta (x, y) sıralı ikilisiyle gösterilir.\n\nİki nokta arasındaki uzaklık: A(x₁, y₁) ve B(x₂, y₂) için\n|AB| = √((x₂ − x₁)² + (y₂ − y₁)²)\nBu formül aslında Pisagor teoremidir: yatay fark ve dikey fark dik kenarlar, |AB| hipotenüstür.\n\nOrta nokta: [AB]'nin orta noktası ((x₁ + x₂)/2, (y₁ + y₂)/2)'dir.\n\nBölgeler: x > 0, y > 0 ise nokta I. bölgede; x < 0, y > 0 ise II.; ikisi de negatifse III.; x > 0, y < 0 ise IV. bölgededir.",
+   "q": "A(1, 2) ve B(7, 10) noktaları arasındaki uzaklık kaç birimdir?",
+   "choices": [
+    "12",
+    "14",
+    "6",
+    "8",
+    "10"
+   ],
+   "answer": 4,
+   "explain": "Yatay fark 6, dikey fark 8. |AB| = √(36 + 64) = √100 = 10."
+  },
+  {
+   "title": "Doğrunun Analitik İncelenmesi",
+   "text": "Bir doğrunun eğimi, x 1 birim arttığında y'nin ne kadar değiştiğini gösterir:\nm = (y₂ − y₁) / (x₂ − x₁)\n\nm > 0 ise doğru sağa doğru yükselir, m < 0 ise alçalır, m = 0 ise yataydır. Dikey doğruların eğimi tanımsızdır.\n\nDoğru denklemi: Eğimi m olan ve (x₁, y₁)'den geçen doğru: y − y₁ = m(x − x₁). Genel hâli y = mx + n'dir; n doğrunun y eksenini kestiği noktadır.\n\nParalel doğruların eğimleri eşittir: m₁ = m₂.\nDik doğruların eğimleri çarpımı −1'dir: m₁ · m₂ = −1.",
+   "q": "y = 2x + 3 doğrusuna dik olan ve orijinden geçen doğrunun denklemi hangisidir?",
+   "choices": [
+    "y = −2x",
+    "y = x/2",
+    "y = −x/2",
+    "y = −x/2 + 3",
+    "y = 2x"
+   ],
+   "answer": 2,
+   "explain": "Dik doğruların eğimleri çarpımı −1 olduğundan eğim −1/2. Orijinden geçtiği için n = 0: y = −x/2."
+  }
+ ],
+ "Veriden Olasılığa": [
+  {
+   "title": "Koşullu Olasılık",
+   "text": "Bir olayın gerçekleştiği bilindiğinde başka bir olayın olasılığına koşullu olasılık denir:\nP(A | B) = P(A ∩ B) / P(B)\n\nOkunuşu: B olduğu bilindiğine göre A'nın olasılığı. Mantığı şudur: Artık örnek uzayımız yalnızca B'dir, A'nın B içindeki payına bakarız.\n\nÖrnek: Bir zar atıldı ve sonucun çift olduğu söylendi. Sonucun 4'ten büyük olma olasılığı nedir? Çiftler {2, 4, 6}; bunlardan 4'ten büyük olan yalnızca 6. Cevap 1/3.\n\nİki yönlü tablolarla çok kullanışlıdır: Koşul hangi satır ya da sütunsa yalnızca ona bakılır. A ve B bağımsızsa P(A | B) = P(A) olur.",
+   "q": "Bir sınıftaki 30 öğrencinin 18'i kız, kızların 12'si gözlüklüdür. Rastgele seçilen öğrencinin kız olduğu bilindiğine göre gözlüklü olma olasılığı kaçtır?",
+   "choices": [
+    "2/3",
+    "4/5",
+    "2/5",
+    "1/2",
+    "3/5"
+   ],
+   "answer": 0,
+   "explain": "Koşul kız olmak: örnek uzay 18 kız. Bunların 12'si gözlüklü: 12/18 = 2/3."
+  },
+  {
+   "title": "Bayes Teoremi",
+   "text": "Bayes teoremi, bir sonucu gördükten sonra bu sonucun hangi nedenden kaynaklandığının olasılığını hesaplar:\nP(A | B) = P(B | A) · P(A) / P(B)\n\nÖrnek: Bir fabrikada ürünlerin %60'ı I. makinede, %40'ı II. makinede üretiliyor. I. makinenin %2'si, II. makinenin %5'i kusurlu.\nRastgele bir ürün kusurlu çıktıysa II. makineden gelme olasılığı nedir?\n\nToplam kusurlu oranı: 0,6 · 0,02 + 0,4 · 0,05 = 0,012 + 0,020 = 0,032\nII. makineden kusurlu: 0,020\nCevap: 0,020 / 0,032 = 5/8\n\nAğaç diyagramı çizmek Bayes sorularında işi kolaylaştırır: önce dallardaki olasılıkları çarp, sonra istenen dalı toplam içinde oranla.",
+   "q": "Bir torbadaki kartların %50'si mavi, %50'si kırmızıdır. Mavi kartların %20'sinde, kırmızı kartların %60'ında yıldız vardır. Çekilen kartta yıldız olduğu bilindiğine göre kartın mavi olma olasılığı kaçtır?",
+   "choices": [
+    "2/5",
+    "1/2",
+    "1/5",
+    "1/4",
+    "1/3"
+   ],
+   "answer": 3,
+   "explain": "Yıldızlı olma: 0,5 · 0,2 + 0,5 · 0,6 = 0,1 + 0,3 = 0,4. Mavi ve yıldızlı: 0,1. 0,1 / 0,4 = 1/4."
+  }
+ ]
+}

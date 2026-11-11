@@ -1,0 +1,178 @@
+{
+ "Genden Proteine": [
+  {
+   "title": "Nükleik Asitlerin Keşfi ve Önemi",
+   "text": "DNA'nın kalıtım materyali olduğunun anlaşılması uzun bir bilimsel sürecin sonucudur:\n\nFriedrich Miescher (1869): Hücre çekirdeğinden nüklein adını verdiği asidik bir maddeyi (nükleik asit) ilk kez ayırdı.\nGriffith (1928): Bakterilerle yaptığı deneyde, ölü hastalık yapıcı bakterilerden zararsız bakterilere bir maddenin geçerek onları dönüştürdüğünü gösterdi (transformasyon).\nAvery, MacLeod ve McCarty (1944): Bu dönüştürücü maddenin DNA olduğunu kanıtladı.\nHershey ve Chase (1952): Virüslerle yaptıkları deneyle kalıtım materyalinin protein değil DNA olduğunu doğruladı.\nChargaff: DNA'da A = T ve G = C olduğunu buldu.\nRosalind Franklin: X ışını kırınım görüntüleriyle DNA'nın sarmal yapısına ilişkin kritik veriler elde etti.\nWatson ve Crick (1953): DNA'nın çift zincirli sarmal (ikili heliks) modelini ortaya koydu.\n\nDNA'nın yapısı: Nükleotitlerden oluşur (fosfat + deoksiriboz + baz). İki zincir, bazlar arasındaki hidrojen bağlarıyla bir arada durur: A=T (2 bağ), G≡C (3 bağ).\n\nDNA kendini eşleyebilir (replikasyon): Her yeni DNA molekülü bir eski, bir yeni zincirden oluşur (yarı korunumlu eşlenme).",
+   "q": "Bir DNA molekülündeki nükleotitlerin %30'u adenin içeriyorsa guanin içeren nükleotitlerin oranı yüzde kaçtır?",
+   "choices": [
+    "%70",
+    "%15",
+    "%20",
+    "%30",
+    "%40"
+   ],
+   "answer": 2,
+   "explain": "A = T olduğundan A + T = %60. Geriye kalan %40, G ve C arasında eşit paylaşılır: G = %20."
+  },
+  {
+   "title": "Genetik Şifre",
+   "text": "Gen, bir proteinin (ya da RNA'nın) sentezlenmesi için gereken bilgiyi taşıyan DNA bölümüdür.\n\nGenetik şifre, DNA'daki baz dizisinin protein yapısındaki amino asit dizisine nasıl çevrileceğini belirleyen kurallardır.\nÜçlü şifre: DNA'da ardışık üç baz (mRNA'da kodon) bir amino asidi belirler.\n4 çeşit baz ile 4³ = 64 farklı kodon oluşur. Bunların 61'i amino asitleri, 3'ü dur (stop) sinyalini belirler. AUG kodonu hem başlama kodonudur hem de metiyonin amino asidini kodlar.\n20 çeşit amino asit olduğu için çoğu amino asit birden fazla kodonla şifrelenir.\n\nGenetik şifrenin özellikleri:\nEvrenseldir: Bakteriden insana kadar hemen bütün canlılarda aynı kodon aynı amino asidi belirler. Bu sayede insan insülin geni bakteriye aktarılarak insülin ürettirilebilir (biyoteknoloji).\nÖrtüşmez: Her baz yalnızca bir kodonda yer alır.\nVirgülsüzdür: Kodonlar arasında boşluk yoktur.\n\nMutasyon: DNA'daki baz dizisinin değişmesidir; protein yapısını değiştirebilir (orak hücreli anemi).",
+   "q": "mRNA'daki 4 farklı bazla en fazla kaç farklı üçlü kodon oluşturulabilir?",
+   "choices": [
+    "64",
+    "12",
+    "20",
+    "32",
+    "61"
+   ],
+   "answer": 0,
+   "explain": "Her kodonun üç basamağı için 4 seçenek vardır: 4 · 4 · 4 = 64 farklı kodon."
+  },
+  {
+   "title": "Protein Sentezi",
+   "text": "Protein sentezi iki aşamada gerçekleşir:\n\n1. Transkripsiyon (yazılım): Çekirdekte, DNA'nın bir genindeki bilgi mRNA'ya kopyalanır. RNA polimeraz enzimi DNA zincirlerinden birini kalıp olarak kullanır. Oluşan mRNA çekirdekten sitoplazmaya geçer.\n\n2. Translasyon (çeviri): Sitoplazmada ribozomlarda gerçekleşir.\nmRNA ribozoma bağlanır; çeviri AUG başlama kodonuyla başlar.\ntRNA molekülleri, bir uçlarında taşıdıkları antikodon ile mRNA'daki kodonu tanır, diğer uçlarında ilgili amino asidi getirir.\nRibozom, gelen amino asitleri peptit bağlarıyla birbirine bağlar.\nDur kodonuna gelindiğinde sentez sona erer ve polipeptit zinciri serbest kalır.\n\nRNA çeşitleri ve görevleri:\nmRNA: Şifreyi DNA'dan ribozoma taşır.\ntRNA: Amino asitleri ribozoma taşır.\nrRNA: Ribozomun yapısına katılır.\n\nÖzet: DNA → (transkripsiyon) → mRNA → (translasyon) → protein. Bu akışa biyolojinin merkezî dogması denir.",
+   "q": "Protein sentezinde amino asitleri ribozoma taşıyan ve antikodon içeren RNA çeşidi hangisidir?",
+   "choices": [
+    "DNA",
+    "RNA polimeraz",
+    "mRNA",
+    "tRNA",
+    "rRNA"
+   ],
+   "answer": 3,
+   "explain": "tRNA, antikodonuyla mRNA'daki kodonu tanır ve uygun amino asidi ribozoma getirir."
+  }
+ ],
+ "Canlılarda Enerji Dönüşümleri": [
+  {
+   "title": "Canlılık ve Enerji",
+   "text": "Canlılar büyüme, hareket, aktif taşıma, sentez ve vücut sıcaklığını koruma gibi etkinlikler için sürekli enerjiye ihtiyaç duyar.\n\nEnerjinin canlılar dünyasına girişi: Güneş ışığı fotosentezle kimyasal enerjiye (organik besinler) dönüştürülür. Bazı bakteriler kemosentezle kimyasal enerjiden yararlanır.\n\nATP (adenozin trifosfat): Hücrenin doğrudan kullandığı enerji molekülüdür. Adenin + riboz + 3 fosfattan oluşur. ATP → ADP + P + enerji. Depolanmaz, sürekli üretilip harcanır.\n\nATP üretim yolları:\nSubstrat düzeyinde fosforilasyon: Glikoliz ve Krebs döngüsünde.\nOksidatif fosforilasyon: Mitokondride elektron taşıma sisteminde (en çok ATP).\nFotofosforilasyon: Kloroplastta ışık enerjisiyle.\n\nYükseltgenme-indirgenme: Besinlerdeki enerji, elektron taşıyıcılar (NAD⁺, FAD, NADP⁺) aracılığıyla aktarılır. Bu moleküller elektron ve hidrojen alarak indirgenir (NADH, FADH₂, NADPH), enerji taşır.\n\nEnzimler bu tepkimelerin vücut sıcaklığında hızla gerçekleşmesini sağlar.",
+   "q": "Hücrede en fazla ATP'nin üretildiği yol hangisidir?",
+   "choices": [
+    "Substrat düzeyinde fosforilasyon",
+    "Mitokondride oksidatif fosforilasyon",
+    "Fermantasyon",
+    "Calvin döngüsü",
+    "Glikoliz"
+   ],
+   "answer": 1,
+   "explain": "Mitokondri iç zarındaki elektron taşıma sistemi ile gerçekleşen oksidatif fosforilasyon, hücredeki ATP'nin büyük kısmını üretir."
+  },
+  {
+   "title": "Fotosentez",
+   "text": "Fotosentez, ışık enerjisinin kimyasal enerjiye dönüştürülmesidir:\n6CO₂ + 12H₂O + ışık → C₆H₁₂O₆ + 6O₂ + 6H₂O\n\nBitkilerde kloroplastta gerçekleşir. Fotosentetik pigmentler (klorofil a, klorofil b, karotenoitler) tilakoit zarlarında bulunur ve en çok mor-mavi ve kırmızı ışığı soğurur.\n\nIşığa bağımlı tepkimeler (tilakoit zarı):\nFotosistemler ışığı soğurur, klorofildeki elektronlar uyarılır.\nSuyun fotolizi: H₂O parçalanır, O₂ açığa çıkar, elektronlar klorofile aktarılır.\nElektron taşıma sistemi ile ATP (fotofosforilasyon) ve NADPH üretilir.\n\nIşıktan bağımsız tepkimeler (Calvin döngüsü, stroma):\nCO₂, beş karbonlu RuBP'ye bağlanır (karbon tutma; RuBisCO enzimi).\nATP ve NADPH kullanılarak üç karbonlu şekerler (PGAL) oluşturulur; bunlardan glikoz sentezlenir.\nRuBP yeniden üretilir.\n\nFotosentez hızını etkileyen faktörler: Işık şiddeti ve dalga boyu, CO₂ derişimi, sıcaklık, su, mineraller (Mg klorofilin yapısındadır), klorofil miktarı ve yaprak yapısı.",
+   "q": "Fotosentezde açığa çıkan oksijen gazı hangi olay sonucunda oluşur?",
+   "choices": [
+    "Calvin döngüsü",
+    "ATP'nin parçalanması",
+    "CO₂'nin parçalanması",
+    "Glikozun sentezi",
+    "Suyun fotolizi"
+   ],
+   "answer": 4,
+   "explain": "Işığa bağımlı tepkimelerde su molekülleri parçalanır (fotoliz) ve açığa çıkan oksijen atmosfere verilir."
+  },
+  {
+   "title": "Kemosentez",
+   "text": "Kemosentez, bazı bakterilerin ışık yerine inorganik maddelerin yükseltgenmesinden elde ettikleri kimyasal enerjiyle CO₂ ve sudan organik madde üretmesidir.\n\nKemosentez yapan bakteriler:\nNitrifikasyon bakterileri: Amonyağı (NH₃) nitrite, nitriti nitrata (NO₃⁻) yükseltger. Bitkilerin kullanabileceği nitratın toprağa kazandırılmasını sağlar; azot döngüsünde önemlidir.\nKükürt bakterileri: Hidrojen sülfürü (H₂S) yükseltger. Okyanus tabanındaki sıcak su bacalarında ışığın olmadığı ekosistemlerin üreticileridir.\nDemir bakterileri: Demir bileşiklerini yükseltger.\n\nFotosentez ile karşılaştırma:\nBenzerlikler: İkisinde de CO₂ özümlenir; inorganik maddelerden organik besin üretilir; ikisini yapan canlılar da ototroftur.\nFarklar: Fotosentezde enerji kaynağı ışık, kemosentezde inorganik maddelerin yükseltgenmesidir. Kemosentezde klorofil gerekmez ve oksijen açığa çıkmaz.\n\nKemosentez, yeryüzünde yaşamın ilk dönemlerinde de önemli bir enerji kaynağı olmuş olabilir.",
+   "q": "Okyanus tabanındaki ışık almayan sıcak su bacalarında yaşayan ekosistemlerin üreticileri hangi canlılardır?",
+   "choices": [
+    "Yeşil bitkiler",
+    "Algler",
+    "Kemosentetik bakteriler",
+    "Mantarlar",
+    "Balıklar"
+   ],
+   "answer": 2,
+   "explain": "Işığın ulaşmadığı bu ortamlarda H₂S gibi maddeleri yükseltgeyerek besin üreten kemosentetik bakteriler üretici rolündedir."
+  },
+  {
+   "title": "Hücresel Solunum",
+   "text": "Hücresel solunum, besinlerdeki kimyasal enerjinin ATP'ye dönüştürülmesidir.\n\nOksijenli solunum:\nC₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + enerji (ATP)\n1. Glikoliz (sitoplazma): Glikoz iki pirüvata parçalanır; net 2 ATP ve 2 NADH oluşur. Oksijen gerektirmez.\n2. Pirüvatın asetil-CoA'ya dönüşümü (mitokondri): CO₂ açığa çıkar.\n3. Krebs döngüsü (mitokondri matriksi): Asetil-CoA tamamen parçalanır; CO₂, NADH, FADH₂ ve ATP oluşur.\n4. Elektron taşıma sistemi ve oksidatif fosforilasyon (mitokondri iç zarı): NADH ve FADH₂'deki elektronlar taşınırken ATP sentezlenir. Son elektron alıcısı oksijendir ve su oluşur. ATP'nin büyük kısmı burada üretilir.\n\nOksijensiz solunum ve fermantasyon:\nOksijen yokken glikolizden sonra pirüvat farklı ürünlere dönüşür; NAD⁺ yeniden üretilerek glikoliz sürdürülür.\nEtil alkol fermantasyonu (maya): Etil alkol + CO₂. Ekmek ve hamur kabarması.\nLaktik asit fermantasyonu (yoğurt bakterileri, oksijen yetersizliğinde kas hücreleri): Laktik asit.\nFermantasyonda glikoz başına yalnızca 2 ATP kazanılır.",
+   "q": "Oksijenli solunumda oksijenin kullanıldığı evre hangisidir?",
+   "choices": [
+    "Elektron taşıma sistemi",
+    "Fermantasyon",
+    "Calvin döngüsü",
+    "Glikoliz",
+    "Krebs döngüsü"
+   ],
+   "answer": 0,
+   "explain": "Oksijen, mitokondri iç zarındaki elektron taşıma sisteminin son elektron alıcısıdır ve suya dönüşür."
+  }
+ ],
+ "Bitki Biyolojisi": [
+  {
+   "title": "Bitkilerin Yapısı",
+   "text": "Bitkilerde dokular iki ana gruba ayrılır:\n\nMeristem (bölünür) doku: Sürekli bölünerek yeni hücreler oluşturur. Kök ve gövde uçlarındaki uç meristem boyca, kambiyum ise enine büyümeyi (kalınlaşma) sağlar. Ağaç gövdesindeki yıllık halkalar kambiyumun etkinliğiyle oluşur.\n\nSürekli (değişmez) doku:\nKoruyucu doku (epidermis, mantar): Bitkiyi dış etkenlerden korur. Yapraklarda kütikula su kaybını azaltır; stomalar gaz alışverişini sağlar.\nTemel doku (parankima): Fotosentez (yaprakta palizat ve sünger parankima), depolama.\nİletim doku: Ksilem (odun borular) su ve mineralleri kökten yapraklara taşır; ölü hücrelerden oluşur. Floem (soymuk borular) fotosentez ürünlerini taşır; canlı hücrelerden oluşur.\nDestek doku: Kollenkima ve sklerenkima bitkiye dayanıklılık kazandırır.\n\nBitkinin organları:\nKök: Su ve mineral emilimi, tutunma, depolama (havuç). Emici tüyler yüzey alanını artırır.\nGövde: Destek ve iletim.\nYaprak: Fotosentez, terleme ve gaz alışverişi.\nÇiçek: Eşeyli üreme organı.",
+   "q": "Ağaç gövdelerinin enine büyümesini (kalınlaşmasını) sağlayan doku hangisidir?",
+   "choices": [
+    "Kollenkima",
+    "Kütikula",
+    "Epidermis",
+    "Kambiyum",
+    "Ksilem"
+   ],
+   "answer": 3,
+   "explain": "Kambiyum bir meristem dokudur; bölünerek içe doğru ksilem, dışa doğru floem oluşturur ve gövdenin kalınlaşmasını sağlar."
+  },
+  {
+   "title": "Bitkilerde Madde Taşınması",
+   "text": "Su ve minerallerin taşınması (ksilemde):\nKökteki emici tüyler suyu topraktan ozmozla, mineralleri genellikle aktif taşımayla alır.\nSu, ksilem boruları içinde yapraklara kadar yükselir. Bunu sağlayan kuvvetler:\nTerleme (transpirasyon) çekimi: Yapraklardaki stomalardan su buharlaştıkça ksilemdeki su sütunu yukarı çekilir. En önemli etkendir.\nKohezyon: Su molekülleri arasındaki hidrojen bağlarıyla su sütunu kopmadan yükselir.\nAdezyon: Su moleküllerinin ksilem çeperlerine tutunması.\nKök basıncı: Köklere sürekli su girmesinin oluşturduğu itme.\n\nOrganik maddelerin taşınması (floemde):\nYapraklarda üretilen şeker (sakkaroz), floem aracılığıyla bitkinin büyüyen ve depo yapan kısımlarına (kök, meyve, tohum) taşınır.\nBasınç akış modeli: Şekerin yüklendiği kaynakta (yaprak) basınç artar; şekerin boşaltıldığı yerde (kök) basınç azalır. Floem özsuyu basınç farkıyla akar. Taşıma iki yönlü olabilir.\n\nTerleme sıcak, kuru ve rüzgârlı havada artar; nemli havada azalır.",
+   "q": "Uzun ağaçlarda suyun köklerden yapraklara kadar yükselmesini sağlayan en önemli etken hangisidir?",
+   "choices": [
+    "Floem basıncı",
+    "Yapraklardaki terleme çekimi",
+    "Fotosentez",
+    "Yer çekimi",
+    "Kambiyum bölünmesi"
+   ],
+   "answer": 1,
+   "explain": "Yapraklardan buharlaşan su, kohezyon sayesinde kopmayan su sütununu ksilem boyunca yukarı çeker."
+  },
+  {
+   "title": "Bitkilerde Eşeyli Üreme",
+   "text": "Çiçekli bitkilerde eşeyli üreme çiçekte gerçekleşir.\n\nÇiçeğin kısımları:\nÇanak ve taç yapraklar: Koruma ve böcekleri çekme.\nErkek organ (stamen): Başçık ve sapçıktan oluşur; başçıkta polenler (çiçek tozları) oluşur.\nDişi organ (pistil): Tepecik, boyuncuk ve yumurtalıktan oluşur; yumurtalıkta tohum taslakları vardır.\n\nTozlaşma: Polenlerin tepeciğe taşınmasıdır. Rüzgâr, böcekler, kuşlar ya da su aracılığıyla olur. Kendi kendine ya da çapraz tozlaşma olabilir. Arıların tarım için önemi buradan gelir.\n\nÇift döllenme (kapalı tohumlularda):\nPolen tepeciğe düşünce polen tüpü oluşur ve boyuncuk boyunca ilerler.\nBir sperm çekirdeği yumurta hücresiyle birleşerek zigotu (2n) oluşturur; zigot embriyoya dönüşür.\nDiğer sperm çekirdeği iki kutup çekirdeğiyle birleşerek besi dokuyu (endosperm, 3n) oluşturur.\n\nDöllenmeden sonra tohum taslağı tohuma, yumurtalık meyveye dönüşür.\nTohum uygun koşullarda (su, sıcaklık, oksijen) çimlenerek yeni bitkiyi oluşturur.",
+   "q": "Kapalı tohumlu bitkilerde döllenmeden sonra yumurtalık neye dönüşür?",
+   "choices": [
+    "Polen",
+    "Embriyo",
+    "Besi doku",
+    "Tohum",
+    "Meyve"
+   ],
+   "answer": 4,
+   "explain": "Döllenmeden sonra tohum taslakları tohuma, yumurtalık ise meyveye dönüşür."
+  }
+ ],
+ "Canlılar ve Çevre": [
+  {
+   "title": "Canlılar ve Çevre İlişkisi",
+   "text": "Canlılar çevreleriyle sürekli etkileşim içindedir. Çevre koşulları canlıların yaşamını, canlılar da çevreyi etkiler.\n\nAdaptasyon: Canlının bulunduğu ortamda yaşama ve üreme şansını artıran kalıtsal özelliklerdir. Doğal seçilim sonucu kuşaklar boyunca oluşur.\nÇöl bitkilerinde yaprakların dikene dönüşmesi, kalın kütikula ve derin kökler.\nKutup ayısının kalın yağ tabakası ve beyaz kürkü.\nDeve gibi çöl hayvanlarının su kaybını azaltan özellikleri.\nSu bitkilerinde stomaların yaprağın üst yüzünde olması.\n\nSınırlayıcı faktörler: Bir canlının dağılışını ve popülasyon büyüklüğünü en az bulunan ya da tolerans sınırına en yakın olan faktör belirler (su, sıcaklık, ışık, besin).\nTolerans aralığı: Canlının yaşayabildiği koşul aralığıdır. Bu aralık genişse canlı çok farklı ortamlarda yaşayabilir.\n\nCanlıların çevreye etkileri: Bitkiler toprak oluşumuna ve erozyonun önlenmesine katkı yapar; kunduzlar baraj kurarak su ekosistemini değiştirir; insan ise çevreyi en çok değiştiren türdür.",
+   "q": "Kaktüslerde yaprakların dikene dönüşmüş olması aşağıdakilerden hangisine örnektir?",
+   "choices": [
+    "Parazitliğe",
+    "Mutasyonun zararına",
+    "Kurak ortama adaptasyona",
+    "Fotosentezin artmasına",
+    "Rekabete"
+   ],
+   "answer": 2,
+   "explain": "Yaprakların dikene dönüşmesi terleme yüzeyini azaltarak su kaybını önler; kurak ortama bir adaptasyondur."
+  },
+  {
+   "title": "Çevre Sorunları ve Doğal Kaynakların Korunması",
+   "text": "İnsan etkinlikleri ekosistemlerin dengesini bozabilir:\n\nHabitat kaybı ve parçalanması: Ormansızlaşma, kentleşme, sulak alanların kurutulması. Biyoçeşitlilik kaybının en önemli nedenidir.\nKirlilik: Hava (fosil yakıtlar), su (atık sular, gübre, ilaç), toprak (katı atıklar, ağır metaller) ve plastik kirliliği. Mikroplastikler besin zincirine girmektedir.\nKüresel iklim değişikliği: Sera gazlarının artması, buzulların erimesi, türlerin yaşam alanlarının kayması.\nİstilacı türler: Başka bölgelerden getirilen türlerin yerli türleri tehdit etmesi (Karadeniz'deki taraklı denizanası).\nAşırı avlanma ve kaynak tüketimi.\n\nKoruma çalışmaları:\nMillî parklar, tabiat parkları ve koruma alanları.\nTohum ve gen bankaları.\nNesli tükenmekte olan türlerin korunması (Akdeniz foku, deniz kaplumbağası Caretta caretta, kelaynak kuşu).\nGeri dönüşüm, enerji tasarrufu, yenilenebilir enerji.\nBiyoçeşitlilik ve iklim konusundaki uluslararası sözleşmeler.\n\nTürkiye, yaklaşık 12 000 bitki türünden yaklaşık üçte biri endemik olan zengin bir biyoçeşitliliğe sahiptir.",
+   "q": "Biyoçeşitlilik kaybının günümüzdeki en önemli nedeni olarak kabul edilen etken hangisidir?",
+   "choices": [
+    "Habitat kaybı ve parçalanması",
+    "Mevsim değişiklikleri",
+    "Gel-git olayları",
+    "Ay tutulmaları",
+    "Yanardağ patlamaları"
+   ],
+   "answer": 0,
+   "explain": "Ormansızlaşma, kentleşme ve tarım alanı açma gibi nedenlerle yaşam alanlarının yok olması türlerin azalmasının en önemli nedenidir."
+  }
+ ]
+}
