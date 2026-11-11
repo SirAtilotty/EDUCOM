@@ -18,11 +18,12 @@ Okul içi iletişim ve öğrenme uygulaması (TÜBİTAK 4006 prototipi). ATICOM 
 
 ## Roller ve kayıt kodları
 
-Okula kayıt kodlarını yönetici (sunucuyu çalıştıran kişi) üretir. **Öğretmen kodları O harfiyle başlar.** Bu kodla kayıt olan kişi öğretmen sayılır, diğerleri öğrencidir. Kod, kişiyi doğrudan sınıfına ve sınıf grubuna ekler. Sınıf, ilk kodu üretildiğinde kendiliğinden açılır.
+Kayıt kodlarını yönetici yönetim panelinden, sunucuyu çalıştıran kişi de komut satırından üretir. **Öğretmen kodları O, yönetici kodları Y harfiyle başlar.** Öğretmen koduyla kayıt olan kişi öğretmen sayılır; yönetici, yönetim panelini de açabilen bir öğretmendir; diğerleri öğrencidir. Kod, kişiyi doğrudan sınıfına ve sınıf grubuna ekler. Sınıf, ilk kodu üretildiğinde kendiliğinden açılır.
 
 ```sh
 node server.js invite student 9-A 30        # 9-A için 30 öğrenci kodu
 node server.js invite teacher 9-A 10-B      # 9-A ve 10-B'ye giren bir öğretmenin kodu
+node server.js invite admin                 # bir yönetici kodu; sınıf isteğe bağlı (invite admin 9-A)
 node server.js classes                      # sınıflar ve kişi sayıları
 node server.js reset <kullanıcı>            # geçici şifre verir, açık oturumları kapatır
 node server.js remove <kullanıcı>           # üyeyi çıkarır, eski mesajları kalır
@@ -32,7 +33,17 @@ node server.js promote                      # yıl sonu: planı gösterir; promo
 node server.js prune 365                    # 365 günden eski fotoğraf ve sesli mesajları siler
 ```
 
-Kodlar tek kullanımlıktır, 7 gün geçerlidir ve `ABCDE-FGHJK` biçiminde yazdırılır. Öğrenci kodu elle yazabilir ya da yanındaki linke dokunabilir. Kodda karışabilecek harfler (O/0, I/1, L) kullanılmaz.
+Kodlar tek kullanımlıktır, 7 gün geçerlidir ve `ABCDE-FGHJK` biçiminde yazdırılır. Öğrenci kodu elle yazabilir ya da yanındaki linke dokunabilir. Kodda karışabilecek harfler (O/0, I/1, L) ve Y kullanılmaz; böylece öğrenci kodu O ya da Y ile başlamaz.
+
+### Yönetim paneli
+
+Yönetici üst çubukta bir kalkan düğmesi görür. Panel, yukarıdaki komutların yaptığını terminal olmadan yapar:
+
+- **Kayıt kodları:** öğrenci (tek sınıf, bir seferde en çok 200 kod), öğretmen ya da başka bir yönetici için. Kodlar bir kez gösterilir, kopyalama düğmesi vardır.
+- **Sınıflar:** her sınıf, öğrenci ve öğretmen sayısıyla; sınıfa dokununca o sınıftaki kişiler listelenir.
+- **Kişiler:** ad, kullanıcı adı ya da sınıfa göre aranır. Kişi açılınca yönetici sınıflarını değiştirir, şifresini sıfırlar (geçici şifre gösterilir) ya da okuldan çıkarır.
+
+İlk yönetici kodu komut satırından üretilir (`node server.js invite admin`); sonrasında yöneticiler birbirine kod üretebilir. `promote`, `prune` ve `backup` yalnızca komut satırındadır, çünkü geri alınamazlar ya da sunucunun diskine yazarlar.
 
 ## Çalıştırma
 

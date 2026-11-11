@@ -140,6 +140,12 @@ if (!db.prepare("SELECT 1 FROM pragma_table_info('questions') WHERE name = 'unit
   db.exec("ALTER TABLE questions ADD COLUMN unit TEXT NOT NULL DEFAULT ''");
 }
 
+// Yönetici, panele girebilen bir öğretmendir. Kodun yönetici kodu olduğu da harfte değil burada tutulur.
+if (!db.prepare("SELECT 1 FROM pragma_table_info('users') WHERE name = 'admin'").get()) {
+  db.exec('ALTER TABLE users ADD COLUMN admin INTEGER NOT NULL DEFAULT 0');
+  db.exec('ALTER TABLE invites ADD COLUMN admin INTEGER NOT NULL DEFAULT 0');
+}
+
 // Hazır soru bankası: questions/ klasöründe her sınıf ve ders için bir dosya, üniteler MEB yıllık planındaki sırayla.
 // Çoktan seçmelide answer şıkkın sırasıdır; şıksız soru açık uçludur, explain örnek cevaptır.
 const SUBJECT_ORDER = ['Türk Dili ve Edebiyatı', 'Matematik', 'Fizik', 'Kimya', 'Biyoloji', 'Tarih',
@@ -216,13 +222,29 @@ class HttpError extends Error {
 }
 
 // ---- Kayıt kodları
-// O, 0, I, 1, L yok: elle yazarken karışmasın. Böylece öğrenci kodu asla O ile başlamaz.
-const CODE_CHARS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+// O, 0, I, 1, L yok: elle yazarken karışmasın. Y de yok: O öğretmen, Y yönetici kodunun ilk harfidir,
+// böylece öğrenci kodu bu harflerle başlamaz.
+const CODE_CHARS = 'ABCDEFGHJKMNPQRSTUVWXZ23456789';
+const CODE_PREFIX = { student: '', teacher: 'O', admin: 'Y' };
 const normalizeCode = (value) => str(value).toUpperCase().replace(/0/g, 'O').replace(/[^A-Z0-9]/g, '');
-function newCode(teacher) {
-  let code = teacher ? 'O' : '';
+function newCode(role) {
+  let code = CODE_PREFIX[role];
   while (code.length < 10) code += CODE_CHARS[crypto.randomInt(CODE_CHARS.length)];
   return code;
+}
+
+// Öğrencinin tek sınıfı, öğretmenin en az bir sınıfı olur; yönetici sınıfsız da olabilir.
+const validInvite = (role, classCount, count) => Number.isInteger(count) && count >= 1 && count <= 200
+  && (role === 'student' ? classCount === 1 : role === 'teacher' ? classCount >= 1 : role === 'admin');
+
+function createInvites(role, classNames, count) {
+  const classIds = JSON.stringify(classNames.map((name) => ensureClass(name).id));
+  const expires = Date.now() + INVITE_DAYS * 864e5;
+  return Array.from({ length: count }, () => {
+    const code = newCode(role);
+    db.prepare('INSERT INTO invites (hash, classes, expires, admin) VALUES (?, ?, ?, ?)').run(sha256(code), classIds, expires, Number(role === 'admin'));
+    return { code: `${code.slice(0, 5)}-${code.slice(5)}`, link: `${BASE_URL}/#invite=${code}` };
+  });
 }
 
 // "9a", "9 A", "9/A" -> "9-A"
@@ -256,9 +278,27 @@ function setClasses(userId, classIds) {
 }
 
 // ---- Yönetici komutları
+const CLASS_COUNTS = `
+  SELECT c.id, c.name, COALESCE(SUM(u.role = 'student'), 0) AS students, COALESCE(SUM(u.role = 'teacher'), 0) AS teachers
+  FROM classes c LEFT JOIN members m ON m.convo_id = c.convo_id
+  LEFT JOIN users u ON u.id = m.user_id AND u.disabled = 0
+  GROUP BY c.id ORDER BY c.grade, c.name`;
+
+// Geçici şifre verir ve açık oturumları kapatır.
+async function resetPassword(id) {
+  const password = crypto.randomBytes(9).toString('base64url');
+  const pass = await hashPassword(password);
+  transaction(() => {
+    db.prepare('DELETE FROM sessions WHERE user_id = ?').run(id);
+    db.prepare('UPDATE users SET pass = ? WHERE id = ?').run(pass, id);
+  });
+  return password;
+}
+
 const USAGE = `Commands:
   invite student <class> [count]     e.g. invite student 9-A 30
   invite teacher <class> [class...]  e.g. invite teacher 9-A 10-B
+  invite admin [class...]            a teacher who can also open the admin panel
   move <username> <class> [class...]  e.g. move ali 10-B (a student has one class)
   promote [--yes]                    students go up a grade, 12th graders graduate
   prune <days>                       delete photos and voice messages older than this
@@ -271,30 +311,19 @@ function runCommand([cmd, ...args]) {
     if (!u) throw new Error(`User not found: ${arg}`);
     return u;
   };
-  const randomPassword = () => crypto.randomBytes(9).toString('base64url');
   const commands = {
     invite() {
       const [role, ...rest] = args;
       let count = 1;
       if (role === 'student' && /^\d+$/.test(rest.at(-1) || '')) count = Number(rest.pop());
-      const ok = (role === 'student' && rest.length === 1) || (role === 'teacher' && rest.length >= 1);
-      if (!ok || count < 1 || count > 200) throw new Error(USAGE);
-      const classes = rest.map(ensureClass);
-      const expires = Date.now() + INVITE_DAYS * 864e5;
-      const who = role === 'teacher' ? 'Teacher' : 'Student';
-      console.log(`${who} code for ${classes.map((c) => c.name).join(', ')} (single use, valid for ${INVITE_DAYS} days):`);
-      for (let i = 0; i < count; i++) {
-        const code = newCode(role === 'teacher');
-        db.prepare('INSERT INTO invites VALUES (?, ?, ?)').run(sha256(code), JSON.stringify(classes.map((c) => c.id)), expires);
-        console.log(`${code.slice(0, 5)}-${code.slice(5)}   ${BASE_URL}/#invite=${code}`);
-      }
+      if (!validInvite(role, rest.length, count)) throw new Error(USAGE);
+      const names = rest.map((c) => parseClass(c).name);
+      const who = { student: 'Student', teacher: 'Teacher', admin: 'Admin' }[role];
+      console.log(`${who} code${names.length ? ` for ${names.join(', ')}` : ''} (single use, valid for ${INVITE_DAYS} days):`);
+      for (const { code, link } of createInvites(role, names, count)) console.log(`${code}   ${link}`);
     },
     classes() {
-      const rows = db.prepare(`
-        SELECT c.name, COALESCE(SUM(u.role = 'student'), 0) AS students, COALESCE(SUM(u.role = 'teacher'), 0) AS teachers
-        FROM classes c LEFT JOIN members m ON m.convo_id = c.convo_id
-        LEFT JOIN users u ON u.id = m.user_id AND u.disabled = 0
-        GROUP BY c.id ORDER BY c.grade, c.name`).all();
+      const rows = db.prepare(CLASS_COUNTS).all();
       for (const r of rows) console.log(`${r.name}: ${r.students} students, ${r.teachers} teachers`);
       if (!rows.length) console.log('No classes yet. A class is created with its first invite: node server.js invite student 9-A');
     },
@@ -340,13 +369,7 @@ function runCommand([cmd, ...args]) {
       console.log(`${files.length} photos and voice messages older than ${days} days deleted.`);
     },
     async reset() {
-      const { id } = findUser();
-      const password = randomPassword();
-      const pass = await hashPassword(password);
-      transaction(() => {
-        db.prepare('DELETE FROM sessions WHERE user_id = ?').run(id);
-        db.prepare('UPDATE users SET pass = ? WHERE id = ?').run(pass, id);
-      });
+      const password = await resetPassword(findUser().id);
       console.log(`New temporary password: ${password}\n(The user should change it in Profile after logging in.)`);
     },
     backup() {
@@ -379,7 +402,7 @@ function sessionHash(req) {
 }
 
 const sessionUser = db.prepare(`
-  SELECT u.id, u.username, u.name, u.role FROM sessions s JOIN users u ON u.id = s.user_id
+  SELECT u.id, u.username, u.name, u.role, u.admin FROM sessions s JOIN users u ON u.id = s.user_id
   WHERE s.hash = ? AND s.expires > ? AND u.disabled = 0`);
 const validSession = (hash) => sessionUser.get(hash, Date.now());
 
@@ -599,7 +622,7 @@ function validDate(value) {
 function profile(user) {
   const classes = db.prepare(`SELECT c.id, c.name, c.grade, c.convo_id AS convoId FROM classes c
     JOIN members m ON m.convo_id = c.convo_id WHERE m.user_id = ? ORDER BY c.grade, c.name`).all(user.id);
-  return { id: Number(user.id), username: user.username, name: user.name, role: user.role, classes };
+  return { id: Number(user.id), username: user.username, name: user.name, role: user.role, admin: Boolean(user.admin), classes };
 }
 
 const MESSAGE_SELECT = `
@@ -648,20 +671,22 @@ route('POST', /^\/api\/register$/, async ({ req, res }) => {
   checkPassword(password);
   const pass = await hashPassword(password);
   const code = normalizeCode(b.invite);
-  const role = code.startsWith('O') ? 'teacher' : 'student';
-  const id = transaction(() => {
+  const { id, role, admin } = transaction(() => {
     if (db.prepare('SELECT 1 FROM users WHERE username = ?').get(username)) {
       throw new HttpError(409, 'usernameTaken');
     }
     // Kod ancak kayıt başarılı olursa harcanır; hata olursa işlem geri alınır.
-    const invite = db.prepare('DELETE FROM invites WHERE hash = ? AND expires > ? RETURNING classes').get(sha256(code), Date.now());
+    const invite = db.prepare('DELETE FROM invites WHERE hash = ? AND expires > ? RETURNING classes, admin').get(sha256(code), Date.now());
     if (!invite) throw new HttpError(403, 'inviteInvalid');
-    const userId = db.prepare('INSERT INTO users (username, name, pass, role) VALUES (?, ?, ?, ?)').run(username, name, pass, role).lastInsertRowid;
-    for (const classId of JSON.parse(invite.classes)) joinClass.run(userId, classId);
-    return userId;
+    // Yöneticiliği koddaki harf değil kayıt belirler: bu sürümden önce üretilmiş öğrenci kodları Y ile başlayabilir.
+    const role = invite.admin || code.startsWith('O') ? 'teacher' : 'student';
+    const id = db.prepare('INSERT INTO users (username, name, pass, role, admin) VALUES (?, ?, ?, ?, ?)')
+      .run(username, name, pass, role, invite.admin).lastInsertRowid;
+    for (const classId of JSON.parse(invite.classes)) joinClass.run(id, classId);
+    return { id, role, admin: invite.admin };
   });
   startSession(req, res, id);
-  const user = profile({ id, username, name, role });
+  const user = profile({ id, username, name, role, admin });
   for (const c of user.classes) publish(c.convoId, { type: 'convo' });
   return user;
 }, true);
@@ -669,7 +694,7 @@ route('POST', /^\/api\/register$/, async ({ req, res }) => {
 route('POST', /^\/api\/login$/, async ({ req, res }) => {
   const b = await readJson(req);
   const username = str(b.username).trim();
-  const user = db.prepare('SELECT id, username, name, role, pass FROM users WHERE username = ? AND disabled = 0').get(username);
+  const user = db.prepare('SELECT id, username, name, role, admin, pass FROM users WHERE username = ? AND disabled = 0').get(username);
   const key = user && `${clientIp(req)} ${user.id}`;
   const lock = key && failedLogins.get(key);
   if (lock && lock.count >= LOCK_AFTER && lock.until > Date.now()) {
@@ -1077,6 +1102,69 @@ route('POST', /^\/api\/quiz$/, async ({ req, user }) => {
 route('DELETE', /^\/api\/quiz\/(\d+)$/, ({ user, match }) => {
   const { changes } = db.prepare('DELETE FROM questions WHERE id = ? AND teacher_id = ?').run(Number(match[1]), user.id);
   if (!changes) throw new HttpError(404, 'notFound');
+  return {};
+});
+
+// ---- Yönetim paneli: komut satırındaki invite, classes, reset, remove ve move komutlarının karşılığı.
+// promote, prune ve backup geri alınamadığı ya da sunucunun diskine yazdığı için yalnızca komut satırındadır.
+function requireAdmin(user) {
+  if (!user.admin) throw new HttpError(403, 'adminsOnly');
+}
+
+function classNames(value) {
+  try {
+    return [...new Set((Array.isArray(value) ? value : [null]).map((c) => parseClass(c).name))];
+  } catch {
+    throw new HttpError(400, 'badClass');
+  }
+}
+
+function managedUser(match, admin, self = false) {
+  const target = db.prepare('SELECT id, role FROM users WHERE id = ? AND disabled = 0').get(Number(match[1]));
+  if (!target) throw new HttpError(404, 'personNotFound');
+  // Kendi şifresini ve hesabını profilden yönetir; yanlışlıkla kendini kilitlemesin.
+  if (!self && target.id === admin.id) throw new HttpError(400, 'notYourself');
+  return target;
+}
+
+route('GET', /^\/api\/admin$/, ({ user }) => {
+  requireAdmin(user);
+  return {
+    classes: db.prepare(CLASS_COUNTS).all(),
+    users: db.prepare(`
+      SELECT u.id, u.username, u.name, u.role, u.admin,
+        COALESCE((SELECT group_concat(c.name, ', ') FROM classes c JOIN members m ON m.convo_id = c.convo_id WHERE m.user_id = u.id), '') AS classes
+      FROM users u WHERE u.disabled = 0 ORDER BY u.name`).all(),
+  };
+});
+
+route('POST', /^\/api\/admin\/invites$/, async ({ req, user }) => {
+  requireAdmin(user);
+  const b = await readJson(req);
+  const names = classNames(b.classes ?? []);
+  const count = b.count ?? 1;
+  if (!validInvite(b.role, names.length, count)) throw new HttpError(400, 'badInvite');
+  return createInvites(b.role, names, count);
+});
+
+route('POST', /^\/api\/admin\/users\/(\d+)\/reset$/, async ({ user, match }) => {
+  requireAdmin(user);
+  return { password: await resetPassword(managedUser(match, user).id) };
+});
+
+route('DELETE', /^\/api\/admin\/users\/(\d+)$/, ({ user, match }) => {
+  requireAdmin(user);
+  disableUser(managedUser(match, user).id);
+  return {};
+});
+
+route('PUT', /^\/api\/admin\/users\/(\d+)\/classes$/, async ({ req, user, match }) => {
+  requireAdmin(user);
+  const target = managedUser(match, user, true);
+  const names = classNames((await readJson(req)).classes);
+  if (target.role === 'student' && names.length !== 1) throw new HttpError(400, 'studentOneClass');
+  setClasses(target.id, names.map((name) => ensureClass(name).id));
+  sendTo([target.id], { type: 'convo' });
   return {};
 });
 

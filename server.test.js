@@ -89,7 +89,7 @@ test('öğretmen kodu O ile başlar; rol ve sınıflar koddan gelir, kod elle ya
   assert.match(teacherCode, /^O[A-Z2-9]{9}$/);
   const studentCodes = codes('student', '12-A', '5');
   assert.equal(studentCodes.length, 5);
-  for (const c of studentCodes) assert.match(c, /^[A-NP-Z2-9]{10}$/); // O hiç yok
+  for (const c of studentCodes) assert.match(c, /^[A-NP-XZ2-9]{10}$/); // O ve Y hiç yok: öğretmen ve yönetici kodlarının ilk harfi
   // Küçük harf, tire ve O yerine sıfır yazılsa da kabul edilir.
   const typed = `${teacherCode.slice(0, 5).toLowerCase().replace('o', '0')}-${teacherCode.slice(5)}`;
   const t = await call('/api/register', { json: { invite: typed, username: 'mudur', name: 'Müdür Yrd', password: PASSWORD } });
@@ -552,6 +552,78 @@ test('yönetici şifre sıfırlar ve üye çıkarır', async () => {
   cli('remove', 'giden');
   assert.equal((await call('/api/me', { cookie: login.cookie })).status, 401);
   assert.equal((await call('/api/login', { json: { username: 'giden', password: temp } })).status, 401);
+});
+
+test('yönetim paneli: yönetici kodu Y ile başlar; kod üretir, şifre sıfırlar, sınıf değiştirir, üye çıkarır', async () => {
+  const [adminCode] = codes('admin');
+  assert.match(adminCode, /^Y[A-NP-XZ2-9]{9}$/);
+  const r = await call('/api/register', { json: { invite: adminCode, username: 'yonetici', name: 'Yönetici', password: PASSWORD } });
+  assert.deepEqual([r.data.role, r.data.admin, r.data.classes], ['teacher', true, []]);
+  const admin = { cookie: r.cookie, json: {} };
+  assert.equal((await call('/api/me', { cookie: r.cookie })).data.admin, true);
+  assert.equal(hoca.admin, false);
+
+  // Yönetici olmayan hiçbir yönetim işlemini yapamaz.
+  const target = await register('panelden');
+  for (const cookie of [hoca.cookie, ali.cookie]) {
+    assert.equal((await call('/api/admin', { cookie })).status, 403);
+    assert.equal((await call('/api/admin/invites', { cookie, json: { role: 'admin' } })).status, 403);
+    assert.equal((await call(`/api/admin/users/${target.id}/reset`, { cookie, json: {} })).status, 403);
+    assert.equal((await call(`/api/admin/users/${target.id}/classes`, { cookie, method: 'PUT', json: { classes: ['10-B'] } })).status, 403);
+    assert.equal((await call(`/api/admin/users/${target.id}`, { cookie, method: 'DELETE' })).status, 403);
+  }
+
+  const panel = (await call('/api/admin', { cookie: r.cookie })).data;
+  const a9 = panel.classes.find((c) => c.name === '9-A');
+  assert.ok(a9.students >= 2 && a9.teachers >= 2);
+  assert.deepEqual(panel.users.find((u) => u.username === 'veli'), { id: veli.id, username: 'veli', name: 'veli', role: 'student', admin: 0, classes: '10-B' });
+  assert.ok(!('pass' in panel.users[0]));
+
+  const invite = (json) => call('/api/admin/invites', { ...admin, json });
+  for (const bad of [{ role: 'student', classes: ['9-A', '10-B'] }, { role: 'student', classes: [] }, { role: 'teacher' }, { role: 'mudur' },
+    { role: 'student', classes: ['yanlis'] }, { role: 'student', classes: '9-A' }, { role: 'student', classes: ['9-A'], count: 0 },
+    { role: 'student', classes: ['9-A'], count: 201 }, { role: 'student', classes: ['9-A'], count: '3' }]) {
+    assert.equal((await invite(bad)).status, 400, JSON.stringify(bad));
+  }
+  const made = (await invite({ role: 'student', classes: ['9a'], count: 3 })).data;
+  assert.equal(made.length, 3);
+  for (const m of made) assert.match(m.code, /^[A-NP-XZ2-9]{5}-[A-NP-XZ2-9]{5}$/);
+  assert.ok(made[0].link.startsWith(`${BASE}/#invite=`));
+  assert.match((await invite({ role: 'teacher', classes: ['9-A', '10-B'] })).data[0].code, /^O/);
+  assert.match((await invite({ role: 'admin' })).data[0].code, /^Y/);
+  const joined = await call('/api/register', { json: { invite: made[0].code, username: 'panelkodu', name: 'P', password: PASSWORD } });
+  assert.deepEqual([joined.data.role, joined.data.admin, joined.data.classes.map((c) => c.name)], ['student', false, ['9-A']]);
+
+  // Bu sürümden önce üretilmiş, Y ile başlayan öğrenci kodu yönetici yapmaz.
+  const { DatabaseSync } = require('node:sqlite');
+  const db = new DatabaseSync(path.join(dir, 'educom.db'));
+  const hash = require('node:crypto').createHash('sha256').update('YESKJKXD23').digest('hex');
+  db.prepare('INSERT INTO invites (hash, classes, expires) VALUES (?, ?, ?)').run(hash, `[${class9a.id}]`, Date.now() + 60000);
+  db.close();
+  const old = await call('/api/register', { json: { invite: 'YESKJ-KXD23', username: 'eskikod', name: 'E', password: PASSWORD } });
+  assert.deepEqual([old.data.role, old.data.admin], ['student', false]);
+  assert.equal((await call('/api/admin', { cookie: old.cookie })).status, 403);
+
+  const classes = (json) => call(`/api/admin/users/${target.id}/classes`, { ...admin, method: 'PUT', json });
+  assert.equal((await classes({ classes: ['10-B', '11-C'] })).status, 400); // öğrencinin tek sınıfı olur
+  assert.equal((await classes({ classes: [] })).status, 400);
+  assert.equal((await classes({ classes: ['yanlis'] })).status, 400);
+  assert.equal((await classes({ classes: ['10-b'] })).status, 200);
+  assert.deepEqual((await call('/api/me', { cookie: target.cookie })).data.classes.map((c) => c.name), ['10-B']);
+  // Yönetici kendine sınıf verebilir; öğretmenin birden çok sınıfı olur.
+  assert.equal((await call(`/api/admin/users/${r.data.id}/classes`, { ...admin, method: 'PUT', json: { classes: ['9-A', '11-C'] } })).status, 200);
+  assert.deepEqual((await call('/api/me', { cookie: r.cookie })).data.classes.map((c) => c.name), ['9-A', '11-C']);
+
+  const reset = await call(`/api/admin/users/${target.id}/reset`, admin);
+  assert.equal((await call('/api/me', { cookie: target.cookie })).status, 401);
+  assert.equal((await call('/api/login', { json: { username: 'panelden', password: PASSWORD } })).status, 401);
+  assert.equal((await call('/api/login', { json: { username: 'panelden', password: reset.data.password } })).status, 200);
+
+  assert.equal((await call(`/api/admin/users/${r.data.id}`, { ...admin, method: 'DELETE', json: undefined })).status, 400); // kendini çıkaramaz
+  assert.equal((await call(`/api/admin/users/${r.data.id}/reset`, admin)).status, 400);
+  assert.equal((await call(`/api/admin/users/${target.id}`, { cookie: r.cookie, method: 'DELETE' })).status, 200);
+  assert.equal((await call('/api/login', { json: { username: 'panelden', password: reset.data.password } })).status, 401);
+  assert.equal((await call(`/api/admin/users/${target.id}/reset`, admin)).status, 404);
 });
 
 test('bildirim: yalnızca bilinen servis, gönderene gitmez, imza geçerli, ölü abonelik silinir', async () => {

@@ -66,6 +66,7 @@ body {
 }
 body:not(.teacher) .teacher-only { display: none !important; }
 body.teacher .student-only { display: none !important; }
+body:not(.admin) .admin-only { display: none !important; }
 h1, h2, h3, p { margin: 0; }
 h1 { font-size: 1.25rem; font-weight: 800; letter-spacing: .06em; }
 h2 { font-size: 1.1rem; }
@@ -378,6 +379,17 @@ label > span:first-child:not(.avatar, .letter) { font-size: .9rem; color: var(--
 #view-quiz:not([hidden]) { display: flex; flex-direction: column; }
 #view-quiz .view-inner { flex: 1 0 auto; width: 100%; }
 #mistakes-open { position: sticky; bottom: 1rem; align-self: flex-end; margin: 0 1rem 1rem; padding: .7rem 1.1rem; border-radius: 999px; box-shadow: var(--shadow); }
+/* Yönetim paneli */
+.chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.chips button { min-height: 36px; padding: .2rem .8rem; border: 0; border-radius: 999px; background: var(--soft); color: var(--accent); font-size: .85rem; font-weight: 700; }
+.invite-result { display: grid; gap: .6rem; }
+#invite-codes { font-family: ui-monospace, monospace; font-size: .85rem; white-space: pre; }
+.admin-users { display: grid; }
+.person-row { display: flex; align-items: center; gap: .7rem; width: 100%; min-height: 56px; padding: .3rem 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: none; text-align: left; }
+.person-row .avatar { width: 36px; height: 36px; font-size: .8rem; flex: none; }
+.person-row span:last-child { display: grid; min-width: 0; }
+.person-row small { color: var(--muted); overflow-wrap: anywhere; }
+.temp-password { padding: .7rem .9rem; border-radius: 12px; background: var(--soft); font-weight: 600; white-space: pre-wrap; overflow-wrap: anywhere; user-select: all; }
 .progress { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
 .progress span { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s; }
 .quiz-card { gap: .85rem; padding: 1.1rem; }

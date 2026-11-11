@@ -32,6 +32,7 @@
     <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4.5L15.5 5a2.1 2.1 0 0 1 3 3L8 18.5z"/><path d="M13.5 7l3 3"/></symbol>
     <symbol id="i-growth" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="m7.5 15 4-4 3 3 5-6"/><path d="M15.5 8h4v4"/></symbol>
     <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-1 2-2 0-1.5-1.3-1.7-1.3-3 0-1 .8-1.8 1.8-1.8H17a4 4 0 0 0 4-4C21 6.5 17 3 12 3z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7.3" r="1"/><circle cx="15" cy="7.3" r="1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 4.3-2.9 7.9-7 9.5-4.1-1.6-7-5.2-7-9.5V6z"/><path d="m9 12 2.2 2.2L15 10.4"/></symbol>
     <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
   </svg>
 
@@ -67,6 +68,7 @@
       <header class="bar brand-bar">
         <h1>EDUCOM <small class="beta">(beta)</small></h1>
         <button id="open-new" class="icon-button" data-i18n-title="newChat" data-i18n-aria="newChat"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+        <button id="open-admin" class="icon-button admin-only" data-i18n-title="adminPanel" data-i18n-aria="adminPanel"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></button>
         <button id="open-look" class="icon-button" data-i18n-title="appearance" data-i18n-aria="appearance"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg></button>
         <button id="open-profile" class="avatar-button" data-i18n-title="profile" data-i18n-aria="profile"></button>
       </header>
@@ -151,6 +153,47 @@
           <p id="notes-error" class="error" role="alert"></p>
           <ul id="notes-list" class="cards"></ul>
           <p id="no-notes" class="empty" data-i18n="noNotes" hidden></p>
+        </div>
+      </section>
+
+      <section id="view-admin" class="view" hidden>
+        <div class="view-inner">
+          <div class="view-head">
+            <h2 data-i18n="adminPanel"></h2>
+          </div>
+          <p id="admin-error" class="error" role="alert"></p>
+          <form id="invite-form" class="card">
+            <h3 data-i18n="makeCodes"></h3>
+            <p class="hint" data-i18n="makeCodesHelp"></p>
+            <label><span data-i18n="codeFor"></span>
+              <select name="role">
+                <option value="student" data-i18n="student"></option>
+                <option value="teacher" data-i18n="teacher"></option>
+                <option value="admin" data-i18n="admin"></option>
+              </select>
+            </label>
+            <label><span data-i18n="classes"></span> <input name="classes" placeholder="9-A" maxlength="200" autocomplete="off" autocapitalize="characters" spellcheck="false"></label>
+            <p class="hint" data-i18n="classesHelp"></p>
+            <label><span data-i18n="codeCount"></span> <input name="count" type="number" min="1" max="200" value="1" required></label>
+            <p class="error" role="alert"></p>
+            <div class="actions"><button class="primary" data-i18n="makeCodesButton"></button></div>
+            <div id="invite-result" class="invite-result" hidden>
+              <p class="hint" data-i18n="codesNote"></p>
+              <textarea id="invite-codes" rows="6" readonly data-i18n-aria="makeCodes"></textarea>
+              <div class="actions"><button type="button" id="invite-copy" data-i18n="copy"></button></div>
+            </div>
+          </form>
+          <div class="card">
+            <h3 data-i18n="classes"></h3>
+            <ul id="admin-classes" class="chips"></ul>
+            <p id="no-classes" class="hint" data-i18n="noClasses" hidden></p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="people"></h3>
+            <input id="admin-search" type="search" autocomplete="off" data-i18n-placeholder="searchPeople" data-i18n-aria="searchPeople">
+            <ul id="admin-users" class="admin-users"></ul>
+            <p id="admin-more" class="hint" hidden></p>
+          </div>
         </div>
       </section>
 
@@ -239,6 +282,23 @@
         <button type="button" id="leave-group" class="danger" data-i18n="leaveGroup"></button>
         <button type="button" class="cancel" data-i18n="cancel"></button>
         <button id="group-save" class="primary" value="ok" data-i18n="save"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="person-dialog">
+    <form id="person-form" method="dialog" class="dialog-body">
+      <h2 id="person-name"></h2>
+      <p id="person-sub" class="hint"></p>
+      <label><span data-i18n="classes"></span> <input name="classes" placeholder="9-A" maxlength="200" autocomplete="off" autocapitalize="characters" spellcheck="false"></label>
+      <p class="hint" data-i18n="classesHelp"></p>
+      <p id="person-password" class="temp-password" role="status" hidden></p>
+      <p class="error" role="alert"></p>
+      <div class="actions">
+        <button type="button" id="person-remove" class="danger" data-i18n="removePerson"></button>
+        <button type="button" id="person-reset" data-i18n="resetPassword"></button>
+        <button type="button" class="cancel" data-i18n="cancel"></button>
+        <button class="primary" value="ok" data-i18n="save"></button>
       </div>
     </form>
   </dialog>

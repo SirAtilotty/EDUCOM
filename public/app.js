@@ -111,7 +111,8 @@ function showAuth() {
   current = null;
   if (events) events.close();
   events = null;
-  document.body.classList.remove('teacher');
+  document.body.classList.remove('teacher', 'admin');
+  admin = null;
   // Aynı telefonda başka hesap açılırsa önceki kişinin yarım kalan soru oturumu kalmasın.
   quiz = null;
   run = null;
@@ -129,6 +130,7 @@ async function showApp(user) {
   me = user;
   if (location.hash) history.replaceState(null, '', location.pathname);
   document.body.classList.toggle('teacher', isTeacher());
+  document.body.classList.toggle('admin', me.admin);
   $('auth').hidden = true;
   $('app').hidden = false;
   $('login-form').reset();
@@ -175,7 +177,7 @@ function showTab(name) {
     if (button.dataset.tab === name) button.setAttribute('aria-current', 'page');
     else button.removeAttribute('aria-current');
   }
-  for (const view of ['chats', 'homework', 'quiz', 'notes']) $(`view-${view}`).hidden = view !== name;
+  for (const view of ['chats', 'homework', 'quiz', 'notes', 'admin']) $(`view-${view}`).hidden = view !== name;
   // Diğer sekmeler geniş ekranda tüm genişliği kullanır; açık sohbet arkada okunmuş sayılmasın diye kapanır.
   $('app').classList.toggle('wide', name !== 'chats');
   $('open-new').hidden = name !== 'chats';
@@ -183,7 +185,10 @@ function showTab(name) {
   if (name === 'homework') loadHomework();
   if (name === 'quiz' && !run) loadQuiz();
   if (name === 'notes') loadNotes();
+  if (name === 'admin') loadAdmin();
 }
+// Yönetim paneli alt sekmelerde değil üst çubuktadır; yalnızca yönetici görür.
+$('open-admin').onclick = () => showTab('admin');
 for (const button of document.querySelectorAll('.tabs button')) button.onclick = () => showTab(button.dataset.tab);
 
 // ---- Canlı akış
@@ -990,6 +995,113 @@ $('homework-form').addEventListener('submit', async (e) => {
     formError(form, err.message);
   }
 });
+
+// ---- Yönetim paneli: kayıt kodları, sınıflar, kişiler
+const ADMIN_PAGE = 50; // okulun tamamı listelenmez; arama daraltır
+let admin = null; // { classes, users }
+let managed = null; // penceresi açık olan kişi
+
+async function loadAdmin() {
+  try {
+    admin = await api('/api/admin');
+    $('admin-error').textContent = '';
+    renderAdmin();
+  } catch (err) {
+    $('admin-error').textContent = err.message;
+  }
+}
+
+const roleLabel = (u) => (u.admin ? t('admin') : t(u.role));
+const classList = (value) => value.split(',').map((c) => c.trim()).filter(Boolean);
+
+function renderAdmin() {
+  $('no-classes').hidden = admin.classes.length > 0;
+  // Sınıfa dokununca kişiler o sınıfa göre süzülür.
+  $('admin-classes').replaceChildren(...admin.classes.map((c) => h('li', {}, h('button', {
+    type: 'button',
+    textContent: t('classCount', { name: c.name, students: c.students, teachers: c.teachers }),
+    onclick: () => {
+      $('admin-search').value = c.name;
+      renderAdmin();
+    },
+  }))));
+  const query = $('admin-search').value.trim().toLocaleLowerCase(locale());
+  const found = admin.users.filter((u) => `${u.name} @${u.username} ${u.classes}`.toLocaleLowerCase(locale()).includes(query));
+  $('admin-users').replaceChildren(...found.slice(0, ADMIN_PAGE).map((u) =>
+    h('li', {}, h('button', { type: 'button', className: 'person-row', onclick: () => openPerson(u) },
+      avatar(u.name, u.id),
+      h('span', {},
+        h('strong', { textContent: u.id === me.id ? `${u.name} (${t('you')})` : u.name }),
+        h('small', { textContent: [`@${u.username}`, roleLabel(u), u.classes].filter(Boolean).join(' · ') }))))));
+  $('admin-more').hidden = found.length <= ADMIN_PAGE;
+  $('admin-more').textContent = t('morePeople', { count: found.length - ADMIN_PAGE });
+}
+$('admin-search').oninput = renderAdmin;
+
+$('invite-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const f = form.elements;
+  formError(form, '');
+  try {
+    const made = await api('/api/admin/invites', { method: 'POST', json: { role: f.role.value, classes: classList(f.classes.value), count: Number(f.count.value) } });
+    $('invite-codes').value = made.map((m) => `${m.code}   ${m.link}`).join('\n');
+    $('invite-copy').textContent = t('copy');
+    $('invite-result').hidden = false;
+    loadAdmin(); // yeni açılan sınıf listede görünsün
+  } catch (err) {
+    formError(form, err.message);
+  }
+});
+$('invite-copy').onclick = () => navigator.clipboard.writeText($('invite-codes').value)
+  .then(() => { $('invite-copy').textContent = t('copied'); }, () => $('invite-codes').select());
+
+function openPerson(u) {
+  managed = u;
+  const form = $('person-form');
+  formError(form, '');
+  $('person-name').textContent = u.name;
+  $('person-sub').textContent = `@${u.username} · ${roleLabel(u)}`;
+  form.elements.classes.value = u.classes;
+  $('person-password').hidden = true;
+  // Kendi şifresini ve hesabını Profil'den yönetir.
+  $('person-reset').hidden = $('person-remove').hidden = u.id === me.id;
+  $('person-dialog').showModal();
+}
+
+$('person-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  try {
+    await api(`/api/admin/users/${managed.id}/classes`, { method: 'PUT', json: { classes: classList(e.target.elements.classes.value) } });
+    if (managed.id === me.id) me = await api('/api/me');
+    $('person-dialog').close();
+    loadAdmin();
+  } catch (err) {
+    formError(e.target, err.message);
+  }
+});
+
+$('person-reset').onclick = async () => {
+  if (!confirm(t('resetConfirm', { name: managed.name }))) return;
+  try {
+    const { password } = await api(`/api/admin/users/${managed.id}/reset`, { method: 'POST' });
+    $('person-password').textContent = t('tempPassword', { password });
+    $('person-password').hidden = false;
+  } catch (err) {
+    formError($('person-form'), err.message);
+  }
+};
+
+$('person-remove').onclick = async () => {
+  if (!confirm(t('removeConfirm', { name: managed.name }))) return;
+  try {
+    await api(`/api/admin/users/${managed.id}`, { method: 'DELETE' });
+    $('person-dialog').close();
+    loadAdmin();
+  } catch (err) {
+    formError($('person-form'), err.message);
+  }
+};
 
 // ---- Yazılıya hazırlık: ders -> ünite -> sorular
 let quiz = null; // { grade, subjects: [{ subject, source, units: [{ name, topics, count }] }] }

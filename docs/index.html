@@ -248,7 +248,7 @@
   .grade p { margin-top: 12px; color: var(--muted); font-size: .95rem; }
   .grade .hud { margin-top: 14px; display: block; }
 
-  .roles { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
+  .roles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
   .role { background: var(--bg); padding: 32px 40px 40px; }
   .role-top { display: flex; align-items: center; gap: 12px; }
   .role-top .code { font-family: var(--mono); font-size: 12px; padding: 6px 10px; border: 1px solid var(--line-strong); background: var(--bg-sunken); letter-spacing: .1em; }
@@ -298,6 +298,7 @@
     .lineup { grid-template-columns: repeat(2, 1fr); }
     .lineup > .card:last-child .preview { flex-basis: 50%; }
     .cells, .grades { grid-template-columns: repeat(2, 1fr); }
+    .roles { grid-template-columns: 1fr; }
   }
   @media (max-width: 760px) {
     .nav-links, .nav .btn-label { display: none; }
@@ -630,9 +631,21 @@
       </div>
       <div class="intro">
         <h2 data-reveal><span class="en">The code <span class="accent">decides</span> who you are.</span><span class="tr">Kim olduğunu <span class="accent">kod belirler</span>.</span></h2>
-        <p data-reveal><span class="en">Nobody can just sign up. The school hands out single-use invite codes. A teacher's code starts with the letter O, and every code drops its owner straight into the right class.</span><span class="tr">Kimse kendi kendine kayıt olamaz. Okul tek kullanımlık davet kodları dağıtır. Öğretmen kodları O harfiyle başlar ve her kod sahibini doğrudan kendi sınıfına yerleştirir.</span></p>
+        <p data-reveal><span class="en">Nobody can just sign up. The school hands out single-use invite codes. A teacher's code starts with the letter O, an admin's with Y, and every code drops its owner straight into the right class.</span><span class="tr">Kimse kendi kendine kayıt olamaz. Okul tek kullanımlık davet kodları dağıtır. Öğretmen kodları O, yönetici kodları Y harfiyle başlar ve her kod sahibini doğrudan kendi sınıfına yerleştirir.</span></p>
       </div>
       <div class="roles">
+        <div class="role" data-reveal>
+          <div class="role-top"><span class="code"><b>Y</b>D4KQ-7MHT2</span><span class="hud faint"><span class="en">Admin code</span><span class="tr">Yönetici kodu</span></span></div>
+          <h3><span class="en">Admin</span><span class="tr">Yönetici</span></h3>
+          <ul>
+            <li><span class="en">Runs the school from the admin panel, no terminal needed</span><span class="tr">Okulu yönetim panelinden yönetir, terminal gerekmez</span></li>
+            <li><span class="en">Creates sign-up codes for students, teachers and admins</span><span class="tr">Öğrenci, öğretmen ve yönetici için kayıt kodu üretir</span></li>
+            <li><span class="en">Resets forgotten passwords</span><span class="tr">Unutulan şifreleri sıfırlar</span></li>
+            <li><span class="en">Moves people between classes</span><span class="tr">Kişileri sınıflar arasında taşır</span></li>
+            <li><span class="en">Removes people who left the school</span><span class="tr">Okuldan ayrılanları çıkarır</span></li>
+            <li><span class="en">Can do everything a teacher can</span><span class="tr">Öğretmenin yaptığı her şeyi yapabilir</span></li>
+          </ul>
+        </div>
         <div class="role" data-reveal>
           <div class="role-top"><span class="code"><b>O</b>K7M2-PQ4XR</span><span class="hud faint"><span class="en">Teacher code</span><span class="tr">Öğretmen kodu</span></span></div>
           <h3><span class="en">Teacher</span><span class="tr">Öğretmen</span></h3>
@@ -645,7 +658,7 @@
           </ul>
         </div>
         <div class="role" data-reveal>
-          <div class="role-top"><span class="code">HN3T8-WYB6D</span><span class="hud faint"><span class="en">Student code</span><span class="tr">Öğrenci kodu</span></span></div>
+          <div class="role-top"><span class="code">HN3T8-WXB6D</span><span class="hud faint"><span class="en">Student code</span><span class="tr">Öğrenci kodu</span></span></div>
           <h3><span class="en">Student</span><span class="tr">Öğrenci</span></h3>
           <ul>
             <li><span class="en">Reads their class group</span><span class="tr">Sınıf grubunu okur</span></li>
