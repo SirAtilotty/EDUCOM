@@ -12,7 +12,7 @@ A school communication and learning app (TÜBİTAK 4006 prototype), built on the
 - **Lessons:** Every unit of every subject in grades 9-12 has a lesson that follows the unit's topics in order: each topic is explained, then the student answers one question on it and sees the explanation before moving to the next topic. At the end the student can go straight to the unit's test. 530 topics in total (grade 9: 127, grade 10: 139, grade 11: 122, grade 12: 142). Lesson answers are not saved as scores.
 - **My mistakes:** Questions a student gets wrong in tests are kept. The "My mistakes" button at the bottom right of the Review tab lists the wrong count per subject (Mathematics 3 wrong, Physics 5 wrong); tapping a subject opens those questions to solve again. A question leaves the list once it is answered correctly. Lesson questions are not included.
 - **Progress notes:** A teacher sends a student in their class a note about how they are doing, with an overall level (very good, good, fair, needs work). Only that student sees it.
-- **Chat:** Private and group chats, photos, voice messages, replies, read receipts, typing indicator, phone notifications. Students can't message each other; they can only write to teachers. In a group created by a teacher that has more than one student, students can only read. Anyone can delete their own messages; teachers can also delete students' messages. When the last member leaves a group, it is deleted with its photos and voice messages.
+- **Chat:** Private and group chats, photos, voice messages, files (PDF, Word, Excel, PowerPoint; up to 10 MB), replies, read receipts, typing indicator, phone notifications. Students can't message each other; they can only write to teachers. In a group created by a teacher that has more than one student, students can only read. Anyone can delete their own messages; teachers can also delete students' messages. When the last member leaves a group, it is deleted with its photos and voice messages.
 - **Appearance:** Light, dark or system theme; six colours; chat backgrounds (school emblem, grid, lined, dotted or your own photo); text size. These settings are stored separately on each phone.
 - Turkish and English interface.
 
@@ -30,7 +30,7 @@ node server.js remove <username>            # removes the member, keeps their ol
 node server.js backup <folder>              # backs up the database and files
 node server.js move <username> 10-B         # moves a student to another class (teachers can get several)
 node server.js promote                      # end of year: shows the plan; promote --yes applies it
-node server.js prune 365                    # deletes photos and voice messages older than 365 days
+node server.js prune 365                    # deletes photos, voice messages and files older than 365 days
 ```
 
 Codes are single-use, valid for 7 days and printed as `ABCDE-FGHJK`. Students can type the code or tap the link next to it. Characters that are easy to confuse (O/0, I/1, L) are not used in codes, and neither is Y, so a student code never starts with O or Y.
@@ -56,7 +56,7 @@ On the server, set `BASE_URL=https://your-address` so the links next to the code
 
 ## Data
 
-Everything lives in the `data/` folder: the database, photos, voice messages and the notification key. This folder is not tracked by git; don't share it with anyone. The question bank is in the `questions/` folder: one file per grade and subject (such as `9-matematik.json`) containing unit names, topics and questions. Lessons are in the `lessons/` folder with the same file names, keyed by unit name. Units and topics are taken from MEB's 2026-2027 draft yearly plans (Anadolu Lisesi) published at tymm.meb.gov.tr. The questions are in Turkish, except for English classes.
+Everything lives in the `data/` folder: the database, photos, voice messages, files and the notification key. This folder is not tracked by git; don't share it with anyone. The question bank is in the `questions/` folder: one file per grade and subject (such as `9-matematik.json`) containing unit names, topics and questions. Lessons are in the `lessons/` folder with the same file names, keyed by unit name. Units and topics are taken from MEB's 2026-2027 draft yearly plans (Anadolu Lisesi) published at tymm.meb.gov.tr. The questions are in Turkish, except for English classes.
 
 ## Running on a Raspberry Pi
 

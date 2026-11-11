@@ -284,6 +284,11 @@ label > span:first-child:not(.avatar, .letter) { font-size: .9rem; color: var(--
 .quote span { color: var(--muted); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .photo { display: block; padding: 0; min-height: 0; margin: .1rem -.35rem .15rem; border: 0; border-radius: 12px; background: none; }
 .bubble img { display: block; max-width: 100%; max-height: 22rem; border-radius: 12px; }
+.file { display: flex; align-items: center; gap: .6rem; min-height: 48px; margin: .15rem 0; padding: .5rem .7rem; border-radius: 12px; background: var(--soft); color: inherit; text-decoration: none; }
+.file .icon { flex: none; width: 1.7rem; height: 1.7rem; color: var(--accent); }
+.file span { display: grid; min-width: 0; }
+.file strong { overflow-wrap: anywhere; font-weight: 600; }
+.file small { color: var(--muted); font-size: .75rem; }
 .bubble audio { display: block; width: 16rem; max-width: 100%; margin: .15rem 0; }
 .reply, .msg-delete { width: 34px; min-height: 34px; color: var(--muted); opacity: 0; }
 .message:hover :is(.reply, .msg-delete), :is(.reply, .msg-delete):focus-visible, .show-actions .msg-delete { opacity: 1; }

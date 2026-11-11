@@ -391,6 +391,46 @@ test('fotoğraf yalnızca üyelere açılır, zararlı tür reddedilir', async (
   assert.equal(gotVoice.headers.get('content-type'), 'audio/webm');
 });
 
+test('belge: PDF ve Office dosyaları adıyla gider, yalnızca üyelere iner; başka türler reddedilir', async () => {
+  const send = (cookie, body, name) => call(`/api/convos/${dm}/images${name === undefined ? '' : `?${new URLSearchParams({ name })}`}`, { cookie, body });
+  const zip = (inner) => Buffer.concat([Buffer.from([0x50, 0x4b, 0x03, 0x04]), Buffer.alloc(26), Buffer.from(inner), Buffer.alloc(32)]);
+  const ole = (stream) => Buffer.concat([Buffer.from([0xd0, 0xcf, 0x11, 0xe0, 0xa1, 0xb1, 0x1a, 0xe1]), Buffer.alloc(64), Buffer.from(stream, 'utf16le'), Buffer.alloc(32)]);
+  const pdf = Buffer.from('%PDF-1.7\n<script>alert(1)</script>\n%%EOF');
+
+  // Öğrenci de öğretmen de gönderir.
+  const sent = await send(ali.cookie, pdf, 'Çalışma kâğıdı (1).pdf');
+  assert.equal(sent.status, 200);
+  assert.match(sent.data.image, /^[0-9a-f]{32}\.pdf$/);
+  assert.equal(sent.data.body, 'Çalışma kâğıdı (1).pdf');
+  // Uzantıyı ad değil içerik belirler; yol ve denetim karakterleri addan atılır.
+  for (const [body, name, expected] of [
+    [zip('word/document.xml'), 'odev.pdf', 'odev.docx'], [zip('xl/workbook.xml'), 'notlar', 'notlar.xlsx'],
+    [zip('ppt/presentation.xml'), '../../etc/sunum.PPTX', '....etcsunum.pptx'], [ole('WordDocument'), 'eski.doc', 'eski.doc'],
+    [ole('Workbook'), 'a\r\nb.xls', 'ab.xls'], [ole('PowerPoint Document'), undefined, 'file.ppt'], [pdf, 'x'.repeat(300), `${'x'.repeat(100)}.pdf`],
+  ]) {
+    const r = await send(ayse.cookie, body, name);
+    assert.equal(r.status, 200, expected);
+    assert.equal(r.data.body, expected);
+  }
+  // Sıradan zip, tanınmayan eski Office dosyası ve çalıştırılabilir dosya gitmez.
+  for (const bad of [zip('setup.exe'), ole('Macros'), Buffer.concat([Buffer.from('MZ'), Buffer.alloc(64)]), Buffer.from('<html><script>alert(1)</script></html>')]) {
+    assert.equal((await send(ali.cookie, bad, 'belge.pdf')).status, 415);
+  }
+
+  // Tarayıcıda açılmaz, indirilir; üye olmayan alamaz.
+  const got = await call(`/uploads/${sent.data.image}`, { cookie: ayse.cookie });
+  assert.equal(got.status, 200);
+  assert.deepEqual(got.data, pdf);
+  assert.equal(got.headers.get('content-type'), 'application/octet-stream');
+  assert.equal(got.headers.get('content-disposition'), "attachment; filename*=UTF-8''%C3%87al%C4%B1%C5%9Fma%20k%C3%A2%C4%9F%C4%B1d%C4%B1%20%281%29.pdf");
+  assert.equal(got.headers.get('x-content-type-options'), 'nosniff');
+  assert.equal((await call(`/uploads/${sent.data.image}`, { cookie: can.cookie })).status, 404);
+  assert.equal((await call(`/uploads/${sent.data.image}`)).status, 401);
+  // Sohbet listesinde son mesaj olarak adı görünür.
+  const last = (await call('/api/convos', { cookie: ali.cookie })).data.find((c) => c.id === dm);
+  assert.deepEqual([last.lastBody, /\.pdf$/.test(last.lastImage)], [`${'x'.repeat(100)}.pdf`, true]);
+});
+
 test('yanıt yalnızca aynı sohbetteki mesaja verilir ve alıntıyla döner', async () => {
   const first = await call(`/api/convos/${dm}/messages`, { cookie: ayse.cookie, json: { body: 'soru' } });
   const answer = await call(`/api/convos/${dm}/messages`, { cookie: ali.cookie, json: { body: 'cevap', replyTo: first.data.id } });

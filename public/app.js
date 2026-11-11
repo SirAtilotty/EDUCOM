@@ -3,6 +3,7 @@
 const $ = (id) => document.getElementById(id);
 const PAGE = 50;
 const MAX_SIDE = 1600;
+const MAX_FILE = 10 * 1024 * 1024; // sunucudaki sınırla aynı
 const RUN_GAP = 5 * 60 * 1000; // aynı kişinin bu süre içindeki mesajları tek grup görünür
 const LETTERS = 'ABCDE';
 const QUIZ_SIZE = 20; // bir oturumda en fazla bu kadar soru sorulur
@@ -69,7 +70,9 @@ function avatar(name, id, group = false) {
 
 const formError = (form, text) => { form.querySelector('.error').textContent = text; };
 const isVoice = (file) => /\.(webm|ogg)$/.test(file);
-const snippet = (body, image) => (image ? t(isVoice(image) ? 'voice' : 'photo') : body);
+const isDoc = (file) => /\.(pdf|docx?|xlsx?|pptx?)$/.test(file);
+// Belgede mesaj metni dosyanın adıdır.
+const snippet = (body, image) => (!image || isDoc(image) ? body : t(isVoice(image) ? 'voice' : 'photo'));
 const sameDay = (a, b) => new Date(a).toDateString() === new Date(b).toDateString();
 const clock = (at) => new Date(at).toLocaleTimeString(locale(), { hour: '2-digit', minute: '2-digit' });
 const isTeacher = () => me?.role === 'teacher';
@@ -406,7 +409,7 @@ function renderConvos() {
   $('convos').replaceChildren(...convos.map((c) => {
     let preview = typingEl(c);
     if (!preview) {
-      const kind = c.lastImage && (isVoice(c.lastImage) ? 'mic' : 'camera');
+      const kind = c.lastImage && (isVoice(c.lastImage) ? 'mic' : isDoc(c.lastImage) ? 'file' : 'camera');
       preview = h('span', {}, kind ? icon(kind) : '', c.lastId ? snippet(c.lastBody, c.lastImage) : t('noMessagesYet'));
     }
     preview.classList.add('preview');
@@ -553,13 +556,17 @@ function messageEl(m) {
   if (m.replyId) bubble.append(quoteEl(m));
   if (m.image && isVoice(m.image)) {
     bubble.append(h('audio', { src: `/uploads/${m.image}`, controls: true, preload: 'metadata', ariaLabel: t('voiceFrom', { name: m.name }) }));
+  } else if (m.image && isDoc(m.image)) {
+    bubble.append(h('a', { className: 'file', href: `/uploads/${m.image}`, download: m.body },
+      icon('file'),
+      h('span', {}, h('strong', { textContent: m.body }), h('small', { textContent: m.image.split('.').pop().toUpperCase() }))));
   } else if (m.image) {
     const src = `/uploads/${m.image}`;
     const alt = t('photoAlt', { name: m.name });
     bubble.append(h('button', { type: 'button', className: 'photo', onclick: () => showPhoto(src, alt) },
       h('img', { src, alt, loading: 'lazy' })));
   }
-  if (m.body) bubble.append(h('p', { textContent: m.body }));
+  if (m.body && !(m.image && isDoc(m.image))) bubble.append(h('p', { textContent: m.body }));
   bubble.append(h('span', { className: 'meta' },
     h('time', { textContent: clock(m.at), title: new Date(m.at).toLocaleString(locale()) }),
     mine ? h('span', { className: 'ticks' }) : ''));
@@ -720,11 +727,12 @@ async function shrink(file, maxSide = MAX_SIDE, quality = 0.85) {
   }
 }
 
-async function upload(id, body, status) {
+async function upload(id, body, status, name) {
   $('send-error').textContent = t(status);
   const reply = replyParam(id);
+  const params = new URLSearchParams({ ...(reply && { replyTo: reply }), ...(name && { name }) });
   try {
-    const message = await api(`/api/convos/${id}/images${reply ? `?replyTo=${reply}` : ''}`, { method: 'POST', body });
+    const message = await api(`/api/convos/${id}/images?${params}`, { method: 'POST', body });
     $('send-error').textContent = '';
     if (current === id) {
       if (replyTo?.id === reply) setReply(null);
@@ -739,7 +747,11 @@ async function upload(id, body, status) {
 $('photo').addEventListener('change', async (e) => {
   const file = e.target.files[0];
   e.target.value = '';
-  if (file && current) upload(current, await shrink(file), 'sendingPhoto');
+  if (!file || !current) return;
+  if (file.type.startsWith('image/')) return upload(current, await shrink(file), 'sendingPhoto');
+  // Belge olduğu gibi gider; türünü sunucu içeriğinden denetler.
+  if (file.size > MAX_FILE) $('send-error').textContent = t('fileTooLarge');
+  else upload(current, file, 'sendingFile', file.name);
 });
 
 // ---- Sesli mesaj: mikrofona dokununca kayıt başlar; gönder ile biter, çöp kutusu ile silinir.

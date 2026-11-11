@@ -206,7 +206,7 @@ function transaction(fn) {
   }
 }
 
-// Silinen mesajların fotoğraf ve ses dosyaları; dosya zaten yoksa sorun değil.
+// Silinen mesajların fotoğraf, ses ve belge dosyaları; dosya zaten yoksa sorun değil.
 function removeFiles(files) {
   for (const file of files) {
     if (file) fs.promises.unlink(path.join(UPLOADS, file)).catch((e) => e.code !== 'ENOENT' && console.error(e));
@@ -301,7 +301,7 @@ const USAGE = `Commands:
   invite admin [class...]            a teacher who can also open the admin panel
   move <username> <class> [class...]  e.g. move ali 10-B (a student has one class)
   promote [--yes]                    students go up a grade, 12th graders graduate
-  prune <days>                       delete photos and voice messages older than this
+  prune <days>                       delete photos, voice messages and files older than this
   classes | remove <username> | reset <username> | backup <folder>`;
 
 function runCommand([cmd, ...args]) {
@@ -366,7 +366,7 @@ function runCommand([cmd, ...args]) {
       const files = db.prepare('DELETE FROM messages WHERE image IS NOT NULL AND at < ? RETURNING image')
         .all(Date.now() - days * 864e5).map((r) => r.image);
       removeFiles(files);
-      console.log(`${files.length} photos and voice messages older than ${days} days deleted.`);
+      console.log(`${files.length} photos, voice messages and files older than ${days} days deleted.`);
     },
     async reset() {
       const password = await resetPassword(findUser().id);
@@ -652,7 +652,26 @@ function imageExtension(b) {
   // Sesli mesaj: Chrome WebM, Firefox Ogg kaydeder.
   if (b.subarray(0, 4).equals(Buffer.from([0x1a, 0x45, 0xdf, 0xa3]))) return 'webm';
   if (b.subarray(0, 4).toString('latin1') === 'OggS') return 'ogg';
+  if (b.subarray(0, 5).toString('latin1') === '%PDF-') return 'pdf';
+  // Yeni Office dosyaları zip'tir; içindeki ana belgenin adı türü söyler. Başka zip'ler kabul edilmez.
+  // Sunum içine gömülü tablo olabildiği için xlsx en son aranır.
+  if (b.subarray(0, 4).equals(Buffer.from([0x50, 0x4b, 0x03, 0x04]))) {
+    return Object.keys(OFFICE_ZIP).find((ext) => b.includes(OFFICE_ZIP[ext])) || null;
+  }
+  // Eski Office dosyaları (.doc, .xls, .ppt): içindeki akışın adı türü söyler.
+  if (b.subarray(0, 8).equals(Buffer.from([0xd0, 0xcf, 0x11, 0xe0, 0xa1, 0xb1, 0x1a, 0xe1]))) {
+    return Object.keys(OFFICE_OLE).find((ext) => b.includes(Buffer.from(OFFICE_OLE[ext], 'utf16le'))) || null;
+  }
   return null;
+}
+const OFFICE_ZIP = { docx: 'word/document.xml', pptx: 'ppt/presentation.xml', xlsx: 'xl/workbook.xml' };
+const OFFICE_OLE = { doc: 'WordDocument', ppt: 'PowerPoint Document', xls: 'Workbook' };
+const DOC_RE = /\.(pdf|docx?|xlsx?|pptx?)$/i;
+
+// Belgenin adı yalnızca gösterilir ve indirirken önerilir; diskteki ad rastgeledir, uzantıyı içerik belirler.
+function documentName(value, ext) {
+  const base = str(value).replace(/[\x00-\x1f\x7f/\\]/g, '').trim().replace(DOC_RE, '').slice(0, 100).trim();
+  return `${base || 'file'}.${ext}`;
 }
 const IMAGE_TYPES = { jpg: 'image/jpeg', png: 'image/png', gif: 'image/gif', webp: 'image/webp', webm: 'audio/webm', ogg: 'audio/ogg' };
 
@@ -889,7 +908,9 @@ route('POST', /^\/api\/convos\/(\d+)\/images$/, async ({ req, user, match, url }
   if (!ext) throw new HttpError(415, 'imageType');
   const file = `${crypto.randomBytes(16).toString('hex')}.${ext}`;
   await fs.promises.writeFile(path.join(UPLOADS, file), data);
-  return addMessage(convoId, user.id, '', file, replyTo);
+  // Belgede mesaj metni dosyanın adıdır.
+  const body = DOC_RE.test(file) ? documentName(url.searchParams.get('name'), ext) : '';
+  return addMessage(convoId, user.id, body, file, replyTo);
 });
 
 // Herkes kendi mesajını, öğretmen ayrıca öğrencinin mesajını siler (moderasyon). Herkesten silinir.
@@ -1186,13 +1207,17 @@ route('GET', /^\/api\/events$/, ({ req, res, user }) => {
 });
 
 // Fotoğrafı yalnızca o sohbetin üyeleri görebilir; adı bilinse bile başkasına açılmaz.
-route('GET', /^\/uploads\/([0-9a-f]{32}\.(jpg|png|gif|webp|webm|ogg))$/, ({ res, user, match }) => {
+route('GET', /^\/uploads\/([0-9a-f]{32}\.(jpg|png|gif|webp|webm|ogg|pdf|docx?|xlsx?|pptx?))$/, ({ res, user, match }) => {
   const allowed = db.prepare(`
-    SELECT 1 FROM messages m JOIN members x ON x.convo_id = m.convo_id
+    SELECT m.body FROM messages m JOIN members x ON x.convo_id = m.convo_id
     WHERE m.image = ? AND x.user_id = ?`).get(match[1], user.id);
   if (!allowed) throw new HttpError(404, 'notFound');
+  // Belge tarayıcıda açılmaz, her zaman indirilir: içindeki betik sitenin adresinde çalışamaz.
+  const name = encodeURIComponent(allowed.body).replace(/['()*]/g, (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`);
   res.writeHead(200, {
-    'Content-Type': IMAGE_TYPES[match[2]],
+    ...(IMAGE_TYPES[match[2]]
+      ? { 'Content-Type': IMAGE_TYPES[match[2]] }
+      : { 'Content-Type': 'application/octet-stream', 'Content-Disposition': `attachment; filename*=UTF-8''${name}` }),
     'Cache-Control': 'private, max-age=31536000, immutable',
   });
   pipeline(fs.createReadStream(path.join(UPLOADS, match[1])), res, (err) => {

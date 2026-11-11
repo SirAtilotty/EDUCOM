@@ -12,7 +12,7 @@ Okul içi iletişim ve öğrenme uygulaması (TÜBİTAK 4006 prototipi). ATICOM 
 - **Konu anlatımı:** 9-12. sınıflarda her dersin her ünitesinde, ünitenin konuları sırayla anlatılır: önce konu anlatılır, ardından öğrenci o konuyla ilgili bir soru çözer, açıklamayı görür ve sonraki konuya geçer. Sonunda doğrudan ünitenin testine geçebilir. Toplam 530 konu (9. sınıf 127, 10. sınıf 139, 11. sınıf 122, 12. sınıf 142). Konu anlatımındaki cevaplar puan olarak kaydedilmez.
 - **Yanlışlarım:** Öğrencinin testlerde yanlış yaptığı sorular kaydedilir. Tekrar sekmesinin sağ altındaki "Yanlışlarım" düğmesi derslere göre yanlış sayısını gösterir (Matematik 3 yanlış, Fizik 5 yanlış gibi); öğrenci derse dokunup o soruları yeniden çözer. Doğru çözülen soru listeden çıkar. Konu anlatımındaki sorular buraya girmez.
 - **Gelişim notu:** Öğretmen, kendi sınıfındaki bir öğrenciye gidişatı hakkında not ve genel durum (çok iyi, iyi, orta, geliştirilmeli) gönderir. Notu yalnızca o öğrenci görür.
-- **Sohbet:** Özel ve grup sohbetleri, fotoğraf, sesli mesaj, yanıtlama, okundu bilgisi, "yazıyor…" göstergesi, telefon bildirimi. Öğrenciler birbirine yazamaz, yalnızca öğretmenlere yazabilir. Öğretmenin kurduğu grupta birden fazla öğrenci varsa öğrenciler sadece okur. Herkes kendi mesajını silebilir, öğretmenler öğrencilerin mesajlarını da silebilir. Son üye de çıkınca grup, fotoğraf ve sesleriyle birlikte silinir.
+- **Sohbet:** Özel ve grup sohbetleri, fotoğraf, sesli mesaj, belge (PDF, Word, Excel, PowerPoint; en çok 10 MB), yanıtlama, okundu bilgisi, "yazıyor…" göstergesi, telefon bildirimi. Öğrenciler birbirine yazamaz, yalnızca öğretmenlere yazabilir. Öğretmenin kurduğu grupta birden fazla öğrenci varsa öğrenciler sadece okur. Herkes kendi mesajını silebilir, öğretmenler öğrencilerin mesajlarını da silebilir. Son üye de çıkınca grup, fotoğraf ve sesleriyle birlikte silinir.
 - **Görünüm:** Açık, koyu ya da sistem teması; altı renk; sohbet arka planı (okul amblemi, kareli, çizgili, noktalı ya da kendi fotoğrafın); yazı boyutu. Bu ayarlar her telefonda ayrı saklanır.
 - Türkçe ve İngilizce arayüz.
 
@@ -30,7 +30,7 @@ node server.js remove <kullanıcı>           # üyeyi çıkarır, eski mesajlar
 node server.js backup <klasör>              # veritabanı ve dosyaların yedeği
 node server.js move <kullanıcı> 10-B        # öğrenciyi başka sınıfa taşır (öğretmene birden çok sınıf verilebilir)
 node server.js promote                      # yıl sonu: planı gösterir; promote --yes uygular
-node server.js prune 365                    # 365 günden eski fotoğraf ve sesli mesajları siler
+node server.js prune 365                    # 365 günden eski fotoğraf, sesli mesaj ve belgeleri siler
 ```
 
 Kodlar tek kullanımlıktır, 7 gün geçerlidir ve `ABCDE-FGHJK` biçiminde yazdırılır. Öğrenci kodu elle yazabilir ya da yanındaki linke dokunabilir. Kodda karışabilecek harfler (O/0, I/1, L) ve Y kullanılmaz; böylece öğrenci kodu O ya da Y ile başlamaz.
@@ -56,7 +56,7 @@ Sunucuda `BASE_URL=https://adresin` ayarla ki kodların yanındaki linkler doğr
 
 ## Veriler
 
-Her şey `data/` klasöründedir: veritabanı, fotoğraflar, sesli mesajlar ve bildirim anahtarı. Bu klasör git'e girmez; kimseyle paylaşma. Hazır soru bankası `questions/` klasöründedir: her sınıf ve ders için bir dosya (`9-matematik.json` gibi), içinde ünite adı, konuları ve sorular. Konu anlatımları aynı dosya adlarıyla `lessons/` klasöründedir, ünite adına göre. Üniteler ve konular MEB'in tymm.meb.gov.tr adresinde yayımladığı 2026-2027 taslak çerçeve yıllık planlarından (Anadolu Lisesi) alınmıştır.
+Her şey `data/` klasöründedir: veritabanı, fotoğraflar, sesli mesajlar, belgeler ve bildirim anahtarı. Bu klasör git'e girmez; kimseyle paylaşma. Hazır soru bankası `questions/` klasöründedir: her sınıf ve ders için bir dosya (`9-matematik.json` gibi), içinde ünite adı, konuları ve sorular. Konu anlatımları aynı dosya adlarıyla `lessons/` klasöründedir, ünite adına göre. Üniteler ve konular MEB'in tymm.meb.gov.tr adresinde yayımladığı 2026-2027 taslak çerçeve yıllık planlarından (Anadolu Lisesi) alınmıştır.
 
 ## Raspberry Pi'de çalıştırma
 
