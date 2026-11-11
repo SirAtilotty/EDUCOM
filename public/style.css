@@ -65,6 +65,7 @@ body {
   scrollbar-color: var(--line) transparent;
 }
 body:not(.teacher) .teacher-only { display: none !important; }
+body.teacher .student-only { display: none !important; }
 h1, h2, h3, p { margin: 0; }
 h1 { font-size: 1.25rem; font-weight: 800; letter-spacing: .06em; }
 h2 { font-size: 1.1rem; }
@@ -373,6 +374,10 @@ label > span:first-child:not(.avatar, .letter) { font-size: .9rem; color: var(--
 .subject::before { content: ''; width: 2rem; height: 4px; border-radius: 2px; background: var(--hue); }
 .subject strong { line-height: 1.25; }
 .subject span { color: var(--muted); font-size: .85rem; }
+/* Yanlışlarım düğmesi sayfa kısa da olsa uzun da olsa sağ altta durur. */
+#view-quiz:not([hidden]) { display: flex; flex-direction: column; }
+#view-quiz .view-inner { flex: 1 0 auto; width: 100%; }
+#mistakes-open { position: sticky; bottom: 1rem; align-self: flex-end; margin: 0 1rem 1rem; padding: .7rem 1.1rem; border-radius: 999px; box-shadow: var(--shadow); }
 .progress { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
 .progress span { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s; }
 .quiz-card { gap: .85rem; padding: 1.1rem; }

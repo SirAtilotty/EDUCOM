@@ -237,6 +237,21 @@ test('sınav sonucu: öğrenci kaydeder, ünitede son denemesini görür; öğre
   assert.equal((await sayilar(hoca2.cookie, 9)).score, undefined); // 11-C öğretmeni 9-A'yı görmez
 });
 
+test('yanlışlarım: yanlış cevap listeye girer, doğru cevap çıkarır; herkes yalnızca kendi yanlışlarını görür', async () => {
+  const mark = (cookie, body) => call('/api/quiz/mistakes', { cookie, json: body });
+  const mine = async (cookie) => (await call('/api/quiz/mistakes', { cookie })).data;
+  const { subject, units } = (await call('/api/quiz', { cookie: ali.cookie })).data.subjects[0];
+  const [q] = (await call(`/api/quiz/questions?${new URLSearchParams({ subject, unit: units[0].name })}`, { cookie: ali.cookie })).data.filter((x) => x.choices);
+  assert.equal((await mark(hoca.cookie, { subject, q: q.q, ok: false })).status, 403);
+  assert.equal((await mark(ali.cookie, { subject, q: 'böyle bir soru yok', ok: false })).status, 400);
+  await mark(ali.cookie, { subject, q: q.q, ok: false });
+  await mark(ali.cookie, { subject, q: q.q, ok: false }); // aynı soru iki kez sayılmaz
+  assert.deepEqual((await mine(ali.cookie)).map((x) => [x.subject, x.q]), [[subject, q.q]]);
+  assert.deepEqual(await mine(can.cookie), []);
+  await mark(ali.cookie, { subject, q: q.q, ok: true });
+  assert.deepEqual(await mine(ali.cookie), []);
+});
+
 // Soruları tamamlanan sınıflar; yeni sınıf bitince listeye eklenir.
 const COMPLETE_GRADES = [9, 10, 11, 12];
 

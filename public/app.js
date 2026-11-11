@@ -994,10 +994,11 @@ $('homework-form').addEventListener('submit', async (e) => {
 // ---- Yazılıya hazırlık: ders -> ünite -> sorular
 let quiz = null; // { grade, subjects: [{ subject, source, units: [{ name, topics, count }] }] }
 let openSubject = null; // ünite listesi açık olan ders
-let run = null; // { subject, unit, all, list, index, right, open, lesson }
+let run = null; // { subject, unit, all, list, index, right, open, lesson, mistakes }
 
 function showQuizPanel(name) {
-  for (const panel of ['home', 'units', 'run']) $(`quiz-${panel}`).hidden = panel !== name;
+  for (const panel of ['home', 'units', 'run', 'mistakes']) $(`quiz-${panel}`).hidden = panel !== name;
+  $('mistakes-open').hidden = name !== 'home';
   $('view-quiz').scrollTop = 0;
 }
 
@@ -1078,15 +1079,37 @@ async function openUnit(subject, unit, lesson = false) {
 }
 
 // Konu anlatımında her bölüm önce konuyu anlatır, ardından o konudan bir soru sorar; sıra karışmaz, sonuç kaydedilmez.
-function startQuiz(subject, unit, all, lesson = false) {
-  run = { subject, unit, all, list: lesson ? all : shuffle([...all]).slice(0, QUIZ_SIZE), index: 0, right: 0, open: 0, lesson };
+// Yanlışlarım: derse göre yanlış sayıları; derse dokununca o dersin yanlışları test olarak açılır.
+async function openMistakes() {
+  try {
+    const list = await api('/api/quiz/mistakes');
+    $('quiz-error').textContent = '';
+    const bySubject = new Map();
+    for (const q of list) bySubject.set(q.subject, [...(bySubject.get(q.subject) || []), q]);
+    $('no-mistakes').hidden = list.length > 0;
+    $('mistakes-subjects').replaceChildren(...[...bySubject].map(([subject, questions], i) =>
+      h('li', {}, h('button', { type: 'button', className: `subject ${hue(i)}`, onclick: () => startQuiz(subject, subject, questions, false, true) },
+        h('strong', { textContent: subject }),
+        h('span', { textContent: t('mistakesCount', { count: questions.length }) })))));
+    showQuizPanel('mistakes');
+  } catch (err) {
+    $('quiz-error').textContent = err.message;
+  }
+}
+$('mistakes-open').onclick = openMistakes;
+$('mistakes-back').onclick = () => showQuizPanel('home');
+
+function startQuiz(subject, unit, all, lesson = false, mistakes = false) {
+  run = { subject, unit, all, list: lesson ? all : shuffle([...all]).slice(0, QUIZ_SIZE), index: 0, right: 0, open: 0, lesson, mistakes };
   $('quiz-subject').textContent = unit || t('otherUnit');
   showQuizPanel('run');
   renderQuestion();
 }
 
 function endQuiz() {
+  const { mistakes } = run;
   run = null;
+  if (mistakes) return openMistakes();
   showQuizPanel(openSubject ? 'units' : 'home');
   loadQuiz();
 }
@@ -1124,6 +1147,7 @@ function renderQuestion() {
         buttons[q.answer].classList.add('right');
         if (ok) run.right++;
         else button.classList.add('wrong');
+        if (!run.lesson && !isTeacher()) api('/api/quiz/mistakes', { method: 'POST', json: { subject: run.subject, q: q.q, ok } }).catch(() => {});
         feedback.className = `feedback ${ok ? 'ok' : 'bad'}`;
         feedback.textContent = ok ? t('correct') : t('wrong', { letter: LETTERS[q.answer] });
         feedback.hidden = false;
@@ -1163,7 +1187,11 @@ function nextQuestion() {
       h('p', { textContent: t('resultScore', { right: run.right, total: multiple }) }));
   }
   if (run.open) result.append(h('p', { className: 'hint', textContent: t('resultOpen', { count: run.open }) }));
-  const { subject, unit, all, lesson } = run;
+  const { subject, unit, all, lesson, mistakes } = run;
+  if (mistakes) {
+    result.append(h('div', { className: 'quiz-actions' }, h('button', { type: 'button', className: 'primary', textContent: t('backToMistakes'), onclick: endQuiz })));
+    return $('quiz-card').replaceChildren(result);
+  }
   if (multiple && !isTeacher() && !lesson) {
     api('/api/quiz/results', { method: 'POST', json: { subject, unit, correct: run.right, total: multiple } })
       .catch((err) => { $('quiz-error').textContent = err.message; });

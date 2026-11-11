@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EDUCOM</title>
-<meta name="description" content="A school app for class groups, homework, exam prep and progress notes. Runs in the browser, installs on phones, hosts on a Raspberry Pi.">
+<meta name="description" content="A school app for class groups, homework, lesson review and progress notes. Runs in the browser, installs on phones, hosts on a Raspberry Pi.">
 <meta name="theme-color" content="#f2f1ee" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="EDUCOM">
-<meta property="og:description" content="A school app for class groups, homework, exam prep and progress notes.">
+<meta property="og:description" content="A school app for class groups, homework, lesson review and progress notes.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%2370449c'/%3E%3Cpath fill='%23c3abe1' d='M232 104h176a48 48 0 0 1 48 48v100a48 48 0 0 1-48 48h-6l6 52-58-52H232a48 48 0 0 1-48-48V152a48 48 0 0 1 48-48z'/%3E%3Cpath fill='%23fff' d='M104 196h184a52 52 0 0 1 52 52v104a52 52 0 0 1-52 52H170l-72 58 10-58h-4a52 52 0 0 1-52-52V248a52 52 0 0 1 52-52z'/%3E%3Cpath fill='%2370449c' d='M142 300v36c0 14 24 25 54 25s54-11 54-25v-36z'/%3E%3Cpath fill='%2370449c' stroke='%23fff' stroke-width='9' stroke-linejoin='round' d='M196 246l90 38-90 38-90-38z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -150,6 +150,10 @@
   /* ---------- feature cards ---------- */
   .lineup { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
   .card { --app-ink: color-mix(in srgb, var(--app) 62%, var(--ink-strong)); position: relative; display: flex; flex-direction: column; background: var(--bg); }
+  .lineup > .card:last-child { grid-column: 1 / -1; flex-flow: row wrap; }
+  .lineup > .card:last-child .card-head { flex: 0 0 100%; }
+  .lineup > .card:last-child .card-body { min-width: 0; justify-content: center; }
+  .lineup > .card:last-child .preview { flex: 0 0 calc(100% / 3); border-bottom: 0; border-right: 1px solid var(--line); }
   .card .bar { position: absolute; inset: 0 0 auto; height: 2px; background: var(--app); transform: scaleX(0); transform-origin: left; transition: transform .3s; z-index: 2; }
   .card:hover .bar { transform: scaleX(1); }
   .card-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 24px; border-bottom: 1px solid var(--line); }
@@ -292,6 +296,7 @@
   /* ---------- responsive ---------- */
   @media (max-width: 1000px) {
     .lineup { grid-template-columns: repeat(2, 1fr); }
+    .lineup > .card:last-child .preview { flex-basis: 50%; }
     .cells, .grades { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 760px) {
@@ -302,6 +307,8 @@
     .eyebrow .hide-sm { display: none; }
     .intro { padding-top: 56px; padding-bottom: 56px; }
     .lineup { grid-template-columns: 1fr; }
+    .lineup > .card:last-child { flex-flow: column; }
+    .lineup > .card:last-child .preview { flex: none; border-right: 0; border-bottom: 1px solid var(--line); }
     .card-head { padding: 12px 16px; }
     .card-body { padding: 22px 16px 28px; }
     .cells { grid-template-columns: 1fr 1fr; }
@@ -347,7 +354,7 @@
       <ul class="nav-links hud">
         <li><a class="on" href="#top"><span><span class="en">Home</span><span class="tr">Ana sayfa</span></span></a></li>
         <li><a href="#features"><span><span class="en">Features</span><span class="tr">Özellikler</span></span></a></li>
-        <li><a href="#questions"><span><span class="en">Exam prep</span><span class="tr">Yazılıya hazırlık</span></span></a></li>
+        <li><a href="#questions"><span><span class="en">Lesson review</span><span class="tr">Ders tekrarı</span></span></a></li>
         <li><a href="#roles"><span><span class="en">Roles</span><span class="tr">Roller</span></span></a></li>
         <li><a href="#how"><span><span class="en">How it works</span><span class="tr">Nasıl çalışır</span></span></a></li>
       </ul>
@@ -383,8 +390,8 @@
       </div>
       <h1 data-reveal><span class="en">The whole school, in one app.</span><span class="tr">Bütün okul, tek bir uygulamada.</span></h1>
       <p class="lede" data-reveal>
-        <span class="en">Class groups, homework, exam prep and progress notes for a high school. It runs in the browser, installs on phones like a normal app, and lives on a Raspberry Pi.</span>
-        <span class="tr">Bir lise için sınıf grupları, ödev takibi, yazılıya hazırlık ve gelişim notları. Tarayıcıda çalışır, telefona normal bir uygulama gibi kurulur ve bir Raspberry Pi üzerinde yaşar.</span>
+        <span class="en">Class groups, homework, lesson review and progress notes for a high school. It runs in the browser, installs on phones like a normal app, and lives on a Raspberry Pi.</span>
+        <span class="tr">Bir lise için sınıf grupları, ödev takibi, ders tekrarı ve gelişim notları. Tarayıcıda çalışır, telefona normal bir uygulama gibi kurulur ve bir Raspberry Pi üzerinde yaşar.</span>
       </p>
       <div class="ctas" data-reveal>
         <a class="btn btn-solid" href="#features">
@@ -413,11 +420,11 @@
       <span class="tick l" aria-hidden="true"></span><span class="tick r" aria-hidden="true"></span>
       <div class="eyebrow">
         <p class="hud muted"><span class="faint">01</span><span class="slash" aria-hidden="true">/</span><span class="en">Features</span><span class="tr">Özellikler</span></p>
-        <p class="hud faint hide-sm"><span class="en">Six parts · One app</span><span class="tr">Altı bölüm · Tek uygulama</span></p>
+        <p class="hud faint hide-sm"><span class="en">Seven parts · One app</span><span class="tr">Yedi bölüm · Tek uygulama</span></p>
       </div>
       <div class="intro">
         <h2 data-reveal><span class="en">Built for how a school <span class="accent">actually talks</span>.</span><span class="tr">Bir okulun <span class="accent">gerçekten konuştuğu</span> gibi.</span></h2>
-        <p data-reveal><span class="en">Teachers announce, students read and ask. Homework, exam prep and feedback live right next to the chats instead of in five different apps.</span><span class="tr">Öğretmen duyurur, öğrenci okur ve sorar. Ödev, yazılıya hazırlık ve geri bildirim beş ayrı uygulamada değil, sohbetlerin hemen yanında durur.</span></p>
+        <p data-reveal><span class="en">Teachers announce, students read and ask. Homework, lesson review and feedback live right next to the chats instead of in five different apps.</span><span class="tr">Öğretmen duyurur, öğrenci okur ve sorar. Ödev, ders tekrarı ve geri bildirim beş ayrı uygulamada değil, sohbetlerin hemen yanında durur.</span></p>
       </div>
 
       <div class="lineup">
@@ -459,10 +466,10 @@
           </div>
         </article>
 
-        <!-- exam prep -->
+        <!-- lesson review -->
         <article class="card" data-reveal style="--app:#4fd06a">
           <span class="bar" aria-hidden="true"></span>
-          <div class="card-head"><span class="hud num">03</span><p class="hud faint"><span class="en">Exam prep</span><span class="tr">Yazılıya hazırlık</span></p></div>
+          <div class="card-head"><span class="hud num">03</span><p class="hud faint"><span class="en">Lesson review</span><span class="tr">Ders tekrarı</span></p></div>
           <div class="preview" aria-hidden="true">
             <div class="quiz">
               <div class="quiz-top hud"><span><span class="en">Math 11 · Unit 4</span><span class="tr">Matematik 11 · 4. ünite</span></span><span>7 / 20</span></div>
@@ -475,16 +482,35 @@
             </div>
           </div>
           <div class="card-body">
-            <h3><span class="en">Exam <em>prep</em></span><span class="tr">Yazılıya <em>hazırlık</em></span></h3>
+            <h3><span class="en">Lesson <em>review</em></span><span class="tr">Ders <em>tekrarı</em></span></h3>
             <p><span class="en">Pick a subject, pick a unit, solve. Every answer comes with an explanation. Not ready yet? Open the unit's lesson: each topic is explained, then checked with one question. Units follow the 2026–2027 MEB yearly plans for each grade.</span><span class="tr">Dersi seç, üniteyi seç, çöz. Her cevabın ardından açıklama gelir. Henüz hazır değil misin? Ünitenin konu anlatımını aç: her konu anlatılır, ardından bir soruyla pekiştirilir. Üniteler her sınıf için MEB'in 2026–2027 yıllık planlarını izler.</span></p>
             <div class="tags"><span class="tag hl"><span class="en">3005 questions</span><span class="tr">3005 soru</span></span><span class="tag hl"><span class="en">530 lesson topics</span><span class="tr">530 konu anlatımı</span></span><span class="tag"><span class="en">Unit by unit</span><span class="tr">Ünite ünite</span></span></div>
+          </div>
+        </article>
+
+        <!-- my mistakes -->
+        <article class="card" data-reveal style="--app:#ff5d5d">
+          <span class="bar" aria-hidden="true"></span>
+          <div class="card-head"><span class="hud num">04</span><p class="hud faint"><span class="en">My mistakes</span><span class="tr">Yanlışlarım</span></p></div>
+          <div class="preview" aria-hidden="true">
+            <div class="list">
+              <div class="row"><span class="sub"><span class="en">Phys</span><span class="tr">Fiz</span></span><span class="t"><span class="en">Physics</span><span class="tr">Fizik</span></span><span class="due hot"><span class="en">5 wrong</span><span class="tr">5 yanlış</span></span></div>
+              <div class="row"><span class="sub"><span class="en">Math</span><span class="tr">Mat</span></span><span class="t"><span class="en">Mathematics</span><span class="tr">Matematik</span></span><span class="due"><span class="en">3 wrong</span><span class="tr">3 yanlış</span></span></div>
+              <div class="row"><span class="sub"><span class="en">Chem</span><span class="tr">Kim</span></span><span class="t"><span class="en">Chemistry</span><span class="tr">Kimya</span></span><span class="due"><span class="en">2 wrong</span><span class="tr">2 yanlış</span></span></div>
+              <div class="row"><span class="sub"><span class="en">Hist</span><span class="tr">Tar</span></span><span class="t"><span class="en">History</span><span class="tr">Tarih</span></span><span class="due"><span class="en">1 wrong</span><span class="tr">1 yanlış</span></span></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3><span class="en">My <em>mistakes</em></span><span class="tr">Yanlış<em>larım</em></span></h3>
+            <p><span class="en">Every question a student gets wrong in a test is kept. One button on the Review tab shows the count per subject; tap a subject and solve those questions again. A question leaves the list once it is answered correctly.</span><span class="tr">Öğrencinin testlerde yanlış yaptığı her soru kaydedilir. Tekrar sekmesindeki tek düğme, derslere göre yanlış sayısını gösterir; derse dokun, o soruları yeniden çöz. Doğru çözülen soru listeden çıkar.</span></p>
+            <div class="tags"><span class="tag hl"><span class="en">Subject by subject</span><span class="tr">Ders ders</span></span><span class="tag"><span class="en">Gone when solved</span><span class="tr">Çözünce silinir</span></span></div>
           </div>
         </article>
 
         <!-- progress notes -->
         <article class="card" data-reveal style="--app:#ff6fa8">
           <span class="bar" aria-hidden="true"></span>
-          <div class="card-head"><span class="hud num">04</span><p class="hud faint"><span class="en">Progress notes</span><span class="tr">Gelişim notu</span></p></div>
+          <div class="card-head"><span class="hud num">05</span><p class="hud faint"><span class="en">Progress notes</span><span class="tr">Gelişim notu</span></p></div>
           <div class="preview" aria-hidden="true">
             <div class="note">
               <div class="note-top hud"><span><span class="en">Physics</span><span class="tr">Fizik</span></span><span><span class="en">Private</span><span class="tr">Özel</span></span></div>
@@ -503,7 +529,7 @@
         <!-- chat -->
         <article class="card" data-reveal style="--app:#2fc8e8">
           <span class="bar" aria-hidden="true"></span>
-          <div class="card-head"><span class="hud num">05</span><p class="hud faint"><span class="en">Ask a teacher</span><span class="tr">Öğretmene sor</span></p></div>
+          <div class="card-head"><span class="hud num">06</span><p class="hud faint"><span class="en">Ask a teacher</span><span class="tr">Öğretmene sor</span></p></div>
           <div class="preview" aria-hidden="true">
             <div class="chat">
               <div class="chat-top hud"><i></i><span class="en">Chemistry teacher</span><span class="tr">Kimya öğretmeni</span></div>
@@ -522,7 +548,7 @@
         <!-- look -->
         <article class="card" data-reveal style="--app:#f2c14e">
           <span class="bar" aria-hidden="true"></span>
-          <div class="card-head"><span class="hud num">06</span><p class="hud faint"><span class="en">Make it yours</span><span class="tr">Kişiselleştir</span></p></div>
+          <div class="card-head"><span class="hud num">07</span><p class="hud faint"><span class="en">Make it yours</span><span class="tr">Kişiselleştir</span></p></div>
           <div class="preview" aria-hidden="true">
             <div class="look">
               <div class="box"><span class="lbl"><span class="en">Colour</span><span class="tr">Renk</span></span>
@@ -548,7 +574,7 @@
     <div class="frame">
       <span class="tick l" aria-hidden="true"></span><span class="tick r" aria-hidden="true"></span>
       <div class="eyebrow">
-        <p class="hud muted"><span class="faint">02</span><span class="slash" aria-hidden="true">/</span><span class="en">Exam prep</span><span class="tr">Yazılıya hazırlık</span></p>
+        <p class="hud muted"><span class="faint">02</span><span class="slash" aria-hidden="true">/</span><span class="en">Lesson review</span><span class="tr">Ders tekrarı</span></p>
         <p class="hud faint hide-sm"><span class="en">Grades 9–12 · 32 subjects</span><span class="tr">9–12. sınıf · 32 ders</span></p>
       </div>
       <div class="intro">
@@ -703,13 +729,13 @@
     <div class="foot">
       <div class="me">
         <svg aria-hidden="true"><use href="#logo"/></svg>
-        <p><span class="en">EDUCOM. A school app for class groups, homework, exam prep and progress notes. A TÜBİTAK 4006 project.</span><span class="tr">EDUCOM. Sınıf grupları, ödev takibi, yazılıya hazırlık ve gelişim notları için bir okul uygulaması. TÜBİTAK 4006 projesi.</span></p>
+        <p><span class="en">EDUCOM. A school app for class groups, homework, lesson review and progress notes. A TÜBİTAK 4006 project.</span><span class="tr">EDUCOM. Sınıf grupları, ödev takibi, ders tekrarı ve gelişim notları için bir okul uygulaması. TÜBİTAK 4006 projesi.</span></p>
       </div>
       <nav aria-label="Sections">
         <p class="hud faint"><span class="en">On this page</span><span class="tr">Bu sayfada</span></p>
         <ul>
           <li><a href="#features"><span class="en">Features</span><span class="tr">Özellikler</span></a></li>
-          <li><a href="#questions"><span class="en">Exam prep</span><span class="tr">Yazılıya hazırlık</span></a></li>
+          <li><a href="#questions"><span class="en">Lesson review</span><span class="tr">Ders tekrarı</span></a></li>
           <li><a href="#roles"><span class="en">Roles</span><span class="tr">Roller</span></a></li>
           <li><a href="#how"><span class="en">How it works</span><span class="tr">Nasıl çalışır</span></a></li>
         </ul>

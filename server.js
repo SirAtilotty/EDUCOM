@@ -120,6 +120,14 @@ db.exec(`
     at INTEGER NOT NULL
   );
   CREATE INDEX IF NOT EXISTS quiz_results_user ON quiz_results(user_id, grade);
+  -- Öğrencinin yanlış yaptığı sorular. Soru metniyle tutulur: bankadaki sıra numaraları yeni soru eklenince kayar.
+  CREATE TABLE IF NOT EXISTS mistakes (
+    user_id INTEGER NOT NULL REFERENCES users(id),
+    grade INTEGER NOT NULL,
+    subject TEXT NOT NULL,
+    q TEXT NOT NULL,
+    PRIMARY KEY (user_id, grade, subject, q)
+  );
   CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value TEXT NOT NULL);
   CREATE TABLE IF NOT EXISTS push_subs (
     endpoint TEXT PRIMARY KEY,
@@ -1022,6 +1030,27 @@ route('GET', /^\/api\/quiz\/questions$/, ({ user, url }) => {
   const subject = url.searchParams.get('subject');
   const unit = url.searchParams.get('unit');
   return gradeQuestions(quizGrade(user, url)).filter((q) => q.subject === subject && q.unit === unit);
+});
+
+// Yanlışlarım: yanlış cevap soruyu listeye ekler, doğru cevap çıkarır. Silinen ya da değişen sorular listede görünmez.
+route('GET', /^\/api\/quiz\/mistakes$/, ({ user }) => {
+  const grade = gradeOf(user.id);
+  const wrong = new Set(db.prepare('SELECT subject, q FROM mistakes WHERE user_id = ? AND grade = ?').all(user.id, grade)
+    .map((m) => `${m.subject}|${m.q}`));
+  return gradeQuestions(grade).filter((q) => q.choices && wrong.has(`${q.subject}|${q.q}`));
+});
+
+route('POST', /^\/api\/quiz\/mistakes$/, async ({ req, user }) => {
+  if (user.role !== 'student') throw new HttpError(403, 'studentsOnly');
+  const b = await readJson(req);
+  const grade = gradeOf(user.id);
+  if (b.ok) {
+    db.prepare('DELETE FROM mistakes WHERE user_id = ? AND grade = ? AND subject = ? AND q = ?').run(user.id, grade, str(b.subject), str(b.q));
+    return {};
+  }
+  if (!gradeQuestions(grade).some((q) => q.choices && q.subject === b.subject && q.q === b.q)) throw new HttpError(400, 'badRequest');
+  db.prepare('INSERT OR IGNORE INTO mistakes (user_id, grade, subject, q) VALUES (?, ?, ?, ?)').run(user.id, grade, b.subject, b.q);
+  return {};
 });
 
 route('GET', /^\/api\/quiz\/lesson$/, ({ user, url }) =>

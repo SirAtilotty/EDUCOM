@@ -110,6 +110,15 @@
             <ul id="quiz-subjects" class="subjects"></ul>
             <p id="no-questions" class="empty" data-i18n="noQuestions" hidden></p>
           </div>
+          <div id="quiz-mistakes" hidden>
+            <div class="view-head">
+              <button type="button" id="mistakes-back" class="icon-button" data-i18n-title="backToSubjects" data-i18n-aria="backToSubjects"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg></button>
+              <h2 data-i18n="mistakes"></h2>
+            </div>
+            <p class="hint" data-i18n="mistakesHelp"></p>
+            <ul id="mistakes-subjects" class="subjects"></ul>
+            <p id="no-mistakes" class="empty" data-i18n="noMistakes" hidden></p>
+          </div>
           <div id="quiz-units" hidden>
             <div class="view-head">
               <button type="button" id="units-back" class="icon-button" data-i18n-title="backToSubjects" data-i18n-aria="backToSubjects"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg></button>
@@ -129,6 +138,7 @@
             <div id="quiz-card" class="card quiz-card"></div>
           </div>
         </div>
+        <button type="button" id="mistakes-open" class="primary student-only" data-i18n="mistakes"></button>
       </section>
 
       <section id="view-notes" class="view" hidden>
