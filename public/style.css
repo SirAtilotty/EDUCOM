@@ -351,9 +351,33 @@ label > span:first-child:not(.avatar, .letter) { font-size: .9rem; color: var(--
 .units { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
 .units > li { display: grid; gap: .35rem; }
 .lesson-link { justify-self: start; margin-inline-start: 3.9rem; font-size: .85rem; }
-.lesson { display: grid; gap: .6rem; padding-bottom: .85rem; border-bottom: 1px solid var(--line); line-height: 1.55; }
-.lesson h3 { margin: 0; color: var(--accent); }
-.lesson p { margin: 0; white-space: pre-wrap; }
+.lesson { display: grid; gap: .9rem; line-height: 1.6; }
+.lesson h3 { margin: 0; padding-bottom: .5rem; border-bottom: 3px solid var(--accent); color: var(--accent); font-size: 1.3rem; line-height: 1.25; }
+.lesson > div { display: grid; gap: .4rem; }
+.lesson p, .lesson h4, .lesson ul { margin: 0; }
+/* Büyük harfe çevirme yok: sayfa dili Türkçeyken İngilizce konu başlığında i harfi İ olur. */
+.lesson h3, .lesson h4 { text-transform: none; letter-spacing: 0; }
+.lesson h4 { color: var(--accent); font-size: .95rem; }
+.lesson ul { display: grid; gap: .35rem; padding: 0; list-style: none; }
+.lesson li { position: relative; padding-inline-start: 1.1rem; }
+.lesson li::before { content: ''; position: absolute; inset-inline-start: .15rem; top: .62em; width: .4rem; height: .4rem; border-radius: 50%; background: var(--accent); }
+.lesson .example { padding: .7rem .9rem; border-inline-start: 4px solid var(--accent); border-radius: 0 12px 12px 0; background: var(--soft); }
+.lesson .formula { padding: .45rem .8rem; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); font-weight: 600; text-align: center; }
+.lesson li.formula::before { content: none; }
+/* OLY maskotu ve konuşma balonu */
+.mascot { display: flex; align-items: center; gap: .7rem; }
+.oly { flex: none; width: 5rem; height: 5.4rem; color: var(--accent); transform-origin: 50% 90%; animation: oly-in .45s cubic-bezier(.3, 1.6, .5, 1) both; }
+.oly > path { fill: none; stroke: currentColor; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+/* Kaşın çevresindeki boşluk kartın zemin renginde, kaş iplik çizgilerine karışmasın. */
+.oly-halo { stroke: var(--panel); }
+.oly.happy { animation-name: oly-hop; animation-duration: .6s; }
+.oly.oops { animation-name: oly-wobble; animation-timing-function: ease-in-out; }
+.mascot p { position: relative; margin: 0; padding: .5rem .85rem; border-radius: 14px; background: var(--soft); font-weight: 600; }
+.mascot p::before { content: ''; position: absolute; inset-inline-start: -.4rem; top: 50%; width: .8rem; height: .8rem; background: inherit; clip-path: polygon(100% 0, 0 50%, 100% 100%); translate: 0 -50%; }
+.result .mascot { text-align: start; }
+@keyframes oly-in { from { scale: .5; opacity: 0; } }
+@keyframes oly-hop { 0% { scale: .5; opacity: 0; } 45% { translate: 0 -.5rem; scale: 1.05 .95; opacity: 1; } 70% { translate: 0; scale: .97 1.04; } }
+@keyframes oly-wobble { 25% { rotate: -9deg; } 60% { rotate: 7deg; } }
 .unit {
   display: flex; align-items: center; gap: .8rem;
   width: 100%; min-height: 64px; padding: .7rem .9rem;
@@ -395,8 +419,10 @@ label > span:first-child:not(.avatar, .letter) { font-size: .9rem; color: var(--
 .person-row span:last-child { display: grid; min-width: 0; }
 .person-row small { color: var(--muted); overflow-wrap: anywhere; }
 .temp-password { padding: .7rem .9rem; border-radius: 12px; background: var(--soft); font-weight: 600; white-space: pre-wrap; overflow-wrap: anywhere; user-select: all; }
-.progress { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.progress { display: block; height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
 .progress span { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+.progress .weak { background: var(--error); }
+.subject .progress, .unit-text .progress { height: 4px; margin-top: .25rem; }
 .quiz-card { gap: .85rem; padding: 1.1rem; }
 .quiz-card > .chip { justify-self: start; }
 .quiz-q { font-size: 1.08rem; font-weight: 600; white-space: pre-wrap; }
@@ -480,7 +506,7 @@ dialog::backdrop { background: rgb(14 10 22 / .55); }
 .file-button .icon { width: 1.2rem; height: 1.2rem; }
 
 @media (prefers-reduced-motion: reduce) {
-  .rec-dot, .flash .bubble { animation: none; }
+  .rec-dot, .flash .bubble, .oly { animation: none; }
   .message, .progress span { transition: none; }
 }
 

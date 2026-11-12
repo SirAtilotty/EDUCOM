@@ -350,10 +350,26 @@ async function subscribePush() {
 
 function setupPush() {
   if (!pushSupported) return; // HTTPS olmadan da burada kalır; uygulama bildirimsiz çalışmaya devam eder
-  $('push-banner').hidden = Notification.permission !== 'default';
+  $('push-banner').hidden = Notification.permission !== 'default' || Date.now() - pushLater() < PUSH_LATER;
   // Her açılışta yenilenir: abonelik adresi değişmiş veya hesap değişmiş olabilir.
   if (Notification.permission === 'granted') subscribePush().catch((err) => console.error(err));
 }
+
+// "Sonra" denirse bant bu telefonda bir hafta görünmez.
+const PUSH_LATER = 7 * 864e5;
+function pushLater() {
+  try {
+    return Number(localStorage.getItem('pushLater')) || 0;
+  } catch {
+    return 0;
+  }
+}
+$('later-push').onclick = () => {
+  $('push-banner').hidden = true;
+  try {
+    localStorage.setItem('pushLater', Date.now());
+  } catch {}
+};
 
 $('enable-push').onclick = async () => {
   $('push-error').textContent = '';
@@ -1146,7 +1162,19 @@ function renderSubjects() {
   $('quiz-subjects').replaceChildren(...quiz.subjects.map((s, i) =>
     h('li', {}, h('button', { type: 'button', className: `subject ${hue(i)}`, onclick: () => openUnits(s.subject) },
       h('strong', { textContent: s.subject }),
-      h('span', { textContent: t('subjectStats', { units: s.units.length, count: s.units.reduce((n, u) => n + u.count, 0) }) })))));
+      h('span', { textContent: t('subjectStats', { units: s.units.length, count: s.units.reduce((n, u) => n + u.count, 0) }) }),
+      ...subjectProgress(s)))));
+}
+// Öğrenci her derste kaç ünitenin testini çözdüğünü görür.
+function subjectProgress(s) {
+  if (isTeacher() || !s.units.length) return [];
+  const done = s.units.filter((u) => u.score).length;
+  return [bar(done / s.units.length), h('span', { textContent: t('unitsDone', { done, total: s.units.length }) })];
+}
+function bar(ratio, weak = false) {
+  const fill = h('span', { className: weak ? 'weak' : '' });
+  fill.style.width = `${Math.round(ratio * 100)}%`;
+  return h('span', { className: 'progress', ariaHidden: 'true' }, fill);
 }
 $('quiz-grade').onchange = () => {
   openSubject = null;
@@ -1174,7 +1202,7 @@ function renderUnits() {
       h('span', { className: 'unit-text' },
         h('strong', { textContent: u.name || t('otherUnit') }),
         u.topics ? h('small', { textContent: u.topics }) : '',
-        u.score ? scoreEl(u.score) : ''),
+        ...(u.score ? scoreEl(u.score) : [])),
       h('span', { className: 'unit-count', textContent: u.count ? t('questionsCount', { count: u.count }) : t('comingSoon') })),
     u.lessons ? h('button', { type: 'button', className: 'lesson-link', textContent: t('lessonButton', { count: u.lessons }), onclick: () => openUnit(s.subject, u.name, true) }) : '')));
 }
@@ -1182,7 +1210,7 @@ function renderUnits() {
 function scoreEl({ correct, total, students }) {
   const pct = Math.round((correct / total) * 100);
   const text = isTeacher() ? t('classScore', { pct, students }) : t('lastScore', { correct, total });
-  return h('span', { className: `unit-score${pct < 50 ? ' weak' : ''}`, textContent: text });
+  return [h('span', { className: `unit-score${pct < 50 ? ' weak' : ''}`, textContent: text }), bar(correct / total, pct < 50)];
 }
 
 $('units-back').onclick = () => {
@@ -1239,6 +1267,42 @@ function endQuiz() {
 }
 $('quiz-back').onclick = endQuiz;
 
+// OLY: konu anlatımına ve testlere eşlik eden maskot; OAL logosunun kendisi, üstünde gözler. mood: idle | happy | oops.
+// Gövde, açılış animasyonunun iplik yollarından çizilir; aynı çizim iki yerde tutulmaz. Çizim süs, söz gerçek metin.
+const OAL_THREAD = [...document.querySelectorAll('#splash path')].map((p) => p.getAttribute('d')).join(' ');
+function mascot(mood, text) {
+  const svg = icon(`oly-${mood}`);
+  svg.setAttribute('class', `oly ${mood}`);
+  svg.setAttribute('viewBox', '170 140 270 290'); // amblemin 600x600 çiziminde harflerin kapladığı bölge
+  svg.firstChild.setAttribute('x', 170); // <use> kendi kutusunu 0,0'a koyar; yüzü görünen bölgeye taşı
+  svg.firstChild.setAttribute('y', 140);
+  const thread = document.createElementNS(svg.namespaceURI, 'path');
+  thread.setAttribute('d', OAL_THREAD);
+  svg.prepend(thread);
+  return h('div', { className: 'mascot' }, svg, h('p', { textContent: text }));
+}
+const pick = (list) => list[Math.floor(Math.random() * list.length)];
+
+// Konu metni düz yazıdır; biçim yazımdaki düzenden çıkarılır:
+// "Başlık:" ile biten satır + alt satırlar liste, "Terim: açıklama" kalın terim, "Örnek:" kutu, kısa eşitlik formül.
+const LESSON_TERM = /^([^:.,]{1,38}): (.+)$/;
+const LESSON_EXAMPLE = /^(Günlük örnek|Örnek|Çözüm|Example)/;
+function lessonLine(tag, line) {
+  const m = line.match(LESSON_TERM);
+  const el = m ? h(tag, {}, h('strong', { textContent: `${m[1]}: ` }), m[2]) : h(tag, { textContent: line });
+  if (line.length <= 48 && line.includes('=') && !line.endsWith('.')) el.className = 'formula';
+  return el;
+}
+function lessonBlock(block) {
+  const lines = block.split('\n');
+  const parts = [];
+  if (lines.length > 1 && lines[0].endsWith(':')) parts.push(h('h4', { textContent: lines.shift().slice(0, -1) }));
+  // Uzun ilk satır giriş cümlesidir; kısa ise öbür satırlarla eş maddedir.
+  else if (lines.length === 1 || lines[0].length > 90) parts.push(lessonLine('p', lines.shift()));
+  if (lines.length) parts.push(h('ul', {}, ...lines.map((line) => lessonLine('li', line))));
+  return h('div', { className: LESSON_EXAMPLE.test(block) ? 'example' : '' }, ...parts);
+}
+
 function renderQuestion() {
   const q = run.list[run.index];
   const total = run.list.length;
@@ -1258,8 +1322,8 @@ function renderQuestion() {
   };
   const parts = [h('p', { className: 'quiz-q', textContent: q.q })];
   if (q.text) {
-    parts.unshift(h('div', { className: 'lesson' }, h('h3', { textContent: q.title }),
-      ...q.text.split('\n\n').map((p) => h('p', { textContent: p }))), h('p', { className: 'hint', textContent: t('lessonCheck') }));
+    parts.unshift(h('div', { className: 'lesson' }, h('h3', { textContent: q.title }), ...q.text.split('\n\n').map(lessonBlock)),
+      mascot('idle', t(run.index ? 'lessonCheck' : 'olyHello')));
   }
   if (q.choices) {
     const buttons = q.choices.map((choice, i) => h('button', { type: 'button', className: 'choice' },
@@ -1275,6 +1339,7 @@ function renderQuestion() {
         feedback.className = `feedback ${ok ? 'ok' : 'bad'}`;
         feedback.textContent = ok ? t('correct') : t('wrong', { letter: LETTERS[q.answer] });
         feedback.hidden = false;
+        feedback.before(mascot(ok ? 'happy' : 'oops', pick(t(ok ? 'mascotRight' : 'mascotWrong').split('|'))));
         reveal('explanationTitle');
       };
     });
@@ -1306,6 +1371,8 @@ function nextQuestion() {
   $('quiz-progress').textContent = '';
   const multiple = run.list.filter((q) => q.choices).length;
   const result = h('div', { className: 'result' });
+  const good = run.right * 2 >= multiple; // yarısı ve üstü; yalnızca açık uçlu sorular varsa da sevinir
+  result.append(mascot(good ? 'happy' : 'idle', t(run.lesson ? 'mascotDone' : good ? 'mascotTestGood' : 'mascotTestLow')));
   if (multiple) {
     result.append(h('p', { className: 'score', textContent: `${run.right}/${multiple}` }),
       h('p', { textContent: t('resultScore', { right: run.right, total: multiple }) }));

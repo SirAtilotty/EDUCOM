@@ -8,14 +8,71 @@
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/splash.css">
   <!-- Görünüm ayarı sayfa çizilmeden uygulanır; yoksa koyu temalı telefonda önce beyaz ekran yanıp söner. -->
   <script src="/look.js"></script>
   <script src="/i18n.js" defer></script>
   <script src="/app.js" defer></script>
 </head>
 <body>
+  <!-- Açılış: okul amblemindeki OAL harfleri iplik gibi çizilir, sonra uygulama görünür (splash.css). -->
+  <div id="splash" class="splash" aria-hidden="true">
+    <div class="splash-mark"></div>
+    <svg viewBox="0 0 600 600">
+      <g class="splash-thread">
+        <ellipse cx="300.5" cy="302.5" rx="133" ry="184"/>
+        <path pathLength="1" d="M234 387 233 392 229 395 220 395 212 390"/>
+        <path pathLength="1" d="M234 387 238 386 241 381 241 376 242 375 242 370 241 369"/>
+        <path pathLength="1" d="M234 387 230 385 230 384 224 379 223 375"/>
+        <path pathLength="1" d="M223 375 216 376 213 379 211 385 212 390"/>
+        <path pathLength="1" d="M223 375 223 373 225 371 227 371 227 370 241 369"/>
+        <path pathLength="1" d="M225 353 237 353 238 352 248 351 248 348 249 347 249 337 250 336 250 319 251 318 251 261 252 260 252 255 254 249 255 235 256 234 256 231 257 231 258 223 263 211 264 203"/>
+        <path pathLength="1" d="M225 353 224 351 224 346 219 335 218 326 215 318 215 308 214 308 214 303 213 302 213 279 215 272 215 263 218 255 218 249 219 249 219 246 221 243 221 241 222 241 222 238 228 225 229 225 229 223 238 211 239 211 242 207 247 204 254 202 263 202"/>
+        <path pathLength="1" d="M225 353 224 353 222 356 211 358"/>
+        <path pathLength="1" d="M211 358 210 361 206 363 206 364 202 367 201 370 199 371 195 383 195 389 197 396 202 402"/>
+        <path pathLength="1" d="M211 358 203 336 203 332 200 322 200 314 198 308 198 302 197 301 197 280 198 279 198 274 200 268 201 254 207 233 209 230 209 228 210 228 210 225 219 209 220 209 224 203 225 203 232 195 236 193 236 192 238 192 238 191 246 187 249 187"/>
+        <path pathLength="1" d="M254 395 255 387 257 383 258 383 258 381 264 374 268 372 274 372 276 371 277 372 282 372 286 374 289 374 290 376"/>
+        <path pathLength="1" d="M254 395 252 395 247 401 246 401 244 405 234 410 215 410 212 408 210 408 208 406 206 406 206 405 202 402"/>
+        <path pathLength="1" d="M254 395 267 395 275 392 284 386 285 384 287 384 289 381 290 376"/>
+        <path pathLength="1" d="M290 376 296 376 306 380 309 380 309 381 311 381 311 382 319 384 324 387 326 387 328 389 334 391 343 392 344 393 355 393"/>
+        <path pathLength="1" d="M289 356 289 353 293 345 294 339 298 329 299 318 300 317 300 307 301 306 301 273 300 272 300 263 299 262 298 253 295 246 293 237 291 235 291 232"/>
+        <path pathLength="1" d="M289 356 289 357 295 360 304 361"/>
+        <path pathLength="1" d="M289 356 277 356 277 355 270 353 266 353 266 352 265 352 265 341 266 340 266 307 267 306 267 264 268 263 270 242 271 241 271 238 272 238 272 231 275 225 276 220 280 217"/>
+        <path pathLength="1" d="M304 361 305 355 308 349 309 343 311 340 312 333 313 333 313 328 314 327 314 323 315 323 316 313 317 313 317 269 316 268 316 263 315 262 315 258 313 252 313 247 312 247 311 241 309 238 309 235 301 218"/>
+        <path pathLength="1" d="M304 361 305 361 306 363 308 363 313 366 316 366 319 368 321 368 321 369 324 369 333 374 340 376 350 377"/>
+        <path pathLength="1" d="M350 377 349 374 349 365 348 365 348 362 347 361 346 343 345 343 345 338 344 337 344 324 343 323 343 314 342 313 341 298 339 294 338 285 337 285 337 282 335 278 335 275 329 254 328 252 327 252 321 234 316 224 315 224 315 222 314 222 314 220 313 220 311 214 309 212"/>
+        <path pathLength="1" d="M350 377 354 383 355 393"/>
+        <path pathLength="1" d="M355 393 360 395 366 404 378 413"/>
+        <path pathLength="1" d="M371 378 368 377 362 356 362 343 361 342 361 336 360 335 360 329 359 328 359 313 358 313 358 307 357 306 357 298 356 298 354 283 353 283 348 262 347 262 347 259 345 256 345 253 342 247 342 244 339 239 338 234 333 224 333 222 332 222 331 218 330 218 330 216 325 207 324 207 324 205 323 205 321 200 317 195 316 192 314 191 314 188 312 183"/>
+        <path pathLength="1" d="M371 378 371 383 375 390 376 390 377 392 383 393"/>
+        <path pathLength="1" d="M371 378 372 377 379 377 379 376 391 374 401 369 404 369"/>
+        <path pathLength="1" d="M383 393 389 390 393 390 393 389 402 387 402 386 404 386 406 385 406 384 409 384 412 382"/>
+        <path pathLength="1" d="M383 393 385 399 387 400"/>
+        <path pathLength="1" d="M280 217 280 213 282 207 289 202"/>
+        <path pathLength="1" d="M280 217 285 221 285 223 286 223 290 232 291 232"/>
+        <path pathLength="1" d="M264 203 267 202 270 196 271 196 273 189"/>
+        <path pathLength="1" d="M289 202 293 194"/>
+        <path pathLength="1" d="M289 202 293 205 301 218"/>
+        <path pathLength="1" d="M273 189 277 188 280 185 280 183 281 183"/>
+        <path pathLength="1" d="M273 189 264 186 252 186 249 187"/>
+        <path pathLength="1" d="M293 194 292 189"/>
+        <path pathLength="1" d="M293 194 298 196 300 199 302 200 302 202 304 203 309 212"/>
+        <path pathLength="1" d="M281 183 281 181 278 177"/>
+        <path pathLength="1" d="M281 183 284 183 289 185 292 189"/>
+        <path pathLength="1" d="M312 183 306 181 306 180 303 178 301 171"/>
+        <path pathLength="1" d="M312 183 313 183 313 182 316 182 323 178"/>
+        <path pathLength="1" d="M286 164 289 165 289 166 292 167 292 168 295 170 301 171"/>
+        <path pathLength="1" d="M301 171 310 166 316 165 320 163"/>
+      </g>
+    </svg>
+  </div>
+
   <!-- Simgeler: her yerde <use href="#i-..."> ile kullanılır, renk yazı renginden gelir. -->
   <svg class="sprite" aria-hidden="true">
+    <!-- OLY: OAL logosunun kendisi, üstüne gözler ve kaşlar. Gövdeyi app.js açılış yollarından çizer; burada yalnızca yüzler var. -->
+    <symbol id="i-oly-idle" viewBox="170 140 270 290"><g fill="none" stroke-linecap="round"><path class="oly-halo" d="M238 208q22-12 44-2M310 206q22-10 44 2" stroke-width="27"/><path d="M238 208q22-12 44-2M310 206q22-10 44 2" stroke="currentColor" stroke-width="11"/></g><g fill="#fff" stroke="currentColor" stroke-width="7"><circle cx="262" cy="258" r="27"/><circle cx="330" cy="258" r="27"/></g><circle cx="268" cy="261" r="11" fill="#1d1626"/><circle cx="336" cy="261" r="11" fill="#1d1626"/></symbol>
+    <symbol id="i-oly-happy" viewBox="170 140 270 290"><g fill="none" stroke-linecap="round"><path class="oly-halo" d="M236 198q24-16 46-4M310 194q22-12 46 4" stroke-width="27"/><path d="M236 198q24-16 46-4M310 194q22-12 46 4" stroke="currentColor" stroke-width="11"/></g><g fill="#fff" stroke="currentColor" stroke-width="7"><circle cx="262" cy="258" r="27"/><circle cx="330" cy="258" r="27"/></g><path d="M248 265q14-20 28 0M316 265q14-20 28 0" fill="none" stroke="#1d1626" stroke-width="8" stroke-linecap="round"/></symbol>
+    <symbol id="i-oly-oops" viewBox="170 140 270 290"><g fill="none" stroke-linecap="round"><path class="oly-halo" d="M236 216l44-15M356 216l-44-15" stroke-width="27"/><path d="M236 216l44-15M356 216l-44-15" stroke="currentColor" stroke-width="11"/></g><g fill="#fff" stroke="currentColor" stroke-width="7"><circle cx="262" cy="258" r="27"/><circle cx="330" cy="258" r="27"/></g><circle cx="262" cy="268" r="11" fill="#1d1626"/><circle cx="330" cy="268" r="11" fill="#1d1626"/></symbol>
     <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
     <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></symbol>
     <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5 3.5 10.6l6.8 2.6 2.6 6.8z"/><path d="m10.3 13.2 10.2-9.7"/></symbol>
@@ -76,6 +133,7 @@
       </header>
       <div id="push-banner" class="banner" hidden>
         <span data-i18n="pushQuestion"></span>
+        <button type="button" id="later-push" data-i18n="pushLater"></button>
         <button id="enable-push" class="primary" data-i18n="pushEnable"></button>
         <p id="push-error" class="error" role="alert"></p>
       </div>
